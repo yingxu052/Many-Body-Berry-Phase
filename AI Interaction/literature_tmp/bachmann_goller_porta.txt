@@ -1,0 +1,3307 @@
+Anyons in theπ-flux phase of
+fermionic matter coupled to aZ 2-gauge field
+Sven Bachmann1, Leonardo Goller 2, and Marcello Porta 2
+1Department of Mathematics, The University of British Columbia, Vancouver, BC
+V6T 1Z2, Canada
+2Mathematics Area, SISSA, Via Bonomea 265, 34136 Trieste, Italy
+June 9, 2026
+Abstract
+We consider a system of weakly interacting spinful lattice fermions coupled to a
+dynamicalZ 2 gauge field. Using reflection positivity, we prove that the ground state
+lies in the sector of a uniformπ-flux per plaquette and that the monopoles are massive.
+In the presence of a staggered mass for the fermions, this yields a fully gapped, four-
+dimensional ground state space on large tori. It is topologically ordered. By considering
+adiabaticπ-flux insertion, we construct dressed monopole excitations, show that their
+self-braiding is proportional to the Hall conductance and hence vanishes, and prove
+that their braiding with the fermionic excitations is that of the toric code.
+Contents
+1 Introduction 2
+2 The model 8
+2.1 Gauging fermion parity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.2 Properties of the Hamiltonian . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3 Results 16
+3.1 Spectral structure of the model and local topological order . . . . . . . . . . 16
+3.2 Loop operators and braiding properties . . . . . . . . . . . . . . . . . . . . 19
+4 Proof of Theorem 3.1 23
+4.1 Proof of Theorem 3.1 - item 1: non-interacting fermions . . . . . . . . . . . 23
+1
+arXiv:2508.21502v3  [math-ph]  5 Jun 2026
+4.2 Proof of Theorem 3.1 - item 2: non-interacting fermions . . . . . . . . . . . 25
+4.3 Proof of Theorem 3.1 - item 1 and item 2: weakly interacting fermions . . . 27
+4.4 Proof of Theorem 3.1 - item 3 . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+4.4.1 Reflection positivity . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+4.4.2 Lower bound on the monopole mass . . . . . . . . . . . . . . . . . . 37
+4.4.3 Extension to twisted Hamiltonians . . . . . . . . . . . . . . . . . . . 40
+5 Proof of Theorem 3.2 41
+6 Proof of Theorem 3.7 46
+6.1 Adiabatic flux insertion and braiding . . . . . . . . . . . . . . . . . . . . . . 46
+6.1.1 Threading aπ-flux through a contactible cycle . . . . . . . . . . . . 46
+6.1.2 Threading aπ-holonomy through a non-contractible cycle . . . . . . 48
+6.1.3 Monopoles are bosons . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+6.1.4 Braiding statistics between monopoles and fermions . . . . . . . . . 54
+A Homology of the torus: basic definitions and notations 55
+1 Introduction
+The theoretical possibility of anyons, namely quantum particles in two-dimensional space
+that exhibit general phases under braiding beyond the boson-fermion dichotomy was pointed
+out in [45] in a differential geometric framework, in [31] in an algebraic one and in [63, 64]
+using a magnetic picture, while it was already implicit in [20]. A Feynman path integral
+approach discussing the relation with the braid group appeared in [65]. The experimental
+observation of the fractional quantum Hall effect and its theoretical explanation [44] using
+an anyonic wavefunction, see also [34, 2], validated the theoretical intuition. These exotic
+ground states that support anyonic excitations in two space dimensions are the prototypical
+examples of topological order. A first general relativistic quantum field theory of anyons
+was proposed in [21, 22], see also the review [23], and we refer to [18] for an operator
+algebraic approach. When the Hamiltonian is defined on a finite torus, the anyonic prop-
+erties are realized as ground state degeneracy that is not accompanied with any local order
+parameter [62].
+The possibility to use topologically ordered ground state spaces as stable quantum memories
+and braiding as fault tolerant quantum computational method [19] reignited the interest
+in the topic. The exactly solvable models of [42, 43], as well as the string-net models [48],
+exhibit both Abelian and non-Abelian anyons, but are arguably very artifical quantum
+spin systems whose potential large scale realization remains elusive, but see [38] for recent
+2
+progress.
+In this paper, we analyse a very natural lattice model of complex fermions coupled with
+a dynamicalZ 2-gauge field. It belongs to a class of lattice gauge theories that have been
+widely studied numerically in the last few years, starting from [3, 24, 25], characterized by
+a remarkably rich phase diagram, discussed later on in some more detail. Without any
+uncontrolled assumption, we prove that this model exhibits all the properties of a good
+anyon theory. On a large but finite torus, the model has a four-dimensional topologically
+ordered ground state space, with a basis being labelled by the cohomology classes of the
+torus, or more precisely by spin structures on the torus. Crucially, this is one of the rare
+lattice models that is not explicitly solvable but where topological quantum order, namely
+ground state indistinguishability, can be proved, see also [51]. The almost degenerate ground
+state energy is separated from the rest of the spectrum by a gap, which can be interpreted as
+a (lower bound for the) mass of fermions and dressed monopoles. Quasi-particles excitations
+exhibit non-trivial, although Abelian, braiding properties.
+Specifically, we consider the following Hamiltonian on the regular square lattice ΓL wrapped
+on the torus:
+H=−t
+∑
+i,j∈ΓL:
+(i,j)∈E(ΓL)
+∑
+η=↑,↓
+(
+a+
+i,ηˆσz
+ija−
+j,η+ h.c.
+)
++m
+∑
+i∈ΓL
+∑
+η=↑,↓
+(−1)i1+i2ni,η (1.1)
++U
+∑
+i∈ΓL
+(
+ni,↑−1
+2
+)(
+ni,↓−1
+2
+)
+,(1.2)
+where E(ΓL) denotes the set of edges, acting onHL =F L⊗
+(⨂
+(i,j)∈E(ΓL) C2
+)
+. Herea ±
+i,ηare
+the fermionic creation/annihilation operators,n i,η=a +
+i,ηa−
+i,η, ˆσz
+kl is the third Pauli matrix
+representing theZ 2-vector potential attached to edges of the lattice, andt,m >0. We
+could also add a plaquette term to the Hamiltonian, involving the sum of products of ˆσz
+operators associated with the edges of the elementary plaquettes, and all our results would
+apply to that model as well, fortlarge enough. The first term in the Hamiltonian describes
+nearest-neighbour hopping on the square lattice, twisted by the presence of aZ2 gauge field;
+the second term is a staggered mass term, that introduces a chemical potential imbalance
+betweem the two sublattices forming ΓL; while the last term is a Hubbard interaction, that
+describes the on-site attraction (U <0) or repulsion (U >0) of the fermions. There are
+two natural local gauge transformations in this system: the ‘fermionic’U(1)-transformation
+implemented by the unitary e−iϕni,ηand the ‘pureZ 2’ gauge transformation implemented
+by ˆσx
+i,i+ex ˆσx
+i,i+ey ˆσx
+i−ex,iˆσx
+i−ey,i. It is immediate to check that none of them separately is a
+symmetry of the system, but their combination
+Qi = ˆσx
+i,i+ex ˆσx
+i,i+ey ˆσx
+i−ex,iˆσx
+i−ey,ie−iπni,↑−iπni,↓ (1.3)
+is such thatQiHQi =Hfor alli. Physical states|Ψ⟩∈HL must satisfyQi|Ψ⟩=|Ψ⟩, which
+is a discrete version of Gauss’ law. Starting from a product state of the form|ψ⟩⊗|σ⟩∈HL,
+3
+(a) Fermion dispersion relation
+2∆
+4∆
+2m
+O(L2e−cL) (b) Spectrum of the full Hamiltonian
+Figure 1: (a) Effect of mass term onπ-flux dispersion relations: the gap opened by the
+pertubation is proportional to m
+t . Solid and dotted lines represent respectively lattice and
+continuum dispersion relations. (b) The spectral structure of the full Hamiltonian: ∆ is
+the energy necessary to create a monopole, whilemis the minimal energy needed to create
+a fermion (forU= 0). The ground state splitting is exponentially small. The picture is
+stable for|U|small enough.
+where|σ⟩is a common eigenstate of all ˆσz
+i , the physical vector
+∏
+i∈ΓL
+(1 +Qi
+2
+)
+|ψ⟩⊗|σ⟩(1.4)
+describes a loop gas state, exactly as in [43], which exhibits exotic entanglement properties
+that are typical of topological order [41, 47].
+The Hamiltonian (1.1) withm= 0 andU= 0 has already been considered in [32], where
+it was shown, using reflection positivity introduced in this context in [50], that the ground
+states of the system have an expression of the form (1.4), whereσis aπ-flux configuration,
+namely the product ofσz
+ij around any plaquette of the lattice equals−1. In fact, [32] shows
+that monopoles (which necessarily come in pairs), namely plaquettes where the product
+equals +1, have a finite energy cost so that theπ-flux sector is protected by a gap from the
+other sectors. However, the fermionic Hamiltonian in this uniform background is gapless
+as it exhibits Dirac cones [52]. In this paper, we gap out these excitations by introducing
+a staggered mass term which preserves reflection positivity. As a result, we prove that the
+Hamiltonian withm >0 and for|U|small enough has a four-dimensional ground state
+space with a splitting that is exponentially small in the system size, and the patch is well
+separated from the rest of the spectrum as displayed in Figure 1b.
+The ground state space can be characterized using Wilson loop operators. Different ground
+states can be distinguished by measuring theZ 2-holonomy along non-contractible cycles:
+This is given by the operator ˆZC which is a product of ˆσz along the edges of each of a non-
+contractible cycle. In order to connect these orthogonal ground states, we will construct
+π-flux threading operatorsWC∗associated with non-trivial cocycles, namely loops in the
+4
+Φ(t)
+Figure 2: Picture of the flux threading procedure in a portion of the torus: the hoppings
+on the edges cut by the blue line acquire an extrae ±iϕ(depending on the orientation).
+dual lattice. For this, we consider twisted Hamiltonians, where the hopping terms of (1.1)
+(i.e.the terms proportional tot) are given an additional e ±iϕwhenever they cross the
+non-trivial cycle, see Figure 2. Since this family of Hamiltonians is gapped, the ground
+state spacesP C∗(ϕ) are mapped onto each other by the spectral flow [35, 9], which acts
+non-trivially only in the neighbourhood of the twisting line. Atϕ=π, this non-trivial large
+gauge transformation can be offset by aZ 2-gauge transformation in the sense that their
+product leaves the ground state space invariant. In order to determine the effect of this
+parallel transport on the ground state space, we will show that ˆZC andW C∗anticommute
+for two geometrically orthogonal loops, which shows thatW C∗permute the topologically
+ordered ground states [61, 56, 57].
+Anyonic excitations are obtained by opening such lines: open Wilson linesa +
+i,ηˆZCi,ja+
+j,η′
+create a pair of fermionic excitations at sitesi,jbound together by a gauge field line
+alongC i,jwhile openW C∗operators create a pair of monopoles on the background at
+the endpoints ofC∗. Braiding of monopoles around fermions is represented schematically in
+Figure 3. The phase acquired by the wave function of two fermion state contains a universal
+term that is precisely−1 as one would expect by Aharonov-Bohm phase of a electric charge
+1 particle and magnetic chargeπparticle. We shall also show that the braiding of dressed
+monopoles around each other is trivial; in fact, we will relate the self-braiding phase to the
+Hall conductance, which vanishes in theπ-flux sector of the model.
+As mentioned above, the model we study is closely related to theZ 2 gauge theory coupled
+to fermionic matter whose numerical study has been initiated in [3, 24] for spinful fermions,
+see also [12] for the spinless case. In these works it has been observed that, in the absence
+of a mass term, the model has a semimetallic phase at half-filling (studied rigorously in
+[32]), while away from half-filling, and depending on the model parameters, it shows a
+BCS-BEC crossover and a superconducting phase. See also [25] for further numerical study
+5
+ϵ
+ϵ
+m
+m
+;
+ϵ
+ϵ
+=−1·
+ϵ
+ϵ
+Figure 3: Braiding of a monopole around a fermion, its annihilation into the vacuum, and
+the resulting anyonic phase−1.
+of the semimetallic phase. Among the recent developments, we mention the proposed
+experimental realization of such model using cold atoms [11, 37], the observation of a
+confinement transition of the gauge theory in 1 + 1 dimensions via quantum computing
+[54], and in higher dimensions using quantum simulators [40].
+To conclude this introduction, we discuss the relation of our model with Kitaev’s honey-
+comb model introduced in [43], in the gapped phase. Although the emergent anyon theories
+(superselection sectors) are the same as that of the toric code, they are microscopically dif-
+ferent. The present model is made up of complex fermions so there is a fullU(1) symmetry.
+The presence of a continuous symmetry is crucial for our construction of local flux insertion
+unitaries and loop operators. Following [50], reflection positivity allows us to rigorously
+identify theπ-flux sector as that of the ground state (incidentally, in Kitaev’s honeycomb
+model, the ground state lies in the uniform 0-flux sector). What is more, proceeding as in
+[32], the chessboard estimate yields a proof of the existence of a mass gap for the monopoles
+and its extensivity in the number of monopoles: This is conjectured to be true in Kitaev’s
+model and analysed numerically in Appendix A of [43]. Interestingly, the chessboard con-
+figuration appears in this numerical study as that which minimizes the energy per volume.
+Here, the monopole excitations are a dressed version of ‘pureZ 2’ vortices, which calls upon
+theU(1)-symmetry and quasi-adiabatic technology. The fermionic excitations are simpler,
+being only related by a bare string operator. Because of the presence of the staggered mass
+term, they are gapped, thus yielding a fully gapped ground state for the model. Unlike in
+the toric code, our quasi-particles are dynamical: They are not eigenstates of the Hamil-
+tonian but rather localized wavepackets. From that point of view, there are similarities
+with [10] but we consider here the full model, while the analysis there was restricted to the
+Hilbert space spanned by two quasi-particle states. Finally, we explicitly include a small
+Hubbard interaction, thereby exhibiting the robustness of topological order, even when
+explicit diagonalization is not possible.
+The paper is organized as follows. We define the model in Section 2 and introduce its
+symmetries. In Section 3 we state our main theorems: Theorem 3.1 on the stability of the
+π-flux sector and the mass of the monopoles, Theorem 3.2 on properties of the ground state,
+in particular topological order, and Theorem 3.7 exhibiting the braiding properties. Theo-
+6
+rem 3.1 is proved in Section 4. We adapt the argument of [32] based on reflection positivity
+and the chessboard estimate, to show the optimality of theπ-flux phase and to estimate the
+mass of the monopoles. We determine the four dimensional ground state manifold of the
+system, parametrized by the values of the magnetic fluxes across the two non-contractible
+loops of the torus, and we prove the exponential closeness of the energies. The effect of
+small Hubbard interaction is taken into account using fermionic cluster expansion. In Sec-
+tion 5 we use the information about the ground state space derived in Section 4, to prove
+the topological order of the ground state space. Finally, in Section 6 we prove Theorem 3.7.
+We develop the flux threading procedure, compute commutators of loops operators on the
+ground state space and analyse the braiding.
+Notations.The lattice Γ L is bipartite, meaning that it consists of two sublattices Γ A
+L
+and Γ B
+L which are represented with white and black dots respectively.
+Figure 4: Oriented lattice Γ L and its dual Γ∗
+L
+We will denote with V(Γ L), E(ΓL) and F(Γ L) respectively the set of vertices, edges and
+faces of the lattice Γ L. Their elements will be written asi∈V(Γ L), (i,j)∈E(ΓL) (with
+the convention thatjandiare respectively the starting and arrival point according to
+the orientation shown in the picture) andp= (i,j,k,l)∈F(ΓL). Often, with a slight
+abuse of notation, we will identify the set of vertices V(Γ L) with the lattice Γ L itself. The
+set of vertices, edges and faces of the dual lattice Γ ∗
+L of ΓL (sketched with dotted lines)
+will be likewise denoted with V(Γ ∗
+L), E(Γ∗
+L) and F(Γ ∗
+L). Of course, there is a bijective
+correspondence between F(Γ L)≃V(Γ∗
+L) and V(Γ L)≃F(Γ∗
+L), which we shall sometimes
+use without further mention. In particular, the four edges sharing one vertex can be thought
+of as the dual edges bounding the corresponding dual face.
+Acknowledgments.The authors would like to thank the anonymous referees for their
+very thorough proofreading of this manuscript. SB & LG would like to thank GSSI in
+L’Aquila, where this work originated, for their hospitality. LG would like to thank Fabrizio
+Caragiulo, Simone Fabbri, Tommaso Pedroni, Bruno Renzi and Harman Preet Singh for
+support and useful discussions throughout the realization of the paper. SB acknowledges
+7
+financial support of NSERC of Canada. LG & MP acknowledge financial support of the
+European Research Council through the grant ERCStG MaMBoQ, n. 802901. MP ac-
+knowledges support from the MUR, PRIN 2022 project MaIQuFi cod. 20223J85K3. This
+work has been carried out under the auspices of the GNFM of INdAM.
+2 The model
+We consider a system of spinful fermions hopping on the vertices of a two-dimensional
+square lattice Γ L =Z 2
+L with periodic boundary conditions (and lengthL∈4N) in the
+background of (deconfined)Z 2-valued gauge fields living on the edges of the lattice.
+The fermionic matter is described by the usual fermionic Fock space:
+FL =C⊕
+⨁
+n≥1
+ℓ2(ΓL×{↑,↓})∧n.(2.1)
+Such space can be conveniently thought as the Hilbert space that arises by successive
+applications of fermionic creation and annihilation operatorsa +
+i,ηanda −
+i,η(for anyi,η∈
+ΓL×{↑,↓}) on the fermionic vacuum state|0⟩. Antisymmetry of wavefunctions is naturally
+enforced by the canonical anticommutation relations:
+{a+
+i,η,a−
+j,η′}=δijδη,η′,{a+
+i,η,a+
+j,η′}={a−
+i,η,a−
+j,η′}= 0,(2.2)
+with the understanding thata +
+i,η= (a−
+i,η)∗. The algebraA Fer of fermionic observables is
+given by the (self-adjoint) polynomials in the creation and annihilation operators. A simple
+example is the number operator,
+N=
+∑
+i∈ΓL
+∑
+η=↑↓
+a+
+i,ηa−
+i,η.(2.3)
+The parity automorphismPofA Fer is defined by
+P(O) = (−1)N O(−1)N .(2.4)
+Being an involution, the eigenvalues ofPare±1. We denote byA +
+Fer the algebra of poly-
+nomials which are even underP(eigenvalue +1) and byA −
+Fer the set of the polynomials
+that are odd underP(eigenvalue−1). In the following, we shall always consider physical
+observables that belong to the even subalgebraA +
+Fer. In other words, all physical fermionic
+observables we shall consider in the following satisfy the globalZ 2-symmetry:
+O=P(O).(2.5)
+Even fermionic observables display the following locality property. Given two non-intersecting
+subsetsX,Y⊂V(ΓL), then any pair of fermion-even observablesO X andO Y localized in
+XandY, satisfy:
+[OX,OY ] = 0.(2.6)
+8
+A simple example of fermionic Hamiltonian acting onF L is the tight binding model:
+HFer =−t
+∑
+i,j∈ΓL:
+(i,j)∈E(ΓL)
+∑
+η=↑,↓
+(a+
+i,ηa−
+j,η+ h.c.) +m
+∑
+i∈ΓL
+∑
+η=↑,↓
+(−1)i1+i2ni,η
++U
+∑
+i∈ΓL
+(
+ni,↑−1
+2
+)(
+ni,↓−1
+2
+)
+,
+(2.7)
+wheret,m>0. The first term is the kinetic energy where the hopping is diagonal in spin
+space, the second describes a (staggered) mass, while the last term describes a Hubbard
+interaction.
+Remark 2.1.1. The name mass will be understood when we diagonalize the Hamilto-
+nian in theπ-flux background: the corresponding term opens up a gap between the
+energy bands (seeFigure 1a).
+2. In general, a staggered mass term is only well-defined if the lattice is bipartite. For
+the current square lattice on the torus, this requires the lengthLto be even.
+3. The Hubbard term is a standard, strictly on-site interaction for lattice fermions. Its
+effect will be studied via a convergent cluster expansion, which will allow us to prove
+the stability of all the properties exhibited by the non-interacting system. One of
+the key features of the Hubbard interaction is that it is compatible with reflection
+positivity [50]. As discussed later, see Remark 2.6, our results can be extended in a
+straightforward way to a larger class of interactions, that preserve reflection positivity.
+2.1 Gauging fermion parity
+We now gauge the fermion parity to produce a topologically ordered state of matter. We
+introduce new degrees of freedom on each edge (i,j)∈E(Γ L) of the lattice,H gauge
+ij =
+C[Z2]≃C2, and the total Hilbert space of the gauge sector is
+Hgauge
+ΓL =
+⨂
+(i,j)∈E(ΓL)
+Hgauge
+ij .(2.8)
+Note that we will slighlty abuse notations and often writeijfor an edge — in the present
+case of aZ 2 gauge field, the orientation plays no role. The algebra of pure gauge observables
+is generated by Pauli matrices{ˆσz
+ij,ˆσx
+ij : (i,j)∈E(ΓL)}satisfying the usual algebraic
+relations. They shall be respectively interpreted as a magnetic vector potential and an
+electric field.
+The total Hilbert space for the gauged matter is given by:
+HL =F L⊗Hgauge
+L .(2.9)
+where the tensor product is understood to be symmetric, and, accordingly, the fermionic
+and gauge observables act on each factor independently and they commute. We denote the
+9
+corresponding observable algebra byA, namely, it is the algebra of polynomials in creation
+and annihilation operators and magnetic vector potentials and electric fields. The globalZ 2
+parity transformation is now promoted to a localZ 2-transformation acting on each vertex
+i∈V(ΓL) and edges touching the vertex:
+Definition 2.2(Z 2-charges).For each vertexi∈V(ΓL), we define theZ 2 charge operators
+as:
+Qi =A i(−1)ni,↑+ni,↓,(2.10)
+whereA i =∏
+j:(i,j)∈E(ΓL) ˆσx
+ij.
+i
+Figure 5: The operatorA i acts on all edges corresponding to the lattice sitei∈ΓL.
+The charge operators are unitary and self-adjoint. They mutually commute. Moreover,
+∏
+i∈ΓL
+Qi = (−1)N.(2.11)
+It follows in particular that spec(Q i) ={±1}. The operatorQi implements the following
+local gauge transformation:
+Qiˆσz
+klQi =
+{
+−ˆσz
+kl if eitherkorl=i
+ˆσz
+kl otherwise. (2.12)
+Qiˆσx
+klQi = ˆσx
+kl (2.13)
+Qia±
+kQi =
+{
+−a±
+k ifk=i
+a±
+k otherwise. (2.14)
+If we denote byQ={Qi :i∈ΓL}, we have the following:
+Definition 2.3(Physical observables).The algebra of physical observables is the commu-
+tantC A(Q)ofQ.
+In other words, the physical observables (such as the Hamiltonian) are those that commute
+with anyZ 2-charge operator. We now define ‘string observables’ associated with chains
+and cochains (see Appendix A for notations and basic definitions of cellular homology and
+10
+cohomology):
+ˆZ:C 1(ΓL)→A(2.15)
+C↦→ˆZC =
+∏
+(i,j)∈C
+ˆσz
+ij (2.16)
+ˆX:C 1(Γ∗
+L)→A(2.17)
+C∗↦→ˆXC∗=
+∏
+(i,j)∩C∗̸=∅
+ˆσx
+ij (2.18)
+These maps are group homomorphisms
+ˆZC1+C2 = ˆZC1
+ˆZC2, ˆXC∗
+1+C∗
+2 = ˆXC∗
+1
+ˆXC∗
+2 (2.19)
+where the addition in the chain group is understood to be mod 2. This implies that, if
+C∈B1(ΓL), namelyC=∂ ∑
+ipi for somep i∈F(ΓL), and likewise ifC ∗∈B1(Γ∗
+L), namely
+C∗=∂∑
+ip∗
+i for somep ∗
+i∈F(Γ∗
+L), then:
+ˆZC =
+∏
+pi∈F(ΓL)
+C=∂
+∑
+ipi
+ˆZ∂pi, ˆXC∗=
+∏
+i∈V(ΓL)
+C∗=∂
+∑
+ip∗
+i
+Ai (2.20)
+where we identified a facep∗of the dual lattice with a vertexiof the primal one and noted
+that ˆXp∗=A i, see Figure 5. If we denote
+Bp =
+∏
+(j,l)∈∂p
+ˆσz
+jl (2.21)
+the magnetic field operator of the plaquettep, we have that ˆZ∂p=B p:
+p
+Figure 6: The magnetic field operatorB p associated with a plaquettep.
+The ‘electric’ string operators ˆXC∗∈CA(Q) are physical observables for anyC ∗∈C1(Γ∗
+L).
+For the ‘magnetic’ ones, this is the case only for cycles, namely ‘closed loop’:
+C∗∈C1(Γ∗
+L) =⇒ ˆXC∗∈CA(Q).(2.22)
+C∈Z1(ΓL) =⇒ ˆZC∈CA(Q),(2.23)
+These observables will play an important role in the following.
+11
+Since all the charges mutually commute and their spectrum is{±1}, the total Hilbert space
+HL can be written as a direct sum of supersection sectors, labeled by the simultaneous
+eigenvalues{qi}of allQi operators:
+HL =
+⨁
+¯q∈{±1}ΓL
+H¯q
+L.(2.24)
+Remark 2.4.1. Any supersection sectorH ¯q
+L can be obtained from the total Hilbert space
+HL by acting with a projector:
+H¯q
+L =
+⨂
+i∈ΓL
+( 1+q iQi
+2
+)
+HL.(2.25)
+Indeed,|Ψ⟩=1
+2(1+qQ)|Ψ⟩impliesQ|Ψ⟩=q|Ψ⟩sinceq2 = 1.
+2. By definition, physical observables leave every superselection sector invariant. IfO∈
+CA(Q), then for any|Ψ⟩∈H¯q
+L and anyi∈ΓL,
+QiO|Ψ⟩=OQi|Ψ⟩=qiO|Ψ⟩.(2.26)
+In other words, the algebraC A(Q)decomposes into irreducible blocks labeled by¯q.
+We now define the sector that can be interpreted as that of states without background
+charges.
+Definition 2.5(Gauss’ law).A state|Ψ⟩∈HL satisfies Gauss’ law if|Ψ⟩∈H¯1
+L, namely
+Qi|Ψ⟩=|Ψ⟩for alli∈ΓL. We shall denote itH phys and refer to it as the physical Hilbert
+space.
+We note that if|Ψ⟩satisfies Gauss’ law, then
+Ai|Ψ⟩= (−1)ni,↑+ni,↓|Ψ⟩(2.27)
+for alli∈ΓL.
+Finally, the gauging procedure is completed by prescribing a gauge-invariant Hamiltonian
+obtained by (2.7) by a lattice analogue of the minimal-coupling procedure:
+H=−t
+∑
+i,j∈ΓL:
+(i,j)∈E(ΓL)
+∑
+η=↑,↓
+(a+
+i,ηˆσz
+ija−
+j,η+ h.c.) +m
+∑
+i∈ΓL
+∑
+η=↑,↓
+(−1)i1+i2ni,η
++U
+∑
+i∈ΓL
+(
+ni,↑−1
+2
+)(
+ni,↓−1
+2
+) (2.28)
+Remark 2.6.1. This Hamiltonian is a spinful-fermion analogue of the one studied
+in[32]with the addition of a mass term for the fermions and of a Hubbard-like inter-
+action term. One could have as well added an additional pure gauge term:
+H gauge =λ
+∑
+p∈F(ΓL)
+Bp ; (2.29)
+12
+as we will see, the kinetic term of the model is minimized by aπ-flux background, while
+the pure gauge term is minimized by a0-flux background, introducing an energetic
+competition between the two terms. However, using the methods described in[32],
+one can prove that, forλ≪t, such term would not affect the low-energy physics and
+for that reason it will not be considered it in this work.
+2. Due to the Gauss’s Law constraint, the Hubbard term can be thought as a star operator.
+Indeed:
+Ai = (−1)ni,↑(−1)ni,↓= (1−2ni,↓)(1−2ni,↑) = 4
+(
+ni,↑−1
+2
+)(
+ni,↓−1
+2
+)
+(2.30)
+Thus, we can interpret our model as the coupling of the Toric Code with a system of
+lattice fermions, in the absence of background charges.
+3. Our results can be extended to a larger class of interactions that are compatible with
+reflection positivity [50, 53], see Section 4.4.1. For example, repulsive nearest-neighbor
+interactions:
+w
+∑
+i,j∈ΓL:
+(i,j)∈E(ΓL)
+(
+ni−1
+2
+)(
+nj−1
+2
+)
+.(2.31)
+Forw >0, this interaction term is compatible with reflection positivity [50]. More
+generally, one can allow for two-body interactions of the form [50]:
+∑
+i,j∈ΓL
+i̸=j
+Vij
+(
+ni−1
+2
+)(
+nj−1
+2
+)
+where the matrixV∈M|ΓL|(C)is (semi)-positive definite. In particular, if we restrict
+to the case of translationally invariant interactions, meaning that there exists some
+functionv: Γ L→R(withv(0) = 0) such thatV ij =v(|i−j|), the positivity condition
+is implied by pointwise positivity ofˆv(k). Physically relevant cases compatible with
+reflection positivity are the Coulomb potential and the Yukawa potential. In order to
+ensure the convergence of the cluster expansion, used in particular to prove the stability
+of the spectral gap, we need to assume summability of the interaction potential, see
+e.g. [28, 15].
+Finally, if we letQ Λ =∏
+i∈ΛQi for any Λ⊂ΓL, then
+QΛHQΛ =H.(2.32)
+Indeed,Q Λ = (−1)NΛ ˆX∂Λso thatQ Λ commutes with all terms that are supported either
+completely inside or completely outside of Λ. For those hopping terms on the boundary
+both the gauge term and the fermionic term yield a negative sign, so they commute as well.
+For later purposes, we note that this gauge invariance can also be written as
+AΛHAΛ = (−1)NΛH(−1)NΛ (2.33)
+13
+ˆσx
+ij
+C∗
+ˆXC∗
+p1
+p2
+ˆXC∗
+p
+Bp
+Ω
+∂Ω =C
+ˆZC
+C
+ˆZC
+Figure 7: Graphical representation of operators introduced in Example 2.7.
+Example 2.7.We conclude this section with a brief discussion of physical pure gauge
+observables. SeeFigure 7.
+1. Any polynomial in the electric field operators is gauge invariant. This includes the
+operatorsˆσx
+ij themselves, but also the string operators ˆXC∗for any co-chainC ∗∈
+C1(Γ∗
+L). If∂C∗={p1,p2}is made up of just two plaquettesp1,p2, we shall refer to
+ˆXC∗as the (bare) monopole pair creation operator. If∂C∗=∅, namelyC∗is a cycle
+in the dual lattice, the operator ˆXC∗is called the ’t Hooft magnetic loop operator.
+2. The observables ˆZC are gauge-invariant only if∂C=∅. In this case, ˆZC measures
+theZ 2 magnetic flux piercing the pathCand thus, forC∈B 1(ΓL), namelyCis a
+contractible path, the number (mod2) of monopoles in the interior of the path.
+3. We have already introduced the elementary star operatorsA i and plaquette operators
+Bp and pointed out their relation to the loop operators. We further note that, on the
+torus, ∏
+p∈F(ΓL)
+Bp =1=
+∏
+i∈V(ΓL)
+Ai.(2.34)
+2.2 Properties of the Hamiltonian
+Let us review some useful properties of the Hamiltonian (1.1) which have been extensively
+discussed and proved in [32] (and references therein). The HamiltonianHcommutes with
+any ˆσz
+ij operator, namely theZ 2-gauge field background is frozen, so the total Hilbert space
+14
+HL, see (2.9), splits into a direct sum over common eigenvalues of{ˆσz
+ij}:
+HL =
+⨁
+σ
+Hσ (2.35)
+whereH σ =F L⊗|σ⟩⟨σ|. The HamiltonianHfibers over the background sectorsHσ as
+H= ⨁
+σH(σ), where
+H(σ) =−t
+∑
+i,j∈ΓL:
+(i,j)∈E(ΓL)
+∑
+η=↑,↓
+a+
+i,ησz
+ija−
+j,η+ h.c. +m
+∑
+i∈ΓL
+(−1)i1+i2ni
++U
+∑
+i∈ΓL
+(
+ni,↑−1
+2
+)(
+ni,↓−1
+2
+) (2.36)
+acts on a copy of the fermionic Fock space. Note that we have dropped the hat on ˆσ z,
+meaning that we are substituting the operator with its eigenvalues: we can think of a
+background in each fixed sector as a classicalZ 2 gauge field.
+Fixing the backgroundσdetermines the value of the pure gauge partA i of the chargesQ i.
+There is however a large redundency in doing so since the action of anyA i will trivially not
+change the charge but flips the value of all fourσ’s around the sitei. In other words, two
+backgrounds are gauge equivalent if there exists a subset Λ⊂Γ such that:
+AΛ|σ⟩=
+∏
+i∈Λ
+Ai|σ⟩=
+⏐⏐σ′⟩
+(2.37)
+Two gauge equivalent backgrounds yields unitary equivalent Hamiltonians since
+H(σ′) =⟨σ′|Hσ′⟩=⟨σ|AΛHAΛ σ⟩= (−1)NΛH(σ)(−1)NΛ,(2.38)
+see (2.33).
+Spectral properties depend thus only on the gauge equivalence class [σ] of a given back-
+groundσ. Since the group generated by{A i :i∈ΓL}is isomorphic to the group of
+1-boundaries, see (2.19), we have that each equivalence class has 2 |ΓL|−1elements (the−1
+arising from (2.34)). Since the action of anyA i does not change the flux on any pla-
+quette, gauge equivalence classes are completely characterized by assigning a flux±1 to
+each plaquette, yielding 2|ΓL|−1choices again by (2.34), and to two representatives of non-
+contractible cycles of the torus. There are therefore 2 |ΓL|+1classes. One checks that this
+counting yields a total of 22|ΓL|= 2|E(ΓL)|background configurations, as one should expect.
+In the following, we refer to a plaquettepsuch that ∏
+(i,j)∈∂pσz
+ij =−1 as carrying aπ-flux,
+while a plaquette such that ∏
+(i,j)∈∂pσz
+ij = 1 will be said to carry no flux, or a 0-flux. One
+may ask which sector [σ] corresponds to the lowest energy. It was proved by Lieb [50] and
+subsequently refined in [53] that the energy-minizing sector is theπ-flux sector. Moreover,
+the magnetic monopoles (namely, 0-flux plaquettes) are massive excitations [32]. More
+precisely, ifσis a background with 2k0-fluxes, then the ground state energyE 0,L(σ) of
+H(σ) (atm= 0) satisfies the following bound:
+E0,L(σ)≥2k∆ +E0,L(−1) (2.39)
+15
+whereE 0,L(−1) is the ground state energy of the Hamiltonian with all holonomies set to−1
+(namely theπ-flux Hamiltonian with antiperiodic boundary conditions in both directions)
+and ∆>0 is an explicit constant.
+Within theπ-flux phase, explicit diagonalization shows a gapless spectrum with two Dirac
+cones. Other choices of holonomies correspond to ground state energies that differ from
+E0,L(−1) by corrections that vanish asL→∞, as an inverse power law.
+We will show below that the mass term considered in the present paper opens a gap in the
+fermionic excitation spectrum within theπ-flux phase, see Figure 1a, thus yielding a fully
+gapped theory. That the analysis remains possible hangs on the fact that a staggered mass
+does not spoil reflection positivity.
+3 Results
+3.1 Spectral structure of the model and local topological order
+From now on, we shall refer to afluxfor plaquettes and more generally (contractible)
+boundaries and aholonomyfor (non-contractible) cycles that are not boundaries. For
+any configurationσ, we can add additonal holonomies (e iθ,eiϕ)∈U(1)×U(1) with the
+replacementσz
+ij→σz
+ijeiθ, respectivelyσz
+ij→σz
+ijeiϕ, along any two non-homologous cocycles
+that are not coboundaries. We denote the corresponding HamiltonianH(σ,e iθ,eiϕ), and
+we shall denote byE 0,L(σ,eiθ,eiϕ) its ground state energy which can be expressed as
+E0,L(σ,eiθ,eiϕ) =−lim
+β→∞
+1
+βlog trFLe−βH(σ,eiθ,eiϕ).(3.1)
+Theorem 3.1(Spectral structure of the model).LetL∈4N. For|U|small enough
+uniformly inLthe following is true.
+1. For any holonomies(e iθ,eiϕ)∈U(1)×U(1), the ground state ofH(−1,eiθ,eiϕ)on
+FL is unique and it is at half-filling.
+2. There exist constantsC,c >0depending ont,m,but not on the size of the system,
+for which: ⏐⏐⏐E0,L(−1,eiθ,eiϕ)−E0,L(−1,eiθ′
+,eiϕ′
+)
+⏐⏐⏐≤CL2e−cL.(3.2)
+3. Letσbe a background with2k0-fluxes and holonomies(e iθ,eiϕ)∈U(1)×U(1). Then,
+there is a constant∆ β,L>0, depending ont,m,U, such that:
+−1
+βlog
+(
+trFL(e−βH(σ,eiθ,eiϕ))
+)
+≥2k∆β,L−1
+βlog
+(
+trFL(e−βH(−1,−1,−1))
+)
+.(3.3)
+The constant∆ β,Lis given by:
+∆ β,L=−1
+βL2 max
+(a,b)∈Z2×Z2
+log
+( trFLe−βH(σ∗,a,b)
+trFLe−βH(−1,−1,−1)
+)
+= ∆∞+o(1) (3.4)
+16
+Figure 8: The flux configuration corresponding toσ ∗is that of a lattice of monopoles, rep-
+resented here in white, carved on the uniform background ofπ-fluxes, the dark plaquettes.
+asβ,L→∞, where∆∞>0. Here,σ ∗is a particular the chessboard flux configura-
+tion (seeFigure 8) with holonomies(a,b)∈Z2×Z2. In particular, asβ→∞:
+E0,L(σ,eiθ,eiϕ)≥2k∆L +E 0,L(−1,−1,−1) (3.5)
+where∆ L = ∆∞+oL(1).
+In other words, the global ground state lies inπ-flux sector, and monopoles are again
+massive, as in the casem= 0, provided|U|is small enough uniformly in the system’s size
+(but nonuniformly inm). These results are closely related to [32, Theorem 2.12]. While
+the monopoles were already shown to be massive there, the presence of the fermionic mass
+term in the Hamiltonian (i) yields a global spectral gap above the ground state energy, and
+(ii) causes the splitting (3.2) of the ground state energies to be exponentially small in the
+system size (rather than power law, as in [32]), and indeed the proof will show thatc→0
+asm→0, see (4.21).
+We now turn to the ground states and the spectral gap within theπ-flux sector.
+Theorem 3.2(Ground state topological order).LetL∈4N, and let|U|be small enough
+so that∆ ∞>0. LetPbe the projection onto the span of the four states
+|Ωab⟩=1
+N
+∏
+i∈V(ΓL)
+(1 +Qi
+2
+)
+|ψ−1,a,b⟩⊗|−1,a,b⟩,(a,b)∈Z2×Z2,(3.6)
+where|ψ−1,a,b⟩is the ground state of the fermionic HamiltonianH(−1,a,b)onFL, andN
+is a normalisation factor. Then:
+1. Letg L = inf Spec(P⊥HP⊥)−sup Spec(PHP). Then
+gL≥min{2δL,2∆L}−CL2e−cL (3.7)
+whereδL≥m−C|U|1/3.
+17
+2. For any fixed gauge-invariant observableO, there are constantsC,c>0such that
+⏐⏐⏐⏐⟨Ωab|OΩa′b′⟩−δaa′δbb′
+Tr(PO)
+Tr(P)
+⏐⏐⏐⏐≤COe−cL.(3.8)
+In2.above, a ‘fixed’ observable is meant in the following sense. The tori Γ L are identi-
+fied with squares [−L/2,L/2]×[−L/2,L/2] (recall thatL∈2N) with periodic boundary
+conditions. There isL 0 such thatO∈AL0 and thereforeO∈AL for allL≥L0 using the
+natural embeddingA L0 ↪→AL given by tensoring with the identity. One may also call such
+an observable a ‘local’ observable, since its distance to the boundary of the cut torus is of
+orderL.
+We note that by Theorem 3.1 - item 2, the vectors|Ωab⟩correspond to an almost degenerate
+eigenvalue. From now on, we shall refer toPas theground state projectionand the theorem
+shows thatPisgapped, this is equation (3.7), andtopologically ordered, which refers to the
+property (3.8). The ground state energy is (almost) fourfold degenerate and isolated from
+the rest the spectrum by a gap, which remains open in the infinite-volume limit. This
+degeneracy is not associated with a local order parameter since all local observables are
+multiples of the identity when restricted to the ground state space. In order to have a
+concrete picture in mind, we draw in Figure 9 below one representative of ([−1],a,b) for
+all choices (a,b). Here, [−1] is the equivalence class ofπ-flux backgrounds.
+(1,1) (−1,1)
+C∗
+2
+(−1,−1)
+C∗
+2
+C∗
+1
+(1,−1)
+C∗
+1
+Figure 9: A representative [−1] for all possibleπ-flux backgrounds, forL= 4. A thick line
+represents an edge withσz
+ij =−1, while thin lines correspond toσz
+ij = 1.
+Remark 3.3.1. The spectral gapg L above the ground state energy is twice the minimum
+of the (renormalized) monopole mass∆ L and of a quantityδL, which plays the role
+of renormalized mass for the fermions. For|U|small enough, it is strictly positive
+for allLlarge enough. While the former quasi-particles are neutral, the latter are
+charged. Following[46](and the vast literature therein on gaps in the quantum Hall
+and anomalous Hall effect) one may ask for the relationship between the two gaps.
+The exact expression(4.86)in the non-interacting limitU= 0indicates a crossover
+in our model (seeFigure 10): while the monopole mass remains finite asm→0,
+see[32],∆ ∞→0asm→∞since the three terms of(4.86)cancel out in the limit.
+18
+This is not in contradiction with[46]since our model does not have an analog of the
+dipole symmetry.
+2. Unlike in the toric code, the mapC↦→ ˆZC does not descend toH 1(Γ). Indeed, the
+conditionB p =−1for any plaquettepmeans that theZ 2 background is not flat:
+ground states have different eigenvalues with respect to ˆZC and ˆZC+∂Λsince
+ˆZC+∂Λ|Ωab⟩= (−1)|Λ|ˆZC|Ωab⟩.(3.9)
+As pointed out in[14], anyπ-flux background defines in a canonical way a spin struc-
+ture on the torus. The spin structure space on a given Riemann surfaceΣ g is an
+affine space whose translation space is given byH 1(Σg,Z2): in other words, any two
+spin structures differ by aZ 2 flat connection. Similarly, here two ground state back-
+grounds differ by the insertion of aZ 2 holonomy around a non-contractible cycle, but
+it cannot be defined as the background with a given parallel transport independently
+on the choice of the representative of the homology cycle.
+Figure 10: Crossover between the monopole and the fermion mass gap (in the thermody-
+namic limit) as a function ofmfor 0≤m≤1.5 andt= 1,U= 0. See Figure 17 for the
+behavior of ∆ ∞(m) for a larger range ofm.
+3.2 Loop operators and braiding properties
+We have established that the Hamiltonian has a gapped, topologically ordered ground
+state space. The elementary excitations come in two types: magnetic monopoles obtained
+by carving out a 0-flux in the uniformπ-flux background on the one hand, and fermionic
+excitations upon the half-filled fermionic ground state.
+We now turn to adiabatic insertion of a flux or a holonomy through the system. We rely
+on Hastings’ quasi-adiabatic evolution [9, 35] used in a general context of flux threading
+in [6, 8]. This will allow us to describe the mapping of different ground states onto each
+other. As is typical in the presence of anyons, this is closely related to the process of
+creating a pair of monopoles, moving one of them along a non-contractible loop and fusing
+them back again cycles through the ground states.
+The intersection numberIbetween two edgese∈E(Γ L) ande ∗∈E(Γ∗
+L) is the map:
+I: E(Γ L)×E(Γ∗
+L)→{−1,0,1}(3.10)
+19
+defined by the convention in Figure 11. The intersection number can then be extended to
+e∗
+e
+I(e,e∗) = +1
+e∗
+e
+I(e,e∗) =−1
+e∗
+e
+I(e,e∗) = 0
+Figure 11: Convention for the definition of the intersection number.
+a map onC 1(ΓL)×C1(Γ∗
+L) by adding up the contributions coming from every single edge.
+Let nowC∗∈Z1(Γ∗
+L). The twisted Hamiltonian is defined as (see Figure 12):
+HC∗(ϕ) =−t
+∑
+(i,j)∈E(ΓL)
+∑
+η=↑,↓
+(
+e−iϕI[(i,j),C∗]a+
+i,ηˆσz
+ija−
+j,η+ h.c.
+)
++m
+∑
+i∈ΓL
+(−1)|i1+i2|ni (3.11)
++U
+∑
+i∈ΓL
+(
+ni,↑−1
+2
+)(
+ni,↓−1
+2
+)
+.(3.12)
+As we shall see later, see Lemma 6.1, the flowH↦→HC∗(ϕ) is just a unitary transformation
+wheneverC ∗=∂Λ is a trivial cocycle, namely it is a coboundary. As such, it does not
+affect the spectrum. The case of a non-trivial cocycleC ∗is different and it is described by
+Theorem 3.7: the ground state manifold undergoes a non-trivial spectral flow, along which
+the spectral gap does not close. This ‘parallel transport’ of the ground state space is given
+by a unitary propagator, see (3.15, 3.16) below, generated by the so-called quasi-adiabatic
+generator.
+Definition 3.4(Quasi-adiabatic generator).LetC ∗∈Z1(Γ∗
+L). The quasi-adiabatic gener-
+atorK C∗is the family
+KC∗(ϕ) =τϕ
+f
+(
+˙HC∗(ϕ)
+)
+=
+∫
+R
+f(s)eisHC∗(ϕ)˙HC∗(ϕ)e−isHC∗(ϕ)ds,(3.13)
+C∗
+Figure 12: Graphical representation of twisting the hamiltonian inserting a fluxϕinside
+C∗, oriented counterclockwise. Each bold edge is twisted with a phase of e −iϕ.
+20
+wheref∈L∞(R)such that∥f∥L1 = 1, ˆf(ω) = 1
+iωfor|ω|> gand|f(t)|≤Ck
+1+|t|k for any
+k∈N. Heregis gap ofH, see(3.7).
+Remark 3.5.By definition, the operator ˙HC∗(ϕ)is supported on the edges intersectingC∗.
+With this, it is a standard argument thatK C∗(ϕ)is almost supported onC ∗in the sense
+thatK C∗(ϕ)can be approximated by an observable stricly supported on a ribbon of widthR
+aroundC∗, with an errorO(R −∞). Indeed, this is true fore isHC∗(ϕ)˙HC∗(ϕ)e−isHC∗(ϕ)for
+timessof order1by the Lieb-Robinson bound, while the contribution to the integral for
+longer times is small by the decay off. We refer to[9, Lemma 4.7]and the review[55]for
+additional details on the Lieb-Robinson bound and the spectral flow and to[6]specifically
+for the locality ofK C∗(ϕ).
+Besides its locality, the operatorK C∗(ϕ) generates a parallel transport on the bundle of
+ground state projectionsP C∗(ϕ) ofHC∗(ϕ):
+˙PC∗(ϕ) = i[KC∗(ϕ),PC∗(ϕ)] (3.14)
+provided the spectral gap remains open, see [9, Proposition 2.4]. This is a consequence of
+the more general fact that the mapO↦→τϕ
+f (O) is an inverse of−i[HC∗(ϕ),O] on the set of
+off-diagonal operatorsO=POP ⊥+P⊥OP, applied here toO= ˙PC∗(ϕ).
+Let nowV C∗(ϕ) be the solution of
+−i˙VC∗(ϕ) =KC∗(ϕ)VC∗(ϕ) (3.15)
+such thatV C∗(0) =1. It is the propagator of parallel transport, namely
+PC∗(ϕ) =VC∗(ϕ)PC∗(0)VC∗(ϕ)∗.(3.16)
+Definition 3.6(Loop Operators).LetC ∗∈Z1(Γ∗
+L). We define
+WC∗= ˆXC∗VC∗(π).(3.17)
+Theorem 3.7(Braiding).Under the same assumptions of Theorem 3.2 the following is
+true. Let{|Ωab⟩: (a,b)∈Z2×Z2}be the four ground states of Theorem 3.2, letPab be the
+corresponding orthogonal projectors, and letP= ∑
+(a,b)∈Z2×Z2Pab.
+1. For anyC ∗∈Z1(Γ∗
+L)
+[WC∗,P]L= 0.(3.18)
+where L=means that the equality holds up to terms that are smaller, in operator norm,
+than any power of the system size.
+2. For anyC∈Z1(ΓL),C∗∈Z1(Γ∗
+L),
+ˆZCWC∗= eiπI(C,C∗)WC∗ˆZC.(3.19)
+21
+3. If{0,C∗
+1,C∗
+2,C∗
+1 +C∗
+2}are representatives of each of the cohomology classes, then
+Pa′b′(WC∗
+1)p1(WC∗
+2)p2 L= (WC∗
+1)p1(WC∗
+2)p2Pab,(3.20)
+wherea′= (−1)p1a,b′= (−1)p2b, for anyp 1,p2∈Z.
+4. For any(a,b),
+(WC∗
+1)∗(WC∗
+2)∗WC∗
+1WC∗
+2|Ωab⟩L=|Ωab⟩.(3.21)
+5. Leti,j∈Λbe such thatdist(i,j)is of orderLand letC i,j∈C1(ΓL)be a1-chain
+such that(i,j) =∂Ci,j. Denote
+⏐⏐⏐ξij
+ab
+⟩
+=N−1a+
+i ˆZCi,ja+
+j |Ωab⟩, whereN−1ensures that
+∥ξij
+ab∥=∥Ωab∥. Then
+⟨ξij
+ab|WC∗ξij
+ab⟩
+⟨Ωab|WC∗Ωab⟩
+L=−1 (3.22)
+whereC∗is the circle of radius 1
+2dist(i,j)centred ati.
+With topological order, all local observables act trivially on the ground state space. The
+theorem item 3 above exhibits the only non-trivial, necessarily global, observables, namely
+the large loop operatorsW C∗
+j,j= 1,2. When the loops are opened up, a string operatorWC∗
+creates a pair of monopoles while a string operatora +
+i ˆZCi,ja+
+j creates a pair of fermions at
+their endpoints, and item 5 shows explicitly that they are mutual anyons, see again Figure 3.
+The commutation (3.21) is independent of any choice of phases in the definition of the loop
+operators or ground state vector: It proves that monopoles are, as expected, bosons.
+For any even local observableOsupported away from sitesiandj,
+⟨ξij
+ab|Oξij
+ab⟩≃⟨Ωab|OΩab⟩(3.23)
+up to errors that decay superpolynomially in the distance between the support ofOand
+the sitesi,j, and in the system sizeL. This should be interpreted as the fact that|ξij
+ab⟩
+describes (fermionic) excitations that are localized at the sitesi,j. In order to derive (3.23),
+we first note that for any path ˜Cij fromitojand such thatC ij−˜Cij is a boundary,
+ZCijΩab =zZ ˜CijΩab (3.24)
+where|z|= 1 and it depends on the paths. IfOis a local observable, we can pick˜Cij that
+lies away from its support. The corresponding string operator then commutes withOand
+so
+⟨ξij
+ab|Oξij
+ab⟩=N−2⟨Ωab|ajaiOa+
+i a+
+j Ωab⟩.(3.25)
+IfOis even, then⟨Ω ab|ajaiOa+
+i a+
+j Ωab⟩=⟨Ωab|Oajaia+
+i a+
+j Ωab⟩. Since the spectral gap
+implies fast decay of correlations [8, Appendix A] andOis supported away from the sites
+i,j,
+⟨ξij
+ab|Oξij
+ab⟩≃N−2⟨Ωab|OPajaia+
+i a+
+j Ωab⟩(3.26)
+22
+up to an error that decays with the distance between the support ofOand{i,j}. Finally,
+local topological order implies thatPcan be replaced by the one-dimensional projection
+onto the range of Ω ab up to an error that decays fast inL, namely
+⟨ξij
+ab|Oξij
+ab⟩≃N−2⟨Ωab|OΩab⟩∥a+
+i a+
+j|Ωab⟩∥2.(3.27)
+This is the claim since the last factor is equal toN 2.
+Overall, the model has the full toric code structure. If we letmdenote a monopole excitation
+andϵdenote a fermionic excitation, thenm×m= 1 =ϵ×ϵ, where 1 denotes the vacuum.
+Moreover, the composite particlee=m×ϵis a boson, and the braiding ofewithmyields
+again−1. Although our model is fundamentally fermionic, it therefore exhibits the exact
+toric code topological order, unlike the fermionic model proposed in [33]. It is a fermionic
+reflection positive representative of the toric code phase, see the discussion in [59].
+4 Proof of Theorem 3.1
+4.1 Proof of Theorem 3.1 - item 1: non-interacting fermions
+We start by diagonalizing theπ-flux Hamiltonian atU= 0 with (1,1) holonomies. A
+particularly simple gauge field configuration associated with this phase is represented in
+Figure 13. Clearly, the corresponding Hamiltonian is not translationally invariant with
+respect to all lattice translations. In order to recover translation invariance, we introduce
+the appropriate fundamental cell formed by four lattice sites, labelled byA,B,C,D, as in
+Figure 13. The position of the cell is defined by the coordinate of theB-lattice site. We
+shall denote by Γred
+L the two-dimensional lattice formed by the positions of the fundamental
+cells. The lattice spacing between nearest-neighbour fundamental cells in Γ red
+L is 2 in both
+directions.
+For vanishing Hubbard interaction, the spin does not play any role and we discuss the
+computation in the spinless case. If spin was included, all energy levels would simply be
+doubly degenerate.
+Using these coordinates described in Figure 13, the Hamiltonian can be rewritten as:
+H(−1; 1,1) =−t
+∑
+x∈Γred
+L
+(
+a+
+B,xa−
+A,x+a +
+B,xa−
+C,x+a +
+A,xa−
+B,x+2e2−a+
+A,xa−
+D,x (4.1)
+−a+
+D,xa−
+A,x+2e1 +a +
+D,xa−
+C,x+2e2 +a +
+C,xa−
+D,x+a +
+C,xa−
+B,x+2e1 + h.c.
+)
+(4.2)
++m
+∑
+x∈Γred
+L
+(nA,x+nC,x−nB,x−nD,x).(4.3)
+The Brillouin zoneB L(1,1) is defined as
+23
+B
+A
+C
+D
+Figure 13: On the left, graphical representation of the gauge field configurations associated
+with the (1,1)πflux phase. The thin bonds correspond toσz = +1, while the solid bonds
+correspond to spinσz =−1. On the right, definition of the fundamental cell.
+BL(1,1) :=
+{
+k∈2π
+L (n1,n2)|0≤n1≤L/2−1,0≤n2≤L/2−1
+}
+,(4.4)
+and the momentum-space creation/annihilation operators as:
+ˆa±
+α,k=
+∑
+x∈Γred
+L
+e±ik·xa±
+α,x⇐⇒a±
+α,x= 1
+|Γred
+L |
+∑
+k∈BL(1,1)
+e∓ik·xˆa±
+α,k,(4.5)
+forα∈{A,B,C,D}. The Hamiltonian (4.3) becomes:
+H(−1; 1,1) =1
+|Γred
+L |
+∑
+k∈BL(1,1)
+(ˆa+
+k,h(k)ˆa−
+k ),(4.6)
+where (f,g) =∑
+αfαgα, and the Bloch Hamiltonianh(k) is given by
+h(k) =
+
+
+m−t(1 +e 2ik2) 0t(1 +e −2ik1)
+−t(1 +e−2ik2)−m−t(1 +e −2ik1) 0
+0−t(1 +e 2ik1)m−t(1 +e −2ik2)
+t(1 +e 2ik1) 0−t(1 +e 2ik2)−m
+
+.(4.7)
+The above Bloch Hamiltonian coincides with the one found in [52]. Its (doubly degenerate)
+eigenvalues are
+e±(k) =±2t
+√(m
+2t
+)2
++ 1 + 1
+2 cos(2k1) + 1
+2 cos(2k2),(4.8)
+and they vanish nowhere in the Brillouin zone wheneverm̸= 0 (see Figure 14), leaving a
+gap equal to 2m. The ground state of the system is the Slater determinant obtained by
+occupying all the Bloch states below energy zero. Since the cardinality of Brillouin zone is
+equal toL 2/4, see (4.4), the rank of the Fermi projection, namely the number of particles,
+is equal toL 2/2. If the two spin states are reintroduced, the number of particles equalsL 2.
+In both cases, this corresponds to half-filling.
+24
+Figure 14: Energy bands associated with theπ-flux phase with a staggered mass (4.8).
+The case of more general holonomies around non-contractible cycles can be analysed via a
+change of the boundary conditions, and thus of the allowed momenta in the Brillouin zone.
+Namely, the Brillouin zone is given by
+BL(eiθ,eiϕ) =
+{
+k∈2π
+L
+(
+n1 + θ
+2π,n2 + ϕ
+2π
+)
+|0≤n1≤L/2−1,0≤n2≤L/2−1
+}
+.(4.9)
+From there, the discussion proceeds exactly as in the (1,1) case. This concludes the proof
+of Theorem 3.1 - item 1, for non-interacting fermions.
+4.2 Proof of Theorem 3.1 - item 2: non-interacting fermions
+The ground state energy of the system for general holonomies is, using the short-hand
+notationB(θ,ϕ)≡BL(eiθ,eiϕ),E 0(−1,θ,ϕ)≡E0,L(−1,eiθ,eiϕ):
+E0(−1,θ,ϕ) = 2
+∑
+k∈B(θ,ϕ)
+e−(k).(4.10)
+In order to prove the bound (3.2), we will rewrite (4.10) using Poisson’s summation formula:
+1
+L2
+∑
+k∈B(θ,ϕ)
+e−(k) =
+∑
+ℓ1,ℓ2∈Z
+eiθℓ1eiϕℓ2e∞(ℓ1L,ℓ2L) (4.11)
+where
+e∞(ℓ1L,ℓ2L) =
+∫
+T2
+d2k
+(2π)2eik1ℓ1L+ik2ℓ2Le−(k) (4.12)
+is the infinite volume ground state energy density (which is independent of the boundary
+conditions). In this way, we can conveniently rewrite the energy difference as:
+E0(−1,θ1,ϕ1)−E0(−1,θ2,ϕ2) = 2L2 ∑
+(ℓ1,ℓ2)∈Z2\(0,0)
+(eiℓ1θ1+iℓ2ϕ1−eiℓ1θ2+iℓ2ϕ2)e∞(ℓ1L,ℓ2L).
+(4.13)
+Note that theℓ1 =ℓ2 = 0 term vanishes because the exponentials cancel out.
+25
+Proposition 4.1.There exist two constantsC,c>0depending only onmandt, such that
+⏐⏐⏐⏐
+∫
+T2
+d2k
+(2π)2eikxe−(k)
+⏐⏐⏐⏐≤Ce−c(|x1|+|x2|),(4.14)
+Hence, by Poisson summation formula (4.11),
+|E0(−1,θ1,ϕ1)−E0(−1,θ2,ϕ2)|≤4L2 ∑
+(ℓ1,ℓ2)∈Z2\(0,0)
+Ce−c(|ℓ1|+|ℓ2|)L≤KL2e−2cL(4.15)
+uniformly inϕ1,θ1,ϕ2,θ2. This concludes the proof of item 2 of Theorem 3.1 for non-
+interacting fermions. It remains to prove Proposition 4.1.
+Proof.We first note that
+e−(k) = 1
+2 tr(h(k)p−(k)) (4.16)
+where the trace is over the fundamental cell and the factor 2 stands for the rank ofp −(k).
+The Bloch Hamiltonianh(k), which is explicitly given in (4.7), and the ground state pro-
+jectionsp(k) are by definition
+h(k) =
+∑
+x∈Γred
+L
+h(x,0)e−ik·x, p −(k) =
+∑
+x∈Γred
+L
+p−(x,0)e−ik·x,(4.17)
+whereh(x,y),p−(x,y) are the 4×4-matrix-valued functions given by
+H(−1; 1,1) =
+∑
+x,y∈Γred
+L
+(a+
+x,h(x,y)a−
+y ),(4.18)
+see (4.3). With this, the integral (4.14) can be computed as
+∫
+T2
+d2k
+(2π)2 eikxe−(k) = 1
+2
+∑
+y∈Γred
+L
+tr
+(
+h(x−y,0)p−(y,0)
+)
+.(4.19)
+By translation invariance,h(x−y,0) =h(x,y) and it vanishes whenever|x−y|>4.
+Since the Fermi energy lies in a spectral gap, the Riesz formula for the spectral projector
+p−= 1
+2πi
+∫
+γ(h−z)−1dztogether with the Combes-Thomas estimate for the resolvent [1,
+Theorem 10.5] imply:
+|p−(y,0)|≤Ce−c|y|.(4.20)
+This bound combined with the identity (4.19) yield the claim (4.14). Finally, the constant
+C,c >0 can be estimated explicitly in terms of the spectral gap, which is proportional to
+mand the ‘hopping amplitude’tofh(x,y):
+C∝1
+m, c∝m
+t ,(4.21)
+see again [1, Theorem 10.5].
+26
+4.3 Proof of Theorem 3.1 - item 1 and item 2: weakly interacting fermions
+We now extend the results of Subsection 4.1 and Subsection 4.2 to the case of weakly
+interacting fermions. This will be done using fermionic cluster expansion. The method
+provides a convergent expansion for the ground state energy,
+E0(−1,θ,ϕ) =−lim
+β→∞
+1
+βlog trFLe−βH(−1,eiθ,eiϕ) (4.22)
+for|U|small enough, uniformly inL. Inspection of the convergent expansion will allow us
+to prove items 1 and 2 of Theorem 3.1 for weakly interacting fermions. In the context of
+topological phases of matter, these methods have been used in [28] to prove the universality
+of the Hall conductivity. See also [27, 29, 17] for the analysis of Hall transitions, via cluster
+expansion and renormalization group methods. In our setting, inspection of the expansion
+will allow us to prove the exponential closeness of the approximate ground state energies
+(3.2). Furthermore, the same technique allows to prove the stability of the fermionic spectral
+gap, following [15, Theorem 1].
+Analyticity of the free energy.Here we will discuss the convergent expansion for
+the free energy, which will be the starting point for the proofs of item 1 and item 2 of
+Theorem 3.1 for interacting systems. From now on, we shall writeH(−1,eiθ,eiϕ) =H 0 +
+UV+ (U/4)L 2, where:
+H0 =H(−1,eiθ,eiϕ)
+⏐⏐⏐
+U=0
+−U
+2
+∑
+i,σ
+ni,σ, V=
+∑
+i
+ni,↑ni,↓; (4.23)
+observe that we included the interaction-dependent quadratic term due to the presence of
+the−1/2 factors in the Hubbard interaction in the definition of the quadratic Hamiltonian
+H0. The additive constant term in the Hamiltonian does not have any relevance for the
+Gibbs state of the model, and it will be omitted in what follows. The starting point is the
+Duhamel expansion for the free energy:
+trFLe−β(H0+UV)
+trFLe−βH0
+= 1 +
+∑
+n≥1
+(−U)n
+∫ β
+0
+dt1
+∫ t1
+0
+dt2···
+∫ tn−1
+0
+dtn⟨γt1(V)γt2(V)···γtn(V)⟩0
+β,L
+(4.24)
+where⟨·⟩0
+β,Lis the Gibbs state ofH 0 at half-filling, andγt(·) is the imaginary-time evolution,
+γt(V) =e tH0Ve−tH0 .(4.25)
+Eq. (4.24) can be rewritten as:
+trFLe−β(H0+UV)
+trFLe−βH0
+= 1 +
+∑
+n≥1
+(−U)n
+n!
+∫
+[0,β]n
+dt1···dtn⟨Tγt1(V)γt2(V)···γtn(V)⟩0
+β,L
+(4.26)
+27
+whereTis the time-ordering operator. It acts on fermionic monomials as, at non-equal
+times:
+Tγt1(aε1
+i1,σ1)···γtn(aεn
+in,σn) = sgn(π)γt1(a
+επ(1)
+iπ(1),σπ(1)
+)···γtπ(n)(a
+επ(n)
+iπ(n),σπ(n)
+) (4.27)
+whereπis the permutation such thatt π(i)> tπ(i+1). Whenever two times coincide, the
+time-ordering operator acts as normal-ordering. Taking the logarithm of the left-hand side
+and of the right-hand side of (4.26) one gets:
+log trFLe−β(H0+UV)
+trFLe−βH0
+=
+∑
+n≥1
+(−U)n
+n!
+∫
+[0,β]n
+dt1···dtn⟨Tγt1(V) ;γt2(V) ;···;γtn(V)⟩0
+β,L
+(4.28)
+where the argument of the integral is then-th order cumulant. It is well-known that the
+cumulant expansion can be represented as an expansion over connected Feynman diagrams,
+by application of the fermionic Wick’s rule (seee.g.[58] for a review of fermionic pertur-
+bation theory). The main ingredient of the expansion is the fermionic two-point function,
+defined as, for 0≤t,t′<β:
+g((t,i,σ),(t′,i′,σ′)) =⟨Tγt(a−
+i,σ)γt′(a+
+i′,σ′)⟩0
+β,L
+=θ(t>t′)e−(t−t′)h0
+1 +e−βh0
+(i,σ;i′,σ′)−θ(t≤t′)e−(t−t′)h0
+1 +eβh0
+(i,σ;i′,σ′)
+(4.29)
+withh 0 the single-particle Hamiltonian associated withH 0. It is not difficult to see that
+g((0,i),(t′,j)) =−g((β,i),(t′,j)), which allows to extend antiperiodically the two-point
+function to all timestandt ′inR.
+The problem with the naive diagrammatic expansion of (4.28) is that it involves too many
+addends. In fact, the number of diagrams contributing to then-th order grows as (n!) 2,
+which beats the 1/n! in (4.28), and does not allow to prove absolute summability of the
+series. Observe that this apparent factorial divergence of the series is insensitive to the
+fermionic nature of the particles.
+This issue can be avoided using a different expansion, that allows to exploit the anticom-
+mutativity of the fermionic operators. Let us rewrite:
+γs(V) =
+∑
+i
+γt(Vi) withV i =n i,↑ni,↓. (4.30)
+The Battle-Brydges-Federbush (BBF) formula states that:
+⟨Tγt1(Vi1) ;γt2(Vi2) ;···;γtn(Vin)⟩0
+β,L=
+∑
+T
+αT
+[∏
+ℓ∈T
+gℓ
+]∫
+dµT (s) det
+[
+sb(f),b(f′)g(f,f′)
+]
+;
+(4.31)
+see [15, Theorem 6], [30, Appendix D], [26, Appendix A3.2] for reviews, proofs, and further
+references; see also [13, Theorem 4.4] for a recent application in the context of compu-
+tational quantum physics. Let us explain the meaning of the various objects involved in
+the identity (4.31). Every fermionic operator appearing inγt(Vi) is graphically represented
+28
+by an oriented line, which exits or enters a vertex labelled by the space-time coordinates
+(t,i), depending on whether the fermionic operator creates or destroys a particle, respec-
+tively. The lines are further decorated by the spin labels of the corresponding operators.
+In this way, every operatorγt(Vi) is graphically represented by a vertex with four incident
+lines, two incoming and two outgoing. The sum in the right-hand side of (4.31) is over the
+spanning treesTconnecting thenvertices associated with the interaction terms, obtained
+contracting lines with opposite orientations. The pairing of an incoming line associated
+with the vertex (t,i) and of an outgoing line associated with the vertex (t ′,i′), labelled
+respectively by spin labelsσandσ′, forms an edgeℓ= ((t,i,σ),(t′,i′,σ′)). Associated with
+every edge, we have a propagatorg ℓ,
+gℓ≡g((t,i,σ),(t′,i′,σ′)) (4.32)
+as given by (4.29). The product in (4.31) involves the propagators associated with the
+edges of the tree. In the determinant,g (f,f′) is the entry of a (n+ 1)×(n+ 1) dimensional
+matrix representing the contraction of lines that do not belong toT, wherefis the label
+for a generic incoming line, andf ′is the label for a generic outgoing line. From the point of
+view of Feynman diagrams, these are the loop lines. This matrix element is then multiplied
+by a numbers b(f),b(f′) between 0 and 1, an interpolation parameter, whereb(f),b(f′) are
+integers in [1,n], which return the labels of the vertices associated with the linesf,f′. The
+measuredµT (s) is a probability measure, supported on sequencess whose entriess b(f),b(f′)
+can be written as the scalar product of two vectors inR n,u b(f) andu b(f′), with unit norm.
+Finally,αT is either +1 or−1, and it will not play any role in what follows.
+Thus, thanks to the BBF formula (4.31), we have:
+⏐⏐⏐⟨Tγt1(Vi1) ;γt2(Vi2) ;···;γtn(Vin)⟩0
+β,L
+⏐⏐⏐≤
+∑
+T
+[∏
+ℓ∈T
+|gℓ|
+]∫
+dµT (s)
+⏐⏐⏐ det
+[
+sb(f),b(f′)g(f,f′)
+]⏐⏐⏐ ;
+(4.33)
+we will use this bound to show that
+1
+β
+∑
+i1,...,in
+∫
+[0,β]n
+dt
+⏐⏐⏐⟨Tγt1(Vi1) ;γt2(Vi2) ;···;γtn(Vin)⟩0
+β,L
+⏐⏐⏐≤L2Cnn! (4.34)
+an estimate which allows to prove analiticity of the specific free energy (4.28) for small|U|
+(observe that the two-point function depends analytically onU), uniformly inβandL.
+The existence of the limits asβ→∞,L→∞follows from the uniform convergence of the
+series, and from the existence of the pointwise limit of the two-point function, which can
+be proved easily.
+The factorial growth of the bound comes from counting the number of trees connecting
+thenvertices (observe that this number is much smaller than the number ofn-th order
+Feynman diagrams). The proof of (4.34) is a consequence of two main ingredients: a good
+bound for theℓ1 norm of the two-point function, and a good bound for theℓ∞norm of the
+determinant. Let us first discuss the bound for the two-point function. ForLfixed, and for
+anyθ,ϕ, the two-point function associated withH0 can be represented as, using Poisson
+29
+summation formula:
+g((t,i),(t′,i′)) =
+∑
+m1,m2∈Z
+eiθm1eiϕm2g∞((t,i+e1m1L+e 2m2L),(t′,i′)) (4.35)
+wheree 1,e2 is the standard basis ofR 2 andg ∞is the two-point function onZ 2. By the
+spectral gap ofh 0, a standard Combes-Thomas estimate (seee.g.[15, Appendix B]) allows
+to prove that, for allt,t′inRand for alli,i′inZ 2:
+∥g∞((t,i); (t′,i′))∥≤Ce−c∥(t,i)−(t′,i′)∥β (4.36)
+with the time-periodic distance:
+∥(t,i)−(t′,i′)∥2
+β= min
+n∈Z
+|t−t′+nβ|2 +∥i−i′∥2.(4.37)
+Thus, this bound, combined with Eq. (4.35) allows to prove that the finite-volume two-point
+function satisfies the estimate (with different constants):
+∥g((t,i); (t′,i′))∥≤Ce−c∥(t,i)−(t′,i′)∥β,L (4.38)
+with the space-time periodic distance:
+∥(t,i)−(t′,i′)∥2
+β,L= min
+n∈Z
+|t−t′+nβ|2 + min
+n1,n2∈Z
+∥i−i′+n 1e1L+n 2e2L∥2.(4.39)
+This decay estimate immediately implies the finiteness of theℓ 1 norm of the two-point
+function,
+max
+t′,i′
+∫ β
+0
+dt
+∑
+i
+∥g((t,i); (t′,i′))∥≤K(4.40)
+uniformly inβ,L. Let us now discuss the bound for the determinant in (4.33). The key
+tool we shall use is the Gram-Hadamard inequality: ifM= (m ij)1≤i,j≤Kis a Gram matrix,
+that is if all matrix entries are of the formm ij = (ui,wj) foru i,wi in a Hilbert space with
+scalar product (·,·), then:
+|det[M]|≤
+K∏
+i=1
+∥ui∥∥wi∥(4.41)
+with∥·∥the norm induced by the scalar product. This bound is useful if the vectors
+ui andw j have norm independent ofK. It is well-known however that the two-point
+function does not have a good Gram representation, due to the discontinuity of the indicator
+functions in (4.29), introduced by the time-ordering. The easiest way to solve this issue is
+to observe that the two factors multiplying the theta functions in (4.29) do have a good
+Gram representation, separately; seee.g.[16, Lemma 4.1] and [15, Lemma 10]. As shown
+in [16, Theorem 2.4], this fact allows to prove a bound on the determinant in (4.33), of the
+form: ⏐⏐⏐ det
+[
+sb(f),b(f′)g(f,f′)
+]⏐⏐⏐≤Cn (4.42)
+where the constantCdepends on the Hamiltonianh 0 (and it is finite uniformly inβ,L,
+thanks to the spectral gap). Putting together (4.33), (4.40), (4.42), the bound (4.34) easily
+follows.
+30
+Proof of item1of Theorem 3.1.Following [15, Theorem 1], it is known that the
+convergence of the above expansion, combined with the spectral gap of the single-particle
+Hamiltonianh 0, implies that the many-body HamiltonianHhas a spectral gap, bounded
+below by 2m−K|U|1/3 for someK >0, uniformly inL. The same methods allow to prove
+that, for smallU, the many-body ground state is unique and it is at half-filling. These
+claims are true atU= 0, as proved in Subsection 4.1. The uniqueness of the ground state
+follows from the continuity of the eigenvalues of the Hamiltonian as a function ofU, and
+from the stability of the spectral gap forUsmall. Let us now prove that the ground state
+is at half-filling. Since the Hamiltonian commutes with the number operator, the unique
+ground state ofHmust be an eigenstate of the number operatorN. Furthermore, by the
+convergence of the cluster expansion,⟨ψ0,Nψ0⟩is continuous inUfor|U|small (in fact,
+analytic). Thus, since⟨ψ0,Nψ0⟩is integer valued, it must be constant inU, and hence
+equal to its value atU= 0, which isL 2. This concludes the proof of item 1 of Theorem 3.1
+for weakly interacting fermions.
+Proof of item2of Theorem 3.1Let us now apply the previous strategy to prove the
+exponential closeness of the approximate ground state energies, in presence of many-body
+interactions, Eq. (3.2). The proof is based on the BBF formula (4.31) combined with the
+Poisson formula for the two-point function (4.35). Let us write:
+1
+β
+∑
+i1,...,in
+∫
+[0,β]n
+dt⟨Tγt1(Vi1) ;γt2(Vi2) ;···;γtn(Vin)⟩0
+β,L
+= 1
+β
+∑
+i1,...,in
+∫
+[0,β]n
+dt
+∑
+T
+αT
+[∏
+ℓ∈T
+gℓ
+]∫
+dµT (s) det
+[
+sb(f),b(f′)g(f,f′)
+]
+=
+∑
+T
+αT
+1
+β
+∑
+i1,...,in
+∫
+[0,β]n
+dt
+[∏
+ℓ∈T
+gℓ
+]∫
+dµT (s) det
+[
+sb(f),b(f′)g(f,f′)
+]
+.
+(4.43)
+Using the translation-invariance of theπ-flux phase, we can rewrite (4.43) as:
+(L2/|C|)
+∑
+T
+αT
+1
+β
+∑
+i1,...,in
+i1∈C(L/2,L/2)
+∫
+[0,β]n
+dt
+[∏
+ℓ∈T
+gℓ
+]∫
+dµT (s) det
+[
+sb(f),b(f′)g(f,f′)
+]
+(4.44)
+where|C|is the number of sites in the fundamental cell, andC(L/2,L/2) is the fundamental
+cell containing the site (L/2,L/2). We then break the innermost sum as:
+∑
+i1,...,in
+i1∈C(L/2,L/2)
+∫
+[0,β]n
+dt
+[∏
+ℓ∈T
+gℓ
+]∫
+dµT (s) det
+[
+sb(f),b(f′)g(f,f′)
+]
+=
+∗∑
+i1,...,in
+i1∈C(L/2,L/2)
+∫
+[0,β]n
+dt
+[∏
+ℓ∈T
+gℓ
+]∫
+dµT (s) det
+[
+sb(f),b(f′)g(f,f′)
+]
++
+∗∗∑
+i1,...,in
+i1∈C(L/2,L/2)
+∫
+[0,β]n
+dt
+[∏
+ℓ∈T
+gℓ
+]∫
+dµT (s) det
+[
+sb(f),b(f′)g(f,f′)
+]
+,
+(4.45)
+31
+where the first sum involves vertices with coordinates such that∥ij−i1∥≤L/3 for all
+j= 2,...,n, while in the second sum at least one vertex is such that∥ij−i1∥> L/3.
+Observe that1 this also implies∥ij−i1∥L >L/3. Consider the second term in (4.45). Let
+T′⊆Tbe the subtree ofTwhich connectsi 1 toi j. Consider the product of propagators
+associated withT ′. Denoting by (i 1,if2,...,ifr,ij) the path connectingi 1 toi j in the tree,
+we have the following:
+∥i1−if2∥β,L+...+∥ifr−if∥β,L≥∥ij−i1∥L≥L/3.(4.46)
+Combined with the exponential decay (4.38) of the two-point function, this allows to extract
+an exponentially small factor after summing over all vertex coordinates compatible with
+the constraint in the sum. Repeating the argument used to prove the analiticity of the free
+energy discussed in the previous paragraph, we obtain:
+⏐⏐⏐
+∑
+T
+αT
+∗∗∑
+i1,...,in
+i1∈C(L/2,L/2)
+∫
+[0,β]n
+dt
+[∏
+ℓ∈T
+gℓ
+]∫
+dµT (s) det
+[
+sb(f),b(f′)g(f,f′)
+]⏐⏐⏐≤Cnn!βe−cL.(4.47)
+Consider now the first term in (4.45). Observe that the constraint in the sum implies that
+∥if−if′∥≤2L/3 for all branches of the tree. The idea is to replace every propagator
+in the sum with its infinite volume limit,g ∞, and controlling the error using the Poisson
+summation formula (4.35). By (4.35), we have:
+g((t,i),(t′,i′)) =g∞((t,i),(t′,i′)) +r((t,i),(t′,i′)) (4.48)
+where, if∥i−i′∥≤2L/3,
+∥r((t,i),(t′,i′))∥≤Ce−(c/6)L−(c/6)∥(t,i)−(t′,i′)∥β,L.(4.49)
+Next, let us define the interpolating propagator as, forλ∈[0; 1]:
+gλ((t,i),(t′,i′)) =λg((t,i),(t′,i′)) + (1−λ)g∞((t,i),(t′,i′)).(4.50)
+Let:
+fT (λ) :=
+∗∗∑
+i1,...,in
+i1∈C(L/2,L/2)
+∫
+[0,β]n
+dt
+[∏
+ℓ∈T
+gλ;ℓ
+]∫
+dµT (s) det
+[
+sb(f),b(f′)gλ;(f,f′)
+]
+; (4.51)
+forλ= 1, this is our starting point, computed with a certain choice of holonomies. For
+λ= 0, the functionf T (λ) does not depend on the boundary conditions. We are thus
+interested in quantifying the difference:
+fT (1)−fT (0) =
+∫ 1
+0
+dλd
+dλfT (λ).(4.52)
+1This is due to the fact that, as vector inR 2,i j−i1 has norm bounded byL/
+√
+2. The norm of this
+vector does not decrease after addingn 1e1L+n 2e2Lfor integern 1, n2.
+32
+Whenever the derivative hits the product of propagators on the spanning tree, we get:
+∑
+ℓ∈T
+[∏
+ℓ′<ℓ
+gλ;ℓ
+]
+rℓ
+[∏
+ℓ′>ℓ
+gλ;ℓ
+]
+.(4.53)
+The sum over all space-time coordinates of this expression can be performed as before,
+using (4.38), (4.49). The only difference is the presence of the extra factore −(c/6)Lin the
+final estimate, coming from (4.49). Suppose now that the derivative hits the determinant.
+To begin, observe preliminarily that, as forgandg ∞, the interpolating propagatorg λcan
+also be represented as the sum of two terms admitting a Gram representation. To see this,
+we write:
+gλ((t,i),(t′,i′)) =θ(t>t′)A+
+λ((t,i),(t′,i′))−θ(t≤t′)A−
+λ((t,i),(t′,i′)) (4.54)
+where:
+A±
+λ((t,i),(t′,i′)) =λA±((t,i),(t′,i′)) + (1−λ)A±
+∞((t,i),(t′,i′)).(4.55)
+Following [16, Lemma 4.1] or [15, Lemma 10] (for a more general setting), we have:
+A±((t,i),(t′,i′)) =
+(
+u±
+(t,i),w±
+(t′,i′)
+)
+h, A ±
+∞((t,i),(t′,i′)) =
+(
+u±
+∞,(t,i),w±
+∞,(t′,i′)
+)
+h∞
+(4.56)
+for vectors of unit norm in suitable Hilbert spaceshandh ∞, whose definitions will not
+be important in what follows. Then, the interpolating functions (4.55) inherit the Gram
+representation:
+A±
+λ((t,i),(t′,i′)) =
+(√
+λu±
+(t,i)⊕
+√
+1−λu±
+∞,(t,i),
+√
+λw±
+(t′,i′)⊕
+√
+1−λw±
+∞,(t′,i′)
+)
+h⊕h∞
+.(4.57)
+From now on, one can proceed as in [16, Theorem 2.4] to show that:
+⏐⏐⏐ det
+[
+sb(f),b(f′)gλ;(f,f′)
+]⏐⏐⏐≤Cn.(4.58)
+Next, we have to estimate the derivative of the determinant. Let us denote byG λ(s) the
+argument of the determinant. By Jacobi’s formula:
+d
+dλdetGλ(s) = tr
+(
+adj(Gλ(s)) d
+dλGλ(s)
+)
+,(4.59)
+where adj(·) denotes the adjugate matrix, that is the transpose of the matrix of the cofactors.
+We have: (d
+dλGλ(s)
+)
+f,f′
+=s b(f),b(f′)rf,f′,(4.60)
+withr f,f′satisfying the bound (4.49). Therefore:
+⏐⏐⏐
+(d
+dλGλ(s)
+)
+f,f′
+⏐⏐⏐≤Ce−(c/6)L.(4.61)
+33
+Concerning adj(Gλ(s)), its matrix entries are, up to a sign, the determinants of the minors
+of the original matrixG λ(s) after deleting a column and a row. They can all be estimated
+as in (4.58). All in all, we have:
+⏐⏐⏐ d
+dλdetGλ(s)
+⏐⏐⏐≤n2Cne−(c/6)L.(4.62)
+We are now in the position to estimate (4.52). From the above considerations we easily get,
+for suitable constantsC,c>0:
+⏐⏐⏐fT (1)−fT (0)
+⏐⏐⏐ =
+∫ 1
+0
+dλ
+⏐⏐⏐ d
+dλfT (λ)
+⏐⏐⏐
+≤n!βCne−cL.
+(4.63)
+Coming back to (4.45), we proved that:
+1
+β
+∑
+i1,...,in
+∫
+[0,β]n
+dt⟨Tγt1(Vi1) ;γt2(Vi2) ;···;γtn(Vin)⟩0
+β,L
+= (L2/|C|)1
+β
+∗∑
+i1,...,in
+i1∈C(L/2,L/2)
+∫
+[0,β]n
+dt⟨Tγt1(Vi1) ;γt2(Vi2) ;···;γtn(Vin)⟩0
+β,∞+eβ,L(n)
+(4.64)
+where the first term does not depend on the holonomies, while the error term is bounded
+as:
+|eβ,L(n)|≤Cnn!L2e−cL.(4.65)
+Thus, from (4.26):
+log trFLe−βH(−1,eiθ,eiϕ)−log trFLe−βH(−1,eiθ′
+,eiϕ′
+)
+= log trFLe−βH0(−1,eiθ,eiϕ)−log trFLe−βH0(−1,eiθ′
+,eiϕ′
+)
++
+∑
+n≥1
+(−U)n
+n!
+∫
+[0,β]n
+dt1···dtn
+(
+⟨Tγt1(V) ;γt2(V) ;···;γtn(V)⟩0;θ,ϕ
+β,L
+−⟨Tγt1(V) ;γt2(V) ;···;γtn(V)⟩0;θ′,ϕ′
+β,L
+)
+(4.66)
+where⟨·⟩0;θ,ϕ
+β,Lis the Gibbs state of the quadratic HamiltonianH 0(−1,θ,ϕ). By (4.64),
+(4.65), the sum in (4.66) can be estimated as:
+⏐⏐⏐
+∑
+n≥1
+(−U)n
+n!
+∫
+[0,β]n
+dt1···dtn
+(
+⟨Tγt1(V) ;γt2(V) ;···;γtn(V)⟩0;θ,ϕ
+β,L
+−⟨Tγt1(V) ;γt2(V) ;···;γtn(V)⟩0;θ′,ϕ′
+β,L
+)⏐⏐⏐≤CUβL2e−cL,
+(4.67)
+34
+Γ r
+L
+Γ l
+L
+Γr
+LΓl
+L
+Figure 15: Graphical representation of the cut torus.
+where we used that the main term in (4.64) cancels in the difference. Furthermore, the
+difference of the non-interacting free energies has been studied, in the limitβ→∞, in
+Subsection 4.2:
+⏐⏐⏐ lim
+β→∞
+1
+β
+(
+log trFLe−βH0(−1,θ,ϕ)−log trFLe−βH0(−1,θ′,ϕ′)
+)⏐⏐⏐≤CL2e−cL.(4.68)
+In conclusion, the exponential closeness of the many-body ground state energies, Eq. (3.2),
+follows from (4.67) (in theβ→∞limit) and from (4.68). This concludes the proof of part
+of Theorem 3.1 for weakly interacting fermions.
+4.4 Proof of Theorem 3.1 - item 3
+The proof of Eqs. (3.3)-(3.5) relies on reflection positivity, following the original insight of
+Lieb [50]. The lower bound for the energetic cost of the monopoles’ excitations follows from
+the chessboard estimate, adapting [32, Proposition 3.10].
+4.4.1 Reflection positivity
+Let us denote byPa hyperplane cutting perpendicularly the torus Γ L in two halves as in
+Figure 15. Let us denote by Γ l
+L and Γ r
+L the left and right portion of the lattice Γ L, with
+respect to the cut introduced by the hyperplane. Letθ(i) be the geometrical reflection ofi
+across the hyperplaneP.
+35
+We define the operator that implements the reflection acrossP. First of all, letRbe the
+unitary operator implementing the geometric reflection on the fermionic algebra,
+R∗a±
+i,ηR=a ±
+θ(i),η,(4.69)
+and letτbe the unitary operator implementing the particle-hole transformation,
+τ∗a±
+i,ητ=a∓
+i,η.(4.70)
+Definition 4.2(Reflection operator).The reflection operatorΘis the antilinear, unitary
+operator acting on the fermionic algebra as:
+Θ(O) = τ∗R∗ORτ(4.71)
+where the complex conjugation acts on the coefficients of the fermionic monomials.
+Remark 4.3.This is the notion of reflection operator of[50]. In the case ofZ 2 gauge
+theory, the complex conjugation could actually be dropped (all terms in the Hamiltonian are
+real in the sense that the first quantized hamiltonian is real).
+Let now
+Ml/r =m
+∑
+i∈Γl/r
+L
+(−1)i1+i2ni (4.72)
+be the left and right mass terms; we recall thatn i =∑
+η=↑,↓ni,η. The left and right mass
+terms are connected by the reflection operator, as the next lemma shows.
+Lemma 4.4.Θ(M l/r) =M r/l.
+Proof.Since Θ 2 = id, it is sufficient to prove that Θ(Ml) =M r. By construction, the reflec-
+tion exchanges the two sublattice (white/black vertices) of the bipartition. Furthermore,
+Θ(ni,η) =a−
+θ(i),ηa+
+θ(i),η= 1−nθ(i),η.(4.73)
+Thus:
+Θ(M l) =m
+∑
+i∈Γl
+L
+∑
+η=↑,↓
+(−1)i1+i2(1−nθ(i),η)
+= 2m
+∑
+i∈Γl
+L
+(−1)i1+i2 +m
+∑
+i∈Γl
+L
+∑
+η=↑,↓
+(−1)i1+i2+1nθ(i),η.
+(4.74)
+The first term vanishes because Γ l
+L has an even number of vertices equally partitioned
+between the two sublattices. The second term equalsM r since (−1)θ(i)1 =−(−1)i1 while
+(−1)θ(i)2 = (−1)i2 andθ(Γl
+L) = Γr
+L.
+From here on, we proceed as in [32, Section 3]. We rewrite the Hamiltonian as:
+H(σ) =H r(σ) +H l(σ) +V int(σ),(4.75)
+36
+whereH r,lcollects fermionic monomials that are parametrized by space coordinates fully
+contained in Γ r,l
+L , whileV int takes into account the hopping terms that connect the two
+halves of the cut torus. In particular, the mass terms and the Hubbard interactions are all
+inH r,l. Without loss of generality, we can assume thatσ z
+ij = 1 for all bonds intersecting
+the cut, namely
+Vint(σ) =−t
+∑
+i∈Γl
+L:
+i+e1∈Γr
+L
+(a+
+i a−
+i+e1 +a +
+i+e1a−
+i ).(4.76)
+If not, the Hamiltonian can be brought in this form after a gauge transformation.
+The next result states a key estimate for the partition function. It is a direct adaptation
+of the argument of [50] to our setting, and we refer the reader to [32, Section 3.1], for the
+proof. In what follows, we denote byZ β,L(Hl,Hr) the partition function corresponding to
+the HamiltonianH=H l +H r +V int, withH l,Hr in the left, resp. right fermionic algebras,
+andV int as in (4.76).
+Lemma 4.5(Lieb).For anyβ≥0and forL= 2ℓ, the following inequality holds true:
+Zβ,L(Hl,Hr)2≤Zβ,L(Hl,Θ(Hl))Zβ,L(Hr,Θ(Hr)).(4.77)
+Using the above lemma, one can infer with a standard argument [50] that the partition
+function of (1.1) is maximized in a uniformπ-flux background even in presence of a staggered
+mass term.
+Reflection positivity can also be used to quantify the energetic excitations above theπ-flux
+phase [32]. For holonomies (1,1), (1,−1), (−1,1), (−1,−1), Eqs. (3.3), (3.4) are proven
+exactly as in [32, Proposition 3.10]. It remains to compute ∆ β,Lin the presence of the
+Hubbard interaction. This will be done in the next section. Later, we will comment about
+the case of more general holonomies.
+4.4.2 Lower bound on the monopole mass
+As proven in [32, Proposition 3.10], the monopoles’ mass can be bounded below in terms
+of the free energy of a suitable staggered flux configuration; this is achieved using the
+chessboard estimate, see [60] for a review, and [32, Lemma 3.9] for the application to our
+context. Let Φ ∗denote the chessboard flux configuration depicted in Figure 8. Picking
+the gauge fieldσ ∗with holonomies (1,1) as in Figure 16, we again chose a unit cell that
+makes the system translation invariant (observe that this is possible thanks to the fact that
+L∈4N). If the corresponding lattice is denoted˜Γred
+L , the Hamiltonian reads
+37
+a
+A
+b
+B
+c
+C
+d
+D
+Figure 16: Left: gauge field configurationσ ∗associated with the chessboard flux arrange-
+ment Φ∗. Solid bonds correspond toσ z =−1, while light bonds correspond toσz = +1.
+Right: fundamental cell associated with a translation-invariant configuration.
+H(σ∗; 1,1) =−t
+∑
+i∈˜Γred
+L ×{↑,↓}
+(
+a+
+a,ia−
+b,i+a +
+a,ia−
+A,i+a +
+b,ia−
+c,i−a+
+b,ia−
+B,i+a +
+c,ia−
+d,i−a+
+c,ia−
+C,i
+(4.78)
++a +
+d,ia−
+D,i+a +
+d,ia−
+a,i+4e1−a+
+A,ia−
+B,i+a +
+A,ia−
+a,i+2e2−a+
+B,ia−
+C,i (4.79)
++a +
+B,ia−
+b,i+2e2−a+
+C,ia−
+D,i+a +
+C,ia−
+c,i+2e2−a+
+D,ia−
+A,i+4e1 +a +
+D,ia−
+d,i+2e2 + h.c.
+)
+(4.80)
++m
+∑
+i∈˜Γred
+L
+(
+nA,i−nB,i+nC,i−nD,i−na,i+nb,i−nc,i+nd,i
+)
+(4.81)
++U
+∑
+i∈˜Γred
+L
+∑
+ρ∈I
+(
+nρ,i,↑−1
+2
+)(
+nρ,i,↑−1
+2
+)
+(4.82)
+whereIcollects the labels of the fundamental cell and we introduced the notationi= (i,η).
+The Brillouin zone is:
+˜BL(1,1) :=
+{
+k∈2π
+L (n1,n2)|0≤n1≤L/4−1,0≤n2≤L/2−1
+}
+.(4.83)
+ForU= 0, the quantity ∆ β,Lcan be computed by exact diagonalization. Let us consider
+the spinless case; the presence of the spin will eventually amount to a factor 2 in the final
+38
+expression. The Bloch Hamiltonian is:
+h(k) =
+
+−m1 0e −4ik1 1 +e−2ik2 0 0 0
+1m1 0 0−1 +e −2ik2 0 0
+0 1−m1 0 0−1 +e −2ik2 0
+e4ik1 0 1m0 0 0 1 +e −2ik2
+1 +e 2ik2 0 0 0m−1 0−e −4ik1
+0−1 +e 2ik2 0 0−1−m−1 0
+0 0−1 +e 2ik2 0 0−1m−1
+0 0 0 1 +e 2ik2 −e4ik1 0−1−m
+
+
+.
+(4.84)
+Its eigenvalues are doubly degenerate, and are given by:
+e1;±(k) =±2t
+√
+(m
+2t
+)2
++ 1 + 1
+2
+√
+1 + cos(2k1)2 + cos(2k2)2
+e2;±(k) =±2t
+√
+(m
+2t
+)2
++ 1−1
+2
+√
+1 + cos(2k1)2 + cos(2k2)2.
+(4.85)
+We are now ready to compute ∆β,L, as given by (3.4). Let us denote byeπ
+±(k) the eigenvalues
+of the Bloch Hamiltonian associated with theπ-flux phase, as given by (4.8). Proceeding
+as in the proof of [32, Proposition 3.13], we have:
+−1
+βL2 log Zβ,L(Φ∗;a,b)
+Zβ,L(−1;a,b)
+= t
+4π2
+∫ 2π
+0
+∫ 2π
+0
+dk1dk2
+√
+(m
+2t
+)2
++ 1 + 1
+2 cos(k1) + 1
+2 cos(k2)
+−t
+8π2
+∫ 2π
+0
+∫ 2π
+0
+dk1dk2
+√
+(m
+2t
+)2
++ 1 + 1
+2
+√
+1 + cos2(k1) + cos2(k2)
+−t
+8π2
+∫ 2π
+0
+∫ 2π
+0
+dk1dk2
+√
+(m
+2t
+)2
++ 1−1
+2
+√
+1 + cos2(k1) + cos2(k2) +o(1).
+(4.86)
+Numerical evaluation shows that the sum of these three dominant terms is positive (see
+Figure 17).
+Finally, let us discuss the effect of many-body interactions. By cluster expansion, one could
+actually prove that ∆ β,Lis analytic inUfor|U|small. This is actually not needed to prove
+the stability of the monopoles’ gap. It is enough to use the general estimate:
+e−β∥V∥|U|Z0
+β,L(Φ;a,b)≤Zβ,L(Φ;a,b)≤eβ∥V∥|U|Z0
+β,L(Φ;a,b) (4.87)
+whereZ 0
+β,Lis the partition function forU= 0 andUVis the Hubbard interaction. This
+bound follows from the operator inequalitiesH 0(σ)−|U|∥V∥≤H(σ)≤H0(σ) +|U|∥V∥
+and from the fact that, for any two self-adjoint operatorsA,B
+TreA≤TreB ifA≤B, (4.88)
+39
+Figure 17: Numerical plot of the monopole’s mass ∆∞(m) as a function ofm(t= 1,U= 0).
+a bound that can be proved using the min-max characterization of the eigenvalues; seee.g.
+[60, Corollary A.8]. The bound (4.87), combined with the expression (3.4), immediately
+implies that:
+∆ β,L≥∆0
+β,L−C|U|.(4.89)
+This concludes the proof of item 3 of Theorem 3.1, for holonomiesa,bequal to±1.
+Remark 4.6.The bound(4.89)is useful for smallUonly. ForU→∞, we expect that
+∆ β,L(U)→0, as the dominant part of the hamiltonian is background independent (similarly
+to what happens inm→∞limit, where the computation can be done exactly).
+4.4.3 Extension to twisted Hamiltonians
+To conclude the proof of Theorem 3.1, it remains to prove item 3 for general holonomies.
+We shall adapt the reflection positivity argument in presence of a general holonomy around
+the non-contractible cycles, andZ 2 fluxes in the plaquettes 2. LetH(σ,e iϕ,eiθ) be the
+Hamiltonian with holonomiese iϕonC 1 ande iθonC 2 added on aZ 2 valuedσbackground;
+see Figure 18. Up to unitary equivalences, such a Hamiltonian can be explicitly constructed
+in the following way (recall that Hamiltonians with the same fluxes across the lattice pla-
+quettes and the same holonomies are isospectral [49]). Given the backgroundσ, we can
+compute the holonomy of the background aroundC 1 andC 2 and it is either±1. If the
+holonomy around a cycleC 1 orC 2 is +1, we multiply the hoppings on the edges crossed
+respectively byC ∗
+2 andC ∗
+1 (see Figure 18) bye iϕande iθ. Observe that this procedure
+does not change the fluxes through the plaquettes (which is computed taking into account
+the orientation of the edges). Similarly, if one of such holonomy is−1, we will twist by
+−eiθor−eiϕ. We will apply chessboard estimates on such Hamiltonian following the same
+procedure as in [32, Section 3.1], tracking the fate of holonomies after reflections. The key
+observation is that after an horizontal reflection (across a plane which does not intersect
+ΓL inC∗
+2), the holonomy alongC 1 becomes−1 leaving the holonomy aroundC2 unchanged
+2Notice that such condition are compatible as they correspond to independent generators ofC 1(ΓL)
+40
+eiθ
+eiϕ
+C2
+C1
+C∗2
+C∗1−eiθ
+eiϕ
+C2
+C1
+C∗2
+C∗1
+eiθ
+−eiϕ
+C2
+C1
+C∗2
+C∗1−eiθ
+−eiϕ
+C2
+C1
+C∗2
+C∗1
+Figure 18: Possibleσbackground withe iθande iϕholonomies aroundaandbcycles
+(due to the complex conjugation in the definition of the reflection operator see Definition
+4.2). If we then perform a vertical reflection (across a plane which does not intersect Γ L in
+C∗
+1), the holonomy alongC 1 becomes−1, leaving the holonomy aroundC2 to−1. After this
+pair of reflections, we are left with 4 possible partition functions with all holonomies valued
+inZ 2 so that they can be represented with choice of aσbackground only. From this point
+on, the proof follows as in [32, Section 3.1]. This concludes the proof of Theorem 3.1.
+5 Proof of Theorem 3.2
+Ground states in the physical Hilbert space.The Hamiltonian (1.1) has four-fold
+almost degenerate ground states characterized by the four possibleπ-flux backgrounds of
+the torus. Each ground state is obtained by acting with the projection that imposes the
+Gauss’ law on the ground state of the many-body Hamiltonian in theπ-flux phase, for a
+41
+given choice of holonomies:
+|Ωab⟩=
+∏
+i∈V(ΓL)
+(1 +Qi
+2
+)
+|ψ−1,a,b⟩⊗|−1,a,b⟩=1
+2|Γ|
+∑
+Λ⊂Γ
+AΛ (−1)NΛ|ψ−1,a,b⟩⊗|−1,a,b⟩
+(5.1)
+where|−1,a,b⟩are a set of common eigenstates of all ˆσz
+ij satisfying:B p =−1 for any pla-
+quettep∈F(ΓL), ˆZC1 =aand ˆZC2 =bandψ−1,a,bis the ground state ofH(−1,a,b)acting
+on the fermionic Fock space.
+The following proposition states some basic properties about these states. Recall thatH phys
+is the physical Hilbert space, where Gauss’ law is satisfied on each vertex, see Definition
+2.5.
+Proposition 5.1.The states|Ωab⟩satisfy the following properties:
+1.|Ωab⟩∈Hphys
+2.|Ωab⟩depends only on the choice of the background holonomies
+3.|Ωab⟩̸= 0
+Proof.1. This is immediate since ∏
+i∈V(ΓL)
+1+Qi
+2 projects onto the eigenspace +1 of
+eachQ i.
+2. Letσ,σ′be two different gauge equivalent backgrounds. There exist a subset Λ⊂Γ
+such thatA Λ|σ⟩=|σ′⟩, and the Hamiltonian in the new background is given by
+H(σ′) = (−1)NΛH(σ)(−1)NΛ . Thus the ground state ofH(σ ′) is
+|ψσ′⟩= (−1)NΛ|ψσ⟩(5.2)
+Hence,
+⏐⏐Ω′
+ab
+⟩
+= 1
+2|Γ|
+∑
+Υ⊂Γ
+(−1)NΥAΥ|ψσ′⟩⊗
+⏐⏐σ′,a,b
+⟩
+(5.3)
+= 1
+2|Γ|
+∑
+Υ⊂Γ
+(−1)NΥ +NΛAΥ|ψσ⟩⊗AΛ|σ,a,b⟩=|Ωab⟩(5.4)
+sinceA ΥAΛ =A Υ+Λ ,N Υ +N Λ =N Υ+Λ (where the sum of subsets is understood in
+theZ 2-valued chain group) and the sum is translation invariant.
+3. Using again the right expression of the ground state in (5.1), we have
+∥Ωab∥2 = 1
+2|Γ|
+∑
+Λ⊂Γ
+⟨
+−1,a,b
+⏐⏐AΛ
+⏐⏐−1,a,b
+⟩⟨
+ψ−1,a,b
+⏐⏐⏐⏐(−1)NΛ
+⏐⏐⏐⏐ψ−1,a,b
+⟩
+(5.5)
+= 1
+2|Γ|
+⟨
+ψ−1,a,b
+⏐⏐⏐⏐
+(
+1 + (−1)NΓ
+)⏐⏐⏐⏐ψ−1,a,b
+⟩
+(5.6)
+42
+where we have used that the diagonal matrix elements ofA Λ in the ˆσz
+ij-basis vanish
+unless Λ =∅or Λ = Γ. Since the ground states are at half-filling by Theorem 3.1
+andL∈4N,|ψ−1,a,b⟩has an even number of particles and so the matrix element is
+2. This shows that|Ωab⟩̸= 0.
+Remark 5.2.The argument used in the computation of the norm ofΩ ab can be repeated
+to rewrite in a convenient way the energy ofΩ ab. We have:
+⟨
+Ωab
+⏐⏐H
+⏐⏐Ωab
+⟩
+∥Ωab∥2 =
+⟨
+ψ−1,a,b
+⏐⏐H(−1,a,b)
+⏐⏐ψ−1,a,b
+⟩
+=E 0,L(−1,a,b).
+(5.7)
+Spectral gap estimate.Let us prove the spectral gap estimate (3.7). In view of (5.7),
+sup Spec(PHP) = max
+a,b∈Z2×Z2
+E0,L(−1,a,b).(5.8)
+Then, we write, for any normalized vector|ξ⟩in the total Hilbert space:
+⟨
+ξ
+⏐⏐⏐⏐P⊥HP⊥
+⏐⏐⏐⏐ξ
+⟩
+=
+⟨
+ξ−1
+⏐⏐⏐⏐P⊥HP⊥
+⏐⏐⏐⏐ξ−1
+⟩
++
+⟨
+˜ξ
+⏐⏐⏐⏐P⊥HP⊥
+⏐⏐⏐⏐˜ξ
+⟩
+(5.9)
+where|ξ−1⟩is the orthogonal projection of|ξ⟩on the subspace associated with fluxπin
+every plaquette, and
+⏐⏐⏐˜ξ
+⟩
+=|ξ⟩−|ξ−1⟩. Consider the second term. By (3.5), we have:
+⟨
+˜ξ
+⏐⏐⏐⏐P⊥HP⊥
+⏐⏐⏐⏐˜ξ
+⟩
+≥∥˜ξ∥2
+(
+2∆ L + min
+a,b∈Z2×Z2
+E0,L(−1,a,b)
+)
+.(5.10)
+Consider now the first term in (5.9). We have:
+⟨
+ξ−1
+⏐⏐⏐⏐P⊥HP⊥
+⏐⏐⏐⏐ξ−1
+⟩
+≥∥ξ−1∥2 min
+a,b∈Z2×Z2
+E1,L(−1,a,b),(5.11)
+whereE 1,L(−1,a,b) is the first eigenvalue above the ground state for the Hamiltonian
+H(−1,a,b). ForU= 0, the Hamiltonian is gapped, and the spectral gap is 4m, recall (4.8).
+ForU̸= 0, the stability of the spectral gap follows from the convergence of the cluster
+expansion method reviewed in Subsection 4.3, see discussion after Eq. (4.42). One has:
+E1,L(−1,a,b)≥E0,L(−1,a,b) + 2δL, δL≥m−C|U|1/3.(5.12)
+Therefore, putting together (5.8), (5.9), (5.11), (5.12), we have, using that∥ξ∥= 1:
+⟨
+ξ
+⏐⏐⏐⏐P⊥HP⊥
+⏐⏐⏐⏐ξ
+⟩
+−sup Spec(PHP)
+≥2 min(δL,∆L) + min
+a,b
+E0,L(−1,a,b)−max
+a,b
+E0,L(−1,a,b)
+≥2 min(δL,∆L)−CL2e−cL,
+(5.13)
+where in the last step we used the exponential closeness of the approximate ground state
+energies, (3.2). This concludes the proof of (3.7).
+43
+Local topological order.Let us now prove topological order defined by (3.8). Recalling
+Definition 2.3, the algebra of gauge-invariant observables is the centralizerC A(Q) ofQ. It
+is generated by
+{ˆσx
+ij : (i,j)∈E(ΓL)}∪{ˆZC :C∈Z1(ΓL)}∪{a±
+i,ηˆZCi,ja±
+j,η′:i,j∈ΓL, η,η′∈{↑,↓}},(5.14)
+whereC i,jis any cycle such that∂Ci,j={i,j}, with the convention thatCi,i= 0 for all
+i∈Γ. We will now show that all these local gauge-invariant observables are first of all
+diagonal on the ground state space, and secondly that they have the same expectation
+value in all of the ground states, up to exponentially small errors. But then,
+⟨Ωab|OΩab⟩L= 1
+4
+∑
+(a,b)∈Z2×Z2
+⟨Ωab|OΩab⟩=1
+TrP Tr(PO) (5.15)
+since{|Ωab⟩: (a,b)∈Z2×Z2}form an orthonormal basis of the range ofP.
+A monomial in ˆσx
+ij is naturally identified with ˆXC∗whereC∗is the sum of all edges in the
+monomial (seen in theZ 2-valued cohomology group). If∂C∗= 0, thenC ∗is a coboundary
+C∗=∂Λ since otherwise it would not be a local observable, and so
+ˆXC∗|Ωab⟩= (−1)NΛ|Ωab⟩(5.16)
+namely, it acts as a purely fermionic observable, and it is therefore diagonal, on the ground
+state space. As proved below, local observables that are diagonal in the ˆσ z
+ij basis have
+diagonal elements in the ground-state space that are approximately independent by (a,b).
+If∂C∗is not empty, then the observable changes the flux fromπto 0 at each boundary
+plaquette and so⟨Ωa′b′|ˆXC∗Ωab⟩= 0 for all (a′,b′),(a,b)∈Z2×Z2.
+We are left with discussing gauge invariant observables that are diagonal in the ˆσz
+ij basis.
+These observables do not change the background, and hence they are diagonal in the ground
+state space. We must only prove that the expectation values in all four ground states are
+equal asL→∞. For theˆZC observables withCbeing a boundary, we writeC=∂ ∑
+ipi for a
+set of plaquettes{pi :i∈{1,...,M}}and note thatZC|Ωab⟩=∏
+iBp|Ωab⟩= (−1)M|Ωab⟩
+for all (a,b)∈Z2.
+It remains to consider the algebra generated by the ‘open lines’a ±
+i,ηˆZCi,ja±
+j,η′. Since the
+states Ω ab have a definite number of fermions, the operatorsa +
+i,ηˆZCi,ja+
+j,η′vanish on the
+ground state space, and so do their adjoints. So we turn toa +
+i,ηˆZCi,ja−
+j,η′. Commuting the
+operator through the Gauss’ law projection, the operator ˆZCi,jthen becomes a phase±1
+that depends on the background, see Figure 9. Hamiltonians in theπ-flux phase, differing
+by the value of the holonomies, can be viewed as being the same Hamiltonian but endowed
+with different boundary conditions (periodic or antiperiodic). The±1 phase produced by
+the observable is compensated by the change of boundary conditions.
+We are left with the evaluation of fermionic monomials in theπ-flux state, with (a,b)
+holonomies. ForU= 0, this can be done via the application of the fermionic Wick’s rule,
+whose outcome is completely specified by the two-point function (4.29) asβ→∞, which
+44
+is the Fermi projector. The exponential closeness of the expectation values for different
+(a,b) follows the representation of the finite-volume Fermi projector via Poisson summation
+formula:
+P (a,b)
+L (x;y) =
+∑
+m1,m2∈Z2
+am1bm2P∞(x+m 1e1L+m 2e2L;y),(5.17)
+whereP (a,b)
+L is the Fermi projector for the model in a finite volume and with (a,b) holonomies,
+whileP ∞is the Fermi projector for the model onZ 2. As in the proof for the exponen-
+tial closeness of the ground state energies, expectation values for different holonomies are
+then compared by inspection of the corresponding Wick’s rules, using that the term with
+m1 =m 2 = 0 in (5.17) is independent of (a,b), and using that the terms withm i̸= 0 are
+exponentially suppressed, thanks to the exponential decay of the Fermi projector.
+Let us now discuss the case of weakly interacting fermions,U̸= 0. The starting point is
+the Duhamel expansion for the expectation value of the observable,
+⟨O⟩β,L=⟨O⟩0
+β,L+
+∑
+n≥1
+(−U)n
+n!
+∫
+[0,β]n
+dt1···dtn⟨Tγt1(V) ;γt2(V) ;···;γtn(V) ;O⟩0
+β,L(5.18)
+The ground state expectation value is theβ→ ∞limit of the above expression. The
+convergence of the series for small|U|, and uniformly inL, follows from fermionic cluster
+expansion, analogously to what has been reviewed in Subsection 4.3 for the free energy.
+Furthermore, similarly to what has been done in Subsection 4.3 to compare energies associ-
+ated with different boundary conditions, the term-by-term comparison of the cumulants in
+(5.18), computed using the BBF formula (4.31), combined with the Poisson formula for the
+two-point function (4.35), allows to compare Gibbs states of Hamiltonians with different
+boundary conditions:
+|⟨O⟩(a,b)
+β,L−⟨O⟩(a′,b′)
+β,L|≤COe−cL (5.19)
+for small|U|uniformly inβ,L. Taking theβ→∞limit, the claim (3.8) follows. This
+concludes the proof of Theorem 3.2.
+Remark 5.3.The bound (5.19) is effective for observables that areL-independent, or more
+generally for which the constantC O depends onLsub-exponentially; e.g. extensive sums
+of local operators. It does not allow us to consider observablesOthat are exponentials of
+extensive observables (not surprisingly).
+Remark 5.4.Excited eigenstates ofHcan be constructed by replacing|ψ−1,a,b⟩in (5.1)
+with an excited state ofH(−1,a,b). IfU= 0, these excited states are explicit. For instance,
+⏐⏐⏐ζk,k′
+ab
+⟩
+=
+∏
+i∈ΓL
+(1 +Qi
+2
+)
+a+
+k,ηa+
+k′,η′|ψ−1,a,b⟩⊗|−1,a,b⟩(5.20)
+are exact many-body excitations, wherea +
+k,ηcreates a particle in an eigenstate of the Bloch
+Hamiltonian (4.6) with quasi-momentumk, with appropriate boundary conditions. Due to
+the fact that the vacuum state is obtained filling all the negative energy eigenstates of the
+45
+Bloch Hamiltonian, the Pauli principle implies that the operatora +
+k,ηcreates a particle with
+positive energy. More generally, one can generate a family of eigenstates ofHby acting
+on|ψ−1,a,b⟩with an even number of momentum-space fermionic operators. These states
+are completely delocalized in configuration space. Instead, if one acts with an odd number
+of fermionic operators on|ψ−1,a,b⟩, the resulting vector is annihilated by the action of the
+projector imposing the Gauss’ law.
+6 Proof of Theorem 3.7
+6.1 Adiabatic flux insertion and braiding
+We turn to Theorem 3.7, starting with the properties of the loop operatorsW C∗, see Defi-
+nition 3.6.
+6.1.1 Threading aπ-flux through a contactible cycle
+We consider the twisted Hamiltonians (3.12), first in the case ofC ∗=∂Λ being a 1-
+coboundary.
+Lemma 6.1.LetC ∗=∂Λbe a1-coboundary. Then
+HC∗(ϕ) = eiϕNΛHe−iϕNΛ.(6.1)
+Proof.Since both left and right hand sides equalHatϕ= 0, it suffices to prove that they
+satisfy the same differential equation. On the right hand side, we observe that for any
+(j,ℓ)∈E(ΓL),
+−i∂ϕeiϕni,ηa+
+j,ηaℓ,ηeiϕni,η=ϵ(i;j,k)eiϕni,ηa+
+j,ηaℓ,ηeiϕni,η, ϵ(i;j,k) =
+
+
+
+1 ifi=j,
+−1 ifi=ℓ,
+0 otherwise.
+(6.2)
+Summing these up, we conclude that the only non-vanishing terms in the derivative of the
+right hand side are those such thatI[(i,j),C∗] =±1, which is exactly what arises from
+∂ϕHC∗(ϕ) as defined by (3.12).
+The observation (6.1) implies that ˙PC∗(ϕ) = i[NΛ,PC∗(ϕ)] and therefore
+[KC∗(ϕ)−NΛ,PC∗(ϕ)] = 0 (6.3)
+by (3.14).
+Lemma 6.2.LetC ∗=∂Λbe a1-coboundary. ThenW C∗preserves the ground state mani-
+fold ofHexactly:
+WC∗PW∗
+C∗=P.(6.4)
+46
+Proof.Definition 3.4 and Lemma 6.1 imply that
+KC∗(ϕ) = eiϕNΛ KC∗(0)e−iϕNΛ.(6.5)
+From now on, we will use the notationK C∗≡KC∗(0). It follows that the unitary family
+˜VC∗(ϕ) = eiϕNΛ e−iϕ(NΛ−KC∗) solves the initial value problem
+−i∂ϕ˜VC∗(ϕ) =KC∗(ϕ)˜VC∗(ϕ), ˜VC∗(0) =1,(6.6)
+and therefore ˜VC∗(ϕ) =VC∗(ϕ) by uniqueness, see (3.15). HenceWC∗=A Λ eiπNΛ e−iπ(NΛ−KC∗).
+Moreover, [NΛ−KC∗,P] = 0, see (6.3), implies that
+[e−iπ(NΛ−KC∗),P] = 0.(6.7)
+With this, the identity e iπNΛ = (−1)NΛ and the definition (2.10) of charge yield
+WC∗PW∗
+C∗=Q ΛPQ Λ =P(6.8)
+sincePis a spectral projector of a gauge invariant Hamiltonian, see (2.32).
+While the usefulness of the identityV C∗(ϕ) = eiϕNΛ e−iϕ(NΛ−KC∗) was pointed out in [7]
+because the unitary simplifies atϕ= 2πby integrality of the spectrum ofN Λ , we are
+interested in applying it here up to onlyϕ=π. Physically, this corresponds to a process
+in which we insert aπ-flux with an externalU(1) gauge field which is absorbed by the
+system as aZ 2 gauge transformation, leaving thus the ground state space invariant. This
+justifies the inclusion of aZ 2 pure gauge transformationA Λ = ˆXC∗toV C∗(ϕ) in Definition
+3.6. Of course, this cancellation of the two types of ‘gauge transformation’ is possible only
+atϕ=π, since the gauge field isZ2-valued, see also the proof just below.
+This concludes the proof of item 1 of Theorem 3.7 in this case.
+Since the ground state manifold is degenerate, an adiabatic process preserving such subspace
+may in principle shuffle its basis in a non universal way. However this does not happen as a
+consequence of the protection given by topology. As Theorem 3.2 shows, see Remark 3.3(2),
+ground states ofHare labelled by pairs (a,b)∈Z2×Z2 of holonomies around two fixed
+cyclesC 1,C2∈Z1(ΓL) that are not boundaries:
+ˆZC1|Ωab⟩=a|Ωab⟩,ˆZC2|Ωab⟩=b|Ωab⟩.(6.9)
+With this, we first recall that ˆZCj is gauge invariant becauseC j are cycles, see (2.23),
+and note further that they commute with e −iπ(NΛ−KC∗) since this term is diagonal in ˆσz
+ij
+basis. Hence they commute withW C∗. This proves item 2 of Theorem 3.7 in this case
+of ‘contractible cycles’ since the intersection number betweenCandC ∗must be even, see
+Figure 19. Moreover,
+ˆZC1WC∗|Ωab⟩=aWC∗|Ωab⟩,ˆZC2WC∗|Ωab⟩=bWC∗|Ωab⟩.(6.10)
+47
+C∗
+C
+C∗
+C
+Figure 19: IfCis a non-trivial cycle, the number of intersections betweenC ∗andCis even if
+C∗is a boundary (left) but odd if it is a non-trivial cocycle (right). Notice that the curves’
+orientation is irrelevant here since eiπ= e−iπso positive and negative intersections give the
+same contribution mod 2π
+SinceW C∗preserves the ground state manifold and the eigenvalues (a,b) uniquely determine
+the state|Ωab⟩, we conclude that
+WC∗|Ωab⟩= eiωab
+C∗|Ωab⟩(6.11)
+for some phaseωab
+C∗which is in principle dependent on the curve and specific ground state
+we are acting on, and on the system’s size. This concludes the proof of item 3 of the
+Theorem 3.7 for the trivial cohomology class.
+With the triviality ofW C∗associated with 1-coboundaries in hand, we now turn to the case
+of whereC ∗are cocycles that are not coboundaries. This will allow us to derive braiding
+relations.
+6.1.2 Threading aπ-holonomy through a non-contractible cycle
+In differential geometric terms, the equation (3.14) along non-trivial cocycles describes
+parallel transport of the Fermi projector around the Jacobian manifold of the (twisted)
+boundary conditions on the torus since inserting an holonomy around a non-contractible
+cycle corresponds to changing boundary conditions to the fermions (see Figure 9).
+In this case, Lemma 6.1 cannot be used and the proof of Lemma 6.2 does not hold. We
+claim nonetheless thatW C∗still preserve the ground state space: This is the content of the
+lemma just below. Although its proof is a little technical, the idea is simple: We consider
+anotherC′∗∈C1(Γ∗
+L) such thatC ∗−C′∗is a coboundary and such that dist(C ∗,C′∗) is of
+orderL. Then, by locality, we prove that (see Eq. (6.18) below)W C∗−¯C′∗
+L=W C∗WC′∗. Since
+the left hand side preserves the ground state space, and all operators are unitary, decay of
+correlations yields the claim, which is that of item 1 of Theorem 3.7:
+48
+Lemma 6.3.For anyC ∗∈C1(Γ∗
+L), the operatorW C∗satisfies∥[WC∗,P]∥L= 0.
+Proof.LetC ′∗be another cycle such that
+1. dist(C∗,C′∗) =ρLfor some 0<ρ<1,
+2.C ∗−C′∗is a coboundary, namelyC ∗−C′∗=∂Λ for some Λ⊂ΓL.
+see Figure 20. Lemma 6.2 implies that
+[WC∗−C′∗,P] = 0.(6.12)
+Since ˙HC∗−C′∗(ϕ) = ˙HC∗(ϕ) +˙H−C′∗(ϕ), Definition 3.4 of the quasi-adiabatic generator
+implies that
+KC∗−C′∗(ϕ) =τϕ
+f ( ˙HC∗(ϕ)) +τϕ
+f ( ˙H−C′∗)(ϕ)L=K C∗(ϕ) +K−C′∗(ϕ).(6.13)
+The second identity amounts to replacingτ
+HC∗−C′∗(ϕ)
+s ( ˙HC∗(ϕ)) withτHC∗(ϕ)
+s ( ˙HC∗(ϕ)) and
+similarly with the second term. This is a consequence of the fact that ˙HC∗is supported on
+the sites adjacent toC ∗and of the following corollary of the Lieb-Robinson bound:
+∥τHXr
+t (A)−τ
+HΓL
+t (A)∥≤
+∫ t
+0
+[(HΓL−HXr),τ
+HΓL
+s (A)]
+ds≤C(A)e−c(r−vt),(6.14)
+whereC(A) depends on the norm ofAand the size of its supportX⊂Γ L, for anyAand
+anyr≥0, whereX r ={x∈ΓL : dist(x,X)≤r}. In the current application,A=˙HC∗
+whose support has volume 2L. This linear growth is however controlled by the exponential
+decay obtained by choosingrproportional toL, which is the reason for Property 1 of
+C′∗. By the Lieb-Robinson bound again, the operatorK C∗is almost localized onC ∗which
+implies that
+[KC∗,K−C′∗] L= 0.(6.15)
+Recalling (3.15) thatV C∗(ϕ) is the propagator generated byKC∗(ϕ), Eq. (6.15) yields that
+[VC∗,K−C′∗] L= 0 and in turn that
+−id
+dϕV∗
+C∗−C′∗VC∗V−C′∗
+L=V ∗
+C∗−C′∗
+(
+KC∗−C′∗−KC∗−K−C′∗
+)
+VC∗V−C′∗.(6.16)
+The identity (6.13) and Duhamel’s principle then imply
+VC∗−C′∗(ϕ)L=V C∗(ϕ)V−C′∗(ϕ).(6.17)
+Since, moreover, ˆXC∗−C′∗= ˆXC∗ˆX−C′∗,we immediately conclude that
+WC∗−C′∗
+L= ˆXC∗ˆX−C′∗VC∗(π)V−C′∗(π)L=W C∗W−C′∗.(6.18)
+49
+−C′∗ C∗Λ
+Figure 20: The coboundary∂Λ =C∗−C′∗. The sign is given by the orientation of the dual
+lattice Γ∗
+L.
+In the second equality, we used that ˆX∗
+−C′∗andV C∗(π) almost commutes because of their
+almost disjoint supports.
+It remains to prove that this and [W C∗−C′∗,P] = 0 implies that each of the unitary factor
+WC∗,W−C∗almost commutes withP. As we shall explain just below, this follows from the
+fact thatC ∗,C∗are separated by distance of orderLand by clustering:
+∥PAB|Ω⟩−PAPB|Ω⟩∥≤C(A,B)f(d(X,Y)) (6.19)
+which holds for any normalized ground state Ω in the range ofPand any observablesA
+andBsupported onXandY, respectively. Here,d(X,Y) is the distance between the
+two sets andfis a superpolynomially decaying function see [8, Proposition 3.1]. Since
+[P,WC∗] = ((1−P)W∗
+C∗P)∗−(1−P)WC∗P, it suffices to show that∥(1−P)WC∗P∥L= 0
+and similarly for the adjoint. For this, we note that
+1≥∥PWC∗|Ω⟩∥≥∥PW−C′∗∥∥PWC∗|Ω⟩∥≥∥PW−C′∗PW C∗|Ω⟩∥(6.20)
+L=∥PW−C′∗WC∗|Ω⟩∥L= 1,(6.21)
+where we used clustering, Eq. (6.19), in the second line. More precisely, we applied (6.19)
+forA=W −C′∗,B=W C∗, approximately localized inC′∗,C∗. This implies that (6.19) holds
+with a constantC(A,B) that grows quadratically withL, which is however controlled by
+the superpolynomial decay off(·) and by the orderLdistance of the two sets. Since this
+holds for all|Ω⟩=P|Ω⟩, we conclude that∥(1−P)WC∗P∥L= 0. Repeating the argument
+with the adjoint yields the claim.
+We turn to the commutation relations. LetC∈Z1(ΓL). Since
+ˆZC ˆXC∗= eiπI(C,C∗) ˆXC∗ˆZC,(6.22)
+50
+we have that the operatorB C,C∗(ϕ) =ˆZCWC∗(ϕ)∗ˆZCWC∗(ϕ) satisfies the equation
+−id
+dϕBC,C∗(ϕ) = 0 (6.23)
+since ˆZC commutes withK C∗because the latter contains only ˆσz operators. Moreover,
+BC,C∗(0) = ˆZC ˆXC∗ˆZC ˆXC∗= eiπI(C,C∗), so that
+ˆZCWC∗(ϕ) = eiπI(C,C∗)WC∗(ϕ)ˆZC (6.24)
+for allϕ, a fortiori atϕ=π(which is the only case of interest here sinceW C∗(ϕ) preserves
+the ground state space only at that particular value). This concludes the proof of item 2
+of Theorem 3.7. The remaining cases of item 3 of Theorem 3.7 follow immediately from
+this and from the fact that the intersection number of a non-trivial cycle and a non-trivial
+cocycle is necessarily odd, see Figure 19. Therefore
+ˆZC1WC∗
+2|Ωab⟩=−aWC∗
+2|Ωab⟩(6.25)
+from which we conclude that
+WC∗
+2|Ωab⟩L= e
+iωab
+C∗
+2|Ω(−a)b⟩.(6.26)
+The argument is similar with the other possible combinations of cycles and cocycles.
+6.1.3 Monopoles are bosons
+For this section, we denoteH(ϕ1,ϕ2) the Hamiltonian twisted byϕ1 alongC∗
+1 and byϕ2
+alongC∗
+2. This family is uniformly gapped for (ϕ1,ϕ2)∈T2, with ground state projection
+P(ϕ1,ϕ2). We let
+Kj(ϕ1,ϕ2) =
+∫
+f(t)eitH(ϕ1,ϕ2)∂ϕjH(ϕ1,ϕ2)e−itH(ϕ1,ϕ2)dt.(6.27)
+wherefis the function introduced in Definition 3.4. We denote ˆXj ≡ˆXC∗
+j . Then
+ˆX1H(ϕ1,ϕ2) ˆX1 =H(ϕ1 +π,ϕ2) so that
+ˆX1Kj(ϕ1,ϕ2) ˆX1 =K j(ϕ1 +π,ϕ2) (6.28)
+and similarly for ˆX2 with respect toϕ2. Letγ: [0,1]→T2,s↦→(γ1(s),γ2(s)) be a path
+and letV γ(s) be the unitary solution of
+Vγ(s) =1+ i
+∫ s
+0
+K(γ(r))·γ′(r)Vγ(r)dr(6.29)
+where
+K(γ(s))·γ′(s) =K 1(γ(s))γ′
+1(s) +K 2(γ(s))γ′
+2(s).(6.30)
+51
+0 π 2π
+0
+π
+2π
+dΓ
+dΓ −1−1
+/Bullet
+/Bullet
+Figure 21: In blue, the path∂Γ corresponding to the braiding of monopoles on the ground
+state space (6.35). Changing the holonomies amounts to changing the initial condition with
+the grey path corresponding to the vector Ω −1,−1, starting at (ϕ1,ϕ2) = (π,π).
+Moreover, (6.28) implies that
+ˆXjVγ(s) =V πej+γ(s) ˆXj (6.31)
+where (πe1 +γ)(s) = (π,0) +γ(s) and similarly forj= 2.
+For any pathγ, we shall denoteV γ=V γ(1). With this, we recall the definition 3.6 of
+loop operators, observe thatW C∗
+j = ˆXjVαj, whereα1(s) = (sπ,0) andα2(s) = (0,sπ) and
+conclude that
+(WC∗
+2)∗(WC∗
+1)∗WC∗
+2WC∗
+1 =V ∗
+α2
+ˆX2V∗
+α1
+ˆX1 ˆX2Vα2
+ˆX1Vα1 (6.32)
+=V ∗
+α2V∗
+πe2+α1Vπe1+α2Vα1 =V ∂Γ (6.33)
+where we used (6.31) and observed thatV ∗
+γ=V−γas well asV γVγ′=V γ+γ′to conclude
+that the product reduces to the propagator along the boundary of the square Γ drawn
+in Figure 21.
+By the gauge invariance of the Hamiltonian,
+Vγ(s)|Ωab⟩=
+∏
+i∈ΓL
+( 1+Q i
+2
+)
+V σ
+γab(s)|ψσ,a,b⟩⊗|σ,a,b⟩,(6.34)
+whereγab(s) = ( 1
+2(1−a)π,1
+2(1−b)π) +γ(s) is the shifted path, andσis any configuration
+in the class [−1]. Hence
+eiωab L=⟨Ωab|(WC∗
+2)∗(WC∗
+1)∗WC∗
+2WC∗
+1Ωab⟩=⟨ψσ,a,b|Vσ
+∂Γabψσ,a,b⟩(6.35)
+SinceV γ(s) is the spectral flow and|ψσ,a,b⟩is the unique, gapped, fermionic ground state,
+the vectorV σ
+γab(s)|ψσ,a,b⟩is a fermionic ground state at fluxesγab(s).
+On the cut torus, there is a smooth family|ψσ(ϕ1,ϕ2)⟩of vectors such thatPσ(ϕ1,ϕ2) =
+|ψσ(ϕ1,ϕ2)⟩⟨ψσ(ϕ1,ϕ2)|. Upon possibly redefining their phases, we can assume that|ψσ,a,b⟩=
+52
+|ψσ( 1
+2(1−a)π,1
+2(1−b)π)⟩. Let now
+|φσ(s)⟩=Vσ
+∂Γ(s)|ψσ(0)⟩,(6.36)
+where we have now dropped the indexabsince it amounts to a choice of one of (0,0), (π,0)
+(0,π) or (π,π) as initial condition∂Γ(0). The phase of (6.35) is now given by
+eiω=⟨ψσ(0)|φσ(1)⟩.(6.37)
+For anys∈[0,1], there is ac(s)∈C,|c(s)|= 1 such that
+|φσ(s)⟩=c(s)|ψσ(s)⟩.(6.38)
+Taking the derivative along the path yields
+iKσ(s)·∂Γ(s)|φσ(s)⟩=c′(s)|ψσ(s)⟩+c(s)d
+ds|ψσ(s)⟩.(6.39)
+We now take⟨ψσ(s)|·⟩to get
+0 =c′(s) +c(s)
+⟨
+ψσ(s)
+⏐⏐⏐⏐⏐
+d
+dsψσ(s)
+⟩
+,(6.40)
+where we used⟨ψσ(s)|Kσ(s)ψσ(s)⟩= 0. Equivalently,
+d
+ds logc(s) =−
+⟨
+ψσ(s)
+⏐⏐⏐⏐⏐
+d
+dsψσ(s)
+⟩
+.(6.41)
+Hence, sinceωis the total change of argument of the functionc(s) along the path∂Γ,
+iω=−
+∫
+∂Γ
+⟨ψσ|dψσ⟩.(6.42)
+We are now in the setting of [4] and so an application of Stokes’ theorem yields
+∫
+∂Γ
+⟨ψσ|dψσ⟩=
+∫
+Γ
+d⟨ψσ|dψσ⟩=
+∫
+Γ
+⟨dψσ|dψσ⟩=
+∫
+Γ
+Tr(dPσP σdP σ) (6.43)
+=
+∫
+Γ
+Tr(PσdP σ∧dPσ) (6.44)
+namely the braiding phase is the integral of the adiabatic curvature, or equivalently the
+Hall conductance, over the quarter torus. SincedP σ = i[Kσ,Pσ], we conclude that
+ω=−i
+∫
+Γ
+Tr(Pσ[Kσ
+1,Kσ
+2 ]) (6.45)
+By [36, 5], the curvature is constant. Since the initial fermionic ground states are all time-
+reversal invariant, the Hall conductance vanishes and soω= 0, concluding the proof of
+Theorem 3.7, item 4.
+Remark 6.4.The calculation above is in fact completely general under the assumption of
+a spectral gap. Interestingly, it relates the braiding phase of the dressed monopoles to the
+Hall conductance of the fermion sector, see also [7, 39].
+53
+6.1.4 Braiding statistics between monopoles and fermions
+Let
+B= ⟨ξij
+ab|WC∗ξij
+ab⟩
+⟨Ωab|WC∗Ωab⟩.(6.46)
+As discussed above|ξij
+ab⟩is obtained creating two fermions on Ωab, andBis the braiding
+between one of the fermions and a monopole, see also Figure 22.
+C∗
+a+
+i
+a+
+j
+Figure 22: A representation of the braidingB. Any choice of the curve connectingiandj
+crossesC∗an odd number of times giving a−sign.
+SinceC∗is a coboundary, the denominator has already been shown (6.11) to be a phase:
+⟨Ωab|WC∗Ωab⟩=eiωab
+C∗.(6.47)
+We claim that 
+{
+WC∗,a+
+i,ηˆZCi,ja+
+j,η′
+}
+L= 0.(6.48)
+With this andW C∗|Ωab⟩=eiωab
+C∗|Ωab⟩, we have that
+B L=−eiωab
+C∗⟨ξij
+ab|ξij
+ab⟩
+⟨Ωab|WC∗Ωab⟩=−1 (6.49)
+indeed. To prove (6.48), we recall thatW C∗is a fermion-even operator and almost localized
+alongC∗, so that
+∥[WC∗,a+
+i,j]∥L= 0.(6.50)
+Hence,
+WC∗a+
+i,ηˆZCi,ja+
+j,η′
+L=a +
+i,ηWC∗ˆZCi,ja+
+j,η′=−a+
+i,ηˆZCi,jWC∗a+
+j,η′
+L=−a+
+i,ηˆZCi,ja+
+j,η′WC∗ (6.51)
+where we used (6.22) and the fact thatZ Ci,jcommutes withK C∗(ϕ) in the second equality.
+This concludes the proof Theorem 3.7-item 5.
+Remark 6.5.1. Up to a phase, the vector|ξij
+ab⟩can be represented as:
+( ∏
+i∈V(ΓL)
+1 +Qi
+2
+)
+a+
+i,ηa+
+j,η′|ψ−1,a,b⟩⊗|−1,a,b⟩.(6.52)
+54
+Indeed, ˆZCi,j|ψ−1,a,b⟩⊗|−1,a,b⟩=ZCi,j|ψ−1,a,b⟩⊗|−1,a,b⟩, whereZCi,jis just a
+phase. While neithera +
+i a+
+j nor ˆZCi,jcommute with theZ 2-chargesQ i, their combi-
+nation does. Pulling ˆZCi,jthrough the projection onto the physical Hilbert space yields
+the claim.
+2. The braiding is the same if one or both of the creation operators are replaced by
+annihilation operators, because the braiding only takes into account the fermion parity
+of the excitation, not itsU(1)charge.
+3. The proof shows explicitly that the braiding is independent of the choice of(a,b)as
+one would have expected from the topological order condition and the locality of the
+braiding operation.
+A Homology of the torus: basic definitions and notations
+We recall that Γ =Z 2
+L is the square lattice with periodic boundary conditions, and that
+V(Γ),E(Γ),F(Γ) are the sets of all vertices, oriented edges and oriented faces of Γ. By
+construction|V(Γ)|=|F(Γ)|and|E(Γ)|= 2|V(Γ)|.
+This structure is naturally understood as a CW-complex, and we briefly recall the basic
+constructions of cellular homology. Since orientation does not play a role in the analysis of
+this paper, we don’t insist on it here.
+Definition A.1(chains).Fori= 0,1,2, thei-chain groupC i(Γ)is a free abelian group
+with coefficients inZ 2 generated respectively byV(Γ),E(Γ)andF(Γ).
+Geometrically, a 1-chainCis a string along the edges of the lattice, or a collection thereof.
+The fact that the coefficients areZ 2 simply means (in the example ofi= 1) that an edge
+may appear at most once.
+The boundary maps∂i :C i(Γ)→Ci−1(Γ) associate to ai-chain the (i−1)-chain that forms
+its boundary. For example, if Λ is a 2-chain, namely a collection of plaquettes, then∂Λ is the
+1-chain made of all the boundary edges. As usual,∂i◦∂i+1 = 0, namely Im(∂i+1)⊂Ker(∂i).
+Definition A.2(cycles and boundaries).Thei-cycle group isZ i(Γ) = Ker(∂i). Thei-
+boundary group isB i(Γ) = Im(∂i+1).
+In other words, a 1-cycle is geometrically a loop or a collection thereof. A 1-boundary is
+the geometric boundary of a collection of plaquettes. As pointed out above,B i(Γ)⊂Zi(Γ):
+For the casei= 1, any boundary is indeed a collection of loops.
+Definition A.3(homology groups).The homology groups are defined as:
+Hi(Γ) = Zi(Γ)
+Bi(Γ).(A.1)
+55
+The groupH 1(Γ) is made up of equivalence classes of loops, where two loops are equivalent
+if they differ by a boundary (one could say: they can be ‘deformed’ into each other). On
+the torus,H 1(Γ) has four elements: It is generated by the two types of loops that wind once
+around the torus in either direction. In this paper, they are associated with the holonomies,
+or large gauge transformations.
+Cohomology.The regular square lattice has a natural dual obtained by identifying each
+face with a dual vertex, each edge with a dual edge (which is geometrically perpendicular
+to it) and each vertex with a dual face. The construction above can be repeated with this
+dual complex, yielding cochain groupsC i(Γ∗), cocyclesZ i(Γ∗) and coboundariesB i(Γ∗),
+and cohomology groups. For example, a 1-cochainC ∗is a string in the dual lattice or a
+collection thereof.
+Data availability statement.There is no data associated with this work.
+References
+[1] M. Aizenman and S. Warzel.Random Operators: Disorder Effects on Quantum Spectra
+and Dynamics, volume 168 ofGraduate Studies in Mathematics. American Mathemat-
+ical Society, Providence, Rhode Island, 2015.
+[2] D. Arovas, J.R. Schrieffer, and F. Wilczek. Fractional statistics and the quantum Hall
+effect.Physical Review Letters, 53:722–723, Aug 1984.
+[3] F.F. Assaad and Tarun Grover. Simple fermionic model of deconfined phases and phase
+transitions.Physical Review X, 6(4), December 2016.
+[4] J. E Avron, R. Seiler, and B. Simon. Homotopy and quantization in condensed matter
+physics.Physical Review Letters, 51(1):51, 1983.
+[5] S. Bachmann, A. Bols, W. De Roeck, and M. Fraas. Quantization of conductance in
+gapped interacting systems.Annales Henri Poincar´ e, 19(3):695–708, 2018.
+[6] S. Bachmann, A. Bols, W. De Roeck, and M. Fraas. A many-body index for quantum
+charge transport.Communications in Mathematical Physics, 375(2):1249–1272, July
+2019.
+[7] S. Bachmann, A. Bols, W. De Roeck, and M. Fraas. Many-body Fredholm index for
+ground-state spaces and Abelian anyons.Physical Review B, 101:085138, Feb 2020.
+[8] S. Bachmann, A. Bols, W. De Roeck, and M. Fraas. Rational indices for quantum
+ground state sectors.Journal of Mathematical Physics, 62(1), January 2021.
+56
+[9] S. Bachmann, S. Michalakis, B. Nachtergaele, and R. Sims. Automorphic equivalence
+within gapped phases of quantum lattice systems.Communications in Mathematical
+Physics, 309(3):835–871, November 2011.
+[10] S. Bachmann, B. Nachtergaele, and S. Vadnerkar. Dynamical Abelian anyons with
+bound states and scattering states.Journal of Mathematical Physics, 64(7), 2023.
+[11] L. Barbiero, C. Schweizer, M. Aidelsburger, E. Demler, N. Goldman, and F. Grusdt.
+Coupling ultracold matter to dynamical gauge fields in optical lattices: From flux
+attachment toZ 2 lattice gauge theories.Science Advances, 5(10):eaav7444, 2019.
+[12] U. Borla, B. Jeevanesan, F. Pollmann, and S. Moroz. Quantum phases of two-
+dimensionalZ 2 gauge theory coupled to single-component fermion matter.Physical
+Review B, 105(7), February 2022.
+[13] H. Chen, C. Rouz´ e, J. Chen, J. Jiang, S.O. Scalet, Y. Zhan, G. Kin-Lic Chan, L. Ying,
+and Y. Tong. Convergence of the cumulant expansion and polynomial-time algorithm
+for weakly interacting fermions, 2025.
+[14] D. Cimasoni and N. Reshetikhin. Dimers on surface graphs and spin structures. i.
+Communications in Mathematical Physics, 275(1):187–208, July 2007.
+[15] W. De Roeck and M. Salmhofer. Persistence of exponential decay and spectral gaps
+for interacting fermions.Communications in Mathematical Physics, 365(2):773–796,
+July 2018.
+[16] W. de Siqueira Pedra and M. Salmhofer. Determinant bounds and the Matsubara
+UV problem of many-fermion systems.Communications in Mathematical Physics,
+282:797–818, 2008.
+[17] S. Fabbri, A. Giuliani, and R. Reuvers. Universality of the topological phase transition
+in the interacting Haldane model, 2025.
+[18] K. Fredenhagen, K.-H. Rehren, and B. Schroer. Superselection sectors with braid group
+statistics and exchange algebras: I. General theory.Communications in Mathematical
+Physics, 125(2):201–226, 1989.
+[19] M. Freedman, A.Y. Kitaev, M. Larsen, and Z. Wang. Topological quantum computa-
+tion.Bulletin of the American Mathematical Society, 40(1):31–38, 2003.
+[20] J. Fr¨ ohlich. New super-selection sectors (“soliton-states”) in two dimensional Bose
+quantum field models.Communications in Mathematical Physics, 47(3):269–310, 1976.
+[21] J. Fr¨ ohlich. Statistics of fields, the Yang-Baxter equation, and the theory of knots and
+links. InNonperturbative quantum field theory, Proceedings of Carg` ese Lectures, pages
+71–100. Springer, 2021.
+[22] J. Fr¨ ohlich and P.-A. Marchetti. Quantum field theory of anyons.Letters in Mathe-
+matical Physics, 16(4):347–358, 1988.
+57
+[23] J. Fr¨ ohlich, U.M. Studer, and E. Thiran. Quantum theory of large systems of rela-
+tivistic matter. InSession LXII: Fluctuating Geometries in Statistical Mechanics and
+Field Theory, Proceedings of Les Houches summer school, 1994.
+[24] S. Gazit, M. Randeria, and A. Vishwanath. Emergent Dirac fermions and broken
+symmetries in confined and deconfined phases ofZ 2 gauge theories.Nature Phys,
+13:484–490, 2017.
+[25] Snir Gazit, Fakher F. Assaad, Subir Sachdev, Ashvin Vishwanath, and Chong Wang.
+Confinement transition ofZ 2 gauge theories coupled to massless fermions: Emergent
+quantum chromodynamics andSO(5) symmetry.Proceedings of the National Academy
+of Sciences, 115(30), July 2018.
+[26] G. Gentile and V. Mastropietro. Renormalization group for one-dimensional fermions:
+A review on mathematical results.Phys. Rep., 352:273–437, 2001.
+[27] A. Giuliani, I. Jauslin, V. Mastropietro, and M. Porta. Topological phase transitions
+and universality in the Haldane-Hubbard model.Physical Review B, 94(20), November
+2016.
+[28] A. Giuliani, V. Mastropietro, and M. Porta. Universality of the Hall conductivity
+in interacting electron systems.Communications in Mathematical Physics, 349:1107–
+1161, 2017.
+[29] A. Giuliani, V. Mastropietro, and M. Porta. Quantization of the interacting Hall
+conductivity in the critical regime.Journal of Statistical Physics, 180(1–6):332–365,
+November 2019.
+[30] A. Giuliani, V. Mastropietro, and S. Rychkov. Gentle introduction to rigorous renor-
+malization group: a worked fermionic example.Journal of High Energy Physics,
+2021(1), January 2021.
+[31] G. A Goldin, R. Menikoff, and D.H. Sharp. Particle statistics from induced repre-
+sentations of a local current group.Journal of Mathematical Physics, 21(4):650–664,
+1980.
+[32] L. Goller and M. Porta. Stability of theπ-flux phase forZ2 lattice gauge theory coupled
+to fermionic matter, 2025.
+[33] Z.-C. Gu, z. Wang, and X.-G. Wen. Lattice model for fermionic toric code.Physical
+Review B, 90(8):085140, 2014.
+[34] B. I. Halperin. Statistics of quasiparticles and the hierarchy of fractional quantized
+Hall states.Physical Review Letters, 52:1583–1586, Apr 1984.
+[35] M. B. Hastings and Xiao-Gang Wen. Quasiadiabatic continuation of quantum states:
+The stability of topological ground-state degeneracy and emergent gauge invariance.
+Physical Review B, 72(4), July 2005.
+58
+[36] M.B. Hastings and S. Michalakis. Quantization of hall conductance for interacting
+electrons on a torus.Communications in Mathematical Physics, 334(1):433–471, 2015.
+[37] L. Homeier, A. Bohrdt, S. Linsel, A. Demler, J.C. Halimeh, and F. Grusdt. Realistic
+scheme for quantum simulation ofZ 2 lattice gauge theories with dynamical matter in
+(2+1)D.Communications Physics, 6(1), June 2023.
+[38] M. Iqbal and et.al. Non-abelian topological order and anyons on a trapped-ion proces-
+sor.Nature, 626(7999):505–511, 2024.
+[39] A. Kapustin and N. Sopenko. Hall conductance and the statistics of flux insertions in
+gapped interacting lattice systems.Journal of Mathematical Physics, 61(10), 2020.
+[40] M. Kebriˇ c, L. Su, A. Douglas, M. Szurek, O. Markovi´ c, U. Schollw¨ ock, A. Bohrdt,
+M. Greiner, and F. Grusdt. Exploring confinement transitions inZ 2 lattice gauge
+theories with dipolar atoms beyond one dimension, 2025.
+[41] A. Kitaev and J. Preskill. Topological entanglement entropy.Physical Review Letters,
+96:110404, Mar 2006.
+[42] A.Y. Kitaev. Fault-tolerant quantum computation by anyons.Annals of Physics,
+303(1):2–30, 2003.
+[43] A.Y. Kitaev. Anyons in an exactly solved model and beyond.Annals of Physics,
+321(1):2–111, 2006.
+[44] R. B. Laughlin. Anomalous quantum Hall effect: An incompressible quantum fluid
+with fractionally charged excitations.Physical Review Letters, 50:1395–1398, May
+1983.
+[45] J. M. Leinaas and J. Myrheim. On the theory of identical particles.Nuovo Cim. B,
+37:1–23, 1977.
+[46] M. Lemm, B. Nachtergaele, S. Warzel, and A. Young. The charge gap is greater than
+the neutral gap in fractional quantum Hall systems.arXiv preprint arXiv:2410.11645,
+2024.
+[47] M. Levin and X.-G. Wen. Detecting topological order in a ground state wave function.
+Physical Review Letters, 96(11), March 2006.
+[48] M.A. Levin and X.-G. Wen. String-net condensation: A physical mechanism for
+topological phases.Physical Review B—Condensed Matter and Materials Physics,
+71(4):045110, 2005.
+[49] E. Lieb and M. Loss. Fluxes, Laplacians and Kasteleyn’s theorem, 1992.
+[50] E.H. Lieb. Flux phase of the half-filled band.Physical Review Letters, 73:2158–2161,
+Oct 1994.
+59
+[51] A. Lucia, A. Moon, and A. Young. Stability of the spectral gap and ground state
+indistinguishability for a decorated AKLT model.Annales Henri Poincar´ e, 25(8):3603–
+3648, 2024.
+[52] A.W.W. Ludwig, M.P.A. Fisher, R. Shankar, and G. Grinstein. Integer quantum Hall
+transition: An alternative approach and exact results.Physical Review B, 50:7526–
+7552, Sep 1994.
+[53] N. Macris and B. Nachtergaele. On the flux phase conjecture at half-filling: An im-
+proved proof.Journal of Statistical Physics, 85(5–6):745–761, December 1996.
+[54] J. Mildenberger, W. Mruczkiewicz, J.C. Halimeh, Z. Jiang, and P. Hauke. Confinement
+in aZ 2 lattice gauge theory on a quantum computer.Nature Physics, 21(2):312–317,
+January 2025.
+[55] B. Nachtergaele, R. Sims, and A. Young. Quasi-locality bounds for quantum lattice
+systems. i. Lieb-Robinson bounds, quasi-local maps, and spectral flow automorphisms.
+Journal of Mathematical Physics, 60(6), June 2019.
+[56] M. Oshikawa. Topological approach to Luttinger’s theorem and the Fermi surface of
+a Kondo lattice.Phys. Rev. Lett., 84:3370–3373, Apr 2000.
+[57] A. Paramekanti and A. Vishwanath. Extending Luttinger’s theorem toZ 2 fractional-
+ized phases of matter.Phys. Rev. B, 70:245118, Dec 2004.
+[58] M. Salmhofer.Renormalization: An Introduction. Theoretical and Mathematical
+Physics. Springer Berlin, Heidelberg, 2010.
+[59] N. Sopenko. Reflection positivity and a refined index for 2d invertible phases.arXiv
+preprint arXiv:2509.01711, 2025.
+[60] H. Tasaki.Physics and Mathematics of Quantum Many-Body Systems. Graduate Texts
+in Physics. Springer International Publishing, 2020.
+[61] X.-G. Wen. Topological orders in rigid states.International Journal of Modern Physics
+B, 4:239–271, 1990.
+[62] X.-G. Wen and Q. Niu. Ground-state degeneracy of the fractional quantum Hall states
+in the presence of a random potential and on high-genus Riemann surfaces.Physical
+Review B, 41(13):9377, 1990.
+[63] F. Wilczek. Magnetic flux, angular momentum, and statistics.Physical Review Letters,
+48(17):1144, 1982.
+[64] F. Wilczek and A. Zee. Linking numbers, spin, and statistics of solitons.Physical
+Review Letters, 51:2250–2252, Dec 1983.
+[65] Y.-S. Wu. General theory for quantum statistics in two dimensions.Physical Review
+Letters, 52(24):2103, 1984.
+60

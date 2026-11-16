@@ -1,0 +1,51 @@
+{
+  "parameters": {
+    "t": 1,
+    "t1": 1,
+    "m": -2,
+    "delta_p": 1,
+    "delta_s": 0.5
+  },
+  "results": [
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 32,
+      "pairing_twist": "untwisted",
+      "raw_unwrapped_phase": 1.5707963267948968,
+      "phase_mod_pi": 1.5707963267948968,
+      "phase_mod_pi_over_pi": 0.5000000000000001,
+      "minimum_link_magnitude": 0.9978203100956667
+    },
+    {
+      "lx": 5,
+      "ly": 5,
+      "steps_per_leg": 32,
+      "pairing_twist": "untwisted",
+      "raw_unwrapped_phase": 4.712388980384695,
+      "phase_mod_pi": 1.5707963267949019,
+      "phase_mod_pi_over_pi": 0.5000000000000017,
+      "minimum_link_magnitude": 0.9972047301802841
+    },
+    {
+      "lx": 6,
+      "ly": 6,
+      "steps_per_leg": 32,
+      "pairing_twist": "untwisted",
+      "raw_unwrapped_phase": 7.853981633974484,
+      "phase_mod_pi": 1.5707963267948974,
+      "phase_mod_pi_over_pi": 0.5000000000000003,
+      "minimum_link_magnitude": 0.9965814129859187
+    },
+    {
+      "lx": 7,
+      "ly": 7,
+      "steps_per_leg": 32,
+      "pairing_twist": "untwisted",
+      "raw_unwrapped_phase": -14.13716694115407,
+      "phase_mod_pi": 1.5707963267948948,
+      "phase_mod_pi_over_pi": 0.49999999999999944,
+      "minimum_link_magnitude": 0.995980031686826
+    }
+  ]
+}

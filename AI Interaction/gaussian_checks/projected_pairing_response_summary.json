@@ -1,0 +1,78 @@
+{
+  "projection": "one parton per unit cell",
+  "derivative_step": 0.0001,
+  "imaginary_convergence": [
+    {
+      "steps_per_leg": 4,
+      "gaussian_total": -0.07679674579644767,
+      "projected_total": -0.031443531544866204,
+      "minimum_projected_link_magnitude": 0.9025582560848862
+    },
+    {
+      "steps_per_leg": 8,
+      "gaussian_total": -0.08217119230464186,
+      "projected_total": -0.03028596500159026,
+      "minimum_projected_link_magnitude": 0.9750711030005881
+    },
+    {
+      "steps_per_leg": 16,
+      "gaussian_total": -0.08349519287338279,
+      "projected_total": -0.030016446933857875,
+      "minimum_projected_link_magnitude": 0.9937279044097084
+    },
+    {
+      "steps_per_leg": 32,
+      "gaussian_total": -0.0838251125599519,
+      "projected_total": -0.029950182145173247,
+      "minimum_projected_link_magnitude": 0.9984297682142381
+    },
+    {
+      "steps_per_leg": 64,
+      "gaussian_total": -0.08390752630307177,
+      "projected_total": -0.029933684100755753,
+      "minimum_projected_link_magnitude": 0.9996072683002972
+    },
+    {
+      "steps_per_leg": 128,
+      "gaussian_total": -0.08392812605843475,
+      "projected_total": -0.029929563827536455,
+      "minimum_projected_link_magnitude": 0.9999018105526508
+    }
+  ],
+  "imaginary_richardson_extrapolation_O_h2": -0.029928190403130023,
+  "finest_imaginary_leg_coefficients": {
+    "gaussian": [
+      -0.023212711705890288,
+      -0.024841629559590246,
+      -0.021069198571322875,
+      -0.01480458622163134
+    ],
+    "projected": [
+      -0.03830440998289775,
+      -0.004944446000714649,
+      0.006184137312273104,
+      0.007135154843802838
+    ]
+  },
+  "finest_real_leg_coefficients": {
+    "gaussian": [
+      -1.2472661792273243e-10,
+      1.3232755277821362e-11,
+      -1.655370718972593e-10,
+      -1.798908244587949e-10
+    ],
+    "projected": [
+      -5.030698080332741e-13,
+      -1.3498655860623432e-12,
+      1.3227266504323154e-12,
+      1.5742615544489524e-12
+    ]
+  },
+  "finest_real_total": {
+    "gaussian": -4.5692175900096527e-10,
+    "projected": 1.0440528107856506e-12
+  },
+  "finest_real_maximum_projected_gaussian_link_difference": 3.0470417855532617e-11,
+  "finest_imaginary_maximum_projected_gaussian_link_difference": 0.0019308728858280478,
+  "minimum_projected_norm_fraction": 0.0015236839354109367
+}

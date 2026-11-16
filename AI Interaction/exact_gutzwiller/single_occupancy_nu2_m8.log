@@ -1,0 +1,36 @@
+Computing 32 links in a 65536-dimensional spin Hilbert space; minimum BdG gap=0.4720419924
+link 00->01: |O|=0.9956057874, phase=-0.0030667625, projected weight=6.96766393e-05
+link 01->02: |O|=0.9899566422, phase=-0.0097419482, projected weight=6.85462774e-05
+link 02->03: |O|=0.9738632515, phase=-0.0147137213, projected weight=6.49397206e-05
+link 03->04: |O|=0.9437031540, phase=-1.5945013518, projected weight=5.86408845e-05
+link 04->05: |O|=0.9138579189, phase=-0.1860326147, projected weight=5.22161900e-05
+link 05->06: |O|=0.9452496617, phase=-0.3586016761, projected weight=5.11863784e-05
+link 06->07: |O|=0.9815469154, phase=-0.4851756912, projected weight=5.57179231e-05
+link 07->08: |O|=0.9937620909, phase=-0.5355369692, projected weight=6.02062210e-05
+link 08->09: |O|=0.9947245426, phase=+0.2154467113, projected weight=6.18528233e-05
+link 09->10: |O|=0.9787170583, phase=+0.0626821484, projected weight=6.09801198e-05
+link 10->11: |O|=0.9571511076, phase=-0.2809115804, projected weight=5.93888827e-05
+link 11->12: |O|=0.9702221057, phase=+0.0017624660, projected weight=6.03659145e-05
+link 12->13: |O|=0.9740071768, phase=+0.0093022080, projected weight=6.46611361e-05
+link 13->14: |O|=0.9746889767, phase=-0.6078088787, projected weight=6.95554042e-05
+link 14->15: |O|=0.9884180895, phase=+0.2700951646, projected weight=7.41800660e-05
+link 15->16: |O|=0.9967064903, phase=+0.3539032247, projected weight=7.74977535e-05
+link 16->17: |O|=0.9974601990, phase=+0.3676608930, projected weight=7.86551223e-05
+link 17->18: |O|=0.9866819298, phase=+0.2889741204, projected weight=7.66300253e-05
+link 18->19: |O|=0.9378512800, phase=+0.0795205474, projected weight=6.89374595e-05
+link 19->20: |O|=0.9201399108, phase=-0.3087642760, projected weight=5.39444036e-05
+link 20->21: |O|=0.9195230750, phase=-0.1720365886, projected weight=4.46393033e-05
+link 21->22: |O|=0.9330711012, phase=+0.1230965198, projected weight=4.93438130e-05
+link 22->23: |O|=0.9854125129, phase=-0.1345798478, projected weight=6.14205334e-05
+link 23->24: |O|=0.9969327255, phase=-0.2428200295, projected weight=6.83543550e-05
+link 24->25: |O|=0.9961953687, phase=-0.0085957110, projected weight=7.02844381e-05
+link 25->26: |O|=0.9902758517, phase=+0.0083346581, projected weight=7.01600002e-05
+link 26->27: |O|=0.9802163028, phase=+0.0142844414, projected weight=6.97929777e-05
+link 27->28: |O|=0.9775470532, phase=+0.0127598916, projected weight=6.91219964e-05
+link 28->29: |O|=0.9713359736, phase=+0.0003121662, projected weight=6.80362129e-05
+link 29->30: |O|=0.9758294329, phase=-0.0042751133, projected weight=6.71665924e-05
+link 30->31: |O|=0.9913677115, phase=-0.0023897855, projected weight=6.78790549e-05
+link 31->00: |O|=0.9966948026, phase=-0.0018246354, projected weight=6.91553186e-05
+Berry phase: +3.139943286898 rad = +0.999474990276 pi
+Minimum link magnitude: 0.9138579189
+Result file: /Users/xuzheying/Library/CloudStorage/OneDrive-HKUST/Work Documents/AI Projects/Many body Berry phase/exact_gutzwiller/single_occupancy_nu2_m8.json

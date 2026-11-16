@@ -1,0 +1,76 @@
+2
+II. VORTEX BRAIDING PHASE FROM
+ADIABATIC EVOLUTION
+In this section, we provide an explicit microscopic
+calculation of vortex braiding phase. As schematically
+shown in Fig. 1, the key idea is to mimic the global loop
+operatorsoftheparity-gaugedtopologicallyorderedstate
+onatorusbyasequenceofadiabaticdeformationsonthe
+corresponding invertible fermion state. This adiabatic
+pathsmoothlyconnectsfourpossible(twisted)boundary
+FIG. 1. Schematically, the vortex braiding in the bosonized
+conditionsforthefermionicmodel. Wethencomputethe
+topologicalorderisdictatedbythecommutationrelationbe-
+many-bodyBerryphasealongthisclosedadiabaticcycle
+tween the loop operators along non-contractible cycles on a
+torus Wˆ(−1)(C ). The four groundstates in the bosonized and identify it with the vortex braiding phase.
+theory c a o ,b rrespo 1, n 2 d to four twisted boundary conditions of Onatorus,atopologicalorderexhibitsatopologically
+the fermionic states (before bosonization). We compute the protected ground-state degeneracy. From a quantum-
+braiding phase θ by the many-body Berry phase θ along informationperspective,theground-statesubspaceforms
+ab BP
+the adiabatic path Uˆadia. connecting the groundstates with a code space, and logical operations are implemented by
+i
+four twisted boundary conditions. nonlocal loop operators Wˆ (C) which winds the anyon a
+a
+along the non-contractible loop C (Fig. 1). For Abelian
+anyons a and b, their mutual braiding phase θ is en-
+ab
+codedinthecommutatorofloopoperatorsalongthetwo
+non-contractible loops C and C :
+1 2
+tract or derive anyonic and other topological data.
+eiθab =Wˆ a (C 1 )Wˆ b (C 2 )Wˆ a− 1(C 1 )Wˆ b− 1(C 2 ). (1)
+We provide an explicit microscopic calculation of the
+abelian vortex braiding phase for even Majorana Chern InwhatfollowswefocusonsystemswithevenMajorana
+number using a many-body Berry phase. For concrete- Chern numbers ν M = 0 and 2. In Kitaev’s sixteen-fold
+ness,wecarryoutthecalculationinafree-fermionmodel way,thetopologicalorderisobtainedbygaugingfermion
+with tunable Chern number on a torus with only Zf parity or bosonization for an invertible fermionic state.
+2
+fermion parity symmetry. We consider specific adiabatic For models with nonzero Chern number, it is difficult to
+paths with special symmetries, connecting four possi- writedownthemicroscopicloopoperatorsexplicitly,and
+ble twisted boundary conditions on a torus and com- thus Eq. (1) is not straightforward to evaluate directly.
+pute the many-body Berry phase. It turns out that the To perform our calculation, we note that states with
+computed many-body Berry phase matches the vortex twisted boundary conditions in the fermionic theory
+braiding phase. The computation is further generalized can be mapped to the various ground states in the
+to the Gutzwiller projected states and the same many- gauged/bosonized theory. Indeed, winding an anyon
+body Berry phase is obtained along the designed adia- aroundnoncontractibleloopsisidenticaltoadiabatically
+batic paths. threading fluxes. Technically, this follows from a useful
+observationofthegeneric2Dbosonizationscheme[4,19–
+We further show that the vortex braiding phase can 23]. Thatis,forastaticZ 2 gaugefieldconfiguration,the
+be interpreted as fermion-parity fractionalization. This Hilbert space of the gauged theory factorizes as
+is suggesting that at ν = 2 the π-vortices carry “half”
+M fermions in the even-parity sector Z static gauge fields ,
+fermion parity, analogous to the half U(1) charge of the | ⟩⊗| 2 ⟩
+(2)
+π-vortices in integer quantum Hall states. This notion
+where the fermionic sector may contain π vortices deter-
+of half or fractionalized fermion parity is most trans-
+mined by the Z gauge field configuration. The gauged
+parent when we consider a bilayer fermionic system and 2
+theory satisfies a set of local constraints Cˆ . For in-
+its bosonization. The data for symmetry enrichment (or i
+stance in the Verstraete-Cirac mapping [20], the local
+morespecificallythedefectfusionrule)dictatesthesym-
+constraints act only on the gauge field sector and take
+metry fractionalization.
+the following form:
+The remainder of the manuscript is organized as fol- Cˆ Z static gauge fields = Z static gauge fields , (3)
+i 2 2
+lows. Section II discusses our computation of vortex | ⟩ | ⟩
+braiding phase. Section III constructs certain symme- States satisfying all local constraints correspond to a
+tryenrichedtopologicalorderfromabilayersystem. The fermionic system without any fluxes. Violations of these
+symmetryenricheddatadictatesfermionparityfraction- constraints correspond to local presence of π-vortices,
+alization. Sec. IV concludes this manuscript with fur- i.e., the flux anyons of the gauged theory.
+ther discussions. App. A introduces the fermion model Note, however, that fluxes can only be created in
+andApp.Boutlinesthecomputationofoverlapbetween pairs in the bosonized theory. Pairs of vortices are con-
+Gaussian states. nected by a string operator. When a fermion traverses

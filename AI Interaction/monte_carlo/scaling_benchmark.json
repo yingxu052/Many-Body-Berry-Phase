@@ -1,0 +1,26 @@
+{
+  "pfaffian_batch_timings": {
+    "16": {
+      "batch_size": 16,
+      "seconds_per_batch": 0.0006909220898523926,
+      "repeats": 100
+    },
+    "32": {
+      "batch_size": 16,
+      "seconds_per_batch": 0.0053336447999754455,
+      "repeats": 40
+    },
+    "80": {
+      "batch_size": 16,
+      "seconds_per_batch": 0.088930216798326,
+      "repeats": 5
+    }
+  },
+  "measured_pfaffian_ratio_80_to_16": 128.7123658433397,
+  "cubic_pfaffian_ratio_81_to_16": 129.746337890625,
+  "full_recomputation_sweep_ratio_9x9_to_4x4": 656.8408355712891,
+  "measured_4x4_full_loop_seconds": 175.36234241598868,
+  "estimated_9x9_full_recomputation_seconds": 115185.1475202565,
+  "estimated_9x9_low_rank_update_seconds": 22752.621732396346,
+  "note": "Fixed links, chains, sweeps and accuracy; excludes growth of autocorrelation and sample requirements. Even matrix size 80 represents the typical excitation Pfaffian at 81 cells."
+}

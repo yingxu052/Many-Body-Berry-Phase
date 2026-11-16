@@ -1,0 +1,44 @@
+{
+  "norm1": 2991945958.4310117,
+  "norm2": 2752250536.114318,
+  "numerator": {
+    "real": 2868472927.416878,
+    "imag": 79382374.9313265
+  },
+  "normalized_overlap": {
+    "real": 0.9996084079754282,
+    "imag": 0.02766325199306286
+  },
+  "counted_configurations": 21523361,
+  "enumerated_configurations": 43046721,
+  "elapsed_seconds": 3.2361912080086768,
+  "truncated": false,
+  "lattice": [
+    4,
+    4
+  ],
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": 1.5,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "phi1": [
+    0.23,
+    -0.17
+  ],
+  "phi2": [
+    0.24,
+    -0.17
+  ],
+  "bdg_gaps": [
+    0.4910955930031153,
+    0.4893540909559557
+  ],
+  "parities": [
+    0,
+    0
+  ],
+  "workers": 8
+}

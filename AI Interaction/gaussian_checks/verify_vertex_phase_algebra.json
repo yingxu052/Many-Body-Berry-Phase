@@ -1,0 +1,144 @@
+{
+  "definition": "U=Theta_out Theta_in (no inverse); U|psi>=u|psi>, u=exp(2i delta)",
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": -2.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "vertices": [
+    {
+      "vertex": "v1_pi_0",
+      "point": [
+        3.141592653589793,
+        0.0
+      ],
+      "incoming": "x",
+      "outgoing": "y",
+      "unitary_symmetry_error": 6.728726998753494e-17,
+      "u_square_plus_identity": 0.0,
+      "u_square_minus_identity": 2.0,
+      "u_square_is_negative_particle_identity": true,
+      "gaussian_parity": 0,
+      "alpha_in": [
+        -0.15106663080370425,
+        0.9885235824489051
+      ],
+      "alpha_out": [
+        -0.15106663080370591,
+        0.9885235824489048
+      ],
+      "alpha_magnitudes": [
+        0.9999999999999998,
+        1.0000000000000007
+      ],
+      "u_ground_eigenvalue": [
+        0.9999999999999998,
+        1.7094111424934914e-15
+      ],
+      "u_ground_eigenvalue_over_pi": 5.44122466208407e-16,
+      "measured_vertex_delta_over_pi": 1.2523380505378717e-17,
+      "eigenvalue_relation_error": 1.6457721432290859e-15
+    },
+    {
+      "vertex": "v2_pi_pi",
+      "point": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "incoming": "y",
+      "outgoing": "x",
+      "unitary_symmetry_error": 9.515856979143203e-17,
+      "u_square_plus_identity": 0.0,
+      "u_square_minus_identity": 2.0,
+      "u_square_is_negative_particle_identity": true,
+      "gaussian_parity": 0,
+      "alpha_in": [
+        -0.4333996592742449,
+        0.901201828305385
+      ],
+      "alpha_out": [
+        -0.43339965927424473,
+        0.9012018283053851
+      ],
+      "alpha_magnitudes": [
+        0.9999999999999996,
+        0.999999999999999
+      ],
+      "u_ground_eigenvalue": [
+        1.0,
+        -1.9395984121301323e-16
+      ],
+      "u_ground_eigenvalue_over_pi": -6.173933498074036e-17,
+      "measured_vertex_delta_over_pi": -2.505310748619215e-16,
+      "eigenvalue_relation_error": 1.380173327351321e-15
+    },
+    {
+      "vertex": "v3_2pi_pi",
+      "point": [
+        6.283185307179586,
+        3.141592653589793
+      ],
+      "incoming": "x",
+      "outgoing": "yt",
+      "unitary_symmetry_error": 1.1654497032101497e-16,
+      "u_square_plus_identity": 0.0,
+      "u_square_minus_identity": 2.0,
+      "u_square_is_negative_particle_identity": true,
+      "gaussian_parity": 0,
+      "alpha_in": [
+        -0.7483886469888164,
+        -0.6632604564258666
+      ],
+      "alpha_out": [
+        -0.7483886469888156,
+        -0.6632604564258674
+      ],
+      "alpha_magnitudes": [
+        1.0000000000000007,
+        1.0000000000000033
+      ],
+      "u_ground_eigenvalue": [
+        0.9999999999999999,
+        1.0802144897853894e-15
+      ],
+      "u_ground_eigenvalue_over_pi": 3.438429512976689e-16,
+      "measured_vertex_delta_over_pi": 0.9999999999999997,
+      "eigenvalue_relation_error": 3.103487147646222e-15
+    },
+    {
+      "vertex": "v4_closure",
+      "point": [
+        6.283185307179586,
+        6.283185307179586
+      ],
+      "incoming": "yt",
+      "outgoing": "x",
+      "unitary_symmetry_error": 1.6481947765434922e-16,
+      "u_square_plus_identity": 0.0,
+      "u_square_minus_identity": 2.0,
+      "u_square_is_negative_particle_identity": true,
+      "gaussian_parity": 0,
+      "alpha_in": [
+        0.26754618558949367,
+        0.9635450371293042
+      ],
+      "alpha_out": [
+        -0.26754618558949306,
+        -0.9635450371293044
+      ],
+      "alpha_magnitudes": [
+        0.9999999999999984,
+        0.9999999999999969
+      ],
+      "u_ground_eigenvalue": [
+        -1.0,
+        -6.526916218293423e-16
+      ],
+      "u_ground_eigenvalue_over_pi": -0.9999999999999999,
+      "measured_vertex_delta_over_pi": 0.5000000000000001,
+      "eigenvalue_relation_error": 1.1302211795604761e-16
+    }
+  ]
+}

@@ -1,0 +1,679 @@
+weekending
+PRL 115, 036802 (2015) PHYSICAL REVIEW LETTERS 17JULY 2015
+Universal Wave-Function Overlap and Universal Topological Data
+from Generic Gapped Ground States
+Heidar Moradi1 and Xiao-Gang Wen1,2
+1Perimeter Institute for Theoretical Physics, Waterloo, Ontario N2L 2Y5, Canada
+2Department of Physics, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA
+(Received 28 March 2014; revised manuscript received 24 March 2015; published 14 July 2015)
+Weproposeaway—universalwave-functionoverlap—toextractuniversaltopologicaldatafromgeneric
+ground states of gapped systems in any dimensions. Those extracted topological data might fully
+characterizethetopologicalorderswithagappedorgaplessboundary.Fornonchiraltopologicalordersin
+ð2þ1ÞD, these universal topological data consist of two matrices S and T, which generate a projective
+representationofSLð2;ZÞonthedegenerategroundstateHilbertspaceonatorus.Fortopologicalorders
+with a gapped boundary in higher dimensions, these data constitute a projective representation of the
+mapping class group MCGðMdÞ of closed spatial manifold Md. For a set of simple models and
+perturbationsintwodimensions,weshowthatthesequantitiesareprotectedtoallordersinperturbation
+theory.Theseoverlapsprovideamuchmorepowerfulalternativetothetopologicalentanglemententropy
+and allow for more efficient numerical implementations.
+DOI: 10.1103/PhysRevLett.115.036802 PACS numbers:73.43.Nq,02.40.Re,64.60.Bd
+SincethediscoveryofthefractionalquantumHalleffect possibletoextracttopologicaldatafromagenericnonfixed
+[1,2]andthetheoreticalstudyofchiralspinliquids[3,4],it point ground state. One such proposal has been through
+has been known that new kinds of orders beyond Landau using the non-Abelian geometric phases S and T
+symmetrybreakingordersexistforgappedstatesofmatter, [7–9,14–17]. Another is using the entanglement entropy
+called topological order [5,6]. Topological order can be [18,19], which has the generic form in 2þ1 dimensions
+thought of as the set of universal properties of a gapped S¼αL−γþOð1=LÞ, where γ is the topological entan-
+system, such as (a) the topology-dependent ground state glement entropy (TEE). It turns out that γ ¼logD, where
+degeneracy[5,6]and(b)thenon-Abeliangeometricphases D is the total quantum dimension and thus a universal
+S and T of the degenerate ground states [7–9], which are topologicalpropertyofthegappedphase.Ageneralization
+robust against any local perturbations that can break any of TEE to higher dimensions was proposed in Ref. [20].
+symmetries[6].Thisisjustlikesuperfluidorder,whichcan Here, wewould like to propose a simpleway to extract
+be thought of as the set of universal properties, zero datafromnonfixedpointgroundstatesthatcouldpotentially
+viscosity and quantized vorticity, that are robust against fully characterize the underlying Topological Quantum
+anylocalperturbationsthatpreservetheU(1)symmetry.It Field Theory (TQFT). We conjecture that for a system on
+wasproposedthatthenon-Abeliangeometricphasesofthe a d-dimensional manifold Md of volume V with the set of
+degenerate ground states on the torus classify ð2þ1ÞD degenerate ground states fjψ αigN α¼1 , the overlaps of the
+topological orders [7]. degenerate ground states have the following form [21,22]
+is
+I
+r
+n
+e
+t
+l
+e
+a
+r
+t
+e
+e
+s
+d
+tin
+t
+g
+o
+ly
+l
+,
+o
+i
+n
+t
+g
+tu
+-
+r
+r
+n
+an
+s
+g
+o
+e
+ut
+q
+th
+u
+a
+a
+t
+n
+n
+tu
+o
+m
+ntri
+e
+v
+n
+ia
+ta
+l
+n
+to
+g
+p
+le
+o
+m
+lo
+e
+g
+n
+i
+t
+ca
+o
+l
+f
+ord
+th
+e
+e
+r hψ αjOˆ
+A
+jψ βi¼e−αVþoð1=VÞMA
+α;β
+; ð1Þ
+ground state [10]. These long-range patterns of entangle- whereOˆ
+,labeledbytheindexA,aretransformationsofthe
+ment are responsible for the interesting physics, such as A
+wave functions induced by the automorphism transforma-
+quasiparticle excitations with exotic statistics, completely
+tionsofthespaceMd →Md,αisanonuniversalconstant,and
+robust edge states, as well as the universal ground state
+degeneracy and non-Abelian geometric phases mentioned
+MAisauniversalunitarymatrix[uptoanoverallU(1)phase].
+above.
+TheMAformaprojectiverepresentationoftheautomorphism
+Our current understanding is that topological order in
+groupofthespaceMd—AMGðMdÞ,whichisrobustagainst
+2þ1 dimensions is characterized by a unitary modular anyperturbations.Weproposethatsuchprojectiverepresen-
+tensor category (UMTC), which encodes particle statistics tationsfordifferentspacetopologiesareuniversaltopological
+and gives rise to representations of the Braid group [11], dataandthattheymightfullycharacterizetopologicalorders
+andthechiralcentralchargec −,whichencodesinformation withfinitegroundstatedegeneracy.Thedisconnectedcom-
+about chiral gapless edge states [12,13]. ponents of the automorphism group is the mapping class
+Whilethealgebraictheoryofð2þ1ÞDtopologicalorder group MCGðMdÞ≡π 0½AMGðMdÞ(cid:2). We propose that pro-
+is largely understood, it is natural to ask whether it is jective representations of the mapping class group for
+0031-9007=15=115(3)=036802(5) 036802-1 © 2015 American Physical Society
+
+weekending
+PRL 115, 036802 (2015) PHYSICAL REVIEW LETTERS 17JULY 2015
+different space topologies are universal topological data where tTrð(cid:3)(cid:3)(cid:3)Þ contracts the tensor indices in the tensor
+and that they might fully characterize topological orders product network. By choosing the dimension of the inner
+with a gapped boundary. (For a more general and a more indices large enough, one can approximate any state
+detaileddiscussion,seeRef.[22].)Forsomemoreintuition arbitrarily well. This particular representation is especially
+behindourconjecture,seetheSupplementalMaterial[23]. interesting for the study of gapped states since it auto-
+Fora2DtorusT2 themappingclassgroupMCGðT2
+Þ¼ matically satisfies the area law, a property that gapped
+SLð2;ZÞisgeneratedbya90°rotationS ˆ andaDehntwist groundstatesareknowntohave[29,30].Onecanthinkof
+T ˆ . The corresponding MA are the unitary matrices S;T, theTNSasaparametrizationoftheinterestingsubmanifold
+which generate a projective representation of SLð2;ZÞ. of the Hilbert space, where the ground states of the local
+Compared to the proposal in Ref. [7–9], here we do not gapped Hamiltonians live.
+needtocalculatethegeometricphaseforafamilyofground The local tensor representation of wave functions is
+statesandonlyhavetoconsideramuchsimplercalculation however not enough; it must be equipped with a gauge
+—a particular overlap (with the cost of a nonuniversal structure [31]. Surprisingly, local variations of a tensor do
+contribution with volume scaling). We will calculate this not always correspond to local perturbations of the
+for thesimple exampleofthe Z topological statestudied Hamiltonian and can change the global topological order.
+N
+in Refs. [24–28] and investigate the universality of this In order to approximate the ground state of a Hamiltonian
+under perturbations such as adding string tension. withtopologicalorderwithagaugegroupG,itisimportant
+WenotethataUMTCthatdescribesthestatisticsofthe to search within the set of variational tensors with sym-
+excitations in ð2þ1ÞD, can also gives rise to a projective metryG.ArbitrarilysmallGbreakingvariationsmightlead
+representation of SLð2;ZÞ. We propose that the universal totensornetworksthatcanapproximatelocalpropertiesof
+wave-function overlap (1) computes this projective repre- a system well but give wrong predictions about the global
+sentation.Therepresentationisgeneratedbytwoelements properties.
+S and T satisfying the relations InRef.[32]afewconceptswereintroducedtocharacter-
+ize the symmetry structure of a TNS, in particular, the
+ðSTÞ 3 ¼eð2πi=8Þc−C; S2 ¼C; ð2Þ
+d -IGG, which is the group of intrinsically d -
+space space
+where C is a so-called charge conjugation matrix and dimensional gauge transformations on the inner indices
+satisfiePs C2 ¼1. Furthermore, we have that that leave the tensors invariant. It was in particular shown
+ð1=DÞ d2θ ¼eð2πi=8Þc−,where d andθ arethe quan- thatinthecaseofthetwo-dimensionalZ 2 topologicalstate
+tum dime a ns a io a n and topological spi a n of q a uasiparticle a, we have 2-IGG¼Z 2. Furthermore, it was shown that
+respectively. This shows that the UMTC, or particle 2-IGGcontainsinformationaboutstringoperatorsandcan
+statistics, fixes the chiral central charge mod 8. This beusedtoconstructthefullsetofdegenerategroundstates
+constitutes a projective representation of SLð2;ZÞ on the on the torus from a local tensor representation [33].
+ground state subspace on a torus, which encodes how the Thus, the local data we need are the localtensorþ
+ground states transform under large automorphisms gaugestructure. From this gauge structure we can twist
+MCGðT2 Þ.Webelievethatourhigherdimensionaluniver- the tensor to get the full set of ground states on a torus
+sal quantities (1) also encode information about the [32,34,35].Weshallcallthenaturalbasiswegetfromsuch
+topological order in the ground state. a procedure the twist basis.
+Construction of degenerate set of ground states from We will in the following consider the Z topological
+N
+localtensornetworks.—Sincetopologicalorderexistseven state. We can construct a local tensor for this state in the
+on topologically trivial manifolds, all of its properties followingway.Letthephysicalspinsliveonthelinksofthe
+should be available from a local wave function. But we lattice,andgiveeachlinkanorientationasinFig.1(b).Put
+need to sharpen what we mean by local wave functions, a tensor Tðσ 1 σ 2 σ 3 σ 4Þ on each site and require that
+αβγδ
+sincewave functionstypically depend onglobal data such
+as boundary conditions. Amazingly, there exists a surpris-
+ingly simple local representation of globally entangled
+statesusingtensornetworklanguage.Inparticular,atensor
+network state (TNS) known as Projected Entangled Pair
+States (PEPS) is given by associating a tensor T½ σ i(cid:2) ðαβγ…Þ
+to each site i, where σ is a physical index associa i ted with
+i
+the local Hilbert space, and α;β;γ are inner indices and
+connect to each other to form a graph. Using this repre-
+sentation, the wave function is given by FIG.1. (a)Latticeunderconsideration,withthespinslivingon
+thelinks.(b)TensornetworkforZ gaugetheory.Thelatticeis
+X N
+jψi¼ tTrðT½ σ 1 1 (cid:2)T½ σ 2 2 (cid:2)…Þjσ 1 ;σ 2 ;…i; ð3Þ c si h te o s se a n nd wi t t h h e t d h o e t o s r r i e e p n r t e a s ti e o n n t s th h e ow ph n y . s T i h cs e i t n e d n i s c o e r s s . l ( iv c) e S o y n m th m e e l t a r t y tic o e f
+fσ ig the Z
+N
+tensor.
+036802-2
+
+weekending
+PRL 115, 036802 (2015) PHYSICAL REVIEW LETTERS 17JULY 2015
+TðαβγδÞ ¼1; if βþγ−α−δ¼0 modN; ð4Þ construction can trivially be extended to higher-genus
+αβγδ
+surfaces.
+Thisisthestring-netbasisfortheZ gaugetheory.The
+otherwise T
+α
+ðσ
+β
+1
+γ
+σ
+δ
+2 σ 3 σ 4Þ ¼0. This tensor has a Z
+N
+symmetry
+groundstatesinthetwistbasiscorresp
+N
+ondingtothetensor
+given by the tensors [see Fig. 1(c)] (4) are just the eigenbasis of the operators W and W .
+x y
+These are given by
+1 X
+jψ
+ab
+i¼pffiffiffiffiffiffiffiffiffiffi γaω xðgÞþbω yðgÞjgi; ð5Þ
+jG △j
+g∈G△
+Z topologicalorder.—Equippedwiththegroundstates
+N where γ ¼e−ð2πi=NÞ and ω count how many times the
+from the local tensors,one cancalculate the overlap (1) to i
+stringconfigurationgwrapsaroundtheithcycle.Notethat
+extract the universal topological properties.
+W jψ i¼eð2πi=NÞajψ i and W jψ i¼eð2πi=NÞbjψ i.
+Asasimpleexample,letuscalculatetheoverlap(1)for x ab ab y ab ab
+the case of Z N topological state on the lattice in Fig. 1(a). For later use,note that jG α △ β j¼NjΛ⋆ △ j−1 ¼N2L2−1, jG α □ β j¼
+Forthissimpleexamplewewillnotusethetensorproduct NjΛ⋆ □j−1 ¼NL2−1, jG △j¼N2 jG α
+△
+β j, and jG □j¼N2 jG α
+□
+β j.
+representation for simplicity, since it can be calculated ModularSandT matrixfromthegroundstate.—Wecan
+directly. See Ref. [37] for the calculation of Eq. (1) using now define two nonlocal operators on our Hilbert space
+the tensor network and gauge structure. Oˆ ;Oˆ ∶ H→HasinFig.2,mimickingthegeneratorsof
+Let there be a local Hilbert space H
+a
+≈C½Z
+N
+(cid:2)≈CN
+the
+S
+tor
+T
+usmapping class group in the continuum. Here,
+Oˆ
+associated with each link a∈Ω with basis fjσ igN−1. S
+a σ a¼0 maps any spin configuration to the 90 deg rotated con-
+Wewillrepresentaspinconfigurationjσ
+a1
+σ
+a2
+…iusinga figuration.Oˆ
+correspondstoasheartransformationandis
+stringpicture,wherethestateonlinka∈Ωisrepresented T
+defined as in Fig. 2. It is clear that since we are on the
+by an oriented string of type σ ∈Z with a chosen
+a N lattice, these operators will not preserve the subspace of
+orientation, and j0i corresponds to no string. There is a
+closed string configurations.
+∼
+n o a ri t T e u n h ra t e a l t g i i o s r o n o m u a n o ⋆ d rp b s h y t i a s t j m e σ a H i H i ↦ l a b → e j r H σ t a a s ⋆ ⋆ p i a f ¼ c o e r j− l o in f σ k a t i h . a e a Z nd i t t o s p r o e l v o e g r i s c e a d l Oˆ S W b e e c tw an ee e n asi g ly ro c u a n l d cul s a t t a e te t s h . e I m n at b ri o x th ele c m as e e n s t , s o o n f l O y ˆ T jG an □ d j
+N configurationshaveanonzerooverlapwiththeundeformed
+orderconsistsofanequalsuperpositionofallclosed-string
+ground state. For the S transformation we find the overlap
+configurations that satisfy the Z fusion rules.
+N (see Fig. 3)
+The string-net ground state Hilbert space on T2 can
+be algebraically constructed in the following way.
+L ea e c t h Λ p ⋆ △ ∈ d Λ en ⋆ ot d e ef th in e e s t e h t e o s f tri t n ri g an o g p u e la ra r to p r la B q △ uet t t h e a s t a a n c d ts f o o n r hψ ab jOˆ S jψ a¯b ¯i¼δ a;b ¯ δ b;−a¯ j j G G □ △ j j ¼S ab;a¯b ¯e−logðNÞL2 ;
+△ p
+the links bounding p, with clockwise orientation, by where we have defined the modular S matrix
+jσi↦jσþ1 modNi. The set of all contractable closed S ab;a¯b ¯ ¼δ a;b ¯ δ b;−a¯. Similarly we have hψ ab jOˆ T jψ a¯b ¯i¼
+ð l g o B e o n △ p p e Þ r N a c t ∼ o ed n 1 f g i , g ro Q u u ra p p t ∈ i G o Λ n ⋆ △ fr s B ee △ p ¼ ca ∼ n h 1 f , B b △ p e an g d p th ∈ o B Λ u ⋆ △ △ p g i B , h △ q m t o ∼ o d f B ul △ q a o s B th △ p t e h , e r d e e la f n r t o i e o e te n ly d s T s T a a a t b b is ; ; a a ¯ ¯ fy b b ¯ ¯ e ¼ − E lo δ q g a ð . þ N b Þ ( L ;a 2 ¯ 2 δ , ) b w ;b ¯ w . he it O r h e n t e h c e − c m a ¼ n o 0 d r u e l a m a d r o il T d y m 8 c a h t e r a c i n x k d is th C g a i t a v b e ; t a¯ n h b ¯ e b s ¼ y e
+asG0 △ 0 ¼G free =∼.SimilarlyweletthesubgroupG0 □ 0 ⊂G0 △ 0 δ a;−a¯ δ −b;b ¯. Thus, this forms a projective representation of
+correspond to closed loop configurations on the square the modular group SLð2;ZÞ.
+latticelinks.Forthegroundstatesonthetorus,weneedto In order to use Verlinde’s formula and generate the
+introducetwonewoperatorsW andW ,correspondingto relevantUMTC,weneedtoputthemodularmatricesinthe
+x y
+noncontractable loops along the two cycles of T2. These
+satisfy ðW ÞN ¼1, i¼x;y. With these, we can construct
+i
+αβ
+the group G , corresponding to closed string configura-
+△
+tionswithðα;βÞwindingsaroundthecycleðx;yÞ,modulo
+N. Similarly, let G △ be the group of all possible closed
+string configurations on the torus. These states are ortho-
+no T rm h a e l h N g α 2 β -d jg¯ im α¯β¯ e i n ¼ sio δ n g a αβ l ;g¯ α¯ g β¯ . round state Hilbert space is F T I h G e . S 2 ( t c ra o n lo s r fo o rm nl a in ti e o ) n . c D or e r f e in sp it o io n n ds of to S r a o n t d ati T ng tra c n o s n f f o i r g m ur a a t t i i o o n n s s .
+90 deg, while T corresponds to a shear transformation. Note
+then spanned by the following vectors jα;βi¼
+P that this transformation does not leave the space of closed loop
+jG α △ β j −1=2 gαβ ∈Gα
+△
+βjg αβi, where α;β ¼0;…;N−1. The configurations invariant.
+036802-3
+
+weekending
+PRL 115, 036802 (2015) PHYSICAL REVIEW LETTERS 17JULY 2015
+to all orders in perturbatio
+P
+n theory in β, where fðβÞ is a
+functionofβonly.SinceN g∈Gαβ A−LðgÞ canbeviewedas
+□
+the partition function of the Z clock model with the
+N
+FIG. 3 (color online). In the string-net basis, a modular S twisted boundary condition, we find that
+transformation flips the topological sectors ðα;βÞ→
+(cid:3) (cid:3)
+ðβ;−α modNÞ, while a T transformation has the effect (cid:3) P (cid:3)
+ðα;βÞ→ðα;αþβ modNÞ. (cid:3) (cid:3) (cid:3)log N Pg∈Gα □ β A−LðgÞ(cid:3) (cid:3) (cid:3)<hLe−L=ξ; ð7Þ
+(cid:3) N A−LðgÞ(cid:3)
+g∈G00
+quasiparticlebasis[38].Thisisdoneasfollows:fortheZ □
+N
+theorytherearenoncontractablemagneticoperatorsonthe
+wherehandξareLindependentconstants.Thisisbecause
+duallatticesatisfyingðΓÞN ¼1,andwiththecommutation
+i the total free energies of the Z clock model with the
+relationsW Γ ¼e−ð2πi=NÞΓ W andW Γ ¼e−ð2πi=NÞΓ W . N
+x y y x y x x y twisted and untwisted boundary condition can only differ
+Thebasisweareaftercorrespondstohavingawell-defined by hLe−L=ξ at most. Putting everything together, we find
+magnetic and electric flux through one direction of the
+that
+torus. In the eigenbasis of W and Γ , jϕ i, we find
+y y mn
+S mn;m¯n¯ ¼
+N
+1
+e−ð2πi=NÞðmn¯þnm¯Þ; A
+hψ
+ab
+jOˆ
+S
+jψ
+a¯b
+¯i
+A
+¼S
+ab;a¯b
+¯e−½logNþfðβÞ(cid:2)L2þoðL−1Þ: ð8Þ
+T mn;m¯n¯ ¼δ m;m¯ δ n;n¯ eð2πi=NÞmn; Th 3 e D un to iv p e o rs lo a g l i q c u a a l n s t t i a ty te S s a a b n ;a¯ d b ¯ S is L p ð r 3 o ; t Z ec Þ t . e — d A to c a c l o l r o d r i d n e g rs to in ou β r .
+the well-known modular matrices for the Z model. conjecture (1) there are similar universal quantities in
+N
+Perturbed Z model.—We will now consider a local higher dimensions and it would be interesting to consider
+N
+perturbation to the Z topological state. One interesting a simple example in three dimensions. For example, the
+N mapping class group of the 3-torus is MCGðT3 Þ¼
+perturbation is to add a magnetic field of the form
+ðJ=2Þ P ðZ þZ † Þ,whereZ isalocaloperatordefined SLð3;ZÞ. This group is generated by two elements of
+a∈Ω a a a the form [41]
+as Z
+a
+jσ
+a
+i¼eð2πi=NÞσ ajσ
+a
+i [40]. This perturbation breaks
+0 1
+the exact solvability of the model, but essentially corre- 0 1 0
+sponds to introducing string tension to each closed string
+S
+ˆ~
+¼
+B
+@0 0 1
+C
+A
+configuration. This can be implemented by a local defor-
+mation of the ground states of the form 1 0 0
+1 X
+jψ
+ab
+i
+A
+¼pffiffiffiffiffiffiffiffiffiffi A−LðgÞ=2γaω xðgÞþbω yðgÞjgi; and
+jG △j g∈G△ 0
+1 0 0
+1
+where P A is a variational parameter. Furthermore, T ˆ~ ¼ B @1 1 0 C A:
+LðgÞ¼ 1 f1−cos½ð2π=NÞσ (cid:2)g, which is just the
+a∈Ω2 a 0 0 1
+total string length for N ¼2.
+Performing an S transformation, we find the overlap
+These matrices act on the unit vectors by S
+ˆ~∶
+ðxˆ;yˆ;zˆÞ↦
+A
+hψ
+ab
+jOˆ
+S
+jψ
+a¯b
+¯i
+A
+¼
+jG
+1
+△j
+α
+XN
+β
+−
+¼
+1
+0
+γðb ¯−aÞα−ðbþa¯Þβ
+g
+X
+∈Gα □ β
+A−LðgÞ:
+i
+c
+ð
+n
+zˆ
+o
+;
+r
+x
+t
+r
+ˆ
+h
+e
+;
+s
+e
+yˆ
+p
+Þ
+o
+x
+a
+n
+y
+n
+d
+d
+s
+pl
+t
+a
+s
+o
+i
+n
+m
+a
+e.
+i
+r
+l
+o
+a
+I
+t
+n
+r
+a
+ly
+ti
+t
+o
+h
+T
+n
+ˆ~
+e
+∶
+,
+c
+w
+ð
+a
+x
+h
+ˆ
+s
+;
+i
+e
+l
+yˆ
+e
+;
+o
+T
+zˆ
+~
+f
+Þ
+i
+t
+↦
+s
+h
+a
+e
+ð
+s
+3
+x
+h
+ˆ
+D
+e
+þ
+ar
+Z
+yˆ
+t
+;
+ra
+yˆ
+n
+;
+m
+zˆ
+s
+Þ
+f
+.
+o
+o
+d
+r
+T
+m
+e
+h
+l
+a
+,
+u
+t
+s
+i
+w
+o
+S
+n
+e
+~
+N
+If we view strings as the domain walls of a Z clock can directly compute these generators in a basis with
+N
+model on a squarePlattice described by the following well-defined flux in one direction as [42]
+Hamiltonian H ¼ 1 f1 − cos½ð2π=NÞðσ − σ Þ(cid:2)g;
+hiji 2 P i j 1
+σ Pi ;σ j ¼ 0;1;…;N − 1, we find that N g∈G0 □ 0 A−LðgÞ ¼ S ~ abc;a¯b ¯ c¯ ¼ N δ b;c¯ eð2πi=NÞða¯c−ab ¯ Þ;
+Z fσ c ig lo e c − k βH m c o a d n el b , e w v h i e e r w e e β d ¼ as l t o h g e ðA pa Þ r . ti I t n io t n he fu S n u c p ti p o l n em o e f n t t h a e l T ~ abc;a¯b ¯ c¯ ¼δ a;a¯ δ b;b ¯ δ c;c¯ eð2πi=NÞab:
+N
+Material [23] we show that in the disordered phase of the
+These matrices contain information about the self- and
+Z clock model
+N mutualstatisticsofparticleandstringexcitationsabovethe
+X ground state [42].
+ZðβÞ¼ e−βH ¼eL2logðNÞ−fðβÞL2þoðL−1Þ ð6Þ In the 2D limit where one direction is taken to be very
+fσ ig small, the operator creating a noncontractable loop along
+036802-4
+
+weekending
+PRL 115, 036802 (2015) PHYSICAL REVIEW LETTERS 17JULY 2015
+this direction is now essentially local. By such a local [18] A. Kitaev and J. Preskill, Phys. Rev. Lett. 96, 110404
+perturbation, one can break the ground state degeneracy (2006).
+from N3 down to N2. One can directly show that the [19] M. Levin and X.-G. Wen, Phys. Rev. Lett. 96, 110405
+generators for an SLð2;ZÞ⊂SLð3;ZÞ subgroup exactly (2006).
+[20] T.Grover,A.M.Turner,andA.Vishwanath,Phys.Rev.B
+reduce to the 2D S and T matrices [42].
+84, 195120 (2011);
+Conclusion.—In this Letter we have conjectured a
+[21] L.-Y. Hung and X.-G. Wen, Phys. Rev. B 89, 075121
+universal wave-function overlap (1) for gapped systems
+(2014).
+in d dimensions, whichgives rise to projective representa-
+[22] L. Kong, X.-G. Wen, and H. Zheng, arXiv:1502.01690.
+tions of the mapping class group MCGðMdÞ, for any [23] See Supplemental Material at http://link.aps.org/
+manifold Md. These quantities contain more information supplemental/10.1103/PhysRevLett.115.036802 for some
+than the topological entanglement entropies [18–20], intuitive reasoning behind our conjecture and the compu-
+and might characterize the topological order completely, tations behind the result in Eq. (6).
+[24] N.ReadandS.Sachdev,Phys.Rev.Lett.66,1773(1991).
+as in two dimensions [7]. In a following paper [37], we
+[25] X.-G. Wen, Phys. Rev. B 44, 2664 (1991).
+will numerically study the overlaps (1) for simple two-
+[26] S.S. Bullock and G.K. Brennen, J. Phys. A 40, 3481
+dimensionalmodels andshow that the universal quantities
+(2007).
+are very robust against perturbations and unambiguously
+[27] M.D. Schulz, S. Dusuel, R. Orús, J. Vidal, and K.P.
+characterize phase transitions. In Ref. [42] we study the Schmidt, New J. Phys. 14, 025005 (2012).
+universal quantities (1) for three-dimensional systems. [28] Y.-Z. You and X.-G. Wen, Phys. Rev. B 86, 161107(R)
+(2012).
+This research is supported by NSF Grants No. DMR-
+[29] M.B.Hastings,J.Stat.Mech.TheoryExp.(2007)P08024.
+1005541,NSFCNo.11074140,andNSFCNo.11274192.
+[30] L. Masanes, Phys. Rev. A 80, 052104 (2009).
+It is also supported by the John Templeton Foundation. [31] X.Chen,B.Zeng,Z.-C.Gu,I.L.Chuang,andX.-G.Wen,
+Research at Perimeter Institute is supported by the Phys. Rev. B 82, 165119 (2010).
+Government of Canada through Industry Canada and by [32] B. Swingle and X.-G. Wen, arXiv:1001.4517.
+the Province of Ontario through the Ministry of Research. [33] Arelated concept for afinitegroupG is G-injectivePEPS
+[34].AG-injectivetensorisatensorthatisinvariantundera
+G action on all innerindices simultaneously, together with
+the property that one can achieve any action on thevirtual
+indicesbyactingonthephysicalindices.Itwasshownthat
+[1] D.C. Tsui, H.L. Stormer, and A.C. Gossard, Phys. Rev.
+thesetensorsaregroundstatesofaparentHamiltonianwith
+Lett. 48, 1559 (1982).
+TEE γ ¼logjGj. This class of PEPS describes the univer-
+[2] R.B. Laughlin, Phys. Rev. Lett. 50, 1395 (1983).
+salityclassofquantumdoublemodelsDðGÞ.Recently,this
+[3] V.KalmeyerandR.B.Laughlin,Phys.Rev.Lett.59,2095
+was generalized to ðG;ωÞ-injective PEPS [35], where the
+(1987).
+actionofGistwistedbya3-cocycleofωofG.Itwasshown
+[4] X.-G.Wen,F.Wilczek,andA.Zee,Phys.Rev.B39,11413
+thatthesePEPSdescribetopologicalorderintheuniversity
+(1989).
+class of Dijkgraaf-Witten TQFTs [36] and only depend on
+[5] X.-G. Wen, Phys. Rev. B 40, 7387 (1989).
+the cohomology class ½ω(cid:2)∈H3(G;Uð1Þ) of ω.
+[6] X.-G. Wen and Q. Niu, Phys. Rev. B 41, 9377 (1990).
+[34] N. Schuch, I. Cirac, and D. Pérez-García, Ann. Phys.
+[7] X.-G. Wen, Int. J. Mod. Phys. B 04, 239 (1990).
+(Amsterdam) 325, 2153 (2010).
+[8] E.Keski-Vakkuri andX.-G.Wen,Int.J.Mod.Phys.B07,
+[35] O.Buerschaper,Ann.Phys.(Amsterdam)351,447(2014).
+4227 (1993).
+[36] R.DijkgraafandE.Witten,Commun.Math.Phys.129,393
+[9] X.-G. Wen, arXiv:1212.5121.
+(1990).
+[10] X. Chen, Z.-C. Gu, and X.-G. Wen, Phys. Rev. B 82,
+[37] H.He,H.Moradi,andX.-G.Wen,Phys.Rev.B90,205114
+155138 (2010).
+(2014).
+[11] Z. Wang, Topological Quantum Computation (CBMS
+[38] Ingeneral,wedonothaveagaugetheoryandneedanother
+Regional Conference Series in Mathematics, 2010).
+waytofindthemodularmatricesintherightbasis.Oneway
+[12] X.-G. Wen, Int. J. Mod. Phys. B 06, 1711 (1992).
+is to find a basis that satisfies certain special properties. In
+[13] X.-G. Wen, Adv. Phys. 44, 405 (1995).
+Ref.[39]itwasshownforseveralexamplesthatthisbasisis
+[14] Y. Zhang, T. Grover, A. Turner, M. Oshikawa, and A.
+unique and leads to the right form of S and T.
+Vishwanath, Phys. Rev. B 85, 235151 (2012).
+[39] F. Liu, Z. Wang, Y.-Z. You, and X.-G. Wen,
+[15] L. Cincio and G. Vidal, Phys. Rev. Lett. 110, 067208
+arXiv:1303.0829.
+(2013).
+[40] See Ref. [27] for an analysis of models of this type.
+[16] M.P. Zaletel, R.S.K. Mong, and F. Pollmann, Phys. Rev.
+[41] S.M. Trott, Canadian Mathematical Bulletin 5, 245
+Lett. 110, 236801 (2013).
+(1962).
+[17] H.-H.Tu,Y.Zhang,andX.-L.Qi,Phys.Rev.B88,195412
+[42] H.MoradiandX.-G.Wen,Phys.Rev.B91,075114(2015).
+(2013).
+036802-5

@@ -1,0 +1,25 @@
+{
+  "lattice": [
+    4,
+    4
+  ],
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": -2.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "pairing_convention": "original complex antisymmetric reverse-bond pairing: exp(i*phi)",
+  "steps_per_leg": 200,
+  "number_of_path_points_including_leg_endpoints": 804,
+  "number_of_bdg_levels": 64,
+  "minimum_absolute_bdg_energy": 1.0890013988368465,
+  "minimum_gap_twist": [
+    6.283185307179586,
+    5.01084028247572
+  ],
+  "minimum_gap_path_index": 722,
+  "minimum_gap_leg": 3,
+  "level_crossing_detected": false
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "lx": 4,
+    "ly": 4,
+    "steps_per_leg": 16,
+    "raw_phase_radians": -1.5707963267948988,
+    "raw_phase_over_pi": -0.5000000000000007,
+    "phase_mod_2pi_radians": -1.5707963267948988,
+    "phase_mod_pi_radians": 1.5707963267948943,
+    "phase_mod_pi_over_pi": 0.4999999999999993,
+    "minimum_link_magnitude": 0.9892554415044997,
+    "minimum_bdg_gap": 1.1180339887498938
+  },
+  {
+    "lx": 4,
+    "ly": 4,
+    "steps_per_leg": 32,
+    "raw_phase_radians": -10.995574287564272,
+    "raw_phase_over_pi": -3.4999999999999987,
+    "phase_mod_2pi_radians": 1.5707963267949006,
+    "phase_mod_pi_radians": 1.5707963267949,
+    "phase_mod_pi_over_pi": 0.5000000000000011,
+    "minimum_link_magnitude": 0.9972956984241522,
+    "minimum_bdg_gap": 1.1180339887498938
+  },
+  {
+    "lx": 5,
+    "ly": 5,
+    "steps_per_leg": 16,
+    "raw_phase_radians": -4.712388980384687,
+    "raw_phase_over_pi": -1.4999999999999991,
+    "phase_mod_2pi_radians": 1.5707963267948994,
+    "phase_mod_pi_radians": 1.5707963267948992,
+    "phase_mod_pi_over_pi": 0.5000000000000009,
+    "minimum_link_magnitude": 0.9867936209557092,
+    "minimum_bdg_gap": 0.9583530245622871
+  },
+  {
+    "lx": 5,
+    "ly": 5,
+    "steps_per_leg": 32,
+    "raw_phase_radians": 17.278759594743867,
+    "raw_phase_over_pi": 5.500000000000002,
+    "phase_mod_2pi_radians": -1.570796326794892,
+    "phase_mod_pi_radians": 1.5707963267949019,
+    "phase_mod_pi_over_pi": 0.5000000000000017,
+    "minimum_link_magnitude": 0.9966691458880287,
+    "minimum_bdg_gap": 0.9583530245622871
+  },
+  {
+    "lx": 6,
+    "ly": 6,
+    "steps_per_leg": 16,
+    "raw_phase_radians": -4.712388980384689,
+    "raw_phase_over_pi": -1.4999999999999998,
+    "phase_mod_2pi_radians": 1.5707963267948977,
+    "phase_mod_pi_radians": 1.5707963267948974,
+    "phase_mod_pi_over_pi": 0.5000000000000003,
+    "minimum_link_magnitude": 0.9842880075818571,
+    "minimum_bdg_gap": 0.999999999999998
+  },
+  {
+    "lx": 6,
+    "ly": 6,
+    "steps_per_leg": 32,
+    "raw_phase_radians": 10.995574287564272,
+    "raw_phase_over_pi": 3.4999999999999987,
+    "phase_mod_2pi_radians": -1.5707963267949006,
+    "phase_mod_pi_radians": 1.570796326794893,
+    "phase_mod_pi_over_pi": 0.4999999999999989,
+    "minimum_link_magnitude": 0.996033116075038,
+    "minimum_bdg_gap": 0.999999999999998
+  },
+  {
+    "lx": 7,
+    "ly": 7,
+    "steps_per_leg": 16,
+    "raw_phase_radians": 1.570796326794895,
+    "raw_phase_over_pi": 0.4999999999999995,
+    "phase_mod_2pi_radians": 1.570796326794895,
+    "phase_mod_pi_radians": 1.570796326794895,
+    "phase_mod_pi_over_pi": 0.4999999999999995,
+    "minimum_link_magnitude": 0.981737453486595,
+    "minimum_bdg_gap": 0.976475719223853
+  },
+  {
+    "lx": 7,
+    "ly": 7,
+    "steps_per_leg": 32,
+    "raw_phase_radians": 10.99557428756428,
+    "raw_phase_over_pi": 3.5000000000000013,
+    "phase_mod_2pi_radians": -1.5707963267948934,
+    "phase_mod_pi_radians": 1.5707963267949,
+    "phase_mod_pi_over_pi": 0.5000000000000011,
+    "minimum_link_magnitude": 0.9953868066343955,
+    "minimum_bdg_gap": 0.976475719223853
+  }
+]

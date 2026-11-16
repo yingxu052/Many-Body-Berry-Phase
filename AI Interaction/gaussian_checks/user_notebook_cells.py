@@ -1,0 +1,296 @@
+
+# ===== CELL 0 =====
+import numpy as np
+from matplotlib import pyplot as plt
+import copy
+
+# ===== CELL 1 =====
+def Gaussian_overlap(vec1, vec2):
+    N = len(vec1) // 2
+    
+    U1 = vec1[: N, N :]
+    V1 = vec1[N :, N :]
+    W1 = np.zeros((2 * N, 2 * N), dtype = "complex128")
+    W1[:N, :N] = U1
+    W1[N:, :N] = V1
+    W1[:N, N:] = np.conj(V1)
+    W1[N:, N:] = np.conj(U1)
+
+    U2 = vec2[: N, N :]
+    V2 = vec2[N :, N :]
+    W2 = np.zeros((2 * N, 2 * N), dtype = "complex128")
+    W2[:N, :N] = U2
+    W2[N:, :N] = V2
+    W2[:N, N:] = np.conj(V2)
+    W2[N:, N:] = np.conj(U2)
+    
+    W = np.conj(W1).T @ W2
+    
+    U = W[:N, :N]
+    ov = np.linalg.det(U)
+    
+    eig_U, vec_U = np.linalg.eig(U)
+    
+    BP = 0.5 * np.sum(np.imag(np.log(eig_U)))
+    
+    return ((BP / np.pi) % 1) * np.pi, ov
+
+# ===== CELL 2 =====
+def Ham_tbc(Lx, Ly, mu, t, Delta, theta_x, theta_y):
+    Ht = np.zeros((Lx * Ly, Lx * Ly), dtype = "complex128")
+    for i in range(Lx):
+        for j in range(Ly):
+            ind0 = i + j * Lx
+            indx = (i + 1) % Lx + j * Lx
+            
+#             Ht[ind0, indx] = - np.exp(1j * theta_x / Lx)
+#             Ht[indx, ind0] = - np.exp(- 1j * theta_x / Lx)
+            
+            if i != Lx - 1:
+                Ht[ind0, indx] = - 1
+                Ht[indx, ind0] = - 1
+            else:
+                Ht[ind0, indx] = - np.exp(1j * theta_x)
+                Ht[indx, ind0] = - np.exp(- 1j * theta_x)
+        
+    for i in range(Lx):
+        for j in range(Ly):
+            ind0 = i + j * Lx
+            indy = i + ((j + 1) % Ly) * Lx
+            
+#             Ht[ind0, indy] = - np.exp(1j * theta_y / Ly)
+#             Ht[indy, ind0] = - np.exp(- 1j * theta_y / Ly)
+        
+            if j != Ly - 1:
+                Ht[ind0, indy] = - 1
+                Ht[indy, ind0] = - 1
+            else:
+                Ht[ind0, indy] = - np.exp(1j * theta_y)
+                Ht[indy, ind0] = - np.exp(- 1j * theta_y)
+            
+    Hd = np.zeros((Lx * Ly, Lx * Ly), dtype = "complex128")
+    for i in range(Lx):
+        for j in range(Ly):
+            ind0 = i + j * Lx
+            indx = (i + 1) % Lx + j * Lx
+            
+#             Hd[ind0, indx] = - 1j * np.exp(1j * theta_x / Lx)
+#             Hd[indx, ind0] = 1j *  np.exp(- 1j * theta_x / Lx)
+        
+            if i != Lx - 1:
+                Hd[ind0, indx] = - 1j
+                Hd[indx, ind0] = 1j
+            else:
+                Hd[ind0, indx] = - 1j * np.exp(1j * theta_x)
+                Hd[indx, ind0] = 1j *  np.exp(- 1j * theta_x)
+        
+    for i in range(Lx):
+        for j in range(Ly):
+            ind0 = i + j * Lx
+            indy = i + ((j + 1) % Ly) * Lx
+            
+#             Hd[ind0, indy] = - np.exp(1j * theta_y / Ly)
+#             Hd[indy, ind0] = np.exp(- 1j * theta_y / Ly)
+
+            if j != Ly - 1:
+                Hd[ind0, indy] = - 1
+                Hd[indy, ind0] = 1
+            else:
+                Hd[ind0, indy] = - np.exp(1j * theta_y)
+                Hd[indy, ind0] = np.exp(- 1j * theta_y)
+            
+    Hm = np.eye(Lx * Ly, dtype = "complex128")
+    
+    HD = np.zeros((2 * Lx * Ly, 2 * Lx * Ly), dtype = "complex128")
+    HD[: Lx * Ly, Lx * Ly: ] = - 0.5 * Hm
+    HD[Lx * Ly :, : Lx * Ly] = 0.5 * Hm
+    HD[: Lx * Ly, : Lx * Ly] = Hd
+    HD[Lx * Ly :, Lx * Ly :] = - Hd
+    
+    Htemp = np.zeros((2 * Lx * Ly, 2 * Lx * Ly), dtype = "complex128")
+    Htemp[:Lx * Ly, :Lx * Ly] = Ht - mu * Hm
+    Htemp[Lx * Ly:, Lx * Ly:] = - Ht + mu * Hm
+    Htemp[:Lx * Ly, Lx * Ly:] = t * Hd
+    Htemp[Lx * Ly:, :Lx * Ly] = t * np.conj(Hd).T 
+    
+    H = np.zeros((4 * Lx * Ly, 4 * Lx * Ly), dtype = "complex128")
+    
+    H[: 2 * Lx * Ly, : 2 * Lx * Ly] = Htemp
+    H[2 * Lx * Ly :, 2 * Lx * Ly :] = - np.conj(Htemp)
+    
+    H[: 2 * Lx * Ly, 2 * Lx * Ly :] = Delta * HD
+    H[2 * Lx * Ly :, : 2 * Lx * Ly] = Delta * np.conj(HD).T
+    
+    return H
+
+# ===== CELL 3 =====
+def Berry_phase(mu, Delta, Lx, Ly):
+
+    theta_values1 = np.pi * np.linspace(0, 1, 101)
+    theta_values2 = np.pi * np.linspace(1, 2, 101)
+
+    t = 1
+
+    overlap = []
+    BP = 0
+    BP_coll = []
+    gap = []
+    Energy = []
+
+    H = Ham_tbc(Lx, Ly, mu, t, Delta, theta_x = 0, theta_y = 0)
+    eigs, vec = np.linalg.eigh(H)
+    Energy.append(eigs)
+
+    vec0 = copy.deepcopy(vec)
+
+    for theta in theta_values1[1:]:
+    
+        H = Ham_tbc(Lx, Ly, mu, t, Delta, theta_x = theta, theta_y = 0)
+        eigs1, vec1 = np.linalg.eigh(H)
+    
+        Energy.append(eigs1)
+    
+        gap_temp = np.min(np.abs(eigs1))
+        gap.append(gap_temp)
+    
+        BP_temp, ov = Gaussian_overlap(vec0, vec1)
+        BP += BP_temp
+        BP_coll.append(((BP / np.pi) % 1) * np.pi)
+        overlap.append(ov)
+    
+        vec0 = copy.deepcopy(vec1)
+    
+    for theta in theta_values1[1:]:
+    
+        H = Ham_tbc(Lx, Ly, mu, t, Delta, theta_x = np.pi, theta_y = theta)
+        eigs1, vec1 = np.linalg.eigh(H)
+    
+        Energy.append(eigs1)
+    
+        gap_temp = np.min(np.abs(eigs1))
+        gap.append(gap_temp)
+    
+        BP_temp, ov = Gaussian_overlap(vec0, vec1)
+        BP += BP_temp
+        BP_coll.append(((BP / np.pi) % 1) * np.pi)
+        overlap.append(ov)
+    
+        vec0 = copy.deepcopy(vec1)
+    
+    for theta in theta_values2:
+    
+        H = Ham_tbc(Lx, Ly, mu, t, Delta, theta_x = theta, theta_y = np.pi)
+        eigs1, vec1 = np.linalg.eigh(H)
+    
+        Energy.append(eigs1)
+    
+        gap_temp = np.min(np.abs(eigs1))
+        gap.append(gap_temp)
+    
+        BP_temp, ov = Gaussian_overlap(vec0, vec1)
+        BP += BP_temp
+        BP_coll.append(((BP / np.pi) % 1) * np.pi)
+        overlap.append(ov)
+    
+        vec0 = copy.deepcopy(vec1)
+    
+    for theta in theta_values2:
+    
+        H = Ham_tbc(Lx, Ly, mu, t, Delta, theta_x = 2 * np.pi, theta_y = theta)
+        eigs1, vec1 = np.linalg.eigh(H)
+    
+        Energy.append(eigs1)
+    
+        gap_temp = np.min(np.abs(eigs1))
+        gap.append(gap_temp)
+    
+        BP_temp, ov = Gaussian_overlap(vec0, vec1)
+        BP += BP_temp
+        BP_coll.append(((BP / np.pi) % 1) * np.pi)
+        overlap.append(ov)
+    
+        vec0 = copy.deepcopy(vec1)
+    
+
+    vec1 = copy.deepcopy(vec)
+    
+    BP_temp, ov = Gaussian_overlap(vec0, vec1)
+    BP += BP_temp
+    BP_coll.append(((BP / np.pi) % 1) * np.pi)
+    overlap.append(ov)
+    
+    return ((BP / np.pi) % 1) * np.pi
+
+# ===== CELL 4 =====
+Lx = 9
+Ly = 9
+
+mu_values = np.linspace(-5, -2, 99)
+Delta_values = np.linspace(0, 0.5, 6)
+Delta = 0.1
+
+len_mu = len(mu_values)
+len_D = len(Delta_values)
+BP_coll = np.zeros((len_mu, len_D), dtype = float)
+
+for i in range(len_mu):
+    for j in range(len_D):
+        print(i,j)
+        mu = mu_values[i]
+        Delta = Delta_values[j]
+        BP_coll[i,j] = Berry_phase(mu, Delta, Lx, Ly)
+
+# ===== CELL 5 =====
+plt.figure(dpi = 200)
+plt.plot(mu_values, BP_coll, "x")
+plt.show()
+
+# ===== CELL 6 =====
+plt.figure(dpi = 200)
+plt.plot(mu_values, np.array(BP_coll[:,0]) / np.pi, "x")
+plt.plot(mu_values, np.array(BP_coll[:,1]) / np.pi + 0.01, "x")
+plt.plot(mu_values, np.array(BP_coll[:,2]) / np.pi + 0.02, "x")
+plt.plot(mu_values, np.array(BP_coll[:,3]) / np.pi + 0.03, "x")
+plt.plot(mu_values, np.array(BP_coll[:,4]) / np.pi + 0.04, "x")
+plt.plot(mu_values, np.array(BP_coll[:,5]) / np.pi + 0.05, "x")
+plt.show()
+
+# ===== CELL 7 =====
+BP_arr = np.array(BP_coll)
+BP_check = np.isclose(np.array(BP_arr) / np.pi, 1.0, atol = 1e-8)
+
+BP_new = (np.pi - BP_arr) * BP_check + BP_arr * (1 - BP_check)
+
+# ===== CELL 8 =====
+np.savetxt("BerryPhaseData.csv", BP_new, delimiter = ",")
+
+# ===== CELL 9 =====
+plt.figure(dpi = 200)
+plt.axhline(y=0.5, linestyle = "dotted", color = "gray")
+plt.plot(mu_values, BP_new[:,0] / np.pi, linestyle = "dotted", marker = ".", label = r"$\Delta/t = 0$")
+plt.plot(mu_values, BP_new[:,1] / np.pi + 0.1, linestyle = "dotted", marker = ".", label = r"$\Delta/t = 0.1$")
+plt.plot(mu_values, BP_new[:,2] / np.pi + 0.2, linestyle = "dotted", marker = ".", label = r"$\Delta/t = 0.2$")
+plt.plot(mu_values, BP_new[:,3] / np.pi + 0.3, linestyle = "dotted", marker = ".", label = r"$\Delta/t = 0.3$")
+plt.plot(mu_values, BP_new[:,4] / np.pi + 0.4, linestyle = "dotted", marker = ".", label = r"$\Delta/t = 0.4$")
+plt.plot(mu_values, BP_new[:,5] / np.pi + 0.5, linestyle = "dotted", marker = ".", label = r"$\Delta/t = 0.5$")
+plt.legend(loc = 4)
+plt.ylabel(r"$\phi_{BP}/\pi$")
+plt.xlabel(r"$\mu /t$")
+plt.savefig("BerryPhase.png")
+plt.show()
+
+# ===== CELL 10 =====
+plt.figure(dpi = 200)
+plt.axhline(y = 0, linestyle = "--", color = "gray")
+plt.axhline(y = 0.25, linestyle = "--", color = "gray")
+plt.axhline(y = 0.5, linestyle = "--", color = "gray")
+plt.plot(mu_values, BP_new[:,0] / np.pi, "x", linestyle = "dotted")
+plt.plot(mu_values, BP_new[:,1] / np.pi, "x", linestyle = "dotted")
+plt.plot(mu_values, BP_new[:,2] / np.pi, "x", linestyle = "dotted")
+plt.plot(mu_values, BP_new[:,3] / np.pi, "x", linestyle = "dotted")
+plt.plot(mu_values, BP_new[:,4] / np.pi, "x", linestyle = "dotted")
+plt.plot(mu_values, BP_new[:,5] / np.pi, "x", linestyle = "dotted")
+plt.show()
+
+# ===== CELL 11 =====
+

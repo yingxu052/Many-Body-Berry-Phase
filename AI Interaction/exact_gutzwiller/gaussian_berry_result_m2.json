@@ -1,0 +1,201 @@
+{
+  "lattice": [
+    4,
+    4
+  ],
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": 1.5,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "projection": "none (unprojected fermionic Gaussian state)",
+  "steps_per_leg": 2,
+  "number_of_links": 8,
+  "vertices": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      3.141592653589793,
+      0.0
+    ],
+    [
+      3.141592653589793,
+      3.141592653589793
+    ],
+    [
+      6.283185307179586,
+      3.141592653589793
+    ],
+    [
+      6.283185307179586,
+      6.283185307179586
+    ]
+  ],
+  "minimum_bdg_gap": 0.2807487064085266,
+  "parities": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "reference_mask": 1431655765,
+  "hamiltonian_endpoint_closure_error": 4.799615636869908e-15,
+  "minimum_link_magnitude": 0.4538035211695743,
+  "total_unwrapped_link_phase": 3.2443942622347954e-16,
+  "berry_phase_radians": 3.2443942622347954e-16,
+  "berry_phase_over_pi": 1.0327227683473013e-16,
+  "links": [
+    {
+      "initial_point": 0,
+      "final_point": 1,
+      "phi_initial": [
+        0.0,
+        0.0
+      ],
+      "phi_final": [
+        1.5707963267948966,
+        0.0
+      ],
+      "normalized_overlap": {
+        "real": 0.4911287121380378,
+        "imag": 1.4845686361223178e-16
+      },
+      "magnitude": 0.4911287121380378,
+      "phase": 3.0227689797640283e-16
+    },
+    {
+      "initial_point": 1,
+      "final_point": 2,
+      "phi_initial": [
+        1.5707963267948966,
+        0.0
+      ],
+      "phi_final": [
+        3.141592653589793,
+        0.0
+      ],
+      "normalized_overlap": {
+        "real": 0.6423387950983128,
+        "imag": 2.5434229775413538e-17
+      },
+      "magnitude": 0.6423387950983128,
+      "phase": 3.959628465461239e-17
+    },
+    {
+      "initial_point": 2,
+      "final_point": 3,
+      "phi_initial": [
+        3.141592653589793,
+        0.0
+      ],
+      "phi_final": [
+        3.141592653589793,
+        1.5707963267948966
+      ],
+      "normalized_overlap": {
+        "real": 0.6460233066663548,
+        "imag": -1.545590354384192e-16
+      },
+      "magnitude": 0.6460233066663548,
+      "phase": -2.392468411642659e-16
+    },
+    {
+      "initial_point": 3,
+      "final_point": 4,
+      "phi_initial": [
+        3.141592653589793,
+        1.5707963267948966
+      ],
+      "phi_final": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "normalized_overlap": {
+        "real": 0.6090277638225223,
+        "imag": 2.1469033718947295e-16
+      },
+      "magnitude": 0.6090277638225223,
+      "phase": 3.525132185140186e-16
+    },
+    {
+      "initial_point": 4,
+      "final_point": 5,
+      "phi_initial": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "phi_final": [
+        4.71238898038469,
+        3.141592653589793
+      ],
+      "normalized_overlap": {
+        "real": 0.6496480778545094,
+        "imag": -2.1286706475352498e-16
+      },
+      "magnitude": 0.6496480778545094,
+      "phase": -3.2766519598815343e-16
+    },
+    {
+      "initial_point": 5,
+      "final_point": 6,
+      "phi_initial": [
+        4.71238898038469,
+        3.141592653589793
+      ],
+      "phi_final": [
+        6.283185307179586,
+        3.141592653589793
+      ],
+      "normalized_overlap": {
+        "real": 0.6391529090225287,
+        "imag": -7.77291115987104e-17
+      },
+      "magnitude": 0.6391529090225287,
+      "phase": -1.2161270096944926e-16
+    },
+    {
+      "initial_point": 6,
+      "final_point": 7,
+      "phi_initial": [
+        6.283185307179586,
+        3.141592653589793
+      ],
+      "phi_final": [
+        6.283185307179586,
+        4.71238898038469
+      ],
+      "normalized_overlap": {
+        "real": 0.6628738651528421,
+        "imag": 4.78852197960576e-16
+      },
+      "magnitude": 0.6628738651528421,
+      "phase": 7.223881090110028e-16
+    },
+    {
+      "initial_point": 7,
+      "final_point": 0,
+      "phi_initial": [
+        6.283185307179586,
+        4.71238898038469
+      ],
+      "phi_final": [
+        0.0,
+        0.0
+      ],
+      "normalized_overlap": {
+        "real": 0.4538035211695743,
+        "imag": -1.8325055681359388e-16
+      },
+      "magnitude": 0.4538035211695743,
+      "phase": -4.0381034581068847e-16
+    }
+  ]
+}

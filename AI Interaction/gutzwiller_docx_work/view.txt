@@ -1,0 +1,183 @@
+@doc view=2.2 blocks=97 paras=71 tables=1 parts=22 legend=read.py --legend paraid=blocks(+28 inside cells/notes: --raw)
+@fmt &12pt=cs="Times New Roman (正文 CS 字体)";eastAsia=宋体;hAnsi=Arial;lang=en/ar;latin=Arial;size=12pt
+@fmt aliases above are assigned per document and are not comparable across files (same name ≠ same meaning)
+@theme minor: latin=Aptos Hans=等线 Hant=新細明體 | major: latin=Aptos Display Hans=等线 Light Hant=新細明體
+@style Compact count=38 p:after=1.8pt;before=1.8pt;line=1.5x r:&12pt
+@style a0 count=19 "Body Text" p:after=0pt;line=1.5x r:&12pt
+@style FirstParagraph count=17 "First Paragraph" p:after=0pt;line=1.5x r:&12pt
+@style 2 count=12 "heading 2" p:after=0pt;+keepLines;+keepNext;line=1.5x;outline=1 r:cs="Times New Roman (标题 CS)";eastAsia=黑体;hAnsi=Arial;lang=en/ar;latin=Arial;size=14pt;sizeCs=16pt
+@style a* count=8 "Normal" p:after=0pt;line=1.5x r:&12pt
+@style af4 count=3 "footer" p:after=0pt;line=1x;snapGrid=off;tabs=center@207.65pt,right@415.3pt r:cs="Times New Roman (正文 CS 字体)";eastAsia=宋体;hAnsi=Arial;lang=en/ar;latin=Arial;size=9pt
+@style af2 count=3 "header" p:after=0pt;align=center;line=1x;snapGrid=off;tabs=center@207.65pt,right@415.3pt r:cs="Times New Roman (正文 CS 字体)";eastAsia=宋体;hAnsi=Arial;lang=en/ar;latin=Arial;size=9pt
+@style VerbatimChar char count=3 "Verbatim Char" r:hAnsi=Consolas;latin=Consolas;size=11pt
+@style Table table count=1 p:after=10pt r:cs=~minorBidi;eastAsia=~minorEastAsia;hAnsi=~minorHAnsi;lang=en/ar;latin=~minorHAnsi;size=12pt
+@num 1001.L0 bullet "•"
+@num 1002.L0 bullet "•"
+@num 1003.L0 bullet "•"
+@num 1004.L0 bullet "•"
+@num 1005.L0 bullet "•"
+@num 1006.L0 bullet "•"
+[0 #7DB1625A @FirstParagraph +b] User:
+[1 #59327232 @a0] Is there any package that can implement the Gutzwiller projection on the fermionic Gaussian state, and compute the overlap between two projected states?
+[2 #7E1F2DDE] (obj1)
+ └ obj1
+[3 #4F2A2422 @FirstParagraph +b] Kimi:
+[4 #63874AB0 @a0] Yes — the closest match is TeMFpy, and depending on your setting (1D vs. higher dimensions, exact vs. Monte Carlo), here are the realistic options:
+ └ +b "TeMFpy"
+[5 !bookmarkStart temfpy-python-1d-the-most-direct-answer id=20]
+[6 #36740CAA @2] 1. TeMFpy (Python, 1D — the most direct answer)
+[7 #7189051E @FirstParagraph] TeMFpy (Hille & Szabó, 2025) is a library built on TeNPy that converts fermionic mean-field states — both Slater determinants and Pfaffian (Bogoliubov/BCS-type Gaussian) states — into finite or infinite MPS form, and it explicitly includes a Gutzwiller projection facility (temfpy.gutzwiller, e.g. abrikosov_ph() for Abrikosov-fermion spin-liquid constructions). Once both projected states are MPS, the overlap ⟨Ψ₁|Ψ₂⟩ is just a standard exact MPS contraction — so this package covers both halves of your question. It’s on PyPI (pip install temfpy) and MIT-licensed.
+ └ cstyle=VerbatimChar;hAnsi=Consolas;latin=Consolas;size=11pt "temfp…ller" · cstyle=VerbatimChar;hAnsi=Consolas;latin=Consolas;size=11pt "abrik…ph()" · cstyle=VerbatimChar;hAnsi=Consolas;latin=Consolas;size=11pt "pip i…mfpy"
+[8 #622A86FE @a0] Caveat: MPS is inherently a 1D (or quasi-1D/cylinder) representation, so this is the right tool for chains and ladders, not 2D thermodynamic lattices.
+[9 !bookmarkEnd id=20]
+[10 !bookmarkStart mvmc-c-any-dimension-monte-carlo id=21]
+[11 #60E8944E @2] 2. mVMC (C, any dimension — Monte Carlo)
+[12 #1E6B5BB4 @FirstParagraph] If you want Gutzwiller-projected BCS/Pfaffian wave functions in 2D or 3D, mVMC (Misawa et al.) natively implements the fully projected (g→∞) Gutzwiller wave function and evaluates its amplitudes via Pfaffians. It also explicitly supports computing overlaps between two different optimized variational wave functions (the standard tool for excited-state/nodal-surface calculations). This gives you the overlap, but as a statistical Monte Carlo estimate rather than an exact number.
+ └ +b "mVMC" · +i "different"
+[13 !bookmarkEnd id=21]
+[14 !bookmarkStart Xb3d65efc1b503ad4a77d36f8be46f02b3ee1e3b id=22]
+[15 #757FA2A8 @2] 3. Research codes (not packaged, but adaptable)
+[16 #7DC2AC3E @Compact list=1001.L0] QSpace-based codes for the U(1)-GfPEPS construction of Li, van Delft & Tu, where Gutzwiller projection is applied as a product of local operators and projected Dirac spin-liquid states are contracted with CTMRG — this is a PEPS (2D) route, but the code is research-grade, not a library.
+ └ +b "QSpac…odes"
+[17 #792B9FAE @Compact list=1001.L0] The MPO–MPS method (Wu et al.; Liu, Tu et al.) converts Gutzwiller-projected paired fermion states to MPS by applying Bogoliubov-quasiparticle MPOs to the vacuum; projection is a D=1 MPO applied afterward. These are published algorithms rather than maintained packages, but TeMFpy effectively packages and improves this line of work.
+ └ +b "MPO–M…thod"
+[18 !bookmarkEnd id=22]
+[19 !bookmarkStart one-theoretical-caveat-worth-knowing id=23]
+[20 #6ECD1332 @2] One theoretical caveat worth knowing
+[21 #3C1538EE @FirstParagraph] For unprojected Gaussian states, the overlap is a single Pfaffian/determinant (Balian–Brézin / Onishi formula), which TeMFpy uses internally for its fast overlap routines. For projected states there is no equally universal closed form — the overlap becomes a sum over particle-number/spin sectors, which is exactly why people either go through MPS (exact, 1D) or Monte Carlo (any dimension). In special 1D cases (Jordan–Wigner-solvable paired states), recent work does derive exact Pfaffian formulas for projected-state overlaps.
+ └ +b "unprojected" · +b "projected" (2nd)
+[22 #42015744 @a0] Bottom line: if your system is 1D, use TeMFpy; if it’s 2D/3D and you can live with statistical error, use mVMC. If you tell me the geometry and whether you need exact or sampled overlaps, I can sketch the concrete workflow.
+ └ +b "Bottom line:"
+[23 #521B225A] (obj1)
+ └ obj1
+[24 #34BFA436 @FirstParagraph +b] User:
+[25 #47622E94 @a0] Suppose I want to do this calculation in two dimensions with periodic boundary condition. What is the best way to do this computation for small system sizes, e.g., 4*4 unit cells?
+[26 #335154FA] (obj1)
+ └ obj1
+[27 #20ED1BE4 @FirstParagraph +b] Kimi:
+[28 #6F5A6570 @a0] For a 4×4 cluster (16 sites) with periodic boundaries, the right tool is exact enumeration in Fock space using Pfaffian/determinant amplitudes — not Monte Carlo and not MPS. Here’s why and how.
+ └ +b "exact…udes"
+[29 !bookmarkEnd id=23]
+[30 !bookmarkStart Xb90d2276ebb85385a78cfd2c56288aad55d40f1 id=24]
+[31 #706839B6 @2] Why enumeration is the right method at this size
+[32 #5979E3A2 @FirstParagraph] The Gutzwiller projector P_G = ∏i (1 − n{i↑}n_{i↓}) annihilates all doubly occupied configurations. For a half-filled state (16 electrons on 16 sites), the projected wave function has support only on singly-occupied configurations — i.e., classical spin configurations. That subspace has dimension
+ └ +i "i (1 − n" · +b "only …ions"
+[33 #501EE450 @Compact list=1002.L0] 2¹⁶ = 65,536 (singlet/singly-occupied sector),
+[34 #7D88F740 @Compact list=1002.L0] or 3¹⁶ ≈ 4.3×10⁷ if your BCS state fluctuates in particle number and you need empty sites too.
+[35 #1926379A @FirstParagraph] Both are trivially enumerable. No Monte Carlo error, no sign problem, no bond-dimension convergence — you get the exact overlap as a finite sum.
+[36 !bookmarkEnd id=24]
+[37 !bookmarkStart the-algorithm id=25]
+[38 #49B1146C @2] The algorithm
+[39 #7F41F470 @FirstParagraph] Setup. Represent each Gaussian state by its matrix: - Slater determinant: the N_σ × N_s coefficient matrix U (per spin, or 2N×2N block for paired orbitals); - General paired (BCS) Gaussian state: the antisymmetric 2N_s × 2N_s matrix Z in |Ψ⟩ = exp(½ Σ Z_ij c_i† c_j†)|0⟩.
+ └ +b "Setup."
+@range [40–43] @a0 (range facts apply to every block in the range and are not repeated on block lines; same below)
+[40 #70193264] Amplitudes. For any configuration c (a set of occupied modes), the unprojected amplitude is a minor: - Slater: ⟨c|Ψ⟩ = det U_c (submatrix of occupied rows) - BCS: ⟨c|Ψ⟩ = Pf(Z_cc) (2n×2n submatrix; n = number of pairs)
+ └ +b "Amplitudes."
+[41 #6E7E151C] Both are O(n³) per configuration — this is the standard fermionic-Gaussian “fidelity” trick, and it’s exactly the machinery TeMFpy uses internally.
+[42 #57BBB53A] Projection + overlap. The projected overlap is just a weighted sum over the surviving configurations:
+ └ +b "Proje…lap."
+[43 #3A3F4DD2] (eq1)
+ └ eq1 equation ⟨ΨP1ΨP2⟩=c: no double occupancy​⟨Ψ1c⟩ ⟨c|Ψ2⟩=c​PfZcc1* PfZcc2 jc=center
+[44 #6FC74670 @FirstParagraph] Since P_G is diagonal in the occupation basis, it simply restricts the sum. Normalize each state by its own projected norm ⟨Ψ_P|Ψ_P⟩ = Σ_c |Pf(Z_cc)|², which you compute the same way.
+[45 #4D5B9B50 @a0] Cost. 65,536 configurations × ~16³ per Pfaffian ≈ 10⁹ flops per state-pair — seconds on a laptop. Even 5×5 (2²⁵ = 3×10⁷ configs) is parallelizable to a minute or so.
+ └ +b "Cost."
+[46 !bookmarkEnd id=25]
+[47 !bookmarkStart practical-notes id=26]
+[48 #48F53258 @2] Practical notes
+@range [49–52] @Compact list=1003.L0
+[49 #36F1CBAA] PBC changes nothing in this approach — the momentum structure only enters through how you build Z (or U); the enumeration is over real-space occupation patterns, which are basis-independent.
+ └ +b "PBC c…hing"
+[50 #2B21C4E4] Particle number sectors. If your two states live in different (N_↑, N_↓) sectors, the overlap is exactly zero — the sum enforces this automatically since no configuration appears in both. For number-fluctuating BCS states, just sum over all compatible sectors (each restricted to no-double-occupancy).
+ └ +b "Parti…ors."
+[51 #38B3D8F2] Spinful vs. spinless. For spinless fermions (relevant for some spin-liquid constructions, e.g. Abrikosov-fermion PEPS), the projected state is supported on configs with at most one fermion per site; the counting is even simpler.
+ └ +b "Spinf…ess."
+[52 #7C9CC556] Sanity checks: (1) your projected norm should reproduce ⟨Ψ|P_G|Ψ⟩ which you can also compute via covariance-matrix Wick contractions as a cross-check; (2) for two identical states the overlap formula must return the norm squared.
+ └ +b "Sanit…cks:"
+[53 !bookmarkEnd id=26]
+[54 !bookmarkStart when-youd-pick-something-else id=27]
+[55 #3D29A020 @2] When you’d pick something else
+[56 #4E9DC9C0 @Compact list=1004.L0] mVMC: works, and for a 16-site cluster it converges beautifully with ~10⁸ samples — but it’s a stochastic answer to a problem that has an exact one. Use it only as a cross-check.
+ └ +b "mVMC"
+[57 #7300201C @Compact list=1004.L0] TeMFpy/MPS: not recommended here. MPS is a 1D representation; on a 4×4 PBC cluster mapped to a snake you’d get long-range bonds and an unnecessarily large effective bond dimension. The direct Pfaffian sum is both simpler and exact.
+ └ +b "TeMFpy/MPS"
+[58 #6CCC4D74 @FirstParagraph] If you tell me the precise form of your states (spinful/spinless, number-conserving Slater vs. paired BCS, and how the two states differ — e.g., different pairing matrices), I can write you a compact, ready-to-run Python script that does the enumeration and returns the normalized overlap.
+[59 #11D58A1E] (obj1)
+ └ obj1
+[60 #5CA479BE @FirstParagraph +b] User:
+[61 #43E696F8 @a0] How does the computation complexity scales in the exact enumeration method, given fixed number of unit cells but varying number of orbitals within each unit cell? For 4*4 unit cells, what is a reasonable and computable number of orbitals?
+[62 #43E8CD64] (obj1)
+ └ obj1
+[63 #6E209730 @FirstParagraph +b] Kimi:
+[64 #61FBF2DC @a0] Good question — the scaling has a clean structure, and the key point is that the expensive part and the enumeration part scale differently.
+ └ +i "expen…part" · +i "enume…part"
+[65 !bookmarkEnd id=27]
+[66 !bookmarkStart scaling-law id=28]
+[67 #4DB9DEA4 @2] Scaling law
+[68 #6BB2F4A8 @FirstParagraph] Let L = 16 be the number of unit cells, m the number of orbitals per cell, and N_f the particle number. Two separate costs multiply:
+[69 #460CA3EC @a0] 1. Number of projected configurations. With at most one fermion per unit cell and fixed N_f = f·L, the number of allowed configurations is
+ └ +b "1. Nu…ons."
+[70 #2CA748A4 @a0] (eq1)
+ └ eq1 equation #configs=LNf mNf →half filling mL jc=center
+[71 #7276558E @FirstParagraph] (If your BCS state fluctuates in particle number, empty cells are allowed and this becomes (m+1)^L instead.) So the enumeration cost is exponential in L with base m — the orbital multiplicity enters as a base, not a prefactor.
+ └ +b "expon…se m"
+[72 #3D267F28 @a0] 2. Cost per configuration. Each amplitude is a Pfaffian (paired state) or determinant (Slater) of size N_f × N_f, costing O(N_f³). Crucially, N_f is pinned by the filling (≈ L at half filling), not by m — the matrix is 16×16 no matter how many orbitals per cell. So this factor is a constant ~16³ ≈ 4×10³ operations per configuration.
+ └ +b "2. Co…ion." · +b "N_f i…by m"
+[73 #5D31563E @a0] Total: O(m^L · L³) at half filling — i.e., ~10⁴ flops per configuration times m¹⁶ configurations.
+[74 !bookmarkEnd id=28]
+[75 !bookmarkStart X6de296ba4a01750b0a643553cc683d4f1de9ef1 id=29]
+[76 #5B1A949C @2] Concrete numbers for a 4×4 cluster (half filling, spinless)
+[77 table 7×3 cols=132pt/132pt/132pt style=Table align=left w=auto look=firstRow cellr:&12pt c1{after=1.8pt;align=left;before=1.8pt;line=1.5x} c2{after=1.8pt;align=left;before=1.8pt;line=1.5x} c3{after=1.8pt;align=left;before=1.8pt;line=1.5x}]
+  r1 | Orbitals/cell m | Configs m¹⁶ | Single-core time*
+   └ r1 +header-row · c1 @Compact · c2 @Compact · c3 @Compact
+  r2 | 1 | 1 | — (trivial)
+   └ c1 @Compact · c2 @Compact · c3 @Compact
+  r3 | 2 | 6.5×10⁴ | seconds
+   └ c1 @Compact · c2 @Compact · c3 @Compact
+  r4 | 3 | 4.3×10⁷ | ~5–10 min (parallel: ~1 min)
+   └ c1 @Compact · c2 @Compact · c3 @Compact
+  r5 | 4 | 4.3×10⁹ | hours single-core; ~tens of minutes on 32 cores
+   └ c1 @Compact · c2 @Compact · c3 @Compact
+  r6 | 5 | 1.5×10¹¹ | ~2 weeks — infeasible
+   └ c1 @Compact · c2 @Compact · c3 @Compact
+  r7 | 6 | 2.8×10¹² | out of reach
+   └ c1 @Compact · c2 @Compact · c3 @Compact
+[78 #7C78EE4C @a0] *assuming a tight Numba/C loop at ~10 μs per 16×16 Pfaffian.
+[79 #36D52E16 @a0] For spinful fermions with m orbitals per cell, one particle per cell can sit in 2m spin-orbitals, so the effective base is d = 2m: single-orbital spinful (d=2) is the easy 65,536-configuration case from before; two-orbital spinful (d=4) is already the “heavy but doable” row.
+ └ +b "spinful" (1st)
+[80 !bookmarkEnd id=29]
+[81 !bookmarkStart whats-a-reasonable-m-for-44 id=30]
+[82 #3934C50E @2] What’s a reasonable m for 4×4?
+@range [83–85] @Compact list=1005.L0
+[83 #3E78BBC0] m ≤ 3 (spinless) or m = 1 (spinful): exact enumeration is clearly the right method — minutes at worst, exact, no approximations.
+ └ +b "m ≤ 3…thod"
+[84 #0F5B36A8] m = 4 (spinless) / m = 2 (spinful): the boundary case. Still feasible with a compiled Pfaffian loop + multiprocessing (the enumeration embarrassingly parallel over configurations), but you’re paying real compute. Worth doing if you need exact numbers.
+ └ +b "m = 4…ase."
+[85 #2CE6F132] m ≥ 5: brute force enumeration breaks down, but at this system size you don’t need it — Metropolis Monte Carlo over the m¹⁶ configurations with weight |A(c)|² will give the overlap to 4–6 significant digits with ~10⁸ samples, because the configuration space is small and well-behaved. At L=16 the statistical answer is practically the exact one. (For overlaps between two different states, watch for a sign problem if the amplitude ratio changes sign — but on a 16-site cluster the integrand is usually stable enough for VMC to converge well.)
+ └ +b "m ≥ 5…d it" · +i "different"
+[86 !bookmarkEnd id=30]
+[87 !bookmarkStart practical-tips id=31]
+[88 #7AC29064 @2] Practical tips
+@range [89–92] @Compact list=1006.L0
+[89 #6D5A7AB8] The constant factor matters here: don’t loop in pure Python. A Numba-compiled skew-LDL Pfaffian or a small C extension gets you ~10⁶ configs/s; pure Python is ~100× slower and would demote m=3 to “hours.”
+[90 #5D1B06CE] Nothing needs to be stored — amplitudes are computed on the fly, so memory is negligible.
+[91 #0CAEFE12] Symmetry reduction buys constant factors only: restricting to a momentum sector divides the sum by ~16, and parity/number sectors by 2–4×. Useful at m=4, irrelevant at m=2.
+[92 #5E59B894] One caveat: if your filling scales with m rather than being fixed at one particle per cell (e.g., you fill a fraction of the 16m modes), then N_f grows with m and the per-configuration Pfaffian picks up an extra polynomial factor — still secondary compared to the m¹⁶ base, but it softens the “Pfaffian size is constant” statement.
+[93 #5AFEF016 @FirstParagraph] Bottom line: exact enumeration comfortably handles up to ~3 orbitals per cell (spinless) on a 4×4 cluster, with 4 as a parallelizable stretch goal; beyond that, Monte Carlo on the same configuration space is the sensible continuation and is effectively exact at this size.
+ └ +b "Bottom line:"
+[94 #44B29C76] (obj1)
+ └ obj1
+[95 !bookmarkEnd id=31]
+@sec [0-96] 612ptx792pt margin=72pt/90pt/72pt/90pt cols=1 hdr:even=header1.xml hdr:default=header2.xml hdr:first=header3.xml ftr:even=footer1.xml ftr:default=footer2.xml ftr:first=footer3.xml
+@part word/footer1.xml
+  [footer1.xml:0 empty]
+@part word/footer2.xml
+  [footer2.xml:0 #0C12A14E @af4 align=right size=12pt] Generated by Kimi
+@part word/footer3.xml
+  [footer3.xml:0 empty]
+@part word/header1.xml
+  [header1.xml:0 empty]
+@part word/header2.xml
+  [header2.xml:0 empty]
+@part word/header3.xml
+  [header3.xml:0 empty]
+@skip present but not rendered (named for totality; check --raw if layout puzzles): abstractNum@restartNumberingAfterBreak, footnotePr, latentStyles, lvl@ilvl, numFmt, numRestart, pgMar@footer, pgMar@gutter, pgMar@header, rsid, style@customStyle, wordWrap=off

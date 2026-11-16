@@ -1,0 +1,234 @@
+{
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": -2.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "pairing_scale": "+1 to -1 linearly for phi in [0,pi], then -1 to +1 for phi in [pi,2pi]",
+  "normal_twist": "exp(i phi), unchanged",
+  "mesh_convergence": [
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 4,
+      "pairing_twist": "linear",
+      "reference_mask": 2865289779,
+      "leg_phases_radians": [
+        -1.7820426633925144,
+        -0.14830726691516405,
+        -0.9238508132252076,
+        1.283404416737995
+      ],
+      "unwrapped_phase_radians": -1.570796326794891,
+      "berry_phase_radians": -1.570796326794891,
+      "berry_phase_over_pi": -0.4999999999999982,
+      "phase_mod_pi_over_pi": 0.5000000000000018,
+      "minimum_link_magnitude": 0.8565008156476285,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 8,
+      "pairing_twist": "linear",
+      "reference_mask": 2865289779,
+      "leg_phases_radians": [
+        -1.7820426633925206,
+        -0.1483072669151662,
+        -0.9238508132252123,
+        1.2834044167380019
+      ],
+      "unwrapped_phase_radians": -1.5707963267948972,
+      "berry_phase_radians": -1.5707963267948972,
+      "berry_phase_over_pi": -0.5000000000000002,
+      "phase_mod_pi_over_pi": 0.4999999999999998,
+      "minimum_link_magnitude": 0.9604526339750309,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 16,
+      "pairing_twist": "linear",
+      "reference_mask": 2865289779,
+      "leg_phases_radians": [
+        -1.7820426633925206,
+        -0.14830726691516455,
+        -0.9238508132252119,
+        1.2834044167379888
+      ],
+      "unwrapped_phase_radians": -1.5707963267949083,
+      "berry_phase_radians": -1.5707963267949083,
+      "berry_phase_over_pi": -0.5000000000000038,
+      "phase_mod_pi_over_pi": 0.4999999999999962,
+      "minimum_link_magnitude": 0.9898745474088788,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 32,
+      "pairing_twist": "linear",
+      "reference_mask": 2865289779,
+      "leg_phases_radians": [
+        -1.7820426633925197,
+        -0.14830726691516471,
+        -0.9238508132252052,
+        1.2834044167379925
+      ],
+      "unwrapped_phase_radians": -1.570796326794897,
+      "berry_phase_radians": -1.570796326794897,
+      "berry_phase_over_pi": -0.5000000000000001,
+      "phase_mod_pi_over_pi": 0.4999999999999999,
+      "minimum_link_magnitude": 0.9974563683410509,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 64,
+      "pairing_twist": "linear",
+      "reference_mask": 2865289779,
+      "leg_phases_radians": [
+        -1.7820426633925126,
+        -0.1483072669151798,
+        -0.9238508132252078,
+        1.2834044167380256
+      ],
+      "unwrapped_phase_radians": -1.5707963267948746,
+      "berry_phase_radians": -1.5707963267948746,
+      "berry_phase_over_pi": -0.499999999999993,
+      "phase_mod_pi_over_pi": 0.500000000000007,
+      "minimum_link_magnitude": 0.9993633120911898,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 128,
+      "pairing_twist": "linear",
+      "reference_mask": 2865289779,
+      "leg_phases_radians": [
+        -1.7820426633925146,
+        -0.14830726691514728,
+        -0.9238508132252141,
+        1.283404416737983
+      ],
+      "unwrapped_phase_radians": -1.570796326794893,
+      "berry_phase_radians": -1.570796326794893,
+      "berry_phase_over_pi": -0.4999999999999989,
+      "phase_mod_pi_over_pi": 0.5000000000000011,
+      "minimum_link_magnitude": 0.9998407804632593,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 256,
+      "pairing_twist": "linear",
+      "reference_mask": 2865289779,
+      "leg_phases_radians": [
+        -1.7820426633925204,
+        -0.14830726691518156,
+        -0.9238508132252435,
+        1.2834044167379932
+      ],
+      "unwrapped_phase_radians": -1.5707963267949523,
+      "berry_phase_radians": -1.5707963267949523,
+      "berry_phase_over_pi": -0.5000000000000178,
+      "phase_mod_pi_over_pi": 0.49999999999998224,
+      "minimum_link_magnitude": 0.9999601919829542,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    }
+  ],
+  "size_scan": [
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 32,
+      "pairing_twist": "linear",
+      "method": "Appendix-B overlap; phase modulo pi",
+      "berry_phase_radians": 1.5707963267948977,
+      "berry_phase_over_pi": 0.5000000000000003,
+      "phase_mod_pi_over_pi": 0.5000000000000009,
+      "minimum_link_magnitude": 0.9974563683410467,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "lx": 5,
+      "ly": 5,
+      "steps_per_leg": 32,
+      "pairing_twist": "linear",
+      "method": "Appendix-B overlap; phase modulo pi",
+      "berry_phase_radians": 1.5707963267948946,
+      "berry_phase_over_pi": 0.4999999999999994,
+      "phase_mod_pi_over_pi": 0.49999999999999956,
+      "minimum_link_magnitude": 0.996879497772568,
+      "minimum_bdg_gap": 0.9583530245622871
+    },
+    {
+      "lx": 6,
+      "ly": 6,
+      "steps_per_leg": 32,
+      "pairing_twist": "linear",
+      "method": "Appendix-B overlap; phase modulo pi",
+      "berry_phase_radians": 1.570796326794895,
+      "berry_phase_over_pi": 0.4999999999999995,
+      "phase_mod_pi_over_pi": 0.49999999999999933,
+      "minimum_link_magnitude": 0.996290293279782,
+      "minimum_bdg_gap": 0.999999999999998
+    },
+    {
+      "lx": 7,
+      "ly": 7,
+      "steps_per_leg": 32,
+      "pairing_twist": "linear",
+      "method": "Appendix-B overlap; phase modulo pi",
+      "berry_phase_radians": -1.5707963267948875,
+      "berry_phase_over_pi": -0.4999999999999971,
+      "phase_mod_pi_over_pi": 0.5000000000000027,
+      "minimum_link_magnitude": 0.9956896700056357,
+      "minimum_bdg_gap": 0.976475719223853
+    },
+    {
+      "lx": 8,
+      "ly": 8,
+      "steps_per_leg": 32,
+      "pairing_twist": "linear",
+      "method": "Appendix-B overlap; phase modulo pi",
+      "berry_phase_radians": -1.5707963267949063,
+      "berry_phase_over_pi": -0.5000000000000031,
+      "phase_mod_pi_over_pi": 0.49999999999999734,
+      "minimum_link_magnitude": 0.9950672938908383,
+      "minimum_bdg_gap": 0.9612351239369044
+    },
+    {
+      "lx": 9,
+      "ly": 9,
+      "steps_per_leg": 32,
+      "pairing_twist": "linear",
+      "method": "Appendix-B overlap; phase modulo pi",
+      "berry_phase_radians": 1.570796326794906,
+      "berry_phase_over_pi": 0.500000000000003,
+      "phase_mod_pi_over_pi": 0.5000000000000027,
+      "minimum_link_magnitude": 0.9944534370662053,
+      "minimum_bdg_gap": 0.9965764965557219
+    }
+  ]
+}

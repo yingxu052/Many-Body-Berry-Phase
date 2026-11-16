@@ -1,0 +1,601 @@
+{
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": -2.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "vertices": {
+    "original_2pi": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        3.141592653589793,
+        0.0
+      ],
+      [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      [
+        6.283185307179586,
+        3.141592653589793
+      ],
+      [
+        6.283185307179586,
+        6.283185307179586
+      ]
+    ],
+    "return_to_zero": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        3.141592653589793,
+        0.0
+      ],
+      [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      [
+        0.0,
+        3.141592653589793
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "results": [
+    {
+      "path": "original_2pi",
+      "pairing_twist": "cosine",
+      "eta": 0.0,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.782042663392528,
+        -0.14830726691516877,
+        -0.9238508132252022,
+        1.283404416737994
+      ],
+      "berry_phase_radians": -1.5707963267949048,
+      "berry_phase_over_pi": -0.5000000000000027,
+      "phase_mod_pi_over_pi": 0.49999999999999734,
+      "minimum_link_magnitude": 0.9972956984241541,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "cosine",
+      "eta": 0.0,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.782042663392528,
+        -0.14830726691516877,
+        -0.9238508132251766,
+        -1.8581882368517937
+      ],
+      "berry_phase_radians": -4.712388980384667,
+      "berry_phase_over_pi": -1.4999999999999927,
+      "phase_mod_pi_over_pi": 0.5000000000000073,
+      "minimum_link_magnitude": 0.9972956984241327,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "linear",
+      "eta": 0.0,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.7820426633925197,
+        -0.14830726691516471,
+        -0.9238508132252052,
+        1.2834044167379925
+      ],
+      "berry_phase_radians": -1.570796326794897,
+      "berry_phase_over_pi": -0.5000000000000001,
+      "phase_mod_pi_over_pi": 0.4999999999999999,
+      "minimum_link_magnitude": 0.9974563683410509,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "linear",
+      "eta": 0.0,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.7820426633925197,
+        -0.14830726691516471,
+        -0.9238508132252541,
+        -1.858188236851806
+      ],
+      "berry_phase_radians": -4.712388980384745,
+      "berry_phase_over_pi": -1.5000000000000175,
+      "phase_mod_pi_over_pi": 0.49999999999998246,
+      "minimum_link_magnitude": 0.9974563683410427,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "linear",
+      "eta": 0.1,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.784358890141409,
+        -0.15078877346041125,
+        -0.9259560891677071,
+        1.281926175537945
+      ],
+      "berry_phase_radians": -1.5791775772315824,
+      "berry_phase_over_pi": -0.5026678348725793,
+      "phase_mod_pi_over_pi": 0.49733216512742073,
+      "minimum_link_magnitude": 0.9974560387263735,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "linear",
+      "eta": 0.1,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.784358890141409,
+        -0.15078877346041125,
+        -0.9217455372826601,
+        -1.8567099956517379
+      ],
+      "berry_phase_radians": -4.713603196536218,
+      "berry_phase_over_pi": -1.5003864970049956,
+      "phase_mod_pi_over_pi": 0.4996135029950044,
+      "minimum_link_magnitude": 0.9974560387263529,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "complex",
+      "eta": 0.0,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.807317072445406,
+        -0.17497701531226423,
+        -0.9461116959473508,
+        1.267931925892527
+      ],
+      "berry_phase_radians": -1.660473857812494,
+      "berry_phase_over_pi": -0.5285452446914548,
+      "phase_mod_pi_over_pi": 0.4714547553085452,
+      "minimum_link_magnitude": 0.9972602024745089,
+      "minimum_bdg_gap": 1.089003588389541
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "complex",
+      "eta": 0.0,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.807317072445406,
+        -0.17497701531226423,
+        -0.9015899305031045,
+        -1.842715746006309
+      ],
+      "berry_phase_radians": -4.726599764267084,
+      "berry_phase_over_pi": -1.5045234330001873,
+      "phase_mod_pi_over_pi": 0.4954765669998127,
+      "minimum_link_magnitude": 0.9972602024745215,
+      "minimum_bdg_gap": 1.0890035883895421
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "cosine",
+      "eta": 0.0,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.782042663392532,
+        -0.14830726691516113,
+        -0.9238508132252173,
+        1.2834044167379837
+      ],
+      "berry_phase_radians": -1.5707963267949268,
+      "berry_phase_over_pi": -0.5000000000000097,
+      "phase_mod_pi_over_pi": 0.49999999999999034,
+      "minimum_link_magnitude": 0.9993230856501065,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "cosine",
+      "eta": 0.0,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.782042663392532,
+        -0.14830726691516113,
+        -0.923850813225179,
+        -1.8581882368517835
+      ],
+      "berry_phase_radians": -4.712388980384656,
+      "berry_phase_over_pi": -1.4999999999999893,
+      "phase_mod_pi_over_pi": 0.5000000000000107,
+      "minimum_link_magnitude": 0.9993230856500829,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "linear",
+      "eta": 0.0,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.7820426633925126,
+        -0.1483072669151798,
+        -0.9238508132252078,
+        1.2834044167380256
+      ],
+      "berry_phase_radians": -1.5707963267948746,
+      "berry_phase_over_pi": -0.499999999999993,
+      "phase_mod_pi_over_pi": 0.500000000000007,
+      "minimum_link_magnitude": 0.9993633120911898,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "linear",
+      "eta": 0.0,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.7820426633925126,
+        -0.1483072669151798,
+        -0.9238508132251784,
+        -1.858188236851786
+      ],
+      "berry_phase_radians": -4.712388980384657,
+      "berry_phase_over_pi": -1.4999999999999896,
+      "phase_mod_pi_over_pi": 0.5000000000000104,
+      "minimum_link_magnitude": 0.9993633120911967,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "linear",
+      "eta": 0.1,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.7843629313997758,
+        -0.15079037189919733,
+        -0.9259572545130107,
+        1.2819247415078734
+      ],
+      "berry_phase_radians": -1.5791858163041104,
+      "berry_phase_over_pi": -0.502670457450818,
+      "phase_mod_pi_over_pi": 0.49732954254918205,
+      "minimum_link_magnitude": 0.9993632245840446,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "linear",
+      "eta": 0.1,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.7843629313997758,
+        -0.15079037189919733,
+        -0.9217443719373255,
+        -1.856708561621685
+      ],
+      "berry_phase_radians": -4.713606236857983,
+      "berry_phase_over_pi": -1.5003874647694706,
+      "phase_mod_pi_over_pi": 0.4996125352305294,
+      "minimum_link_magnitude": 0.9993632245840502,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "complex",
+      "eta": 0.0,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.8073659239623188,
+        -0.1750006037311986,
+        -0.946128214678349,
+        1.2679144379494411
+      ],
+      "berry_phase_radians": -1.6605803044224252,
+      "berry_phase_over_pi": -0.5285791276997467,
+      "phase_mod_pi_over_pi": 0.4714208723002533,
+      "minimum_link_magnitude": 0.9993140528710778,
+      "minimum_bdg_gap": 1.089003588389541
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "complex",
+      "eta": 0.0,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.8073659239623188,
+        -0.1750006037311986,
+        -0.9015734117720315,
+        -1.8426982580632125
+      ],
+      "berry_phase_radians": -4.726638197528762,
+      "berry_phase_over_pi": -1.5045356666873377,
+      "phase_mod_pi_over_pi": 0.49546433331266226,
+      "minimum_link_magnitude": 0.9993140528710818,
+      "minimum_bdg_gap": 1.0890035883895421
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "cosine",
+      "eta": 0.0,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7820426633925048,
+        -0.14830726691517032,
+        -0.9238508132252242,
+        1.283404416737986
+      ],
+      "berry_phase_radians": -1.5707963267949132,
+      "berry_phase_over_pi": -0.5000000000000053,
+      "phase_mod_pi_over_pi": 0.49999999999999467,
+      "minimum_link_magnitude": 0.9998307042531895,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "cosine",
+      "eta": 0.0,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7820426633925048,
+        -0.14830726691517032,
+        -0.9238508132251694,
+        -1.858188236851788
+      ],
+      "berry_phase_radians": -4.712388980384633,
+      "berry_phase_over_pi": -1.499999999999982,
+      "phase_mod_pi_over_pi": 0.500000000000018,
+      "minimum_link_magnitude": 0.9998307042531779,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "linear",
+      "eta": 0.0,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7820426633925146,
+        -0.14830726691514728,
+        -0.9238508132252141,
+        1.283404416737983
+      ],
+      "berry_phase_radians": -1.570796326794893,
+      "berry_phase_over_pi": -0.4999999999999989,
+      "phase_mod_pi_over_pi": 0.5000000000000011,
+      "minimum_link_magnitude": 0.9998407804632593,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "linear",
+      "eta": 0.0,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7820426633925146,
+        -0.14830726691514728,
+        -0.9238508132251447,
+        -1.8581882368518132
+      ],
+      "berry_phase_radians": -4.7123889803846195,
+      "berry_phase_over_pi": -1.4999999999999776,
+      "phase_mod_pi_over_pi": 0.5000000000000224,
+      "minimum_link_magnitude": 0.9998407804632677,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "linear",
+      "eta": 0.1,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7843639411455652,
+        -0.15079077158852133,
+        -0.9259575457896737,
+        1.2819243828623599
+      ],
+      "berry_phase_radians": -1.5791878756614004,
+      "berry_phase_over_pi": -0.5026711129646025,
+      "phase_mod_pi_over_pi": 0.49732888703539746,
+      "minimum_link_magnitude": 0.9998407591746359,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "linear",
+      "eta": 0.1,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7843639411455652,
+        -0.15079077158852133,
+        -0.9217440806608358,
+        -1.8567082029761814
+      ],
+      "berry_phase_radians": -4.713606996371103,
+      "berry_phase_over_pi": -1.5003877065300053,
+      "phase_mod_pi_over_pi": 0.4996122934699947,
+      "minimum_link_magnitude": 0.999840759174645,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "complex",
+      "eta": 0.0,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.8073781329144967,
+        -0.17500650240307353,
+        -0.9461323452289604,
+        1.2679100642561723
+      ],
+      "berry_phase_radians": -1.6606069162903583,
+      "berry_phase_over_pi": -0.5285875985203996,
+      "phase_mod_pi_over_pi": 0.4714124014796004,
+      "minimum_link_magnitude": 0.9998284600191483,
+      "minimum_bdg_gap": 1.089003588389541
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "complex",
+      "eta": 0.0,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.8073781329144967,
+        -0.17500650240307353,
+        -0.901569281221432,
+        -1.8426938843699798
+      ],
+      "berry_phase_radians": -4.726647800908982,
+      "berry_phase_over_pi": -1.5045387235382024,
+      "phase_mod_pi_over_pi": 0.4954612764617976,
+      "minimum_link_magnitude": 0.9998284600191543,
+      "minimum_bdg_gap": 1.0890035883895421
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "cosine",
+      "eta": 0.0,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.7820426633925206,
+        -0.1483072669151649,
+        -0.9238508132252401,
+        1.2834044167379948
+      ],
+      "berry_phase_radians": -1.5707963267949308,
+      "berry_phase_over_pi": -0.5000000000000109,
+      "phase_mod_pi_over_pi": 0.4999999999999891,
+      "minimum_link_magnitude": 0.9999576733447124,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "cosine",
+      "eta": 0.0,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.7820426633925206,
+        -0.1483072669151649,
+        -0.9238508132252659,
+        -1.85818823685182
+      ],
+      "berry_phase_radians": -4.712388980384771,
+      "berry_phase_over_pi": -1.500000000000026,
+      "phase_mod_pi_over_pi": 0.499999999999974,
+      "minimum_link_magnitude": 0.9999576733447122,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "linear",
+      "eta": 0.0,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.7820426633925204,
+        -0.14830726691518156,
+        -0.9238508132252435,
+        1.2834044167379932
+      ],
+      "berry_phase_radians": -1.5707963267949523,
+      "berry_phase_over_pi": -0.5000000000000178,
+      "phase_mod_pi_over_pi": 0.49999999999998224,
+      "minimum_link_magnitude": 0.9999601919829542,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "linear",
+      "eta": 0.0,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.7820426633925204,
+        -0.14830726691518156,
+        -0.9238508132252544,
+        -1.8581882368517684
+      ],
+      "berry_phase_radians": -4.712388980384724,
+      "berry_phase_over_pi": -1.500000000000011,
+      "phase_mod_pi_over_pi": 0.4999999999999889,
+      "minimum_link_magnitude": 0.9999601919829256,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "linear",
+      "eta": 0.1,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.784364193546439,
+        -0.1507908715158243,
+        -0.9259576186050786,
+        1.2819242931922987
+      ],
+      "berry_phase_radians": -1.5791883904750432,
+      "berry_phase_over_pi": -0.5026712768348746,
+      "phase_mod_pi_over_pi": 0.49732872316512544,
+      "minimum_link_magnitude": 0.9999601865839669,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "linear",
+      "eta": 0.1,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.784364193546439,
+        -0.1507908715158243,
+        -0.9217440078451477,
+        -1.856708113306147
+      ],
+      "berry_phase_radians": -4.713607186213558,
+      "berry_phase_over_pi": -1.5003877669587355,
+      "phase_mod_pi_over_pi": 0.49961223304126445,
+      "minimum_link_magnitude": 0.9999601865839718,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    {
+      "path": "original_2pi",
+      "pairing_twist": "complex",
+      "eta": 0.0,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.807381184907313,
+        -0.1750079771690231,
+        -0.9461333779209228,
+        1.2679089707261346
+      ],
+      "berry_phase_radians": -1.6606135692711241,
+      "berry_phase_over_pi": -0.5285897162299499,
+      "phase_mod_pi_over_pi": 0.4714102837700501,
+      "minimum_link_magnitude": 0.9999571105161171,
+      "minimum_bdg_gap": 1.0890012095111348
+    },
+    {
+      "path": "return_to_zero",
+      "pairing_twist": "complex",
+      "eta": 0.0,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.807381184907313,
+        -0.1750079771690231,
+        -0.9015682485294444,
+        -1.8426927908398703
+      ],
+      "berry_phase_radians": -4.726650201445651,
+      "berry_phase_over_pi": -1.5045394876527565,
+      "phase_mod_pi_over_pi": 0.49546051234724353,
+      "minimum_link_magnitude": 0.9999571105161408,
+      "minimum_bdg_gap": 1.0890012095111323
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "normalized_overlap": {
+    "real": 0.9999877274567318,
+    "imag": -0.0021272197352146284
+  },
+  "norm1_fraction": 0.0695220151258988,
+  "norm2_fraction": 0.06953551394057811,
+  "cross_factor": {
+    "real": 0.06952878711700544,
+    "imag": -0.0001479048232892109
+  },
+  "unprojected_overlap": {
+    "real": 0.9999873979373862,
+    "imag": 5.48233835127311e-16
+  },
+  "norm1_imaginary_residual": 3.1373215620055936e-20,
+  "norm2_imaginary_residual": 2.3890462111154624e-18,
+  "elapsed_seconds": 0.32465204197796993,
+  "g": 0.5,
+  "lattice": [
+    4,
+    4
+  ],
+  "reference_mask": 1431655765
+}

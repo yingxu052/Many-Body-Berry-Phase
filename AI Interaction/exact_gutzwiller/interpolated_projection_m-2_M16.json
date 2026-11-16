@@ -1,0 +1,1348 @@
+{
+  "lattice": [
+    4,
+    4
+  ],
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": -2.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "interpolation": "Psi_lambda proportional to (1-lambda)Psi_G + lambda P_G Psi_G",
+  "projection": "P_G=prod_i n_i(2-n_i), with n_i=n_ic+n_id",
+  "steps_per_leg": 16,
+  "reference_mask": 2865289779,
+  "vertices": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      3.141592653589793,
+      0.0
+    ],
+    [
+      3.141592653589793,
+      3.141592653589793
+    ],
+    [
+      6.283185307179586,
+      3.141592653589793
+    ],
+    [
+      6.283185307179586,
+      6.283185307179586
+    ]
+  ],
+  "minimum_bdg_gap": 1.0893482224808504,
+  "results": [
+    {
+      "lambda": 0.0,
+      "berry_phase_radians": -1.6600480838753962,
+      "berry_phase_over_pi": -0.5284097166379972,
+      "minimum_link_magnitude": 0.9890996583393821,
+      "minimum_norm_fraction": 1.0,
+      "total_unwrapped_link_phase": -1.6600480838753962
+    },
+    {
+      "lambda": 0.1,
+      "berry_phase_radians": -1.6600109667747553,
+      "berry_phase_over_pi": -0.5283979018979167,
+      "minimum_link_magnitude": 0.9891044924429884,
+      "minimum_norm_fraction": 0.8102894999477281,
+      "total_unwrapped_link_phase": -1.6600109667747553
+    },
+    {
+      "lambda": 0.2,
+      "berry_phase_radians": -1.6599591548026658,
+      "berry_phase_over_pi": -0.5283814096349779,
+      "minimum_link_magnitude": 0.9891112421591023,
+      "minimum_norm_fraction": 0.6405485262167481,
+      "total_unwrapped_link_phase": -1.6599591548026658
+    },
+    {
+      "lambda": 0.3,
+      "berry_phase_radians": -1.6598837468112289,
+      "berry_phase_over_pi": -0.5283574065258063,
+      "minimum_link_magnitude": 0.9891210694790776,
+      "minimum_norm_fraction": 0.4907770788070595,
+      "total_unwrapped_link_phase": -1.6598837468112289
+    },
+    {
+      "lambda": 0.4,
+      "berry_phase_radians": -1.6597679421454312,
+      "berry_phase_over_pi": -0.5283205447558167,
+      "minimum_link_magnitude": 0.9891361698560874,
+      "minimum_norm_fraction": 0.36097515771866295,
+      "total_unwrapped_link_phase": -1.6597679421454312
+    },
+    {
+      "lambda": 0.5,
+      "berry_phase_radians": -1.6595768925472163,
+      "berry_phase_over_pi": -0.5282597317799534,
+      "minimum_link_magnitude": 0.9891611042877363,
+      "minimum_norm_fraction": 0.2511427629515582,
+      "total_unwrapped_link_phase": -1.6595768925472163
+    },
+    {
+      "lambda": 0.6,
+      "berry_phase_radians": -1.6592284392058965,
+      "berry_phase_over_pi": -0.5281488156365376,
+      "minimum_link_magnitude": 0.9892066541008592,
+      "minimum_norm_fraction": 0.1612798945057452,
+      "total_unwrapped_link_phase": -1.6592284392058965
+    },
+    {
+      "lambda": 0.7,
+      "berry_phase_radians": -1.6584896784034548,
+      "berry_phase_over_pi": -0.5279136607695953,
+      "minimum_link_magnitude": 0.98930353406439,
+      "minimum_norm_fraction": 0.09138655238122396,
+      "total_unwrapped_link_phase": -1.6584896784034548
+    },
+    {
+      "lambda": 0.8,
+      "berry_phase_radians": -1.6564792600294809,
+      "berry_phase_over_pi": -0.5272737247257939,
+      "minimum_link_magnitude": 0.9895693186883634,
+      "minimum_norm_fraction": 0.041462736577994465,
+      "total_unwrapped_link_phase": -1.6564792600294809
+    },
+    {
+      "lambda": 0.9,
+      "berry_phase_radians": -1.6476765637024213,
+      "berry_phase_over_pi": -0.5244717394598171,
+      "minimum_link_magnitude": 0.9905351905969559,
+      "minimum_norm_fraction": 0.01150844709605681,
+      "total_unwrapped_link_phase": -1.6476765637024213
+    },
+    {
+      "lambda": 1.0,
+      "berry_phase_radians": -1.6010353314405745,
+      "berry_phase_over_pi": -0.5096253741270769,
+      "minimum_link_magnitude": 0.9936930169256157,
+      "minimum_norm_fraction": 0.0015236839354109233,
+      "total_unwrapped_link_phase": -1.6010353314405745
+    }
+  ],
+  "base_links": [
+    {
+      "initial_point": 0,
+      "final_point": 1,
+      "gaussian_overlap": {
+        "real": 0.9871345155198867,
+        "imag": -0.09476147380225002
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015571948306822793,
+        "imag": -0.00015718159329473238
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9890176657099048,
+        "imag": -0.09983039336497646
+      },
+      "norm1_fraction": 0.0015702525998340074,
+      "norm2_fraction": 0.001578731547969892,
+      "elapsed_seconds": 0.0371420840092469
+    },
+    {
+      "initial_point": 1,
+      "final_point": 2,
+      "gaussian_overlap": {
+        "real": 0.9864166476709632,
+        "imag": -0.10071441612896835
+      },
+      "projected_raw_overlap": {
+        "real": 0.001572997478999091,
+        "imag": -0.00016723949770643535
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9884041146714051,
+        "imag": -0.10508612370682333
+      },
+      "norm1_fraction": 0.001578731547969892,
+      "norm2_fraction": 0.0016042744844453677,
+      "elapsed_seconds": 0.03710616601165384
+    },
+    {
+      "initial_point": 2,
+      "final_point": 3,
+      "gaussian_overlap": {
+        "real": 0.9852192334862551,
+        "imag": -0.10963043444135151
+      },
+      "projected_raw_overlap": {
+        "real": 0.0016051375982350225,
+        "imag": -0.00018320840001575134
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9874500293293178,
+        "imag": -0.11270631263503837
+      },
+      "norm1_fraction": 0.0016042744844453677,
+      "norm2_fraction": 0.0016470834559670989,
+      "elapsed_seconds": 0.03767991700442508
+    },
+    {
+      "initial_point": 3,
+      "final_point": 4,
+      "gaussian_overlap": {
+        "real": 0.9835480971008553,
+        "imag": -0.1210015855334683
+      },
+      "projected_raw_overlap": {
+        "real": 0.0016536526003225554,
+        "imag": -0.00020524110947606848
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9861812393727025,
+        "imag": -0.12239870192436875
+      },
+      "norm1_fraction": 0.0016470834559670989,
+      "norm2_fraction": 0.001707102028274205,
+      "elapsed_seconds": 0.0374829999927897
+    },
+    {
+      "initial_point": 4,
+      "final_point": 5,
+      "gaussian_overlap": {
+        "real": 0.9815649915422497,
+        "imag": -0.13333699924250036
+      },
+      "projected_raw_overlap": {
+        "real": 0.0017182490688152179,
+        "imag": -0.0002320467526847028
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9847535922647884,
+        "imag": -0.13298937705067604
+      },
+      "norm1_fraction": 0.001707102028274205,
+      "norm2_fraction": 0.0017834363271320836,
+      "elapsed_seconds": 0.037162291002459824
+    },
+    {
+      "initial_point": 5,
+      "final_point": 6,
+      "gaussian_overlap": {
+        "real": 0.9796872676268001,
+        "imag": -0.1440120594581148
+      },
+      "projected_raw_overlap": {
+        "real": 0.0017978781441914701,
+        "imag": -0.0002599658087813923
+      },
+      "projected_normalized_overlap": {
+        "real": 0.983524159677043,
+        "imag": -0.1422135612764043
+      },
+      "norm1_fraction": 0.0017834363271320836,
+      "norm2_fraction": 0.001873668830772562,
+      "elapsed_seconds": 0.04317324998555705
+    },
+    {
+      "initial_point": 6,
+      "final_point": 7,
+      "gaussian_overlap": {
+        "real": 0.9785430180043851,
+        "imag": -0.14981664011158233
+      },
+      "projected_raw_overlap": {
+        "real": 0.0018901933280031443,
+        "imag": -0.0002829693730050022
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9830055380193263,
+        "imag": -0.1471597939918826
+      },
+      "norm1_fraction": 0.001873668830772562,
+      "norm2_fraction": 0.0019733662233553874,
+      "elapsed_seconds": 0.04127091699047014
+    },
+    {
+      "initial_point": 7,
+      "final_point": 8,
+      "gaussian_overlap": {
+        "real": 0.9786426831876015,
+        "imag": -0.14842135048318836
+      },
+      "projected_raw_overlap": {
+        "real": 0.0019909053502139484,
+        "imag": -0.00029479268477190166
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9835841443555595,
+        "imag": -0.1456389730342981
+      },
+      "norm1_fraction": 0.0019733662233553874,
+      "norm2_fraction": 0.0020762062716433434,
+      "elapsed_seconds": 0.03725449999910779
+    },
+    {
+      "initial_point": 8,
+      "final_point": 9,
+      "gaussian_overlap": {
+        "real": 0.979982193550853,
+        "imag": -0.1398521982269382
+      },
+      "projected_raw_overlap": {
+        "real": 0.0020935390331027403,
+        "imag": -0.00029246655101115225
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9851877409868249,
+        "imag": -0.1376303265183711
+      },
+      "norm1_fraction": 0.0020762062716433434,
+      "norm2_fraction": 0.002174971788990026,
+      "elapsed_seconds": 0.037816040974576026
+    },
+    {
+      "initial_point": 9,
+      "final_point": 10,
+      "gaussian_overlap": {
+        "real": 0.9820477120822532,
+        "imag": -0.12650897116837204
+      },
+      "projected_raw_overlap": {
+        "real": 0.00219046914634586,
+        "imag": -0.0002780990581724821
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9873130017926489,
+        "imag": -0.1253479494920167
+      },
+      "norm1_fraction": 0.002174971788990026,
+      "norm2_fraction": 0.00226313749550064,
+      "elapsed_seconds": 0.037801916972966865
+    },
+    {
+      "initial_point": 10,
+      "final_point": 11,
+      "gaussian_overlap": {
+        "real": 0.9842210727850835,
+        "imag": -0.11167075595257439
+      },
+      "projected_raw_overlap": {
+        "real": 0.0022750581586301138,
+        "imag": -0.00025714179198178154
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9894012719386628,
+        "imag": -0.11182853286201443
+      },
+      "norm1_fraction": 0.00226313749550064,
+      "norm2_fraction": 0.0023363028447213993,
+      "elapsed_seconds": 0.03663245800998993
+    },
+    {
+      "initial_point": 11,
+      "final_point": 12,
+      "gaussian_overlap": {
+        "real": 0.9861069283796329,
+        "imag": -0.09795751326358319
+      },
+      "projected_raw_overlap": {
+        "real": 0.002343392932389951,
+        "imag": -0.00023517274836872513
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9911254364152903,
+        "imag": -0.09946504900576762
+      },
+      "norm1_fraction": 0.0023363028447213993,
+      "norm2_fraction": 0.0023927859480144032,
+      "elapsed_seconds": 0.037827457999810576
+    },
+    {
+      "initial_point": 12,
+      "final_point": 13,
+      "gaussian_overlap": {
+        "real": 0.9875649745410214,
+        "imag": -0.08676860420183909
+      },
+      "projected_raw_overlap": {
+        "real": 0.002394593303572543,
+        "imag": -0.00021592266613952056
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9924009605777787,
+        "imag": -0.08948570137888706
+      },
+      "norm1_fraction": 0.0023927859480144032,
+      "norm2_fraction": 0.002433242121358117,
+      "elapsed_seconds": 0.037781332997838035
+    },
+    {
+      "initial_point": 13,
+      "final_point": 14,
+      "gaussian_overlap": {
+        "real": 0.9885995184247277,
+        "imag": -0.07850947058442313
+      },
+      "projected_raw_overlap": {
+        "real": 0.002429965708115828,
+        "imag": -0.00020106843357188336
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9932713894859082,
+        "imag": -0.08218861761245064
+      },
+      "norm1_fraction": 0.002433242121358117,
+      "norm2_fraction": 0.0024596828421291493,
+      "elapsed_seconds": 0.037009541993029416
+    },
+    {
+      "initial_point": 14,
+      "final_point": 15,
+      "gaussian_overlap": {
+        "real": 0.9892629159906215,
+        "imag": -0.07303397150756216
+      },
+      "projected_raw_overlap": {
+        "real": 0.0024517682095721366,
+        "imag": -0.0001908780464927432
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9938144404654417,
+        "imag": -0.07737165292857218
+      },
+      "norm1_fraction": 0.0024596828421291493,
+      "norm2_fraction": 0.002474395411337484,
+      "elapsed_seconds": 0.037710458011133596
+    },
+    {
+      "initial_point": 15,
+      "final_point": 16,
+      "gaussian_overlap": {
+        "real": 0.9896091954266081,
+        "imag": -0.06998331050918376
+      },
+      "projected_raw_overlap": {
+        "real": 0.002462127458446376,
+        "imag": -0.0001848939988588563
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9940992425002809,
+        "imag": -0.07465209958074961
+      },
+      "norm1_fraction": 0.002474395411337484,
+      "norm2_fraction": 0.002479091040349874,
+      "elapsed_seconds": 0.03756966700893827
+    },
+    {
+      "initial_point": 16,
+      "final_point": 17,
+      "gaussian_overlap": {
+        "real": 0.9923030395541378,
+        "imag": -0.005356535418374292
+      },
+      "projected_raw_overlap": {
+        "real": 0.002480412184627771,
+        "imag": -2.6213734445900237e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9991488529077535,
+        "imag": -0.010559302548330356
+      },
+      "norm1_fraction": 0.002479091040349874,
+      "norm2_fraction": 0.002485964074189256,
+      "elapsed_seconds": 0.03760650000185706
+    },
+    {
+      "initial_point": 17,
+      "final_point": 18,
+      "gaussian_overlap": {
+        "real": 0.9922371527215402,
+        "imag": -0.006326236806913538
+      },
+      "projected_raw_overlap": {
+        "real": 0.002493795805837523,
+        "imag": -2.4408027789565338e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9991688790614965,
+        "imag": -0.009779365940673483
+      },
+      "norm1_fraction": 0.002485964074189256,
+      "norm2_fraction": 0.0025058157513726657,
+      "elapsed_seconds": 0.03781120799249038
+    },
+    {
+      "initial_point": 18,
+      "final_point": 19,
+      "gaussian_overlap": {
+        "real": 0.992124748247531,
+        "imag": -0.006657784895039987
+      },
+      "projected_raw_overlap": {
+        "real": 0.0025191246157490895,
+        "imag": -1.7466210753535868e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9992174545706107,
+        "imag": -0.006928018781219457
+      },
+      "norm1_fraction": 0.0025058157513726657,
+      "norm2_fraction": 0.00253647242256107,
+      "elapsed_seconds": 0.037820792000275105
+    },
+    {
+      "initial_point": 19,
+      "final_point": 20,
+      "gaussian_overlap": {
+        "real": 0.9919837573041093,
+        "imag": -0.006655465025665326
+      },
+      "projected_raw_overlap": {
+        "real": 0.0025536649578699632,
+        "imag": -7.425920462093177e-06
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9992742820521534,
+        "imag": -0.0029058359106451034
+      },
+      "norm1_fraction": 0.00253647242256107,
+      "norm2_fraction": 0.0025747096964485908,
+      "elapsed_seconds": 0.03756283299298957
+    },
+    {
+      "initial_point": 20,
+      "final_point": 21,
+      "gaussian_overlap": {
+        "real": 0.9918378867627834,
+        "imag": -0.006664394195145222
+      },
+      "projected_raw_overlap": {
+        "real": 0.0025938905155986837,
+        "imag": 3.0820221656105025e-06
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9993241269421201,
+        "imag": 0.0011873820777489955
+      },
+      "norm1_fraction": 0.0025747096964485908,
+      "norm2_fraction": 0.0026167502127223898,
+      "elapsed_seconds": 0.03838179199374281
+    },
+    {
+      "initial_point": 21,
+      "final_point": 22,
+      "gaussian_overlap": {
+        "real": 0.9917131595996332,
+        "imag": -0.006995551784159311
+      },
+      "projected_raw_overlap": {
+        "real": 0.0026360111098268735,
+        "imag": 1.125079552643842e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9993651955043066,
+        "imag": 0.004265404432076374
+      },
+      "norm1_fraction": 0.0026167502127223898,
+      "norm2_fraction": 0.002658788329164437,
+      "elapsed_seconds": 0.03788566598086618
+    },
+    {
+      "initial_point": 22,
+      "final_point": 23,
+      "gaussian_overlap": {
+        "real": 0.9916319941704982,
+        "imag": -0.007857913525004787
+      },
+      "projected_raw_overlap": {
+        "real": 0.0026764475310046315,
+        "imag": 1.4636580473380087e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9994042253797649,
+        "imag": 0.005465401507316792
+      },
+      "norm1_fraction": 0.002658788329164437,
+      "norm2_fraction": 0.002697437193931515,
+      "elapsed_seconds": 0.03737395899952389
+    },
+    {
+      "initial_point": 23,
+      "final_point": 24,
+      "gaussian_overlap": {
+        "real": 0.9916073081076601,
+        "imag": -0.009310508091112649
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027121836363270344,
+        "imag": 1.170629088937437e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9994437656581856,
+        "imag": 0.004313785870417985
+      },
+      "norm1_fraction": 0.002697437193931515,
+      "norm2_fraction": 0.0027300469421414667,
+      "elapsed_seconds": 0.037995541002601385
+    },
+    {
+      "initial_point": 24,
+      "final_point": 25,
+      "gaussian_overlap": {
+        "real": 0.9916399029606533,
+        "imag": -0.011243959026133534
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027410035390745503,
+        "imag": 2.225383523795549e-06
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9994733122870226,
+        "imag": 0.0008114587996438223
+      },
+      "norm1_fraction": 0.0027300469421414667,
+      "norm2_fraction": 0.002754905293844379,
+      "elapsed_seconds": 0.03700508299516514
+    },
+    {
+      "initial_point": 25,
+      "final_point": 26,
+      "gaussian_overlap": {
+        "real": 0.9917205986504876,
+        "imag": -0.013395750565256765
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027616610413080485,
+        "imag": -1.2657486414230232e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9994727132262426,
+        "imag": -0.0045808707512718485
+      },
+      "norm1_fraction": 0.002754905293844379,
+      "norm2_fraction": 0.0027713551829724797,
+      "elapsed_seconds": 0.03814474999671802
+    },
+    {
+      "initial_point": 26,
+      "final_point": 27,
+      "gaussian_overlap": {
+        "real": 0.991835487528004,
+        "imag": -0.015397126234251863
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027739981457896076,
+        "imag": -3.066734291938073e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9994261780201669,
+        "imag": -0.011048942253429726
+      },
+      "norm1_fraction": 0.0027713551829724797,
+      "norm2_fraction": 0.002779832972324736,
+      "elapsed_seconds": 0.038343749998603016
+    },
+    {
+      "initial_point": 27,
+      "final_point": 28,
+      "gaussian_overlap": {
+        "real": 0.9919707750293467,
+        "imag": -0.016843381004564405
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027789641585672944,
+        "imag": -4.891291133699057e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9993366686707166,
+        "imag": -0.01758945530830264
+      },
+      "norm1_fraction": 0.002779832972324736,
+      "norm2_fraction": 0.0027817848824692685,
+      "elapsed_seconds": 0.03716554198763333
+    },
+    {
+      "initial_point": 28,
+      "final_point": 29,
+      "gaussian_overlap": {
+        "real": 0.9921144583536349,
+        "imag": -0.017373654579071873
+      },
+      "projected_raw_overlap": {
+        "real": 0.002778457929027515,
+        "imag": -6.448053125736542e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9992300640651918,
+        "imag": -0.02318944069878583
+      },
+      "norm1_fraction": 0.0027817848824692685,
+      "norm2_fraction": 0.0027794132471822583,
+      "elapsed_seconds": 0.03779916698113084
+    },
+    {
+      "initial_point": 29,
+      "final_point": 30,
+      "gaussian_overlap": {
+        "real": 0.9922548005217511,
+        "imag": -0.016742017843104258
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027749595431778118,
+        "imag": -7.494009939706242e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.999145679071901,
+        "imag": -0.02698276329320735
+      },
+      "norm1_fraction": 0.0027794132471822583,
+      "norm2_fraction": 0.0027752528633902197,
+      "elapsed_seconds": 0.038169459003256634
+    },
+    {
+      "initial_point": 30,
+      "final_point": 31,
+      "gaussian_overlap": {
+        "real": 0.9923779753428854,
+        "imag": -0.014861772195871795
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027710048274139313,
+        "imag": -7.865536941576703e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9991184231406004,
+        "imag": -0.028360119724354208
+      },
+      "norm1_fraction": 0.0027752528633902197,
+      "norm2_fraction": 0.0027716479812217283,
+      "elapsed_seconds": 0.036954250012058765
+    },
+    {
+      "initial_point": 31,
+      "final_point": 32,
+      "gaussian_overlap": {
+        "real": 0.992467595962341,
+        "imag": -0.01181260656490748
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027686268353709466,
+        "imag": -7.48838505677504e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9991622734834223,
+        "imag": -0.027024630919768446
+      },
+      "norm1_fraction": 0.0027716479812217283,
+      "norm2_fraction": 0.0027702484596867295,
+      "elapsed_seconds": 0.03699175000656396
+    },
+    {
+      "initial_point": 32,
+      "final_point": 33,
+      "gaussian_overlap": {
+        "real": 0.991503617589284,
+        "imag": -0.04827085582152669
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027654322324219705,
+        "imag": -0.00011452781135069873
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9978852942054701,
+        "imag": -0.04132649405923393
+      },
+      "norm1_fraction": 0.0027702484596867295,
+      "norm2_fraction": 0.0027723373362495856,
+      "elapsed_seconds": 0.03745145900757052
+    },
+    {
+      "initial_point": 33,
+      "final_point": 34,
+      "gaussian_overlap": {
+        "real": 0.9911593110297828,
+        "imag": -0.05172452919945767
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027683347740764036,
+        "imag": -0.00012439355039297874
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9977209777554948,
+        "imag": -0.04483202533406274
+      },
+      "norm1_fraction": 0.0027723373362495856,
+      "norm2_fraction": 0.0027769811708441964,
+      "elapsed_seconds": 0.03783270900021307
+    },
+    {
+      "initial_point": 34,
+      "final_point": 35,
+      "gaussian_overlap": {
+        "real": 0.9906429872751252,
+        "imag": -0.055030200830113944
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027713264557635803,
+        "imag": -0.00013411937024988043
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9975349751121195,
+        "imag": -0.04827607458010751
+      },
+      "norm1_fraction": 0.0027769811708441964,
+      "norm2_fraction": 0.0027793687933593426,
+      "elapsed_seconds": 0.037458958016941324
+    },
+    {
+      "initial_point": 35,
+      "final_point": 36,
+      "gaussian_overlap": {
+        "real": 0.989958400523193,
+        "imag": -0.0582988085461943
+      },
+      "projected_raw_overlap": {
+        "real": 0.002768133221929159,
+        "imag": -0.00014400049717520907
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9973173326697989,
+        "imag": -0.05188124278419565
+      },
+      "norm1_fraction": 0.0027793687933593426,
+      "norm2_fraction": 0.0027717947287310266,
+      "elapsed_seconds": 0.03763000000617467
+    },
+    {
+      "initial_point": 36,
+      "final_point": 37,
+      "gaussian_overlap": {
+        "real": 0.9891298837647466,
+        "imag": -0.06157904543982408
+      },
+      "projected_raw_overlap": {
+        "real": 0.0027500130664454615,
+        "imag": -0.00015403303212063046
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9970557737881302,
+        "imag": -0.05584683429467367
+      },
+      "norm1_fraction": 0.0027717947287310266,
+      "norm2_fraction": 0.0027445398730406127,
+      "elapsed_seconds": 0.037366333010140806
+    },
+    {
+      "initial_point": 37,
+      "final_point": 38,
+      "gaussian_overlap": {
+        "real": 0.9882200915470039,
+        "imag": -0.06487068213063721
+      },
+      "projected_raw_overlap": {
+        "real": 0.002707152908104153,
+        "imag": -0.00016383297898357667
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9967362955496266,
+        "imag": -0.06032103915227658
+      },
+      "norm1_fraction": 0.0027445398730406127,
+      "norm2_fraction": 0.002687790920540902,
+      "elapsed_seconds": 0.0376950409845449
+    },
+    {
+      "initial_point": 38,
+      "final_point": 39,
+      "gaussian_overlap": {
+        "real": 0.9873470345093457,
+        "imag": -0.06809306698286317
+      },
+      "projected_raw_overlap": {
+        "real": 0.002631221302809248,
+        "imag": -0.00017240811318106118
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9963504189736562,
+        "imag": -0.06528485293844592
+      },
+      "norm1_fraction": 0.002687790920540902,
+      "norm2_fraction": 0.0025947472189867815,
+      "elapsed_seconds": 0.03811166700324975
+    },
+    {
+      "initial_point": 39,
+      "final_point": 40,
+      "gaussian_overlap": {
+        "real": 0.9866793870645298,
+        "imag": -0.07101086214383556
+      },
+      "projected_raw_overlap": {
+        "real": 0.0025187520606124937,
+        "imag": -0.00017796621085755572
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9959137668401201,
+        "imag": -0.07036778339441302
+      },
+      "norm1_fraction": 0.0025947472189867815,
+      "norm2_fraction": 0.0024650873372805797,
+      "elapsed_seconds": 0.03763224999420345
+    },
+    {
+      "initial_point": 40,
+      "final_point": 41,
+      "gaussian_overlap": {
+        "real": 0.9863892395798479,
+        "imag": -0.07317378060597753
+      },
+      "projected_raw_overlap": {
+        "real": 0.0023738725830482806,
+        "imag": -0.00017822190630815464
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9954898981632789,
+        "imag": -0.07473783918652803
+      },
+      "norm1_fraction": 0.0024650873372805797,
+      "norm2_fraction": 0.0023067938438494267,
+      "elapsed_seconds": 0.03750495900749229
+    },
+    {
+      "initial_point": 41,
+      "final_point": 42,
+      "gaussian_overlap": {
+        "real": 0.9865752835091993,
+        "imag": -0.07395752360887911
+      },
+      "projected_raw_overlap": {
+        "real": 0.002208326139410224,
+        "imag": -0.00017143270140326135
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9951921292552531,
+        "imag": -0.07725691965909347
+      },
+      "norm1_fraction": 0.0023067938438494267,
+      "norm2_fraction": 0.0021345374423237386,
+      "elapsed_seconds": 0.03718033400946297
+    },
+    {
+      "initial_point": 42,
+      "final_point": 43,
+      "gaussian_overlap": {
+        "real": 0.9872135921473936,
+        "imag": -0.07271386269394803
+      },
+      "projected_raw_overlap": {
+        "real": 0.0020381563476281244,
+        "imag": -0.00015746570420310146
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9951389230533414,
+        "imag": -0.07688333207649556
+      },
+      "norm1_fraction": 0.0021345374423237386,
+      "norm2_fraction": 0.0019651865719889717,
+      "elapsed_seconds": 0.03684962497209199
+    },
+    {
+      "initial_point": 43,
+      "final_point": 44,
+      "gaussian_overlap": {
+        "real": 0.9881801209972466,
+        "imag": -0.06890853862542967
+      },
+      "projected_raw_overlap": {
+        "real": 0.0018790066123972494,
+        "imag": -0.00013781747837615443
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9953890949807721,
+        "imag": -0.07300773406984169
+      },
+      "norm1_fraction": 0.0019651865719889717,
+      "norm2_fraction": 0.0018132891874220697,
+      "elapsed_seconds": 0.03707912500249222
+    },
+    {
+      "initial_point": 44,
+      "final_point": 45,
+      "gaussian_overlap": {
+        "real": 0.989317029174849,
+        "imag": -0.0621190833520685
+      },
+      "projected_raw_overlap": {
+        "real": 0.0017428251964554666,
+        "imag": -0.00011452739776745784
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9959142028637884,
+        "imag": -0.06544515324062007
+      },
+      "norm1_fraction": 0.0018132891874220697,
+      "norm2_fraction": 0.0016888720027879837,
+      "elapsed_seconds": 0.03769812500104308
+    },
+    {
+      "initial_point": 45,
+      "final_point": 46,
+      "gaussian_overlap": {
+        "real": 0.9904792959319801,
+        "imag": -0.051881877071597596
+      },
+      "projected_raw_overlap": {
+        "real": 0.0016370633677323294,
+        "imag": -8.890785606801607e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9966195649688727,
+        "imag": -0.05412576604139688
+      },
+      "norm1_fraction": 0.0016888720027879837,
+      "norm2_fraction": 0.0015976271316450325,
+      "elapsed_seconds": 0.037957374996040016
+    },
+    {
+      "initial_point": 46,
+      "final_point": 47,
+      "gaussian_overlap": {
+        "real": 0.991530580472007,
+        "imag": -0.03745665824797796
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015655562313607973,
+        "imag": -6.0739943584717945e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9973706853523863,
+        "imag": -0.03869566480451389
+      },
+      "norm1_fraction": 0.0015976271316450325,
+      "norm2_fraction": 0.0015422284709396552,
+      "elapsed_seconds": 0.036956666997866705
+    },
+    {
+      "initial_point": 47,
+      "final_point": 48,
+      "gaussian_overlap": {
+        "real": 0.9922868446438321,
+        "imag": -0.017569647825948616
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015298277228958607,
+        "imag": -2.78402865593343e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9979774408901367,
+        "imag": -0.01816150767717774
+      },
+      "norm1_fraction": 0.0015422284709396552,
+      "norm2_fraction": 0.0015236839354109233,
+      "elapsed_seconds": 0.036933082999894395
+    },
+    {
+      "initial_point": 48,
+      "final_point": 49,
+      "gaussian_overlap": {
+        "real": 0.9833517842771952,
+        "imag": 0.1295710783340724
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015064428420210796,
+        "imag": 0.00019035531180147517
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9877098571542395,
+        "imag": 0.12480780059052175
+      },
+      "norm1_fraction": 0.0015236839354109233,
+      "norm2_fraction": 0.0015266927798971582,
+      "elapsed_seconds": 0.03698279199306853
+    },
+    {
+      "initial_point": 49,
+      "final_point": 50,
+      "gaussian_overlap": {
+        "real": 0.9844994906010806,
+        "imag": 0.12011455586669656
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015138555749913058,
+        "imag": 0.00017758223039792418
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9887725608710656,
+        "imag": 0.1159875747835189
+      },
+      "norm1_fraction": 0.0015266927798971582,
+      "norm2_fraction": 0.0015354102145059226,
+      "elapsed_seconds": 0.03695920799509622
+    },
+    {
+      "initial_point": 50,
+      "final_point": 51,
+      "gaussian_overlap": {
+        "real": 0.9854995508000653,
+        "imag": 0.11071325631079489
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015262239560510503,
+        "imag": 0.0001662979816081353
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9896724764733249,
+        "imag": 0.10783511465543638
+      },
+      "norm1_fraction": 0.0015354102145059226,
+      "norm2_fraction": 0.0015489204793998135,
+      "elapsed_seconds": 0.04521262500202283
+    },
+    {
+      "initial_point": 51,
+      "final_point": 52,
+      "gaussian_overlap": {
+        "real": 0.9863162579175784,
+        "imag": 0.10179409580558399
+      },
+      "projected_raw_overlap": {
+        "real": 0.001542357035566788,
+        "imag": 0.00015674003938284886
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9903981971319302,
+        "imag": 0.10064793614152719
+      },
+      "norm1_fraction": 0.0015489204793998135,
+      "norm2_fraction": 0.0015657450002809212,
+      "elapsed_seconds": 0.04229066698462702
+    },
+    {
+      "initial_point": 52,
+      "final_point": 53,
+      "gaussian_overlap": {
+        "real": 0.9869591198144247,
+        "imag": 0.09351523262213686
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015606051041214051,
+        "imag": 0.00014865431454680176
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9909751118705357,
+        "imag": 0.09439462013741734
+      },
+      "norm1_fraction": 0.0015657450002809212,
+      "norm2_fraction": 0.001583942885532403,
+      "elapsed_seconds": 0.03747675000340678
+    },
+    {
+      "initial_point": 53,
+      "final_point": 54,
+      "gaussian_overlap": {
+        "real": 0.9874606446089023,
+        "imag": 0.0858796282603879
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015789649185973605,
+        "imag": 0.00014148692613492043
+      },
+      "projected_normalized_overlap": {
+        "real": 0.991440995870257,
+        "imag": 0.08884044053014055
+      },
+      "norm1_fraction": 0.001583942885532403,
+      "norm2_fraction": 0.001601296294005475,
+      "elapsed_seconds": 0.03757600000244565
+    },
+    {
+      "initial_point": 54,
+      "final_point": 55,
+      "gaussian_overlap": {
+        "real": 0.9878598531901226,
+        "imag": 0.07884751333416129
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015952868566896667,
+        "imag": 0.00013459399778615103
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9918293251749222,
+        "imag": 0.08368041987999776
+      },
+      "norm1_fraction": 0.001601296294005475,
+      "norm2_fraction": 0.0016155930865811893,
+      "elapsed_seconds": 0.03712149997591041
+    },
+    {
+      "initial_point": 55,
+      "final_point": 56,
+      "gaussian_overlap": {
+        "real": 0.9881917020656267,
+        "imag": 0.07241759524402348
+      },
+      "projected_raw_overlap": {
+        "real": 0.0016075781341549043,
+        "imag": 0.00012743933812871497
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9921604268196172,
+        "imag": 0.07865264239729435
+      },
+      "norm1_fraction": 0.0016155930865811893,
+      "norm2_fraction": 0.0016249813954344364,
+      "elapsed_seconds": 0.03825562502606772
+    },
+    {
+      "initial_point": 56,
+      "final_point": 57,
+      "gaussian_overlap": {
+        "real": 0.9884808704742698,
+        "imag": 0.06666567365239334
+      },
+      "projected_raw_overlap": {
+        "real": 0.0016143533776916206,
+        "imag": 0.00011975385077894064
+      },
+      "projected_normalized_overlap": {
+        "real": 0.992439313238753,
+        "imag": 0.07361983507891591
+      },
+      "norm1_fraction": 0.0016249813954344364,
+      "norm2_fraction": 0.0016283242896624832,
+      "elapsed_seconds": 0.03754245801246725
+    },
+    {
+      "initial_point": 57,
+      "final_point": 58,
+      "gaussian_overlap": {
+        "real": 0.9887390746084672,
+        "imag": 0.06174179430879618
+      },
+      "projected_raw_overlap": {
+        "real": 0.001614946571079139,
+        "imag": 0.00011162548781231463
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9926591119651507,
+        "imag": 0.06861283189722259
+      },
+      "norm1_fraction": 0.0016283242896624832,
+      "norm2_fraction": 0.0016254557425824936,
+      "elapsed_seconds": 0.03811637498438358
+    },
+    {
+      "initial_point": 58,
+      "final_point": 59,
+      "gaussian_overlap": {
+        "real": 0.988965656071494,
+        "imag": 0.057836706557052316
+      },
+      "projected_raw_overlap": {
+        "real": 0.0016096898408883334,
+        "imag": 0.00010349611617320864
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9928083007316716,
+        "imag": 0.063833292986148
+      },
+      "norm1_fraction": 0.0016254557425824936,
+      "norm2_fraction": 0.001617254834080074,
+      "elapsed_seconds": 0.03701491700485349
+    },
+    {
+      "initial_point": 59,
+      "final_point": 60,
+      "gaussian_overlap": {
+        "real": 0.9891507363040848,
+        "imag": 0.055135046172956205
+      },
+      "projected_raw_overlap": {
+        "real": 0.001599895845713527,
+        "imag": 9.60694278831676e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.992878695305199,
+        "imag": 0.059619686163267765
+      },
+      "norm1_fraction": 0.001617254834080074,
+      "norm2_fraction": 0.0016055083907852347,
+      "elapsed_seconds": 0.037042500014649704
+    },
+    {
+      "initial_point": 60,
+      "final_point": 61,
+      "gaussian_overlap": {
+        "real": 0.9892794302077368,
+        "imag": 0.05377367685898091
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015876371963951198,
+        "imag": 9.016645462172314e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9928706707591727,
+        "imag": 0.05638796349916631
+      },
+      "norm1_fraction": 0.0016055083907852347,
+      "norm2_fraction": 0.0015925922106050483,
+      "elapsed_seconds": 0.03815900001791306
+    },
+    {
+      "initial_point": 61,
+      "final_point": 62,
+      "gaussian_overlap": {
+        "real": 0.9893355444336902,
+        "imag": 0.0538180338757
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015753699518192396,
+        "imag": 8.657813768434878e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9927932344153323,
+        "imag": 0.05456127257095425
+      },
+      "norm1_fraction": 0.0015925922106050483,
+      "norm2_fraction": 0.001581040191024483,
+      "elapsed_seconds": 0.037121000001206994
+    },
+    {
+      "initial_point": 62,
+      "final_point": 63,
+      "gaussian_overlap": {
+        "real": 0.9893039650451579,
+        "imag": 0.05526001215247299
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015654801336625348,
+        "imag": 8.59500658234236e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.992658853204216,
+        "imag": 0.054500272433031405
+      },
+      "norm1_fraction": 0.001581040191024483,
+      "norm2_fraction": 0.0015730849304831475,
+      "elapsed_seconds": 0.037422875000629574
+    },
+    {
+      "initial_point": 63,
+      "final_point": 0,
+      "gaussian_overlap": {
+        "real": 0.9891718278587032,
+        "imag": 0.05803271282842647
+      },
+      "projected_raw_overlap": {
+        "real": 0.0015598418911928731,
+        "imag": 8.870822831867188e-05
+      },
+      "projected_normalized_overlap": {
+        "real": 0.9924753605818086,
+        "imag": 0.05644208646032646
+      },
+      "norm1_fraction": 0.0015730849304831475,
+      "norm2_fraction": 0.0015702525998340074,
+      "elapsed_seconds": 0.03735379199497402
+    }
+  ]
+}

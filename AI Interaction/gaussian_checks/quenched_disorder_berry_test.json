@@ -1,0 +1,1484 @@
+{
+  "generic_gaussian": {
+    "model": "one occupied mode of h=d.sigma; d=(sin(theta)cos(lambda), sin(theta)sin(lambda), cos(theta)+V)",
+    "theta": 0.85,
+    "distribution": "V uniform on [-W,W], fixed along lambda",
+    "clean_phase_over_pi": 1.6599831458849825,
+    "formula_check": {
+      "analytic": 5.214990856195135,
+      "link_overlap": 5.214991085675187,
+      "error": 2.2948005273804029e-07
+    },
+    "rows": [
+      {
+        "W": 0.0,
+        "mean_phase": 5.214990856195135,
+        "mean_phase_over_pi": 1.6599831458849825,
+        "rms_about_mean": 0.0
+      },
+      {
+        "W": 0.005,
+        "mean_phase": 5.214976227789743,
+        "mean_phase_over_pi": 1.6599784895189271,
+        "rms_about_mean": 0.005118805506504059
+      },
+      {
+        "W": 0.01,
+        "mean_phase": 5.214932342519885,
+        "mean_phase_over_pi": 1.6599645204036735,
+        "rms_about_mean": 0.010237982643499111
+      },
+      {
+        "W": 0.015,
+        "mean_phase": 5.214859200225251,
+        "mean_phase_over_pi": 1.6599412384881935,
+        "rms_about_mean": 0.015357902957996463
+      },
+      {
+        "W": 0.02,
+        "mean_phase": 5.214756800641137,
+        "mean_phase_over_pi": 1.6599086436882287,
+        "rms_about_mean": 0.020478937830957864
+      },
+      {
+        "W": 0.025,
+        "mean_phase": 5.214625143402156,
+        "mean_phase_over_pi": 1.6598667358874735,
+        "rms_about_mean": 0.025601458391687523
+      },
+      {
+        "W": 0.03,
+        "mean_phase": 5.214464228047442,
+        "mean_phase_over_pi": 1.659815514939229,
+        "rms_about_mean": 0.030725835435358912
+      },
+      {
+        "W": 0.035,
+        "mean_phase": 5.214274054027332,
+        "mean_phase_over_pi": 1.6597549806685328,
+        "rms_about_mean": 0.03585243933887724
+      },
+      {
+        "W": 0.04,
+        "mean_phase": 5.214054620711531,
+        "mean_phase_over_pi": 1.6596851328747553,
+        "rms_about_mean": 0.04098163997616177
+      },
+      {
+        "W": 0.045,
+        "mean_phase": 5.213805927398765,
+        "mean_phase_over_pi": 1.659605971334674,
+        "rms_about_mean": 0.04611380663316078
+      },
+      {
+        "W": 0.05,
+        "mean_phase": 5.2135279733279045,
+        "mean_phase_over_pi": 1.6595174958060142,
+        "rms_about_mean": 0.05124930792241904
+      },
+      {
+        "W": 0.055,
+        "mean_phase": 5.21322075769057,
+        "mean_phase_over_pi": 1.6594197060314602,
+        "rms_about_mean": 0.05638851169796768
+      },
+      {
+        "W": 0.06,
+        "mean_phase": 5.212884279645213,
+        "mean_phase_over_pi": 1.6593126017431392,
+        "rms_about_mean": 0.06153178496758757
+      },
+      {
+        "W": 0.065,
+        "mean_phase": 5.212518538332667,
+        "mean_phase_over_pi": 1.65919618266757,
+        "rms_about_mean": 0.06667949380659194
+      },
+      {
+        "W": 0.07,
+        "mean_phase": 5.212123532893166,
+        "mean_phase_over_pi": 1.6590704485310808,
+        "rms_about_mean": 0.07183200326948372
+      },
+      {
+        "W": 0.075,
+        "mean_phase": 5.211699262484833,
+        "mean_phase_over_pi": 1.6589353990656932,
+        "rms_about_mean": 0.0769896773013233
+      },
+      {
+        "W": 0.08,
+        "mean_phase": 5.211245726303622,
+        "mean_phase_over_pi": 1.6587910340154715,
+        "rms_about_mean": 0.08215287864810134
+      },
+      {
+        "W": 0.085,
+        "mean_phase": 5.210762923604721,
+        "mean_phase_over_pi": 1.658637353143335,
+        "rms_about_mean": 0.08732196876629462
+      },
+      {
+        "W": 0.09,
+        "mean_phase": 5.21025085372541,
+        "mean_phase_over_pi": 1.6584743562383335,
+        "rms_about_mean": 0.09249730773122536
+      },
+      {
+        "W": 0.095,
+        "mean_phase": 5.209709516109358,
+        "mean_phase_over_pi": 1.658302043123381,
+        "rms_about_mean": 0.09767925414460603
+      },
+      {
+        "W": 0.1,
+        "mean_phase": 5.209138910332358,
+        "mean_phase_over_pi": 1.6581204136634484,
+        "rms_about_mean": 0.10286816504115552
+      },
+      {
+        "W": 0.105,
+        "mean_phase": 5.20853903612951,
+        "mean_phase_over_pi": 1.6579294677742151,
+        "rms_about_mean": 0.10806439579341123
+      },
+      {
+        "W": 0.11,
+        "mean_phase": 5.2079098934238095,
+        "mean_phase_over_pi": 1.6577292054311703,
+        "rms_about_mean": 0.11326830001606798
+      },
+      {
+        "W": 0.115,
+        "mean_phase": 5.207251482356171,
+        "mean_phase_over_pi": 1.6575196266791683,
+        "rms_about_mean": 0.1184802294687598
+      },
+      {
+        "W": 0.12,
+        "mean_phase": 5.206563803316854,
+        "mean_phase_over_pi": 1.6573007316424322,
+        "rms_about_mean": 0.12370053395742972
+      },
+      {
+        "W": 0.125,
+        "mean_phase": 5.205846856978286,
+        "mean_phase_over_pi": 1.6570725205350025,
+        "rms_about_mean": 0.12892956123471874
+      },
+      {
+        "W": 0.13,
+        "mean_phase": 5.205100644329285,
+        "mean_phase_over_pi": 1.6568349936716302,
+        "rms_about_mean": 0.13416765689857457
+      },
+      {
+        "W": 0.135,
+        "mean_phase": 5.204325166710656,
+        "mean_phase_over_pi": 1.6565881514791063,
+        "rms_about_mean": 0.1394151642897206
+      },
+      {
+        "W": 0.14,
+        "mean_phase": 5.203520425852149,
+        "mean_phase_over_pi": 1.6563319945080277,
+        "rms_about_mean": 0.1446724243878785
+      },
+      {
+        "W": 0.145,
+        "mean_phase": 5.202686423910787,
+        "mean_phase_over_pi": 1.6560665234449956,
+        "rms_about_mean": 0.1499397757058875
+      },
+      {
+        "W": 0.15,
+        "mean_phase": 5.201823163510523,
+        "mean_phase_over_pi": 1.6557917391252408,
+        "rms_about_mean": 0.15521755418286143
+      },
+      {
+        "W": 0.155,
+        "mean_phase": 5.200930647783233,
+        "mean_phase_over_pi": 1.6555076425456696,
+        "rms_about_mean": 0.16050609307552316
+      },
+      {
+        "W": 0.16,
+        "mean_phase": 5.200008880411006,
+        "mean_phase_over_pi": 1.655214234878328,
+        "rms_about_mean": 0.1658057228484286
+      },
+      {
+        "W": 0.165,
+        "mean_phase": 5.199057865669751,
+        "mean_phase_over_pi": 1.6549115174842801,
+        "rms_about_mean": 0.17111677106189374
+      },
+      {
+        "W": 0.17,
+        "mean_phase": 5.198077608474064,
+        "mean_phase_over_pi": 1.6545994919278901,
+        "rms_about_mean": 0.17643956225890342
+      },
+      {
+        "W": 0.17500000000000002,
+        "mean_phase": 5.197068114423352,
+        "mean_phase_over_pi": 1.6542781599915048,
+        "rms_about_mean": 0.18177441785040896
+      },
+      {
+        "W": 0.18,
+        "mean_phase": 5.196029389849215,
+        "mean_phase_over_pi": 1.653947523690535,
+        "rms_about_mean": 0.18712165599852232
+      },
+      {
+        "W": 0.185,
+        "mean_phase": 5.194961441864018,
+        "mean_phase_over_pi": 1.653607585288917,
+        "rms_about_mean": 0.1924815914987209
+      },
+      {
+        "W": 0.19,
+        "mean_phase": 5.193864278410673,
+        "mean_phase_over_pi": 1.6532583473149574,
+        "rms_about_mean": 0.19785453566010755
+      },
+      {
+        "W": 0.195,
+        "mean_phase": 5.192737908313582,
+        "mean_phase_over_pi": 1.6528998125775516,
+        "rms_about_mean": 0.20324079618417135
+      },
+      {
+        "W": 0.2,
+        "mean_phase": 5.191582341330735,
+        "mean_phase_over_pi": 1.6525319841827637,
+        "rms_about_mean": 0.20864067704176661
+      }
+    ]
+  },
+  "project_bdg_twist_loop": {
+    "lattice": [
+      4,
+      4
+    ],
+    "steps_per_leg": 32,
+    "samples_per_strength": 64,
+    "seed": 20261106,
+    "parameters": {
+      "t": 1.0,
+      "t1": 1.0,
+      "m": -2.0,
+      "delta_p": 1.0,
+      "delta_s": 0.5
+    },
+    "pairing_twist": "cosine",
+    "distribution": "independent on-site V_i uniform on [-W,W] for every orbital; fixed along the loop",
+    "averaging": "circular mean modulo pi; RMS uses wrapped deviations modulo pi",
+    "clean": {
+      "phase_mod_pi": 1.5707963267949,
+      "minimum_link_magnitude": 0.9972956984241522,
+      "minimum_bdg_gap": 1.1180339887498938
+    },
+    "rows": [
+      {
+        "W": 0.05,
+        "samples": 64,
+        "mean_phase_mod_pi": 1.5699960538723132,
+        "mean_phase_over_pi": 0.49974526521709656,
+        "circular_rms": 0.016999398192134394,
+        "circular_coherence": 0.9994221788895081,
+        "lifted_arithmetic_mean_over_pi": 0.49974527398908025,
+        "minimum_bdg_gap": 1.1057522438732952,
+        "minimum_link_magnitude": 0.997289549358063,
+        "phases_mod_pi": [
+          1.5857349760668065,
+          1.585112026411796,
+          1.5599948580772285,
+          1.5750207796659632,
+          1.5879326795875004,
+          1.598525447184672,
+          1.5556555880968936,
+          1.5389131832170406,
+          1.5598921730950313,
+          1.5509136772710068,
+          1.582420246755988,
+          1.5549832360445013,
+          1.5973941507111356,
+          1.5797588187699496,
+          1.5764221860840415,
+          1.579054814463536,
+          1.5833859095472462,
+          1.5714680005251331,
+          1.5582188150302407,
+          1.589526402242866,
+          1.5663613533722276,
+          1.5793289839990976,
+          1.5747838810842012,
+          1.610875241098011,
+          1.5596326731883607,
+          1.5991353599367635,
+          1.5675585813862671,
+          1.5745598845038786,
+          1.5739803148295302,
+          1.5894288573115487,
+          1.5659257460634688,
+          1.5620816321046878,
+          1.5491709052107474,
+          1.5738731582839964,
+          1.5674755814611756,
+          1.5886093969691348,
+          1.5593417574947779,
+          1.5418254763252346,
+          1.5448983527896978,
+          1.5482350285445907,
+          1.5976047755324405,
+          1.5583002834587045,
+          1.5352964578975374,
+          1.571147666618046,
+          1.564524551185702,
+          1.5400635547706472,
+          1.5519846709467497,
+          1.5790801976661903,
+          1.538401611414419,
+          1.5845661119823493,
+          1.5669154046910059,
+          1.573443993454557,
+          1.581217883074359,
+          1.5625892004813258,
+          1.5678883901361278,
+          1.5681173169032512,
+          1.5645750701990764,
+          1.5975355080811884,
+          1.5822912024521116,
+          1.5722275013014837,
+          1.5464463904455386,
+          1.554791752296092,
+          1.5895091065364397,
+          1.5638204752087148
+        ],
+        "sample_results": [
+          {
+            "phase_mod_pi": 1.5857349760668065,
+            "minimum_link_magnitude": 0.9972939433070673,
+            "minimum_bdg_gap": 1.109499486042238
+          },
+          {
+            "phase_mod_pi": 1.585112026411796,
+            "minimum_link_magnitude": 0.9972930946092242,
+            "minimum_bdg_gap": 1.1156744086117147
+          },
+          {
+            "phase_mod_pi": 1.5599948580772285,
+            "minimum_link_magnitude": 0.9972948061959094,
+            "minimum_bdg_gap": 1.1143422904982865
+          },
+          {
+            "phase_mod_pi": 1.5750207796659632,
+            "minimum_link_magnitude": 0.9972960079506651,
+            "minimum_bdg_gap": 1.1091136229112288
+          },
+          {
+            "phase_mod_pi": 1.5879326795875004,
+            "minimum_link_magnitude": 0.997294986641267,
+            "minimum_bdg_gap": 1.112497643071927
+          },
+          {
+            "phase_mod_pi": 1.598525447184672,
+            "minimum_link_magnitude": 0.9972932335495511,
+            "minimum_bdg_gap": 1.1098365144488338
+          },
+          {
+            "phase_mod_pi": 1.5556555880968936,
+            "minimum_link_magnitude": 0.9973036695562881,
+            "minimum_bdg_gap": 1.1185062568354502
+          },
+          {
+            "phase_mod_pi": 1.5389131832170406,
+            "minimum_link_magnitude": 0.9972909103944697,
+            "minimum_bdg_gap": 1.1128701323866346
+          },
+          {
+            "phase_mod_pi": 1.5598921730950313,
+            "minimum_link_magnitude": 0.9973045642356715,
+            "minimum_bdg_gap": 1.116730872598712
+          },
+          {
+            "phase_mod_pi": 1.5509136772710068,
+            "minimum_link_magnitude": 0.9972907340779162,
+            "minimum_bdg_gap": 1.114217083701178
+          },
+          {
+            "phase_mod_pi": 1.582420246755988,
+            "minimum_link_magnitude": 0.9972941962708304,
+            "minimum_bdg_gap": 1.109260668226841
+          },
+          {
+            "phase_mod_pi": 1.5549832360445013,
+            "minimum_link_magnitude": 0.9972996232513193,
+            "minimum_bdg_gap": 1.1065579509085712
+          },
+          {
+            "phase_mod_pi": 1.5973941507111356,
+            "minimum_link_magnitude": 0.9973029513658003,
+            "minimum_bdg_gap": 1.1193391887716782
+          },
+          {
+            "phase_mod_pi": 1.5797588187699496,
+            "minimum_link_magnitude": 0.9972933066857295,
+            "minimum_bdg_gap": 1.113937864205037
+          },
+          {
+            "phase_mod_pi": 1.5764221860840415,
+            "minimum_link_magnitude": 0.9972947512124954,
+            "minimum_bdg_gap": 1.1057522438732952
+          },
+          {
+            "phase_mod_pi": 1.579054814463536,
+            "minimum_link_magnitude": 0.9972986245367039,
+            "minimum_bdg_gap": 1.1114112643108467
+          },
+          {
+            "phase_mod_pi": 1.5833859095472462,
+            "minimum_link_magnitude": 0.997290950884538,
+            "minimum_bdg_gap": 1.110543640271874
+          },
+          {
+            "phase_mod_pi": 1.5714680005251331,
+            "minimum_link_magnitude": 0.9972910976837958,
+            "minimum_bdg_gap": 1.1083389915763746
+          },
+          {
+            "phase_mod_pi": 1.5582188150302407,
+            "minimum_link_magnitude": 0.9973007537461853,
+            "minimum_bdg_gap": 1.111457706297346
+          },
+          {
+            "phase_mod_pi": 1.589526402242866,
+            "minimum_link_magnitude": 0.997299142191761,
+            "minimum_bdg_gap": 1.1189751837264603
+          },
+          {
+            "phase_mod_pi": 1.5663613533722276,
+            "minimum_link_magnitude": 0.9972996446780104,
+            "minimum_bdg_gap": 1.11750939479495
+          },
+          {
+            "phase_mod_pi": 1.5793289839990976,
+            "minimum_link_magnitude": 0.9973006807054563,
+            "minimum_bdg_gap": 1.1112023218603226
+          },
+          {
+            "phase_mod_pi": 1.5747838810842012,
+            "minimum_link_magnitude": 0.9972898334904406,
+            "minimum_bdg_gap": 1.1128005187982595
+          },
+          {
+            "phase_mod_pi": 1.610875241098011,
+            "minimum_link_magnitude": 0.9972931708265632,
+            "minimum_bdg_gap": 1.1143966948318416
+          },
+          {
+            "phase_mod_pi": 1.5596326731883607,
+            "minimum_link_magnitude": 0.9972907885674988,
+            "minimum_bdg_gap": 1.1133838555450752
+          },
+          {
+            "phase_mod_pi": 1.5991353599367635,
+            "minimum_link_magnitude": 0.9972954813546668,
+            "minimum_bdg_gap": 1.11176449806998
+          },
+          {
+            "phase_mod_pi": 1.5675585813862671,
+            "minimum_link_magnitude": 0.9972944384052378,
+            "minimum_bdg_gap": 1.1121170873280042
+          },
+          {
+            "phase_mod_pi": 1.5745598845038786,
+            "minimum_link_magnitude": 0.9973017078185442,
+            "minimum_bdg_gap": 1.1196581861173693
+          },
+          {
+            "phase_mod_pi": 1.5739803148295302,
+            "minimum_link_magnitude": 0.9972970925866154,
+            "minimum_bdg_gap": 1.1116281793313882
+          },
+          {
+            "phase_mod_pi": 1.5894288573115487,
+            "minimum_link_magnitude": 0.9972932952982388,
+            "minimum_bdg_gap": 1.1092589144804184
+          },
+          {
+            "phase_mod_pi": 1.5659257460634688,
+            "minimum_link_magnitude": 0.9973029015574514,
+            "minimum_bdg_gap": 1.1158363950444268
+          },
+          {
+            "phase_mod_pi": 1.5620816321046878,
+            "minimum_link_magnitude": 0.9972960878774318,
+            "minimum_bdg_gap": 1.1121733742294229
+          },
+          {
+            "phase_mod_pi": 1.5491709052107474,
+            "minimum_link_magnitude": 0.9972911271659289,
+            "minimum_bdg_gap": 1.1113096629902182
+          },
+          {
+            "phase_mod_pi": 1.5738731582839964,
+            "minimum_link_magnitude": 0.9973015479033696,
+            "minimum_bdg_gap": 1.1161881237441305
+          },
+          {
+            "phase_mod_pi": 1.5674755814611756,
+            "minimum_link_magnitude": 0.9972922517257914,
+            "minimum_bdg_gap": 1.1100866922630095
+          },
+          {
+            "phase_mod_pi": 1.5886093969691348,
+            "minimum_link_magnitude": 0.9973057966260096,
+            "minimum_bdg_gap": 1.1233049555373824
+          },
+          {
+            "phase_mod_pi": 1.5593417574947779,
+            "minimum_link_magnitude": 0.9972944757100057,
+            "minimum_bdg_gap": 1.1076504142664856
+          },
+          {
+            "phase_mod_pi": 1.5418254763252346,
+            "minimum_link_magnitude": 0.9972976354698332,
+            "minimum_bdg_gap": 1.1145887649065815
+          },
+          {
+            "phase_mod_pi": 1.5448983527896978,
+            "minimum_link_magnitude": 0.9972987619025899,
+            "minimum_bdg_gap": 1.1118919176763828
+          },
+          {
+            "phase_mod_pi": 1.5482350285445907,
+            "minimum_link_magnitude": 0.9972932454620056,
+            "minimum_bdg_gap": 1.1113420267257308
+          },
+          {
+            "phase_mod_pi": 1.5976047755324405,
+            "minimum_link_magnitude": 0.9972964027220961,
+            "minimum_bdg_gap": 1.116514379862318
+          },
+          {
+            "phase_mod_pi": 1.5583002834587045,
+            "minimum_link_magnitude": 0.9972981388215459,
+            "minimum_bdg_gap": 1.1089605151299986
+          },
+          {
+            "phase_mod_pi": 1.5352964578975374,
+            "minimum_link_magnitude": 0.9972996012533267,
+            "minimum_bdg_gap": 1.1185814317124663
+          },
+          {
+            "phase_mod_pi": 1.571147666618046,
+            "minimum_link_magnitude": 0.9972993026793595,
+            "minimum_bdg_gap": 1.115236200122112
+          },
+          {
+            "phase_mod_pi": 1.564524551185702,
+            "minimum_link_magnitude": 0.9973032229837155,
+            "minimum_bdg_gap": 1.1207751564328379
+          },
+          {
+            "phase_mod_pi": 1.5400635547706472,
+            "minimum_link_magnitude": 0.9972946069477626,
+            "minimum_bdg_gap": 1.1068775906066752
+          },
+          {
+            "phase_mod_pi": 1.5519846709467497,
+            "minimum_link_magnitude": 0.9972961561913811,
+            "minimum_bdg_gap": 1.1148294414432118
+          },
+          {
+            "phase_mod_pi": 1.5790801976661903,
+            "minimum_link_magnitude": 0.997301807788816,
+            "minimum_bdg_gap": 1.115563178782309
+          },
+          {
+            "phase_mod_pi": 1.538401611414419,
+            "minimum_link_magnitude": 0.9972975975365559,
+            "minimum_bdg_gap": 1.1189753644649474
+          },
+          {
+            "phase_mod_pi": 1.5845661119823493,
+            "minimum_link_magnitude": 0.9972961644611213,
+            "minimum_bdg_gap": 1.1196410928494602
+          },
+          {
+            "phase_mod_pi": 1.5669154046910059,
+            "minimum_link_magnitude": 0.9972930416602865,
+            "minimum_bdg_gap": 1.1072748040437732
+          },
+          {
+            "phase_mod_pi": 1.573443993454557,
+            "minimum_link_magnitude": 0.9972964149485805,
+            "minimum_bdg_gap": 1.1139948827269393
+          },
+          {
+            "phase_mod_pi": 1.581217883074359,
+            "minimum_link_magnitude": 0.9972971652000956,
+            "minimum_bdg_gap": 1.1144322980507275
+          },
+          {
+            "phase_mod_pi": 1.5625892004813258,
+            "minimum_link_magnitude": 0.9973019026924358,
+            "minimum_bdg_gap": 1.1177827629404877
+          },
+          {
+            "phase_mod_pi": 1.5678883901361278,
+            "minimum_link_magnitude": 0.9972975665729223,
+            "minimum_bdg_gap": 1.114474910784326
+          },
+          {
+            "phase_mod_pi": 1.5681173169032512,
+            "minimum_link_magnitude": 0.9972993175408614,
+            "minimum_bdg_gap": 1.1126667000829429
+          },
+          {
+            "phase_mod_pi": 1.5645750701990764,
+            "minimum_link_magnitude": 0.9972948106797416,
+            "minimum_bdg_gap": 1.1099615492114225
+          },
+          {
+            "phase_mod_pi": 1.5975355080811884,
+            "minimum_link_magnitude": 0.997291290027851,
+            "minimum_bdg_gap": 1.1112506110731368
+          },
+          {
+            "phase_mod_pi": 1.5822912024521116,
+            "minimum_link_magnitude": 0.9972983973261949,
+            "minimum_bdg_gap": 1.115684962885902
+          },
+          {
+            "phase_mod_pi": 1.5722275013014837,
+            "minimum_link_magnitude": 0.9973076207030909,
+            "minimum_bdg_gap": 1.1160109560069151
+          },
+          {
+            "phase_mod_pi": 1.5464463904455386,
+            "minimum_link_magnitude": 0.997289549358063,
+            "minimum_bdg_gap": 1.108732774280229
+          },
+          {
+            "phase_mod_pi": 1.554791752296092,
+            "minimum_link_magnitude": 0.9972977561623088,
+            "minimum_bdg_gap": 1.1153752237675518
+          },
+          {
+            "phase_mod_pi": 1.5895091065364397,
+            "minimum_link_magnitude": 0.997301090059565,
+            "minimum_bdg_gap": 1.114736488806556
+          },
+          {
+            "phase_mod_pi": 1.5638204752087148,
+            "minimum_link_magnitude": 0.9972921537988401,
+            "minimum_bdg_gap": 1.1156230849501507
+          }
+        ]
+      },
+      {
+        "W": 0.1,
+        "samples": 64,
+        "mean_phase_mod_pi": 1.5692106153384302,
+        "mean_phase_over_pi": 0.49949525236677184,
+        "circular_rms": 0.03401206580927371,
+        "circular_coherence": 0.997688571950349,
+        "lifted_arithmetic_mean_over_pi": 0.4994953094398348,
+        "minimum_bdg_gap": 1.0929325165961874,
+        "minimum_link_magnitude": 0.997283413085469,
+        "phases_mod_pi": [
+          1.600559422130333,
+          1.5994857855214368,
+          1.5489843148852618,
+          1.5792840368082173,
+          1.605154394217184,
+          1.6261662994940487,
+          1.540590921078717,
+          1.5071195261580541,
+          1.549110436846328,
+          1.5308388880165875,
+          1.5937476979943366,
+          1.5393769376038264,
+          1.623969082510568,
+          1.5890356722336607,
+          1.5823569514455524,
+          1.5871749551702798,
+          1.5960301965086323,
+          1.572236960233048,
+          1.5454753599411326,
+          1.6082470551685546,
+          1.562103732406765,
+          1.5877657182580303,
+          1.5789779457164954,
+          1.6511988629988172,
+          1.5483705294568093,
+          1.6274747838861012,
+          1.5643227761084653,
+          1.5782007707370291,
+          1.5772581070974478,
+          1.6081602385542126,
+          1.5609528632155316,
+          1.5534034534000511,
+          1.5275315747942493,
+          1.5766856512898393,
+          1.5644826218030028,
+          1.6063824644506077,
+          1.5477114106019643,
+          1.512884234736994,
+          1.5189857500140977,
+          1.5254648624419762,
+          1.6242479431320298,
+          1.5457918962230908,
+          1.4997142725003378,
+          1.5715161232620627,
+          1.558042210527823,
+          1.5092390138265142,
+          1.5333122567986397,
+          1.5873436002277286,
+          1.505824306745568,
+          1.5984344505768888,
+          1.5631170796126774,
+          1.5760938808509537,
+          1.5915912882569412,
+          1.5543960848924208,
+          1.5653025608873339,
+          1.5653808143855104,
+          1.5584518771071112,
+          1.624222411208657,
+          1.5940172830790953,
+          1.5736855705091517,
+          1.5222575118659138,
+          1.5388506468365002,
+          1.6082442988929255,
+          1.5571502287395882
+        ],
+        "sample_results": [
+          {
+            "phase_mod_pi": 1.600559422130333,
+            "minimum_link_magnitude": 0.9972920753367605,
+            "minimum_bdg_gap": 1.1005969958536317
+          },
+          {
+            "phase_mod_pi": 1.5994857855214368,
+            "minimum_link_magnitude": 0.9972903514499509,
+            "minimum_bdg_gap": 1.112254977649637
+          },
+          {
+            "phase_mod_pi": 1.5489843148852618,
+            "minimum_link_magnitude": 0.9972938432024373,
+            "minimum_bdg_gap": 1.1097262131626853
+          },
+          {
+            "phase_mod_pi": 1.5792840368082173,
+            "minimum_link_magnitude": 0.9972963089075743,
+            "minimum_bdg_gap": 1.0998740935314502
+          },
+          {
+            "phase_mod_pi": 1.605154394217184,
+            "minimum_link_magnitude": 0.9972942228441191,
+            "minimum_bdg_gap": 1.106498363111108
+          },
+          {
+            "phase_mod_pi": 1.6261662994940487,
+            "minimum_link_magnitude": 0.9972906791071865,
+            "minimum_bdg_gap": 1.1012475882692396
+          },
+          {
+            "phase_mod_pi": 1.540590921078717,
+            "minimum_link_magnitude": 0.9973115140829025,
+            "minimum_bdg_gap": 1.118288089001695
+          },
+          {
+            "phase_mod_pi": 1.5071195261580541,
+            "minimum_link_magnitude": 0.9972859104104189,
+            "minimum_bdg_gap": 1.107351361849575
+          },
+          {
+            "phase_mod_pi": 1.549110436846328,
+            "minimum_link_magnitude": 0.9973133261135001,
+            "minimum_bdg_gap": 1.11514523686347
+          },
+          {
+            "phase_mod_pi": 1.5308388880165875,
+            "minimum_link_magnitude": 0.9972857804723275,
+            "minimum_bdg_gap": 1.109737899745942
+          },
+          {
+            "phase_mod_pi": 1.5937476979943366,
+            "minimum_link_magnitude": 0.997292492328858,
+            "minimum_bdg_gap": 1.1001637684152636
+          },
+          {
+            "phase_mod_pi": 1.5393769376038264,
+            "minimum_link_magnitude": 0.9973033715032933,
+            "minimum_bdg_gap": 1.094952427040921
+          },
+          {
+            "phase_mod_pi": 1.623969082510568,
+            "minimum_link_magnitude": 0.9973101549011412,
+            "minimum_bdg_gap": 1.1199690174117158
+          },
+          {
+            "phase_mod_pi": 1.5890356722336607,
+            "minimum_link_magnitude": 0.997290831320555,
+            "minimum_bdg_gap": 1.1094332853596578
+          },
+          {
+            "phase_mod_pi": 1.5823569514455524,
+            "minimum_link_magnitude": 0.9972936377391688,
+            "minimum_bdg_gap": 1.0929325165961874
+          },
+          {
+            "phase_mod_pi": 1.5871749551702798,
+            "minimum_link_magnitude": 0.9973015448452455,
+            "minimum_bdg_gap": 1.104270143737964
+          },
+          {
+            "phase_mod_pi": 1.5960301965086323,
+            "minimum_link_magnitude": 0.9972861564827594,
+            "minimum_bdg_gap": 1.1029570425344009
+          },
+          {
+            "phase_mod_pi": 1.572236960233048,
+            "minimum_link_magnitude": 0.9972863467972556,
+            "minimum_bdg_gap": 1.0980893516300816
+          },
+          {
+            "phase_mod_pi": 1.5454753599411326,
+            "minimum_link_magnitude": 0.9973057075101017,
+            "minimum_bdg_gap": 1.1045816964618598
+          },
+          {
+            "phase_mod_pi": 1.6082470551685546,
+            "minimum_link_magnitude": 0.9973025539646188,
+            "minimum_bdg_gap": 1.1191312244477578
+          },
+          {
+            "phase_mod_pi": 1.562103732406765,
+            "minimum_link_magnitude": 0.9973037581903056,
+            "minimum_bdg_gap": 1.1166526473056446
+          },
+          {
+            "phase_mod_pi": 1.5877657182580303,
+            "minimum_link_magnitude": 0.9973054369556354,
+            "minimum_bdg_gap": 1.104136166353746
+          },
+          {
+            "phase_mod_pi": 1.5789779457164954,
+            "minimum_link_magnitude": 0.9972838450916341,
+            "minimum_bdg_gap": 1.1071846568338162
+          },
+          {
+            "phase_mod_pi": 1.6511988629988172,
+            "minimum_link_magnitude": 0.997290651170255,
+            "minimum_bdg_gap": 1.1102708131115893
+          },
+          {
+            "phase_mod_pi": 1.5483705294568093,
+            "minimum_link_magnitude": 0.997285728008525,
+            "minimum_bdg_gap": 1.1084278650214032
+          },
+          {
+            "phase_mod_pi": 1.6274747838861012,
+            "minimum_link_magnitude": 0.9972952587416506,
+            "minimum_bdg_gap": 1.1050013093114675
+          },
+          {
+            "phase_mod_pi": 1.5643227761084653,
+            "minimum_link_magnitude": 0.9972930814985171,
+            "minimum_bdg_gap": 1.1054304770872811
+          },
+          {
+            "phase_mod_pi": 1.5782007707370291,
+            "minimum_link_magnitude": 0.9973076338011797,
+            "minimum_bdg_gap": 1.1209239061985115
+          },
+          {
+            "phase_mod_pi": 1.5772581070974478,
+            "minimum_link_magnitude": 0.9972983004185197,
+            "minimum_bdg_gap": 1.1045423719745893
+          },
+          {
+            "phase_mod_pi": 1.6081602385542126,
+            "minimum_link_magnitude": 0.99729082678217,
+            "minimum_bdg_gap": 1.1002381290823042
+          },
+          {
+            "phase_mod_pi": 1.5609528632155316,
+            "minimum_link_magnitude": 0.9973100456223993,
+            "minimum_bdg_gap": 1.113366213912247
+          },
+          {
+            "phase_mod_pi": 1.5534034534000511,
+            "minimum_link_magnitude": 0.9972964614522322,
+            "minimum_bdg_gap": 1.1057054644745714
+          },
+          {
+            "phase_mod_pi": 1.5275315747942493,
+            "minimum_link_magnitude": 0.9972865631107088,
+            "minimum_bdg_gap": 1.1043290847089489
+          },
+          {
+            "phase_mod_pi": 1.5766856512898393,
+            "minimum_link_magnitude": 0.9973072313257654,
+            "minimum_bdg_gap": 1.1139949679820598
+          },
+          {
+            "phase_mod_pi": 1.5644826218030028,
+            "minimum_link_magnitude": 0.9972887861178154,
+            "minimum_bdg_gap": 1.1018017296307048
+          },
+          {
+            "phase_mod_pi": 1.6063824644506077,
+            "minimum_link_magnitude": 0.9973159518694543,
+            "minimum_bdg_gap": 1.1262056965667353
+          },
+          {
+            "phase_mod_pi": 1.5477114106019643,
+            "minimum_link_magnitude": 0.9972931346182163,
+            "minimum_bdg_gap": 1.0970215903395528
+          },
+          {
+            "phase_mod_pi": 1.512884234736994,
+            "minimum_link_magnitude": 0.997299583932497,
+            "minimum_bdg_gap": 1.1105124573567349
+          },
+          {
+            "phase_mod_pi": 1.5189857500140977,
+            "minimum_link_magnitude": 0.9973018015152532,
+            "minimum_bdg_gap": 1.1056083498673335
+          },
+          {
+            "phase_mod_pi": 1.5254648624419762,
+            "minimum_link_magnitude": 0.9972906359385075,
+            "minimum_bdg_gap": 1.1038149208357309
+          },
+          {
+            "phase_mod_pi": 1.6242479431320298,
+            "minimum_link_magnitude": 0.9972969818972668,
+            "minimum_bdg_gap": 1.1145749610494338
+          },
+          {
+            "phase_mod_pi": 1.5457918962230908,
+            "minimum_link_magnitude": 0.9973003375321347,
+            "minimum_bdg_gap": 1.0995413826227407
+          },
+          {
+            "phase_mod_pi": 1.4997142725003378,
+            "minimum_link_magnitude": 0.9973033892138916,
+            "minimum_bdg_gap": 1.1185485161256878
+          },
+          {
+            "phase_mod_pi": 1.5715161232620627,
+            "minimum_link_magnitude": 0.9973028237202217,
+            "minimum_bdg_gap": 1.1117389024324906
+          },
+          {
+            "phase_mod_pi": 1.558042210527823,
+            "minimum_link_magnitude": 0.9973107563531209,
+            "minimum_bdg_gap": 1.12295870771355
+          },
+          {
+            "phase_mod_pi": 1.5092390138265142,
+            "minimum_link_magnitude": 0.9972934089033919,
+            "minimum_bdg_gap": 1.0953676326608015
+          },
+          {
+            "phase_mod_pi": 1.5333122567986397,
+            "minimum_link_magnitude": 0.997296581104066,
+            "minimum_bdg_gap": 1.1110743374928387
+          },
+          {
+            "phase_mod_pi": 1.5873436002277286,
+            "minimum_link_magnitude": 0.997307686878929,
+            "minimum_bdg_gap": 1.1126443838848952
+          },
+          {
+            "phase_mod_pi": 1.505824306745568,
+            "minimum_link_magnitude": 0.997299441871255,
+            "minimum_bdg_gap": 1.119692513147886
+          },
+          {
+            "phase_mod_pi": 1.5984344505768888,
+            "minimum_link_magnitude": 0.9972965487292964,
+            "minimum_bdg_gap": 1.1208190198012213
+          },
+          {
+            "phase_mod_pi": 1.5631170796126774,
+            "minimum_link_magnitude": 0.9972902677100691,
+            "minimum_bdg_gap": 1.0962991270422622
+          },
+          {
+            "phase_mod_pi": 1.5760938808509537,
+            "minimum_link_magnitude": 0.9972971741885194,
+            "minimum_bdg_gap": 1.1090750486770184
+          },
+          {
+            "phase_mod_pi": 1.5915912882569412,
+            "minimum_link_magnitude": 0.9972986178396471,
+            "minimum_bdg_gap": 1.1104564897102864
+          },
+          {
+            "phase_mod_pi": 1.5543960848924208,
+            "minimum_link_magnitude": 0.9973080373881842,
+            "minimum_bdg_gap": 1.1169519787467497
+          },
+          {
+            "phase_mod_pi": 1.5653025608873339,
+            "minimum_link_magnitude": 0.9972993347710963,
+            "minimum_bdg_gap": 1.1103648836375608
+          },
+          {
+            "phase_mod_pi": 1.5653808143855104,
+            "minimum_link_magnitude": 0.9973027714080344,
+            "minimum_bdg_gap": 1.1067066259610687
+          },
+          {
+            "phase_mod_pi": 1.5584518771071112,
+            "minimum_link_magnitude": 0.997293687476837,
+            "minimum_bdg_gap": 1.101336878869274
+          },
+          {
+            "phase_mod_pi": 1.624222411208657,
+            "minimum_link_magnitude": 0.9972869749803883,
+            "minimum_bdg_gap": 1.1040080893914777
+          },
+          {
+            "phase_mod_pi": 1.5940172830790953,
+            "minimum_link_magnitude": 0.9973008949045488,
+            "minimum_bdg_gap": 1.1128286441240003
+          },
+          {
+            "phase_mod_pi": 1.5736855705091517,
+            "minimum_link_magnitude": 0.9973195203516219,
+            "minimum_bdg_gap": 1.1129460340032837
+          },
+          {
+            "phase_mod_pi": 1.5222575118659138,
+            "minimum_link_magnitude": 0.997283413085469,
+            "minimum_bdg_gap": 1.0991469103511193
+          },
+          {
+            "phase_mod_pi": 1.5388506468365002,
+            "minimum_link_magnitude": 0.9972997010244214,
+            "minimum_bdg_gap": 1.1123223549102799
+          },
+          {
+            "phase_mod_pi": 1.6082442988929255,
+            "minimum_link_magnitude": 0.9973062753861985,
+            "minimum_bdg_gap": 1.1111347638754885
+          },
+          {
+            "phase_mod_pi": 1.5571502287395882,
+            "minimum_link_magnitude": 0.9972884870328339,
+            "minimum_bdg_gap": 1.112928476671122
+          }
+        ]
+      },
+      {
+        "W": 0.2,
+        "samples": 64,
+        "mean_phase_mod_pi": 1.5676850689620672,
+        "mean_phase_over_pi": 0.49900965587334367,
+        "circular_rms": 0.06809076370142392,
+        "circular_coherence": 0.9907628885375888,
+        "lifted_arithmetic_mean_over_pi": 0.4990098898515915,
+        "minimum_bdg_gap": 1.065773819790825,
+        "minimum_link_magnitude": 0.9972712098575451,
+        "phases_mod_pi": [
+          1.6298812962917921,
+          1.6284188624787657,
+          1.5263348081916561,
+          1.587936820256644,
+          1.6398624932286117,
+          1.681202498885952,
+          1.5106676932235006,
+          1.4437621526026314,
+          1.5279270333844694,
+          1.4901135564037133,
+          1.6155034990523305,
+          1.508753853295147,
+          1.6770763017886363,
+          1.6085723724047654,
+          1.5951577342010124,
+          1.6030259662541084,
+          1.621479195433808,
+          1.5740879872304259,
+          1.519487090542035,
+          1.6456775447439558,
+          1.554153792415729,
+          1.6043489670995885,
+          1.5879959392666283,
+          1.732601969361177,
+          1.5255526660842538,
+          1.6841637228996804,
+          1.5578102177978985,
+          1.5851114236218953,
+          1.5840830566165636,
+          1.6459318853913962,
+          1.550701443522419,
+          1.5361183963244647,
+          1.484205064702784,
+          1.5815134607283428,
+          1.559464159568087,
+          1.6418213693558847,
+          1.5239247207549909,
+          1.4550753493724118,
+          1.4671443617422035,
+          1.4792643703048052,
+          1.6770449657251438,
+          1.52071840833381,
+          1.4282824628853437,
+          1.572305591841836,
+          1.5444472611545237,
+          1.4472855834264529,
+          1.4963602159118379,
+          1.603811031613299,
+          1.4401084020799224,
+          1.6264592814289678,
+          1.5557596391306827,
+          1.5814028956523458,
+          1.612222564994678,
+          1.5380281979935058,
+          1.561095576438376,
+          1.5597489612416986,
+          1.5465244366442583,
+          1.6774430987585447,
+          1.618145638789393,
+          1.576732129965933,
+          1.4743645489368324,
+          1.5071602451018844,
+          1.6457986728138225,
+          1.544726550002082
+        ],
+        "sample_results": [
+          {
+            "phase_mod_pi": 1.6298812962917921,
+            "minimum_link_magnitude": 0.9972880052285269,
+            "minimum_bdg_gap": 1.0817439538518272
+          },
+          {
+            "phase_mod_pi": 1.6284188624787657,
+            "minimum_link_magnitude": 0.997284453605508,
+            "minimum_bdg_gap": 1.101573773647788
+          },
+          {
+            "phase_mod_pi": 1.5263348081916561,
+            "minimum_link_magnitude": 0.9972916993124936,
+            "minimum_bdg_gap": 1.0978643229972698
+          },
+          {
+            "phase_mod_pi": 1.587936820256644,
+            "minimum_link_magnitude": 0.9972968897939853,
+            "minimum_bdg_gap": 1.080487824773869
+          },
+          {
+            "phase_mod_pi": 1.6398624932286117,
+            "minimum_link_magnitude": 0.9972925432275019,
+            "minimum_bdg_gap": 1.093147143134553
+          },
+          {
+            "phase_mod_pi": 1.681202498885952,
+            "minimum_link_magnitude": 0.9972853007070545,
+            "minimum_bdg_gap": 1.0829649958766483
+          },
+          {
+            "phase_mod_pi": 1.5106676932235006,
+            "minimum_link_magnitude": 0.9973267931560993,
+            "minimum_bdg_gap": 1.095399314809592
+          },
+          {
+            "phase_mod_pi": 1.4437621526026314,
+            "minimum_link_magnitude": 0.9972753001988709,
+            "minimum_bdg_gap": 1.0952392145987702
+          },
+          {
+            "phase_mod_pi": 1.5279270333844694,
+            "minimum_link_magnitude": 0.9973305252537811,
+            "minimum_bdg_gap": 1.1111204899520617
+          },
+          {
+            "phase_mod_pi": 1.4901135564037133,
+            "minimum_link_magnitude": 0.9972759162451359,
+            "minimum_bdg_gap": 1.0988271980059412
+          },
+          {
+            "phase_mod_pi": 1.6155034990523305,
+            "minimum_link_magnitude": 0.9972885098870051,
+            "minimum_bdg_gap": 1.0810559936212238
+          },
+          {
+            "phase_mod_pi": 1.508753853295147,
+            "minimum_link_magnitude": 0.9973103327881344,
+            "minimum_bdg_gap": 1.0713867913500512
+          },
+          {
+            "phase_mod_pi": 1.6770763017886363,
+            "minimum_link_magnitude": 0.9973244183990431,
+            "minimum_bdg_gap": 1.1184246152807946
+          },
+          {
+            "phase_mod_pi": 1.6085723724047654,
+            "minimum_link_magnitude": 0.9972856276670695,
+            "minimum_bdg_gap": 1.0992241943179313
+          },
+          {
+            "phase_mod_pi": 1.5951577342010124,
+            "minimum_link_magnitude": 0.9972909029799074,
+            "minimum_bdg_gap": 1.065773819790825
+          },
+          {
+            "phase_mod_pi": 1.6030259662541084,
+            "minimum_link_magnitude": 0.9973073695069833,
+            "minimum_bdg_gap": 1.088489600297983
+          },
+          {
+            "phase_mod_pi": 1.621479195433808,
+            "minimum_link_magnitude": 0.9972764424265783,
+            "minimum_bdg_gap": 1.0875098138105443
+          },
+          {
+            "phase_mod_pi": 1.5740879872304259,
+            "minimum_link_magnitude": 0.997276406074436,
+            "minimum_bdg_gap": 1.076101006491115
+          },
+          {
+            "phase_mod_pi": 1.519487090542035,
+            "minimum_link_magnitude": 0.9973153076175397,
+            "minimum_bdg_gap": 1.0899542650568772
+          },
+          {
+            "phase_mod_pi": 1.6456775447439558,
+            "minimum_link_magnitude": 0.9973092770907382,
+            "minimum_bdg_gap": 1.1170768142338703
+          },
+          {
+            "phase_mod_pi": 1.554153792415729,
+            "minimum_link_magnitude": 0.9973124796201205,
+            "minimum_bdg_gap": 1.1139283321317177
+          },
+          {
+            "phase_mod_pi": 1.6043489670995885,
+            "minimum_link_magnitude": 0.9973142562760405,
+            "minimum_bdg_gap": 1.0893718369069372
+          },
+          {
+            "phase_mod_pi": 1.5879959392666283,
+            "minimum_link_magnitude": 0.9972715065472268,
+            "minimum_bdg_gap": 1.0948351616223957
+          },
+          {
+            "phase_mod_pi": 1.732601969361177,
+            "minimum_link_magnitude": 0.9972856361677772,
+            "minimum_bdg_gap": 1.1005102629938717
+          },
+          {
+            "phase_mod_pi": 1.5255526660842538,
+            "minimum_link_magnitude": 0.9972751734376293,
+            "minimum_bdg_gap": 1.097598191145815
+          },
+          {
+            "phase_mod_pi": 1.6841637228996804,
+            "minimum_link_magnitude": 0.997294799968919,
+            "minimum_bdg_gap": 1.0901877216222093
+          },
+          {
+            "phase_mod_pi": 1.5578102177978985,
+            "minimum_link_magnitude": 0.9972900895703499,
+            "minimum_bdg_gap": 1.0900199934932273
+          },
+          {
+            "phase_mod_pi": 1.5851114236218953,
+            "minimum_link_magnitude": 0.9973192302651523,
+            "minimum_bdg_gap": 1.1155919631869098
+          },
+          {
+            "phase_mod_pi": 1.5840830566165636,
+            "minimum_link_magnitude": 0.9973001516104273,
+            "minimum_bdg_gap": 1.0884479350173792
+          },
+          {
+            "phase_mod_pi": 1.6459318853913962,
+            "minimum_link_magnitude": 0.9972856932776586,
+            "minimum_bdg_gap": 1.0815330942911656
+          },
+          {
+            "phase_mod_pi": 1.550701443522419,
+            "minimum_link_magnitude": 0.9973241639269663,
+            "minimum_bdg_gap": 1.107626778304916
+          },
+          {
+            "phase_mod_pi": 1.5361183963244647,
+            "minimum_link_magnitude": 0.9972971583128512,
+            "minimum_bdg_gap": 1.0910709268865664
+          },
+          {
+            "phase_mod_pi": 1.484205064702784,
+            "minimum_link_magnitude": 0.9972774695136291,
+            "minimum_bdg_gap": 1.0896752104678045
+          },
+          {
+            "phase_mod_pi": 1.5815134607283428,
+            "minimum_link_magnitude": 0.9973180988237543,
+            "minimum_bdg_gap": 1.1035808853692637
+          },
+          {
+            "phase_mod_pi": 1.559464159568087,
+            "minimum_link_magnitude": 0.9972817983934038,
+            "minimum_bdg_gap": 1.084212149605501
+          },
+          {
+            "phase_mod_pi": 1.6418213693558847,
+            "minimum_link_magnitude": 0.9973364314416557,
+            "minimum_bdg_gap": 1.0960782427428586
+          },
+          {
+            "phase_mod_pi": 1.5239247207549909,
+            "minimum_link_magnitude": 0.9972901025812259,
+            "minimum_bdg_gap": 1.0751077405028187
+          },
+          {
+            "phase_mod_pi": 1.4550753493724118,
+            "minimum_link_magnitude": 0.9973035167886004,
+            "minimum_bdg_gap": 1.1005294581239462
+          },
+          {
+            "phase_mod_pi": 1.4671443617422035,
+            "minimum_link_magnitude": 0.9973078355236071,
+            "minimum_bdg_gap": 1.0926331985420923
+          },
+          {
+            "phase_mod_pi": 1.4792643703048052,
+            "minimum_link_magnitude": 0.9972849625050071,
+            "minimum_bdg_gap": 1.086455173236093
+          },
+          {
+            "phase_mod_pi": 1.6770449657251438,
+            "minimum_link_magnitude": 0.9972977673154232,
+            "minimum_bdg_gap": 1.1094416867895538
+          },
+          {
+            "phase_mod_pi": 1.52071840833381,
+            "minimum_link_magnitude": 0.9973040121120185,
+            "minimum_bdg_gap": 1.0797558261273164
+          },
+          {
+            "phase_mod_pi": 1.4282824628853437,
+            "minimum_link_magnitude": 0.9973106146405758,
+            "minimum_bdg_gap": 1.1165594333946658
+          },
+          {
+            "phase_mod_pi": 1.572305591841836,
+            "minimum_link_magnitude": 0.9973096246449548,
+            "minimum_bdg_gap": 1.1027023382712942
+          },
+          {
+            "phase_mod_pi": 1.5444472611545237,
+            "minimum_link_magnitude": 0.9973258176789648,
+            "minimum_bdg_gap": 1.1168866651871852
+          },
+          {
+            "phase_mod_pi": 1.4472855834264529,
+            "minimum_link_magnitude": 0.997290705471072,
+            "minimum_bdg_gap": 1.0713597212601635
+          },
+          {
+            "phase_mod_pi": 1.4963602159118379,
+            "minimum_link_magnitude": 0.9972973398999742,
+            "minimum_bdg_gap": 1.101990666409725
+          },
+          {
+            "phase_mod_pi": 1.603811031613299,
+            "minimum_link_magnitude": 0.9973187388405172,
+            "minimum_bdg_gap": 1.1054634827889525
+          },
+          {
+            "phase_mod_pi": 1.4401084020799224,
+            "minimum_link_magnitude": 0.9973029696143797,
+            "minimum_bdg_gap": 1.1204202788868032
+          },
+          {
+            "phase_mod_pi": 1.6264592814289678,
+            "minimum_link_magnitude": 0.997297069523016,
+            "minimum_bdg_gap": 1.098181926399872
+          },
+          {
+            "phase_mod_pi": 1.5557596391306827,
+            "minimum_link_magnitude": 0.9972843808163455,
+            "minimum_bdg_gap": 1.0737214779339377
+          },
+          {
+            "phase_mod_pi": 1.5814028956523458,
+            "minimum_link_magnitude": 0.9972988045240487,
+            "minimum_bdg_gap": 1.096672417164479
+          },
+          {
+            "phase_mod_pi": 1.612222564994678,
+            "minimum_link_magnitude": 0.99730147713091,
+            "minimum_bdg_gap": 1.1014428781543926
+          },
+          {
+            "phase_mod_pi": 1.5380281979935058,
+            "minimum_link_magnitude": 0.9973200947484785,
+            "minimum_bdg_gap": 1.1083058205778284
+          },
+          {
+            "phase_mod_pi": 1.561095576438376,
+            "minimum_link_magnitude": 0.9973025834462863,
+            "minimum_bdg_gap": 1.10054830162012
+          },
+          {
+            "phase_mod_pi": 1.5597489612416986,
+            "minimum_link_magnitude": 0.9973091736865403,
+            "minimum_bdg_gap": 1.0931208232340661
+          },
+          {
+            "phase_mod_pi": 1.5465244366442583,
+            "minimum_link_magnitude": 0.9972907442770186,
+            "minimum_bdg_gap": 1.0825933147429814
+          },
+          {
+            "phase_mod_pi": 1.6774430987585447,
+            "minimum_link_magnitude": 0.9972786347459031,
+            "minimum_bdg_gap": 1.0882219660204147
+          },
+          {
+            "phase_mod_pi": 1.618145638789393,
+            "minimum_link_magnitude": 0.9973052835911981,
+            "minimum_bdg_gap": 1.1055789450799978
+          },
+          {
+            "phase_mod_pi": 1.576732129965933,
+            "minimum_link_magnitude": 0.9973432113719549,
+            "minimum_bdg_gap": 1.082286935244464
+          },
+          {
+            "phase_mod_pi": 1.4743645489368324,
+            "minimum_link_magnitude": 0.9972712098575451,
+            "minimum_bdg_gap": 1.0791662084514266
+          },
+          {
+            "phase_mod_pi": 1.5071602451018844,
+            "minimum_link_magnitude": 0.9973032519565369,
+            "minimum_bdg_gap": 1.1050936010616186
+          },
+          {
+            "phase_mod_pi": 1.6457986728138225,
+            "minimum_link_magnitude": 0.9973160228790141,
+            "minimum_bdg_gap": 1.1028317793755744
+          },
+          {
+            "phase_mod_pi": 1.544726550002082,
+            "minimum_link_magnitude": 0.9972807812700365,
+            "minimum_bdg_gap": 1.1066984111415337
+          }
+        ]
+      }
+    ]
+  }
+}

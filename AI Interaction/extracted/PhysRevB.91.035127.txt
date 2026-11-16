@@ -1,0 +1,784 @@
+PHYSICALREVIEWB91,035127(2015)
+Generalprocedurefordeterminingbraidingandstatisticsofanyons
+usingentanglementinterferometry
+YiZhang
+DepartmentofPhysics,StanfordUniversity,Stanford,California94305,USA
+TarunGrover
+KavliInstituteforTheoreticalPhysics,UniversityofCalifornia,SantaBarbara,California93106,USA
+AshvinVishwanath
+DepartmentofPhysics,UniversityofCalifornia,Berkeley,California94720,USA
+(Received8December2014;revisedmanuscriptreceived13January2015;published26January2015)
+Recently,itwasarguedthatthebraidingandstatisticsofanyonsinatwo-dimensionaltopologicalphasecanbe
+extractedbystudyingthequantumentanglementofthedegenerategroundstatesonthetorus.Thisconstruction
+either required a lattice symmetry (such as π/2 rotation) or tacitly assumed that the minimum entanglement
+states(MESs)fortwodifferentbipartitionscanbeuniquelyassignedquasiparticlelabels.Herewedescribea
+proceduretoobtainthemodularSmatrix,whichencodesthebraidingstatisticsofanyons,whichdoesnotrequire
+makinganyoftheseassumptions.OurstrategyistocoherentlycompareMESsofthreeindependententanglement
+bipartitionsofthetorus,whichleadstoauniquemodularS.Thisprocedurealsoputsstrongconstraintsonthe
+modularTandUmatriceswithoutrequiringanysymmetries,andincertainspecialcases,completelydetermines
+it.OurmethodappliesequallytoAbelianandnon-Abeliantopologicalphases.
+DOI:10.1103/PhysRevB.91.035127 PACSnumber(s): 03.67.Mn,03.65.Ud,75.10.Kt
+I. INTRODUCTION entanglement.Reference[16]arguedthattheanswerisindeed
+positive. The basic idea mainly consists of two steps: First,
+Topological ordered phases in two dimensions such as
+fractional quantum Hall states and quantum spin liquids are
+givenasetofdegenerategroundstates|ξ
+a
+(cid:2),a =1,..(cid:3).,N,the
+TEEcorrespondingtoagenericgroundstate|ψ(cid:2)= c |ξ (cid:2)
+characterized by the presence of anyonic excitations which a a
+for noncontractible subregions on a torus, e.g., partitioning
+satisfy specific braid statistics rules when taken around each
+thetorusintotwocylinders,generallydiffersfromthevaluein
+other[1–10].Thepresenceofanyonsimpliesthatatopological
+trivialsubregions,andismaximizedbyaspecialsetofcoef-
+orderedphasepossessesadegeneratesetofgroundstatesona
+ficientsc ,whichcanbeidentifiedusingTEEasanindicator.
+torus[11–15].Theintimaterelationbetweentheground-state a
+Note that the TEE reduces the total entanglement entropy;
+degeneracyandthepresenceofanyonssuggeststhatthebraid
+such a state minimizes the total entanglement entropy and is
+statisticsrulesmustbeencodedinthedegenerategroundstates
+thereforedubbedastheminimumentropystate(MES).Given
+themselves. In this paper, we generalize the discussion in
+a noncontractible entanglement bipartition, the complete set
+Ref.[16]toobtainthebraidingandstatisticsfromtheground
+ofMESsformsabasisofthedegenerategroundstates,which
+states.
+correspondtothesimultaneouseigenstatesoftheHamiltonian
+Mathematically, the braiding statistics is encoded in the
+modularSandUmatrices(orequivalently,SandTmatrices as well as the operators that measure the quasiparticles
+where U=TST) [3,17–19]. The S matrix expresses the through the boundary cycle of the entanglement bipartition.
+mutualstatisticsbetweenanyonswhiletheUmatrixencodes We hereafter denote the MESs basis for a bipartition α as
+{|(cid:8)(α)(cid:2)}≡|(cid:8)(α)(cid:2). Then, the modular matrices can be related
+the self-statistics. For chiral topological phases, there is an a
+totheunitarytransformationsbetweentwoinequivalentsetsof
+additionalparameter,thecentralchargec fortheedgestates,
+whichisdeterminedmodulo8bytheSandUmatrices[19]. MESsdefinedfortwodifferentbipartitions(α’s).Forexample,
+Reference [16] argued that the modular S and U matrices having identified the eigenstates of operators that measure
+quasiparticles, viz., the MES states, the elements of the
+can be determined by calculating the quantum entanglement
+of degenerate ground states. This builds on the idea that the
+modularSmatrixaregivenbytheoverlap:S
+ab
+=(cid:4)(cid:8)(
+a
+1)|(cid:8)(
+b
+2)(cid:2)
+scalingofentanglemententropywithrespecttothesubsystem where the two entanglement bipartitions are along the xˆ
+sizeoftenyieldsuniversalinformationaboutthecorresponding and yˆ directions, respectively. This procedure can be further
+phaseofmatter.Forexample,thevonNeumannentanglement simplified in the presence of certain rotation symmetry R,
+entropy S of a gapped ground state for a contractible which relates the two sets of MESs |(cid:8)(2)(cid:2)=R|(cid:8)(1)(cid:2). For
+vN
+disk-shaped region in two dimensions with a boundary of example,R π/2 :xˆ →yˆ givesS=(cid:4)(cid:8)(1)|R π/2 |(cid:8)(1)(cid:2).
+size (cid:3) is given by S =α(cid:3)−γ +O(1/(cid:3)), where γ is the This method was successfully incorporated into matrix
+vN
+so-called(cid:2)to(cid:3)pologicalentanglemententropy(TEE)andisgiven productstateanddensity-matrixrenormalizationgroupbased
+byγ = d2 withd /γ beingthefirstrowofthemodular techniquesforfindinggroundstatesinquasi-two-dimensional
+a a
+Smatrix[19–21]. systems [22–24], as well as new applications via variational
+ThisresultmotivatesonetoaskwhetherthefullmodularS Monte Carlo [24,25]. A slightly different method to obtain
+andUmatricesmightalsobeextractablefromtheground-state modular matrices was recently proposed in several papers
+1098-0121/2015/91(3)/035127(8) 035127-1 ©2015AmericanPhysicalSociety
+
+YIZHANG,TARUNGROVER,ANDASHVINVISHWANATH PHYSICALREVIEWB91,035127(2015)
+[26].Itisalsoworthnotingthatforchiraltopologicalphases,
+momentum polarization method [27,28] can also be used to
+obtain partial topological data, viz., self-statistics of anyons
+and the chiral central charge. Finally, it was shown [29] that
+for a restricted class of Hamiltonians that can be written as
+sumoflocalcommutingprojectors,undercertainreasonable
+assumptions one can obtain the modular matrix S using a
+singlegroundstate.
+An important detail in calculating an inner product such
+as (cid:4)(cid:8)(1)|(cid:8)(2)(cid:2), which was presumed in Ref. [16], is the
+a b
+relative ordering of the sets of MESs {|(cid:8)(1)(cid:2)} and {|(cid:8)(2)(cid:2)}. FIG.1. Left panel: Two nontrivial entanglement bipartitions
+a a
+In the presence of a consistent point group symmetry of shownasthedashedlinesthatseparatethesystemintotwocylindrical
+the lattice, the relative ordering is automatically fixed [16]. subsystems (periodic boundary condition is assumed through all
+This is, however, not true when such a symmetry is absent. boundaries).Rightpanel:Twosetsofprimitivevectorsforthesame
+This statement also holds true for extracting the modular U torus;weusew(cid:6) tolabeltheboundarydirectionofeachentanglement
+2
+matrix where one utilizes overlap of MESs corresponding to bipartition.
+bipartitions that differ by an angle of 2π/3. An additional
+related concern is to identify the MES corresponding to the
+theα’sentanglementbipartitionboundary[16].TheseMESs
+identityquasiparticle:Conventionally,thefirstrowandcolumn
+can be sequentially obtained by maximizing the T(cid:3)EE in the
+oftheSandUmatricesislabeledbytheidentityquasiparticle.
+parameterspaceoftheentireground-statemanifold c |ξ (cid:2).
+a a a
+However, it is not obvious how the method described in
+LetusdenotetheresultingMESsas
+Ref.[16]makessuchanidentification. (cid:4) (cid:5)
+Inthispaper,weshowthatathirdentanglementbipartition (cid:4) (cid:8)( b α) =eiφ b (α) U a (α b )|ξ a (cid:2), (1)
+(in addition to the two bipartitions used in Ref. [16]) helps
+wherethesuperscriptα labelsentanglementbipartitionswith
+to resolve this ambiguity. By considering the entanglement
+interferometrythatconsistsofaseriesofmodulartransforma- inequivalent noncontractible boundaries. φ b (α) is an undeter-
+tions that start and end with the same set of MESs, one can mined phase factor for each MES, which does not affect the
+effectively cancel out the impact of the unknown details of resultingentanglemententropy.
+the intermediate MESs. This procedure completely fixes the ThetransformationbetweentwoMESbasesisessentially
+relativeorderingofMESsforthedisparatebipartitions.This
+amodulartransformationF(S,U)[16].Suchatransformation
+alsofixestheidentificationofquasiparticlesvis--vistheMES can be also viewed as the transformation of the primitive
+states up to an Abelian quasiparticle. Our main result is that vectors that define the torus and encoded in the SL(2,Z)
+the modular S matrix is uniquely determined by considering modular matrix F(S,U), which can be expressed in terms
+overlap of MESs obtained from three entanglement biparti- ofthetwogeneratorsofSL(2,Z):
+(cid:6) (cid:7) (cid:6) (cid:7)
+tions. As far as the modular U matrix is concerned, in the
+0 1 1 1
+absenceofanysymmetriesweareabletodetermineitonlyup S = −1 0 , U = 0 1 . (2)
+to an additional phase factor for each quasiparticle, which is
+furtherconstrainedbythemodularSmatrix.Inspecialcases, Forconcreteness,letusconsideramodulartransformation
+the constraints are strong enough to determine the U matrix from the primitive vectors w(cid:6)(1) in Fig. 1(a) to w(cid:6)(2) in
+i=1,2 i=1,2
+fully,withoutrequiringanysymmetry. Fig. 1(b), where we use w(cid:6)(α) to label the direction along the
+2
+The rest of the paper is organized as follows: In Sec. II, noncontractibleboundaryoftheαthentanglementbipartition.
+we briefly review the method in Ref. [16] and discuss its Therelationbetweenthetwosetsofprimitivevectorsis
+shortcoming in the absence of spatial symmetry; to resolve
+this issue, we propose in Sec. III a general algorithm with a w(cid:6)(2) =w(cid:6)(1), w(cid:6)(2) =−w(cid:6)(1). (3)
+1 2 2 1
+thirdentanglementbipartitiontoextractthemodularSmatrix;
+According to Eq. (2), this implies F(S,U)=S, and
+inSec.IV,westudyitsfurtherapplicationonthemodularU
+therefore the transformation between the two MES bases
+matrixandquasiparticlespinofthetopologicalorderedstate;
+(cid:4)(cid:8)(2)|(cid:8)(1)(cid:2)=(V(2))−1(U(2))−1U(1)V(1) is equivalent to the
+threeillustrativeexamplesarediscussedinSec.V.
+modularSmatrix,wherewedenotethediagonalphasefactors
+inEq.(1)V(α) =diag(eiφ
+b
+(α) ).SincetheundeterminedV(α)are
+II. THEMINIMUMENTROPYSTATES
+diagonalphasefactors,theyarestraightforwardtodetermine
+ANDMODULARMATRICES
+withtheknowledgethattheelementsofthefirstcolumnand
+For concreteness, let us denote |ξ (cid:2), a =1,...,N as the row of the modular S matrix are real and positive in accord
+a
+complete,orthonormalsetofthedegenerategroundstatesthat withthedefinitionoftheidentityparticle[16]
+wewilluseasourbasisfortheentireground-statemanifold. S=(V(2)) −1(U(2)) −1U(1)V(1) =R[(U(2)) −1U(1)], (4)
+Foragivennontrivialentanglementbipartition,theMESs
+arebydefinitionthegroundstateswithminimumentanglement wherethefunctionR[X]correspondstoleftandrightmatrix
+entropy (maximum TEE) and can be generated by T(α): the multiplication of the matrix X with certain diagonal phase
+p
+insertionofthequasiparticlesofthetopologicalorderedstate factors, respectively, so as to make the elements of the first
+labeled by p through the noncontractible cycle enclosed by columnandrowofXrealandpositive.
+035127-2
+
+GENERALPROCEDUREFORDETERMININGBRAIDING ... PHYSICALREVIEWB91,035127(2015)
+However,thereisanimportantcomplicationthatwehave Thisisthefirstmainconclusionofthispaper.Again,thefunc-
+overlooked:InthederivationofEq.(4),wehaveassumedthe tionR[X]correspondstoleftandrightmatrixmultiplicationof
+sameorderingforthetwosetsofMESs,whilethemaximum thematrixXwithcertaindiagonalphasefactors,respectively,
+TEE requirement makes no distinction between the MESs so as to make the elements of the first column and row of X
+with the same quantum dimension [16,30], in particular the realandpositive.
+MESsconnectedwiththeAbelianquasiparticles(includingthe ToderiveEq.(7),wefirstnotethattheprimitivevectorsof
+identityparticle)whichhavequantumdimension1.Therefore, thethirdentanglementbipartitionmayalsobeexpandedas
+the ordering and particle content of the obtained MESs
+remainlargelyundetermined.Intheabsenceofsymmetry,the w(cid:6)(3) =w(cid:6)(1), w(cid:6)(3) =−w(cid:6)(1)+w(cid:6)(1), (8)
+1 1 2 1 2
+orderingsoftheMESsfordifferententanglementbipartitions
+andequally
+are generally unrelated and may result in a scramble of the
+rowsandthecolumnsoftheresultingmodularmatrices. w(cid:6)(2) =w(cid:6)(3)+w(cid:6)(3), w(cid:6)(2) =−w(cid:6)(3). (9)
+Tobemorespecific,wenowneedtogeneralizeEq.(1)by 1 1 2 2 1
+includingpossiblepermutationswithineachsetoftheMESs, In the Appendix, we further discuss the benefits of choosing
+U(α) =U¯(α)P(α), (cid:4) (cid:4) (cid:8)(α) (cid:5) =U¯(α)V(α)P(α)|ξ (cid:2), (5) w(cid:6) 2 (3) =w(cid:6) 2 (1)+w(cid:6) 2 (2)forthethirdentanglementbipartition.
+ab ab(cid:7) b(cid:7)b b ab(cid:7) b(cid:7)b(cid:7) b(cid:7)b a With arguments similar to the last section, the modular
+where we have introduced a permutation matrix P that matrices corresponding to the transformations from |(cid:8)(1)(cid:2) to
+α
+permutesthecolumnsofU(α).Aswehavearguedabove,TEE |(cid:8)(3)(cid:2) and from |(cid:8)(3)(cid:2) to |(cid:8)(2)(cid:2) are U−1SU−1 and U−1S,
+calculationsonlydetermineU¯(α). respectively. Therefore, concerning the third entanglement
+Followingpreviousargument,weobtaininsteadofEq.(4), bipartitionwehave
+S=(P(2)) −1(V(2)) −1(U¯(2)) −1U¯(1)V(1)P(1), U−1SU−1 =(P(3)) −1(V(3)) −1(U¯(3)) −1U¯(1)V(1)P(1),
+P(2)S(P(1)) −1 =(V(2)) −1(U¯(2)) −1U¯(1)V(1). (6) U−1S=(P(2)) −1(V(2)) −1(U¯(2)) −1U¯(3)V(3)P(3). (10)
+DuetothepresenceoftheundeterminedP(1) andP(2),we Next, without loss of generality, it is straightforward to
+cannolongerassumetheelementsofthefirstcolumnandrow separateeachpermutationP(α)intotwodistinctparts:P(α) =
+of(U¯(2))−1U¯(1)toberealandpositive.Inparticular,thematrix P¯(α)P˜(α), where P¯(α) is the permutation on columns other
+R[(U¯(2))−1U¯(1)]doesnotgivethecorrectmodularSmatrixin than the first one, while P˜(α) maps each state to that with
+general[symmetryofSmatrixturnsouttobeinsufficientto
+an additional Abelian quasiparticle, as is determined by the
+uniquelypickoutthecorrectanswerconsistentwithEq.(6)]. particle content of the first MES. By definition, any MES
+can be obtained from the MES associated with the identity
+quasiparticlethroughquasiparticleinsertion
+III. GENERALALGORITHMFOR
+THEMODULARSMATRIX
+S =
+(cid:8)
+(cid:8)(2)
+(cid:4)
+(cid:4) (cid:8)(1)
+(cid:5)
+≡(cid:4)1(2)|
+(cid:9)
+T(2)
+(cid:10)
+−1
+(cid:4)
+(cid:4) T(1)
+(cid:4)
+(cid:4) 1(1)
+(cid:5)
+, (11)
+ab a b a b
+To resolve the difficulty of properly ordering MESs, we
+now present a general algorithm to extract the modular S where|1(α)(cid:2)andT(α)aretheMESsassociatedwiththeidentity
+a
+matrixforagenerictopologicalorderedstatewithnoimplicit particle and insertion operator of a quasiparticle a along the
+spatial symmetries. We find it fruitful to introduce an addi- w(cid:6)(α)direction,respectively.Incomparison,
+2
+tional entanglement bipartition along the w(cid:6)(3) =w(cid:6)(1)+w(cid:6)(2) (cid:8) (cid:4) (cid:4) (cid:5)
+directionandderivethecorrespondingMESs 2 |(cid:8)(3)(cid:2)(s 2 eeFig. 2 2 S (P˜(1)) −1 = (cid:8)(2)(cid:4) T(1)(cid:4) (cid:8)(1)
+forillustration).Withoutlossofgenerality,weassumethatfor
+ab a
+(cid:9)
+p1
+(cid:10)
+b
+(cid:4) (cid:4) (cid:5)
+allthreeentanglementbipartitions,thefirstMESisassociated =(cid:4)1(2)| T a (2 (cid:9) ) −1(cid:4) (cid:10) T p (1 1(cid:4) )T b (1)(cid:4) (cid:4) 1(1) (cid:5)
+w by it m ha a n ki A ng be s l u ia re n t q h u a a t s t i h p e ar c t o ic rr le e , sp w o h n i d ch in i g n q p u ra a c n t t i u c m ec d a i n m b e e n v si e o r n ifi , e a d s =(cid:4)1(2)|T (cid:9) p (1 1 ) (cid:10) T a (2) (cid:4) −1(cid:4) T (cid:4) b (1)(cid:4) (cid:5) 1(1) θ p1 ×a /θ p1 θ a
+o m b o ta d i u n l e a d rS vi m a a T tr E ix E, is is fu 1 ll . y T d h e e t n er , m as in w ed e th sh ro a u ll g p h rove below, the =(cid:4) (cid:11) 1(2)| T a (2) −1 (cid:12) (cid:4) T b (1)(cid:4) 1(1) θ p1 ×a /θ p1 θ a
+S={R[(U¯(2)) −1U¯(1)]}−1R[(U¯(2)) −1U¯(3)] = θ p1 ×a /θ p1 θ a S ab , (12)
+×R[(U¯(3)) −1U¯(1)]. (7) where × is the fusion product, and p 1 is the added Abelian
+q [T ua (2 s ) i ] p − a 1 r T ti ( c 1 l ) e T b (2 y )[ P T ( ( 1 1 ) )] w − i 1 th is t t o h p e o b lo ra g i i d c i a n l g s b p e in tw θ e p e 1 . n θ q p u 1 × as a i / p θ a p r 1 t θ ic a le = s
+a p1 a p1
+a andp .Physically,itistheinducedphaseforadiabatically
+1
+moving a around p and also encoded as the phase of the
+1
+matrix element S . We have also used the fact that for an
+p1a
+Abelianquasiparticlep ,
+1
+(cid:13) (cid:13)
+(cid:4)1(2)|T(1) = S (cid:4)b(1)|T(1) = S (cid:4)(b×p )(1)|
+FIG.2. Leftpanel:Anadditionalandinequivalententanglement p1 1b p1 1b 1
+b b
+bipartitionscheme.Rightpanel:Thecorrespondingprimitivevectors, (cid:13)
+where w(cid:6) 2 labeling the boundary direction of the entanglement = S 1b×p1 (cid:4)(b×p 1 )(1)|=(cid:4)1(2)|. (13)
+bipartitionisthesumoftheprevioustwoinFig.1.
+b
+035127-3
+
+YIZHANG,TARUNGROVER,ANDASHVINVISHWANATH PHYSICALREVIEWB91,035127(2015)
+More generally, denoting the added Abelian quasiparticle by U matrix is fully determined without any ambiguity US=
+P(2)asp ,onecanshowthat (cid:4)(cid:8)(1)|R |(cid:8)(1)(cid:2).
+2 2π/3
+(cid:8) (cid:4)(cid:9) (cid:10) (cid:4) (cid:5) For simplicity, we first reorder the MESs of the sec-
+P˜(2)S ab (P˜(1)) −1 = =(cid:4) (cid:11) (cid:8) 1( ( a 2 2 ) ) | (cid:4) (cid:9) T T a ( p ( 2 2 2 ) ) (cid:10) − − 1 1 (cid:9) T T (cid:12) p (cid:11) ( p ( 1 1 2 2 ) ) (cid:4) (cid:10) (cid:8) − ( b 1 1 (cid:4) (cid:4) ) T p (1 1 )T b ( (cid:12) 1) (cid:4) (cid:4) 1(1) (cid:5) a a o n n n d d d P t a h ¯ n ( e 1 d ) r ( e P t ¯ m h ( i 3 a r ) d ) in − i 1 e n , n g r t e a P s n ˜ p g (α e l ) e c m t p iv a e e r n t l s t y, o b s n i o p ly a t r h t c a i o t t i n o a t n l r l i s b P u ¯ w t ( e α it ) h s a o r P m e ¯ e ( c 1 o ) u ( n P n ¯ s d i (2 s e ) t t ) e e − n r 1 - t
+= θ p1 ×p (cid:11)2 /θ p1 θ p2 θ p1(cid:12) ×a /θ p1 θ a a m s ineddiagonalphasefactors.Equation(15)isthussimplified
+×S ab θ b×p2 /θ b θ p2 (14) S=R[(U¯(2)) −1U¯(1)]=(cid:12)1L(U¯(2)) −1U¯(1)(cid:12)1R
+Heuristically,theijthcomponentofthemodularSmatrix
+=R[(U¯(3)) −1U¯(1)]=(cid:12)2L(U¯(3)) −1U¯(1)(cid:12)2R
+encodes the braiding between the ith and jth quasiparticles.
+Equation(14)formalizesthisintuitionsothattheinsertionof =R[(U¯(2)) −1U¯(3)]=(cid:12)3L(U¯(2)) −1U¯(3)(cid:12)3R, (18)
+additionalAbelianquasiparticlesp andp leadstoadditional
+1 2 where the (cid:12) matrices are the diagonal phase factors used in
+Abelian phases induced by the braiding between the ith and
+the function R to make the elements of the first column and
+p ,p andthejthaswellasp andp quasiparticles.Tothis
+en 1 d,t 2 headditionalquasiparticle 1 sinsert 2 edbyP˜(α)and(P˜(β))−1 rowoftheargumentmatrixrealandpositive.Wefindthatthe
+quasiparticletopologicalspinθ isobtainablethrough
+effectivelycontributeadditionalphasefactorstoeachrowand a
+(cid:9) (cid:10) (cid:9) (cid:10)
+columnofthemodularSmatrix. θ a ∝ (cid:12)1 a R −1 (cid:12)2 a R(θ a θ p /θ p×a )= (cid:12)1 a R −1 (cid:12)2 a R|S ap |/S ap ,
+Now we note that (1) the undetermined components
+i p n h c a l s u e di f n a g cto V rs (α , ) a , n U d ( , 2 a ) n P d ¯(α θ ) p [ 1 ( × P a ¯ / (β θ ) p ) 1− θ 1 a ] , o e n t l c y ., in a v re olv a e ll s t d h i e ag r o o n w a s l where θ p×a /θ a θ p is the braiding between a and some as (1 y 9 e ) t
+(columns)otherthanthefirstone,thustheelementsinthefirst undeterminedAbelianquasiparticlep,whichisencodedasthe
+lineandcolumnofP¯(α)S(P¯(β))−1remainrealandpositivejust
+phasefactorsoftheelementsinthepthcolumnofthemodular
+asinS.Therefore,Eqs.(6),(10),and(14)togetherimply Smatrix.
+P¯(2)S(P¯(1)) −1 =R[(U¯(2)) −1U¯(1)], To derive Eq. (19), we first compare Eqs. (6), (10), (14),
+and (18) and realize that the contributions to the diagonal
+P¯(2)S(P¯(3)) −1 =R[(U¯(2)) −1U¯(3)], phase factors originate from the modular U matrix, the V(α)
+P¯(3)S(P¯(1)) −1 =R[(U¯(3)) −1U¯(1)] (15) conventions,andtheremainingrelativeorderingsP˜(α).More
+specifically,wehave
+withwhichwecanobtainthemodularSmatrix, (cid:11) (cid:12)
+S∼P¯(1)S(P¯(1)) −1 (cid:12)1 a R ∝ V a (1) θ a θ p2 /θ a×p2 , (cid:11) (cid:12)
+=[P(2)S(P¯(1)) −1] −1[P(2)S(P¯(3)) −1][P(3)S(P¯(1)) −1] (cid:12)2 a R ∝ V a (1)[ (cid:11) P˜(1)U(P˜(1)) −1] a (cid:12) θ a θ p3 /θ a×p3
+={R[(U¯(2)) −1U¯(1)]}−1R[(U¯(2)) −1U¯(3)] =V a (1) θ a×p1 θ a θ p3 /θ a×p3 , (20)
+wherep ,p ,andp aretheAbelianquasiparticlesaddedby
+×R[(U¯(3)) −1U¯(1)] (16) P˜(1), P˜(2 1 ), a 2 nd P˜(3) 3 and determined by the particle content
+up to a trivial permutation (=P¯ ) of the quasiparticles’ ofthefirstMESofeachentanglementbipartitionα =1,2,3,
+1
+ordering sequence. A physical interpretation of Eq. (7) is
+respectively.ThenwecaneliminatetheunknownV(1)part
+a
+(cid:9) (cid:10)
+t a ha s t er t i h e r s ou o g f h m o o u d r u e l n a t r an tr g a l n e s m fo e r n m t a in ti t o e n rf s er b o e m tw et e r e y n th b a a t s c e o s n w s (cid:6) i ( s 1 t ) s → of (cid:12)1 a R −1 (cid:12)2 a R ∝θ a×p1 θ a×p2 /θ a×p3 ∝θ a×p (21)
+w(cid:6)(2) →w(cid:6)(3) →w(cid:6)(1), one effectively cancels the impact of uptosomeoverallphases.Herep =p ×p ×p¯ isalsoan
+1 2 3
+undetermined quantities such as phase factors and relative Abelianquasiparticlewherep¯ istheantiparticleofp .
+3 3
+orderings. Since the particle content of p is undetermined, we need
+In passing, we recall that with the help of the Verlinde’s to consider all cases where p is Abelian, which gives the
+formula followingpotentialsolutionsofθ :
+a
+(cid:13)S S S
+Nc = ax bx c¯x , (17) θ p×a ∝θ a (θ p×a /θ a θ p )=θ a S ap /|S ap |; (22)
+ab S
+x 1x together with Eq. (21) we obtain our result in Eq. (19).
+one c(cid:3)an now also construct the fusion rule coefficients: a× Similar expressions can be straightforwardly obtained with
+b= c N a c b fromtheobtainedmodularSmatrix. (cid:12)3 a L T [ h (cid:12) e 1 a o L v ] e − r 1 al a l n p d h (cid:12) as 2 a e L o (cid:12) f 3 a θ R c in a s n te b a e d fi . xedbyrequiringθ =1for
+a 1
+the identity particle. In addition, more information on p can
+IV. GENERALCONSTRAINTS
+be obtained by imposing certain consistency requirements.
+ONTHEMODULARUMATRIX
+In particular, the self-braidingthe phase obtained when an
+In this section, we use our three-entanglement-bipartition Abelian quasiparticle a braids around another a should be
+constructiontoextractinformationonthemodularUmatrix, twice as much as the self-statisticsthe phase when two
+adiagonalmatrixwhoseathelementencodesthetopological a quasiparticles exchange with each other, therefore θ2 =
+a
+spinandself-statisticsoftheaquasiparticle.Recall[16]thatin θ a×a /θ a θ a =S aa /|S aa |equalsthephasefactoroftheathdiag-
+thepresenceofthe2π/3rotationsymmetryR ,themodular onalelementinthemodularSmatrix.Therefore,ifθ isacon-
+2π/3 a
+035127-4
+
+GENERALPROCEDUREFORDETERMININGBRAIDING ... PHYSICALREVIEWB91,035127(2015)
+sistentsolution,anothersolutionθ a (cid:7) =θ a S ap /|S ap |=θ α×a /θ p so that |(cid:8) i (cid:2) and |(cid:8)(cid:7) i (cid:2) do not necessarily correspond to the
+is also consistent if and only if (θ p×a /θ p )2 =(θ a (cid:7))2 = same quasiparticle and the modular S matrix is not directly
+S /|S |=θ2 for the choice of p. Correspondingly, obtainable from only two sets of MESs. The unitary matrix
+aa aa a
+p θ p t × h a c / o θ l p u θ m a n = in S p t a h / e |S m p o a d | u = lar ± S 1, m th a e tr A ix b n el e i e a d n t e o le b m e en fu ts lly of re t a h l e . U s ¯ ta 2 te c s o i n s necting the w(cid:6) 2 (2) MESs and the electric field parity
+In particular, when the first column is the only column in ⎛ ⎞
+the modular S matrix where all Abelian elements are real, eiϕ 2 (cid:7) eiϕ 1 (cid:7)
+o ex u a r m a p lg le or o it f h t m he c Z om
+3
+g p a le u t g e e ly th d e e o te ry rm w in h e e s re θ θ a
+a
+. c W a e n b sh e o c w om la p t l e e r te a ly n U¯ 2 = √ 1
+2
+⎜ ⎜ ⎝−eiϕ
+2
+(cid:7) eiϕ 3 (cid:7) eiϕ 4 (cid:7) eiϕ
+1
+(cid:7) ⎟ ⎟ ⎠. (26)
+determinedgiventhemodularSmatrixandθ a×p . eiϕ 3 (cid:7) −eiϕ 4 (cid:7)
+Inaddition,whenthetopologicalorderedstateisbosonic,
+themodularUmatrixbydefinitionU
+a
+=θ
+a
+exp(−i2πc/24)
+Now we need to introduce just another entanglement
+and the corresponding central charge c can be determined bipartition. Let us consider taking the boundary along the
+(modulo8)bytherequirementthat(US)3 =1. w(cid:6)(3) =−xˆ +yˆ directionsothatw(cid:6)(3) =w(cid:6)(1)+w(cid:6)(2).Thecor-
+2 2 2 2
+respondingMESsare
+V. EXAMPLES:THEZ GAUGETHEORY(TORICCODE
+2
+MODEL),THESU(2) 3 CHERN-SIMONSTHEORY, |(cid:8) (cid:7)(cid:7)(cid:2)= e √ iϕ 3 (cid:7)(cid:7) (|ξ (cid:2)+|ξ (cid:2)), |(cid:8) (cid:7)(cid:7)(cid:2)= e √ iϕ 4 (cid:7)(cid:7) (|ξ (cid:2)−|ξ (cid:2)),
+ANDTHEZ GAUGETHEORY 1 01 10 2 01 10
+3 2 2
+(27)
+A. ObtainingthemodularSmatrixoftheZ 2 gaugetheory |(cid:8) (cid:7)(cid:7)(cid:2)= e √ iϕ 2 (cid:7)(cid:7) (|ξ (cid:2)−|ξ (cid:2)), |(cid:8) (cid:7)(cid:7)(cid:2)= e √ iϕ 1 (cid:7)(cid:7) (|ξ (cid:2)+|ξ (cid:2)),
+In this section, we use Kitaev’s square lattice toric code 3 00 11 4 00 11
+2 2
+model[31]asanexampleforouralgorithm.Thegroundstateis
+anequalsuperpositionofallpossibleconfigurationsofclosed where ϕ(cid:7)(cid:7) are undetermined phases and we have once again
+i
+electricfieldloopsonthelattice.Onatorus,thefourdegenerate scrambled the ordering of the quasiparticles to make a
+groundstates|ξ ab (cid:2),a,b=0,1aredistinguishedbythewinding difference from the previous two. The unitary matrix U¯ 3
+numberparitiesa,boftheelectricfieldloopsaroundthetwo connecting the w(cid:6)(3) MESs and the electric field parity
+2
+cyclesofthetorusandcannotbemixedbyanylocaloperator,
+statesis
+constitutingtheZ gaugetheory.
+2 ⎛ ⎞
+ThenatureoftheMESsforthetoriccodemodelwasstudied eiϕ
+2
+(cid:7)(cid:7) eiϕ
+1
+(cid:7)(cid:7)
+M in E R S e s f. ar [ e 16 th ]. e F s o im r u a lt n an o e n o tr u iv s ia e l ig e e n n t s a t n at g e l s em of en e t le b c i t p ri a c rt a it n io d n m , a th g e - U¯ 3 = √ 1 2 ⎜ ⎜ ⎝ e e i i ϕ ϕ 3 3 (cid:7) (cid:7) (cid:7) (cid:7) − e e iϕ iϕ 4 (cid:7)(cid:7) 4 (cid:7)(cid:7) ⎟ ⎟ ⎠. (28)
+neticfluxesthreadingtheentanglementbipartitionboundary. −eiϕ
+2
+(cid:7)(cid:7) eiϕ
+1
+(cid:7)(cid:7)
+The MESs for entanglement bipartition along the w(cid:6)(1) =yˆ
+2
+directionare FromEqs.(24),(26),and(28),wecanconstructmatrices
+|(cid:8)
+1
+(cid:2)= e √ iϕ1 (|ξ
+00
+(cid:2)+|ξ
+01
+(cid:2)), |(cid:8)
+2
+(cid:2)= e √ iϕ2 (|ξ
+00
+(cid:2)−|ξ
+01
+(cid:2)), U
+fi
+¯
+r
+2 −
+st
+1U
+r
+¯
+o
+1
+w
+,
+s
+U¯
+a
+3 −
+n
+1
+d
+U¯
+c
+1
+o
+,
+lu
+an
+m
+d
+ns
+U¯
+t
+2 −
+o
+1
+b
+U¯
+e
+3
+r
+.
+e
+B
+al
+y
+a
+s
+n
+e
+d
+tt
+p
+in
+o
+g
+sit
+t
+i
+h
+v
+e
+e,
+e
+w
+le
+e
+m
+fi
+e
+n
+n
+d
+ts of the
+2 2
+(23) ⎛ ⎞
+eiϕ3 eiϕ4 1 1 1 1
+|(cid:8) 3 (cid:2)= √ 2 (|ξ 10 (cid:2)+|ξ 11 (cid:2)), |(cid:8) 4 (cid:2)= √ 2 (|ξ 10 (cid:2)−|ξ 11 (cid:2)), P¯−1SP¯ =R (cid:11) U¯−1U¯ (cid:12) = 1⎜ ⎝ 1 −1 −1 1⎟ ⎠,
+2 1 2 1 2 1 −1 1 −1
+whereϕ i areundeterminedphasesforeachMES.Theunitary 1 1 −1 −1
+matrix U¯ connecting the w(cid:6)(1) MESs and the electric field ⎛ ⎞
+paritystat 1 es{|ξ (cid:2),|ξ (cid:2),|ξ (cid:2), 2 |ξ (cid:2)}is 1 1 1 1
+00 ⎛ 01 10 11 ⎞ P¯−1SP¯ =R (cid:11) U¯−1U¯ (cid:12) = 1⎜ ⎝ 1 1 −1 −1⎟ ⎠, (29)
+eiϕ1 eiϕ2 3 1 3 1 2 1 −1 −1 1
+U¯ 1 = √ 1
+2
+⎜ ⎜ ⎝ eiϕ1 −eiϕ2 eiϕ3 eiϕ4 ⎟ ⎟ ⎠. (24) ⎛ 1 −1 1 −1 ⎞
+1 1 1 1
+eiϕ3 −eiϕ4 P¯−1SP¯ =R (cid:11) U¯−1U¯ (cid:12) = 1⎜ ⎝ 1 −1 −1 1⎟ ⎠,
+On the other hand, it is straightforward to verify that 2 3 2 3 2 1 1 −1 −1
+for entanglement bipartition boundary along the w(cid:6)(2) =−xˆ 1 −1 1 −1
+2
+directionthecorrespondingMESsare
+whereP¯ arepermutationmatricesactingonthesecond,third,
+|(cid:8) (cid:7)(cid:2)= e √ iϕ 2 (cid:7) (|ξ (cid:2)−|ξ (cid:2)), |(cid:8) (cid:7)(cid:2)= e √ iϕ 3 (cid:7) (|ξ (cid:2)+|ξ (cid:2)), andfour α thcolumnsandrows.AccordingtoEq.(16),weobtain
+1 2 00 10 2 2 01 11 thefollowingsolutionconsistentwiththeZ 2 gaugetheory:
+(25)
+|(cid:8) (cid:7)(cid:2)= e √ iϕ 4 (cid:7) (|ξ (cid:2)−|ξ (cid:2)), |(cid:8) (cid:7)(cid:2)= e √ iϕ 1 (cid:7) (|ξ (cid:2)+|ξ (cid:2)), ⎛ 1 1 1 1 ⎞
+3 2 01 11 4 2 00 10 1⎜1 1 −1 −1⎟
+S= ⎝ ⎠ (30)
+where again ϕ(cid:7) are undetermined phases for each MES. 2 1 −1 1 −1
+i 1 −1 −1 1
+We have purposefully scrambled the ordering of the MESs
+035127-5
+
+YIZHANG,TARUNGROVER,ANDASHVINVISHWANATH PHYSICALREVIEWB91,035127(2015)
+withP¯ 1 =I and ⎛ ⎞ first MES is either |(cid:8)( 1 i)(cid:2) or |(cid:8)( 4 i)(cid:2), which are associated
+with Abelian quasiparticles. As a particular example, MESs
+1
+P¯ =P¯−1 =
+⎜
+⎝
+1⎟
+⎠,
+along the w(1): {|(cid:8)(
+4
+1)(cid:2),|(cid:8)(
+3
+1)(cid:2),|(cid:8)(
+2
+1)(cid:2),|(cid:8)(
+1
+1)(cid:2)}; MESs along the
+2 2 1 w(2): {|(cid:8)(2)(cid:2),|(cid:8)(2)(cid:2),|(cid:8)(2)(cid:2),|(cid:8)(2)(cid:2)}; and MESs along the w(3):
+4 2 3 1
+1 {|(cid:8)(3)(cid:2),|(cid:8)(3)(cid:2),|(cid:8)(3)(cid:2),|(cid:8)(3)(cid:2)}.Afterneutralizingallthediagonal
+⎛ ⎞ (31) pha 1 sefacto 3 rsinE 2 qs.(6 4 )and(10)fromthemodularUmatrix
+1
+P¯ 3 =P¯ 3 −1 = ⎜ ⎝ 1 1 ⎟ ⎠. a th n e d s t e h M eV E ( S i) b c a o s n e v s e : ntions,weobtainthetransformationbetween
+1
+R[(U¯(3)) −1U¯(1)]
+In addition, we can obtain the diagonal (cid:12) matri- ⎡⎛ ⎞⎤
+ces by comparing the matrices U¯−1U¯ , U¯−1U¯ , and (cid:20) 1 σ σ 1
+w U¯ 2 e −1 h U a ¯ v 3 e b (cid:12) e 1 f L or ∝ e d a i n a d g(e a − f i t ϕ e 1 r ,e− th i e ϕ2, f − un e c − t i i ϕ o 3 2 n ,− R e 1 − . iϕ I 4 n ) 3 a p n a d r 1 t (cid:12) ic 2 u L la ∝ r, = 2 5 sin π 5 R ⎢ ⎣ ⎜ ⎝ − σ σ − − 1 1 − 1 1 σ σ⎟ ⎠ ⎥ ⎦
+diag(e−iϕ1,−e−iϕ2,e−iϕ3,e−iϕ4). According to Eq. (21), this −1 σ −σ 1
+⎛ ⎞
+leadsto (cid:20) 1 σ σ 1
+θ α×a ∝[(cid:12)1R] −1(cid:12)2R ∝diag(1,−1,−1,−1); (32) = 2
+5
+sin π
+5
+⎜ ⎝ σ
+σ
+−
+1
+1
+−
+−
+1
+1
+−
+σ
+σ
+⎟ ⎠,
+togetherwiththeobtainedmodularSmatrixandEq.(22),the 1 −σ σ −1
+possiblesolutionsofthequasiparticlespinsθ are
+a R[(U¯(2)) −1U¯(3)]
+θ =(1,1,1,−1), c=0, ⎡⎛ ⎞⎤
+a (cid:20) 1 σ −σ −1
+o o r r θ θ a = = ( ( 1 1 , , 1 − , 1 − ,1 1 , , 1 1 ) ) , , c c = = 0 0 , , (33) = 2 5 sin π 5 R ⎢ ⎣ ⎜ ⎝ σ σ − − 1 1 −1 1 − σ σ⎟ ⎠ ⎥ ⎦
+a 1 σ σ 1
+orθ =(1,−1,−1,−1), c=4, ⎛ ⎞
+a (cid:20) 1 σ σ 1
+t w o h e e x r t e ra w c e tt h h a e ve va u l s u e e d o ( f U c S . ) S 3 in = ce 1 a a ll nd el U em a e = nts θ a of ex th p e (− m i o 2 d π u c l / a 2 r 4 S ) = 2 5 sin π 5 ⎜ ⎝ σ σ − − 1 1 −1 1 − σ σ ⎟ ⎠,
+matrix are real, we cannot refine these candidates further. In 1 σ −σ −1
+Sec. VC, we discuss another example, the Z gauge theory,
+where there is only one fully real column in
+3
+the modular S
+R[(U¯(2)) −1U¯(1)]
+⎡⎛ ⎞⎤
+matrix,thusθ a canbeuniquelydetermined. (cid:20) −1 σ −σ 1
+2 π ⎢⎜−σ −1 1 σ⎟⎥
+= sin R⎣⎝ ⎠⎦
+B. Thenon-AbelianSU(2) Chern-Simonstheory 5 5 σ −1 −1 σ
+3
+1 σ σ 1
+In this section, we provide an example of applying our
+⎛ ⎞
+algorithm to a non-Abelian state: the SU(2) Chern-Simons (cid:20) 1 σ σ 1
+3
+theory.ThemodularSmatrixofSU(2) topologicalordered 2 π ⎜σ −1 −1 σ⎟
+3 = sin ⎝ ⎠. (35)
+phaseis 5 5 σ 1 −1 −σ
+⎛ ⎞ 1 −σ σ −1
+(cid:20) 1 σ σ 1
+2 π ⎜σ 1 −1 −σ⎟
+S= sin ⎝ ⎠, (34)
+5 5 σ −1 −1 σ Then, it is straightforward to check Eq.(7) gives the
+1 −σ σ −1 consistentmodularSmatrix:
+√
+where σ =(1+ 5)/2 is the golden ratio. Corresponding {R[(U¯(2)) −1U¯(1)]}−1R[(U¯(2)) −1U¯(3)]R[(U¯(3)) −1U¯(1)]
+to each column (row), the four quasiparticles have quantum ⎛ ⎞
+dimensions d =1,σ,σ,1, respectivelyclearly the second and (cid:20) 1 σ σ 1
+2 π ⎜σ 1 −1 −σ⎟
+thirdquasiparticlesarenon-Abelian.Ifweintroduceonlytwo = sin ⎝ ⎠. (36)
+entanglement bipartitions, the TEE can make a distinction 5 5 σ −1 −1 σ
+1 −σ σ −1
+betweentheMESsassociatedwiththeAbelianquasiparticles
+and those with the non-Abelian quasiparticles, yet it cannot
+distinguishbetweenthefirstandfourthMESs,bothassociated
+C. ObtainingthemodularUmatrixoftheZ gaugetheory
+withAbelianquasiparticles,aswellasbetweenthesecondand 3
+third MESs, both associated with non-Abelian quasiparticles In this section, we briefly introduce another example
+ofequalquantumdimensions. where the modular S matrix together with θ a×α completely
+Following the algorithm in the main text, we introduce determinesthevaluesofθ eveniftheAbelianquasiparticleα
+a
+three entanglement bipartitions along the w(cid:6)(1), w(cid:6)(2), and isyetundetermined.
+w(cid:6)(3) =w(cid:6)(1)+w(cid:6)(2) directions, and shuffle their respective The modular S matrix of the Abelian Z gauge theory,
+3
+ordering of the MESs with the only requirement that the which is fully obtainable by similar argument to the last
+035127-6
+
+GENERALPROCEDUREFORDETERMININGBRAIDING ... PHYSICALREVIEWB91,035127(2015)
+section,is [26]hasbeenintroduced,yetlimitedtosmallsystemsizesdue
+⎛ ⎞ to an exponentially small prefactor. A universally applicable
+1 1 1 1 1 1 1 1 1
+methodforthemodularUmatrixisstillunderstudy.
+⎜1 1 1 q q q q2 q2 q2⎟
+⎜ ⎟
+⎜1 1 1 q2 q2 q2 q q q⎟
+⎜ ⎟
+⎜1 q q2 1 q q2 1 q q2⎟ ACKNOWLEDGMENTS
+1⎜ ⎟
+S= ⎜1 q q2 q q2 1 q2 1 q⎟,
+3⎜ ⎟ We would like to thank Vedika Khemani for penetrat-
+⎜ ⎜ 1 q q2 q2 1 q q q2 1⎟ ⎟ ing questions regarding earlier work and Xiao-Liang Qi,
+⎜ ⎝ 1 q2 q 1 q2 q 1 q2 q⎟ ⎠ Jeongwan Haah, and Andre Broido for insightful discus-
+1 q2 q q 1 q2 q2 q 1 sions. This work is supported by the Stanford Institute for
+1 q2 q q2 q 1 q 1 q2 Theoretical Physics(Y.Z.) and the National Science Founda-
+(37) tion under Grants No. NSF PHY11-25915 (T.G.) and No.
+NSF-DMR 1206728 (A.V.). T.G. is supported by a Gordon
+where q =ei2π/3. Its diagonal elements as the self-braiding and Betty Moore Foundation fellowship under the EPiQS
+shouldbeconsistentwiththeself-statisticsofthequasiparticles initiative.
+withpresumedorderingof(1,e,e2,m,em,e2m,m2,em2,e2m2):
+θ2 =(1,1,1,1,q2,q,1,q,q2). (38) APPENDIX: RESULTSFORGENERAL
+a
+ENTANGLEMENTBIPARTITIONS
+Ontheotherhand,givenθ a×p withoutknowingtheactual
+Abelian particle content of p, we can derive the following In this Appendix, we discuss the generalization to our
+possibilitiesforθ accordingtoEq.(22)byconsideringeach choices of entanglement bipartitions in Eqs. (3), (8), and (9)
+a
+columnofthemodularSmatrixabove: aswellasthatofFigs.1and2.Withoutlossofgenerality,we
+canalwaysdefine
+θ =(1,1,1,1,q,q2,1,q2,q),
+a
+orθ a =(1,1,1,q,q2,1,q2,q,1),
+w(cid:6)
+1
+(3) =n
+1
+w(cid:6)
+1
+(1)+m
+1
+w(cid:6)
+2
+(1),
+orθ a =(1,1,1,q2,1,q,q,1,q2), w(cid:6) 2 (3) =n 2 w(cid:6) 1 (1)+m 2 w(cid:6) 2 (1) (A1)
+orθ a =(1,q,q2,1,q2,q,1,1,1), and
+orθ a =(1,q,q2,q,1,q2,q2,q2,q2), w(cid:6)(2) =n w(cid:6)(3)+m w(cid:6)(3),
+1 3 1 3 2
+orθ a =(1,q,q2,q2,q,1,q,q,q), w(cid:6)(2) =n w(cid:6)(3)+m w(cid:6)(3) (A2)
+2 4 1 4 2
+orθ =(1,q2,q,1,1,1,1,q,q2),
+a with n m −m n =1 and n m −m n =1 by definition
+1 2 1 2 3 4 3 4
+orθ a =(1,q2,q,q,q,q,q2,1,q), ofthemodulartransformation.
+orθ =(1,q2,q,q2,q2,q2,q,q2,1); (39) First, in order to make our algorithm work, we would
+a
+like all these transformations between different MES bases
+however, only the first candidate is consistent with Eq. (38) to be the formof the modular S matrix times some diagonal
+from the modular S matrix. Therefore the θ a solution is phasefactors,whichrequiresthecrossproductsw(cid:6)(1)×w(cid:6)(2) =
+unique,andthestatisticsofthequasiparticlescanbeuniquely 2 2
+w(cid:6)(1)×w(cid:6)(3) =w(cid:6)(3)×w(cid:6)(2) =A, where A is the (signed) sur-
+determined. In addition, with (US)3 =1 we can obtain the 2 2 2 2
+face area of the torus. For example, for the transformation
+modularUmatrix:U=diag(θ )=(1,1,1,1,q,q2,1,q2,q).
+a in Eq. (A1) this requires n =−1. Then the corresponding
+2
+SL(2,Z)matrixhasthefollowingexpansion:
+VI. CONCLUSION (cid:6) (cid:7) (cid:6) (cid:7)(cid:6) (cid:7)
+n 1−n m 1 −n 1
+In this paper, we extended the discussion in Ref. [16] to F = − 1 1 m 1 2 = 1 1 −1
+2
+characterizeatwo-dimensionaltopologicalorderedphasewith (cid:6) (cid:7)
+onlyitscompletesetofground-statewavefunctions.Basedon 1 −m 2 =U −n1SU −m2, (A3)
+a closed sequence of modular transformations between three 1
+inequivalententanglementbipartitions,ouralgorithmderives
+the modular S matrix and the corresponding quasiparticle
+thusthemodularmatrixisF
+13
+(S,U)=U−n1 SU−m2.
+Similarlywerequiren =−1.Itisalsostraightforwardto
+braidingoftopologicallyorderedphasewithoutpresumingany 4
+latticesymmetries.ItalsoconstrainsthemodularUmatrixto
+derivetheSL(2,Z)matrixforthetransformationfromthew(cid:6)(1)
+tow(cid:6)(2)fromtheproductofEq.(A1)andEq.(A2):
+afewdiscretepossibilities,andincertaincasesdeterminesit
+(cid:6) (cid:7)(cid:6) (cid:7)
+fully.OuralgorithmisapplicabletoAbelianandnon-Abelian n 1−n m n 1−n m
+3 3 4 1 1 2
+phasesalike. −1 m −1 m
+4 2
+Ingeneral,however,ouralgorithmstilldoesnotguarantee (cid:6) (cid:7)
+a definitive solution to the modular U matrix and thus, n n +n m −1 n −n n m +m −n m m
+= 3 1 3 4 3 1 3 2 2 3 2 4 ,
+thequasiparticleself-statistics.Forchiralphases,momentum −n −m m m +n m −1
+1 4 2 4 1 2
+polarization can determine the self-statistics and the chiral
+(A4)
+edge central charge [27]. Recently, another method to obtain
+themodularmatricesbasedonuniversalwavefunctionoverlap thereforewehaveanotherrequirement−n −m =−1.
+1 4
+035127-7
+
+YIZHANG,TARUNGROVER,ANDASHVINVISHWANATH PHYSICALREVIEWB91,035127(2015)
+Under these constraints, the SL(2,Z) matrices for the The corresponding modular matrices for the transforma-
+transformation from the w(cid:6)(3) to w(cid:6)(2) and w(cid:6)(1) to w(cid:6)(2) may tionsbetweenthesetsofMESsare
+beexpandedintermsofgeneratorsinEq.(2)as F (S,U)=U−n3SUn1 −1 (A7)
+(cid:6) (cid:7) (cid:6) (cid:7)(cid:6) (cid:7) 23
+n 3 1−n 3 +n 1 n 3 = 1 −n 3 1 and
+−1 1−n 1 −1
+1 (cid:6) (cid:7) F (S,U)=U1−n3SU1−m2, (A8)
+12
+1 n −1
+× 1 (A5) respectively.
+1
+Especially, it is clear that w(cid:6)(3) =−w(cid:6)(1)+m w(cid:6)(1) and
+2 1 2 2
+and w(cid:6)(2) =−w(cid:6)(1)+(m −1)w(cid:6)(1), thus we have to have w(cid:6)(3) =
+(cid:6) (cid:7) 2 1 2 2 2
+n 3 −1 n 3 +m 2 −n 3 m 2 w(cid:6) 2 (1)+w(cid:6) 2 (2).Thisexplainsourchoiceofthethirdentanglement
+−1 m −1 bipartitioninthemaintext.
+2
+(cid:6) (cid:7)(cid:6) (cid:7)(cid:6) (cid:7) The remaining degrees of freedom n , m , and n are
+1 2 3
+= 1 1− 1 n 3 −1 1 1 1− 1 m 2 . (A6) concerned only with the choices of the w(cid:6) 1 (α) directions and
+bringnoessentialchangetoourlineofreasoning.Thespecific
+choiceinthemaintextcorrespondston =m =n =1.
+1 2 3
+[1] Xiao-GangWen,QuantumFieldTheoryofMany-BodySystems, [18] P. Di Francesco, P. Mathieu, D. Senechal, Conformal Field
+Oxford Graduate Texts (Oxford University Press, New York, Theory(Springer,NewYork,1997).
+2004). [19] A.KitaevandJ.Preskill,Phys.Rev.Lett.96,110404(2006).
+[2] P.W.Anderson,Science235,1196(1987). [20] A.Hamma,R.Ionicioiu,andP.Zanardi,Phys.Lett.A337,22
+[3] X.-G.Wen,Int.J.Mod.Phys.B4,239(1990). (2005);,Phys.Rev.A71,022315(2005).
+[4] N.ReadandB.Chakraborty,Phys.Rev.B40,7133(1989). [21] M.LevinandX.-G.Wen,Phys.Rev.Lett.96,110405(2006).
+[5] X.-G.Wen,Phys.Rev.B44,2664(1991). [22] L.CincioandG.Vidal,Phys.Rev.Lett.110,067208(2013).
+[6] N. Read and S. Sachdev, Phys. Rev. Lett. 66, 1773 (1991); [23] Michael P. Zaletel, Roger S. K. Mong, and Frank Pollmann,
+S.Sachdev,Phys.Rev.B45,12377(1992). Phys.Rev.Lett.110,236801(2013).
+[7] T.SenthilandM.P.A.Fisher,Phys.Rev.B62,7850(2000). [24] W.Zhu,D.N.Sheng,andF.D.M.Haldane,Phys.Rev.B88,
+[8] R.MoessnerandS.L.Sondhi,Phys.Rev.Lett.86,1881(2001). 035122(2013).
+[9] P.A.Lee,Rep.Prog.Phys.71,012501(2008). [25] ShenghanJiang,AndrejMesaros,andYingRan,Phys.Rev.X
+[10] L.Balents,Nature(London)464,199(2010). 4,031040(2014).
+[11] Y.-S. Wu, Y. Hatsugai, and M. Kohmoto, Phys. Rev. Lett. 66, [26] Huan He, Heidar Moradi, and Xiao-Gang Wen, Phys.
+659(1991). Rev. B 90, 205114 (2014); Heidar Moradi and Xiao-Gang
+[12] R.TaoandYong-ShiWu,Phys.Rev.B30,1097(R)(1984). Wen, arXiv:1401.0518; Jia-Wei Mei and Xiao-Gang Wen,
+[13] X.-G.WenandQ.Niu,Phys.Rev.B41,9377(1990). arXiv:1409.5427.
+[14] X.-G.Wen,E.Dagotto,andE.Fradkin,Phys.Rev.B42,6110 [27] Hong-HaoTu,YiZhang,andXiao-LiangQi,Phys.Rev.B88,
+(1990). 195412(2013).
+[15] MasakiOshikawaandT.Senthil,Phys.Rev.Lett.96,060601 [28] Yi Zhang and Xiao-Liang Qi, Phys. Rev. B 89, 195144
+(2006). (2014).
+[16] Yi Zhang, Tarun Grover, Ari Turner, Masaki Oshikawa, and [29] J.Haah,arXiv:1407.2926.
+AshvinVishwanath,Phys.Rev.B85,235151(2012). [30] YiZhangandAshvinVishwanath,Phys.Rev.B87,161113(R)
+[17] E.Keski-VakkuriandXiao-GangWen,Int.J.Mod.Phys.B7, (2013).
+4227(1993). [31] A.Kitaev,Ann.Phys.(NY)321,2(2006).
+035127-8

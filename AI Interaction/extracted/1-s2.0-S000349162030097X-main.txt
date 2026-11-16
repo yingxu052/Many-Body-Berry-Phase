@@ -1,0 +1,3281 @@
+AnnalsofPhysics418(2020)168164
+ContentslistsavailableatScienceDirect
+AnnalsofPhysics
+journalhomepage:www.elsevier.com/locate/aop
+Fusionrulesfromentanglement
+BowenShia,∗ ,KohtaroKatob,IsaacH.Kimc,d,e,f
+aDepartmentofPhysics,TheOhioStateUniversity,Columbus,OH43210,USA
+bInstituteforQuantumInformationandMatter,CaliforniaInstituteofTechnology,Pasadena,CA,USA
+cPerimeterInstituteforTheoreticalPhysics,Waterloo,ONN2L2Y5,Canada
+dInstituteforQuantumComputing,UniversityofWaterloo,Waterloo,ONN2L3G1,Canada
+eIBMT.J.WatsonResearchCenter,YorktownHeights,NY,USA
+fStanfordUniversity,Stanford,CA94305,USA
+a r t i c l e i n f o a b s t r a c t
+Articlehistory: Wederivesomeoftheaxiomsofthealgebraictheoryofanyon
+Received29August2019 (Kitaev, 2006) from a conjectured form of entanglement area
+Accepted31March2020 lawfortwo-dimensionalgappedsystems.Wederivethefusion
+Availableonline8April2020 rules of topological charges and show that the multiplicities of
+the fusion rules satisfy these axioms. Moreover, even though
+Keywords:
+Anyon we make no assumption about the exact value of the constant
+Fusionrule sub-leading term of the entanglement entropy of a disk-like
+Quantumentanglement region, this term is shown to be equal to lnD, where D is
+Quantumphases the total quantum dimension of the underlying anyon theory.
+Topologicalorder Thesederivationsarerigorousandfollowfromtheentanglement
+Topologicalentanglemententropy area law alone. More precisely, our framework starts from two
+local entropic constraints which are implied by the area law.
+From these constraints, we prove what we refer to as the
+‘‘isomorphismtheorem."Theexistenceofsuperselectionsectors
+andfusionmultiplicitiesfollowfromthistheorem,evenwithout
+assuminganythingabouttheparentHamiltonian.Theseobjects
+andtheaxiomsoftheanyontheoryareshowntoemergefrom
+the structure and the internal self-consistency relations of the
+informationconvexsets.
+©2020ElsevierInc.Allrightsreserved.
+1. Introduction
+One of the outstanding questions in modern physics concerns the classification of quantum
+phases.Manyattemptshavebeenalreadymadetoclassifyquantumphasesoverthepastdecade.
+∗
+Correspondingauthor.
+E-mailaddress: shi.576@osu.edu(B.Shi).
+https://doi.org/10.1016/j.aop.2020.168164
+0003-4916/©2020ElsevierInc. Allrightsreserved.
+
+2 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Forinstance,gappedfree-electronsystemsarecompletelyclassified[1,2].Formoregeneralshort-
+rangeentangledstates,anapproachbasedoncobordismwasproposed[3].One-dimensional(1D)
+gapped systems are completely classified at this point [4–7]. A general gapped two-dimensional
+(2D)systemsareexpectedtobedescribedwithintheframeworktopologicalquantumfieldtheory;
+see[8],forexample.
+This whole slew of different approaches raises a natural question. Why are there so many
+different approaches, and how can we ever be sure that the classification is complete? The main
+difficultyliesinidentifyingthecorrectframework.Inthepresenceofinteraction,oneoftenneedsto
+makeanontrivialassumption.Theonlyexceptionsofaristheone-dimensional(1D)gappedsystem.
+Hastings’ theorem [9] implies that any gapped 1D system obeys an area law. This subsequently
+implies that a matrix product state can approximate the ground state with a moderate bond
+dimension.Itisthisresultfromwhichaclassificationofquantumphasesof1Dgappedsystem[4–6]
+follows.
+However, in higher dimensions, an analog of Hastings’ theorem is unknown. This is mainly
+because proving area law in 2D gapped systems remains challenging. Furthermore, even if area
+law turns out to be correct, the states that satisfy area law may not be well-approximated by an
+efficienttensornetwork[10].Thesefactssuggestthataclassificationprogramin2Dcannotmerely
+mimictheclassificationprogramfor1Dgappedsystems.Infact,inanyclassificationproposalbased
+ontensornetworks,therewillalwaysbealingeringquestiononwhetherwearenotmissingany
+unknownphases.
+Whileitiswidelybelievedatthispointthattopologicalquantumfieldtheory(TQFT)describes
+allpossiblegappedphasesin2D,thereiscurrentlynorigorousargumentthatsupportsthisbelief.
+Theexistenceofathree-dimensional(3D)gappedphaseoutsideoftheTQFTframework[11]shows
+that there may be gapped phases of matter that lie outside of the TQFT framework. Even if TQFT
+turnsouttobethecorrectframeworkin2D,understandingofwherethisframeworkcomesfrom
+remainsasanimportantfundamentalproblem.
+Motivatedbythisstateofaffairs,weinitiateaprograminwhichafamiliarsetofaxiomsofTQFT
+canbederivedfromaseeminglyinnocuousassumptionaboutentanglement.Weshowthatsome
+of the basic concepts of the algebraic theory of anyon [12], i.e., superselection sectors and fusion
+multiplicities,emergefromafamiliarformofentanglementarealaw[13,14]:
+S(A)=αℓ−γ, (1)
+whereS(A)isthevonNeumannentropyofasimplyconnectedregionA,ℓistheperimeterofA,and
+γ isaconstantcorrectionterm1thatonlydependsonthetopologyofA.Thesub-leadingcorrection,
+whichvanishesintheℓ→∞limit,issuppressedhere.
+Wethenshowthatourdefinitionofthefusionmultiplicitiessatisfiesallthepropertiesonewould
+haveexpectedfromthealgebraictheoryofanyon.Again,thesepropertiesarederivedfromEq.(1).
+Moreover,wefurtherderivethefollowingwell-knownformula:
+γ =lnD,
+whereDisthetotalquantumdimensionoftheanyontheorywedefined.Ourderivationisrigorous
+undertheassumption(Eq.(1))andiscompletelyindependentfromthepreviousapproaches,i.e.,an
+approach based on an effective field theory description [13] and explicit calculations in exactly
+solvablemodels[14].
+WhileourassumptionisnotasrigorousasHastings’proofofthe1Darealaw,itissomethingthat
+iswidelyacceptedatthispoint.Therefore,webelievethiswouldbeareasonablestartingpointto
+obtainageneralunderstandingofgappedphases.Asimilar,butamarkedlydifferentstartingpoint
+ofourworkwouldbethetwoaxiomswehaveidentified.Thesetwoaxiomsareentropicconditions
+on bounded-radius disks (Axioms A0 and A1 in Section 2.1). We can show that these two axioms
+followfromEq.(1),butafterthat,weneveruseEq.(1)explicitly.Allofourresultsfollowdirectly
+fromtheaxioms.
+1 Nontrivial sectors, e.g., non-Abelian anyons and topological defects, can modify the constant term. It is a
+widely-adoptednotationthatγ istheconstanttermforadiskintheabsenceofnontrivialsectors.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 3
+In other words, the axioms of the anyon fusion theory can be derived from Eq. (1). The same
+conclusion follows from our axioms as well; see Axioms A0 and A1. While the conclusion would
+be the same either way, we would like to advocate for the use of the axioms over Eq. (1) for the
+followingreasons.ThefirstreasonisthatAxiomsA0andA1areassumedtoholdonpatcheswhose
+sizeisindependentofthesystemsize.Therefore,inprinciple,onecanverifytheseaxiomsintime
+that scales linearly with the system size. Under a promise that the state is translation-invariant,
+the time can be reduced to a constant. In contrast, Eq. (1) is defined over length scales that are
+comparabletothesystemsize.Verifyingthisassumptionwillincuranexponentialcomputational
+cost.Secondly,inthecontinuumlimit,theleadingtermofEq.(1)dependsontheultraviolet-cutoff.
+Ontheotherhand,theaxiomsmanifestlycanceloutthisdivergentpiece.
+Our framework is completely Hamiltonian-independent, in the sense that we only require the
+existenceofaglobalstateonthesystemsatisfyingthetwolocalentropicconstraints.Thisworkis
+motivatedfromanumberofrecentobservations:thatlocalreduceddensitymatricesoftopological
+quantum phases often have a quantum Markov chain structure [15–23]. The key overarching
+concept is a convex set of density matrices introduced in [18], which is later rediscovered and
+studiedunderthename‘‘informationconvex(set)"[22,23].Roughlyspeaking,thisisasetofdensity
+matriceswhicharelocallyindistinguishablefromsomereferencestate.Inourcontext,thisreference
+statewouldbethegroundstateofsomelocalHamiltonian.However,wedonotusethefactthat
+thestateisagroundstate.
+Ourframeworkopensupaconcreteroutetoclassifygappedquantumphaseswithoutresorting
+to ad-hoc assumptions. In addition, we believe our framework is capable of answering a long-
+standingopenquestionabouttopologicalphases.Thequestionisifasinglegroundstatecontains
+allthedatanecessarytodefineatopologicalphase.Giventhatwecandefineanotionoftopological
+charges and fusion multiplicities from a single ground state, progress may be made by using our
+framework. Our approach can be generalized to a broader context, e.g., to higher dimensions and
+to setups in which a topological defect [24] or a boundary is present [25]. We will discuss these
+applicationsinourupcomingwork.
+The rest of this paper is organized as follows. In Section 2, we specify our formal setup and
+summarize our main results. In Section 3, we prove fundamental properties of the information
+convex sets, which are the key to obtaining some of the axioms of the algebraic theory of anyon.
+We shall refer to this part of the full algebraic theory of anyon as the anyon fusion theory from
+now on. In Section 4, we define the notion of superselection sectors and fusion multiplicities in
+our framework and prove that the definition satisfies all the axioms of the anyon fusion theory.
+In Section 5, we show that the constant term γ in the area law equals the logarithm of the total
+quantumdimension.InSection6,weconcludewithadiscussion.
+2. Setupandsummary
+Letusbeginwithageneralsetupandstateourphysicalassumptions.Beforewedelveintothe
+details,itwillbeinstructivetodiscussthephysicalsystemwehaveinmind.Weareenvisioninga
+gappedsystemin2D,whichconsistsofmicroscopicdegreesoffreedom,e.g.,spins.Wewouldlike
+tocoarse-grainthesemicroscopicdegreesoffreedomsothatwecanviewnon-overlappingblocks
+ofspinsasgigantic‘‘supersites’’,seeFig.1.Wecanconsiderthelimitinwhichthelengthscaleof
+each block is large compared to the correlation length. We would like to define a sensible notion
+ofdistancebetweenthesubsystemsaswellastheirtopologies.
+More concretely, we can consider a quantum many-body spin system with a tensor product
+structureH=⊗ v∈V Hv,whereHv isafinite-dimensionalHilbertspaceandV isasetofverticesof
+afinitegraphG=(V,E)definedona2Dclosedmanifold.2ByspecifyingthesetofedgesE,wecan
+defineanaturalnotionofdistanceonthisgraph(thegraphdistance).Wedenotethestatespaceof
+HbyS(H),whichisthesetofalldensitymatricesonH.WesayoperatorOhassupportonX ⊆V
+ifO=O X ⊗I V\X whereI V\X istheidentityoperator.
+2 Ourresultsworkforbothorientableandnon-orientablemanifoldsprovidedthatareferencestateσ exists.
+
+4 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig. 1. An illustration of the setup. (a) A graph G=(V,E) with each vertex represents a ‘‘supersite" which contains a
+clusterofmicroscopicdegreesoffreedom,e.g.spinsinrealspace.Theedgesencodethelocalityoftheunderlyingphysical
+systemanditallowsustodefineanotionoftopologyforasetofvertices.(b)Azoomed-indepictionofasupersite.It
+containsablockofphysicalspins.Thelengthscaleofeachblockisaconstantthatislargecomparedtothecorrelation
+length.
+Table1
+Alistofnotationsandtheirdescriptions.
+Notation Briefdescription Reference
+σ TheglobalreferencestatethatsatisfiesAxiomsA0andA1 N/A
+σ b Reduceddensitymatrixofσ overregionb
+µ(r) Asetofσ b overbwhoseradiusissmallerthanr Eq.(2)
+Σ(Ω) TheinformationconvexsetofaregionΩ Definition3.1
+We assume that there is a partition of the manifold into simply connected subsystems so that
+each v ∈ V is associated with one of these subsystems. Furthermore, there is an edge between
+v ,v ∈ V if and only if the subsystems associated with the vertices are adjacent to each other.
+1 2
+Thisassumptionletsusdefineanotionoftopologyforasetofvertices.Withoutlossofgenerality,
+letU beasetofverticesandU beaunionofthesubsystemsassociatedwiththeverticesinU.The
+topologyofU isdefinedasthetopologyofU.Byconstruction,asinglevertexistopologicallyadisk.
+However,amoregeneraltopology,e.g.,anannulus,canbebuiltoutofaunionofthevertices.
+Throughout this paper, we consider a state σ ∈ S(H) satisfying two axioms shown below. We
+willcallthisstatethe(global)referencestate.Wealwaysuseσ torefertothesamereferencestate
+unless specified otherwise. We use σ to represent the reduced density matrix of σ on a region
+A
+A. Physically interesting examples of the reference state are the ground states of gapped local
+Hamiltonians. However, our derivations are only based on the properties of the quantum state.
+Technically, we are allowed to assume the global state to be pure σ = |ψ⟩⟨ψ| without loss of
+generality.Thisisbecauseonecanalwaysshowtheexistenceofapurestatewhichhasthesame
+localreduceddensitymatricesasthegivenreferencestate(seeTheoremB.1).
+Forthereaders’convenience,wehavesummarizedthekeyconceptsinTable1.3
+2.1. Axioms
+Westartbydefiningasetofdensitymatrices
+µ(r)={σ |b∈B(r)}, (2)
+b
+whereB(r)isasetofballsofradiuslessorequaltor andσ isthereduceddensitymatrixofthe
+b
+referencestate(σ)onb.Becauser willbechosentobeaconstantindependentofthesystemsize,
+wewillsimplydenoteµ(r)byµ.Wewillrefertothesetofb∈B(r)asthesetofµ-disks.
+3 Wethanktherefereeforthissuggestion.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 5
+Fig. 2. A disk is divided into its ‘‘core" (C) and outer boundary (B). The boundary (B) is chosen to be thick enough so
+thatcorrelationbetweenC andthecomplementofBC isnegligible.
+Fig.3. Adiskisdividedintoits‘‘core"(C)anditsouterboundary,whichisfurtherdividedintotwopieces(BandD).
+The axioms of our framework concern two entropic constraints on the set of µ-disks.4 Let
+S(ρ) = −Tr(ρlnρ) be the von Neumann entropy of a state ρ. We assume that Axioms A0 and
+A1holdforallµ-disks.
+AxiomA0 Foranyσ ∈µ,foranyconfigurationofsubsystemsBC ⊆btopologicallyequivalentto
+b
+theonedescribedinFig.2,
+S(σ )+S(σ )−S(σ )=0. (3)
+BC C B
+AxiomA1 For any σ ∈ µ, for any configuration of subsystems BCD ⊆ b topologically equivalent
+b
+totheonedescribedinFig.3,
+S(σ )+S(σ )−S(σ )−S(σ )=0. (4)
+BC CD B D
+Toseethephysicalmeaningoftheseaxioms,weobservethatEq.(3)implies
+I(A:C)σ ≡(S
+A
++S
+C
+−S
+AC
+)σ =0, (5)
+where A is contained in the complement of BC and I(A : C) is the mutual information. This
+result follows from the strong subadditivity (SSA) of von Neumann entropy [26]. The mutual
+4 ThetwolocalentropicconstraintsA0andA1areoriginallyproposedbyoneofusinRef.[17]Thefirstattemptat
+derivingtheaxiomsofanyontheoryfromtheseconditionswaspresentedinRef.[18].
+
+6 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+information is a measure of the total amount of bipartite correlation. Therefore, Axiom A0 can be
+viewedasaformalizationoftheintuitionthatlong-rangetwo-pointcorrelationvanishesingapped
+groundstates.However,notethattheassumptionisstrictlystrongerthanthevanishingofmutual
+information itself. For instance, an infinite temperature Gibbs state satisfies Eq. (5) but does not
+satisfyA0.Eq.(4)impliesthatthequantumconditionalmutualinformationvanishes:
+I(A:C|B)σ ≡(S
+AB
++S
+BC
+−S
+B
+−S
+ABC
+)σ =0, (6)
+whereAiscontainedinthecomplementofBCD.Again,A1isastrongerconditionthanEq.(6).
+WhiletheseaxiomscanbederivedfromEq.(1),theyareweakerassumptionsandmayholdin
+moregeneralsettings.Moreover,weexpecttheseaxiomstobeamorewell-definedwayofformu-
+latingourassumptionscomparedtoEq.(1)becausetheymanifestlygetridoftheleadingdivergent
+terminthearealaw.Inreality,weexpectourassumptionstobesatisfiedonlyapproximately,up
+toanerrorthatdecaysexponentiallywith r,wherer isthelengthscaleofthesubsystemsandξ
+ξ
+is the correlation length. We believe our framework has a natural extension to these cases since
+everytheoreticaltoolweusecanbegeneralizedtosuchsituations(seealsoDiscussion).
+Howweusetheseaxiomswillbeexplainedlaterinthispaper,startingfromSection3.However,
+forthehastyreaders,wecanbrieflysummarizeourintuitionasfollows.TheintuitionbehindA0is
+thatthecorrelationbetweentwosufficientlyseparatedsubsystemsisnegligible.Thisfactallowsus
+todecoupletwosuchsubsystemswithoutaffectingeitherofthemtoomuch.Theintuitionbehind
+A1ismoreprofoundandsubtle.Letusconsiderthefollowingexample.Supposewehaveadensity
+matrix over AB and another density matrix over BC. Our goal is to ‘‘merge" these two density
+matrices; we want to construct a density matrix over ABC whose marginal density matrices on
+AB and BC are consistent with the given data. It is well-known that one cannot generally do this
+in quantum systems. For example, if AB is a maximally entangled state and BC is also (the same)
+maximallyentangledstate,therecannotbeanextensionofthesedensitymatricesintoasinglestate
+actingonABC.ByassumingAxiomA1,wecanbypassthisdifficultyandmergethedensitymatrices
+thataregiventous.Themajorityofourkeyresultsfollowfromthismergingprocess.Inparticular,
+weshallextensivelyusenontrivialidentitiesinvolvingtheentropiesofthemergedsubsystems.
+2.2. Mainresults
+Ourframeworkemploysthenotionofinformationconvexset [18,22],thestructureofwhichhas
+beenrecentlyconjectured[23].Looselyspeaking,thisisasetofreduceddensitymatricesonagiven
+subsystem;thesedensitymatricesarelocallyindistinguishablefromtheglobalreferencestate,but
+withanextrastructureonthissetinordertofacilitateouranalysis;seeSection3.2forthedetails.
+Crucially,informationconvexsetsaredefinedfromasinglestate.Assuch,wedonotneedtoinvoke
+anyassumptionabouttheparentHamiltonian.
+ThefollowingresultsfollowfromAxiomsA0andA1.Again,wedonotassumeanythingabout
+theparentHamiltonian.
+1. Isomorphismtheorem
+Let A and B be two subsystems which can be smoothly deformed from one to another. We
+showthattheinformationconvexsetsassociatedwithAandBareisomorphic(Theorem3.10).
+Thesesetscanbemappedontoeachotherbyalinearbijectivemap.Moreover,thesemaps
+preserve the distance and the entropy difference between the elements of the information
+convex set. Concretely, let Φ be one such map. Then D(ρ,ρ′) = D(Φ(ρ),Φ(ρ′)) for any
+distancemeasureD(·,·).Moreover,S(ρ)−S(ρ′)=S(Φ(ρ))−S(Φ(ρ′)).Therefore,thestructure
+oftheinformationconvexsetonlydependsonthetopologyoftheregionassociatedwithit.
+2. Awell-definednotionoftopologicalcharges
+Weshowthattheinformationconvexsetofanannulusisasimplexwhoseextremepoints
+areorthogonaltoeachother.Thatis,anystateρ intheinformationconvexsetofanannulus
+musthavethefollowingform(Theorem4.1):
+⨁
+ρ = p σa,
+a
+a
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 7
+where{p }isaprobabilitydistributionoverafiniteset,andσa isastateonlydependingon
+a
+thechoiceoftheregion.Wedefinethelabelaasatopologicalcharge/superselectionsectorof
+thesystem.Inexactlysolvablemodels(e.g.,toriccode),σa correspondstoareduceddensity
+matrixofanannulusthatsurroundsatopologicalchargea.Differentsuperselectionsectors
+areperfectlydistinguishablefromeachother.Moreover,theisomorphismtheorem(seethe
+firstmainresult)impliesthatthechargeisgloballywell-defined.Wefurthermoreprovethat
+foreachsector,thereexistsauniqueanti-sector(Section4.3).
+3. Extractingfusionmultiplicities
+We completely characterize theinformation convex set of a 2-holedisk. Weshow that any
+elementinthissetcanbeexpressedas
+⨁
+ρ = pc ρabc,
+ab
+a,b,c∈C
+where C is the set of topological charges, {pc } is a probability distribution, and {ρabc} are
+mutually orthogonal quantum states labeled a b b y a,b, and c. We show that, for each choice
+of a, b and c, the set {ρabc} forms a state space of a finite-dimensional Hilbert space; see
+Theorem4.5.ThedimensionsoftheseHilbertspacesareidentifiedasthefusionmultiplicities
+of the underlying anyon theory. In the context of the anyon theory, a and b label the two
+chargesassociatedwiththeholesandc representsthetotalchargeofthedisk.
+4. Axiomsoftheanyonfusiontheory
+Ourdefinitionofthefusionmultiplicities(seethethirdmainresult)satisfiesalltheaxioms
+of the anyon fusion theory. The proof is based on the merging technique [21]. We derived
+severalconsistencyrelationsby‘‘merging"twodensitymatricesandcomparingtheentropy
+of the reduced density matrices before and after the merge. An equation that relates these
+entropiesleadstotheaxiomsoftheanyonfusiontheory.
+5. Topologicalentanglemententropy
+Fromourdefinitionofthefusionmultiplicities,wefurthershowthatthesub-leadingconstant
+term γ in Eq. (1) is the logarithm of the total quantum dimension. Unlike in [13], our
+derivationmakesnoassumptionabouttheunderlyingeffectivefieldtheory.
+Asacorollary,manyoftheanyondatacan,inprinciple,beextractedfromthelocalinformation
+of a single ground state. Importantly, we do not need to assume that the low-energy excitations
+canbedescribedbyaunitarymodulartensorcategory.(Instead,weneedA0andA1.)Incontrast,
+an oft-used numerical method [27] requires global information of multiple ground states and
+the assumption that the system is described by a modular tensor category. Also, Haah [28] has
+attempted to extract the topological S-matrix from a single ground state. Haah’s final argument
+that his invariant matches the S-matrix, however, still relies on the modular tensor category
+assumptions.
+Finally,we canalsodefinea unitarystringoperatorthat createsananyonpair. Thesupportof
+thestringcandeformfreelyaslongastheendpointsarefixed(AppendixH).
+3. Axiomextension,informationconvexsetandisomorphismtheorem
+We have proclaimed in Section 2.2 that we can, among many things, establish a globally well-
+definednotionoftopologicalcharge.Becauseouraxioms(AxiomsA0andA1)areassumedtohold
+only on bounded-radius disks, the fact that such a notion can even exist in the first place is not
+obviousatall.
+In order to explain how this works, we choose the main theme of this section to be ‘‘local to
+global’’.Startingfromourlocalaxioms(AxiomsA0andA1),wewillseehowwecaninfersomeof
+theglobalstatementswemadeinSection2.2.Thefirststepinthisdirectionliesinextendingour
+localaxiomstolargerregions.Notethatouraxiomsareassumedtoholdonlyon(bounded-sized)
+µ-disks.InSection3.1,wewillshowthattheaxiomsinfactholdonarbitrarilylargedisks.
+Thenwemoveontoaconceptthatplaysthecentralroleinthispaper:informationconvexset.
+Inordertodefineaninformationconvexset,weneedtofixasubsystemandconsiderasetofstates
+
+8 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+onthissubsystemwhicharelocallyindistinguishablefromthegivenreferencestate.Letusreferto
+thissubsystemasΩ′ andthesetofstatesasΣ˜ (Ω′).
+The set Σ˜ (Ω′) is not the information convex set, but we are getting close. For every state in
+Σ˜ (Ω′), trace out part of the subsystem that lies at the ‘‘outer edge" of Ω′; see Fig. 6. This way,
+we get a set of reduced density matrix over a subset of Ω′. Let this subset be Ω. What we have
+obtainedistheinformationconvexsetofΩ,whichwerefertoasΣ(Ω).Asonecansee,thisisquite
+aninvolveddefinition!However,inouropinion,wehaveasensiblejustification. Whywechoose
+Σ(Ω)overΣ˜ (Ω′)asamainactorofourstorywillbethemaintopicofdiscussioninSection3.2.
+In Section 3.3, we derive the key technical result of this section: the isomorphism theorem
+(Theorem 3.10). This theorem establishes an equivalence between information convex sets for
+topologicallyequivalentsubsystemsconnectedbyapath.
+This section may seem a bit abstract at first, so it will be useful to have a concrete physical
+picture in mind. Consider a topologically ordered medium [29] that can host anyons [30,31]. It is
+well-known that, within such a medium, there is a globally well-defined notion of superselection
+sectors and fusion space. This is because one can adiabatically transport anyons from different
+regions and compare them. For example, suppose we have two anyons that are well-separated
+from each other. How would we able to decide if they are the same anyon type or not? One can
+adiabaticallybringeitheroftheanyonstosomefixedlocationandperformanAharonov–Bohmtype
+interferenceexperiment.Iftheunderlyinganyontheoryisunitary,theremustbesomeexperiment
+thatcandistinguishtwodifferenttypesofanyons.
+Intheaboveillustrativeexample,weobservedthatthereisaphysicalprocessbywhichwecan
+compareanyonsorevenacollectionofanyonswitheachother.Thiscomparisonispossibleifone
+can transport these objects from one place to another. The isomorphism theorem formalizes this
+transportationprocessinaHamiltonian-independentmanner.
+3.1. Extensionoftheaxioms
+In this Section, we show that our axioms (Axioms A0 and A1) hold on arbitrarily large disks.
+Results in this section have been discussed in Ref. [17]. In order to understand this section, one
+shouldbecomefamiliarwiththenotionofquantumMarkovstate[15,32].AquantumMarkovstate
+isatripartitestate,sayoversubsystemsA,B,andC,suchthat
+I(A:C|B)=S(ρ )+S(ρ )−S(ρ )−S(ρ )
+AB BC B ABC
+isequalto0.Thesestatesenjoyseveralnontrivialproperties,whichwemakeextensiveuseof.
+Thefollowingtwolemmaswillbeusedfrequently.
+Lemma 3.1. Let ρ and σ be density matrices such that (1) ρ = σ and ρ = σ ; (2)
+ABC ABC AB AB BC BC
+I(A:C|B)ρ =I(A:C|B)σ =0.Thenρ
+ABC
+=σ
+ABC
+.
+TheprooffollowsfromRef.[33].Supposeweknowσ andσ forthepartitioninFig.4.Then
+AB BC
+A1 implies I(A : C|B)σ ≤ (S
+BC
++S
+CD
+−S
+B
+−S
+D
+)σ = 0. This lemma implies that the state σ
+ABC
+is
+uniquely determined by its reduced density matrices. Moreover, there is a CPTP map which can
+recoverσ fromitsreduceddensitymatrices.ThismapisknownasthePetzrecoverymap.
+ABC
+Lemma3.2(PetzRecoveryMap[33]).Foranytripartitestateρ
+ABC
+,I(A:C|B)ρ =0ifandonlyif
+ρ =E ρ (ρ ), (7)
+ABC B→BC AB
+ρ
+whereE (thePetzrecoverymap)isdefinedas
+B→BC
+E ρ (X )=ρ2 1 ρ−1 2X ρ−1 2ρ 1 2 .
+B→BC B BC B B B BC
+Nowweareinapositiontostatethemainresultofthissection.InProposition3.3,weshowthat
+AxiomsA0andA1holdforalldisks.Byassumption,theseaxiomsholdforµ-disks.Thenontrivial
+partofthestatementisthattheaxiomsholdatalargerlengthscale.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 9
+Fig.4. AnillustrationofthegrowthprocedureofadiskfromABtoABC.HereAcanbelargeandBCDiscontainedina
+µ-diskinamannersimilartoFig.3.
+Fig.5. Theextensionoftheaxioms.AdiskisdividedintoeitherBC orBCD.Aµ-diskisonasmallerlengthscale,i.e.,the
+small dashed circle surrounding the colored region. These figures represent three ways of enlarging C by a small step.
+(a)bc⊆Bandd⊆C;(b)bc⊆Bandd⊆C;(c)bc⊆B,d⊆C andd′⊆D.
+Proposition3.3. ForareferencestatesatisfyingaxiomsA0andA1,theentropicconditionsEq.(3)and
+Eq.(4)aresatisfiedonalllargerdisk-likesubsystems.
+Proof. Weshallextensivelyusethefollowingtwoinequalities:
+S BC +S C −S B ≥ S BB′C +S C −S BB′ , (8)
+S BC +S CD −S B −S D ≥ S BB′C +S CDD′ −S BB′ −S DD′ . (9)
+BothofthemfollowfromSSA.
+Let us first extend Axiom A0 to a larger scale. Without loss of generality, consider a disk and
+itssubsystemBandC,showninFig.5(a).AssumethatBC isnotcontainedinanyµ-disk.Onecan
+considerasequenceof(enlarged)subsystemstoobtainthisdisk(BC)fromaµ-disk.
+For this purpose, it suffices to consider the following two moves. The first move is to enlarge
+B while keeping C fixed. The second move is to enlarge C while keeping BC fixed. Our goal is to
+showthat,forbothofthesesteps,thelinearcombinationofentropyS +S −S isnon-increasing.
+BC C B
+The first move preserves Eq. (3) because of Eq. (8) where we set B⊔B′ to be the enlarged B. To
+understand why the second move preserves Eq. (3), consider a deformation depicted in Fig. 5(a).
+WeneedtoshowS +S −S isnon-increasingwhenwedeformC toincludethecoloredregion
+BC C B
+ofFig.5(a).AvariationofEq.(9),whichinvolvestheµ-diskbcd,is
+S B +S Cc −S B\c −S C ≤S bc +S cd −S b −S d =0. (10)
+Therefore,bothmovespreserveEq.(3).Becauseanydiskcanbeenlargedfromaµ-diskbyapplying
+asequenceofthesemoves,AxiomA0holdsforanydisk.
+Now,letusmoveontoAxiomA1.Similarly,wecanobtainalargerdisk,sayBCD,fromaµ-disk
+bymakinguseofthefollowingmoves.Asusual,thechoiceofthesubsystemsaresimilartotheone
+usedinAxiomA1.ThefirstmoveistoenlargeBandDwhilekeepingC fixed.Thesecondmoveis
+toenlargeC whilekeepingBCDfixed.
+
+10 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.6. ThisfigureisaschematicdepictionofregionsinvolvedinthedefinitionofinformationconvexsetΣ(Ω).HereΩ
+istheannulusbetweentheblackcircles,annulusΩ′ ⊇Ω isthethickeningofΩ,i.e.,theregionbetweengraycircles.
+Any element in Σ˜(Ω′) is consistent with the reference state σ on every µ-disk contained in Ω′ (the blue disks). We
+choseΩ tobeanannulusforillustrationpurposes.Othertopologiesareallowedaswell.
+Letusshowthattheentropiccondition(4)holdsateverystep.ThefirstmovepreservesEq.(4).
+This is because inequality (9) can be applied to enlarged region BB′ and DD′. Notably, B′ and D′
+can be chosen to touch each other. This allows us to show Eq. (4) for the arbitrary BB′ and DD′
+satisfyingthetopologycondition,bysuitablychoosingBandDintheinitialµ-disk.Forthesecond
+move, we can consider the following sequence of small steps shown in Fig. 5(b)(c) as well as the
+samestepsinwhichthechoiceofBandDareswitched.Hereisthejustificationofeachsmallstep.
+It is sufficient to justify the steps shown in Fig. 5(b) and (c). Regarding the enlargement process
+describedinFig.5(b),wehave
+S B +S CDc −S B\c −S CD ≤S bc +S cd −S b −S d =0. (11)
+FortheenlargementprocessinFig.5(c),wehave
+S B +S CDc −S B\c −S CD ≤S bc +S cdd′ −S b −S dd′ =0. (12)
+Therefore,bothEqs.(3)and(4)holdatlargerlengthscales.Thiscompletestheproof. □
+3.2. Informationconvexset
+Care must be taken in reading this section, for we are about to explain the most important
+concept in this paper: information convex set. Let us begin with some definitions. We say that
+twodensitymatricesρandρ′areconsistent witheachotheriftheyhaveidenticaldensitymatrices
+ontheoverlappingsupport,i.e.,ρ =ρ′ whereAistheintersectionofthesupportofρ andthatof
+ρ′,anddenoteitby A A
+ρ =c ρ′.
+For each subsystem Ω ⊆ V, we can define its information convex set by first considering the
+‘‘thickening"ofΩ.Let∂Ω ⊆V beasetofverticesthatare(graph)distance1awayfromΩ.Ifthe
+subsystemΩ⊔∂Ω istopologicallyequivalenttoΩ,werefertothatsubsystemasathickeningof
+Ω.LetthereexistsathickeningofΩ;wedenotethethickeningasΩ′.Intuitively,Ω′isasubsystem
+thatcanbesmoothlydeformedintoΩ suchthatΩ′\Ω isaboundaryofΩ withanon-vanishing
+thickness.Thisthicknessmustbechosentobesufficientlylargecomparedtothecorrelationlength
+oftheunderlyingstate.
+Now,weareinapositiontodefinetheinformationconvexset.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 11
+Definition 3.1. Let Ω ⊆ V be a subsystem and let Ω′ be the thickening of Ω. The information
+convexsetofΩ isdefinedas
+Σ(Ω)≡{ρ Ω |ρ Ω =TrΩ′\Ω ρ Ω′ ,ρ Ω′ ∈Σ˜ (Ω′ )}, (13)
+whereΣ˜ (Ω′)isdefinedas
+Σ˜ (Ω′ )={ρ Ω′|ρ
+Ω′
+=c σ
+b
+, ∀σ
+b
+∈µ}.
+This definition was first advocated in [18]. A related Hamiltonian-based definition was intro-
+ducedinRef.[22].
+One may have thought that Σ˜ (Ω) would be a more natural definition of information convex
+set.However,itturnsoutthatthelocalindistinguishabilityconstraintsareinsufficienttofixsome
+of the degrees of freedom at the boundaries of Ω. For this reason, it is possible for some of the
+elements in Σ˜ (Ω) to possess entanglement between two distant µ-disks in the vicinity of the
+boundary of Ω. Moreover, even a multipartite correlation may arise along the boundary. These
+exceptionalelementscannotberegardedasthereducedstateofastateonalargersupportthatis
+alsolocallyindistinguishablefromthereferencestate.Inparticular,theycontainunnecessaryextra
+informationthathasnothingtodowiththeanyontheory.Theadditionalpartialtraceoperationin
+thedefinitionofΣ(Ω)removessuchirrelevantcorrelationsaroundtheboundaries.
+As it stands, the definition of information convex set is independent of our axioms (Axioms
+A0 and A1). However, once we impose these axioms, one can come up with a more restrictive
+definition of information convex set that does not involve Ω′. This definition is formulated in
+DefinitionC.1.PropositionC.4establishestheequivalenceofthetwo.
+Below,wederivepropertiesoftheinformationconvexset.Firstofall,informationconvexsetis
+aconvexsubsetofthestatespace.Thisfollowsstraightforwardlyfromthedefinition.
+Proposition3.4. ForanynonemptyΩ ⊆V,Σ(Ω)isanonemptyfinite-dimensionalcompactconvex
+set.Furthermore,ifΩ ⊆Ω′ andρ
+Ω′
+∈Σ(Ω′),thenTrΩ′\Ω ρ
+Ω′
+∈Σ(Ω).
+Proof. Thestatespaceofafinite-dimensionalHilbertspaceisafinite-dimensionalcompactconvex
+set.ThepartialtraceoperationTrΩ′\Ωislinearandbounded.Therefore,theimageofthepartialtrace
+iscompactandconvex.ThelaststatementisadirectconsequenceofDefinition3.1. □
+Secondly,weshowthattheinformationconvexsetofadiskcontainsasingleelement.Weuse
+thisresultthroughoutthispaper,primarilyforidentifyingtheuniquenessoftheglobalstateona
+sphereandfordefiningthevacuumsector.5
+Proposition3.5. Foranydisk-likesubsystemω,wehave
+Σ(ω)={σ ω }, (14)
+whereσ
+ω
+≡Trω¯ |ψ⟩⟨ψ|andω¯ isthecomplementofω.
+Proof. TheideaisillustratedinFig.7,whichinvolvesarepetitionofthe‘‘growthprocess"described
+inFig.4.Startingfromaµ-disk,onecangrowthediskuntiltheenlargeddiskcoversω.
+Let us get into the details. First, recall that Σ(ω) is nonempty since it contains σ ω. Let us pick
+anotherelementσ
+ω
+′ ∈Σ(ω).AccordingtoDefinition3.1,σ
+ω
+andσ
+ω
+′ mustbeidenticalonaµ-disk.
+Therefore, we can repeatedly use the conditional independence condition, i.e., I(A : C|B)σ = I(A :
+C|B)σ′ =0,toshowthatthereduceddensitymatricesofthetwostatesareidenticalonincreasingly
+largerdisks;seeLemma3.1.Thediskcangrowtothepointitcoversω.Thus,wecanconcludethat
+σ ω ′ =σ ω. □
+5 As a side note, let us point out that this result is based only on A1. Therefore, the uniqueness of the element for
+theinformationconvexsetofadiskcanholdmoregenerally,evenwhenA0breaksdown.
+
+12 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.7. Aµ-diskcangrowuntilitcoversalargerdiskω.
+More generally, we can consider the information convex set of a subsystem which is not
+topologicallyadisk.WeshalldiscussthestructureofsuchsetinSection4.Thefollowingfactwill
+beimportantforthatdiscussion.LetΩ beanarbitrarysubsystem.Weshowthat,foranyelement
+intheinformationconvexsetofΩ,itsreduceddensitymatrixonadisk-likeregionisequaltothe
+reduceddensitymatrixofthereferencestateonthesameregion.
+Proposition3.6. Anystateρ Ω ∈Σ(Ω)satisfies
+TrΩ\ω ρ Ω =σ ω (15)
+onanydisk-likesubsystemω⊆Ω.
+Proof. By Proposition 3.4, for any state ρ Ω ∈ Σ(Ω), TrΩ\ω ρ Ω is an element of Σ(ω). By
+Proposition3.5,thesetΣ(ω)containsonlyoneelement. □
+As a side note, we can always choose the reference state to be pure even if the initially given
+reference state is not. This is because the information convex set of the entire systemis the state
+space of a finite-dimensional Hilbert space (see Theorem B.1); one can simply choose one of the
+purestatesinthisspacetobethereferencestate.Thispurereferencestate,restrictedtotheµ-disks,
+wouldbeconsistentwiththeinitiallygivenreferencestate.
+An interesting special case is when the underlying manifold is a sphere (S2). In this case, the
+globalstateisuniqueandthuspure.
+Proposition3.7. Σ(S2)={|ψ⟩⟨ψ|}.
+Proof. Letusbeginbysettingupanappropriatesetofsubsystems.Partitionthesphereintothree
+subsystems, A,B, and C. We choose C to be a disk and B to be an annulus that surrounds C; see
+Fig.2.ThecomplementofBC,i.e.,A,isadisk.
+Withoutlossofgenerality,supposewehavetwostatesρ ,σ ∈Σ(S2).Weshowthatthey
+ABC ABC
+mustbe equal.ByProposition 3.5,theirreduceddensity matricesareidentical onABandBC.SSA
+impliesthatforbothstates,
+I(A:C|B)≤S(BC)+S(C)−S(B),
+wherewesuppressedthedependenceonρ andσ.Eitherway,therighthandsideis0becauseour
+axiomsholdatanyscale;seeProposition3.3.Becauseρ andσ bothhavevanishingconditional
+ABC ABC
+mutualinformation(conditionedonB)andhaveidenticaldensitymatrices(onABandBC),wecan
+useLemma3.1.Therefore,ρ =σ .
+ABC ABC
+By Theorem B.1, Σ(S2) is isomorphic to a state space of a finite-dimensional Hilbert space.
+Becausethissethasauniqueelement,theglobalreferencestatemustbepure. □
+3.3. Elementarystepsandisomorphismtheorem
+Inthissection,weestablishanisomorphismbetweentwoinformationconvexsets.Thisisomor-
+phism exists if the subsystems associated with the two sets are topologically equivalent and can
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 13
+be smoothly deformed into each other. More precisely, in order to establish an isomorphism, we
+requirethatthetwosubsystemstobeconnectedbyapath(Definition3.2).
+Crucial to this analysis is the concept of state merging. Suppose we have two quantum states
+ρ and σ which share an overlapping support and consistent. The question is whether one can
+consistently ‘‘sew" them together. Namely, can we find a state which is consistent with both ρ
+andσ?Thisisknownasthequantummarginalproblem.Ingeneral,evendecidingwhetherthere
+issuchastateornotisknowntobeextremelydifficult[34].Thereareseveralnontrivialnecessary
+conditions[16,17],butsufficientconditionsarerare.
+However,oneofushasfoundanontrivialsufficientcondition[21].Werestatetheresultforthe
+reader’sconvenience.
+Lemma 3.8 (Merging Lemma [21]). Given a set of density matrices S ≡ {ρ } and a density matrix
+ABC
+σ suchthatρ =σ and
+BCD BC BC
+I(A:C|B)ρ =I(B:D|C)σ =0, ∀ρ ∈S, (16)
+thereexistsauniquesetof‘‘merged"states{τρ =E σ (ρ )}whichsatisfythefollowingproperties.
+ABCD C→CD ABC
+(1) τρ isconsistentwithρ andσ,i.e.
+τρ =ρ and τρ =σ . (17)
+ABC ABC BCD BCD
+(2) Vanishingconditionalmutualinformation,
+I(A:CD|B)τρ =I(AB:D|C)τρ =0, ∀ρ. (18)
+(3) TheconservationofvonNeumannentropydifference,forarbitraryρ,ρ′ ∈S,
+S(τρ )−S(τρ′ )=S(ρ )−S(ρ′ ). (19)
+ABCD ABCD ABC ABC
+Thesignificanceofthislemmaliesonthefactthatonecanguaranteetheexistenceofaglobal
+state from a (relatively) local information. What is given to us are the density matrices over ABC
+and BCD, together with the conditions that can be verified on ABC and BCD. In particular, these
+conditionscanbedirectlyverifiedfromthegivenstates.Oncetheconditionsareverified,onecan
+guaranteetheexistenceofastateoverABCDthatisconsistentwiththegivendensitymatrices.
+The merging lemma (Lemma 3.8), together with our axioms (Axioms A0 and A1) underpin the
+majority of our technical work. The interplay between the two is what allows us to start from
+strictly local information and conclude something nontrivial at a larger scale. Roughly speaking,
+such analysis is carried out as follows. Our axioms allow us to upper bound certain conditional
+mutual information by 0. We can then apply this fact to Lemma 3.8 repeatedly to merge (many)
+density matrices. In particular, we can merge elements of multiple information convex sets into
+anelementofyetanotherinformationconvexset.Thisnotonlyallowsustosmoothlydeformthe
+boundaryofasubsystem(Fig.8)butalsoallowsustoconsidermergingprocesseswithnontrivial
+topologychanges;seeSection4.3.
+Now, we are in a position to prove the isomorphism theorem. This theorem establishes an
+equivalencebetweentwoinformationconvexsetswhoseunderlyingsubsystemscanbesmoothly
+deformed into each other. We first explain a method to establish the equivalence when one
+subsystemismerelyan‘‘infinitesimal"deformationoftheother.Ofcourse,thewordinfinitesimal
+should not be taken literally, because we are considering a quantum many-body system on a
+lattice.Whatwemeanisthatonesubsystemcanbeobtainedfromtheotherbyeitherattachingor
+removingaregionwhosesizeiscomparabletothatoftheµ-disks.
+Imagine zooming into the region in which this deformation occurs. Without loss of generality,
+wecanconsidertwosubsystemsΩ =ABC andΩ′ =ABCDdepictedinFig.8,whereCDiscontained
+inaµ-disk.WecanshowthatthereexistsabijectionbetweenΣ(Ω)andΣ(Ω′).Thisisthecontent
+ofProposition3.9.TheproofisinAppendixC.
+
+14 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.8. TwoslightlydifferentsubsystemsΩ=ABC andΩ′=ABCD(onlyapartofAisshown).BCDisadiskandCDis
+containedinaµ-disk.ThetopologyofAcanbearbitrary.WerequireBtobethickenough,sothatAandDareseparated
+byatleast2r+1.(Recallthatr isthescaleusedindefiningtheµ-disks;seeEq.(2).)
+Proposition 3.9. Consider the partition in Fig. 8. (Note: A and D are assumed to be separated by at
+least2r+1inFig.8.)LetthedomainofTr andE σ tobeΣ(Ω′)andΣ(Ω)respectively.
+D C→CD
+ImTr ⊆Σ(Ω)
+D
+ImE
+C
+σ
+→CD
+⊆Σ(Ω′ ). (20)
+Moreover,forallρ
+Ω
+∈Σ(Ω)andρ
+Ω′
+∈Σ(Ω′),
+Tr D ◦E C σ →CD (ρ Ω) = ρ Ω , (21)
+E C σ →CD ◦Tr D (ρ Ω′) = ρ Ω′ . (22)
+σ
+Inparticular,Tr andE arebijections.
+D C→CD
+Asasidenote,Proposition3.9furtherimpliesthattheisomorphismE σ :Σ(Ω)→Σ(Ω′)is
+independentofthechoiceofBandC.Toseewhy,considertwochoices,sa C y → B CD C ⊆Ω andB′C′ ⊆Ω.
+t C w on o s m id a e p r s t , w is o m m a a p p p s e E d C σ → in C t D o a t n w d o E d C σ i ′ f → fe C r ′D en .S t u e p le p m os e e n t t h s e o r f e Σ ex (Ω ist ′ s ). a U n p e o le n m a e p n p t ly o i f n Σ gT (Ω r ) t w o h th ic e h s , e u t n w d o er s t t h at e e s s e ,
+D
+byProposition3.9,bothstatesmustbemappedbacktothesamestate.ThisimpliesthatTr isnot
+D
+injective,whichcontradictsProposition3.9.
+TherearetwosimplecorollariesofProposition3.9,whichwillbecomehandyintherestofthe
+σ
+paper.First,thebijectivemapTr andE preservesthedistancebetweentwostates.
+D C→CD
+Corollary3.9.1(DistancePreservation).Letρ
+Ω
+,ρ
+Ω
+′ ∈Σ(Ω)andρ
+Ω′
+,ρ
+Ω
+′
+′
+∈Σ(Ω′).Foranydistance
+measureD(·,·)betweenquantumstates,
+D(ρ Ω ,ρ Ω ′ )=D(E C σ →CD (ρ Ω),E C σ →CD (ρ Ω ′ )) (23)
+and
+D(ρ Ω′ ,ρ Ω ′ ′)=D(Tr D (ρ Ω′),Tr D (ρ Ω ′ ′)). (24)
+Proof. Forbothidentities,theproofispracticallyidentical.Soweonlydiscusstheproofofthefirst
+σ
+identity.BecausebothE andTr areCPTPmaps,distanceisnonincreasingunderthesemaps.
+C→CD D
+Therefore,
+D(ρ Ω ,ρ Ω ′ )≥D(E C σ →CD (ρ Ω),E C σ →CD (ρ Ω ′ ))
+≥D(Tr D ◦E C σ →CD (ρ Ω),Tr D ◦E C σ →CD (ρ Ω ′ )) (25)
+=D(ρ
+Ω
+,ρ
+Ω
+′ ),
+whereinthelastlineweusedProposition3.9.Therefore,D(ρ Ω ,ρ Ω ′ )=D(E C σ →CD (ρ Ω),E C σ →CD (ρ Ω ′ )). □
+pro
+W
+of
+e
+ap
+n
+p
+o
+l
+t
+i
+e
+es
+th
+to
+at,
+th
+w
+e
+h
+p
+il
+r
+e
+es
+w
+er
+e
+va
+o
+t
+n
+io
+l
+n
+y
+o
+co
+f
+n
+t
+s
+h
+i
+e
+de
+f
+r
+id
+ed
+eli
+d
+ty
+ist
+F
+a
+(
+n
+ρ
+c
+,
+e
+τ
+s
+)
+b
+=
+etw
+(T
+e
+r
+e
+√
+n√tw
+ρ
+o
+τ
+√qu
+ρ
+a
+)
+n
+2.
+tu
+W
+m
+hi
+s
+l
+t
+e
+at
+f
+e
+id
+s
+e
+,
+l
+t
+it
+h
+y
+e
+is
+sa
+n
+m
+o
+e
+t
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 15
+adistancemeasure,itsbehaviorismonotonicunderapplicationofCPTPmaps.Therefore,theproof
+ofCorollary3.9.1stillapplies.
+σ
+Infact,wecanshowmore.EventheentropydifferenceispreservedunderTr andE .The
+D C→CD
+proof of this statement is a simple byproduct of the proof of Proposition 3.9. The proof follows
+immediatelyfromproperty(3)ofLemma3.8.
+Corollary 3.9.2 (Entropy Difference Preservation). Let ρ Ω ,ρ Ω ′ ∈ Σ(Ω) and ρ Ω′ ,ρ Ω ′ ′ ∈ Σ(Ω′). The
+vonNeumannentropiessatisfy
+S(ρ Ω)−S(ρ Ω ′ )=S(E C σ →CD (ρ Ω))−S(E C σ →CD (ρ Ω ′ )) (26)
+and
+S(ρ Ω′)−S(ρ Ω ′ ′)=S(Tr D (ρ Ω′))−S(Tr D (ρ Ω ′ ′)). (27)
+Therefore,givenasubsystemΩanditsinformationconvexsetΣ(Ω)wecanestablishabijection
+betweenΣ(Ω)andΣ(Ω′)whereΩ′isaslightdeformationofΩ.InordertoapplyProposition3.9,
+Ω′ mustbetopologicallyequivalenttoΩ.Werefertotheprocessofsubtracting/addingadisk-like
+regiontoagivensubsystemastheelementarystepofthedeformation.
+The isomorphism between two information convex sets can be established by repeating these
+elementarysteps.However,wehavetobecarefulontwopoints.First,fortwogiventopologically
+equivalentsubsystems,therecanbemorethanonewaytodeformonetotheother.Second,even
+iftheunderlyingsubsystemsaretopologicallyequivalent,theremaynotbeasmoothdeformation
+betweenthetwo.Asatrivialexample,supposewehavetwospheres.Wecanplacetwosubsystems
+oneachofthesespheres.Evenifthesesubsystemsaretopologicallyequivalenttoeachother,there
+isnosequenceofsubsystemsthatsmoothlydeformsonetotheother.Evenonaconnectedspace,
+onecannotmakesuchastatement;seeFig.10.
+Therefore, these (potentially different) isomorphisms must be labeled by their paths. Let us
+formalizethisnotionbelow.
+Definition 3.2 (Path). A finite sequence of subsystems {Ωt} with t = i/N and i = 0,1,2,...,N,
+(N isapositiveinteger),isapathconnectingΩ0 andΩ1 ifeachpairofnearbysubsystemsinthe
+sequencearerelatedbyanelementarystepofdeformation,illustratedinFig.8.
+Becauseapathisbuiltupfromelementarysteps,weobtainthefollowingtheorem.
+Theorem3.10(IsomorphismTheorem). IfΩ0 andΩ1 areconnectedbyapath{Ωt},thenthereisan
+isomorphism
+Φ {Ωt} : Σ(Ω0)→Σ(Ω1) (28)
+uniquely determined by the path {Ωt}. Moreover, it preserves the distance and the entropy difference
+betweenelements
+D(ρ,σ)=D (Φ {Ωt}(ρ),Φ {Ωt}(σ) ) (29)
+S(ρ)−S(σ)=S (Φ {Ωt}(ρ) )−S (Φ {Ωt}(σ) ), (30)
+whereD(·,·)isanydistancemeasurewhichisnon-increasingunderCPTP-maps.
+WeomittheproofsinceitstraightforwardlyfollowsbyapplyingProposition3.9repeatedly.For
+anypath{Ωt},wecandefineaninvertedpath{Ω1−t}whichreversesthesequenceofsubsystems.
+ThisleadstotheinverseisomorphismΦ
+{Ω1−t}
+: Σ(Ω1)→Σ(Ω0).
+Generallyspeaking,differentpathsmaygiverisetodifferentisomorphisms.Thatis,undertwo
+differentisomorphisms,anelementoftheinformationconvexsetmaybemappedtotwodistinct
+elements.However,sometimes,wemerelyneedtheexistenceofanisomorphism.Inthatcase,we
+willuseanotation
+Σ(Ω0) ∼=Σ(Ω1)
+toindicatetheexistenceofsuchanisomorphism.Underthiscondition,anydistancemeasureand
+entropydifferenceispreserved;seeEqs.(29)and(30).
+
+16 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Table2
+Physicaldatathatcanbeextractedfromdiskswithdifferentnumberofholes.
+Physicaldata Numberofholes
+Superselectionsectors 1
+Fusionmultiplicities 2
+Axiomsofthefusiontheory 1,2,3,4(merging)
+4. Fusiondatafrominformationconvexsets
+The isomorphism theorem (Theorem 3.10) guarantees that the structure of the information
+convex set only depends on the topology, as long as the underlying subsystems can be smoothly
+deformedfromonetoanotheralongsomepath.
+Wenowfocusonhowtoextracttheinformationofthetopologicalchargesandthecorrespond-
+ingfusionrulesfromtheinformationconvexset.Wedothisbystudyinghowthegeometryofthe
+information convex set depends on the topology of the underlying subsystem. We then use the
+merging technique (Lemma 3.8) to relate subsystems with different topologies and obtain several
+consistencyequations.Wethendefinethefusionrulesandshowthattheysatisfyalltheconstraints
+expectedfromtheknownalgebraictheoryofanyon[12].Theresultofthisstudyissummarizedin
+Table2.
+4.1. Superselectionsectors/topologicalcharges
+Let us define a notion of superselection sectors, which is one of the key ingredients of the
+algebraictheoryofanyon[12].Historically,thenotionofsuperselectionsectorswasintroducedin
+thecontextoflocalfieldtheory;see[35,36].Inthecontextoftopologicallyorderedsystemswhich
+ismostrelevanttoourdiscussion,anontrivialsuperselectionsectorcorrespondstoananyontype
+thatcannotbecreatedbyanylocaloperator.
+There are several recent attempts to rigorously formulate the superselection sectors based on
+operatoralgebraassumptions.Oneapproachisbasedontheoperatoralgebraonanannulus[28,37],
+and another approach is based on the operator algebra on a cone-like subsystem of an infinite
+lattice[38,39].Ourapproachtocharacterizethesuperselectionsectorsissimilartotheonebased
+ontheoperatoralgebraonannuli.However,thesetwoapproachesdifferintheirassumptionsand
+theirrangeofvalidity.
+Wewillidentifyawell-definedinformation-theoreticobjectandfindthatthisobjectcoincides
+with the conventional notion of superselection sectors in anyon theory. Importantly, we find that
+theinformationconvexsetofanannulusformsasimplex(Theorem4.1).Thesimplexhasafinite
+number of extreme points. Moreover, these extreme points are orthogonal to each other. See
+Fig. 9(c) for an illustration. (See Appendix A.1 for the general definition of extreme points.) We
+willdefinetheseextremepointsasthesuperselectionsectors.
+Theorem4.1(SimplexTheorem). ForanannulusX,theinformationconvexsetistheconvexhullofa
+finitenumberoforthogonalextremepoints,{σa},i.e.
+X
+{ ⏐ }
+⏐ ⨁
+Σ(X)= ρ ⏐ρ = p σa , (31)
+X⏐ X a X
+⏐
+a
+where{a}isafinitesetoflabelsand{p }isaprobabilitydistribution.
+a
+orth
+H
+o
+e
+g
+r
+o
+e
+n
+w
+al
+e
+ity
+sh
+f
+o
+o
+w
+llo
+a
+w
+s
+s
+k
+f
+e
+r
+t
+o
+c
+m
+h o
+th
+f
+e
+th
+f
+e
+ac
+p
+to
+ro
+ri
+o
+z
+f
+at
+o
+i
+f
+on
+Th
+p
+e
+r
+o
+o
+r
+p
+e
+e
+m
+rty
+4.1
+of
+. (
+t
+S
+h
+e
+e
+e
+fi
+A
+d
+p
+e
+p
+li
+e
+ty
+nd
+F
+i
+(
+x
+ρ
+D
+,τ
+.1
+)
+f
+=
+or
+(
+t
+T
+h
+r
+e
+√
+f√ul
+ρ
+l p
+τ
+r√oo
+ρ
+f
+)
+.
+2
+)
+.
+T
+L
+h
+e
+e
+t
+F bethefidelityoftwoextremepointsintheinformationconvexsetofX =LMRinFig.9(a)(We
+X
+usethesameconventionforsubsystems).ByusingthefactthatanyextremepointhasI(L:R)=0
+(CorollaryD.5.1),wefind
+F =F F . (32)
+LR L R
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 17
+Fig. 9. (a) Division of an annulus X into three thinner annuli L, M, R. (b) A path (extensions-extensions-restrictions-
+restrictions)whichgeneratesanisomorphismΣ(L) ∼=Σ(X) ∼=Σ(R).(c)Aschematicdepictionofthesimplexstructure
+of Σ(X). The extreme points are the ‘‘corners" of the simplex. If the annulus X is contained in a disk, then one of the
+extremepointshasthevacuumlabel‘‘1".
+Fig.10. ApairofannuliX0 andX1 onatorus.TheycannotbeconnectedbyanysmoothpathbecauseX0 iscontractible
+andX1 isnon-contractible.
+Because the fidelity is non-decreasing under a partial trace, we have F ≤ F . Since X and L,R
+LMR LR
+areannuliconnectedbypaths,seeFig.9(b),theisomorphismtheoremimpliesF =F =F =F
+L R LMR
+andthus
+F ≤F2. (33)
+F ∈ [0,1]. Therefore, the two extreme points are either the same (F = 1) or orthogonal (F = 0).
+This derivation also shows that we can copy the information of the extreme point to L and R
+simultaneously. The finiteness of the label set follows from the orthogonality and the setup that
+theHilbertspaceisfinite-dimensional.
+Theorem 4.1 implies that Σ(X) forms a simplex in the state space. It has a finite number
+of extreme points {σa}, which can be perfectly distinguished from each other by a projective
+X
+measurement supported on the annulus. The simplex structure also implies that its elements can
+onlystoreclassicalinformationintheprobabilitydistribution{p }.TheisomorphismTheorem3.10
+a
+guarantees the universality of the label set, i.e., the fact that the same set of labels applies to all
+annuli, which could be connected to each other by a path. Note that there could be annuli not
+connectedbyanypath,e.g.,theX0andX1inFig.10.Theorem4.1isstillapplicableforbothannuli,
+butthelabelsetsforthemcanbedifferent.Thisisrelatedtotheexistenceoftopologicaldefects[24].
+One of the extreme points is special. Consider a contractible annulus (see X0 in Fig. 10 for
+example).Theinformationconvexsetofsuchannulushasaspecialextremepointwhichwelabel
+as‘‘1";physically,thiscorrespondstothevacuumsector.
+
+18 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Proposition4.2. Letωbeadisk.ForanyannulusX ⊆ω
+σ
+X
+1 ≡Trω\X σ ω , (34)
+isanextremepointofΣ(X).
+See Appendix D.2 for the proof. Importantly, the notion of vacuum sector is unambiguous
+becauseΣ(ω)hasauniqueelementifωisadisk;seeProposition3.5.
+Nowwearereadytodefinethesuperselectionsectorsinourframework.Whenthereisapairof
+anyons, the topological charge can be measured by an Aharonov–Bohm type interferometry mea-
+surementbybraidingtheanyons[40].Indeed,theprojectivemeasurementusedfordistinguishing
+different σa corresponds to this interferometry measurement for several exactly solvable models.
+X
+Based onthis observation, weidentify each label ofthe extreme pointsas a superselectionsector
+ofthesystem.
+Definition4.1. LetX beacontractibleannulus.Thesetofsuperselectionsectorsisasetofextreme
+pointsinΣ(X).
+Exceptforthevacuumsector,welabeleachextremepointswiththelower-caseRomanletters:
+C ={1,a,b,c,...}. (35)
+Several authors have already made attempts to define superselection sectors in 2D gapped
+phases. A statement analogous to the simplex theorem was obtained recently in [37] for mod-
+els with a local commuting parent Hamiltonian. This proof is based on the operator-algebraic
+frameworkofHaah[28].
+We expect our derivation to hold more generally, because we make no assumption about the
+parent Hamiltonian. If the area law (Eq. (1)) holds, our results follow. In particular, if we can
+prove approximate versions of our statements, we may be able to rigorously define a notion of
+superselectionsectorsformodelswithnon-zeroHallconductanceornon-zerochiralcentralcharge.
+ThesemodelscannothaveacommutingprojectorparentHamiltonian[41,42].
+The isomorphism theorem guarantees the label set of the superselection sector to be inde-
+pendent of the details of the annulus. However, this theorem in itself does not imply there is
+a well-defined way to compare the topological charges for two annuli. Indeed, in the presence
+of a topological defect, transporting the same superselection in two different ways may result in
+differentsector[24].
+In order to show that the isomorphisms associated with different paths are identical, one
+necessarilyhastoinvokeanextraconditiononthepaths.Lemma4.3establishesonesuchcondition.
+Roughlyspeaking,itispossibletocomparetwoannuliunambiguouslyindependentofthepath,as
+longasbothpathslieinasingledisk.
+Lemma4.3. LetX0andX1betwoannulicontainedinadiskC;seeFig.11forexample.Let{Xt }and
+(1)
+{Xt }betwopathsconnectingX0 andX1 suchthatX0 =X0,X1 =X1 fori=1,2.Moreover,assume
+(2) (i) (i)
+that∪ Xt ⊆C,∪ Xt ⊆C.Then,theisomorphisms
+t (1) t (2)
+Φ
+{Xt }
+:Σ(X0)→Σ(X1)
+(1)
+and Φ {Xt } :Σ(X0)→Σ(X1)
+(2)
+areidentical.
+Lemma4.3impliesthatwecanalwaystreatΦ
+{X ( t 1)
+}(σ
+X
+a
+0
+)asthelabelaforX1.Thekeyideabehind
+the proof is that one can copy the information about which superselection sector lies inside an
+annulustoacommonannulus;seeFig.11forillustration.TheproofisleftinAppendixD.2.
+Now that we have defined a notion of superselection sectors, we can define their quantum
+dimensions.Wewilldosobyinvestigatingacontributiontotheentanglemententropythatdepends
+onthechoiceofthissector.Wewillusethefollowingdefinition.Later,wewillbeabletodetermine
+theirvalue.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 19
+Fig.11. BothC andBC aredisks.Bisanannulus.X0,X1,X ˜0 andX ˜1 areannuli.NotethatX0 andX1 aresubsetsofC.
+IntheproofofLemma4.3,weconstructanextensionXt→X ˜t withB⊆X ˜t.
+Definition4.2(EntropyContributionofSuperselectionSector).ForacontractibleannulusX,wedefine
+theuniversalcontributiontovonNeumannentropyfromsuperselectionsectoraas
+S(σa)−S(σ1)
+f(a)≡ X X . (36)
+2
+Thedenominator2isintroducedtotakeintoaccountthatX hastwoboundaries.Foraconnected
+2Dmanifold,f(a)isarealnumberthatdoesnotdependonthechoiceofthecontractibleannulus.
+This is because the entropy difference is preserved by an isomorphism. Furthermore, f(1) = 0 by
+definition.
+Later, we shall study similar contributions for a n-hole disk with n ≥ 2. We will find that f(a)
+appears generically, even for these more generic subsystems. The repeated appearance of these
+objectshintatapossibilitythattheremaybenontrivialrelationsconcerningf(a).Indeed,wewill
+later see that f(a) = lnd , where d is the quantum dimension of an anyon/superselection sector
+a a
+a.Wewillalsobeabletoderivethefusionaxiomsandanexpressionfortopologicalentanglement
+entropy.
+4.2. Fusionrulesandfusionspaces
+Thefusionrulesdeterminethepossiblechoiceofthetotalcompositetopologicalchargeoftwo
+giventopologicalcharges.Inthealgebraictheoryofanyons,thefusionruleforchargesaandbis
+formallywrittenas
+∑
+a×b= Nc c,
+ab
+c
+where N a c b ∈ Z ≥0 is the fusion multiplicity. This is analogous to the fact that two spin- 2 1 particles
+can fuse into spin-0 or spin-1 particle. Nevertheless, there is a fundamental difference between
+the fusion of spins and that of anyons. For the definition of particle spins and their fusion rules,
+rotational symmetry is often needed either in the Hamiltonian or the Lagrangian. In contrast, the
+notionoftopologicalchargesandtheirfusionsareexpectedtoemergefromthecollectiveproperties
+ofamany-bodyquantumsystem[12,43,44].Indeed,weemphasizethatouraxioms(AxiomsA0and
+A1)areunrelatedtoanysymmetry.
+Inourframework,thesuperselectionsectorswereidentifiedfromannuli.Thus,onemayexpect
+thefusionrulestobeextractedfrom2-holedisks.Inthissection,weshowthatthisisindeedthe
+case.Letusconsidera2-holediskY,whichwedepictinFig.12.LetB ,B andB bethethreeannuli
+1 2 3
+around the boundaries of Y. The information convex set of each annulus has the same simplex
+structure,andwecanlabeltheextremepointsbythesamelabelset.LetΣc (Y)beaconvexsubset
+ofΣ(Y),definedas ab
+⎧ ⎪⎨ ⏐ ⏐ ⏐ Tr Y\B1 ρ Y =σ B a 1 ⎫ ⎪⎬
+Σ a c b (Y)≡ ⎪⎩ ρ Y ∈Σ(Y)⏐ ⏐ ⏐ ⏐ T T r r Y Y \ \ B B 2 3 ρ ρ Y Y = = σ σ B B b c 2 3 ⎪⎭ , (37)
+
+20 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.12. A2-holediskY =BY′,withB=B1B2B3.B1,B2 andB3 arethreeannulisurroundingthethreeboundariesofY.
+YDisadisk,whereD=D1D2.D1 andD2 arethetwodiskssurroundedbyannuliB1 andB2.
+where σa is an extreme point of Σ(B), i = 1,2,3. The convention of charge labeling among the
+different
+Bi
+annuli isfixedbyLemma 4.3
+i
+.Σc (Y)may beemptyifthere isnostate satisfyingallthe
+ab
+conditions.Wecallsuchacombinationof(a,b,c)forbidden.
+We show that every extreme point of Σ(Y) is contained in some Σc (Y). Because Σ(Y) is
+ab
+a convex set, the entire set can be characterized by {Σc (Y)}. Each Σc (Y) is isomorphic to the
+ab ab
+state space of a finite-dimensional Hilbert space Vc . These two results are summarized below in
+ab
+Theorems4.4and4.5.
+Theorem4.4. Fora2-holediskY,theinformationconvexsetΣ(Y)isthefollowingconvexcombination
+{ ⏐ }
+⨁ ⏐
+Σ(Y)= ρ = pc ρabc⏐ ρabc ∈Σc (Y) , (38)
+Y ab Y ⏐ Y ab
+a,b,c∈C ⏐
+where{pc }isaprobabilitydistribution.
+ab
+Proof. Aftertakingapartialtrace,thereduceddensitymatrixofanextremepointofΣ(Y)reduces
+toanextremepointofΣ(B ),Σ(B )andΣ(B ).ThisfactfollowsfromLemmaD.7intheappendix.
+1 2 3
+Therefore,everyextremepointofΣ(Y)isinΣc (Y)forsomea,b,andc.ThisimpliesEq.(38). □
+ab
+This theorem implies that one can classify the extreme points by a triple of labels (a,b,c).
+Furthermore,theconvexcombinationinEq.(38)isorthogonal,sinceonecanperfectlydistinguish
+theselabelsbyprojectivemeasurementsonthethreedistinctannuli.
+Now we study the geometric structure of each Σc (Y). We should emphasize an important
+ab
+difference between Σc (Y) and the information convex set of an annulus. On an annulus, the
+ab
+information convex set has a classical structure specified by a probability distribution {p a } a∈C . In
+contrast,Σc (Y)iscoherentinthesensethatitisisomorphictothestatespaceS(Vc )ofacertain
+ab ab
+finitedimensionalHilbertspaceVc .IfthedimensionofVc isgreaterorequalto2,thestructure
+ab ab
+ofΣc (Y)allowsthestorageofquantuminformation.Thisstructureisestablishedbythefollowing
+ab
+theorem.
+Theorem4.5. Considera2-holediskY.∀a,b,c ∈C,
+Σc (Y) ∼=S(Vc ), (39)
+ab ab
+whereVc isafinite-dimensionalHilbertspace.
+ab
+A particular choice of (a,b,c) is forbidden, when dimVc = 0. See Appendix E for the proof
+ab
+of Theorem 4.5. The key idea is to show that there is a quantum channel which simultaneously
+purifieseveryextremepointofΣc (Y)intoastateinHilbertspaceH (E isanauxiliarysystem).
+ab EY
+WethenshowthatanysuperpositionofthepurifiedstatesreducestoanextremepointofΣc (Y)
+ab
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 21
+onY.Itfollowsthatthequantumchannelwhichachievesthepurificationprovidesanisomorphism
+betweenΣc (Y)andS(Vc ).
+ab ab
+WecalltheHilbertspaceVc definedinTheorem4.5asthefusionspace.Physically,thisHilbert
+ab
+spaceisnonemptyifthesuperselectionsectorsa,bhasatotalchargeofc.Wethusdefinethefusion
+ruleusingthedimensionofthecorrespondingfusionspace.
+Definition4.3. Wedefinethefusionruleoflabelsa,binC bytheformalproduct
+∑
+a×b= Nc c, (40)
+ab
+c∈C
+whereNc ≡dimVc .
+ab ab
+TheresultsinTheorems4.4and4.5generalizeton-holediskswithn≥3.Thesameappliesto
+theconceptsoffusionspacesandfusionrules.
+4.3. Derivationoftheaxiomsofthefusionrules
+In this section, we show how the axioms of the anyon fusion theory emerge from our axioms.
+Thisderivationincludestheexistenceofantiparticlesandasetofrulesthat{Nc }hastosatisfy.
+ab
+Wehavedefinedthesetofsuperselectionsectors
+C ={1,a,b,c,...}
+intermsoftheextremepointsofΣ(X),whereX isacontractibleannulus.C isalwaysafiniteset
+andthereisauniquesector1∈C whichwerefertoasthevacuum.Wehavealsoidentifiedaset
+ofnon-negativeintegers{Nc }encodedinthestructureofΣ(Y)witha2-holediskY.
+ab
+Thefollowingisalistoftheresultswearegoingtoproveunderourdefinitions.
+1. Nc =Nc .(Proposition4.6.)
+ab ba
+2. N
+a
+c
+1
+=N
+1
+c
+a
+=δ a,c .(Proposition4.7.)
+3. The existence of an anti-sector a¯ ∈ C for ∀a ∈ C such that N
+a
+1
+b
+= δ b,a¯. (Proposition 4.9 and
+Definition4.4.)
+4. Nc =Nc¯ .(Proposition4.10.)
+5. ∑
+ab
+Ni N
+b¯
+d
+a¯
+=∑ NdNj .(Proposition4.11.)
+i ab ic j aj bc
+Together,thesepropertiesformasubsetoftheaxiomsofthealgebraictheoryofanyonoutlinedin
+AppendixEof[12],alsoknownastheunitarymodulartensorcategory(UMTC).Concretely,whatwe
+deriveinthissectionisthesetofaxiomsoffusionrulealgebra[45]whichisalsoknownunderthe
+namecommutativefusionring [46].Itcontainsslightlylessaxiomsthanafusioncategorybecause
+wehavenotdefinedtheF-symbols.6
+Inthederivationoftheaxiomsofthefusionrules,wewillextensivelyusethemergingtechnique
+to relate subsystems of different topologies. From our axioms, we can infer that elements in the
+information convex sets are quantum Markov states with respect to many relevant partitions of
+certain subsystems. Because quantum Markov states can be merged together (Lemma 3.8), we
+canmergemanyoftheelementsoftheinformationconvexsetstogether.Moreover,thismerging
+processcanberepeatedmanytimes.Withthisprocess,wecangenerateelementsofaninformation
+convexsetoversomeregionfrominformationconvexsetsofitssubregions.Wereferthereaders
+toPropositionC.5intheAppendixforthetechnicaldetails.
+Proposition4.6.
+Nc =Nc . (41)
+ab ba
+6 F-symbolswillgivefurtherconstraintstothefusionmultiplicities,thesimplestexamplesarestudiedin[47].
+
+22 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.13. Aholewiththevacuumchargecanbemergedwithadisk.Thecaseshowninthisdiagraminvolvesanannulus
+andadisk,buttheideaworksforanyn-holediskwithn≥1.Theleftsideshowsthetopologyofthesubsystemsbefore
+they are merged. Also, the number ‘‘1" is the vacuum sector. The merged subsystem is shown on the right. The three
+concentriclinespartitionthediskintothefoursubsystemsusedinthemergingprocess.
+Proof. Let us consider a path which maps a 2-hole disk Y back to itself by exchanging the
+two internal holes. Associated with this path, there is an automorphism Σ(Y) ∼= Σ(Y). The
+automorphismpermutesthelabelingandinducesanisomorphismΣc (Y) ∼=Σc (Y)foreacha,b,c.
+ab ba
+Thus,Nc =Nc . □
+ab ba
+Proposition4.7.
+N
+1
+c
+a
+=N
+a
+c
+1
+=δ a,c . (42)
+Proof. Suppose ρ ∈ Σc (Y) for 2-hole disk Y. Then the hole with the vacuum charge can be
+Y 1a
+merged with a disk, see Fig. 13. After the merging process, we obtain an annulus X. The density
+matrixobtainedfromthemergingprocessbelongstoΣ(X).Theisomorphismtheoremimpliesthat
+thetwoboundariesofX detectthesametopologicalcharge.Therefore,N
+1
+c
+a
+=δ a,c .Then,N
+a
+c
+1
+=δ a,c
+followsfromProposition4.6. □
+OneimplicationofthisresultisthatΣ1 (Y)containsauniqueelement,whichwecallσ1.This
+11 Y
+statementgeneralizeston-holediskswithn≥3.Thefollowinglemma,whichisabouttheuniversal
+contributiontothevonNeumannentropy,willbeusefulfortherestoftheproofs.Moreover,this
+lemmawillbeoneofthekeyresultsthatestablishaconnectionbetweenthiscontributionandthe
+quantumdimension.
+Lemma4.8. Letρ beanextremepointofΣc (Y)andσ1 betheuniqueelementofΣ1 (Y),then
+Y ab Y 11
+S(ρ )−S(σ1)=f(a)+f(b)+f(c), (43)
+Y Y
+wheref(·)isthefunctiondefinedinDefinition4.2.
+TheproofisinAppendixE.ThekeyideaisthatforanextremepointofΣc (Y),wecanprovea
+ab
+conditionsimilartothatinA0,whichconvertstheentropyofapairof2-holedisksintothatofthe
+threeannuliaroundthethreedisjointboundariesofY.Theresultgeneralizeseasilyton-holedisks
+foranyn≥3.
+Compared to the previous proofs, the proofs of the rest of the properties requires a new
+technique. The key idea lies in deriving consistency equations of the entropy difference, obtained
+bythefollowingfoursteps:
+(i)Obtainanelementofaninformationconvexsetbymergingtwo(orthree)extremepointsof
+theinformationconvexsetsassociatedwiththesubsystems.
+(ii)Computetheentropyofthemergedelementfromtheentropyformulaswithrespecttothe
+pre-mergedregions.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 23
+Fig.14. Mergingtwoannuliandobtaina2-holedisk.Ontherightside,therearetwothindisk-likeregionsinthemiddle,
+whicharechosentobetheBandC subsysteminthemerginglemma(Lemma3.8).
+Fig.15. Mergingapairofannulitoobtaina2-holedisk.Wefirstdeformtheannulusassociatedto1sothatitbecomes
+‘‘longer"vertically.Then,theannulusassociatedtoaismergedintotheinteriorofthisdeformedannulus.Thetwothin
+U-shapeddisk-likeregionsarechosentobethesubsystemBandC inthemerginglemma(Lemma3.8).
+(iii)Computetheentropyofthemergedelementfromtheentropyformulawithrespecttothe
+post-mergedregions.
+(iv)Theentropyobtainedfromthesetwoperspectivesmustyieldthesameresult.Thisleadsto
+asetofconsistencyequations,whichleadstoasetofnontrivialrelations.
+Foraconcreteexampleofthemethod,letusstudythecaseshowninFig.14.ThecasesinFigs.15,
+16, 18, 19 and 21 employ a similar logic. Let us explain the idea, which is broken down into four
+steps.
+(i)Wecanmergethepairofannuliforanychosenchargepaira,b∈C.Thisispossiblebecause
+theconditionsrequiredformergingaresatisfied.Letuscallthemergedstateasσa×b.Itfollowsthat
+σa×b ∈conv (⋃ Σc (Y) ) .Sincethemergedstateexists,thesetconv (⋃ Σc (Y) )Y isnonempty.This
+im
+Y
+pliesthat
+∑c
+Nc
+ab
+≥1,∀a,b∈C.Moreover,σ1×1 isequaltoσ1,whic
+c
+his
+ab
+theuniqueelementof
+c ab Y Y
+Σ1 (Y).
+11
+(ii) From the perspective of the two annuli, the von Neumann entropy difference can be
+expressedas:
+S(σa×b)−S(σ1)=2f(a)+2f(b).
+(44)
+Y Y
+This result follows from the fact that merging preserves the entropy difference; see property (3)
+of Lemma 3.8. More explicitly, this result follows from conditional independence condition (I(A :
+D|BC) = 0)ofthemergedstate;seeFig.14.HereA(D)istheupper(lower)annuli,withchargea
+(b);thetwoannuliareseparatedbydisk-likeregionBC inthemiddle.
+
+24 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.16. Mergingapairof2-holediskstoobtaina4-holedisk.
+(iii)Fromtheperspectiveofthe2-holediskY,thevonNeumannentropydifferenceis
+S(σa×b)−S(σ1)
+Y Y
+=f(a)+f(b)+ln( ∑ Nc ef(c)). (45)
+ab
+c
+Toderivethisresult,notethatthemergedstateisthemaximalentropyelementinconv (⋃ Σc (Y) ) .
+Thisisbecausetheentropyofanystateinconv (⋃ Σc (Y) ) canbeupperboundedbyitsm c ar a g b inals
+c ab
+bytheSSAandthemergedstatesaturatesthisbound.GiventhestructureofΣ(Y),itiseasytofind
+themaximalentropyintermsof{Nc }andf(·).Wecalculatedthemaximalentropyandobtained
+ab
+Eq.(45)[23].
+(iv)BycomparingthetwoperspectivesinEqs.(44)and(45),wefind
+∑
+ef(a)ef(b) = Nc ef(c). (46)
+ab
+c
+Readerswell-versedinthefusiontheoryofanyonmayhavenoticedthesimilaritybetweenef(a)and
+thequantumdimension[12].Thisisnotacoincidence.InSection5,weshallseethattheyare,in
+fact,thesamething.Toestablishtheirequivalence,wewillderiveafewmoreidentitiesinvolving
+{Nc }.
+ab
+Moreover,wecancalculatetheprobabilityofhavingchargec onthethirdboundary
+Nc ef(c)
+P (a×b→c) =
+ef(
+a
+a
+b
+)ef(b)
+. (47)
+Itsphysicalmeaningistheprobabilitytohaveanoutcomec fromthefusionoftwoindependently
+createdchargesaandb.Intermsofthedensitymatrices,P (a×b→c) isthecoefficientoftheelement
+inthecenterofΣc (Y)whenwritingσa×b intermsofaconvexcombination.
+ab Y
+It is worth noting that the same function f(·) appears in the entropy of the annulus and the
+2-hole disk. This is crucial for the comparing the two perspectives (Eqs. (44) and (45)). With this
+equivalence, we are in a position to derive more properties of {Nc }. In deriving these properties,
+ab
+wewillcurtailourexplanationabit,becausetheargumentisessentiallythesame.
+Proposition4.9. Foreachchargesectora∈C,thereisauniquesectora¯ ∈C suchthat
+N
+a
+1
+b
+=δ b,a¯ . (48)
+Itfurthersatisfiesthefollowingproperties.
+1 ¯ =1, a ¯¯ =a, f(a¯)=f(a). (49)
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 25
+Fig.17. Thefusionof(a,b)and(b ¯,a¯),andmatchingthefusionprobabilitiesP(a×b→c) andP (b¯×a¯→c¯) .
+Proof. Fromthemergingoftwoannuliwithcharges1andashowninFig.15,wecanderivethat
+∑ N1 ≥1,∀abecausethemergedstatealwaysexists.Furthermore,ef(a) =∑ N1ef(b).
+b ab b ab
+LetuspickasectorbsuchthatN1 ≥1.Wecanseethatef(a) ≥ef(b).However,sinceN1 =N1,
+ab ab ba
+by repeating the same logic we obtain ef(b) ≥ ef(a). For both of them to be true, we must have a
+u
+N
+n
+1
+iq
+=
+ue
+N
+s
+1
+ec
+=
+tor
+1,
+a¯
+w
+su
+e
+c
+h
+h
+a
+t
+v
+h
+e
+at
+a ¯¯
+N
+= a
+1
+b a
+=
+.
+δ
+□
+b,a¯ andf(a)=f(a¯).ThenitfollowsfromN
+1
+1
+1
+=1that1 ¯ =1.Since
+a¯a aa¯
+Definition 4.4 (Antiparticle). We define the antiparticle of a ∈ C as the unique sector a¯ ∈ C
+establishedinProposition4.9.
+The definition of a¯ is universal and insensitive to the choice of the subsystem. Furthermore,
+onasphere,onecouldalternativelydefinea¯ accordingtoanontrivialautomorphismofΣ(X),see
+AppendixG.
+Proposition4.10.
+N a c b =N b¯ c¯ a¯ . (50)
+Proof. We consider the merging process in Fig. 16. Before merging, the density matrices are two
+extreme points from Σ1(Y ) and Σ1(Y ), if we call the pair of 2-hole disks as Y and Y . Since
+N
+1
+a
+1
+=δ 1,a ,theoutermos a t a¯ bo u undaryo b f b¯ th d emergedsubsystemmusthavecharge1. u d
+Now let us view the merged state in a different way, as depicted in Fig. 17. We have derived
+b t ¯ h × at a¯ N a c 1 r d e = per δ f d e ,c¯ c , tl w y h c i o c r h re i l m at p e l d ie . s W t h h e a n t e i v n e t r h w e e m g e e r t g t e h d e s o t u a t t c e o , m th e e c fu fr s o io m n t o h u e tc fu om sio e n o o f f a a × an b d a b n , d we th m at u o st f
+getc¯ fromthefusionofb ¯ anda¯.
+Furthermore,aandbinthisstateare‘‘independentlycreated"inthesensethatfusionprobability
+P (a×b→c) obeys Eq. (47). To see why, consider partial trace operations over (i) a region which
+connects the hole with charge a¯ to the outer boundary and (ii) a region which connects the hole
+¯
+with charge b to the outer boundary. These regions are chosen so that the remaining subsystems
+aretopologicallyequivalenttotheonesappearingontherightsideofFig.14.Recallingthegeneral
+inequality I(AA′ : CC′|B) ≥ I(A : C|B), we observe that the annulus associated with a and the
+annulus associated with b are independent conditioned on a disk-like region in between them
+thatseparatesthetwoannuli.Aswehavealreadydiscussedabove,thisconditionalindependence
+conditionimpliesthatP (a×b→c) obeysEq.(47).Ofcourse,ananalogousargumentcanbeappliedto
+P (b¯×a¯→c¯) .
+Becausec andc¯ arecompletelycorrelated,
+P (a×b→c) =P (b¯×a¯→c¯) . (51)
+Then,noticingf(a)=f(a¯)fromEq.(49),wecanderiveNc =Nc¯ . □
+ab b¯a¯
+
+26 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.18. Mergingapairof2-holediskstoobtaina3-holedisk.HereZ =Yl ∪YR =YL ∪Yr.Herea,b,c,d,i,jarelabels
+ofthetopologicalcharges.
+Asmentionedearlier,theresultsinTheorems4.4and4.5generalizeton-holediskswithn≥3,
+and the same applies to the concepts of fusion space and fusion rules. Let us introduce a few
+notationsforn=3whichareusefulforthenextproof.Fora3-holediskZ,weuseΣ(Z)todenote
+itsinformationconvexset,Σd (Z)todenotetheconvexsubsetofΣ(Z)withfixedchargesa,b,c,d
+abc
+ontheboundaries(Fig.18).ThecorrespondingfusionspaceVd abc hasafinitedimensionN a d bc ∈Z ≥0 .
+Proposition4.11. Thefusionrulesareassociative,i.e.,
+∑ ∑
+Nd = Ni Nd = NdNj . (52)
+abc ab ic aj bc
+i j
+Proof. Thekeyideaistoobtaina3-holediskZ intwodifferentways;seeFigs.18and19.Thefirst
+method gives us a lower bound of Nd in terms of Nc , and the second method shows the bound
+abc ab
+saturates.
+Let us consider the merging of a pair of 2-hole disks to obtain a 3-hole disk shown in Fig. 18.
+Wesummarizethelogicinastreamlinedfashionin(i),(ii),(iii)below.
+(i)LetusconsidertheleftsideofFig.18,whichdescribesthemergingofY andY .Wepickan
+l R
+orthonormalbasisofVi ,whichcanbechosentobetheextremepointsofΣi (Y).Thenumberof
+ab ab l
+suchextremepointsisequaltoNi ,whichisthedimensionoftheHilbertspaceVi .Applyingthe
+ab ab
+samelogictoY ,weseethatthenumberoftheseextremepointsisNd.
+R ic
+(ii)Letuspicktwoarbitraryextremepointsfromthesetsdiscussedabove(onefromΣi (Y)and
+ab l
+anotherfromΣd(Y ))andmergethem.WegetanelementinΣd (Z).Itisanextremepoint.This
+ic R abc
+fact is verified by calculating the von Neumann entropy and making use of the 3-hole version of
+Lemma4.8.Thisway,wegetNi Nd numberofextremepoints,andanytwoofthemareorthogonal.
+ab ic
+ThisfollowsfromthefactthatfidelityisnondecreasingunderaCPTPmap.
+(iii) By applying the merging process for all i, we find ∑ Ni Nd mutually orthogonal extreme
+i ab ic
+pointsofΣd (Z).Therefore,wemusthave
+abc
+∑
+Nd ≥ Ni Nd. (53)
+abc ab ic
+i
+The reason is Nd is the maximal number of mutually orthogonal extreme points in Σd (Z).
+abc abc
+Similarly,fromtherightsideofFig.18,wehave
+∑
+Nd ≥ NdNj . (54)
+abc aj bc
+j
+We did not find a way to turn ‘‘≥" into ‘‘=" from Fig. 18 alone. However, we can show ‘‘=" by
+considering a different way of merging subsystems; see Fig. 19. The merged element, which we
+callσa×b×c,isthemaximalentropyelementofconv (⋃ Σd (Z) ) .Comparingwithσ1,theunique
+Z d abc Z
+elementofΣ1 (Z),ithasanextra2(f(a)+f(b)+f(c))contributiontothevonNeumannentropy.
+111
+Ontheotherhand,weusethestructureofΣ(Z)tocalculatethemaximalentropyinthesectorwith
+chargea,b,cintermsof{Nd },wefindacontributionequalstof(a)+f(b)+f(c)+ln( ∑ Nd ef(d)).
+abc d abc
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 27
+Fig.19. Mergingthreeannulitoobtaina3-holedisk.
+Thesetwoperspectivesmustprovideaconsistentanswer.Thus,
+∑
+ef(a)ef(b)ef(c) = Nd ef(d). (55)
+abc
+d
+However,fromEq.(46)weknowthat
+∑ ∑
+ef(a)ef(b)ef(c) = ( Ni Nd)ef(d) (56)
+ab ic
+d i
+andef(·) ispositivesincef(·)isreal.Sothe‘‘≥"inEq.(53)mustbereplacedby‘‘="andthesame
+replacementworksforEq.(54).Thus,weconcludethatEq.(52)holds. □
+TheresultandproofofProposition4.11generalizeston-holediskswithn>3.
+5. Topologicalentanglemententropy
+In this section, we show that the sub-leading term γ of the area law (1) for a disk is given by
+thewell-knownformula
+γ =lnD, (57)
+where D is the total quantum dimension defined from our definition of the fusion multiplicities
+{Nc }.Weshowthisresultbycalculatingtwodifferentlinearcombinationsofsubsystementropies7
+ab
+respectivelyproposedbyKitaev–Preskill[13]andLevin–Wen[14],seeFig.20.
+The sub-leading term γ is called the topological entanglement entropy (TEE) [13]. There are
+twoknownmethodsforderivingTEE:assuminganunderlyingfieldtheorydescriptionorexplicitly
+calculating entropy in an exactly solvable model. Our method, on the other hand, shows that the
+arealawformulaitselfimpliestheequivalenceofTEEandlnD,whichmaybeapplicabletoalarger
+classofsystems.Theingredientsbehindthisproofarescatteredinliterature[16,19,21,22].Recently,
+oneofusshowedthatthequantumdimensionmustshowupinthevonNeumannentropyifthe
+fusion space is coherently encoded in the 2-hole disk [23]. In this work, we further reduce the
+assumptiontoourAxiomsA0andA1.Theendresultisthesame.
+Webeginbydefiningthequantumdimensionsinourframework.
+7 More precisely speaking, we show that a certain linear combination of entanglement entropy must be lnD. This
+resultimpliesthatγ =lnDistheonlyconsistentvalueofthesub-leadingterminthearealawformulaEq.(1).
+
+28 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.20. (a)TheKitaev–Preskillpartition;(b)theLevin–Wenpartition.
+Fig.21. Mergingapairofdiskstoobtainanannulus.Twodisksaredeformedsothat,oncemergedtogether,theyform
+anannulus.
+Definition 5.1. We define the set of quantum dimensions {d } as the unique positive solution of
+a
+theequationset
+∑
+d d = Nc d , (58)
+a b ab c
+c
+where Nc is defined in Definition 4.3. We also define the total quantum dimension D by D =
+√∑ ab
+d2.
+a∈C a
+Note that given the results in Section 4.3, the uniqueness of Eq. (58) is guaranteed by the
+Perron–Frobeniustheorem,seee.g.appendixof[23]foraself-containedderivation.Furthermore,
+d a¯ =d a , d a ≥1, d 1 =1. (59)
+Recall that, from the merging in Fig. 14, we have obtained Eq. (46), and since ef(a) is positive, we
+musthave
+f(a)=lnd . (60)
+a
+InRef.[14],itisproposedthattheconditionalmutualinformationI(A:C|B)forthepartitionin
+Fig.20(b)matchesto2lnD.Inthepaper,itisprovenforaclassofexactlysolvablemodelcalledthe
+Levin–Wenmodel(alsoknownasthestring-netmodel)[48].Hereweshowthatthesameformula
+alsoholdsinourframework.
+Proposition5.1. FortheLevin–Wenpartition(Fig.20(b)),itholdsthat
+I(A:C|B)σ1 =2lnD. (61)
+Proof. Let us consider the merging process in Fig. 21, which obtains an annulusX from a pair of
+disks. Let σ˜ ∈ Σ(X) be the element obtained from merging. It is in the center of Σ(X), i.e. the
+X
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 29
+maximal entropy element. Dividing X according to the Levin–Wen partition in Fig. 20(b), gives
+I(A:C|B)σ˜ =0becauseofthepropertyofthemergedstate;seeLemma3.8.
+Because of the simplex structure of Σ(X) (see Theorem 4.1) and the fact that f(a) is equal to
+lnd (seeEq.(60)),wecanexpressσ˜ asaconvexcombinationofextremepoints
+a X
+∑ d2
+σ˜ = a σa.
+X D2 X
+a
+ThisformulaisobtainedbymaximalizingthevonNeumannentropy.Fromit,onederivesS(σ˜ )−
+X
+S(σ1)=2lnD.ItfollowsthatEq.(61)istrue. □
+X
+Proposition5.2. FortheKitaev–Preskillpartition,
+γ ≡(S
+AB
++S
+BC
++S
+CA
+−S
+A
+−S
+B
+−S
+C
+−S
+ABC
+)σω (62)
+whereω=ABC,seeFig.20(a),thenγ =lnD.
+TheideaoftheproofistorelatetheLevin–WencombinationwithtwocopiesofKitaev–Preskill
+combinations.SeeAppendixFfortheproof.
+Becausetherearegappedsystemsinwhichtheseaxiomsareviolatedbyspuriouscontributions
+to the area law [49,50], one should not expect our result is applicable to every gapped system.
+These violations may be pathological unless certain symmetries are imposed. However, they can
+persistincertainsubsystemsymmetry-protectedphases[51].Reconcilingourframeworkwiththese
+systemsremainsasanoutstandingopenproblem.Nonetheless,ourresultdoesshedsomelighton
+arelatedissue:ifwecheckthequantumstateonafinitelengthscaleandverifyA0andA1,then
+itisguaranteedthatTEEwillnotsufferfromanyspuriouscontributiononalllargerlengthscales.
+6. Summaryanddiscussions
+In this paper, we have initiated a derivation of the axioms of the algebraic theory of anyon
+fromaconjecturedformofentanglementarealawforthegroundstatesof2Dgappedphases.Our
+framework is based on two entropic constraints (Axioms A0 and A1), which are implied by the
+area law formula. We have defined the superselection sectors and the fusion spaces through the
+geometryoftheinformationconvexsets.Theaxiomsoftheanyonfusiontheoryarederivedfrom
+the internal self-consistency relation of the information convex sets. Moreover, we have provided
+a rigorous derivation of the well-known formula for TEE, γ = lnD. While our main physical
+motivationwastoconsidergroundstatesof2Dgappedphases,weonlyrequiredasinglequantum
+state satisfying our axioms as the input. Our result implies that many of the anyon data can be
+extractedfromlocalinformationofasinglegroundstatealone.
+Someofthereadersmaycontestthatourexactarealawassumptionisunrealistic.Itwouldbe
+desirabletorelaxthisassumptiontosomethingthatislessrestrictive.Weexpectourframeworkto
+haveanaturalextensiontothecaseinwhichAxiomA0andA1holdsapproximately.Thisisbecause
+everytechnicaltoolwehaveusedinthispaperhasananalogforsuchsituations.Forinstance,the
+merginglemmacanbegeneralizedbyusingtheapproximaterecoverymap[52].
+ItshouldbenotedthattherearegappedsystemsinwhichAxiomA1isviolated.Suchcorrections
+are known as the spurious contributions to the area law [49,50]. The existence of the spurious
+contributionimpliesthatoneshouldnotexpectourresulttoholdineverygappedsystem.While
+wedonothaveasolutiontothisproblem,onemayhopetotakeoneofthefollowingapproaches.
+First,onemayshowthatthenotionofsuperselectionsectorsandthefusionrulesarestableunder
+a finite-depth quantum circuit when starting from a state that satisfies our axioms. Alternatively,
+onemayattempttoshowthatthereisalwaysafinite-depthquantumcircuitthatcanremovethe
+spuriouscontribution.
+While we have proved a set of axioms pertinent to the anyon fusion theory, further work is
+necessarytoreproducetheanyontheoryinitsknownform.Itwouldbeinterestingtoinvestigate
+whetherouraxiomsgiverisetoawell-definednotionofRandF-symbols.Also,couldtheS andT-
+matricesbeextractedfromasinglegroundstate?Canweprovethateveryanyontheoryconsistent
+
+30 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+with our axioms are modular? To tackle these questions, one may need to recover a certain U(1)
+phasethatismissinginthedensitymatrixformulation,perhapswiththehelpofthestringoperator
+showntoexistinAppendixH.
+A more ambitious question is whether we can arrive at a complete classification of two-
+dimensional gapped phases from our axioms. The current conjecture [12] is that two systems are
+in the same phase if and only if their underlying anyon theory and the chiral central charges are
+identical. In Ref. [12], Kitaev speculated: ‘‘To prove or disprove this statement, a mathematical
+notion of equivalence between topological phases is necessary. It may be based on local (or
+quasilocal) isomorphisms between operator algebras’’. Our framework seems to be the step in
+the right direction, given that we have a sensible definition of isomorphism between different
+subsystemsandthatwecouldderiveaxiomsoftheanyonfusiontheoryfromareasonablephysical
+assumption.Such afeatwill beacomplete andrigorousjustification ofthepointof viewthat2D
+gappedquantumphasescanbedescribedbytheanyontheory[12,44].
+Compared to the existing approaches that compute entanglement measures on ground states,
+informationconvexsetleadstoamoreincisiveunderstandingoftheunderlyingtopologicalphase.
+Upon calculating entanglement entropy from a given ground state, one often obtains an order
+parameter that reveals partial information about the underlying quantum phase. An oft-cited
+exampleisthetotalquantumdimension[13,14].Remarkably,wefoundthatamuchmorerefined
+setofdatacanbeextractedbystudyingtheinformationconvexsetofthegroundstate.Thisincludes
+quantum dimensions and fusion multiplicities. Because two different anyon theories can give rise
+to the same total quantum dimension but different (individual) quantum dimensions and fusion
+multiplicities,informationconvexsetclearlycontainsricherdatathanentanglemententropy.
+Moreover,startingfromourentanglement-basedassumptions(AxiomsA0andA1),wewereable
+to derive the basic concepts of anyon theory from the internal consistency relations between the
+elementsoftheinformationconvexset.Whatissurprisingisthattheemergentphysicallawsthat
+appearinthesetopologicallyorderedsystemswerelogicalconsequencesoftheseaxioms;wedid
+notneedtomakeanyfurtherassumptions.Itwouldbeinterestingtounderstandhowwidelythis
+approachcanbeappliedinothercircumstances.
+Obviousareastoexplorefurtherwouldbehigherdimensionsandsetupsinwhichatopological
+defect [24] or a boundary is present [25]. Such studies may be an ideal framework to classify
+topological phases in 3D, which remains as an outstanding open problem. We will discuss these
+applicationsinourupcomingwork.
+Declarationofcompetinginterest
+Theauthorsdeclarethattheyhavenoknowncompetingfinancialinterestsorpersonalrelation-
+shipsthatcouldhaveappearedtoinfluencetheworkreportedinthispaper.
+Acknowledgments
+BSwishestothankYilongWangforadiscussiononpossibleobstructionofthecategorification
+offusionrings.BSissupportedbytheNationalScienceFoundation,USAunderGrantNo.NSFDMR-
+1653769.IK’sresearchatPerimeterInstitutewassupportedbytheGovernmentofCanadathrough
+IndustryCanadaandbytheProvinceofOntariothroughtheMinistryofEconomicDevelopmentand
+Innovation.IKalsoacknowledgessupportfromIBMT.J.WatsonresearchcenteraswellasSimons
+foundation, USA. KK is supported by the Institute for Quantum Information and Matter (IQIM) at
+Caltech, which is a National Science Foundation (NSF), USA Physics Frontiers Center (NSF Grant
+PHY-1733907).
+AppendixA. Notationsandusefulfacts
+In this appendix, we summarize basic notations of convex analysis and quantum information
+theory. Well-known facts in quantum information theory will be summarized in a self-contained
+manner.Thissectioncanbeskippedforreaderswhoarefamiliarwithconvexanalysisandstrong
+subadditivityofentropy.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 31
+A.1. Convexsets
+Herewereviewfactsaboutconvexsets.Weconsiderasubsetofafinite-dimensionalrealspace
+RN closedunderconvexcombinations,whereN ∈Z ≥0 .Theconvexsetiscompactifitisacompact
+subset of RN. For our purpose, for an N dimensional Hilbert space, the real space R2N2 could be
+identifiedasthe2N2 realcomponentsofanoperatoractingontheHilbertspace.
+We use conv(X) to denote the convex hull of a set X ⊆ RN, which is the smallest convex set
+thatcontainssetX.Inotherwords,itisthesetofallconvexcombinationsofelementsinX.
+Anextremepoint ofaconvexsetS isapointinS,whichdoesnotlieinanyopenlinesegment
+joiningtwopointsofS.Weuseext(S)todenotethesetofextremepointofaconvexsetS.
+Finally, we notice the Minkowski–Caratheodory theorem, which states that: Let S be a compact
+convexsubsetofRN ofdimensionn.ThenanypointinSisaconvexcombinationofatmostn+1extreme
+points. This is the reason we often talk about extreme points. Note that, without compactness, an
+elementofaconvexsetsometimescannotbewrittenasaconvexcombinationofextremepoints.
+A.2. Quantuminformationfacts
+We shall use Greek letters, e.g., ρ, σ for density matrices. Subsystems are specified in the
+subscript,e.g.ρ ,σ .WefrequentlyuseABasashorthandnotationofthedisjointunionofAandB
+A B
+(i.e.,A⊔B)whenA∩B=∅.Wewillsometimescalla(reduced)densitymatrixasastateforshort.
+Also,wewillsometimesrefertothereduceddensitymatrixofastateasitsmarginal.WeuseS(H)
+todenotethestatespaceofaHilbertspaceH.ItisthesetofalldensitymatricesonH.Adirectsum
+⨁
+isdenotedas .Itisasumwithobjectslivingonorthogonalsupports.
+Inordertoquantifythedistancebetweentwoquantumstates,weusethetracedistance,defined
+as
+√
+∥ρ−σ∥ ≡Tr (ρ−σ)2
+1
+foranypairofdensitymatricesρ andσ.Thisisareasonablenotionofdistancebecausetwostates
+closeintracedistancecannotbedistinguishedwellbyanymeasurement.
+Weshalluseavarietyofquantummechanicalentropiesinourdiscussion.Thesearealldefined
+intermsofthevonNeumannentropyofastate,whichisdefinedas
+S(ρ)≡−Tr(ρlnρ).
+Depending on the context, we shall use the following shorthand notations to denote the von
+Neumann entropy of the reduced density matrix over some subsystem: S
+A
+, (S
+A
++S
+B
+)ρ. In the first
+case,theglobalstateshouldbeobviousfromthecontext.Inthesecondcase,theglobalstateisρ.
+Therearetwoinformation-theoreticquantitiesthatwillplayanimportantroleinthispaper:
+I(A:B)≡S +S −S ,
+A B AB
+I(A:C|B)≡S +S −S −S .
+AB BC B ABC
+The first quantity, known as the mutual information between A and B, quantifies a correlation
+between A and B. The second quantity, known as the conditional mutual information between A
+andC conditionedonB,quantifiesthecorrelationbetweenAandC givenaknowledgeonB.Bythe
+strongsubadditivityofentropy[26],I(A:C|B)≥0foranyquantumstate.
+Below, we summarize the basic facts about quantum states and entropies. Most of these
+statementscanbefoundin[53].
+A.2.1. Fidelity
+Letusbeginwiththefidelitybetweentwoquantumstates,whichisdefinedas
+( √ )2
+F(ρ,σ)= Tr ρ1 2 σρ1 2 . (A.1)
+
+32 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Thisisanaturalgeneralizationoftheabsolutevalueofinnerproductintomixedstate(andfromthe
+whole system to subsystems). Indeed, one can easily verify F(ρ,σ) = |⟨ψ|ϕ⟩|2 when ρ = |ψ⟩⟨ψ|
+andσ =|ϕ⟩⟨ϕ|.Furthermore,F(ρ,σ)∈[0,1]andF(ρ,σ)=F(σ,ρ).
+Whydowecareaboutfidelity?Itisbecausefidelityenjoysseveralusefulproperties.Asastarter,
+F(ρ,σ)cangiveareasonablytightupperandlowerboundon∥ρ−σ∥ .Inparticular,F(ρ,σ)=1
+1
+ifandonlyif∥ρ−σ∥ = 0andF(ρ,σ) = 0ifandonlyif∥ρ−σ∥ = 2.Moreover,fidelityhasa
+1 1
+ratherspecialproperty:
+F(ρ ⊗ρ ,σ ⊗σ )=F(ρ ,σ )·F(ρ ,σ ), (A.2)
+A B A B A A B B
+whichwillplayanimportantroleintheproofofTheorem4.1.Thereisanintuitiveexplanationfor
+bothofthesefacts.Thefirstfactsaysthattwodensitymatriceshavezero(unit)overlapifandonly
+ifthetwostatesareorthogonal(identical).
+Lastly,iftwoquantumstateshaveunitfidelity,theirpurificationsareidenticaluptoaunitary
+operator acting on the purifying space [54]. In other words, two states |ψ ⟩ and |ϕ ⟩ have the
+AB AB
+samereduceddensitymatrixonsubsystemBifonlyifthereisaunitaryoperatorU suchthat
+A
+|ϕ ⟩=U ⊗I |ψ ⟩. (A.3)
+AB A B AB
+A.2.2. Quantumchannels
+Quantum channel, also known as complete-positive trace-preserving (CPTP) map, is the most
+generalformofphysicaloperationthatcanbeappliedtoaquantumstate.Itisalinearmapfrom
+boundedoperatorsonH
+A
+toboundedoperatorsonH A′.Itpreservespositivity,eveninthepresence
+of any ancillary system, and also preserves trace and hermiticity.8 In particular, it maps density
+matrices to density matrices. It can be written in an explicit form using a set of Kraus operators
+{M }:
+a
+∑
+E A→A′(X
+A
+)= M
+a
+X
+A
+M
+a
+†, (A.4)
+a
+where ∑ M † M = I and I is the identity operator on H . With the definition of CPTP map, we
+a a a A A A
+coulddiscusssomeadditionalproperties.
+Quantumchannelsdonotmaketwoquantumstatesmoredistinguishablethantheyalreadyare.
+Thismeansthatthetracedistanceisnonincreasingunderquantumchannels.Morerelevanttous
+isthefactthatthefidelityisnondecreasingunderquantumchannels.
+F(E(ρ),E(σ))≥F(ρ,σ), (A.5)
+foranyquantumchannelE.Sincepartialtraceisalsoaquantumchannel,wehave
+F(ρ ,σ )≥F(ρ ,σ ). (A.6)
+A A AB AB
+A.2.3. Propertiesofentropies
+Let us begin with a few elementary facts about entropy. First, S = S for an arbitrary pure
+A B
+state |ϕ ⟩. Secondly, suppose a set of density matrices {ρi} has mutually orthogonal supports,
+AB
+i.e.ρi ⊥ρj,∀i̸=j,then
+∑ ∑
+S( pρi)= p(S(ρi)−lnp), (A.7)
+i i i
+i i
+where{p}isaprobabilitydistribution.
+i
+Forabipartitequantumstate,wehavethefollowingsetofwell-knowninequalities:
+I(A:B)ρ ≥0
+(A.8)
+S +S −S ≥0.
+BC C B
+8 Thatwerequirethemaptopreservepositivityinthepresenceofanyancillarysystemisimportant.Otherwise,there
+areoperations,e.g.,transposeofamatrix,thatpreservesthepositivityintheabsenceofanancillarysystembutmaynot
+iftheancillarysystemisentangledwiththesystemofinterest.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 33
+The first inequality is known as the subadditivity of entropy, and the second inequality is known
+as the Araki–Lieb inequality [55]. It is interesting to study the conditions under which these
+inequalities are satisfied with equality. The mutual information is 0 if and only if the underlying
+stateisaproductstateoverAandB.TheconditionforsaturatingtheAraki–Liebinequalityismore
+subtleandinteresting.Wewillrevisitthisconditionlaterafterwediscussinequalitiesfortripartite
+quantumstates.
+The most important inequality involving a tripartite quantum state is the strong subadditivity
+(SSA)ofentropy[26]:
+I(A:C|B)≥0. (A.9)
+This inequality is surprisingly powerful in that inequalities that may look ‘‘stronger" than this
+inequalityareinfactimpliedbySSA.Hereisalistofsuchinequalities:
+I(AA ′ :BB ′ )≥I(A:B)
+I(AA ′ :CC ′|B)≥I(A:C|B)
+I(AA ′ :CC ′|B)≥I(A:C|A ′ BC ′ )
+S +S −S ≥I(A:C)
+BC C B
+S +S −S ≥I(A:C|B)
+BC C B
+S BC +S C −S B ≥S BB′C +S C −S BB′
+S +S −S −S ≥I(A:C|B)
+BC CD B D
+S BC +S CD −S B −S D ≥S BB′C +S CDD′ −S BB′ −S DD′ .
+Also,let{ρi }beasetofdensitymatricesand{pi}isaprobabilitydistribution,then
+AB
+∑
+p i (S AB −S B )ρi ≤(S AB −S B )∑ ipi ρi . (A.10)
+i
+To see why, let us introduce an auxiliary system C with an orthonormal basis {|i ⟩}. Let ρ ≡
+C ABC
+∑
+i
+p
+i
+ρ
+A
+i
+B
+⊗|i
+C
+⟩⟨i
+C
+|andnoticeI(A:C|B)ρ ≥0.
+A.2.4. ThestructureofquantumMarkovstates
+If a tripartite quantum state satisfies SSA with equality, then such a state has a rather special
+property.SuchastateisreferredtoasaquantumMarkovstate[15,32].LetρbeaquantumMarkov
+statesuchthatithasavanishingconditionalmutualinformationI(A:C|B)ρ =0.Thenthefollowing
+factshold.
+1. ρ is uniquely determined by its marginals ρ and ρ . The recovery can be done with a
+ABC AB BC
+quantumchannel,seeLemmas3.1and3.2ofthemaintext.
+2. There is a decomposition of the Hilbert space H into a direct sum of tensor products
+B
+H B =⨁ j H bL ⊗H bR suchthat
+j j
+⨁
+ρ ABC = p j ρ AbL ⊗ρ bRC , (A.11)
+j j
+j
+where {p j } is a probability distribution, ρ AbL is a density matrix on H A ⊗H bL and ρ AbR is a
+densitymatrixonH bR ⊗H C . j j j
+i
+3. Eq.(A.11)impliesthat
+∑
+Tr ρ = pρj ⊗ρj. (A.12)
+B ABC j A C
+j
+NotethatitisseparableandthereforesubsystemAandC haveonlyclassicalcorrelations(no
+quantumcorrelation).
+
+34 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Now, we can make an important connection between the states saturating the Araki–Lieb
+inequalityandquantumMarkovstates.ThedensitymatriceswhichsaturateAraki–Liebinequality
+havethepropertiessummarizedinLemmaA.1.
+LemmaA.1. Thefollowingconditionsaboutdensitymatrixρ areequivalent.
+BC
+(1) (S
+BC
++S
+C
+−S
+B
+)ρ =0,(saturatedAraki–Lieb).
+(2) Anystateρ
+ABC
+whichreducestoρ
+BC
+onBC hasI(A:C)ρ =0andI(A:C|B)ρ =0.
+(3) For any expression of the form ρ = ∑ q ρi , where {q} is a probability distribution with
+BC i i BC i
+q >0, ∀iand{ρi }isasetofdensitymatrices,wehave
+i BC
+ρ =Tr ρi , ∀i. (A.13)
+C B BC
+(4) Letρ BC =∑ i q i |i BC ⟩⟨i BC |,withq i >0,∀iand⟨i BC |j BC ⟩=δ i,j ,∀i,j,wehave
+Tr B |i BC ⟩⟨j BC |=δ i,j ρ C , ∀i,j. (A.14)
+Proof. (1) ⇒ (2).Letuspurifyρ ABC andobtain|Ψ A′ABC ⟩.Condition(1)impliesI(A′A : C)|Ψ⟩⟨Ψ| = 0
+andI(A′A:C|B)|Ψ⟩⟨Ψ| =0.Then,weusethefactsI(A′A:C)≥I(A:C)andI(A′A:C|B)≥I(A:C|B).
+(2)⇒(1).Simplyconsiderapureρ .
+(1),(2) ⇒ (3). Let ρ = ∑ q|i ⟩ A ⟨ B i C |⊗ρi with an orthonormal set of vectors {|i ⟩}. Since
+ABC i i A A BC A
+I(A:C)ρ =0,aprojectivemeasurementin{|i
+A
+⟩}willnotchangethedensitymatrixonC.Itfollows
+thatρ =Tr ρi ,∀i.
+∑
+(√3)
+q
+C ⇒
+|i ⟩
+(4
+⊗
+) B .
+|
+L
+i
+B e C t
+⟩
+u
+.H
+s
+e
+in
+re
+tro
+{|
+d
+i
+u
+⟩
+c
+}
+e
+is
+an
+an
+au
+o
+x
+rt
+i
+h
+li
+o
+ar
+n
+y
+or
+s
+m
+ys
+a
+t
+l
+em
+bas
+A
+is
+t
+o
+o
+f
+p
+t
+u
+h
+r
+e
+if
+H
+y
+il
+ρ
+b B e C rt
+=
+sp
+∑
+ac i e
+q
+H i
+|i
+BC .
+⟩
+T
+⟨
+h
+i
+B e C r
+|
+ef
+i
+o
+n
+r
+t
+e
+o
+,
+|
+o
+Ψ
+n A e BC m
+⟩
+a
+=
+y
+i i A BC A A
+obtainρ from|Ψ ⟩⟨Ψ |bytakingapartialtraceTr .Foranarbitraryorthonormalbasis{|φi⟩}
+BC ABC ABC A A
+wecoulddefinep ρi ≡⟨φi|Ψ ⟩⟨Ψ |φi⟩.RecallthattheconditionEq.(A.13)appliestoanybasis.
+For the ‘‘diagonal i " b B a C sis {|i A ⟩}, A o BC ne d A e B r C ives A Tr |i ⟩⟨i | = ρ , ∀i. Then, consider an ‘‘off-diagonal"
+A B BC BC C
+basiswhichcontainsabasisvector|ϕθ⟩= √1 (|i ⟩+eiθ|j ⟩)withi̸=jandθ ∈[0,2π].Onederives
+that,for∀i̸=jand∀θ ∈[0,2π], ij 2 A A
+eiθ Tr |i ⟩⟨j |+e −iθ Tr |j ⟩⟨i |=0.
+B BC BC B BC BC
+The ( r 4 e ) fo ⇒ re, (1 T ) r . B L | e i B t C u ⟩⟨ s j B i C n | tr = od 0 u f c o e r a i n ̸= au j. x T il h ia u r s y ,E sy q s . t ( e A m .14 A ) t h o o p ld u s r . ifyρ into|Ψ ⟩=∑ √ q|i ⟩⊗|i ⟩.
+BC ABC i i A BC
+Here {|i ⟩} is an orthonormal basis of the Hilbert space H . Then, it follows from Eq. (A.14) that
+A A
+I(A:C)|Ψ⟩⟨Ψ| =0whichimpliescondition(1). □
+AppendixB. Informationconvexsetonaclosedmanifold
+Inthissection,weshowthattheinformationconvexsetofaclosedmanifoldisisomorphictoa
+(statespaceofa)finite-dimensionalHilbertspace;seeTheoremB.1.
+Theorem B.1. Let M be a closed 2D manifold. Let σ be a reference state on this manifold satisfying
+AxiomsA0andA1.Withrespecttothisreferencestate,
+Σ(M)=S(V) (B.1)
+forsomefinitedimensionalHilbertspaceV⊆H.Moreover,Visnonempty.
+Proof. BecauseΣ(M)isasubsetofthestatespaceofafinite-dimensionalHilbertspace,onecan
+representanelementρ ∈Σ(M)as
+∑
+ρ = p|i⟩⟨i|
+i
+i
+for some p > 0 and an orthonormal set of vectors {|i⟩}. The state ρ is consistent with σ on any
+i
+disk.ThisfactfollowsfromProposition3.6.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 35
+We show below that the reduced density matrices of |i⟩⟨i| on the µ-disks are equal to those
+obtainedfromthereferencestateσ.Withoutlossofgenerality,consideraµ-disk,sayc.Consider
+anannulusthatsurroundsc,whichwedenoteasb.Thisannulusischosensothatbcisagainadisk.
+ByProposition3.3,(S bc +S c −S b )ρ =0.ByLemmaA.1(1)⇒(3),forρ bc =σ bc =∑ i p i Tr M\bc (|i⟩⟨i|),
+wefindthat
+σ c =Tr b (Tr M\bc (|i⟩⟨i|)). (B.2)
+Therefore,weconclude
+Tr M\c (|i⟩⟨i|)=σ c (B.3)
+forall|i⟩.
+Now we show that any state in the span of {|i⟩} lies in Σ(M). Let |{|i⟩}| = N. Note that
+1 ∑|i⟩⟨i|∈Σ(M).Moreover,thisstateisequaltoauniformmixtureover{U|i⟩}foranyunitaryU
+N i
+actingonthespanof{|i⟩}.Therefore,foranysuchU,wefind
+Tr M\c (U|i⟩⟨i|U † )=σ c (B.4)
+forall|i⟩.ThisfollowsfromthesamelogicthatleadstoEq.(B.3).ThefactthatΣ(M)isnonempty
+followsfromtheexistenceofσ ∈Σ(M).Thiscompletestheproof. □
+AppendixC. Elementarystepoftheisomorphismtheorem
+Ourgoalhereistoprovetheelementarystepoftheisomorphismtheorem;seeProposition3.9.
+The proof involves an alternative formulation of the information convex set, which we denote as
+Σˆ (Ω). Under Axioms A0 and A1, Σ(Ω) becomes equivalent to Σˆ (Ω). However, generally, we do
+notexpectthesetwosetstobeequivalent.
+C.1. Analternativeformulationoftheinformationconvexset
+ThesetΣˆ (Ω),whichwedefineinDefinitionC.1,enjoysanumberofpropertieswhicharenot
+evidentfromthedefinitionofΣ(Ω).WeusethesefactstoproveProposition3.9.Theentireproof
+isadmittedlylengthyandcircuitous.Amoresuccinctproofisleftforthereaderstoworkon.
+The key difference between the definition of Σˆ (Ω) and Σ(Ω) is that the latter involves an
+extendedsubsystem9 whereastheformerdoesnot.
+DefinitionC.1. LetΣˆ (Ω)beasetsuchthat∀ρ ∈Σˆ (Ω)
+1. ρ =c σ ∀σ ∈µ.
+b b
+2. I(A:C)ρ =0forthepartitioninFig.22.
+3. I(A:C|B)ρ =0forthepartitionsinFig.23.
+ThisdefinitiondoesnotmakeitclearwhyΣˆ (Ω)isconvex.Thefollowingpropositionestablishes
+thisfact.
+PropositionC.1. Σˆ (Ω)isconvex.
+Proof. Let ρ Ω ,λ Ω ∈ Σˆ (Ω). We wish to show that their convex combination also satisfies the
+three conditions in Definition C.1. Without loss of generality, consider the convex combination
+pρ
+Ω
++(1−p)λ
+Ω
+wherep∈[0,1].
+The first condition in Definition C.1 is trivially true. For the second condition, note that ρ =
+AC
+ρ ⊗ρ andλ =λ ⊗λ .Moreover,becauseC isinaµ-disk,ρ =λ =σ .Therefore,anyconvex
+A C AC A C C C C
+9 Inthemaintext,wereferredtotheextendedsubsystemsasΩ′.
+
+36 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig. 22. A partition of the subsystem Ω for defining Σˆ(Ω); see the second condition of Definition C.1. Let Ω = ABC
+whereBC isasubsystemcontainedinaµ-disk.ThehorizontallineistheboundaryofΩ.OnlypartofAisshownfor
+illustrationpurposes.
+Fig.23. ApartitionofthesubsystemΩ fordefiningΣˆ(Ω);seethethirdconditionofDefinitionC.1.LetΩ⊇ABC where
+BC isasubsystemcontainedinaµ-disk.ThehorizontallineistheboundaryofΩ.OnlypartofAisshownforillustration
+purposes.
+combinationofρ andλisalsofactorizedoverAC.Lastly,forthethirdcondition,letusconsiderthe
+conditionalmutualinformationoftheconvexcombination.
+I(A:C|B) pρ+(1−p)λ =(S BC −S B ) pρ+(1−p)λ +(S AB −S ABC ) pρ+(1−p)λ
+≤p(S
+BC
+−S
+B
+)ρ +(1−p)(S
+BC
+−S
+B
+)λ
++p(S
+AB
+−S
+ABC
+)ρ +(1−p)(S
+AB
+−S
+ABC
+)λ (C.1)
+=pI(A:C|B)ρ +(1−p)I(A:C|B)λ
+=0.
+Toderivethisbound,weusedthefollowingtwofacts.First,BC isinaµ-disk.Therefore,S −S
+BC B
+isthesameforρ,λ,aswellastheirconvexcombinations.Second,conditionalentropyisconcave;
+seeEq.(A.10).
+Therefore, I(A : C|B) = 0 for the state pρ +(1−p)λ, for any p ∈ [0,1]. This completes the
+proof. □
+Inavarietyofcircumstances,elementsinΣˆ (ABC)andΣˆ
+(BCD)canbemerged,andthemerging
+resultisanelementofΣˆ
+(ABCD).Thisisthecontentofthefollowingproposition.
+PropositionC.2. Considertwodensitymatricesρ ∈Σˆ (ABC)andλ ∈Σˆ (BCD).Ifthefollowing
+ABC BCD
+conditionshold,ρ andλ canbemerged.Moreover,theresultingdensitymatrixisanelementof
+ABC BCD
+Σˆ
+(ABCD).
+1. ThereexistsapartitionB′C′ =BC,suchthatnoµ-diskoverlapswithbothAB′andCD;seeFig.24.
+2. ρ =c λ.
+3. I(A:C|B)ρ =I(B:D|C)λ =0.
+4. I(A:C′|B′)ρ =I(B′ :D|C′)λ =0.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 37
+Fig.24. AschematicdepictionofsubsystemABCD.ThepartitionB′C′=BC ischosensuchthatnoµ-diskoverlapswith
+bothAB′ andCD.Notethat,thesubsystemsA,B,C,Dareallowedtotakeavarietyoftopologies.
+Proof. Itfollowsfromtheconditionsofthepropositionthatρ andλ canbemerged.Infact,
+ABC BCD
+there are two different ways to merge these density matrices. Using the third condition, we get
+τ
+ABCD
+≡E
+C
+λ
+→CD
+(ρ
+ABC
+)andusingthefourthcondition,wegetτ
+A
+′
+BCD
+≡E
+B
+ρ ′→AB′(λ
+BCD
+).
+Notethatτ =τ′ .ThisisbecausebothofthemsatisfyI(A:D|BC)andtheyhavethesame
+ABCD ABCD
+marginalonABC andBCD.Therefore,Lemma3.1impliesthatτ =τ′ .
+ABCD ABCD
+Below, we show that τ is an element of Σˆ (ABCD). In order to prove this claim, we need to
+ABCD
+show that τ satisfies the condition 1, 2, and 3 in Definition C.1. Condition 1 is easy to check.
+ABCD
+Becausenoµ-diskoverlapswithbothAB′andCD,theoverlapbetweenaµ-diskandABCDiseither
+containedinABC orBCD.
+Forthesecondandthethirdcondition,thekeyobservationisthatwehavethefreedomtochoose
+thequantumchannel:
+τ
+ABCD
+≡E
+C
+λ
+→CD
+(ρ
+ABC
+)=E
+B
+ρ ′→AB′(λ
+BCD
+). (C.2)
+Foreveryµ-diskneartheboundaryofsubsystemABCD,wecouldpickasuitablequantumchannel,
+(eitherE
+C
+λ
+→CD
+orE
+B
+ρ ′→AB′),whichhasnooverlapwiththeµ-disk.
+Forthesecondcondition,weusethefollowingfact.Suppose,withoutlossofgenerality,weare
+givenamutualinformationbetweentwosubsystemssayX andY.Themutualinformationdoesnot
+increaseunderaquantumchannelactingonlyoneitherX orY.Indeed,thechannelswedescribed
+above are instances of such quantum channels. Therefore, the mutual information in the second
+conditionisupperboundedby0.Thissubsequentlyimpliesthatthesecondconditionholds.
+Forthethirdcondition,weuseasimilarfact.Now,supposewearegivenaconditionalmutual
+informationI(X :Y|Z).Thisalsodoesnotincreaseunderaquantumchannelactingonlyoneither
+X orY.Therefore,withthesamelogic,thethirdconditionholdsaswell. □
+Proposition C.3. Consider Ω = ABC and Ω′ = ABCD whose partitions are depicted in Fig. 8, (note
+thatAandDareassumedtobeseparatedbyatleast2r +1).LetE σ bethePetzmapconstructed
+C→CD
+fromthereferencestatedensitymatrixσ .Then,
+BCD
+Tr D ◦E C σ →CD (ρ Ω) = ρ Ω , ∀ρ Ω ∈Σˆ (Ω), (C.3)
+E C σ →CD (ρ Ω) ∈ Σˆ (Ω′ ), ∀ρ Ω ∈Σˆ (Ω). (C.4)
+Proof. Eq. (C.3) follows directly from Lemma 3.8. To see why, let us observe that ρ Ω and σ BCD
+canbemergedusingLemma3.8.Withcondition1,2,3inDefinitionC.1,onecouldverifythetwo
+conditionsrequiredinLemma3.8.First,ρ
+Ω
+isconsistentwiththeglobalstateonanydiskω⊆Ω.
+Inparticular,ρ
+Ω
+=c σ
+BCD
+.Second,I(A:C|B)ρ =I(B:D|C)σ =0.
+Eq. (C.4) is essentially a corollary of Proposition C.2. It is straightforward to construct the B′C′
+requiredinPropositionC.2andcheckalltheconditions.The2r+1separationbetweenAandDis
+largeenoughfortheconstruction.Thiscompletestheproof. □
+
+38 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+C.2. Equivalenceofthedefinitions
+NowwecanshowthatΣˆ (Ω)isequivalenttoΣ(Ω).ThisjustifiesourchoiceofcallingΣˆ (Ω)as
+theinformationconvexset.
+PropositionC.4. Σ(Ω)=Σˆ (Ω), ∀Ω.
+Proof. IfΩisaclosedmanifold,thenitisobviousthatΣ(Ω)=Σˆ (Ω).IfΩhasboundaries,itiseasy
+toshowthatΣ(Ω)⊆Σˆ (Ω)fromtheassumptions.Ontheotherhand,PropositionC.3impliesthat
+anyρ Ω ∈Σˆ (Ω)canbewrittenasρ Ω =TrΩϵ\Ω ρ Ωϵ forsomeelementρ Ωϵ ∈Σˆ (Ω ϵ).Thisisbecause
+ofEq.(C.4)andthatΩ andΩ ϵ areconnectedbyapathwhichconsistsofasequenceofelementary
+extensions. It follows that ρ Ω ∈ Σ(Ω) and therefore Σ(Ω) ⊇ Σˆ (Ω). Thus, Σ(Ω) = Σˆ (Ω), ∀Ω.
+Thiscompletestheproof. □
+C.3. MergingwithΣ(Ω)
+Inavarietyofcircumstances,wecanmergeelementsinmultipleinformationconvexsetsintoan
+elementofyetanotherinformationconvexset.ThisfollowsfromPropositionC.2andtheestablished
+equivalencebetweenΣ(Ω)andΣˆ (Ω)(PropositionC.4).
+Proposition C.5. Consider two density matrices ρ ∈ Σ(ABC) and λ ∈ Σ(BCD). If the
+ABC BCD
+followingconditionshold,ρ andλ canbemerged.Moreover,theresultingdensitymatrixbelongs
+ABC BCD
+toΣ(ABCD).
+1. ThereexistsapartitionB′C′ =BC,suchthatnoµ-diskoverlapswithbothAB′andCD;seeFig.24.
+2. ρ =c λ.
+3. I(A:C|B)ρ =I(B:D|C)λ =0.
+4. I(A:C′|B′)ρ =I(B′ :D|C′)λ =0.
+Proof. TheproofdirectlyfollowsfromPropositionsC.2andC.4. □
+Remark. Importantly,PropositionC.5impliesthatthemergedresultsinFigs.13–16,18,19and21
+areelementsofsomeinformationconvexsets.
+Aspecialcaserelevanttotheproofofisomorphismtheoremisthefollowingcorollary.
+CorollaryC.5.1. ThemergingprocessinFig.8generatesamapfromΣ(Ω)toΣ(Ω′),i.e.
+E C σ →CD (ρ Ω)∈Σ(Ω′ ), ∀ρ Ω ∈Σ(Ω), (C.5)
+whereE σ isthePetzmapconstructedfromthereferencestatedensitymatrixσ .
+C→CD BCD
+Proof. TheprooffollowsfromPropositionsC.3andC.4. □
+C.4. ProofofProposition3.9
+Now,weareinapositiontoproveProposition3.9.
+Proposition 3.9. Consider the partition in Fig. 8. (Note: A and D are assumed to be separated by at
+least2r+1inFig.8.)LetthedomainofTr andE σ tobeΣ(Ω′)andΣ(Ω)respectively.
+D C→CD
+ImTr ⊆Σ(Ω)
+D
+ImE
+C
+σ
+→CD
+⊆Σ(Ω′ ). (20)
+Moreover,forallρ
+Ω
+∈Σ(Ω)andρ
+Ω′
+∈Σ(Ω′),
+Tr D ◦E C σ →CD (ρ Ω)=ρ Ω , (21)
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 39
+E C σ →CD ◦Tr D (ρ Ω′)=ρ Ω′ . (22)
+σ
+Inparticular,Tr andE arebijections.
+D C→CD
+Proof. We have shown that Tr is a linear map which maps elements of Σ(Ω′) into elements of
+Σ(Ω)(Proposition3.4).Convers D ely,uponapplyingE C σ →CD toρ Ω weobtainamergedstateτ A ρ BCD of
+ρ Ω andσ BCD .(Hereσ BCD isthereduceddensitymatrixofthereferencestate.)Wecanmergethem
+using the merging lemma (Lemma 3.8) because (1) ρ = σ follows from Proposition 3.6 and
+BC BC
+(2) the requisite conditional independence conditions follow from A1. While the merging lemma
+guarantees the existence of τ Ω ρ ′, it remains to show that τ Ω ρ ′ is an element of Σ(Ω′). This fact
+follows from Corollary C.5.1. This step requires that BC is large enough, or equivalently, A and D
+areseparatedbyenoughdistance.
+Now,itremainstoproveEqs.(21)and(22).Eq.(21)holdsbecausethemergedstateisconsistent
+with the given marginals; see Eq. (17). Eq. (22) follows from the fact that the state on both sides
+of the equation obey I(AB : D|C) = 0 and that they have the same reduced density matrices over
+ABC and CD; they are equal to ρ and σ . According to Lemma 3.1, the two global states must
+ABC CD
+beidentical. □
+AppendixD. Extremepoints
+In this section, we prove various properties of the extreme points of the information convex
+set.Throughoutthissection,weshalloftenconsideraslight‘‘thickening"ofasubsystem.Likethe
+conventionweusedinthemaintext,athickeningofasubsystemΩ isanenlargedsubsystemΩ′
+whichisobtainedbyexpandingtheboundariesofΩ.
+If the boundary of Ω is expanded by a thickness of δ, we shall refer to that subsystem as Ω δ.
+Fortheensuinganalysis,itwillbeconvenienttoconsideralengthscaleϵ,whichiscomparableto
+asinglelatticespacingfortheconventionusedinthemaintext.
+Letusbeginwiththefollowinglemma.
+LemmaD.1. Supposeρ Ω 2ϵ ∈Σ(Ω 2ϵ)canbewrittenas
+∑
+ρ Ω 2ϵ = q i ρ Ω i 2ϵ , (D.1)
+i
+where{q
+i
+}isaprobabilitydistributionwithq
+i
+>0, ∀iand{ρ
+Ω
+i
+2ϵ
+}isasetofdensitymatrices.Then,
+TrΩ 2ϵ\Ω ρ Ω i 2ϵ ∈Σ(Ω). (D.2)
+s
+P
+h
+r
+o
+o
+w
+of.
+th
+I
+i
+t
+s
+s
+fa
+u
+c
+ff
+t
+i
+,
+c
+c
+e
+o
+s
+n
+t
+s
+o
+id
+s
+e
+h
+r
+o
+b
+w
+ϵ ⊆
+tha
+Ω
+t
+2
+e
+ϵ.
+v
+L
+e
+e
+ry
+tC
+ρ Ω i =2ϵ
+b
+re
+an
+du
+d
+c
+c
+e
+h
+s
+o
+t
+o
+o
+se
+σ b
+B
+∈
+suc
+µ
+h
+o
+th
+n
+a
+a
+t
+n
+b
+y
+ϵ
+µ
+=
+-d
+B
+i
+C
+s
+.
+k
+T
+b
+he
+⊆
+n,
+Ω
+th
+ϵ
+e
+.
+t
+I
+o
+n
+p
+o
+o
+r
+lo
+d
+g
+e
+y
+r t
+o
+o
+f
+BC isidenticaltotheoneshowninFig.2.
+Because our axioms hold at a scale larger than the µ-disks (Proposition 3.3), and that ρ =
+BC
+σ
+BC
+(Proposition3.6),weconcludethat(S
+BC
++S
+C
+−S
+B
+)ρ =0.Now,applyLemmaA.1(1)⇒(3).We
+conclude
+ρi =ρ =σ
+b b b
+foranyiandanyµ-diskb∈Ω ϵ.Thiscompletestheproof. □
+Thefollowinglemmashowsthatanyelementintheinformationconvexsethaszeroconditional
+mutualinformationforonion-likepartitions;seeFig.25.
+LemmaD.2. LetΩ =ABC.SupposeBandC areconcentricannulidescribedinFig.25.Then,
+I(A:C|B)ρ =0, ∀ρ
+ABC
+∈Σ(ABC). (D.3)
+
+40 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.25. HereΩ=ABC isanarbitrarysubsystemwithaboundary.BandC areconcentricannulicoveringtheboundary.
+Proof. LetusconsiderasequenceofregionsC withm=0,1,2,3,...,M withC =∅,C =C,
+m 0 M
+andC i ⊆C i+1 .HereBC i+1 isan‘‘infinitesimaldeformation"ofBC i asinFig.4.
+Wewanttoshowthat
+(S
+ABCi
+−S
+BCi
+)ρ =(S
+ABCi+1
+−S
+BCi+1
+)ρ , (D.4)
+fori=0,...,M−1.Equivalently,wecanshowthat
+I(A:δC i+1 |BC i )=0, (D.5)
+whereδC i+1 =C i+1 \C i .OnecanupperboundthelefthandsideofEq.(D.5)by0.Toseewhy,first
+useI(AA′ :C|B)≥I(A:C|A′B)sothat
+I(A:δC i+1 |BC i )≤I(ABC i \D i :δC i+1 |D i ), (D.6)
+whereD i ⊆BC i isadisk-likesubsystemthatseparatesδC i+1 fromABC i \D i .Inparticular,wechoose
+D i such that D i δC i+1 is contained in a µ-disk. Then, one can upper bound the right-hand side of
+Eq.(D.6)by0,byusingAxiomA1.Therefore,
+(S
+ABC0
+−S
+BC0
+)ρ =(S
+ABCM
+−S
+BCM
+)ρ ,
+whichjustifiesEq.(D.3). □
+LemmaD.3. Consideranextremepointσ Ω ⟨e 2 ⟩ ϵ ∈Σ(Ω 2ϵ)writtenas
+σ Ω ⟨e 2 ⟩ ϵ = ∑ q i ρ Ω i 2ϵ (D.7)
+i
+where{q
+i
+}isaprobabilitydistributionwithq
+i
+>0,∀iand{ρ
+Ω
+i
+2ϵ
+}isasetofdensitymatrices.Then,
+TrΩ 2ϵ\Ω ρ Ω i 2ϵ =TrΩ 2ϵ\Ω σ Ω ⟨e 2 ⟩ ϵ , ∀i
+isthesameextremepointofΣ(Ω).
+s P t r a o t o em f. e I n t t fo is llo th w a s t f t r h o e m re L d e u m ce m d a s D ta .1 te th on at Ω TrΩ is 2ϵ a \ n Ω e ρ x Ω i t 2 r ϵ em is e an po e i l n e t m a e n n d t t o h f a Σ tt (Ω he ) r f e o d r u a c l e l d i. s T t h a e te n d o o n e tr s iv n i o a t l
+dependoni.
+Supposethereisadependencesoni.ThenTrΩ 2ϵ\Ω σ Ω ⟨e 2 ⟩ ϵ mustbeaconvexcombinationofthese
+distinct elements, so this density matrix cannot be an extreme point. This contradicts with the
+isomorphismtheorem(Theorem3.10),whichimpliesthatTrΩ 2ϵ\Ω σ Ω ⟨e 2 ⟩ ϵ isanextremepointofΣ(Ω).
+(Recallthatanylinearbijectivemapbetweentwoconvexsetsmustmapextremepointstoextreme
+p ex o t i r n e t m s.) e T p h o e i r n e t fo o r f e Σ , t ( h Ω e ) d . en □ sity matrix TrΩ 2ϵ\Ω ρ Ω i 2ϵ is independent of i and it follows that it is an
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 41
+LemmaD.4. Consideranextremepointσ Ω ⟨e 2 ⟩ ϵ ∈Σ(Ω 2ϵ)andletB=Ω 2ϵ \Ω,then
+(S BΩ +SΩ −S B )σ⟨e⟩ =0. (D.8)
+Proof. ThisresultfollowsfromLemmaD.3and(3)⇒(1)ofLemmaA.1. □
+ThesignificanceofLemmaD.4isthatitappliestoanysubsystem.Inparticular,for2-holedisks,
+weobtainthefollowingcorollary.
+CorollaryD.4.1. LetY bea2-holediskdividedaccordingtoFig.12,i.e.Y
+=BY′.Letσ⟨e⟩
+beanextreme
+Y
+pointofΣ(Y),then
+(S BY′ +S Y′ −S B )σ⟨e⟩ =0. (D.9)
+LemmaD.5. LetΩ =ABC withachoiceofsubsystemsdescribedinFig.25.Ifσ Ω ⟨e⟩ isanextremepoint
+ofΣ(Ω):
+I(A:C)σ⟨e⟩ =0. (D.10)
+Proof. Sinceσ Ω ⟨e⟩ ∈Σ(Ω),fromLemmaD.2,
+I(A:C|B)σ⟨e⟩ =0. (D.11)
+Then,itfollowsfromtheexplicitstructureofquantumMarkovstateEqs.(A.11)and(A.12)that
+Tr B σ Ω ⟨e⟩ = ∑ p i ρ A i ⊗ρ C i, (D.12)
+i
+whereρi andρi aredensitymatrices(whichmayormaynotbelongtoΣ(A)andΣ(C)).{p}isa
+probabili A ty distr C ibution. We know from the isomorphism Theorem 3.10 that σ⟨e⟩ ≡ ∑ p ρi i is an
+A i i A
+extremepointofΣ(A).
+SinceAisthickenough,letA=A′ 2ϵ.HereA′ hasthesametopologyasAbutitisthinner.From
+L A e ′ m (a m st a h D at .3 in w F e ig k . n 4 o ) w un t t h il at it T r r e A c \ o A′ v ρ e A r i s = Aw σ A ⟨ i ′ e t ⟩ h , o ∀ u i t . c T h h a e n re g f i o n r g e, th I( e A m ′ : u C tu ) a σ l ⟨e⟩ in = for 0 m . a S t i i n o c n e , w w e ec c o o n ul c d lu e d n e la th rg a e t
+I(A:C)σ⟨e⟩ =0. □
+As an immediate application of Lemma D.5, we can prove the following factorization property
+between subsystem L and R described in Fig. 9. This plays an important role in the proof of the
+orthogonalityoftheextremepoints.
+CorollaryD.5.1. FortheannulusX =LMRinFig.9(a),foranyextremepointσa ∈Σ(X),
+X
+Tr σa =σa⊗σa, (D.13)
+M X L R
+whereσa andσa arethereduceddensitymatricesofσa onLandRrespectively.
+L R X
+CorollaryD.5.2. Considerthepartitionofa2-holediskY inFig.12,i.e.Y =Y′BandB=B B B .Let
+1 2 3
+σ⟨e⟩ beanextremepointofΣ(Y),then
+Y
+(S
+B1
++S
+B2
++S
+B3
+−S
+B
+)σ⟨e⟩ =0. (D.14)
+NotethatEq.(D.14)isequivalenttosayingthatσ⟨e⟩
+isatripartiteproductstate.
+B1B2B3
+D.1. Orthogonalityofextremepoints
+Below, we present the proof of Theorem 4.1, which establishes the orthogonality of extreme
+points.
+
+42 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Theorem4.1(SimplexTheorem).ForanannulusX,theinformationconvexsetistheconvexhullofa
+finitenumberoforthogonalextremepoints,{σa},i.e.
+X
+{ ⏐ }
+⏐ ⨁
+Σ(X)= ρ ⏐ρ = p σa , (31)
+X⏐ X a X
+⏐
+a
+where{a}isafinitesetoflabelsand{p }isaprobabilitydistribution.
+a
+Proof. Let us divide an annulus X according to Fig. 9(a) and consider the path in Fig. 9(b) which
+defines an isomorphism Σ(L) ∼= Σ(X) ∼= Σ(R). Let us consider an extreme point σa and let its
+image in Σ(L) and Σ(R) be σa and σa. It follows from the isomorphism theorem (Th X eorem 3.10)
+that (1) they are extreme poi L nts; (2) R they are the reduced elements of σa. For a pair of extreme
+X
+pointsσa andσb,
+X X
+F(σa,σb)=F(σa,σb)=F(σa,σb), (D.15)
+X X L L R R
+sincetheisomorphismpreservesfidelity.AccordingtoCorollaryD.5.1,reducingeachextremepoint
+(σa)toLRgivesatensorproductstructure(σa⊗σa).Thus,
+X L R
+F(σa,σb)≤F(σa⊗σa,σb⊗σb)
+X X L R L R (D.16)
+=F(σa,σb)·F(σa,σb).
+L L R R
+Thefirstlinefollowsfromthemonotonicityoffidelity,namely,thefactthatfidelityisnondecreasing
+whenrestrictedtoasmallerregion(LR⊆X).Eqs.(D.15)and(D.16)implythatF(σa,σb)iseither0
+X X
+or1.IfF(σa,σb)=1thenσa =σb,soa=b.IfF(σa,σb)=0thenσa·σb =0,i.e.σa andσb live
+X X X X X X X X X X
+onorthogonalsubspaces.Thisjustifiesthedirectsumstructure.SinceafinitedimensionalHilbert
+spacecouldonlyaccommodateafinitenumberoforthogonalsubspaces,theextremepointsform
+afiniteset. □
+D.2. Implicationoftheorthogonality
+Based on the orthogonality of the extreme points, we can prove several new facts about
+the elements of the information convex set. In the remainder of this section, we use both the
+isomorphismtheorem(Theorem3.10)andthesimplextheorem(Theorem4.1).Letusbeginwitha
+succinctformulaforthemutualinformation.
+PropositionD.6. Letρ =∑ p σabeanelementofΣ(X),writtenintermsoftheorthogonalextreme
+X a a X
+points.LetX =LMRbeasubsystemdescribedinFig.9(a).Then,
+∑
+I(L:R)ρ =− p
+a
+lnp
+a
+. (D.17)
+a
+A similar result has been obtained in [20] using Chern–Simons theory. We obtained the same
+resultasaconsequenceofA0andA1.
+Proof. FromTheorem3.10weknowthatthereducedelementsofσaonLandR,whichwecallasσa
+andσa,areextremepointsofΣ(L)andΣ(R)respectively.Moreove X r,itfollowsfromCorollaryD.5. L 1
+thatT R r σa =σa⊗σa.Fromtheorthogonalityrelation(Eq.(31))ofTheorem4.1.Weobtain
+M X L R
+∑
+(S
+L
+)ρ =H(p)+ p
+a
+S(σ
+L
+a),
+a
+∑
+(S
+R
+)ρ =H(p)+ p
+a
+S(σ
+R
+a),
+a
+∑
+(S
+LR
+)ρ =H(p)+ p
+a
+(S(σ
+L
+a)+S(σ
+R
+a)),
+a
+whereH(p) ≡ −∑ p lnp istheShannonentropyoftheprobabilitydistribution{p }.Theclaim
+a a a a
+followsstraightforwardlyfromtheseequations. □
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 43
+As a consequence, we can identify the extreme points of Σ(X) as the elements with zero
+correlationbetweenLandR.
+CorollaryD.6.1. Anelementρ
+X
+∈ Σ(X)isanextremepointifonlyifI(L : R)ρ = 0forthepartition
+inFig.9(a).
+LemmaD.7. LetΩ =ABC withachoiceofsubsystemsdescribedinFig.25.Ifσ Ω ⟨e⟩ isanextremepoint
+ofΣ(Ω),TrΩ\C σ
+Ω
+⟨e⟩ isanextremepointofΣ(C).
+Proof. Let us consider an annulus subset A′ ⊆ A next to BC. I(A′ : C)σ⟨e⟩ = 0 follows from
+Lemma D.5. Then, because A′BC is a partition of annulus similar to LMR in Fig. 9(a), I(A′ : C) = 0
+guaranteesthatTrΩ\C σ Ω ⟨e⟩ isanextremepointofΣ(C).ThisstepfollowsfromCorollaryD.6.1. □
+TheproofofProposition4.2andLemma4.3arealsodiscussedbelow.
+Proposition4.2. Letωbeadisk.ForanyannulusX ⊆ω
+σ
+X
+1 ≡Trω\X σ ω , (34)
+isanextremepointofΣ(X).
+Proof. Without loss of generality, assume there is a disk D surrounded by R (in Fig. 9(a)). Let us
+considerthediskω =LMRD.ThereisaconstraintS +S −S =0fortheuniqueelementof
+MRD RD M
+Σ(ω),becauseoftheenlargedversionofA0(Proposition3.3).ThisimpliesthatI(L:R)σ1 =0.Then
+itfollowsfromCorollaryD.6.1thatσ1 isanextremepointofΣ(X). □
+X
+Lemma4.3. LetX0 andX1 betwoannulicontainedinadiskC;seeFig.11forexample.Let{Xt }and
+(1)
+{Xt }betwopathsconnectingX0 andX1 suchthatX0 =X0,X1 =X1 fori=1,2.Moreover,assume
+(2) (i) (i)
+that∪ Xt ⊆C,∪ Xt ⊆C.Then,theisomorphisms
+t (1) t (2)
+Φ
+{Xt }
+:Σ(X0)→Σ(X1)
+(1)
+and Φ {Xt } :Σ(X0)→Σ(X1)
+(2)
+areidentical.
+Proof. ThekeyoftheproofistheexistenceofanextensionXt →X ˜t ,whereB⊆X ˜t foreachpath
+labeli=1,2andforanytimestept;seeFig.11.Forbothi= (i) 1,2, ( t i h ) esequenceof (i) configurations
+{X ˜t }formsapath.
+(i L ) et us show that two isomorphisms on the ‘‘extended paths", Φ {X˜t } and Φ {X˜t } , are identical.
+(1) (2)
+(Each of them maps Σ(X ˜0) to Σ(X ˜1).) Because every subsystem in the paths contains annulus C,
+thereduceddensitymatrixonC isunchangedduringtheprocess,(foranyt).Sinceanelementin
+Σ(X ˜0)(orΣ(X ˜1))isuniquelydeterminedfromitsreduceddensitymatrixonC independentofthe
+chosenpath,thetwoisomorphismsΦ {X˜t } andΦ {X˜t } mustbeidentical.
+To complete the proof, note that Φ { ( X 1
+(
+) t
+1)
+} and Φ { (2 X )
+(
+t
+2)
+} are determined from Φ {X˜
+(
+t
+1)
+} and Φ {X˜
+(
+t
+2)
+} by
+takingapartialtrace.Thiscompletestheproof. □
+AppendixE. Fusionspace
+Here,weprovethattheconvexsetΣc (Y)isisomorphictothestatespaceofafinite-dimensional
+fusionspaceVc .Recallthata,b,andc a a b resuperselectionsectorsandY isa2-holedisk.Webegin
+withthefollow ab inglemma,whichcharacterizestheextremepointsofΣc (Y).
+ab
+LemmaE.1. LetY bea2-holedisk.Then,everyextremepointofΣc (Y)hasthesamevonNeumann
+ab
+entropy.
+
+44 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+TableE.3
+ApartitionofBusedintheproofofTheorem4.5.
+Partitions B1 B2 B3
+BR(Inner) B1R B2R B3R
+BM(Middle) B1M B2M B3M
+BL(Outer) B1L B2L B3L
+Fig.26. ApartitionofBusedintheproofofTheorem4.5.Thisfiguredoesnotrepresenttheactualunderlyinggeometry.
+Rather,itrepresentstherelativedistancebetweenthe‘‘inner"partofY (i.e.,Y′)andtheannulisurroundingY′(i.e.,BR ,BM,
+andBL).AuxiliarysystemEisintroducedtopurifytheextremepoints.HereBRisthe‘‘innermost"partofBthatisdirectly
+incontactwithY′,BM isadisjointunionofannulisurroundingBR,andBL surroundsBM.
+Proof. ConsiderapartitionofY intoY =BY′asdescribedinFig.12.Letλ andρ betwoextreme
+Y Y
+pointsofΣc (Y)andδ≡S(λ )−S(ρ )betheentropydifferencebetweenthetwostates.Eq.(D.9)
+ab Y Y
+and(D.14)implythat(S
+Y
++S Y′)λ and(S
+Y
++S Y′)ρ areidentical.Also,bytheisomorphismtheorem
+(S
+Y
++S Y′)λ −(S
+Y
++S Y′)ρ =2δ.Thus,δ=0. □
+We have seen that all the extreme points of Σc (Y) have the same entropy. It follows that a
+ab
+non-extreme point, which is a convex combination of multiple extreme points, must have higher
+entropy. This fact follows from the general property of von Neumann entropy, S( ∑ pρi) ≥
+∑ pS(ρi), where {p} is a probability distribution with p > 0. The equality is achieve i d i if and
+i i i i
+onlyifallρi areidentical.Thus,wehavethefollowingcorollary.
+CorollaryE.1.1. Iftheentropyofanelementρ ∈Σc (Y)isidenticaltothatofanextremepointof
+Σc (Y),thenρ itselfisanextremepointofΣc ( Y Y). ab
+ab Y ab
+Theorem4.5. Considera2-holediskY.∀a,b,c ∈C,
+Σc (Y) ∼=S(Vc ), (39)
+ab ab
+whereVc isafinite-dimensionalHilbertspace.
+ab
+Proof. Recall that we have already partitioned Y into BY′; see Fig. 12. We shall consider two
+different partitions of B. In Fig. 12, we have already considered a partition of B into B = B B B ,
+1 2 3
+whichisa(disjoint)unionofthreeannuli(B ,B ,andB ).Weshallalsoconsideradifferentpartition
+1 2 3
+ofB=B B B .HereB isa(disjoint)unionofthree‘‘outermost"annuliandB isa(disjoint)union
+L M R L R
+ofthree‘‘innermost"annuli;seeFig.26.
+In total, we are considering 9 disjoint subsets of B, Y′, and E; see Table E.3 for a detailed
+discussiononthepartitionofB.HereE isanauxiliaryHilbertspaceusedtopurifyadensitymatrix
+supportedonY =BY′.
+The statement is trivially true if Σc (Y) is empty. In this case dimVc = 0. For a nonempty
+ab ab
+Σc (Y),weuse{σ⟨e⟩ x}todenotethesetofextremepointsofΣc (Y)anduseλ foragenericelement
+ab Y ab Y
+of Σc (Y). For the extreme points, the alphabet e signifies that the density matrix is an extreme
+point a . b Theyarelabeledbyx,y,andz inthisproof.
+Pickanextremepoint,sayσ⟨e⟩ x.Letuspurifyσ⟨e⟩ x into|ϕx ⟩andletρ beitsreduceddensity
+matrixonEB.FromCorollaryD.4 Y .1,onecanverifyI Y (E :B
+M
+B
+R
+|B EY
+L
+)ρ =0.Mor E e B over,for∀λ
+Y
+∈Σ
+a
+c
+b
+(Y)
+we have I(B
+L
+: Y′|B
+ρM
+B
+R
+)λ = 0 and ρ
+EB
+=c λ
+Y
+. From the merging lemma (Lemma 3.8), there is a
+quantumchannelE whichdefinesasetofstates
+BL →EBL
+S ≡{E ρ (λ )|λ ∈Σc (Y)} (E.1)
+EY BL →EBL Y Y ab
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 45
+obtained from merging ρ with λ . It follows that Σc (Y) ∼= S . Below, we will determine the
+EB Y ab EY
+structureofS .
+EY
+LetusfirstshowthattheextremepointsofS arepurestates.Fortheparticularextremepoint
+EY
+wehave alreadyconsidered, i.e.,σ⟨e⟩ x, themergedstate isobviously thepurestate|ϕx ⟩. Because
+Y EY
+all the extreme points in Σc (Y) have the same entropy (Lemma E.1) and because the entropy
+ab ρ
+difference is preserved under the map E (property (3) of Lemma 3.8), all the other extreme
+BL →EBL ρ
+points are also mapped to pure states. This means the quantum channel E purifies all the
+extremepointsofΣc (Y)simultaneously.
+BL →EBL
+ab
+Now, we show S is the state space of a finite dimensional Hilbert space. The nontrivial
+EY
+statement is that any superposition of pure states in S is again in S . Once this statement is
+EY EY
+verified, the finiteness of dimension follows straightforwardly from the fact that Σc (Y) is finite
+ab
+dimensional.Toprovethisclaim,weconsideranormalizedstate
+∑
+|ϕz ⟩≡ z|ϕyi⟩, (E.2)
+EY i EY
+i
+where {|ϕyi⟩} is the set of purifications (in S ) of a finite (sub)set of extreme points {σ⟨e⟩ yi ∈
+EY EY Y
+Σc (Y)}.Thecomplexnumbersz canbearbitraryaslongas|ϕz ⟩isnormalized.Itissufficientto
+ab i EY
+show|ϕz ⟩⟨ϕz |∈S .Aproofisdonebythefollowingsteps.
+EY EY EY
+1. Thereduceddensitymatrixof|ϕz ⟩onEB B isρ .Thisisbecause(1)I(EB B :Y′)=0
+on|ϕ
+E
+x
+Y
+⟩and(2)|ϕ
+E
+z
+Y
+⟩ = O Y′|ϕ
+E
+x
+Y
+⟩ EY forsome L o M perat E o B r LB O M Y′ supportedonY′.Thef L irs M tequation
+followsfromCorollaryD.4.1.Thesecondequationfollowsfromthefactthat|ϕyi⟩and|ϕx ⟩
+EY EY
+have the same reduced density matrix ρ ∀y. In fact, Eq. (A.3) implies an explicit choice
+2. O Th Y e ′ = re ∑ du i c z e i d U Y i d ′ e , n w s h it e y re m U a Y t i r ′ i a x re of u | n ϕ i
+E
+z t
+Y
+a ⟩ ry on op B e E
+M
+r B a B t
+R
+o Y rs i ′, . which we denote as σ
+B
+⟨
+M
+e⟩
+B
+z RY′, is an extreme
+point of Σc (B B Y′). To see this, we first observe that |ϕz ⟩⟨ϕz | =c σ for any µ-disk
+ab M R EY EY b
+b ⊆ (B
+M
+B
+R
+Y′)ϵ. The logic to establish this fact is similar to that leads to the point made
+f c Σ o a o h b f a r c a o Σ b r v s ( g B o e c e M m : (B B s ( e 1 e R ) c Y O B t | ′ E o ) ϕ Y Y , r \ E x s e ′ Y b ) ϵ . ⟩ a . g . , . h , T b a σ h , s B u ⟨ c M e s v . ⟩ B x , a T R σ n Y h B ′ i ⟨ e . s M e⟩ h T e B z i R h n n Y e t g ′ r r o e ∈ c p f o o y Σ r r r e o e ( , B f l a a M σ c ti B B c ⟨ o M e o R ⟩ n B Y z r R d ′ b Y ) i ′ e . n t i I g w s ts t i e o d r e e e C n d n o u t b r i c o c a e l a l n d l a d r t d y o E e E Y t n h . s \ 1 a i b . t t 1 ϵ y , o a m σ f n B ⟨ k a M d e n ⟩ t B z r o ( R i 2 Y x w ) ′ n ρ i | s ϕ B e M E a z x Y n t ⟩ d r e e e = x t m e tr r O e e m E m p Y i o \ n e b i e ϵ n p s | t ϕ o s t E x i h n Y o e ⟩ t f
+ab M R
+3. Thestate|ϕz ⟩hasvanishingconditionalmutualinformationI(B :B Y′|B )=0.Therefore,
+EY L R M
+its reduced density matrix on Y is uniquely determined from its reduced density matrices
+ρ ob BL t B a M in a e n d d fr σ o B m ⟨ M e⟩ B z a R n Y′ e ( x b t y en L s e i m on m o a f 3 σ .
+B
+⟨ 1
+M
+e ) ⟩
+B
+z .
+R
+T
+Y
+h ′. e W re e fo d re e , no T t r e E | t ϕ h E z i Y s ⟩⟨ e ϕ x E z t Y re | m is e t p h o e in e t xt a r s em σ
+Y
+⟨ e e⟩ z p . oint of Σ a c b (Y)
+4. Fromthediscussionaboveonecansee,forany|ϕz ⟩oftheform(E.2),thereexistsanextreme
+pointσ⟨e⟩ z ofΣc (Y)suchthat EY
+Y ab
+|ϕz ⟩⟨ϕz |=E ρ (σ⟨e⟩ z). (E.3)
+EY EY BL →EBL Y
+Thus,|ϕz ⟩⟨ϕz |∈S .
+EY EY EY
+We have proved that the set S in Eq. (E.1) is the state space of some finite dimensional Hilbert
+EY
+space.TheHilbertspacedependsonthepurification,butitsdimensioncannotdependonthisdetail.
+The reason is that the state spaces of two finite-dimensional Hilbert spaces are isomorphic if and
+onlyifthedimensionoftheHilbertspacesarethesameandthatS
+∼=Σc
+(Y).Therefore,wecan
+EY ab
+assignanabstractfinitedimensionalHilbertspaceVc ab withdimVc ab =N a c b ∈Z ≥0 ,suchthat
+Σc (Y) ∼=S ∼=S(Vc ). (E.4)
+ab EY ab
+HereS(Vc )isthestatespaceofVc .Thiscompletestheproof. □
+ab ab
+
+46 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.27. Thepartitionofadiskintheproof,whereB=B1B2 andthatABC istheLevin–Wenpartition.
+Lemma4.8. Letρ beanextremepointofΣc (Y)andσ1 betheuniqueelementofΣ1 (Y),then
+Y ab Y 11
+S(ρ )−S(σ1)=f(a)+f(b)+f(c), (43)
+Y Y
+wheref(·)isthefunctiondefinedinDefinition4.2.
+Proof. FromLemmaE.1,weknowthatalltheextremepointsofΣc (Y)havethesameentropy.It
+ab
+followsthatf(a,b,c)≡S(ρ )−S(σ1)dependsonlyonthesector(a,b,c).Letusdeterminef(a,b,c)
+Y Y
+intermsoftheuniversalcontributionsf(·)inDefinition4.2.LetY =BY′ accordingtoFig.12.
+2f(a,b,c)=(S
+Y
++S Y′)ρ −(S
+Y
++S Y′)σ1
+=(S
+B
+)ρ −(S
+B
+)σ1
+=(S(σa)+S(σb)+S(σc )) (E.5)
+B1 B2 B3
+−(S(σ1)+S(σ1)+S(σ1))
+B1 B2 B3
+=2(f(a)+f(b)+f(c)).
+In the first line, we used the isomorphism theorem. Recall that the isomorphism preserves the
+entropydifference.Inthesecondline,weappliedEq.(D.9).Inthethirdline,weappliedEq.(D.14).
+ThefifthlinefollowsfromDefinition4.2.Thiscompletestheproof. □
+AppendixF. TopologicalentanglemententropyfortheKitaev–Preskillpartition
+Inthissection,weprovideaproofofProposition5.2.
+Proposition5.2. FortheKitaev–Preskillpartition,
+γ ≡(S
+AB
++S
+BC
++S
+CA
+−S
+A
+−S
+B
+−S
+C
+−S
+ABC
+)σω (62)
+whereω=ABC,seeFig.20(a),thenγ =lnD.
+Proof. In the following, all the von Neumann entropies are calculated for the reference state σ.
+By deforming the subsystems using the idea in Fig. 4, one shows that the value γ in Eq. (62) is
+invariantundersmalldeformationsofsubsystemA,B,C.Sincelargedeformationscanbebuiltup
+fromsmallones,γ isatopologicalinvariant.Inthefollowing,wecalculateitsvalue.
+First,letusconsidersubsystemchoiceA,B ,DinFig.27,andfind
+1
+γ =S +S +S −S −S −S −S . (F.1)
+AD DB1 AB1 A D B1 ADB1
+Second,weconsidersubsystemchoiceAD,B ,B C inFig.27,andfind
+1 2
+γ = S +S +S
+BC ADB1 ADB2C
+(F.2)
+− S −S −S −S .
+B2C B1 AD ABCD
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 47
+Both partitions are equivalent to the Kitaev–Preskill partition Fig. 20(a). Adding up Eqs. (F.1) and
+(F.2),andusing
+S +S = S ,
+ABCD D ABC
+S +S = S +S ,
+DB1 ADB2C B1 AB2C
+S = S +S −S ,
+AB2C AB2 B2C B2
+S +S = S ,
+B1 B2 B
+S +S −S = S ,
+AB1 AB2 A AB
+(theseresultsfollowfromthequantumMarkovchainstructureoftheglobalreferencestate,i.e.the
+factthatEqs.(3)and(4)aresatisfiedonalllengthscaleslargerthanaconstantvalue),wefind
+2γ = S +S −S −S
+AB BC B ABC
+= 2lnD.
+Therefore,γ =lnD. □
+AppendixG. Antiparticlesandautomorphismofannulusonasphere
+In this appendix, we discuss a connection of antiparticle with the automorphisms of the
+informationconvexsetofanannulusonasphere.Intuitively,theconnectioncomesfromtwofacts.
+First, the automorphism only depends on the topological class of the path that maps the annulus
+backtoitself.ThisfactisestablishedbyLemma4.3.Second,onasphere,thetopologicalclassofthe
+pathsisdescribedbythebraidgrouponasphere.10Ingeneral,weuseB (V)todenotethen-string
+n
+braidgroupofmanifoldV.Physically,thisisrelatedtothespacetimediagramofnparticlesbraiding
+onamanifoldV.Inourframework,itisrelatedtothedeformationofasubsystem(V withnholes)
+by a path and then goes back to itself. For our purpose, an annulus is a 2-hole sphere, and the
+relevantresultisthe2-stringbraidgrouponasphere:
+B (S2)=Z . (G.1)
+2 2
+ForanautomorphismofΣ(X)generatedbyapath{Xt}withX0 =X1 =X,whereXisanannulus
+onasphere,wecoulddrawaspacetimediagramcorrespondingtothepath.Thespacetimediagram
+showsthebraidingoftwoholes.ThebraidingbelongstooneofthetwoclassesinB (S2)=Z ,so
+2 2
+doesthepath.
+The path in the trivial class could be smoothly deformed into the path Xt = X, ∀t. The
+corresponding automorphism of Σ(X) preserves the superselection sectors, i.e., it maps each
+extremepointbacktoitself.
+On the other hand, a path in the nontrivial class generates an automorphism of Σ(X) which
+permutestheextremepointsaccordingto
+Φ(σa)=σa¯, ∀a∈C.
+X X
+Intuitively,anontrivialpathswitchesthepairofholes.Furthermore,ifoneintroducesanoriented
+looptotheannulusX,whichdeformssmoothlywithX,thentheloopwillendupintheopposite
+orientationafterX ismappedbacktoitselfaccordingtothenontrivialpath.
+AppendixH. Stringoperators
+PropositionH.1. Givenapurereferencestate|ψ⟩,twoholeswithinadiskand∀a∈C,thereexistsa
+deformableunitarystringoperatorU(a,a¯)
+supportedwithinthedisk,suchthatthestate
+|ϕ(a,a¯)⟩≡U(a,a¯)|ψ⟩,
+(H.1)
+hastopologicalchargesaanda¯ inthetwoholes.
+10 https://homepages.warwick.ac.uk/∼maseay/doc/braids.pdf.
+
+48 B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164
+Fig.28. Diskωistheunionof2-holediskY anditstwoholes.W isthecomplementofω.Thetopologicalchargesaand
+a¯ withinthetwoholesarecreatedbyunitarystringoperatorU(a,a¯).ThesupportofU(a,a¯) istheunionofthedeformable
+grayareaandthetwoholesshowninred.
+Here, deformable means the support of
+U(a,a¯)
+can be deformed smoothly while keeping its
+endpoints fixed. It is easy to see, for a = 1, the string can be chosen to be the identity operator
+whilefora̸=1,thestringcannotbreakapart.Whilethisresultisnotdirectlyusefulinthecurrent
+work,weexpectittoplayaroleinderivingmoreadvancedfusionandbraidingproperties,e.g.,the
+S-matrix.
+Proof. LetωbethediskrequiredinthepropositionandW isitscomplement,seeFig.28.Onecan
+verify that σ
+W
+≡ Trω |ψ⟩⟨ψ| ∈ Σ(W) and that σ
+W
+is an extreme point. The 2-hole disk Y ⊆ ω is
+obtained by erasing the two holes from disk ω. From Proposition 4.9, Σ
+a
+1
+a¯
+(Y 2ϵ) contains a unique
+elementwhichwedenoteasσ
+Y
+a
+2
+a¯
+ϵ
+1,whereY 2ϵ isathickeningofY.Herethesubscript2ϵ meansthat
+Y is expanded along its boundary by two lattice spacings; see the beginning of Appendix D for a
+relateddiscussion.
+( t o m w o f e W i L T r t e g h h Y m e e n d b m e o y a l n a e n t z m d D w e . r e t o 3 o h n , u e t t e s n h i r g i e e σ t e s W r l n u a e v l t d a t t a i n u i n l c u d c g e e e σ d s ) s t p Y a o a d 2 a¯ a ϵ f t 1 e c e , n t in h w i s s g e i h t . a y o m L n s e m e e e t r a x | s g t t ϕ u e r r ( i p d e a x m , p a¯ s o o ) t e ⟩ f r a t = p t | s ϕ e o a ( | i a a n ϕ r , n e a¯ t W ( ) d a ⟩ o Y , o a¯ 2 f o | v ) ϵϕ Σ e n ⟩ V r ⊗ W l \ ( a W W | p Y Y ϕ Y p 2 V ϵ 2 i i \ ⟩ s n ϵ W ) g i i , Y d s w 2 a e ϵ a r n ⟩ h n o , t e u i w a r c n e r a h d b l W e i t t r t o h r e Y a e 2 t | r ϵ h ϕ y b a i W ( o s a t p Y , u a a ¯ u 2 o ) n ϵ g r f ⟩ d a e t i a i h n s s r e t y a t a h m n t o e e f e e . t i r ω A g h g ϵ e c i e , c n c d k c o v e a s r e n n d t c a i i t n n t b o e g g e r .
+Therefore, |ϕ(a,a¯)⟩ has topological charges a and a¯ within the two holes, and |ϕ(a,a¯)⟩ is identical to
+thereferencestate|ψ⟩onanysubsystemW′ ⊆WY whichisconnectedtoW byapath,wherethe
+pathiswithinWY.Inparticular,chooseW′ tobethecomplementofdiskω′,whereω′ istheunion
+ofthegraystringandthetwoholesinFig.28.Since|ψ⟩and|ϕ(a,a¯)⟩areidenticalonW′,byapplying
+Eq.(A.3),wehave|ϕ(a,a¯)⟩=U(a,a¯)|ψ⟩foraunitaryoperatorU(a,a¯)supportedonω′.Becausewemay
+deformW′ andω′,thesupportofU(a,a¯) canbedeformedsmoothly.Thiscompletestheproof. □
+References
+[1] A.Kitaev,AIPConf.Proc.1134(1)(2009)22–30,arXiv:https://aip.scitation.org/doi/pdf/10.1063/1.3149495,URLhttp
+s://aip.scitation.org/doi/abs/10.1063/1.3149495.
+[2] A.P.Schnyder,S.Ryu,A.Furusaki,A.W.W.Ludwig,Phys.Rev.B78(2008)195125,URLhttps://link.aps.org/doi/10.1
+103/PhysRevB.78.195125.
+[3] A.Kapustin,2015,ArXive-prints,arXiv:1403.1467.
+[4] X.Chen,Z.-C.Gu,X.-G.Wen,Phys.Rev.B83(2011)035107,URLhttps://link.aps.org/doi/10.1103/PhysRevB.83.035
+107.
+[5] N.Schuch,D.Pérez-García,I.Cirac,Phys.Rev.B84(2011)165139,URLhttps://link.aps.org/doi/10.1103/PhysRevB.8
+4.165139.
+[6] O.Szehr,M.M.Wolf,J.Math.Phys.57(8)(2016)081901,http://dx.doi.org/10.1063/1.4960557.
+[7] L.Fidkowski,A.Kitaev,Phys.Rev.B83(2011)075103,URLhttps://link.aps.org/doi/10.1103/PhysRevB.83.075103.
+[8] M.Barkeshli,P.Bonderson,M.Cheng,Z.Wang,2015,ArXive-prints,arXiv:1410.4540.
+[9] M.B.Hastings,J.Stat.Mech.TheoryExp.2007(08)(2007)P08024,URLhttp://dx.doi.org/10.1088/1742-5468/2007/
+08/p08024.
+[10] Y.Ge,J.Eisert,NewJ.Phys.18(8)(2016)083026,URLhttp://dx.doi.org/10.1088/1367-2630/18/8/083026.
+[11] J.Haah,Phys.Rev.A83(2011)042330,URLhttps://link.aps.org/doi/10.1103/PhysRevA.83.042330.
+
+B.Shi,K.KatoandI.H.Kim/AnnalsofPhysics418(2020)168164 49
+[12] A.Kitaev,Ann.Phys.321(2006)2–111,arXiv:cond-mat/0506438.
+[13] A.Kitaev,J.Preskill,Phys.Rev.Lett.96(2006)110404,URLhttps://link.aps.org/doi/10.1103/PhysRevLett.96.110404.
+[14] M.Levin,X.-G.Wen,Phys.Rev.Lett.96(2006)110405,URLhttps://link.aps.org/doi/10.1103/PhysRevLett.96.110405.
+[15] P.Hayden,R.Jozsa,D.Petz,A.Winter,Comm.Math.Phys.246(2004)359–374,arXiv:quant-ph/0304007.
+[16] I.H.Kim,Phys.Rev.Lett.111(2013)080503,URLhttps://link.aps.org/doi/10.1103/PhysRevLett.111.080503.
+[17] I.H.Kim,2014,ArXive-prints,arXiv:1405.0137.
+[18] I.H. Kim, Sydney Quantum Information Theory Workshop, Jan. 22, 2015, URL www.physics.usyd.edu.au/quantum/
+Coogee2015/Presentations/Kim.pdf.
+[19] I.H.Kim,B.J.Brown,Phys.Rev.B92(2015)115139,URLhttps://link.aps.org/doi/10.1103/PhysRevB.92.115139.
+[20] C.-M.Jian,I.H.Kim,X.-L.Qi,2015,ArXive-prints,arXiv:1508.07006.
+[21] K.Kato,F.Furrer,M.Murao,Phys.Rev.A93(2)(2016)022317,arXiv:1505.01917.
+[22] B.Shi,Y.-M.Lu,Phys.Rev.B99(3)(2019)035112,arXiv:1801.01519.
+[23] B.Shi,Phys.Rev.Res.1(3)(2019)033048,arXiv:1810.01986.
+[24] H.Bombin,Phys.Rev.Lett.105(2010)030403,URLhttps://link.aps.org/doi/10.1103/PhysRevLett.105.030403.
+[25] S.Bravyi,A.Kitaev,1998,ArXive-prints,arXiv:quant-ph/9811052.
+[26] E.H.Lieb,M.B.Ruskai,J.Math.Phys.14(1973)1938–1941.
+[27] Y. Zhang, T. Grover, A. Turner, M. Oshikawa, A. Vishwanath, Phys. Rev. B 85 (2012) 235151, URL https://link.aps.
+org/doi/10.1103/PhysRevB.85.235151.
+[28] J.Haah,Comm.Math.Phys.(ISSN:1432-0916)342(3)(2016)771–801,URLhttp://dx.doi.org/10.1007/s00220-016-
+2594-y.
+[29] X.-G.Wen,Internat.J.ModernPhys.B04(02)(1990)239–271,URLhttp://dx.doi.org/10.1142/S0217979290000139.
+[30] J.M. Leinaas, J. Myrheim, Il Nuovo Cimento B (1971-1996) (ISSN: 1826-9877) 37 (1) (1977) 1–23, URL http:
+//dx.doi.org/10.1007/BF02727953.
+[31] F.Wilczek,Phys.Rev.Lett.49(1982)957–959,URLhttps://link.aps.org/doi/10.1103/PhysRevLett.49.957.
+[32] D. Petz, Q J MATH 39 (1) (1988) 97–108, arXiv:http://oup.prod.sis.lan/qjmath/article-pdf/39/1/97/4559225/39-1-
+97.pdf,URLhttp://dx.doi.org/10.1093/qmath/39.1.97.
+[33] D.Petz,Rev.Math.Phys.15(2003)79–91,arXiv:quant-ph/0209053.
+[34] Y.-K. Liu, in: J. Díaz, K. Jansen, J.D.P. Rolim, U. Zwick (Eds.), Approximation, Randomization, and Combinatorial
+Optimization.AlgorithmsandTechniques,SpringerBerlinHeidelberg,Berlin,Heidelberg,ISBN:978-3-540-38045-0,
+2006,pp.438–449.
+[35] K.Fredenhagen,K.H.Rehren,B.Schroer,Comm.Math.Phys.125(2)(1989)201–226.
+[36] R.Haag,Localquantumphysics,SpringerBerlinHeidelberg,1996.
+[37] K.Kato,P.Naaijkens,2018,ArXive-prints,arXiv:1810.02376.
+[38] P.Naaijkens,QuantumSpinSystemsonInfiniteLattices:AConciseIntroduction,LectureNotesinPhysics,Springer
+InternationalPublishing,ISBN:9783319514581,2017,URLhttps://books.google.co.jp/books?id=8YVtDgAAQBAJ.
+[39] M.Cha,P.Naaijkens,B.Nachtergaele,Comm.Math.Phys.373(1)(2019)219–264,arXiv:1804.03203.
+[40] P. Bonderson, K. Shtengel, J. Slingerland, Ann. Physics (ISSN: 0003-4916) 323 (11) (2008) 2709–2755, URL http:
+//www.sciencedirect.com/science/article/pii/S0003491608000171.
+[41] A.Kapustin,L.Fidkowski,Comm.Math.Phys.(2019)257,arXiv:1810.07756.
+[42] A.Kapustin,L.Spodyneiko,2019,arXive-prints,arXiv:1905.06488.
+[43] P.W.Anderson,Science177(4047)(1972)393–396.
+[44] X.-G. Wen, Quantum Field Theory of Many-Body Systems: From the Origin of Sound to an Origin of Light and
+Electrons,OxfordUniversityPressonDemand,2004.
+[45] J.Fröhlich,T.Kerler,QuantumGroups,QuantumCategoriesandQuantumFieldTheory,Springer,2006.
+[46] P.Etingof,S.Gelaki,D.Nikshych,V.Ostrik,TensorCategories,Vol.205,AmericanMathematicalSoc.,2016.
+[47] V.Ostrik,2002,arXivpreprintmath/0203255.
+[48] M.A.Levin,X.-G.Wen,Phys.Rev.B71(4)(2005)045110,arXiv:cond-mat/0404617.
+[49] S.Bravyi,unpublished,2008.
+[50] L.Zou,J.Haah,Phys.Rev.B94(7)(2016)075151,arXiv:1604.06101.
+[51] D.J.Williamson,A.Dua,M.Cheng,Phys.Rev.Lett.122(14)(2019)140506,arXiv:1808.05221.
+[52] O.Fawzi,R.Renner,Comm.Math.Phys.340(2)(2015)575–611.
+[53] M.A. Nielsen, I.L. Chuang, Quantum Computation and Quantum Information: 10th Anniversary Edition, tenth ed.,
+CambridgeUniversityPress,NewYork,NY,USA,2011,ISBN:1107002176,9781107002173.
+[54] A.Uhlmann,Rep.Math.Phys.(ISSN:0034-4877)9(2)(1976)273–279,URLhttp://www.sciencedirect.com/science/
+article/pii/0034487776900604.
+[55] H.Araki,E.H.Lieb,Comm.Math.Phys.18(2)(1970)160–170.

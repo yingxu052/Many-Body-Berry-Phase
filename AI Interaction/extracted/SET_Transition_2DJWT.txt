@@ -1,0 +1,1058 @@
+Microscopic vortex braiding from many-body Berry phases
+Lu Zhang, Shang-qiang Ning, Hoi Chun Po, Xue-Yang Song, and Xuzhe Ying
+∗ †
+Department of Physics, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China and
+Center for Theoretical Condensed Matter Physics,
+The Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China
+(Dated: November 16, 2026)
+Kitaev’s sixteen-fold way relates (2+1)D invertible fermionic phases to bosonic topological or-
+ders obtained by gauging fermion parity, where the statistics of π-vortices are determined by the
+MajoranaChernnumberν mod16. Forevenν ,thevorticesobeyAbelianfusionyetcancarrynon-
+M M
+trivialbraidingphasesthataresubtletoaccessmicroscopically. Weshowthatthesevortexbraiding
+phases can be extracted as a many-body Berry phase accumulated along a fully gapped adiabatic
+cycle that interpolates between the four twisted boundary conditions on a torus. We demonstrate
+the computation in free-fermion lattice models with tunable ν . We interpret the vortex braiding
+M
+phase in terms of fermion-parity fractionalization. Using a bilayer construction and gauging only
+thetotalfermionparity,weobtainatoric-codetopologicalorderenrichedbyaglobalZ symmetry.
+2
+The symmetry fractionalization data determine the fractionalized fermion parity on the vortices.
+I. INTRODUCTION A central role is played by π-flux excitations (π-
+vortices). For odd Chern number, π-vortices bind an
+oddnumberofMajoranamodes,leadingto(atleast)one
+Topological order [1–4] describes gapped quantum
+Majorana mode pinned at zero energy. The fusion of π-
+phases that lie beyond the Landau symmetry-breaking
+vortices is sensitive to the microscopic details. Namely,
+paradigm. Topologically ordered quantum states ex-
+two Majorana modes hybridize into a complex fermion
+hibit universal properties that underpin fault-tolerant
+which can be filled or empty. Hence, the Hilbert space
+quantum computation[5], including long-range entangle-
+of two π-vortices is two-dimensional, dictating a non-
+ment [6, 7], anyonic excitations with fractional statistics
+abelianfusionrule. Theassociatednon-abelianstatistics
+[4, 8, 9], and robust topological ground-state degeneracy
+was carefully studied and underlies topological quantum
+[2, 10].
+computing [5, 24–28].
+Topology and symmetry are intricately correlated. In
+the exotic symmetry-enriched topological orders (SET) For even Majorana Chern number, the π-vortices fol-
+[11–15],globalsymmetryactsnontriviallyontheanyons, low an abelian fusion rule but nonetheless can still carry
+forinstancebypermutinganyontypesand/orbyendow- nontrivial topological spins and mutual braiding phases,
+ing them with fractional symmetry charges (a phenom- which is the focus of current work. The representative
+ena known as symmetry fractionalization). On the other systemswithevenMajoranaChernnumberincludeinte-
+hand, a subset of topologically ordered states is closely gerquantumHallstate[29]andCherninsulators[30–32],
+related to the invertible states, including symmetry- with U(1) charge conservation. Due to the U(1) symme-
+protected topological (SPT) phases of matter [16] and try, the fusion and braiding statistics of π-vortices are
+fermionic invertible states [4]. Indeed, Levin-Gu’s work easy to deduce. Relying on the topological stability, the
+[16] classifies bosonic SPT by the anyon braiding rule same properties for π-vortices are expected to hold in
+via gauging the protecting symmetry. The classification cases when U(1) symmetry is explicitly broken to Zf
+2
+schemematchesthegroupcohomologicalclassificationof fermion parity. In this work, we compute the proper-
+bosonic SPT [17, 18]. ties of π-vortices in systems with only Zf fermion parity
+2
+Similarly, Kitaev’s seminal work [4] provides a sharp symmetry.
+incarnation of the general idea that (2+1)D fermionic In principle, vortex braiding statistics can be accessed
+phases can be mapped to bosonic topological orders from adiabatically transporting one vortex around an-
+by gauging fermion parity, i.e., by a two-dimensional other. This requires the knowledge on either the string
+bosonization scheme [4, 19–23]. In this correspondence, operators for the vortices [33, 34] or a set of Hamilto-
+a gapped invertible fermion phase with Majorana Chern nians or states that form an adiabatic path. In prac-
+number ν M gives rise to a parity-gauged topological or- tice,however,stringoperatorscanberathercomplicated
+der, whose anyon content and statistics depend only on away from a few fixed-point cases. On the other hand,
+ν M mod 16. For example, a trivial atomic insulator and when explicitly moving a vortex in a microscopic lattice
+s-wave superconductor is mapped to a toric code model model, energy levels of the vortex states can cross (note
+andap+ipsuperconductortotheIsingtopologicalorder. that we do not mean bulk gap closing), which poisons
+the adiabaticity. Before proceeding, we should mention
+thattherehavebeenvariousproposalincomputingtopo-
+logical data from microscopic states [35–39] , which ex-
+∗ Contactauthor: songxy@ust.hk ploit the universal ground-state structure of topological
+† Contactauthor: yingxz@ust.hk phases,particularlytheirlong-rangeentanglement,toex-
+
+2
+II. VORTEX BRAIDING PHASE FROM
+ADIABATIC EVOLUTION
+In this section, we provide an explicit microscopic
+calculation of vortex braiding phase. As schematically
+shown in Fig. 1, the key idea is to mimic the global loop
+operatorsoftheparity-gaugedtopologicallyorderedstate
+onatorusbyasequenceofadiabaticdeformationsonthe
+corresponding invertible fermion state. This adiabatic
+pathsmoothlyconnectsfourpossible(twisted)boundary
+FIG. 1. Schematically, the vortex braiding in the bosonized
+conditionsforthefermionicmodel. Wethencomputethe
+topologicalorderisdictatedbythecommutationrelationbe-
+many-bodyBerryphasealongthisclosedadiabaticcycle
+tween the loop operators along non-contractible cycles on a
+torus Wˆ(−1)(C ). The four groundstates in the bosonized and identify it with the vortex braiding phase.
+theory c a o ,b rrespo 1, n 2 d to four twisted boundary conditions of Onatorus,atopologicalorderexhibitsatopologically
+the fermionic states (before bosonization). We compute the protected ground-state degeneracy. From a quantum-
+braiding phase θ by the many-body Berry phase θ along informationperspective,theground-statesubspaceforms
+ab BP
+the adiabatic path Uˆadia. connecting the groundstates with a code space, and logical operations are implemented by
+i
+four twisted boundary conditions. nonlocal loop operators Wˆ (C) which winds the anyon a
+a
+along the non-contractible loop C (Fig. 1). For Abelian
+anyons a and b, their mutual braiding phase θ is en-
+ab
+codedinthecommutatorofloopoperatorsalongthetwo
+non-contractible loops C and C :
+1 2
+tract or derive anyonic and other topological data.
+eiθab =Wˆ a (C 1 )Wˆ b (C 2 )Wˆ a− 1(C 1 )Wˆ b− 1(C 2 ). (1)
+We provide an explicit microscopic calculation of the
+abelian vortex braiding phase for even Majorana Chern InwhatfollowswefocusonsystemswithevenMajorana
+number using a many-body Berry phase. For concrete- Chern numbers ν M = 0 and 2. In Kitaev’s sixteen-fold
+ness,wecarryoutthecalculationinafree-fermionmodel way,thetopologicalorderisobtainedbygaugingfermion
+with tunable Chern number on a torus with only Zf parity or bosonization for an invertible fermionic state.
+2
+fermion parity symmetry. We consider specific adiabatic For models with nonzero Chern number, it is difficult to
+paths with special symmetries, connecting four possi- writedownthemicroscopicloopoperatorsexplicitly,and
+ble twisted boundary conditions on a torus and com- thus Eq. (1) is not straightforward to evaluate directly.
+pute the many-body Berry phase. It turns out that the To perform our calculation, we note that states with
+computed many-body Berry phase matches the vortex twisted boundary conditions in the fermionic theory
+braiding phase. The computation is further generalized can be mapped to the various ground states in the
+to the Gutzwiller projected states and the same many- gauged/bosonized theory. Indeed, winding an anyon
+body Berry phase is obtained along the designed adia- aroundnoncontractibleloopsisidenticaltoadiabatically
+batic paths. threading fluxes. Technically, this follows from a useful
+observationofthegeneric2Dbosonizationscheme[4,19–
+We further show that the vortex braiding phase can 23]. Thatis,forastaticZ 2 gaugefieldconfiguration,the
+be interpreted as fermion-parity fractionalization. This Hilbert space of the gauged theory factorizes as
+is suggesting that at ν = 2 the π-vortices carry “half”
+M fermions in the even-parity sector Z static gauge fields ,
+fermion parity, analogous to the half U(1) charge of the | ⟩⊗| 2 ⟩
+(2)
+π-vortices in integer quantum Hall states. This notion
+where the fermionic sector may contain π vortices deter-
+of half or fractionalized fermion parity is most trans-
+mined by the Z gauge field configuration. The gauged
+parent when we consider a bilayer fermionic system and 2
+theory satisfies a set of local constraints Cˆ . For in-
+its bosonization. The data for symmetry enrichment (or i
+stance in the Verstraete-Cirac mapping [20], the local
+morespecificallythedefectfusionrule)dictatesthesym-
+constraints act only on the gauge field sector and take
+metry fractionalization.
+the following form:
+The remainder of the manuscript is organized as fol- Cˆ Z static gauge fields = Z static gauge fields , (3)
+i 2 2
+lows. Section II discusses our computation of vortex | ⟩ | ⟩
+braiding phase. Section III constructs certain symme- States satisfying all local constraints correspond to a
+tryenrichedtopologicalorderfromabilayersystem. The fermionic system without any fluxes. Violations of these
+symmetryenricheddatadictatesfermionparityfraction- constraints correspond to local presence of π-vortices,
+alization. Sec. IV concludes this manuscript with fur- i.e., the flux anyons of the gauged theory.
+ther discussions. App. A introduces the fermion model Note, however, that fluxes can only be created in
+andApp.Boutlinesthecomputationofoverlapbetween pairs in the bosonized theory. Pairs of vortices are con-
+Gaussian states. nected by a string operator. When a fermion traverses
+
+3
+the string, the fermion state picks up a minus sign.
+Hence, winding a vortex around a non-contractible loop
+inthebosonizedtheoryleavesbehindastring,whichim-
+plements a twisted boundary condition experienced by
+fermionsjustasfluxinsertionintothetoruswouldresult
+in.
+Motivated by this observation, we identify the four
+groundstatesinFig.1withfourtwistedboundarycondi-
+tionsforthefermionictheoryonatorus. Wethenexpect
+that the Berry phase accumulated along the gapped adi-
+abaticpathconnectingthesegroundstatesundertwisted
+boundaryconditionsprovidesthedesiredbraidingphase,
+θ =θ . (4)
+BP ab
+Belowweimplementthisideaviaaspecific gappedinter-
+polationbetweenvariousboundaryconditionsby“twist-
+ing” the Hamiltonian, see App. A. Note that the inter- FIG.2. PhasediagramofthefermionicmodelinApp.A.The
+mediate Hamiltonians do not necessarily bear the inter- many-body Berry phase θ (which presumably matches the
+BP
+pretation of twisting boundary-conditions or insertion of vortex braiding phase θ ) and the Majorana Chern number
+ab
+“partial symmetry flux”. All we need is that they are ν areseparatelycomputed,whichreturnsaconsistentphase
+M
+gapped and that there is no level crossing along the adi- diagram. Inparticular,theBerryphaseθ BP iswellquantized.
+abatic path. The tricky part is that the Berry phase is Othermodelparametersarechosenast 1 =tand∆ p =2∆ s =
+∆.
+not necessarily quantized. Nevertheless, we can consider
+adiabaticpathswithadditionalsymmetries(seeApp.A),
+which further guarantees the quantization of the Berry
+phase is obtained. To be more specific, we consider the
+phase.
+setoffreefermiongroundstates fG.S.;Φ obtainedabove
+For concreteness, we compute the many-body Berry | ⟩
+and perform partial Gutzwiller projection:
+phaseforfree-fermionmodels(AppendixA-B).Alongthe
+adiabatic path parameterized by Φ, the Berry phase can fG.S.;Φ,g =Pˆ (g)fG.S.;Φ (6)
+G
+be evaluated as | ⟩ | ⟩
+withg dictatesthestrengthoftheprojection. Twotypes
+θ =ImLog fG.S.;ΦfG.S.;Φ+δΦ , (5) of Gutzwiller projections are studied:
+BP
+⟨ | ⟩
+Φ ∈ ad (cid:89) ia. path 1. Parton-type projection with Pˆ (g) = (1
+G,parton
+−
+where the product iterates the ground states along the g)+g r nˆ r (2 − nˆ r ),wherenˆ r =c †r c r +d †r d r isthe
+adiabatic path. In Appendix A, we consider a family of total fermion number in the unit cell at position r.
+(cid:81)
+Hamiltonians parameterized by twists Φ=(Φ ,Φ ) and This projection forces one fermion per unit cell at
+x y
+taketheclosedpath(0,0) (π,0) (π,π) (2π,π) g =1.
+(2π,2π). At the steps wi → th (mπ, → nπ) for m → ,n Z, → π-
+∈ 2. Suppressingdoubleoccupancywithineachunitcell
+fluxes are effectively threaded through the torus cycles.
+Pˆ (g) = (1 g nˆ nˆ ), with nˆ = c c
+The result is shown in Fig. 2. Indeed, the many-body G,2occ. r − r,c r,d r,c †r r
+and nˆ =d d .
+Berry phase is well-quantized. In particular, we find r,d †r (cid:81) r
+θ BP =0 for ν M =0 and θ BP =π/2 for ν M =2, consistent The Berry phase is computed using the (partially) pro-
+with the expected vortex braiding phases. We chose to jected states:
+tune two parameters m and ∆ of the microscopic model.
+The finite parameter ∆ breaks the U(1) charge conser- θ (g)=ImLog fG.S.;Φ,g fG.S.;Φ+δΦ,g
+BP
+vation to only Zf fermion parity. Φ adia. path ⟨ | ⟩
+2 ∈ (cid:89)
+When∆=0,thereisaregimewithν =1separating (7)
+M
+̸
+the regime with even ν . In the regime with ν = 1, The same quantized Berry phase can be obtained, as
+M M
+the many-body Berry phase is quantized to θ = π/4. shown in Fig. 3. The details of the computation can
+BP
+We suspect this is identical to the vortex braiding phase be found at Ref. (GitHub Repository).
+in the vacuum fusion channel, namely θ =(Rσσ)2 [4]. In the fermionic models, the π-vortices are extrinsic
+BP 1
+However, the regime with ν = 1 can be more compli- defects associated with fermion parity Zf. Braiding a
+M 2
+cated then it may seem, see Appendix. A. point-like excitation around such a defect implements
+Suchcalculationisnotlimitedtothefreefermionmod- the fermion-parity transformation in a localized manner.
+els. Instead of diagonalizing models with interaction, Whenν =2, theπ/2Berry/braidingphaseimpliesthat
+M
+we further compute the many-body Berry phases for the braiding one π-vortex around another twice yields an
+Gutzwiller projected states. The same quantized Berry overallminussignratherthantheidentity. Thissuggests
+
+4
+Fermionic model Bosonized model
+bosonization
+gauge
+gauge
+"condense"
+Fully gauged model
+FIG.4. Threeinter-relatedmodelstoextractsymmetryfrac-
+tionalization data. We assume the fermionic model has a
+global symmetry of Zf,t⊗Zf,b. Namely, the fermion parity
+2 2
+for each layer is conserved separately. After bosonization or
+FIG. 3. The quantized Berry phase is maintained for the gauging the total fermion parity Zf, we obtain a topological
+2
+Gutzwillerprojectedstates. BothtypesofGutzwillerprojec- orderenrichedbyaremainingglobalZ symmetry. Thesym-
+2
+tionarecomputed. TheunprojectedGaussiangroundstateis metryenricheddatacanbeextractedbyconsideringthefully
+prepared at parameter choice of t 1 =t and ∆ p =2∆ s =t/4. gauged theory and then “condensing” fermion bilinear ϵ t ϵ b .
+that the π-vortex carries a fractionalized fermion-parity thesecondZ canbeconsideredasaglobalbosonicsym-
+2
+quantum number when ν = 2 (mod 4). This interpre-
+M metry, descendant from top (or bottom) layer’s fermion
+tation is most natural in a fine-tuned Chern insulator
+parity symmetry.
+limit with the Zf fermion parity being embedded into
+2 Then,webosonizethisbilayersystem,i.e.,gaugingthe
+the U(1) symmetry of charge conservation. In Chern in-
+total fermion parity symmetry Zf. After this process,
+sulators,aπ-vortexcarriesaU(1)chargeof ν /4U(1) 2
+charge. ± M there is a remaining global Z 2 symmetry. Hence, the
+bosonizedtheoryisaZ -enrichedtopologicalorder. The
+In the absence of U(1) symmetry, “fractional fermion 2
+Z enricheddataaretobedeterminedbelow. Weshould
+parity”islessintuitive. Wewillmakethisnotionprecise 2
+mentionthatwiththissetup,Ref.[40]classifiesfermionic
+in the next section by considering a bilayer system and
+theZ -enrichedtoric-codeorderobtainedbygaugingthe Z 2 -protected topological states with interaction.
+2
+The case of stacking two layers with Chern number
+total fermion parity.
+ν = 2 realizes toric code with Z symmetry frac-
+M 2
+±
+tionalized on e and m anyons. Pictorially, this result
+III. BILAYER STACKING: Z ENRICHED can be understood from Fig. 4. In the previous section,
+2
+TORIC CODE AND FERMION PARITY we computed the braiding phase between two vortices,
+FRACTIONALIZATION say labeled as a t . After bosonizing the bilayer system,
+the bound state of two vortices from both layers a a
+t b
+and a a¯ are deconfined anyons. Meanwhile, the vortices
+In this section, we sharpen the notion of fractional t b
+in a single layer, say a and a¯ , are now symmetry de-
+fermion parity by considering a bilayer system and the t t
+relatedZ -enrichedtopological order. Awell-studiedex- fects. The symmetry action on anyons is now dictated
+2
+by thebraiding between anyon andsymmetry defect, for
+ample is stacking two layers with Majorana Chern num-
+instancea a anda , whichfollowsdirectlyfromthesin-
+ber ν = 1, which realizes a toric code with a global t b t
+M
+Z symmet ± ry exchanging e and m anyons [11, 13, 14]. glelayervortexbraidingrule. Inparticular,giventheπ/2
+2
+braidingphasecomputedpreviously,weseethatbraiding
+In this section, we study a bilayer system with ν = 2
+and show that this realizes a toric code state w
+M
+ith
+±Z a
+t
+a
+b
+around a
+t
+twice, i.e., applying Z
+2
+symmetry action
+2 twice, returns a phase factor of 1=eiπ/2 eiπ/2. This
+symmetry fractionalization.
+− ×
+means that the anyon a a carries a fractional symmetry
+To be more concrete, we consider a bilayer fermionic t b
+systemwithglobalsymmetryZf,t Zf,b,i.e.,thefermion charge,whichdoesnotformalinearrepresentation. Sim-
+2 ⊗ 2 ilar result holds for other combinations of boundstates
+parity for top (“t”) and bottom (“b”) layers are sep-
+between vortices.
+arately conserved. Equivalently, the symmetry of the
+More technically, the pictorial argument above is sup-
+fermion system can be written as:
+ported by taking a detour by gauging the full symmetry
+Zf Z (8) Zf,t Zf,band“condensing”thebosonformedbyfermion
+2 ⊗ 2 2 ⊗ 2
+bilinearϵ ϵ asinFig.4. Wewillstudytheanyoncontent
+t b
+where the first Zf is the total fermion parity symmetry; ofthisprocessandcomparethesituationsofstackingtwo
+2
+
+5
+W tri e vi w al il l l ay sh er o s w w t i h th at ν t M he = d 0 ef a e n ct d f t u w s o ion lay r e u r l s e w is it d h iff ν e M re = nt ± fo 2 r . 1(1) 1( 1 1) ϵ b ( ϵ − b 1) e b e ( b 1) m m b ( b 1)
+the two cases. This difference in the defect fusion rule ϵ t ( 1) ϵ t ϵ t ϵ b ϵ t e b ϵ t m b
+−
+dictates the difference in the symmetry fractionalization e t (1) e t e t ϵ b e t e b e t m b
+pattern. m t (1) m t m t ϵ b m t e b m t m b
+We then “condense” ϵ ϵ . The deconfined anyon content
+t b
+is given by
+A. Defect fusion rule for ν =±2
+M
+= 1,ϵ ,e e ,e m = 1,ϵ,e,m . (12)
+e t t b t b t.c.
+Let us start with the case with bilayer of ν = 2. C { }∼C { }
+M
+After gauging the full symmetry Zf,t Zf,b, the an ± yon which again can be identified with toric code model.
+2 ⊗ 2
+content and corresponding topological spin can be read Meanwhile the confined symmetry defects are given by:
+off directly from Kitaev’s sixteen-foldway as follows [4]:
+= e ,m ,e ,m
+g t t b b
+1(1) ϵ ( 1) a (e iπ/4) a¯ (e iπ/4) C { } (13)
+b − b − b − = 1 g ,ϵ 1 g ,e 1 g ,m 1 g
+1(1) 1 ϵ a a¯ { × × × }
+b b b
+ϵ t ( − 1) ϵ t ϵ t ϵ b ϵ t a b ϵ t a¯ b Here, we choose the reference defect as 1 g = e t . The
+a t (eiπ/4) a t a t ϵ b a t a b a t a¯ b defect fusion rule is
+a¯ (eiπ/4) a¯ a¯ ϵ a¯ a a¯ a¯
+t t t b t b t b
+1 1 =(e e )=1. (14)
+g g t t
+Next, we choose to “condense” the fermion bilinear ϵ ϵ × ×
+t b
+to ungauge the global Z 2 symmetry. The reason is that Namely, two reference defects now fuse into vacuum.
+in the bosonized model, ϵ ϵ can be created by local op-
+t b
+erators, which is hence “condensed”. After “condensa-
+tion”, the result is the same as direct bosonization or C. Deduce symmetry fractionalization from defect
+gaugingtotalfermionicparityZf. Theremainingobjects fusion rule
+2
+form a Z -graded structure with a deconfined sector
+2 e
+C
+of anyons and a confined sector g of symmetry defects, Comparing Eq. (11) and Eq. (14), the defect fusion
+where e,g are the two group el C ements of Z symmetry ruleisindeedchanged. Mathematically, thedifferencein
+2
+{ }
+group with g2 =e. thedefectfusionruleisclassifiedbythesecondgroupco-
+The deconfined anyons are: homology 2(Z , =Z Z ). (Notethatinbothcases
+2 e 2 2
+H C ×
+above,thedeconfinedanyonsin canbeidentifiedwith
+C e = { 1,ϵ t ,a t a b ,a t a¯ b }∼C t.c. = { 1,ϵ,e,m } , (9) those of toric code.) This classi C fi e cation of defect fusion
+which can be identified with those of a toric code . rule is mathematically the same as that for symmetry
+t.c.
+Meanwhile the confined symmetry defects are: C fractionalization [11].
+Pictorially,thechangedinthesymmetryfractionaliza-
+= a ,a¯ ,a ,a¯
+g t t b b tionfromdefectfusionrulecanbereadofffromdiagrams
+C { } (10)
+= 1 ,ϵ 1 ,e 1 ,m 1 in Fig. 5 and see Ref. [11, 41] for more detailed discus-
+g g g g
+{ × × × }
+sions. In Fig. 5, we start from the defect fusion rule for
+whereonecanchooseforinstancea asareferencedefect
+t thebilayerwithzeroChernnumbersinstep(1)andthen
+“1 ”andtherestofthedefectscanbeobtainedbyfusing
+g go through step (2) and (3) to implement the change in
+with anyons a . Note that each object a is
+e ∈ C e ∈ C e,g defectfusionruleandderivethecorrespondingchangein
+identifiedwiththeirdressingofϵ ϵ ,namelya a ϵ ϵ .
+t b ∼ × t b the symmetry fractionalization pattern.
+Asmentionedabove,akeyrelationtolookatisthedefect
+In step (1), we pick the reference symmetry defect
+fusion rule. The fusion rule for the reference defect is
+1 . An anyon x is transported across the
+g g e e
+∈ C ∈ C
+1 g 1 g =(a t a t )=ϵ. (11) branch-cutoftwosymmetrydefects1 g ’s. (Tworeference
+× × symmetry defects fuse into the vacuum sector 1 .)
+e
+In the intermediate step, we take the reference defect as This process is equivalent to applying Z symmet ∈ ry C ac-
+2
+1 g = a t as a concrete example. Here, two reference de- tiontwice ontheanyonstatex e . Incomparison,wecould
+fectsfuseintoafermion. Thisistobecomparedwiththe applytheidentityoperationontheanyonstateasinstep
+case of bilayer with ν M = 0 below, where two reference (2). The difference in how symmetry action is applied as
+defects fuse into vacuum. in steps (1) and (2) is dictated by a U(1) phase η (g,g).
+x
+Indeed, in cases where the anyon x carries fractional
+e
+symmetry charges, applying Z symmetry action twice
+2
+B. Defect fusion rule for bilayer with ν =0
+M is not the same as identity operation, resulting in the
+nontrivial phase η (g,g).
+x
+The analysis of bilayer with ν M =0 fully parallels the From step (2) to step (3), the defect fusion rule is
+previous paragraph. The anyon content and correspond- effectively changed. In step (2), there is no harm to
+ing topological spin after gauging Zf,t Zf,b is [4] add an abelian anyon loop (blue) in a distant regime.
+2 ⊗ 2
+
+6
+(<latexit sha1_base64="1UIau9VDC/cPWjLTGCwZAyPrDUc=">AAAB6nicbVA9TwJBEJ3DL8Qv1NJmIzHBhtwRg5ZEG0uMIiRwIXvLHmzY27vszpkQwk+wsdAYW3+Rnf/GBa5Q8CWTvLw3k5l5QSKFQdf9dnJr6xubW/ntws7u3v5B8fDo0cSpZrzJYhnrdkANl0LxJgqUvJ1oTqNA8lYwupn5rSeujYjVA44T7kd0oEQoGEUr3Zer571iya24c5BV4mWkBBkaveJXtx+zNOIKmaTGdDw3QX9CNQom+bTQTQ1PKBvRAe9YqmjEjT+ZnzolZ1bpkzDWthSSufp7YkIjY8ZRYDsjikOz7M3E/7xOiuGVPxEqSZErtlgUppJgTGZ/k77QnKEcW0KZFvZWwoZUU4Y2nYINwVt+eZU8ViterVK7uyjVr7M48nACp1AGDy6hDrfQgCYwGMAzvMKbI50X5935WLTmnGzmGP7A+fwBRNKNJg==</latexit> 2) changing the defect fusion rule, the applying Z 2 symme-
+trytwicediffersfromidentitytransformationbyaminus
+sign. This is indicating that the vortices carry fractional
+ω<latexit sha1_base64="NaR/SMzwwF4NempvBlM/BHzKCOI=">AAACBnicbZDLSsNAFIYn9VbrLepShMEiVJCSiFSXRTcuK9gLNCFMptN26OTCzIlYQldufBU3LhRx6zO4822ctAG1+sPAx3/OYc75/VhwBZb1aRQWFpeWV4qrpbX1jc0tc3unpaJEUtakkYhkxyeKCR6yJnAQrBNLRgJfsLY/uszq7VsmFY/CGxjHzA3IIOR9TgloyzP3HQbEu6s4AYEhQDqYHH/jkWeWrao1Ff4Ldg5llKvhmR9OL6JJwEKggijVta0Y3JRI4FSwSclJFIsJHZEB62oMScCUm07PmOBD7fRwP5L6hYCn7s+JlARKjQNfd2YrqvlaZv5X6ybQP3dTHsYJsJDOPuonAkOEs0xwj0tGQYw1ECq53hXTIZGEgk6upEOw50/+C62Tql2r1q5Py/WLPI4i2kMHqIJsdIbq6Ao1UBNRdI8e0TN6MR6MJ+PVeJu1Fox8Zhf9kvH+Bc6dmVw=</latexit> (g,g)
+x 1<latexit sha1_base64="KxEZ+LlVITIG5GEj1VEY51JKaZ4=">AAAB9XicbVDLSsNAFL3xWeur6tJNsAiuSiJSXRbduKxgH9DGMplO2qGTSZi5UUrIf7hxoYhb/8Wdf+OkzUJbDwwczrmXe+b4seAaHefbWlldW9/YLG2Vt3d29/YrB4dtHSWKshaNRKS6PtFMcMlayFGwbqwYCX3BOv7kJvc7j0xpHsl7nMbMC8lI8oBTgkZ6cAdpPyQ4RkxHWTaoVJ2aM4O9TNyCVKFAc1D56g8jmoRMIhVE657rxOilRCGngmXlfqJZTOiEjFjPUElCpr10ljqzT40ytINImSfRnqm/N1ISaj0NfTOZR9SLXi7+5/USDK68lMs4QSbp/FCQCBsjO6/AHnLFKIqpIYQqbrLadEwUoWiKKpsS3MUvL5P2ec2t1+p3F9XGdVFHCY7hBM7AhUtowC00oQUUFDzDK7xZT9aL9W59zEdXrGLnCP7A+vwBDq+S5g==</latexit> g 1<latexit sha1_base64="KxEZ+LlVITIG5GEj1VEY51JKaZ4=">AAAB9XicbVDLSsNAFL3xWeur6tJNsAiuSiJSXRbduKxgH9DGMplO2qGTSZi5UUrIf7hxoYhb/8Wdf+OkzUJbDwwczrmXe+b4seAaHefbWlldW9/YLG2Vt3d29/YrB4dtHSWKshaNRKS6PtFMcMlayFGwbqwYCX3BOv7kJvc7j0xpHsl7nMbMC8lI8oBTgkZ6cAdpPyQ4RkxHWTaoVJ2aM4O9TNyCVKFAc1D56g8jmoRMIhVE657rxOilRCGngmXlfqJZTOiEjFjPUElCpr10ljqzT40ytINImSfRnqm/N1ISaj0NfTOZR9SLXi7+5/USDK68lMs4QSbp/FCQCBsjO6/AHnLFKIqpIYQqbrLadEwUoWiKKpsS3MUvL5P2ec2t1+p3F9XGdVFHCY7hBM7AhUtowC00oQUUFDzDK7xZT9aL9W59zEdXrGLnCP7A+vwBDq+S5g==</latexit> g Z 2 charge,i.e.,nontrivialsymmetryfractionalizationpat-
+x <latexit sha1_base64="E83a8tYs/yl6FiCRUSZ18/oCSdE=">AAAB9XicbVDLSgNBEJyNrxhfUY9eBoPgKeyKRI9BLx4jmAcka5iddJIhsw9metWw7H948aCIV//Fm3/jbLIHTSwYKKq66ZryIik02va3VVhZXVvfKG6WtrZ3dvfK+wctHcaKQ5OHMlQdj2mQIoAmCpTQiRQw35PQ9ibXmd9+AKVFGNzhNALXZ6NADAVnaKT7p37S8xmOERNI0365YlftGegycXJSITka/fJXbxDy2IcAuWRadx07QjdhCgWXkJZ6sYaI8QkbQdfQgPmg3WSWOqUnRhnQYajMC5DO1N8bCfO1nvqemcwi6kUvE//zujEOL91EBFGMEPD5oWEsKYY0q4AOhAKOcmoI40qYrJSPmWIcTVElU4Kz+OVl0jqrOrVq7fa8Ur/K6yiSI3JMTolDLkid3JAGaRJOFHkmr+TNerRerHfrYz5asPKdQ/IH1ucPetqTKw==</latexit> e tern. In comparison, the vacuum and fermion carries in-
+(<latexit sha1_base64="BQF7n9x6pnoxoc/QLJ+YkuziFkA=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2FXJHoMevEY0TwgWcLspDcZMju7zMwKIeQTvHhQxKtf5M2/cZLsQRMLGoqqbrq7gkRwbVz328mtrW9sbuW3Czu7e/sHxcOjpo5TxbDBYhGrdkA1Ci6xYbgR2E4U0igQ2ApGtzO/9YRK81g+mnGCfkQHkoecUWOlh7J33iuW3Io7B1klXkZKkKHeK351+zFLI5SGCap1x3MT40+oMpwJnBa6qcaEshEdYMdSSSPU/mR+6pScWaVPwljZkobM1d8TExppPY4C2xlRM9TL3kz8z+ukJrz2J1wmqUHJFovCVBATk9nfpM8VMiPGllCmuL2VsCFVlBmbTsGG4C2/vEqaFxWvWqneX5ZqN1kceTiBUyiDB1dQgzuoQwMYDOAZXuHNEc6L8+58LFpzTjZzDH/gfP4AQ02NJQ==</latexit> 1) x <latexit sha1_base64="E83a8tYs/yl6FiCRUSZ18/oCSdE=">AAAB9XicbVDLSgNBEJyNrxhfUY9eBoPgKeyKRI9BLx4jmAcka5iddJIhsw9metWw7H948aCIV//Fm3/jbLIHTSwYKKq66ZryIik02va3VVhZXVvfKG6WtrZ3dvfK+wctHcaKQ5OHMlQdj2mQIoAmCpTQiRQw35PQ9ibXmd9+AKVFGNzhNALXZ6NADAVnaKT7p37S8xmOERNI0365YlftGegycXJSITka/fJXbxDy2IcAuWRadx07QjdhCgWXkJZ6sYaI8QkbQdfQgPmg3WSWOqUnRhnQYajMC5DO1N8bCfO1nvqemcwi6kUvE//zujEOL91EBFGMEPD5oWEsKYY0q4AOhAKOcmoI40qYrJSPmWIcTVElU4Kz+OVl0jqrOrVq7fa8Ur/K6yiSI3JMTolDLkid3JAGaRJOFHkmr+TNerRerHfrYz5asPKdQ/IH1ucPetqTKw==</latexit> e teger symmetry charge, which is reflected in the U(1)
+x <latexit sha1_base64="E83a8tYs/yl6FiCRUSZ18/oCSdE=">AAAB9XicbVDLSgNBEJyNrxhfUY9eBoPgKeyKRI9BLx4jmAcka5iddJIhsw9metWw7H948aCIV//Fm3/jbLIHTSwYKKq66ZryIik02va3VVhZXVvfKG6WtrZ3dvfK+wctHcaKQ5OHMlQdj2mQIoAmCpTQiRQw35PQ9ibXmd9+AKVFGNzhNALXZ6NADAVnaKT7p37S8xmOERNI0365YlftGegycXJSITka/fJXbxDy2IcAuWRadx07QjdhCgWXkJZ6sYaI8QkbQdfQgPmg3WSWOqUnRhnQYajMC5DO1N8bCfO1nvqemcwi6kUvE//zujEOL91EBFGMEPD5oWEsKYY0q4AOhAKOcmoI40qYrJSPmWIcTVElU4Kz+OVl0jqrOrVq7fa8Ur/K6yiSI3JMTolDLkid3JAGaRJOFHkmr+TNerRerHfrYz5asPKdQ/IH1ucPetqTKw==</latexit> e 1<latexit sha1_base64="gfDDG5HdC2uj59mXU+2xx3lABwE=">AAAB6HicbVBNS8NAEJ34WetX1aOXxSJ4KolI9Vj04rEF+wFtKJvtpF272YTdjVBCf4EXD4p49Sd589+4bXPQ1gcDj/dmmJkXJIJr47rfztr6xubWdmGnuLu3f3BYOjpu6ThVDJssFrHqBFSj4BKbhhuBnUQhjQKB7WB8N/PbT6g0j+WDmSToR3QoecgZNVZqeP1S2a24c5BV4uWkDDnq/dJXbxCzNEJpmKBadz03MX5GleFM4LTYSzUmlI3pELuWShqh9rP5oVNybpUBCWNlSxoyV39PZDTSehIFtjOiZqSXvZn4n9dNTXjjZ1wmqUHJFovCVBATk9nXZMAVMiMmllCmuL2VsBFVlBmbTdGG4C2/vEpalxWvWqk2rsq12zyOApzCGVyAB9dQg3uoQxMYIDzDK7w5j86L8+58LFrXnHzmBP7A+fwBfi+MwA==</latexit> phases [M xe,ω(g,g) ] ∗ =1 for x e
+∈{
+1,ϵ
+}⊂C
+e .
+1<latexit sha1_base64="KxEZ+LlVITIG5GEj1VEY51JKaZ4=">AAAB9XicbVDLSsNAFL3xWeur6tJNsAiuSiJSXRbduKxgH9DGMplO2qGTSZi5UUrIf7hxoYhb/8Wdf+OkzUJbDwwczrmXe+b4seAaHefbWlldW9/YLG2Vt3d29/YrB4dtHSWKshaNRKS6PtFMcMlayFGwbqwYCX3BOv7kJvc7j0xpHsl7nMbMC8lI8oBTgkZ6cAdpPyQ4RkxHWTaoVJ2aM4O9TNyCVKFAc1D56g8jmoRMIhVE657rxOilRCGngmXlfqJZTOiEjFjPUElCpr10ljqzT40ytINImSfRnqm/N1ISaj0NfTOZR9SLXi7+5/USDK68lMs4QSbp/FCQCBsjO6/AHnLFKIqpIYQqbrLadEwUoWiKKpsS3MUvL5P2ec2t1+p3F9XGdVFHCY7hBM7AhUtowC00oQUUFDzDK7xZT9aL9W59zEdXrGLnCP7A+vwBDq+S5g==</latexit> g 1<latexit sha1_base64="KxEZ+LlVITIG5GEj1VEY51JKaZ4=">AAAB9XicbVDLSsNAFL3xWeur6tJNsAiuSiJSXRbduKxgH9DGMplO2qGTSZi5UUrIf7hxoYhb/8Wdf+OkzUJbDwwczrmXe+b4seAaHefbWlldW9/YLG2Vt3d29/YrB4dtHSWKshaNRKS6PtFMcMlayFGwbqwYCX3BOv7kJvc7j0xpHsl7nMbMC8lI8oBTgkZ6cAdpPyQ4RkxHWTaoVJ2aM4O9TNyCVKFAc1D56g8jmoRMIhVE657rxOilRCGngmXlfqJZTOiEjFjPUElCpr10ljqzT40ytINImSfRnqm/N1ISaj0NfTOZR9SLXi7+5/USDK68lMs4QSbp/FCQCBsjO6/AHnLFKIqpIYQqbrLadEwUoWiKKpsS3MUvL5P2ec2t1+p3F9XGdVFHCY7hBM7AhUtowC00oQUUFDzDK7xZT9aL9W59zEdXrGLnCP7A+vwBDq+S5g==</latexit> g
+ω<latexit sha1_base64="xD9mPtQ06WwjA6Z16Cy16CClgMI=">AAACIXicbVBNS8NAEN3Ur1q/qh69BIugICURqT0We/FYwbZCU8pmO22XbjZhdyKUkL/ixb/ixYMivYl/xu2HqK0PFt6+N8PMPD8SXKPjfFiZldW19Y3sZm5re2d3L79/0NBhrBjUWShCde9TDYJLqCNHAfeRAhr4Apr+sDrxmw+gNA/lHY4iaAe0L3mPM4pG6uTLXhhAn556AcUBYtJPz3/omcfl9MeoSKppJ/m2IE07+YJTdKawl4k7JwUyR62TH3vdkMUBSGSCat1ynQjbCVXImYA058UaIsqGtA8tQyUNQLeT6YWpfWKUrt0LlXkS7an6uyOhgdajwDeVkxX1ojcR//NaMfbK7YTLKEaQbDaoFwsbQ3sSl93lChiKkSGUKW52tdmAKsrQhJozIbiLJy+TxkXRLRVLt5eFyvU8jiw5IsfklLjkilTIDamROmHkkTyTV/JmPVkv1rs1npVmrHnPIfkD6/MLjaWlqA==</latexit> (g,g) →Ce IV. CONCLUSION AND DISCUSSION
+x <latexit sha1_base64="E83a8tYs/yl6FiCRUSZ18/oCSdE=">AAAB9XicbVDLSgNBEJyNrxhfUY9eBoPgKeyKRI9BLx4jmAcka5iddJIhsw9metWw7H948aCIV//Fm3/jbLIHTSwYKKq66ZryIik02va3VVhZXVvfKG6WtrZ3dvfK+wctHcaKQ5OHMlQdj2mQIoAmCpTQiRQw35PQ9ibXmd9+AKVFGNzhNALXZ6NADAVnaKT7p37S8xmOERNI0365YlftGegycXJSITka/fJXbxDy2IcAuWRadx07QjdhCgWXkJZ6sYaI8QkbQdfQgPmg3WSWOqUnRhnQYajMC5DO1N8bCfO1nvqemcwi6kUvE//zujEOL91EBFGMEPD5oWEsKYY0q4AOhAKOcmoI40qYrJSPmWIcTVElU4Kz+OVl0jqrOrVq7fa8Ur/K6yiSI3JMTolDLkid3JAGaRJOFHkmr+TNerRerHfrYz5asPKdQ/IH1ucPetqTKw==</latexit> e <latexit sha1_base64="BcddFj5wDGBK74YfFTFL2HE2Amo=">AAACKHicbZDLSsNAFIYnXmu9VV26CRZBRUoiUt0punEjKNhaaGKYTE/SoZMLMydiCXkcN76KGxFF3PokTmsVbz8M/HznHOac308FV2hZr8bY+MTk1HRppjw7N7+wWFlabqokkwwaLBGJbPlUgeAxNJCjgFYqgUa+gEu/dzyoX16DVDyJL7CfghvRMOYBZxQ18ioHjoAA26defuPlTkSxi5hDUWw7SQQh3fhEoSZfdrNwJA+76F5teZWqVbOGMv8ae2SqZKQzr/LodBKWRRAjE1Sptm2l6OZUImcCirKTKUgp69EQ2trGNALl5sNDC3Ndk44ZJFK/GM0h/T6R00ipfuTrzsGy6ndtAP+rtTMM9t2cx2mGELOPj4JMmJiYg9TMDpfAUPS1oUxyvavJulRShjrbsg7B/n3yX9Pcqdn1Wv18t3p4NIqjRFbJGtkgNtkjh+SEnJEGYeSW3JMn8mzcGQ/Gi/H60TpmjGZWyA8Zb+/lHqhT</latexit>M xe,ω(g,g) →
+1<latexit sha1_base64="gfDDG5HdC2uj59mXU+2xx3lABwE=">AAAB6HicbVBNS8NAEJ34WetX1aOXxSJ4KolI9Vj04rEF+wFtKJvtpF272YTdjVBCf4EXD4p49Sd589+4bXPQ1gcDj/dmmJkXJIJr47rfztr6xubWdmGnuLu3f3BYOjpu6ThVDJssFrHqBFSj4BKbhhuBnUQhjQKB7WB8N/PbT6g0j+WDmSToR3QoecgZNVZqeP1S2a24c5BV4uWkDDnq/dJXbxCzNEJpmKBadz03MX5GleFM4LTYSzUmlI3pELuWShqh9rP5oVNybpUBCWNlSxoyV39PZDTSehIFtjOiZqSXvZn4n9dNTXjjZ1wmqUHJFovCVBATk9nXZMAVMiMmllCmuL2VsBFVlBmbTdGG4C2/vEpalxWvWqk2rsq12zyOApzCGVyAB9dQg3uoQxMYIDzDK7w5j86L8+58LFrXnHzmBP7A+fwBfi+MwA==</latexit> ! " Inconclusion,wehaveprovidedamicroscopicrouteto
+the abelian braiding statistics of π-vortices in (2+1)D
+(<latexit sha1_base64="NpE9TRs6JWUpJvZ8dE85+dduSRk=">AAAB6nicbVDLSgNBEOz1GeMr6tHLYBDiJeyqRI9BLx4jmgckS5id9CZDZmeXmVkhhHyCFw+KePWLvPk3TpI9aGJBQ1HVTXdXkAiujet+Oyura+sbm7mt/PbO7t5+4eCwoeNUMayzWMSqFVCNgkusG24EthKFNAoENoPh7dRvPqHSPJaPZpSgH9G+5CFn1FjpoXRx1i0U3bI7A1kmXkaKkKHWLXx1ejFLI5SGCap123MT44+pMpwJnOQ7qcaEsiHtY9tSSSPU/nh26oScWqVHwljZkobM1N8TYxppPYoC2xlRM9CL3lT8z2unJrz2x1wmqUHJ5ovCVBATk+nfpMcVMiNGllCmuL2VsAFVlBmbTt6G4C2+vEwa52WvUq7cXxarN1kcOTiGEyiBB1dQhTuoQR0Y9OEZXuHNEc6L8+58zFtXnGzmCP7A+fwBRleNJw==</latexit> 3) fermionic invertible phases with even Majorana Chern
+number. By constructing a fully gapped adiabatic cycle
+1<latexit sha1_base64="KxEZ+LlVITIG5GEj1VEY51JKaZ4=">AAAB9XicbVDLSsNAFL3xWeur6tJNsAiuSiJSXRbduKxgH9DGMplO2qGTSZi5UUrIf7hxoYhb/8Wdf+OkzUJbDwwczrmXe+b4seAaHefbWlldW9/YLG2Vt3d29/YrB4dtHSWKshaNRKS6PtFMcMlayFGwbqwYCX3BOv7kJvc7j0xpHsl7nMbMC8lI8oBTgkZ6cAdpPyQ4RkxHWTaoVJ2aM4O9TNyCVKFAc1D56g8jmoRMIhVE657rxOilRCGngmXlfqJZTOiEjFjPUElCpr10ljqzT40ytINImSfRnqm/N1ISaj0NfTOZR9SLXi7+5/USDK68lMs4QSbp/FCQCBsjO6/AHnLFKIqpIYQqbrLadEwUoWiKKpsS3MUvL5P2ec2t1+p3F9XGdVFHCY7hBM7AhUtowC00oQUUFDzDK7xZT9aL9W59zEdXrGLnCP7A+vwBDq+S5g==</latexit> g 1<latexit sha1_base64="KxEZ+LlVITIG5GEj1VEY51JKaZ4=">AAAB9XicbVDLSsNAFL3xWeur6tJNsAiuSiJSXRbduKxgH9DGMplO2qGTSZi5UUrIf7hxoYhb/8Wdf+OkzUJbDwwczrmXe+b4seAaHefbWlldW9/YLG2Vt3d29/YrB4dtHSWKshaNRKS6PtFMcMlayFGwbqwYCX3BOv7kJvc7j0xpHsl7nMbMC8lI8oBTgkZ6cAdpPyQ4RkxHWTaoVJ2aM4O9TNyCVKFAc1D56g8jmoRMIhVE657rxOilRCGngmXlfqJZTOiEjFjPUElCpr10ljqzT40ytINImSfRnqm/N1ISaj0NfTOZR9SLXi7+5/USDK68lMs4QSbp/FCQCBsjO6/AHnLFKIqpIYQqbrLadEwUoWiKKpsS3MUvL5P2ec2t1+p3F9XGdVFHCY7hBM7AhUtowC00oQUUFDzDK7xZT9aL9W59zEdXrGLnCP7A+vwBDq+S5g==</latexit> g with special symmetries that interpolates between the
+x four twisted boundary conditions on a torus, we showed
+<latexit sha1_base64="E83a8tYs/yl6FiCRUSZ18/oCSdE=">AAAB9XicbVDLSgNBEJyNrxhfUY9eBoPgKeyKRI9BLx4jmAcka5iddJIhsw9metWw7H948aCIV//Fm3/jbLIHTSwYKKq66ZryIik02va3VVhZXVvfKG6WtrZ3dvfK+wctHcaKQ5OHMlQdj2mQIoAmCpTQiRQw35PQ9ibXmd9+AKVFGNzhNALXZ6NADAVnaKT7p37S8xmOERNI0365YlftGegycXJSITka/fJXbxDy2IcAuWRadx07QjdhCgWXkJZ6sYaI8QkbQdfQgPmg3WSWOqUnRhnQYajMC5DO1N8bCfO1nvqemcwi6kUvE//zujEOL91EBFGMEPD5oWEsKYY0q4AOhAKOcmoI40qYrJSPmWIcTVElU4Kz+OVl0jqrOrVq7fa8Ur/K6yiSI3JMTolDLkid3JAGaRJOFHkmr+TNerRerHfrYz5asPKdQ/IH1ucPetqTKw==</latexit> e
+ω<latexit sha1_base64="EvG4w/s/YJTVWZ6JL2W+43mw0zw=">AAACbHicdVHLattAFB2pj6ROW7uPRUooiJgGtwQjleJmUzDppptCAnVssGQxGl/JQ2YkMXNVbIRW+cPs8gnd9Bs6sl3axPGFgcN5MHfORLngGl33xrIfPHz0eGf3SWPv6bPnzdaLlxc6KxSDActEpkYR1SB4CgPkKGCUK6AyEjCMLr/W+vAnKM2z9AcucggkTVIec0bRUGHrygekk9LPFZdQhfOOLynOEMukOv4H33+pbVtVX0CM4+9hOQ/LvzRUxpJJSOiWUOUrnswwmHwIW2236y7H2QTeGrTJes7C1rU/zVghIUUmqNZjz80xKKlCzgRUDb/QkFN2SRMYG5hSCTool2VVzjvDTJ04U+ak6CzZ/xMllVovZGSc9bL6rlaT92njAuOToORpXiCkbHVRXAgHM6du3plyBQzFwgDKFDe7OmxGFWVo/qdhSvDuPnkTXHzser1u7/xTu3+6rmOXHJBD0iEe+Uz65Bs5IwPCyC+rae1bb6zf9mv7wH67strWOvOK3Br76A9JiL8W</latexit> x→(g,g)=ω x (g,g) M xe,ω(g,g) ↑ that the vortex braiding phase can be extracted as a
+<latexit sha1_base64="TrW+X0XjBsde70RS9I6KtVnyVs8=">AAACBnicbZDLSsNAFIYn9VbrLepShGARKkhJRKrLohuXFewFmlAm00k7dJIJMydCCV258VXcuFDErc/gzrdx0gbU1h8GPv5zDnPO78ecKbDtL6OwtLyyulZcL21sbm3vmLt7LSUSSWiTCC5kx8eKchbRJjDgtBNLikOf07Y/us7q7XsqFRPRHYxj6oV4ELGAEQza6pmHrgjpAFfcEMMQIB1MTn/wpGeW7ao9lbUITg5llKvRMz/dviBJSCMgHCvVdewYvBRLYITTSclNFI0xGeEB7WqMcEiVl07PmFjH2ulbgZD6RWBN3d8TKQ6VGoe+7sxWVPO1zPyv1k0guPRSFsUJ0IjMPgoSboGwskysPpOUAB9rwEQyvatFhlhiAjq5kg7BmT95EVpnVadWrd2el+tXeRxFdICOUAU56ALV0Q1qoCYi6AE9oRf0ajwaz8ab8T5rLRj5zD76I+PjG8HomVQ=</latexit>ω(g,g) quantized many-body Berry phase. In free-fermion lat-
+! "
+tice models with tunable ν , the Berry phase reproduces
+M
+the expected values (e.g., 0 for ν = 0 and π/2 for
+x <latexit sha1_base64="E83a8tYs/yl6FiCRUSZ18/oCSdE=">AAAB9XicbVDLSgNBEJyNrxhfUY9eBoPgKeyKRI9BLx4jmAcka5iddJIhsw9metWw7H948aCIV//Fm3/jbLIHTSwYKKq66ZryIik02va3VVhZXVvfKG6WtrZ3dvfK+wctHcaKQ5OHMlQdj2mQIoAmCpTQiRQw35PQ9ibXmd9+AKVFGNzhNALXZ6NADAVnaKT7p37S8xmOERNI0365YlftGegycXJSITka/fJXbxDy2IcAuWRadx07QjdhCgWXkJZ6sYaI8QkbQdfQgPmg3WSWOqUnRhnQYajMC5DO1N8bCfO1nvqemcwi6kUvE//zujEOL91EBFGMEPD5oWEsKYY0q4AOhAKOcmoI40qYrJSPmWIcTVElU4Kz+OVl0jqrOrVq7fa8Ur/K6yiSI3JMTolDLkid3JAGaRJOFHkmr+TNerRerHfrYz5asPKdQ/IH1ucPetqTKw==</latexit> e M
+ν = 2). The Berry phase remains quantized under
+M
+Gutzwiller projection, which introduces correlations to
+FIG.5. Deducingsymmetryfractionalizationfromthechange
+the states.
+in defect fusion rule. Symmetry action is realized by sending
+Wefurtherconnectedthebraidingphasetosymmetry-
+the anyon state x through the “worldsheet” (pink planes)
+e enrichment data via a bilayer construction. Upon gaug-
+of the symmetry defect branch-cuts. Here, we assume there
+ing only the total fermion parity, the resulting Z -
+is no anyon permutation. Comparing steps (1) and (2) (as 2
+well as steps (1) and (3)), the U(1) phase η(′)(g,g) com- enriched toric-code order exhibits a nontrivial defect fu-
+pares the action of two Z 2 symmetry transform x ation versus sionrulethatencodesafractionalZ 2 symmetryactionon
+the identity operation, dictating the potentially fractional- eandmanyons(asboundstatesofvorticesfrombothlay-
+ized symmetry charge carried by the anyon x . The defect ers). Inthislanguage,theπ/2vortexbraidingphasesig-
+e
+fusion rule is effectively changed from step (2) to (3) by at- nals a “half” fermion-parity quantum number carried by
+taching an abelian anyon (ω(g,g)) loop and expanding it to thevortexdefect,madeprecisethroughtheinducedsym-
+the adjacency of the fusion/split junction. After effectively metryfractionalizationpatternonthedeconfinedanyons.
+changing the defect fusion rule, the U(1) phase η x (g,g) is Severaldirectionsremainopen. Itwouldbeinteresting
+changedbythebraidingphasebetweenx andω(g,g),namely
+e to identify a more local diagnostic of fractional fermion
+η′(g,g)=η (g,g)[M ]∗.
+x x xe,ω(g,g) paritythatdoesnotrelyontorusboundarytwists,andto
+extendtheBerry-phaseapproachbeyondfreefermionsto
+interactingsettings[42]. Morebroadly,weexpectthisap-
+This abelian anyon is labeled as ω(g,g), which is a proach to generalize to other symmetry-protected topo-
+mapping from two group elements to abelian anyons: logical phases, given an on-site symmetry representation
+ω : Z 2 Z 2 e . In step (3), we expand this anyon and a gapped interpolation among flux sectors. The in-
+× → C
+loop, bring it close to the fusion junction and let the put data include the symmetry representation on local
+anyon x e cross the anyon loop. In this way, the defect Hilbert space and an adiabatic path connecting various
+fusion rule is effectively changed to 1 g 1 g =ω(g,g) 1. flux configurations.
+× ×
+The diagrams in steps (2) and (3) are related by the
+U(1) braiding phase [M ] between anyons x and
+xe,ω(g,g) ∗ e
+ω(g,g). ACKNOWLEDGEMENT
+Effectively from step (1) to step (3), the symmetry
+actionfollowsadifferentassociativerule,dictatedbythe We are grateful to Kangle Li for useful discussions.
+new U(1) phase η x′ (g,g)=η x (g,g)[M xe,ω(g,g) ] ∗ . X.Y. acknowledges the support of Hong Kong Research
+For the bilayer system under consideration, presum- Grants Council through Grant No. PDFS2425-6S02.
+ably the case with two layers of vanishing Chern num- Add funding information.
+ber is trivial in symmetry fractionalization, namely We acknowledge the usage of LLM model (Kimi K3.1
+η x (g,g) = 1. Following the discussion of defect fu- Pro) in identifying the symmetry that quantizes the
+sion rule, we can identify ω(g,g) = ϵ t , see Eq. (11) Berry phase and implementing the numerical computa-
+and Eq. (14). For the vortices, the braiding phase tion for the Gutzwiller projected states. The raw inter-
+[M xe,ω(g,g) ] ∗ =
+−
+1 for x e
+∈ {
+e,m
+} ⊂ C
+e . Hence, after action history can be found at...
+
+7
+Appendix A: Fermion model
+To be concrete, we consider a model with the following Bloch Hamiltonian in BdG formalism:
+c
+k
+Hˆ(k)= c†k d†k c − k d − k (cid:20) H H C P† I ( ( k k ) ) − H H C∗ P I ( ( k − ) k) (cid:21)  c d † − k k  (A1)
+(cid:2) (cid:3) 
+
+d†k 
+
+ − 
+where c( ),d( ) denotes the fermionic annihiliation and creation operators of the two orbitals within each unit cell.
+† †
+The diagonal block of the Bloch Hamiltonian corresponds to a Chern insulator (CI):
+H (k)=( 2tcosk 2tcosk m)σ 2t sink σ 2t sink σ (A2)
+CI x y z 1 x x 1 y y
+− − − − −
+The off-diagonal block contains both inter-orbital s-wave pairing and intra-orbital p-wave pairing:
+∆ (sink isink ) ∆
+H P (k)= − p ∆ x − y ∆ (sink − s isink ) (A3)
+s p x y
+(cid:20) − (cid:21)
+This model exhibits tunable Majorana Chern number from minus two to positive two.
+Now, we put this model on a torus of size L L . In real space, the Hamiltonian reads:
+x y
+×
+H = t c c +c c +h.c. mc c + t d d +d d +h.c. + md d
+−
+†r r+xˆ †r r+yˆ
+−
+†r r †r r+xˆ †r r+yˆ †r r
+r r r r
+(cid:88) (cid:0) (cid:1) (cid:88) (cid:88) (cid:0) (cid:1) (cid:88)
+t (ic d +id c +h.c.) t c d d c +h.c.
+−
+1 †r r+xˆ †r r+xˆ
+−
+1 †r r+yˆ
+−
+†r r+yˆ
+r r
+(cid:88) (cid:88) (cid:0) (cid:1)
+−
+∆
+p
+(ic
+†r
+c†r+xˆ− ic†r+xˆ c
+†r
++h.c.)
+−
+∆
+p
+c
+†r
+c†r+yˆ− c†r+yˆ c
+†r
++h.c.
+(A4)
+(cid:88) r (cid:88) r (cid:16) (cid:17)
++ ∆
+p
+(id
+†r
+d†r+xˆ− id†r+xˆ d
+†r
++h.c.)+ ∆
+p
+d
+†r
+d†r+yˆ− d†r+yˆ d
+†r
++h.c.
+(cid:88) r (cid:88) r (cid:16) (cid:17)
+∆ c d d c +h.c.
+−
+s †r †r− †r †r
+r
+(cid:88) (cid:0) (cid:1)
+Here, r = (x,y) labels the unit cells in the lattice. Twisting is introduced by changing certain hopping and pairing
+amplitudes.
+1. One possiblility is to replace the hopping/pairing between sites r =(0,y) and r +xˆ=(1,y) by:
+0 0
+H
+twist
+−
+x
+(Φ
+x
+)=
+−
+t eiΦxc
+†r0
+c
+r0+xˆ
++eiΦxd
+†r0
+d
+r0+xˆ
++h.c.
+−
+t
+1
+ieiΦxc
+†r0
+d
+r0+xˆ
+−
+ieiΦxd
+†r0
+c
+r0+xˆ
++h.c.
+(A5)
+−
+∆
+p
+(cid:0)ieiΦxc
+†r0
+c†r0+xˆ− ie
+−
+iΦxc†r0+xˆ c
+†r0
++h(cid:1).c. +(cid:0)∆
+p
+ieiΦxd
+†r0
+d†r0+xˆ− ie
+−
+iΦxd†r0+xˆ d
+†r0
+(cid:1)+h.c.
+(cid:16) (cid:17) (cid:16) (cid:17)
+The hopping/pairing between sites r =(x,0) and r +yˆ=(x,1) is replaced by:
+0 0
+H
+twist
+−
+y
+(Φ
+y
+)=
+−
+t eiΦyc
+†r0
+c
+r0+yˆ
+−
+eiΦyd
+†r0
+d
+r0+yˆ
++h.c.
+−
+t
+1
+eiΦyc
+†r0
+d
+r0+yˆ
+−
+eiΦyd
+†r0
+c
+r0+yˆ
++h.c.
+(A6)
+−
+∆
+p
+(cid:0)eiΦyc
+†r0
+c†r0+yˆ− e
+−
+iΦyc†r0+yˆ c
+†r0
++h.c(cid:1). +∆(cid:0)
+p
+eiΦyd
+†r0
+d†r0+yˆ− e
+−
+iΦyd†r0+yˆ d
+†r0
++(cid:1)h.c.
+(cid:16) (cid:17) (cid:16) (cid:17)
+Notethatwiththiskindoftwisting,wearepretendingthattheHamiltonian(asamatrix)describesaCherninsulator
+with fictitious U(1) symmetry. Indeed, if this Hamiltonian were really describing Chern insulator, the twisting above
+corresponds to adiabatic insertion of U(1) fluxes and quantized many-body Berry phase is expected.
+2. Alternatively, we can keep the BdG structure accurately. The twisting above reduces to the following Hamilto-
+nian:
+H
+twist
+−
+x
+(Φ
+x
+)=
+−
+t eiΦxc
+†r0
+c
+r0+xˆ
++eiΦxd
+†r0
+d
+r0+xˆ
++h.c.
+−
+t
+1
+ieiΦxc
+†r0
+d
+r0+xˆ
+−
+ieiΦxd
+†r0
+c
+r0+xˆ
++h.c.
+(A7)
+−
+2i∆
+p
+(cid:0)cosΦ
+x
+ic
+†r0
+c†r0+xˆ +h.c. +2i∆
+p
+co(cid:1)sΦ
+x
+(cid:0)d
+†r0
+d†r0+xˆ +h.c. (cid:1)
+(cid:16) (cid:17) (cid:16) (cid:17)
+H
+twist
+−
+y
+(Φ
+y
+)=
+−
+t eiΦyc
+†r0
+c
+r0+yˆ
+−
+eiΦyd
+†r0
+d
+r0+yˆ
++h.c.
+−
+t
+1
+eiΦyc
+†r0
+d
+r0+yˆ
+−
+eiΦyd
+†r0
+c
+r0+yˆ
++h.c.
+(A8)
+−
+2∆
+p
+(cid:0)cosΦ
+y
+c
+†r0
+c†r0+yˆ +h.c. +2∆
+p
+cos(cid:1)Φ
+y
+d
+†r
+(cid:0)
+0
+d†r0+yˆ +h.c. (cid:1)
+(cid:16) (cid:17) (cid:16) (cid:17)
+
+8
+Such twisting path has additional (accidental) symmetry, which guarantees the quantization of the Berry phase to a
+few discrete values. However, the quantized Berry phases are not consistent with the vortex braiding phase for odd
+MajoranaChernnumber. Hence,formodelswithoddMajoranaChernnumber,thistwistingpathisnotadiabaticand
+there is necessarily level crossing. For even Majorana Chern number, this path quantizes the Berry phase and Chern
+number determines which value to take, consistent with the braiding phase deduced from tensor category theory.
+This twisting path in Eq. (A7-A8) exhibits additional anti-unitary symmetries. Those additional anti-unitary
+symmetries quantizes the Berry phase to Z values. We list the symmetries Θ along the adiabatic paths below:
+4 x,y
+(Φ ,Φ ):(0,0) (π,0) (π,π) (2π,π) (2π,2π)
+x y
+→ → → →
+Symmetry: Θ Θ Θ Θ
+x y x y
+Those symmetries are anti-unitary, i.e., Θ = R K with R being unitary and K the complex conjugation
+x,y x,y x,y
+operator. Their action on the fermionic operators is given by (Ψ =[c ,d ]T and Ψ =[c ,d ]):
+r r r †r †r †r
+Θ Ψ Θ =Q Ψ , Θ Ψ Θ =Q Ψ
+x r=(x,y) †x x r′=(1 x,y) y r=(x,y) †y y r′=(x,1 y)
+− − (A9)
+Θ
+x
+Ψ†
+r=(x,y)
+Θ
+†x
+=Ψ†
+r′=(1 x,y)
+Q
+†x
+, Θ
+y
+Ψ†
+r=(x,y)
+Θ
+†y
+=Ψ†
+r′=(x,1 y)
+Q
+†y
+− −
+with Q =Diag[1,1] and Q =Diag[i, i]. With the symmetries above, the Berry phase along each segment of path
+x y
+can be made zero. The total Berry ph − ase comes from the transition points at (Φ ,Φ ) = (nπ,mπ) for n,m Z,
+x y
+which is quantized to Z value. ∈
+4
+ToseethevanishingofBerryphasealongeachsegment,itisenoughtoconsider(0,0) (π,0). Thesameargument
+→
+carries over to the later segments. At each point, there is a unique groundstate G.S.;Φ . Applying the symmetry on
+| ⟩
+thegroundstategivesaU(1)phase: Θ
+x
+G.S.;Φ =eiφΦ G.S.;Φ . Thestate R;Φ =eiφΦ/2 G.S.;Φ isinvariantunder
+| ⟩ | ⟩ | ⟩ | ⟩
+the anti-unitary symmetry Θ . Hence, the states R;Φ exhibits zero Berry connection, namely R;Φ∂ R;Φ =0.
+x
+| ⟩ ⟨ |
+Φx|
+⟩
+Given the set of states R;Φ on each segments of the adiabatic path, the total Berry phase comes the transition
+| ⟩
+points. Let us focus on the point (π,0). At (π,0)
+−
+(slightly before the transition point), we pick the gauge eiφ (π,0)−
+such that R
+−
+;(π,0) =eiφ (π,0)−/2 G.S.;(π,0) is invariant under Θ
+x
+. At (π,0)+ (slightly after the transition point),
+| ⟩ | ⟩
+we pick the gauge eiφ (π,0)+ such that R+;(π,0) = eiφ (π,0)+/2 G.S.;(π,0) is invariant under Θ
+y
+. Hence, at this
+| ⟩ | ⟩
+transition point, the phase accumulated is eiγ(π,0) =ei[φ (π,0)+− φ (π,0)−]/2.
+Now,wedemonstratethateiγ(π,0) isquantizedtoZ
+4
+value. Thisisaresultoftheunitarysymmetryatthetransition
+point (π,0). Namely, at (π,0), the system is invariant under the unitary symmetry Θ Θ . Note two properties.
+y x
+First, this unitary operator squares to fermionic parity operator, (Θ Θ )2 = ( 1)Nˆ . This can be deduced from its
+y x
+−
+operation on fermionic operators. Namely, its straight forward to verify (Θ y Θ x )2Ψ( † )(Θ y Θ x )2, † = Ψ( † ). Second,
+−
+applying this operator on the groundstate give a U(1) phase: Θ
+y
+Θ
+x
+G.S.;(π,0) = ei[φ (π,0)+− φ (π,0)−] G.S.;(π,0) =
+| ⟩ | ⟩
+e2iγ(π,0) G.S.;(π,0) . Therefore, one concludes that eiγ(π,0) 4 = 1. For states with even fermion parity, the phase
+| ⟩ ±
+eiγ(π,0) is the fourth root of identity, which is indeed
+(cid:2)
+quantiz
+(cid:3)
+ed to Z
+4
+value.
+Appendix B: Overlap between fermionic Gaussian where W =eiSσx is the Bogoliubov transformation.
+states Now, consider a series of Bogoliubov transformation.
+Consider a set of canonical fermions α , whose ground-
+i
+In this section, we summarize the computation of state is denoted as Ψ i . Then, the groundstates are re-
+| ⟩
+overlap between two adjacent fermionic Gaussian states. lated as:
+There are various proposal in the literature [43, 44]. We Ψ = (α )Ψ , Ψ = (α )Ψ
+1 1 0 0 2 2 0 0
+follow the approach in Ref. [45]. Consider the following | ⟩ T | ⟩ | ⟩ T | ⟩ (B3)
+unitary transformation: |
+Ψ
+2 ⟩
+=
+T
+(α
+1
+)
+|
+Ψ
+1 ⟩
+=
+T 2
+(α
+0
+) T1†(α
+0
+)
+|
+Ψ
+1 ⟩|α0=α1W 1 †
+1 And the fermionic operators are related as:
+(α):=eiSˆ(α), Sˆ(α)= αSαT (B1)
+T 2 α =α W , α =α W
+1 0 1 2 0 2
+(B4)
+whereα=[a , a]isasetofcanonicalfermions. Thisuni-
+tary operator
+†
+is used to generate the Bogoliubov trans-
+α
+2
+=α
+1
+W =α
+1
+W 1†W
+2
+→
+W =W 1†W
+2
+formation between two sets of canonical fermions α and Utilizing the canonical decomposition:
+β: eiSˆ(α) =e2 1tr Log U† e 1 2 (cid:80) ij Zija† i a† j (B5)
+···
+U V
+β =
+T
+(α)α
+T †
+(α)=αeiSσx =αW, W =
+V U ∗
+∗ And correspondingly:
+(cid:20) ( (cid:21) B2) Ψ 2 =e2 1tr Log U† e 1 2 (cid:80) ij Zija† i a† j Ψ 1 (B6)
+| ⟩ | ⟩
+
+9
+Hence, it is straightforward to find that: Thisisanumericallystableformulationincomputingthe
+overlapbetweentwoGaussianstates,connectedbyanin-
+finitesimal Bogoliubov transformation. For two generic
+Ψ 1 Ψ 2 =e2 1tr Log U† (B7) Gaussian state, this calculation scheme is fine if we are
+⟨ | ⟩
+only concerned with the fractional part of the Berry
+phase modulo π. Mathematically, this is related to the
+where U can be found to be:
+branch cut in defining the Log-function and taking 1 in
+2
+Eq.(B7). (There isno ambiguity ininfinitesimal Bogoli-
+U =U 1†U
+2
++V 1†V
+2
+(B8) ubov transformation.)
+[1] X.G.Wen,Topologicalordersinrigidstates,Int.J.Mod. and H.-H. Tu, Microscopic models for kitaev’s sixteen-
+Phys. B 04, 239 (1990). foldwayofanyontheories,Phys.Rev.B102,201111(R)
+[2] A. Kitaev, Fault-tolerant quantum computation by (2020).
+anyons, Annals of Physics 303, 2 (2003). [20] F. Verstraete and J. I. Cirac, Mapping local hamiltoni-
+[3] M.A.LevinandX.-G.Wen,String-netcondensation: A ans of fermions to local hamiltonians of spins, Journal
+physicalmechanismfortopologicalphases,Phys.Rev.B of Statistical Mechanics: Theory and Experiment 2005,
+71, 045110 (2005). P09012 (2005).
+[4] A. Kitaev, Anyons in an exactly solved model and be- [21] Y.-A. Chen, A. Kapustin, and D. Radiˇcevi´c, Exact
+yond, Annals of Physics 321, 2 (2006). bosonizationintwospatialdimensionsandanewclassof
+[5] C. Nayak, S. H. Simon, A. Stern, M. Freedman, and latticegaugetheories,AnnalsofPhysics393,234(2018).
+S.DasSarma,Non-abeliananyonsandtopologicalquan- [22] H. C. Po, Symmetric jordan-wigner transformation
+tum computation, Rev. Mod. Phys. 80, 1083 (2008). in higher dimensions (2021), arXiv:2107.10842 [cond-
+[6] A. Kitaev and J. Preskill, Topological entanglement en- mat.str-el].
+tropy, Phys. Rev. Lett. 96, 110404 (2006). [23] Y.-A.ChenandY.Xu,Equivalencebetweenfermion-to-
+[7] M.LevinandX.-G.Wen,Detectingtopologicalorderina qubit mappings in two spatial dimensions, PRX Quan-
+groundstatewavefunction,Phys.Rev.Lett.96,110405 tum 4, 010326 (2023).
+(2006). [24] G. Moore and N. Read, Nonabelions in the fractional
+[8] J.M.LeinaasandJ.Myrheim,Onthetheoryofidentical quantum hall effect, Nuclear Physics B 360, 362 (1991).
+particles, Nuovo Cim B 37, 1 (1977). [25] N. Read and D. Green, Paired states of fermions in
+[9] F.Wilczek,Quantummechanicsoffractional-spinparti- twodimensionswithbreakingofparityandtime-reversal
+cles, Phys. Rev. Lett. 49, 957 (1982). symmetriesandthefractionalquantumhalleffect,Phys.
+[10] X. G. Wen and Q. Niu, Ground-state degeneracy of the Rev. B 61, 10267 (2000).
+fractional quantum hall states in the presence of a ran- [26] D.A.Ivanov,Non-abelianstatisticsofhalf-quantumvor-
+dompotentialandonhigh-genusriemannsurfaces,Phys. ticesinp-wavesuperconductors,Phys.Rev.Lett.86,268
+Rev. B 41, 9377 (1990). (2001).
+[11] M. Barkeshli, P. Bonderson, M. Cheng, and Z. Wang, [27] J. Alicea, New directions in the pursuit of majorana
+Symmetry fractionalization, defects, and gauging of fermions in solid state systems, Rep. Prog. Phys. 75,
+topological phases, Phys. Rev. B 100, 115147 (2019). 076501 (2012).
+[12] J.C.Teo,T.L.Hughes,andE.Fradkin,Theoryoftwist [28] S. Sarma, M. Freedman, and C. Nayak, Majorana zero
+liquids: Gaugingananyonicsymmetry,AnnalsofPhysics modesandtopologicalquantumcomputation,npjQuan-
+360, 349 (2015). tum Inf 1, 15001 (2015).
+[13] M.Cheng,Z.-C.Gu,S.Jiang,andY.Qi,Exactlysolvable [29] K. v. Klitzing, G. Dorda, and M. Pepper, New method
+models for symmetry-enriched topological phases, Phys. forhigh-accuracydeterminationofthefine-structurecon-
+Rev. B 96, 115107 (2017). stantbasedonquantizedhallresistance,Phys.Rev.Lett.
+[14] C. Heinrich, F. Burnell, L. Fidkowski, and M. Levin, 45, 494 (1980).
+Symmetry-enriched string nets: Exactly solvable models [30] F.D.M.Haldane,Modelforaquantumhalleffectwith-
+for set phases, Phys. Rev. B 94, 235136 (2016). out landau levels: Condensed-matter realization of the
+[15] W. Ye and L. Zou, Classification of symmetry-enriched ”parity anomaly”, Phys. Rev. Lett. 61, 2015 (1988).
+topological quantum spin liquids, Phys. Rev. X 14, [31] X.-L.QiandS.-C.Zhang,Topologicalinsulatorsandsu-
+021053 (2024). perconductors, Rev. Mod. Phys. 83, 1057 (2011).
+[16] M. Levin and Z.-C. Gu, Braiding statistics approach to [32] B. A. Bernevig and T. L. Hughes, Topological Insulators
+symmetry-protectedtopologicalphases,Phys.Rev.B86, and Topological Superconductors (Princeton University
+115109 (2012). Press, 2013).
+[17] X.Chen,Z.-C.Gu,Z.-X.Liu,andX.-G.Wen,Symmetry- [33] K. Kawagoe and M. Levin, Microscopic definitions of
+protected topological orders in interacting bosonic sys- anyon data, Phys. Rev. B 101, 115113 (2020).
+tems, Science 338, 1604 (2012). [34] Y. Li and L. Zou, Microscopic universal theory of
+[18] X.Chen,Z.-C.Gu,Z.-X.Liu,andX.-G.Wen,Symmetry symmetry-enriched topological quantum spin liquids,
+protectedtopologicalordersandthegroupcohomologyof arXiv preprint arXiv:2606.08558 (2026).
+their symmetry group, Phys. Rev. B 87, 155114 (2013). [35] Y. Zhang, T. Grover, A. Turner, M. Oshikawa, and
+[19] S.Chulliparambil,U.F.P.Seifert,M.Vojta,L.Janssen, A. Vishwanath, Quasiparticle statistics and braiding
+
+10
+from ground-state entanglement, Phys. Rev. B 85, phases with Z symmetry, Phys. Rev. B 89, 201113(R)
+2
+235151 (2012). (2014).
+[36] Y. Zhang, T. Grover, and A. Vishwanath, General pro- [41] M. Barkeshli and M. Cheng, Relative anomalies in
+cedure for determining braiding and statistics of anyons (2+1)d symmetry enriched topological states, SciPost
+using entanglement interferometry, Phys. Rev. B 91, Phys. 8, 028 (2020).
+035127 (2015). [42] L. Zhang, M. Long, Y. Zhang, Z. Y. Meng, and X.-Y.
+[37] H.-H. Tu, Y. Zhang, and X.-L. Qi, Momentum polariza- Song, Discrete shift and polarization from response to
+tion: An entanglement measure of topological spin and symmetrydefectsininteractingtopologicalphases,arXiv
+chiral central charge, Phys. Rev. B 88, 195412 (2013). preprint arXiv:2510.19483 (2025).
+[38] H.MoradiandX.-G.Wen,Universalwave-functionover- [43] J.-P. Blaizot and G. Ripka, Quantum Theory of Finite
+lap and universal topological data from generic gapped Systems (MITPress(Cambridge,Massachussets),1986).
+ground states, Phys. Rev. Lett. 115, 036802 (2015). [44] L. M. Robledo, Sign of the overlap of hartree-fock-
+[39] B.Shi,K.Kato,andI.H.Kim,Fusionrulesfromentan- bogoliubov wave functions, Phys. Rev. C 79, 021302(R)
+glement, Annals of Physics 418, 168164 (2020). (2009).
+[40] Z.-C. Gu and M. Levin, Effect of interactions on two- [45] K. Takayanagi, Utilizing group property of bogoliubov
+dimensional fermionic symmetry-protected topological transformation, Nuclear Physics A 808, 17 (2008).

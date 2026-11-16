@@ -1,0 +1,80 @@
+{
+  "parameters": {
+    "lattice": [
+      4,
+      4
+    ],
+    "steps_per_leg": 2,
+    "source": "Validated Monte Carlo sweep; exact column included in JSON"
+  },
+  "complete": true,
+  "results": [
+    {
+      "g": 0.0,
+      "statistical_error": 0.0,
+      "exact_phase": -1.621058790247,
+      "elapsed_seconds": 0.0,
+      "berry_phase": -1.621058790247,
+      "method": "exact Gaussian"
+    },
+    {
+      "g": 0.25,
+      "statistical_error": 0.17569094629531348,
+      "exact_phase": -1.620978858799,
+      "difference": -0.04569684909223937,
+      "difference_over_error": -0.2600979165735094,
+      "elapsed_seconds": 100.49231337499805,
+      "mean_acceptance_rate": 0.073798828125,
+      "mean_physical_fraction": 0.0,
+      "berry_phase": -1.6666757078912393,
+      "method": "Monte Carlo"
+    },
+    {
+      "g": 0.5,
+      "statistical_error": 0.16122975620505317,
+      "exact_phase": -1.620754057104,
+      "difference": -0.08629463599468479,
+      "difference_over_error": -0.5352277273491293,
+      "elapsed_seconds": 99.6279060410161,
+      "mean_acceptance_rate": 0.07445149739583334,
+      "mean_physical_fraction": 0.0078125,
+      "berry_phase": -1.7070486930986848,
+      "method": "Monte Carlo"
+    },
+    {
+      "g": 0.75,
+      "statistical_error": 0.19175228166883612,
+      "exact_phase": -1.619625446198,
+      "difference": 0.2817241424278467,
+      "difference_over_error": 1.4692088144974234,
+      "elapsed_seconds": 99.10928408399923,
+      "mean_acceptance_rate": 0.06867838541666667,
+      "mean_physical_fraction": 0.046875,
+      "berry_phase": -1.3379013037701533,
+      "method": "Monte Carlo"
+    },
+    {
+      "g": 0.9,
+      "statistical_error": 0.11739835476629705,
+      "exact_phase": -1.614444512054,
+      "difference": 0.07377524116310141,
+      "difference_over_error": 0.628418015822833,
+      "elapsed_seconds": 89.34921091599972,
+      "mean_acceptance_rate": 0.0481103515625,
+      "mean_physical_fraction": 0.4140625,
+      "berry_phase": -1.5406692708908987,
+      "method": "Monte Carlo"
+    },
+    {
+      "g": 1.0,
+      "statistical_error": 0.01972553314318808,
+      "exact_phase": -1.604832246511,
+      "difference": -0.0008802392598710185,
+      "difference_over_error": -0.04462435836239975,
+      "elapsed_seconds": 175.36234241598868,
+      "mean_acceptance_rate": 0.054283203125,
+      "berry_phase": -1.6057124857708711,
+      "method": "Monte Carlo"
+    }
+  ]
+}

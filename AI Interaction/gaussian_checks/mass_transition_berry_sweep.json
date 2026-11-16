@@ -1,0 +1,853 @@
+{
+  "lattice": [
+    4,
+    4
+  ],
+  "steps_per_leg": 32,
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "method": "Appendix-B Gaussian overlaps; phases and changes are defined modulo pi",
+  "nu_sign_convention": "nu_M=-occupied_BdG_Chern so that m=-2 has nu_M=2",
+  "rows": [
+    {
+      "m": -4.875,
+      "nu_M": 0,
+      "occupied_bdg_chern": -1.5902773407317583e-16,
+      "zero_twist_gap": 0.75,
+      "complex": {
+        "phase_mod_pi": 0.020327696134405215,
+        "minimum_link_magnitude": 0.9990654342543756,
+        "minimum_twist_gap": 0.3750000000000001,
+        "unwrapped_mod_pi_branch": 0.020327696134405215
+      },
+      "cosine": {
+        "phase_mod_pi": 3.1415926535897896,
+        "minimum_link_magnitude": 0.9991749781971133,
+        "minimum_twist_gap": 0.3750000000000001,
+        "unwrapped_mod_pi_branch": 3.1415926535897896
+      }
+    },
+    {
+      "m": -4.625,
+      "nu_M": 0,
+      "occupied_bdg_chern": 1.4135798584282297e-16,
+      "zero_twist_gap": 0.25000000000000006,
+      "complex": {
+        "phase_mod_pi": 0.020944081089137256,
+        "minimum_link_magnitude": 0.9986209028717129,
+        "minimum_twist_gap": 0.1250000000000019,
+        "unwrapped_mod_pi_branch": 0.020944081089137256
+      },
+      "cosine": {
+        "phase_mod_pi": 0.0,
+        "minimum_link_magnitude": 0.9987454184028255,
+        "minimum_twist_gap": 0.1250000000000019,
+        "unwrapped_mod_pi_branch": 3.141592653589793
+      }
+    },
+    {
+      "m": -4.375,
+      "nu_M": 1,
+      "occupied_bdg_chern": -0.9999999999999989,
+      "zero_twist_gap": 0.25,
+      "complex": {
+        "phase_mod_pi": 2.1942598484503346,
+        "minimum_link_magnitude": 1.8561551264782445e-07,
+        "minimum_twist_gap": 0.01086897302873181,
+        "unwrapped_mod_pi_branch": -0.9473328051394585
+      },
+      "cosine": {
+        "phase_mod_pi": 0.7000696828800663,
+        "minimum_link_magnitude": 1.9088464480761511e-07,
+        "minimum_twist_gap": 0.01684550048228674,
+        "unwrapped_mod_pi_branch": 3.8416623364698594
+      }
+    },
+    {
+      "m": -4.125,
+      "nu_M": 1,
+      "occupied_bdg_chern": -0.9999999999999996,
+      "zero_twist_gap": 0.75,
+      "complex": {
+        "phase_mod_pi": 2.5026750313898862,
+        "minimum_link_magnitude": 1.0007844211119991e-07,
+        "minimum_twist_gap": 0.011020495739690462,
+        "unwrapped_mod_pi_branch": -0.6389176221999069
+      },
+      "cosine": {
+        "phase_mod_pi": 3.0140397654294375,
+        "minimum_link_magnitude": 4.364073573080818e-08,
+        "minimum_twist_gap": 0.017761449799499295,
+        "unwrapped_mod_pi_branch": 3.0140397654294375
+      }
+    },
+    {
+      "m": -3.875,
+      "nu_M": 1,
+      "occupied_bdg_chern": -1.0000000000000004,
+      "zero_twist_gap": 0.75,
+      "complex": {
+        "phase_mod_pi": 1.7846682525099204,
+        "minimum_link_magnitude": 1.0492897713313761e-07,
+        "minimum_twist_gap": 0.006636288312063802,
+        "unwrapped_mod_pi_branch": -1.3569244010798727
+      },
+      "cosine": {
+        "phase_mod_pi": 0.725036734418976,
+        "minimum_link_magnitude": 1.2960715994346333e-07,
+        "minimum_twist_gap": 0.008522243754924818,
+        "unwrapped_mod_pi_branch": 3.866629388008769
+      }
+    },
+    {
+      "m": -3.625,
+      "nu_M": 1,
+      "occupied_bdg_chern": -0.9999999999999984,
+      "zero_twist_gap": 0.25,
+      "complex": {
+        "phase_mod_pi": 2.1480474310605544,
+        "minimum_link_magnitude": 1.373009297910133e-07,
+        "minimum_twist_gap": 0.005362095852349077,
+        "unwrapped_mod_pi_branch": -0.9935452225292387
+      },
+      "cosine": {
+        "phase_mod_pi": 2.573838371180452,
+        "minimum_link_magnitude": 1.8467265281989018e-07,
+        "minimum_twist_gap": 0.01333881091316792,
+        "unwrapped_mod_pi_branch": 2.573838371180452
+      }
+    },
+    {
+      "m": -3.375,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.0000000000000004,
+      "zero_twist_gap": 0.25000000000000006,
+      "complex": {
+        "phase_mod_pi": 1.4973384775782534,
+        "minimum_link_magnitude": 0.9976759648825849,
+        "minimum_twist_gap": 0.12500000000000003,
+        "unwrapped_mod_pi_branch": -1.6442541760115397
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948974,
+        "minimum_link_magnitude": 0.9978366551647937,
+        "minimum_twist_gap": 0.12500000000000003,
+        "unwrapped_mod_pi_branch": 1.5707963267948974
+      }
+    },
+    {
+      "m": -3.125,
+      "nu_M": 2,
+      "occupied_bdg_chern": -1.999999999999997,
+      "zero_twist_gap": 0.75,
+      "complex": {
+        "phase_mod_pi": 1.485229504998243,
+        "minimum_link_magnitude": 0.9977989591595533,
+        "minimum_twist_gap": 0.3750000000000008,
+        "unwrapped_mod_pi_branch": -1.6563631485915502
+      },
+      "cosine": {
+        "phase_mod_pi": 1.570796326794894,
+        "minimum_link_magnitude": 0.9978597038693853,
+        "minimum_twist_gap": 0.3750000000000008,
+        "unwrapped_mod_pi_branch": 1.570796326794894
+      }
+    },
+    {
+      "m": -2.875,
+      "nu_M": 2,
+      "occupied_bdg_chern": -1.9999999999999978,
+      "zero_twist_gap": 1.2194539686313484,
+      "complex": {
+        "phase_mod_pi": 1.4784386754954433,
+        "minimum_link_magnitude": 0.9977845683016716,
+        "minimum_twist_gap": 0.6250000000000022,
+        "unwrapped_mod_pi_branch": -1.6631539780943498
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948966,
+        "minimum_link_magnitude": 0.9978064909361604,
+        "minimum_twist_gap": 0.6250000000000022,
+        "unwrapped_mod_pi_branch": 1.5707963267948966
+      }
+    },
+    {
+      "m": -2.625,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.0000000000000027,
+      "zero_twist_gap": 1.527932570057377,
+      "complex": {
+        "phase_mod_pi": 1.476997966962954,
+        "minimum_link_magnitude": 0.99772320084828,
+        "minimum_twist_gap": 0.7639662850286886,
+        "unwrapped_mod_pi_branch": -1.664594686626839
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948966,
+        "minimum_link_magnitude": 0.997732373788521,
+        "minimum_twist_gap": 0.7639662850286871,
+        "unwrapped_mod_pi_branch": 1.5707963267948966
+      }
+    },
+    {
+      "m": -2.375,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.000000000000001,
+      "zero_twist_gap": 1.7260951600811851,
+      "complex": {
+        "phase_mod_pi": 1.4783138048591384,
+        "minimum_link_magnitude": 0.9975917416549231,
+        "minimum_twist_gap": 0.8892419613620809,
+        "unwrapped_mod_pi_branch": -1.6632788487306547
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948948,
+        "minimum_link_magnitude": 0.9976236475638568,
+        "minimum_twist_gap": 0.8892419613620811,
+        "unwrapped_mod_pi_branch": 1.5707963267948948
+      }
+    },
+    {
+      "m": -2.125,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.0000000000000036,
+      "zero_twist_gap": 1.869728185819985,
+      "complex": {
+        "phase_mod_pi": 1.4801527041002167,
+        "minimum_link_magnitude": 0.9973649441922287,
+        "minimum_twist_gap": 1.039379484514856,
+        "unwrapped_mod_pi_branch": -1.6614399494895764
+      },
+      "cosine": {
+        "phase_mod_pi": 1.570796326794893,
+        "minimum_link_magnitude": 0.9973972517060257,
+        "minimum_twist_gap": 1.0596499643908968,
+        "unwrapped_mod_pi_branch": 1.570796326794893
+      }
+    },
+    {
+      "m": -2.0,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.000000000000004,
+      "zero_twist_gap": 1.9167060491245738,
+      "complex": {
+        "phase_mod_pi": 1.4811187957772933,
+        "minimum_link_magnitude": 0.9972602024745089,
+        "minimum_twist_gap": 1.089003588389541,
+        "unwrapped_mod_pi_branch": -1.6604738578124998
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267949,
+        "minimum_link_magnitude": 0.9972956984241522,
+        "minimum_twist_gap": 1.1180339887498938,
+        "unwrapped_mod_pi_branch": 1.5707963267949
+      }
+    },
+    {
+      "m": -1.875,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.0000000000000013,
+      "zero_twist_gap": 1.9632361211786606,
+      "complex": {
+        "phase_mod_pi": 1.4822491600605225,
+        "minimum_link_magnitude": 0.9971623158791671,
+        "minimum_twist_gap": 1.0652286536239224,
+        "unwrapped_mod_pi_branch": -1.6593434935292706
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948966,
+        "minimum_link_magnitude": 0.9972001961789118,
+        "minimum_twist_gap": 1.0680004681646884,
+        "unwrapped_mod_pi_branch": 1.5707963267948966
+      }
+    },
+    {
+      "m": -1.625,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.0000000000000044,
+      "zero_twist_gap": 2.0107938661505353,
+      "complex": {
+        "phase_mod_pi": 1.4856607028354496,
+        "minimum_link_magnitude": 0.9969805202770959,
+        "minimum_twist_gap": 1.0009692902660614,
+        "unwrapped_mod_pi_branch": -1.6559319507543435
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948948,
+        "minimum_link_magnitude": 0.99702159576464,
+        "minimum_twist_gap": 1.007782218537318,
+        "unwrapped_mod_pi_branch": 1.5707963267948948
+      }
+    },
+    {
+      "m": -1.375,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.000000000000002,
+      "zero_twist_gap": 1.7499999999999998,
+      "complex": {
+        "phase_mod_pi": 1.4914611972946794,
+        "minimum_link_magnitude": 0.9968089852261762,
+        "minimum_twist_gap": 0.8659277231447273,
+        "unwrapped_mod_pi_branch": -1.6501314562951137
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948966,
+        "minimum_link_magnitude": 0.9968526239926842,
+        "minimum_twist_gap": 0.8749999999999988,
+        "unwrapped_mod_pi_branch": 1.5707963267948966
+      }
+    },
+    {
+      "m": -1.125,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.0000000000000018,
+      "zero_twist_gap": 1.25,
+      "complex": {
+        "phase_mod_pi": 1.4998156227373833,
+        "minimum_link_magnitude": 0.9966423209902433,
+        "minimum_twist_gap": 0.6249999999999984,
+        "unwrapped_mod_pi_branch": -1.6417770308524098
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948957,
+        "minimum_link_magnitude": 0.9966890352788829,
+        "minimum_twist_gap": 0.6249999999999984,
+        "unwrapped_mod_pi_branch": 1.5707963267948957
+      }
+    },
+    {
+      "m": -0.875,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.0000000000000004,
+      "zero_twist_gap": 0.7499999999999998,
+      "complex": {
+        "phase_mod_pi": 1.510301230648377,
+        "minimum_link_magnitude": 0.9963327049787855,
+        "minimum_twist_gap": 0.3749999999999997,
+        "unwrapped_mod_pi_branch": -1.6312914229414162
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948983,
+        "minimum_link_magnitude": 0.996513997234193,
+        "minimum_twist_gap": 0.3749999999999997,
+        "unwrapped_mod_pi_branch": 1.5707963267948983
+      }
+    },
+    {
+      "m": -0.625,
+      "nu_M": 2,
+      "occupied_bdg_chern": -2.0000000000000018,
+      "zero_twist_gap": 0.24999999999999997,
+      "complex": {
+        "phase_mod_pi": 1.5233221956060852,
+        "minimum_link_magnitude": 0.9954844069617094,
+        "minimum_twist_gap": 0.12499999999999993,
+        "unwrapped_mod_pi_branch": -1.618270457983708
+      },
+      "cosine": {
+        "phase_mod_pi": 1.570796326794894,
+        "minimum_link_magnitude": 0.9957002774984197,
+        "minimum_twist_gap": 0.12499999999999993,
+        "unwrapped_mod_pi_branch": 1.570796326794894
+      }
+    },
+    {
+      "m": -0.375,
+      "nu_M": 0,
+      "occupied_bdg_chern": 7.472370872726569e-16,
+      "zero_twist_gap": 0.24999999999999992,
+      "complex": {
+        "phase_mod_pi": 1.4965509766327365,
+        "minimum_link_magnitude": 4.221616615785868e-08,
+        "minimum_twist_gap": 0.010868973028732415,
+        "unwrapped_mod_pi_branch": -1.6450416769570566
+      },
+      "cosine": {
+        "phase_mod_pi": 2.5534052900480955,
+        "minimum_link_magnitude": 1.049587048074978e-07,
+        "minimum_twist_gap": 0.0012537272979396862,
+        "unwrapped_mod_pi_branch": 2.5534052900480955
+      }
+    },
+    {
+      "m": -0.125,
+      "nu_M": 0,
+      "occupied_bdg_chern": 8.15431271849175e-16,
+      "zero_twist_gap": 0.75,
+      "complex": {
+        "phase_mod_pi": 1.5462933113908122,
+        "minimum_link_magnitude": 9.36479674236433e-15,
+        "minimum_twist_gap": 0.011020495739690335,
+        "unwrapped_mod_pi_branch": -1.595299342198981
+      },
+      "cosine": {
+        "phase_mod_pi": 2.051642745593025,
+        "minimum_link_magnitude": 1.0410926124642168e-14,
+        "minimum_twist_gap": 0.005743974035384086,
+        "unwrapped_mod_pi_branch": 2.051642745593025
+      }
+    },
+    {
+      "m": 0.125,
+      "nu_M": 0,
+      "occupied_bdg_chern": -3.216446357556421e-16,
+      "zero_twist_gap": 0.7499999999999998,
+      "complex": {
+        "phase_mod_pi": 2.4561124167561417,
+        "minimum_link_magnitude": 2.44640491533872e-14,
+        "minimum_twist_gap": 0.00037995320219078575,
+        "unwrapped_mod_pi_branch": -0.6854802368336514
+      },
+      "cosine": {
+        "phase_mod_pi": 0.7271335984672715,
+        "minimum_link_magnitude": 1.7698784111604706e-14,
+        "minimum_twist_gap": 0.0038556995723394868,
+        "unwrapped_mod_pi_branch": 0.7271335984672715
+      }
+    },
+    {
+      "m": 0.375,
+      "nu_M": 0,
+      "occupied_bdg_chern": 4.4298610993126846e-16,
+      "zero_twist_gap": 0.24999999999999975,
+      "complex": {
+        "phase_mod_pi": 0.06647697507436234,
+        "minimum_link_magnitude": 1.1188437100924684e-07,
+        "minimum_twist_gap": 0.005362095852347843,
+        "unwrapped_mod_pi_branch": 0.06647697507436234
+      },
+      "cosine": {
+        "phase_mod_pi": 2.590833224482497,
+        "minimum_link_magnitude": 9.813334982674449e-08,
+        "minimum_twist_gap": 0.009246631324384193,
+        "unwrapped_mod_pi_branch": -0.5507594291072961
+      }
+    },
+    {
+      "m": 0.625,
+      "nu_M": -2,
+      "occupied_bdg_chern": 2.0000000000000036,
+      "zero_twist_gap": 0.24999999999999992,
+      "complex": {
+        "phase_mod_pi": 1.6394809813591529,
+        "minimum_link_magnitude": 0.9959856978264979,
+        "minimum_twist_gap": 0.12499999999999813,
+        "unwrapped_mod_pi_branch": -1.5021116722306402
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948966,
+        "minimum_link_magnitude": 0.9960414693609413,
+        "minimum_twist_gap": 0.12499999999999813,
+        "unwrapped_mod_pi_branch": -1.5707963267948966
+      }
+    },
+    {
+      "m": 0.875,
+      "nu_M": -2,
+      "occupied_bdg_chern": 2.0000000000000036,
+      "zero_twist_gap": 0.7499999999999998,
+      "complex": {
+        "phase_mod_pi": 1.6611061851443445,
+        "minimum_link_magnitude": 0.9960450625172799,
+        "minimum_twist_gap": 0.37499999999999756,
+        "unwrapped_mod_pi_branch": -1.4804864684454486
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948968,
+        "minimum_link_magnitude": 0.9960928219518501,
+        "minimum_twist_gap": 0.37499999999999756,
+        "unwrapped_mod_pi_branch": -1.5707963267948963
+      }
+    },
+    {
+      "m": 1.125,
+      "nu_M": -2,
+      "occupied_bdg_chern": 2.000000000000002,
+      "zero_twist_gap": 1.2194539686313488,
+      "complex": {
+        "phase_mod_pi": 1.677237466895006,
+        "minimum_link_magnitude": 0.9961387073059762,
+        "minimum_twist_gap": 0.6249999999999973,
+        "unwrapped_mod_pi_branch": -1.464355186694787
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267949,
+        "minimum_link_magnitude": 0.9961844672973513,
+        "minimum_twist_gap": 0.6249999999999973,
+        "unwrapped_mod_pi_branch": -1.570796326794893
+      }
+    },
+    {
+      "m": 1.375,
+      "nu_M": -2,
+      "occupied_bdg_chern": 2.000000000000001,
+      "zero_twist_gap": 1.527932570057378,
+      "complex": {
+        "phase_mod_pi": 1.6878893511598285,
+        "minimum_link_magnitude": 0.9962857145791549,
+        "minimum_twist_gap": 0.7639662850286879,
+        "unwrapped_mod_pi_branch": -1.4537033024299646
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948992,
+        "minimum_link_magnitude": 0.996330113635887,
+        "minimum_twist_gap": 0.763966285028688,
+        "unwrapped_mod_pi_branch": -1.570796326794894
+      }
+    },
+    {
+      "m": 1.625,
+      "nu_M": -2,
+      "occupied_bdg_chern": 1.9999999999999976,
+      "zero_twist_gap": 1.7260951600811856,
+      "complex": {
+        "phase_mod_pi": 1.6954297450568028,
+        "minimum_link_magnitude": 0.9964775256188427,
+        "minimum_twist_gap": 0.8892419613620821,
+        "unwrapped_mod_pi_branch": -1.4461629085329903
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948981,
+        "minimum_link_magnitude": 0.9965132623098336,
+        "minimum_twist_gap": 0.8892419613620821,
+        "unwrapped_mod_pi_branch": -1.570796326794895
+      }
+    },
+    {
+      "m": 1.875,
+      "nu_M": -2,
+      "occupied_bdg_chern": 1.999999999999998,
+      "zero_twist_gap": 1.869728185819985,
+      "complex": {
+        "phase_mod_pi": 1.7018851987095722,
+        "minimum_link_magnitude": 0.9967076410936959,
+        "minimum_twist_gap": 1.0561791005615406,
+        "unwrapped_mod_pi_branch": -1.439707454880221
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948974,
+        "minimum_link_magnitude": 0.9967300384055628,
+        "minimum_twist_gap": 1.059649964390897,
+        "unwrapped_mod_pi_branch": -1.5707963267948957
+      }
+    },
+    {
+      "m": 2.125,
+      "nu_M": -2,
+      "occupied_bdg_chern": 1.9999999999999998,
+      "zero_twist_gap": 1.963236121178661,
+      "complex": {
+        "phase_mod_pi": 1.7076375916891209,
+        "minimum_link_magnitude": 0.9969119282628959,
+        "minimum_twist_gap": 1.06522865362392,
+        "unwrapped_mod_pi_branch": -1.4339550619006722
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948983,
+        "minimum_link_magnitude": 0.9969556532219008,
+        "minimum_twist_gap": 1.0680004681646906,
+        "unwrapped_mod_pi_branch": -1.5707963267948948
+      }
+    },
+    {
+      "m": 2.375,
+      "nu_M": -2,
+      "occupied_bdg_chern": 1.999999999999999,
+      "zero_twist_gap": 2.010793866150535,
+      "complex": {
+        "phase_mod_pi": 1.7120488650260484,
+        "minimum_link_magnitude": 0.9969816010884616,
+        "minimum_twist_gap": 1.0009692902660619,
+        "unwrapped_mod_pi_branch": -1.4295437885637448
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948974,
+        "minimum_link_magnitude": 0.997027454353699,
+        "minimum_twist_gap": 1.0077822185373169,
+        "unwrapped_mod_pi_branch": -1.5707963267948957
+      }
+    },
+    {
+      "m": 2.625,
+      "nu_M": -2,
+      "occupied_bdg_chern": 2.0000000000000036,
+      "zero_twist_gap": 1.7499999999999996,
+      "complex": {
+        "phase_mod_pi": 1.714614642181619,
+        "minimum_link_magnitude": 0.997071338201743,
+        "minimum_twist_gap": 0.8659277231447269,
+        "unwrapped_mod_pi_branch": -1.426978011408174
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948974,
+        "minimum_link_magnitude": 0.9971191036485781,
+        "minimum_twist_gap": 0.8750000000000002,
+        "unwrapped_mod_pi_branch": -1.5707963267948957
+      }
+    },
+    {
+      "m": 2.875,
+      "nu_M": -2,
+      "occupied_bdg_chern": 1.999999999999998,
+      "zero_twist_gap": 1.25,
+      "complex": {
+        "phase_mod_pi": 1.7155574621644476,
+        "minimum_link_magnitude": 0.9972053798108326,
+        "minimum_twist_gap": 0.6249999999999999,
+        "unwrapped_mod_pi_branch": -1.4260351914253455
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948966,
+        "minimum_link_magnitude": 0.9972476106077945,
+        "minimum_twist_gap": 0.6249999999999999,
+        "unwrapped_mod_pi_branch": -1.5707963267948966
+      }
+    },
+    {
+      "m": 3.125,
+      "nu_M": -2,
+      "occupied_bdg_chern": 1.999999999999999,
+      "zero_twist_gap": 0.7499999999999999,
+      "complex": {
+        "phase_mod_pi": 1.715415034298478,
+        "minimum_link_magnitude": 0.9973549543227193,
+        "minimum_twist_gap": 0.3749999999999997,
+        "unwrapped_mod_pi_branch": -1.4261776192913151
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948943,
+        "minimum_link_magnitude": 0.9974461353998163,
+        "minimum_twist_gap": 0.3749999999999997,
+        "unwrapped_mod_pi_branch": -1.5707963267948988
+      }
+    },
+    {
+      "m": 3.375,
+      "nu_M": -2,
+      "occupied_bdg_chern": 2.0000000000000027,
+      "zero_twist_gap": 0.25000000000000006,
+      "complex": {
+        "phase_mod_pi": 1.7142995090413873,
+        "minimum_link_magnitude": 0.9970317945755358,
+        "minimum_twist_gap": 0.1250000000000001,
+        "unwrapped_mod_pi_branch": -1.4272931445484058
+      },
+      "cosine": {
+        "phase_mod_pi": 1.5707963267948957,
+        "minimum_link_magnitude": 0.9971599503649676,
+        "minimum_twist_gap": 0.1250000000000001,
+        "unwrapped_mod_pi_branch": -1.5707963267948974
+      }
+    },
+    {
+      "m": 3.625,
+      "nu_M": -1,
+      "occupied_bdg_chern": 1.0,
+      "zero_twist_gap": 0.24999999999999992,
+      "complex": {
+        "phase_mod_pi": 0.6270610487493862,
+        "minimum_link_magnitude": 8.58770110153429e-08,
+        "minimum_twist_gap": 0.015013497939043855,
+        "unwrapped_mod_pi_branch": -2.514531604840407
+      },
+      "cosine": {
+        "phase_mod_pi": 0.3271146280059707,
+        "minimum_link_magnitude": 1.8884531899226507e-07,
+        "minimum_twist_gap": 0.0012537272979388243,
+        "unwrapped_mod_pi_branch": -2.8144780255838224
+      }
+    },
+    {
+      "m": 3.875,
+      "nu_M": -1,
+      "occupied_bdg_chern": 1.0,
+      "zero_twist_gap": 0.7499999999999998,
+      "complex": {
+        "phase_mod_pi": 3.033084337013623,
+        "minimum_link_magnitude": 9.848438178413441e-08,
+        "minimum_twist_gap": 0.015325440248311466,
+        "unwrapped_mod_pi_branch": -3.2501009701659633
+      },
+      "cosine": {
+        "phase_mod_pi": 3.10455903098848,
+        "minimum_link_magnitude": 9.024562750405317e-08,
+        "minimum_twist_gap": 0.005743974035384168,
+        "unwrapped_mod_pi_branch": -3.1786262761911064
+      }
+    },
+    {
+      "m": 4.125,
+      "nu_M": -1,
+      "occupied_bdg_chern": 1.0000000000000002,
+      "zero_twist_gap": 0.7500000000000004,
+      "complex": {
+        "phase_mod_pi": 1.5002323034590646,
+        "minimum_link_magnitude": 1.345011128743437e-07,
+        "minimum_twist_gap": 0.00037995320218967124,
+        "unwrapped_mod_pi_branch": -4.782953003720522
+      },
+      "cosine": {
+        "phase_mod_pi": 2.830886454021233,
+        "minimum_link_magnitude": 1.0559038189843383e-07,
+        "minimum_twist_gap": 0.0038556995723403637,
+        "unwrapped_mod_pi_branch": -3.452298853158353
+      }
+    },
+    {
+      "m": 4.375,
+      "nu_M": -1,
+      "occupied_bdg_chern": 0.9999999999999993,
+      "zero_twist_gap": 0.24999999999999997,
+      "complex": {
+        "phase_mod_pi": 2.5969581349887534,
+        "minimum_link_magnitude": 1.1003584293567347e-07,
+        "minimum_twist_gap": 0.013472900767105906,
+        "unwrapped_mod_pi_branch": -3.686227172190833
+      },
+      "cosine": {
+        "phase_mod_pi": 0.9947237369347017,
+        "minimum_link_magnitude": 2.0263489877249187e-07,
+        "minimum_twist_gap": 0.009246631324381936,
+        "unwrapped_mod_pi_branch": -2.1468689166550914
+      }
+    },
+    {
+      "m": 4.625,
+      "nu_M": 0,
+      "occupied_bdg_chern": -9.787383980718895e-17,
+      "zero_twist_gap": 0.24999999999999972,
+      "complex": {
+        "phase_mod_pi": 0.12665663835508711,
+        "minimum_link_magnitude": 0.9986106806790798,
+        "minimum_twist_gap": 0.12499999999999908,
+        "unwrapped_mod_pi_branch": -3.014936015234706
+      },
+      "cosine": {
+        "phase_mod_pi": 3.552713678800501e-15,
+        "minimum_link_magnitude": 0.9987384653204143,
+        "minimum_twist_gap": 0.12499999999999908,
+        "unwrapped_mod_pi_branch": -3.1415926535897896
+      }
+    },
+    {
+      "m": 4.875,
+      "nu_M": 0,
+      "occupied_bdg_chern": -3.7099569038338545e-17,
+      "zero_twist_gap": 0.75,
+      "complex": {
+        "phase_mod_pi": 0.10670634000385171,
+        "minimum_link_magnitude": 0.9990554212912542,
+        "minimum_twist_gap": 0.37499999999999994,
+        "unwrapped_mod_pi_branch": -3.0348863135859414
+      },
+      "cosine": {
+        "phase_mod_pi": 3.552713678800501e-15,
+        "minimum_link_magnitude": 0.999167837430249,
+        "minimum_twist_gap": 0.37499999999999994,
+        "unwrapped_mod_pi_branch": -3.1415926535897896
+      }
+    }
+  ],
+  "chern_transition_jumps": [
+    {
+      "m_left": -4.625,
+      "m_right": -4.375,
+      "critical_m_midpoint": -4.5,
+      "nu_left": 0,
+      "nu_right": 1,
+      "delta_nu": 1,
+      "complex_left": 0.020944081089137256,
+      "complex_right": -0.9473328051394585,
+      "complex_delta": -0.9682768862285958,
+      "complex_delta_over_pi": -0.30821210544981953,
+      "cosine_left": 3.141592653589793,
+      "cosine_right": 3.8416623364698594,
+      "cosine_delta": 0.7000696828800663,
+      "cosine_delta_over_pi": 0.22283910107827634
+    },
+    {
+      "m_left": -3.625,
+      "m_right": -3.375,
+      "critical_m_midpoint": -3.5,
+      "nu_left": 1,
+      "nu_right": 2,
+      "delta_nu": 1,
+      "complex_left": -0.9935452225292387,
+      "complex_right": -1.6442541760115397,
+      "complex_delta": -0.650708953482301,
+      "complex_delta_over_pi": -0.20712709292172476,
+      "cosine_left": 2.573838371180452,
+      "cosine_right": 1.5707963267948974,
+      "cosine_delta": -1.0030420443855546,
+      "cosine_delta_over_pi": -0.3192781989859226
+    },
+    {
+      "m_left": -0.625,
+      "m_right": -0.375,
+      "critical_m_midpoint": -0.5,
+      "nu_left": 2,
+      "nu_right": 0,
+      "delta_nu": -2,
+      "complex_left": -1.618270457983708,
+      "complex_right": -1.6450416769570566,
+      "complex_delta": -0.026771218973348665,
+      "complex_delta_over_pi": -0.008521543664407952,
+      "cosine_left": 1.570796326794894,
+      "cosine_right": 2.5534052900480955,
+      "cosine_delta": 0.9826089632532016,
+      "cosine_delta_over_pi": 0.31277414725629915
+    },
+    {
+      "m_left": 0.375,
+      "m_right": 0.625,
+      "critical_m_midpoint": 0.5,
+      "nu_left": 0,
+      "nu_right": -2,
+      "delta_nu": -2,
+      "complex_left": 0.06647697507436234,
+      "complex_right": -1.5021116722306402,
+      "complex_delta": -1.5685886473050026,
+      "complex_delta_over_pi": -0.49929727379284156,
+      "cosine_left": -0.5507594291072961,
+      "cosine_right": -1.5707963267948966,
+      "cosine_delta": -1.0200368976876004,
+      "cosine_delta_over_pi": -0.32468782880620706
+    },
+    {
+      "m_left": 3.375,
+      "m_right": 3.625,
+      "critical_m_midpoint": 3.5,
+      "nu_left": -2,
+      "nu_right": -1,
+      "delta_nu": 1,
+      "complex_left": -1.4272931445484058,
+      "complex_right": -2.514531604840407,
+      "complex_delta": -1.087238460292001,
+      "complex_delta_over_pi": -0.3460787505501867,
+      "cosine_left": -1.5707963267948974,
+      "cosine_right": -2.8144780255838224,
+      "cosine_delta": -1.243681698788925,
+      "cosine_delta_over_pi": -0.3958761799903662
+    },
+    {
+      "m_left": 4.375,
+      "m_right": 4.625,
+      "critical_m_midpoint": 4.5,
+      "nu_left": -1,
+      "nu_right": 0,
+      "delta_nu": 1,
+      "complex_left": -3.686227172190833,
+      "complex_right": -3.014936015234706,
+      "complex_delta": 0.6712911569561268,
+      "complex_delta_over_pi": 0.2136786117668899,
+      "cosine_left": -2.1468689166550914,
+      "cosine_right": -3.1415926535897896,
+      "cosine_delta": -0.9947237369346982,
+      "cosine_delta_over_pi": -0.3166303994879987
+    }
+  ]
+}

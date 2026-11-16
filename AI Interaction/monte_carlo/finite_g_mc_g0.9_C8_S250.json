@@ -1,0 +1,170 @@
+{
+  "method": "two-sided finite-g full-Fock-space Metropolis Monte Carlo",
+  "g": 0.9,
+  "parameters": {
+    "m": -2.0,
+    "t": 1.0,
+    "t1": 1.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5,
+    "lx": 4,
+    "ly": 4,
+    "steps_per_leg": 2,
+    "chains_per_direction": 8,
+    "burn_in_sweeps": 50,
+    "measurement_sweeps": 250,
+    "seed": 20261102,
+    "reference_mask": 2865289779
+  },
+  "berry_phase": -1.5406692708908987,
+  "statistical_error": 0.11739835476629705,
+  "elapsed_seconds": 89.34921091599972,
+  "mean_acceptance_rate": 0.0481103515625,
+  "mean_physical_fraction": 0.4140625,
+  "links": [
+    {
+      "link": 0,
+      "phase": -1.0456754884788344,
+      "phase_error": 0.03950987802716413,
+      "overlap_magnitude": 0.6120059443946841,
+      "forward_mean": [
+        0.3884075646021069,
+        -0.6703831291279443
+      ],
+      "backward_mean": [
+        0.20895195112429132,
+        0.4359435691472386
+      ],
+      "forward_acceptance": 0.052421875,
+      "backward_acceptance": 0.0571875,
+      "forward_physical_fraction": 0.5,
+      "backward_physical_fraction": 0.0
+    },
+    {
+      "link": 1,
+      "phase": -0.7663282744555419,
+      "phase_error": 0.05273084496024823,
+      "overlap_magnitude": 0.679454074464077,
+      "forward_mean": [
+        0.35727640988554965,
+        -0.3439033682655288
+      ],
+      "backward_mean": [
+        0.6236994857259645,
+        0.6911359149005971
+      ],
+      "forward_acceptance": 0.05671875,
+      "backward_acceptance": 0.037369791666666666,
+      "forward_physical_fraction": 0.25,
+      "backward_physical_fraction": 0.625
+    },
+    {
+      "link": 2,
+      "phase": -0.021825264136711892,
+      "phase_error": 0.029826983844650143,
+      "overlap_magnitude": 0.7952294999306627,
+      "forward_mean": [
+        0.9467507157960392,
+        -0.020666365968510913
+      ],
+      "backward_mean": [
+        0.6669869292681424,
+        0.032926793869845344
+      ],
+      "forward_acceptance": 0.03197916666666667,
+      "backward_acceptance": 0.04502604166666667,
+      "forward_physical_fraction": 0.625,
+      "backward_physical_fraction": 0.375
+    },
+    {
+      "link": 3,
+      "phase": -0.17026261347406058,
+      "phase_error": 0.021862841028643328,
+      "overlap_magnitude": 0.8664563860519191,
+      "forward_mean": [
+        0.882623804191457,
+        -0.15174702697230122
+      ],
+      "backward_mean": [
+        0.831264782748501,
+        0.1082687844633804
+      ],
+      "forward_acceptance": 0.0328125,
+      "backward_acceptance": 0.03369791666666667,
+      "forward_physical_fraction": 0.5,
+      "backward_physical_fraction": 0.5
+    },
+    {
+      "link": 4,
+      "phase": -0.4235080895773533,
+      "phase_error": 0.04603469596001476,
+      "overlap_magnitude": 0.800414094905663,
+      "forward_mean": [
+        0.6262352049253626,
+        -0.28229860370749804
+      ],
+      "backward_mean": [
+        0.8416372569454281,
+        0.40186303538368895
+      ],
+      "forward_acceptance": 0.04552083333333334,
+      "backward_acceptance": 0.036015625,
+      "forward_physical_fraction": 0.5,
+      "backward_physical_fraction": 0.75
+    },
+    {
+      "link": 5,
+      "phase": -0.43869669452161597,
+      "phase_error": 0.02935149744783139,
+      "overlap_magnitude": 0.7536067259165873,
+      "forward_mean": [
+        1.1420051315118447,
+        -0.5358166339314463
+      ],
+      "backward_mean": [
+        0.40272584393446365,
+        0.201252506879854
+      ],
+      "forward_acceptance": 0.05057291666666667,
+      "backward_acceptance": 0.049817708333333335,
+      "forward_physical_fraction": 0.125,
+      "backward_physical_fraction": 0.5
+    },
+    {
+      "link": 6,
+      "phase": 0.8603826811088986,
+      "phase_error": 0.048965860038155895,
+      "overlap_magnitude": 0.6385414065561916,
+      "forward_mean": [
+        0.2842266083007515,
+        0.33040071486697165
+      ],
+      "backward_mean": [
+        0.6236409857127635,
+        -0.6973479390639425
+      ],
+      "forward_acceptance": 0.05619791666666667,
+      "backward_acceptance": 0.06307291666666667,
+      "forward_physical_fraction": 0.375,
+      "backward_physical_fraction": 0.25
+    },
+    {
+      "link": 7,
+      "phase": 0.46524447264432073,
+      "phase_error": 0.05191155327034767,
+      "overlap_magnitude": 0.6211686366237295,
+      "forward_mean": [
+        0.519288963686496,
+        0.2606818530784464
+      ],
+      "backward_mean": [
+        0.5908458957728737,
+        -0.30311245490524574
+      ],
+      "forward_acceptance": 0.060598958333333335,
+      "backward_acceptance": 0.06075520833333333,
+      "forward_physical_fraction": 0.375,
+      "backward_physical_fraction": 0.375
+    }
+  ]
+}

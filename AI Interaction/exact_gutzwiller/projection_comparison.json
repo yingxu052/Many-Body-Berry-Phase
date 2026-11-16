@@ -1,0 +1,52 @@
+{
+  "lattice": [
+    4,
+    4
+  ],
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": 1.5,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "projection_convention": "full: product_i (1-n_ic n_id); no finite Gutzwiller g",
+  "meshes": [
+    {
+      "steps_per_leg": 2,
+      "unprojected_gaussian_phase_radians": 3.2443942622347954e-16,
+      "unprojected_gaussian_phase_over_pi": 1.0327227683473013e-16,
+      "fully_projected_phase_radians": -1.6251114282304837,
+      "fully_projected_phase_over_pi": -0.5172890337560228,
+      "projected_minus_unprojected_radians": -1.625111428230484,
+      "unprojected_minimum_link_magnitude": 0.4538035211695743
+    },
+    {
+      "steps_per_leg": 4,
+      "unprojected_gaussian_phase_radians": -4.0547576826425885e-16,
+      "unprojected_gaussian_phase_over_pi": -1.2906694564648133e-16,
+      "fully_projected_phase_radians": -2.125778937129229,
+      "fully_projected_phase_over_pi": -0.6766564515295044,
+      "projected_minus_unprojected_radians": -2.1257789371292284,
+      "unprojected_minimum_link_magnitude": 0.6764812957332067
+    },
+    {
+      "steps_per_leg": 8,
+      "unprojected_gaussian_phase_radians": 9.826934278908806e-17,
+      "unprojected_gaussian_phase_over_pi": 3.1280103318550536e-17,
+      "fully_projected_phase_radians": -2.2791649040763238,
+      "fully_projected_phase_over_pi": -0.7254807212106248,
+      "projected_minus_unprojected_radians": -2.2791649040763238,
+      "unprojected_minimum_link_magnitude": 0.8773809981934619
+    },
+    {
+      "steps_per_leg": 16,
+      "unprojected_gaussian_phase_radians": -1.8044771135124568e-16,
+      "unprojected_gaussian_phase_over_pi": -5.743829046234053e-17,
+      "fully_projected_phase_radians": -2.3203313078097207,
+      "fully_projected_phase_over_pi": -0.7385843944975984,
+      "projected_minus_unprojected_radians": -2.3203313078097207,
+      "unprojected_minimum_link_magnitude": 0.9657970771446712
+    }
+  ]
+}

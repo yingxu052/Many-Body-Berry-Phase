@@ -1,0 +1,71 @@
+Microscopic vortex braiding from many-body Berry phases
+Lu Zhang, Shang-qiang Ning, Hoi Chun Po, Xue-Yang Song, and Xuzhe Ying
+∗ †
+Department of Physics, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China and
+Center for Theoretical Condensed Matter Physics,
+The Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China
+(Dated: November 16, 2026)
+Kitaev’s sixteen-fold way relates (2+1)D invertible fermionic phases to bosonic topological or-
+ders obtained by gauging fermion parity, where the statistics of π-vortices are determined by the
+MajoranaChernnumberν mod16. Forevenν ,thevorticesobeyAbelianfusionyetcancarrynon-
+M M
+trivialbraidingphasesthataresubtletoaccessmicroscopically. Weshowthatthesevortexbraiding
+phases can be extracted as a many-body Berry phase accumulated along a fully gapped adiabatic
+cycle that interpolates between the four twisted boundary conditions on a torus. We demonstrate
+the computation in free-fermion lattice models with tunable ν . We interpret the vortex braiding
+M
+phase in terms of fermion-parity fractionalization. Using a bilayer construction and gauging only
+thetotalfermionparity,weobtainatoric-codetopologicalorderenrichedbyaglobalZ symmetry.
+2
+The symmetry fractionalization data determine the fractionalized fermion parity on the vortices.
+I. INTRODUCTION A central role is played by π-flux excitations (π-
+vortices). For odd Chern number, π-vortices bind an
+oddnumberofMajoranamodes,leadingto(atleast)one
+Topological order [1–4] describes gapped quantum
+Majorana mode pinned at zero energy. The fusion of π-
+phases that lie beyond the Landau symmetry-breaking
+vortices is sensitive to the microscopic details. Namely,
+paradigm. Topologically ordered quantum states ex-
+two Majorana modes hybridize into a complex fermion
+hibit universal properties that underpin fault-tolerant
+which can be filled or empty. Hence, the Hilbert space
+quantum computation[5], including long-range entangle-
+of two π-vortices is two-dimensional, dictating a non-
+ment [6, 7], anyonic excitations with fractional statistics
+abelianfusionrule. Theassociatednon-abelianstatistics
+[4, 8, 9], and robust topological ground-state degeneracy
+was carefully studied and underlies topological quantum
+[2, 10].
+computing [5, 24–28].
+Topology and symmetry are intricately correlated. In
+the exotic symmetry-enriched topological orders (SET) For even Majorana Chern number, the π-vortices fol-
+[11–15],globalsymmetryactsnontriviallyontheanyons, low an abelian fusion rule but nonetheless can still carry
+forinstancebypermutinganyontypesand/orbyendow- nontrivial topological spins and mutual braiding phases,
+ing them with fractional symmetry charges (a phenom- which is the focus of current work. The representative
+ena known as symmetry fractionalization). On the other systemswithevenMajoranaChernnumberincludeinte-
+hand, a subset of topologically ordered states is closely gerquantumHallstate[29]andCherninsulators[30–32],
+related to the invertible states, including symmetry- with U(1) charge conservation. Due to the U(1) symme-
+protected topological (SPT) phases of matter [16] and try, the fusion and braiding statistics of π-vortices are
+fermionic invertible states [4]. Indeed, Levin-Gu’s work easy to deduce. Relying on the topological stability, the
+[16] classifies bosonic SPT by the anyon braiding rule same properties for π-vortices are expected to hold in
+via gauging the protecting symmetry. The classification cases when U(1) symmetry is explicitly broken to Zf
+2
+schemematchesthegroupcohomologicalclassificationof fermion parity. In this work, we compute the proper-
+bosonic SPT [17, 18]. ties of π-vortices in systems with only Zf fermion parity
+2
+Similarly, Kitaev’s seminal work [4] provides a sharp symmetry.
+incarnation of the general idea that (2+1)D fermionic In principle, vortex braiding statistics can be accessed
+phases can be mapped to bosonic topological orders from adiabatically transporting one vortex around an-
+by gauging fermion parity, i.e., by a two-dimensional other. This requires the knowledge on either the string
+bosonization scheme [4, 19–23]. In this correspondence, operators for the vortices [33, 34] or a set of Hamilto-
+a gapped invertible fermion phase with Majorana Chern nians or states that form an adiabatic path. In prac-
+number ν M gives rise to a parity-gauged topological or- tice,however,stringoperatorscanberathercomplicated
+der, whose anyon content and statistics depend only on away from a few fixed-point cases. On the other hand,
+ν M mod 16. For example, a trivial atomic insulator and when explicitly moving a vortex in a microscopic lattice
+s-wave superconductor is mapped to a toric code model model, energy levels of the vortex states can cross (note
+andap+ipsuperconductortotheIsingtopologicalorder. that we do not mean bulk gap closing), which poisons
+the adiabaticity. Before proceeding, we should mention
+thattherehavebeenvariousproposalincomputingtopo-
+logical data from microscopic states [35–39] , which ex-
+∗ Contactauthor: songxy@ust.hk ploit the universal ground-state structure of topological
+† Contactauthor: yingxz@ust.hk phases,particularlytheirlong-rangeentanglement,toex-

@@ -1,0 +1,1742 @@
+PHYSICALREVIEWB88,195412(2013)
+Momentumpolarization:Anentanglementmeasureoftopological spinandchiralcentralcharge
+Hong-HaoTu,1 YiZhang,2 andXiao-LiangQi2
+1Max-Planck-Institutfu¨rQuantenoptik,Hans-Kopfermann-Str.1,D-85748Garching,Germany
+2DepartmentofPhysics,StanfordUniversity,Stanford,California94305,USA
+(Received31December2012;published13November2013)
+Topologically ordered states are quantum states of matter with topological ground-state degeneracy and
+quasiparticlescarryingfractionalquantumnumbersandfractionalstatistics.Thetopologicalspinθ =2πh isan
+a a
+importantpropertyofatopologicalquasiparticle,whichistheBerryphaseobtainedintheadiabaticself-rotation
+of the quasiparticle by 2π. For chiral topological states with robust chiral edge states, another fundamental
+topologicalpropertyistheedgestatechiralcentralchargec.Inthispaperweproposeanapproachtocompute
+thetopologicalspinandchiralcentralchargeinlatticemodelsbydefiningaquantitythatwecallthemomentum
+polarization.Momentumpolarizationisdefinedonthecylindergeometryasauniversalsubleadingterminthe
+averagevalueofa“partialtranslationoperator.”Weshowthatthemomentumpolarizationisaquantumentangle-
+mentpropertywhichcanbecomputedfromthereduceddensitymatrix,andouranalyticderivationbasedonedge
+conformalfieldtheoryshowsthatthemomentumpolarizationmeasuresthecombinationh − c oftopological
+a 24
+spinandcentralcharge.Resultsareobtainedfortwoexamplesystems,thenon-Abelianphaseofthehoneycomb
+latticeKitaevmodelandtheν =1/2LaughlinstateofafractionalCherninsulatordescribedbyavariational
+MonteCarlowavefunction,whichverifytheanalyticformulawithhighaccuracyandfurthersuggestthatthis
+resultremainsrobustevenwhentheedgestatescannotbedescribedbyaconformalfieldtheory.Ourresultprovides
+anefficientapproachtoextractcharacteristicquantitiesoftopologicalstatesofmatterfromfinitesizenumerics.
+DOI:10.1103/PhysRevB.88.195412 PACSnumber(s): 73.20.−r,03.65.Vf,11.25.Hf,73.43.−f
+I. INTRODUCTION spin-statistics relation is a generalization of that for ordinary
+particles—i.e.,fermionshavehalf-integerspin,whilebosons
+SincethediscoveryofintegerandfractionalquantumHall
+have integer spin. Therefore, the spin values of quasiparti-
+statesinthe1980s,1,2topologicalstatesofmatterhaveattracted
+cles are an important set of information that distinguishes
+tremendous experimental and theoretical research interest.
+different topological states. The calculation of topological
+Therecentdiscoveryoftopologicalinsulatorsandtopological
+spin is generically difficult except for algebraically defined
+superconductors has greatly expanded our knowledge of
+topological field theories9 and some ideal model states.10–12
+topologicalstates.3–5Ingeneral,topologicalstatesaregapped
+For microscopic lattice models with a topological phase, the
+zero-temperature states of matter which cannot be deformed
+topological spin of quasiparticles has only been computed
+into trivial states without encountering a quantum phase
+numerically for several special cases: (1) the honeycomb
+transition.Herethe“trivialstates”arereferencestateswhich
+lattice Kitaev model studied by calculating the braiding of
+have no quantum entanglement between any two different
+quasiparticles;13,14 (2)thefractionalCherninsulatorsstudied
+regionsofspace.Topologicalstatesofmatterarecharacterized
+by modular transformations on a torus.15–17 Such numerical
+bytopologicalpropertiessuchasgaplessedge/surfacestates,
+resultsareusuallyrestrictedtosmallsystemsizes.
+ground-state degeneracy, bulk quasiparticle excitations with
+Forchiraltopologicalstateswithrobustchiraledgestates,
+fractional charge, and fractional statistics. The fractionaliza-
+tion of quantum numbers and statistics can only occur in another fundamental topological quantity is the edge state
+topological states with ground-state degeneracy, which are chiral central charge. If the edge state is described by a
+calledtopologicallyorderedstates.6,7 chiral conformal field theory (CFT), it has a chiral central
+In a topologically ordered state, a given configuration of charge c, which determines the heat current I E = π 6 cT2 at a
+topological quasiparticles correspond to a finite dimensional given temperature.18 The central charge also appears in the
+Hilbertspace.Braidingquasiparticlesaroundeachotherleads gravitationalanomalyoftheedge19ifthesystemiscoupledto
+to a unitary transformation in the Hilbert space, which is agravitationalfield.Sincetheedgestateofatopologicalstate
+termed as the fractional statistics of the particles.8 When is a well-defined one-dimensional state for energies within
+the braiding of different particles leads to noncommuting the bulk gap, it can be described by a CFT only in the long
+transformations, the statistics of the particle is said to be wavelengthlimit.(Aswewilldiscusslater,thereareexamples
+non-Abelian; otherwise, it is Abelian. Besides the statistics, wheretheedgestateisnotLorentzinvarianteveninthelong
+each quasiparticle a also has a fractionalized spin θ which wavelengthlimitandnotdescribablebyaCFTatall.)
+a
+is a phase factor the state obtains during the self-rotation of In this paper, we propose an approach for the calculation
+a by 2π. The spins of topological quasiparticles are related of topological spins and chiral central charge in candidate
+to their statistics, because when two particles wind around systems of topological states, which is significantly simpler
+each other by 2π and return to their initial positions, other than previous numerical methods and can be used to extract
+particles far away cannot determine whether there are two characteristic quantities for topological states obtained in
+particles braiding or there is only one particle (obtained by numerical approaches such as exact diagonalization, Monte
+the“fusion”ofthetwoparticles)spinningarounditself.9 The Carlo, and density-matrix renormalization group (DMRG).
+1098-0121/2013/88(19)/195412(12) 195412-1 ©2013AmericanPhysicalSociety
+
+HONG-HAOTU,YIZHANG,ANDXIAO-LIANGQI PHYSICALREVIEWB88,195412(2013)
+and contains the topological information h and c, while the
+a
+second nonuniversal term is independent of a. We name the
+coefficientofthefirsttermp asthemomentumpolarization,
+a
+whichhasthephysicalmeaningofthenetymomentumcarried
+bytheleftedgeinthegroundstate(inunitsof 2π,whichisthe
+Ly
+momentum quantum carried by a local bosonic excitation).
+Therefore, the integer part of p may correspond to a local
+a
+excitation,andthefractionalpartp mod1isthetopological
+a
+contributiondeterminedbythegroundstate.Aswewillshow,
+thisresultcanbeunderstoodbasedonentanglementproperties
+oftopologicalstates.
+Therestofthepaperisorganizedasfollows.InSec.IIwe
+provide an analytic derivation of Eq. (1) based on edge state
+conformal field theory and quantum entanglement properties
+of the topological state. In Sec. III we verify Eq. (1) in
+FIG.1. (Color online) (a) Global translation of the cylinder is
+the honeycomb lattice Kitaev model.20 In the non-Abelian
+equivalent to spinning two quasiparticles on a sphere to opposite
+phase of the Kitaev model, we find that the spin of the
+directions.(b)ThepartialtranslationTLoftheleftpartofthecylinder.
+y non-Abelian anyon σ is θ = π, in consistency with the
+Thetwistsaredenotedbytheblackarrows,andtheredcircleswith a 8
+expectationthatthisstateisdescribedbyanIsingtopological
+arrowsintheleftpanelsindicatethechiraledgestatesonthecylinder
+quantum field theory.20 In Sec. IV this result is further
+edges.
+verified in another topological state, the fractional Chern
+insulator.21–24 Variational Monte Carlo calculations confirm
+Thismethodappliestoatopologicalstatedefinedoncylinder.
+thewave function ofν =1/2 latticeLaughlin statehasedge
+Since a cylinder is topologically equivalent to a sphere with
+statecentralchargec=1andaquasiparticlewithtopological
+twopunctures,eachgroundstateonthecylindercorresponds
+spin θ = π. Finally, Sec. V contains the conclusion and
+to a topological quasiparticle a in each of the punctures. a 2
+discussions.
+This is illustrated in Fig. 1(a). A rotation of the cylinder
+along the periodic direction y is equivalent to rotating the
+two particles simultaneously. By mapping to sphere we see II. ANALYTICRESULT
+that with reference to the direction normal to the sphere,
+In this section we will derive Eq. (1) based on the
+one particle is rotated clockwise while the other is rotated
+assumption that the edge state of the topological state is a
+counterclockwise.Consequently,whentheparticleshavespin
+chiralconformalfieldtheory.Later,inSec.III,theresultswill
+θ ,a2π rotationofthecylindershouldleadtoaBerryphase
+o
+a
+f eiθa from one end and e−iθa from the other, which cancel
+alsoindicatethattheapplicabilityofEq.(1)goesbeyondthe
+edgeCFTassumption.
+eachotherasexpected,sincethisglobalrotationisasymmetry
+Tobeginwith,wenoticethatthepartialtranslationTLonly
+ofthesystem.Toavoidthecancellation,weneedtodefinea y
+acts on the left half of the system, so that we can trace over
+“twist”ofthecylinderwhereonlythelefthalfofthecylinder
+the right half and define the reduced density matrix ρ =
+is rotated, as is illustrated in Fig. 1(b). For a lattice system, La
+tr (|G (cid:4)(cid:3)G |)suchthat
+we do not have a way to twist the cylinder continuously, so R a a (cid:4) (cid:5)
+thetwisthastobediscrete.IfweconsiderthetwistFig.1(b), λ ≡(cid:3)G |TL|G (cid:4)=tr ρ TL . (2)
+a a y a L La y
+where half of the cylinder is twisted by one lattice constant
+The reduced density matrix ρ is generically difficult to
+and there are L lattice sites in the y direction, such a twist La
+y compute,butfortopologicallyorderedstateswithchiraledge
+should lead to a Berry’s phase of eiθa/Ly contributed by the
+states, some long wavelength behavior of ρ is known. In
+left edge of the cylinder without being canceled by the right La
+2008,LiandHaldaneobservedthattheentanglementspectrum
+edge.However,thetwistlookslikeaviolentoperationsinceit
+(i.e., the spectrum of the “entanglement Hamiltonian”H
+inducesadiscontinuousjumpattheboundarybetweenleftand E
+defined as H =−logρ ) is qualitatively the same as that
+righthalvesofthecylinder.Naively,thisappearstoinducea E La
+of the edge Hamiltonian.25 This is proposed as a generic
+nonuniversalcorrectiontothephaseobtainedduringthetwist,
+feature of the topological states, which has been verified
+andthusmakesitimpossibletomeasurethespinθ .Thekey
+a numericallyandanalyticallyinvariousphysicalsystemssuch
+resultofthecurrentworkisthatthenonuniversalcontribution
+as general fractional quantum Hall wave functions,26,27 free
+isindependentofthetopologicalsectora,whichisshownin
+fermion topological states,28,29 and the Kitaev model,30 etc.
+thefollowingformula:
+(cid:2) (cid:3) A general analytic derivation of the entanglement-edge state
+2πi correspondence has been proposed in Ref. 31 for a generic
+λ ≡(cid:3)G |TL|G (cid:4)=exp p −αL ,
+a a y a L a y topological state with chiral CFT edge states. Here we will
+y
+(1) briefly review the result of Ref. 31 which will be applied to
+c
+p ≡h − , thecurrentwork.
+a a
+24
+The basic idea behind this derivation is that a cylinder
+with|G (cid:4)thegroundstateintheasector,cthecentralcharge can be considered as two cylinders A,B glued together, as
+a
+oftheedgeCFT,andαanonuniversalcomplexconstant.The is illustrated in Fig. 2(a). Before the gluing procedure, each
+keypropertyofthisformulaisthatthefirsttermisuniversal cylinder has two edge states on the two boundaries, which
+195412-2
+
+MOMENTUMPOLARIZATION:ANENTANGLEMENT... PHYSICALREVIEWB88,195412(2013)
+exp[i2π(h − c )]. On the other hand, the right edge is in
+the hi L g y h te a mpe 2 r 4 ature limit since vβ (cid:8)L . To compute the
+r y
+character in that limit we can make use of the modular
+transformationpropertyofthecharacter
+(cid:6)
+χ (e −2πi/τ)= S χ (ei2πτ), (7)
+FIG.2. (Color online) (a) Cylinder can be considered as two a ab b
+b
+separatecylindersgluedtogether.Eachcylinderhaschiraledgestates
+(redandbluecircles)andthegluingofthetwocylinderscouplesthe with S ab the modular S matrix.32 Taking e−2πi/τ =e − L 2π y vβr,
+edge states at the interface. (b) After gluing the two parts of the
+wehave
+cylinderareentangledthroughtheinterface,andthereduceddensity (cid:6)
+matrixofthelefthalfofthecylinderisdescribedbyathermaldensity χ a (e − L 2π y vβr)= S ab χ b (e −2 v π β L r y ). (8)
+matrixoftheedgestateCFTwithfinite“entanglementtemperature”
+b
+β−1attherightedge,andzeroentanglementtemperatureβ−1=0at
+r l Since the right-hand side is in the low temperature limit,
+theleftedge(seetext).
+we can approximate χ b (e −2 v π β L r y )(cid:9)e −2 v π β L r y(hb − 2 c 4 ). In the low
+in the long wavelength limit are described by a conformal temperature limit the trivial sector χ with h =0 domi-
+1 1
+field theory Hamiltonian H A(B) =H A(B)l +H A(B)r , with l,r nates all other sectors with positive h a , so that we have
+d
+se
+e
+c
+n
+t
+o
+o
+t
+r
+in
+o
+g
+f
+t
+t
+h
+h
+e
+e
+l
+c
+e
+y
+ft
+li
+a
+n
+n
+d
+d
+e
+r
+r
+ig
+la
+h
+b
+t
+e
+e
+l
+d
+e
+g
+d
+e
+b
+o
+y
+f
+q
+ea
+u
+c
+a
+h
+si
+c
+p
+y
+a
+l
+r
+i
+t
+n
+ic
+d
+l
+e
+e
+r.
+a
+A
+c
+t
+o
+o
+r
+p
+re
+o
+s
+lo
+p
+g
+o
+i
+n
+c
+d
+a
+s
+l
+χ a (e
+−
+L
+2π
+y
+vβr)(cid:9)S
+a1 e
+2
+v
+π
+β
+L
+r
+y
+2
+c
+4. The same modular transformation
+can be applied to the numerator in Eq. (6) and leads to
+to a conformal block of the edge CFT formed by a primary
+field with scaling dimension h a and its descendants. The χ a (eL 2π y (−i−v (cid:2) βr) )(cid:9) (cid:7) S a1 ei 2 + π v L β y r 2 (cid:8) c 4.Insummary,weobtain (cid:3)
+“gluing” is done by turning on a coupling between the two 2π c 2πc i
+cylinders across the joint edge, and the coupling can be λ a =exp i L h a − 24 −L y 24 vβ (i+vβ ) (9)
+consideredasarelevantcouplingintheedgeCFT.Usingthe y r r
+property of CFT with relevant coupling, Ref. 31 reaches the inthelimitofvβ (cid:8)L ,whichdemonstratesEq.(1)withα =
+r y
+conclusion that the reduced density matrix of the edge state 2πc i nonuniversal, but independent from topological
+o A f r th is e ρ c A h (a r i ) ra = lC Z F r − a T 1e r − es β t r r H i A c r t | e a d ,w to h t i h c e h s i e s c a to t r h a er . m T a h l e d l e e n ft si e t d y g m e a o t f ri A x s 2 e 4 ct v o β r r(i a + . vβ I r t ) should be noted that Reα = 2 2 π 4 c vβr(1+ 1 v2β r 2) >0,
+which means λ decays exponentially when the size L
+a y
+region is far from the B region; therefore, the left edge CFT
+increases.
+staysinitsgroundstate,withnoentanglementwithB region.
+For finite L /vβ , Eq. (9) above obtains finite size cor-
+y r
+Thiscanbedescribedbythesamethermaldensitymatrixwith
+rections coming from two origins. (i) The contribution of
+a temperature β l →∞. The total reduced density matrix of excited states to χ (q) in low temperature limit. χ (q)=
+a a
+thelefthalfofthecylinder(Aregion)is qha − 2 c 4(1+n 1a q+···) with n 1a the number of states in
+ρ
+La
+=ρ
+A
+(a
+l
+)⊗ρ
+A
+(a
+r
+) =Z
+a
+−1e −βlHAl −βrHAr|
+a
+,
+(3)
+t
+c
+h
+o
+e
+nt
+t
+r
+o
+ib
+p
+u
+o
+t
+l
+i
+o
+o
+g
+n
+ic
+o
+a
+f
+l
+o
+s
+t
+e
+h
+c
+e
+t
+r
+or
+to
+a
+po
+w
+lo
+i
+g
+th
+ica
+m
+l
+o
+s
+m
+ec
+e
+to
+n
+r
+tu
+s
+m
+b i
+2
+n
+π
+t
+/
+h
+L
+e
+y
+e
+.
+x
+(
+p
+ii
+a
+)
+ns
+T
+io
+h
+n
+e
+β l =∞,β r finite, (8), which is proportional to qhb − 2 c 4. Denoting the minimal
+scaling dimension of the topological sectors other than the
+asisillustratedinFig.2(b).Therefore,λ definedinEq.(2)is
+a trivialsectorbyh ,weobtaintheleadingcontributiontothe
+theaveragevalueoftranslationoperatorTLinaCFTwithleft min
+y correction
+edgeatzerotemperature,andrightedgeatfinitetemperature.
+InCFTthetranslationoperatorhastheform χ a (e − L 2π y vβr)(cid:9)S a1 e 2 v π β L r y 2 c 4[1+O(e −2 v π β L r y min(1,hmin))] (10)
+TL =e i(Pl +Pr) L 2π y =e i(Hl −Hr) v 2 L π y. (4) andsimilarlyforthenumeratorofEq.(6).Consequently,the
+y
+finitesizecorrectiontoλ is
+a
+Here we have used the linear dispersion of the edge CFT (cid:2) (cid:7) (cid:8) (cid:3)
+H l =vP l ,H r =−vP r with v the velocity of the CFT. Now λ =exp i 2π h − c −αL
+weintroducethecharactersχ (q)oftheCFT,32–34 whichare a L a 24 y
+a y
+definedas ×[1+O(e −2
+v
+π
+β
+L
+r
+y min(1,hmin))]
+χ a (q)=tr a (qL0 − 2 c 4)=tr a (q2 L π y v Hl)=tr a (q2 L π y v Hr), (5) with α = 2πc i . (11)
+withtr thetraceintheconformalblocka.FromEqs.(3)and 24 vβ r (i+vβ r )
+a
+(4),λ a canbeexpressedinthecharacterχ a by We see that the finite size correction to Eq. (1) decays
+exponentiallyversusL /vβ ,whichsuggeststhatthismethod
+λ = χ a (eL
+2π
+y
+(i−vβl)
+)χ a (eL
+2π
+y
+(−i−vβr)
+) . (6) canbeappliedwelltofi
+y
+nite
+r
+sizenumericalcalculations.Such
+a
+χ a (e
+−
+L
+2π
+y
+vβl)χ
+a (e
+−
+L
+2π
+y
+vβr) anexponentialconvergencebehaviorisconfirmedinthenext
+section.
+Now we consider a large but finite L , such that vβ (cid:8)
+y r Besides the finite size correction, other corrections to
+L (cid:8)vβ =∞. The left edge is at zero temperature, so that
+y l Eq. (1) may occur in a realistic system due to deviations of
+the character is dominated by the ground-state contribution
+the reduced density matrix ρ from the CFT behavior. For
+La
+χ a (q)=qha − 2 c 4. Consequently, χ a (eL 2π y (i−vβl) )/χ a (e − L 2π y vβl)= example,theedgestatedispersionisnotstrictlylinear,andthe
+195412-3
+
+HONG-HAOTU,YIZHANG,ANDXIAO-LIANGQI PHYSICALREVIEWB88,195412(2013)
+statecountingmaydeviatefromthatofthepureCFTathigh spinatsiteiformasubspaceoftheMajoranafermionHilbert
+energy. Somewhat surprisingly, in the two physical systems spacewhichisdeterminedbythecondition
+we studied numerically, such nonuniversal corrections have
+D ≡iγxγyγzη =−iσxσyσz =1. (14)
+notbeenfound,andtheresultEq.(1)remainsvalidevenifthe i i i i i i i i
+edgestatedeviatesstronglyfromaCFT.
+UsingthisrepresentationtheHamiltonianistransformedto
+(cid:6) (cid:6)
+III. RESULTSONHONEYCOMB-LATTICE H =− J a u ij iη i η j
+KITAEVMODEL a=x,y,z(cid:3)ij(cid:4)∈alinks
+(cid:6)
+In this section we will calculate λ for the honeycomb- −J u iη η
+a nn ik i k
+latticeKitaevmodel.20TheKitaevmodelisaspecialspin-1/2 (cid:3)ik(cid:4)∈nnlinks
+(15)
+model which has a non-Abelian topological phase that we
+with u =iγaγa, for(cid:3)ij(cid:4)∈a links,
+areinterestedin.For our purpose,weconsider thefollowing ij i j
+Hamiltonian of the Kitaev model with nearest neighbor and u ik =u ij u jk , for(cid:3)ik(cid:4)∈nnlinks,(ijk)∈(cid:11).
+secondneighborinteractions:
+Since[u ,u ]=0foralldifferentlinks(cid:3)ij(cid:4),(cid:3)kl(cid:4),theHamil-
+(cid:6) (cid:6) (cid:6) ij kl
+H = J σxσx + J σyσy + J σzσz toniancanbeviewedasafreeMajoranafermionHamiltonian
+x i j y i j z i j of η with u =±1 taking its eigenvalues. However, the
+(cid:3)ij(cid:4)∈xlinks (cid:3)ij(cid:4)∈ylinks (cid:3)ij(cid:4)∈zlinks i ij
+(cid:6) physical states have to satisfy the constraint (14), which can
++J nn σ i yσ j zσ k x, (12) beobtainedbyaprojectioninthefollowingform:
+(ijk)∈(cid:11) (cid:9) D +1
+with x,y,z links the three types of nearest neighbor links on |(cid:15)(cid:4)= i |(cid:15) F ({u})(cid:4)⊗|{u}(cid:4), (16)
+2
+the honeycomb lattice shown in Fig. 3(a). (cid:11) in the J term i
+nn
+denotes the upper and lower triangles shown in Fig. 3(a), in with D defined in Eq. (14). The link variable u can be
+i ij
+which ijk runs counterclockwise around the triangle and j viewedasaZ gaugefieldcoupledtotheMajoranafermion,
+2
+isattheupperorlowercorner.Forsimplicity,weintroduced and D acts as a Z gauge transformation which transforms
+i 2
+onlyonetypeofsecondneighborcouplinginsteadofallterms η →−η and u →−u for all links connected to i. The
+obtainedby60◦ rotations. ph i ysical s i tate |(cid:15) i (cid:4) j is a sup ij erposition of all gauge equivalent
+The unique property of the Kitaev model is that it can be configurations of gauge field u in direct product with the
+ij
+solvedbythefollowingMajoranarepresentation: correspondingfermionstate|(cid:15) ({u})(cid:4).TheKitaevmodelhas
+F
+σa =iγaη , (13) several phases including a gapless phase and Abelian and
+i i i non-Abeliantopologicallyorderedphases.20Inthefollowing,
+in which γa,a =x,y,z and η are four Majorana fermion we mainly discuss the non-Abelian phase in which the η
+i i i
+operatorsdefinedatsitei.TheHilbertspaceoffourMajorana fermionhasabandstructurewithanontrivialChernnumber
+fermions is four dimensional. The two physical states of the C =1. There are three types of topological quasiparticles
+1,σ,ψ,inwhich1isthevacuum,ψ isthefermionicexcitation
+ofη Majorana fermion,and σ isaZ fluxofthegauge field
+2
+u ,withaMajoranazeromodeofηMajoranafermiontrapped
+ij
+init.σ isthenon-Abelianquasiparticle.Correspondingtothe
+threequasiparticlesectors,therearethreetopologicalsectors
+for the system on a cylinder. Depending on the flux of u
+ij
+gaugefieldaroundthecylinder,thefermionη hasperiodicor
+i
+anti-periodicboundaryconditions.AsisshowninFig.3(b),the
+Majoranafermionhaschiraledgestatesduetothetopological
+band structure. When the Z flux in the cylinder is −1, the
+2
+edgestatehasantiperiodicboundaryconditionandmomentum
+FIG.3. (Color online) (a) Illustration of the definition of the eigenvalues k = 2π(n+ 1). Denoting the η fermion ground
+honeycomb lattice Kitaev model in Eq. (12). The x,y,z links are Ly 2
+shown by the red solid lines, green dash lines, and blue double
+stateinthis(cid:10)sectoras|G −
+F
+(cid:4),wehave|G
+1
+(cid:4)=P|G −
+F
+(cid:4)⊗|{u −
+0
+}(cid:4)
+with P = (D +1)/2 the projection to gauge invariant
+l t i h n e es tr , ia re n s g p le e s ct s iv h e a l d y e . d T i h n e o s r e a c n o g n e d c n o e lo ig r, hb w o i r th c t o h u e pl l i a n b g e s lin a g re i, d j e , fi k n o ed f t o h n e states. u − 0 is i a i gauge configuration with flux −1 in the
+triangleshownonthefigure.(b)Illustrationofthethreegroundstates cylinder. For example, the gauge choice in Fig. 3(b) can
+inthethreetopologicalsectorsofthenon-AbelianphaseoftheKitaev be made, with u ij =−1 for all red links across the dashed
+model. The right panels show the edge state energy spectrum with line, and u ij =1 otherwise. The ψ sector is the lowest
+solidandhollowcirclesstandingforoccupiedandunoccupiedquasi- energyexcitationstate|G (cid:4)=Pf † f † |G −(cid:4)⊗|{u −}(cid:4),with
+particlestates.|G (cid:4)and|G (cid:4)correspondtothegroundstateandthe † ψ Lk R−k F 0
+1 ψ f the creation operator of the left and right edge states,
+lowestenergyquasiparticleexcitationstatewithfermionantiperiodic L,Rk
+respectively, and k = π . The third sector σ corresponds to
+b g o ro u u n n d d ar s y ta c t o e n s d w it i i t o h ns a , f w e h rm ile io | n G p σ e (cid:4) r c io o d rr i e c sp b o o n u d nd to ar o y n c e o o n f d t i h ti e o d n e . g T e h n e er r a e t d e theperiodicboundaryc L o y ndition|G σ (cid:4)=P|G + F (cid:4)⊗|{u + 0 }(cid:4).u + 0
+dotintherightpanelmarkstheMajoranazeromode,theoccupation is a gauge configuration with +1 flux in the cylinder, which
+ofwhichdoesnotchangethemomentumpolarizationof|G
+σ
+(cid:4). can be taken as u
+ij
+=1 for all (cid:3)ij(cid:4). It should be noticed that
+195412-4
+
+MOMENTUMPOLARIZATION:ANENTANGLEMENT... PHYSICALREVIEWB88,195412(2013)
+there are two degenerate states before projection due to the
+Majoranazeromodes,butonlyonesurvivestheprojection.
+DuetotheabsenceofquantumfluctuationoftheZ gauge 1
+2
+field, the entanglement entropy and entanglement spectrum
+of the Kitaev model can be obtained rigorously.30 Using the 0
+reduced density matrix obtained in Ref. 30, λ in Eq. (2)
+a
+can be reduced to that of the free Majorana fermion: λ = −1 a
+tr(ρ TLF).Hereρ isthereduceddensitymatrixoftheleft −1 0 1
+Fa y Fa k/π
+halfofthecylinder,andTLF isthegaugecovarianttranslation
+y
+operator acting on the fermion η , which does a translation
+i
+of the η fermions associated with a gauge transformation i
+that translates the gauge field configuration u . This is like
+ij
+the magnetic translation operators in a Landau level. More
+details on the reduced density matrix and the calculation
+of momentum polarization are given in the Appendix. As a
+generalresultforfreefermionsandfreebosons,35 ρ canbe
+Fa determinedbythetwo-pointfunction(cid:3)η η (cid:4)(duetotheWick
+i j
+theorem),andtheentanglementH(cid:11)amiltonianhasthequadratic
+form H =logZ −logρ = iA η η . The con-
+E a Fa i,j∈L ij i j
+stant Z is determined by the normalization condition of the
+a
+reduced density matrix. On the left half of the cylinder, the
+entanglementHamiltoniancanbediagonalizedintotheform
+(cid:7) (cid:8)
+(cid:6) H = ξ f † f − 1 , (17) E nk nk nk 2
+n,k
+with k the y direction momentum taking the values of
+2πn and 2π(n+ 1) (n=0,1,2,...,L −1) for periodic and
+Ly Ly 2 y
+antiperiodic boundary conditions, respectively. f are the
+nk
+quasiparticle annihilation operators. ξ are the eigenvalues
+nk
+of the entanglement Hamiltonian, i.e., the (single-particle)
+entanglementspectrum,whichcanbecomputedbynumerical
+diagonalizationofthetwopointfunction.Atypicalentangle-
+mentspectrumisshowninFig.4(b).Inthemomentumbasis,
+thetranslationoperatorsimplymultipliesaphaseeik toeach
+quasiparticleoperatorf ,sothat nk
+(cid:12) (cid:13)
+(cid:6)
+TLF =exp i kf † f . (18)
+y nk nk
+n,k
+UsingEq.(17)andEq.(18)weobtain
+(cid:4) (cid:5)
+λ a =Z a −1 (cid:2) tr e −HET y LF (cid:3)
+(cid:9) 1+eik 1−eik ξ
+= + tanh nk . (19)
+2 2 2
+n,k
+Here a =1,σ corresponds to the antiperiodic and periodic
+boundaryconditions,respectively.Sincetheψ stateisanex-
+citedstateoftheantiperiodicsector,itisnotdirectlyincluded
+intheaboveexpression.However,itisstraightforwardtoshow
+thatλ ψ =λ 1 eiπ/Ly withthephasefactoreiπ/Ly contributedby
+†
+theedgestatefermionexcitationf .
+Lk
+Since we do not know how to extract analytically the
+asymptoticbehaviorofλ fromEq.(19),weinsteadcompute
+a
+λ numerically. A honeycomb lattice on the cylinder can
+a
+be defined with different orientations. Two different simple
+orientations are known as the “armchair edge” and “zigzag
+edge”inthegrapheneliterature,asareillustratedinFig.3(a).
+We will focus on the zigzag edge, which is convenient for
+thereasonthatwillbeclearinalaterpartofthissection.The
+E k
+(a)
+1
+0.5
+0
+−0.5
+−1
+−1 0 1
+k/π
+E k
+(b)
+0
+−100
+−200
+0 2000 4000 6000
+L2 y
+θ
+L
+a
+y
+(c)
+2π
+24 0.2
+0.1
+0
+2π
+−0.1 − 48
+−0.2
+0 20 40 60 80
+L y
+) LαmI+
+θ(
+L
+y
+a
+y
+(d)
+FIG.4. (Coloronline)(a)Energyspectrumand(b)theentangle-
+mentspectrum[ξ inEq.(17)]oftheKitaevmodel.(c)Thevalue
+nk
+of L θ (L ) versus L2 for a=1 (blue ×) and σ (red ◦) sectors.
+y a y y
+θ =Imlogλ and L is the system size along the y direction.
+a a y
+(d)Theinterceptofthelinearfittingin(c)isshownmoreclearlyby
+plottingL θ (L )+ImαL2versusL .Theblackdashedlinesarethe y a y y y theoreticalvalue2π(h − c)forc= 1,h = 1,andh =0.The a 24 2 σ 16 1
+calculationsaredoneforasystemwithL =40alongthexdirection
+x
+withzigzagedgeandtheparametersJ =J =J =1,J =0.2. x y z nn
+numericalresultsofλ andλ areshowninFigs.4(c)and4(d).
+σ 1
+To compare with Eq. (1), we define θ (L )=Im logλ and
+a y a
+do a linear fitting of L θ versus L2. Equation (1) predicts
+y a y
+L θ (L )=−ImαL2 +2πp , so that the intercept of this
+y a y y a
+fittingatL =0givesthenumericalvalueofh andc:h =
+y a σ
+0.06250±0.00001andc=0.5000±0.0001.Theagreement
+withEq.(1)isapparent.
+An important question is the following: how robust is
+Eq. (1)? Since the derivation given in Sec. II is based on the
+CFT description of the edge states, it is not obvious whether
+thedeviationoftheedgestatefromCFTbehaviorwillleadto
+correctionstotheuniversal1/L terminEq.(1).Interestingly,
+y
+thenumericalresultaboveshowsthattheformulaappliestothe
+latticemodelwithoutanycorrectiontothe1/L term.Toprobe y therobustnessofEq.(1),wecanmodifytheHamiltoniannear
+thecutbetweenleftandrightpartsofthecylinder.Asisshown
+inFig.5(a),weturnoffthesecondneighborhoppingalongthe
+sitesthatareattheboundarybetweenleftandrightparts.Such
+anedgetermdoesnotchangethetopologyofthesystem,but
+changestheentanglementspectrum.AsisshowninFig.5(b),
+the edge state entanglement spectrum has a cubic dispersion
+E ∝k3 in the long wavelength limit, rather than linear.
+k
+Therefore,eveninthelongwavelengthlimittheentanglement
+Hamiltonian H is not a chiral conformal field theory. It is
+E
+reasonable to believe that the physical edge (left edge) is
+unaffected by such a change of dispersion, since it has zero
+entanglementtemperatureandstaysinthegroundstateofthe
+topological sector. However, the entangled edge (right edge)
+is at finite entanglement temperature, so that its contribution
+to momentum should be modified when the dispersion is
+changed. To our surprise, the numerical results shown in
+Figs.5(c)and5(d)clearlyshowthatEq.(1)stillappliestothis
+195412-5
+
+HONG-HAOTU,YIZHANG,ANDXIAO-LIANGQI PHYSICALREVIEWB88,195412(2013)
+(a)
+1
+0.5
+0
+−0.5
+−1
+−1 0 1
+k/π
+E k
+(b)
+0
+−100
+−200
+−300
+0 5000
+L2
+y
+θ
+L
+a
+y
+(c)
+2π
+24
+0.2
+0.1
+0
+2π
+−0.1 −
+48
+−0.2
+0 50
+L
+y
+)
+LαmI+
+θ(
+L
+y
+a
+y
+(d)
+FIG.6. Illustration of the Chern insulator Hamiltonian (20).
+The two sublattices in the unit cell are labeled by A and B. The
+nearest-neighborhoppingintegralsaretalongthexdirectionandodd
+columnsalongthey direction,and−t alongevencolumns(dashed
+FIG.5. (Color online) (a) Hamiltonian of the Kitaev model is
+lines) along the y direction. The next-nearest-neighbor hopping
+modifiedbyturningoffthesecondneighborhoppings(purpledotted integralsare(cid:17)(−(cid:17))ifthehoppingdirectionisalong(against)the
+lines with arrows) along the boundary between left and right parts
+arrow.
+ofthecylinder(purpledashedline).(b)Theentanglementspectrum
+forthisgeometry,withquarticdispersingentanglementedgestates. hardcoreboson,respectively.Tobuildahardcorebosonwave
+(c)ThevalueofL θ (L )and(d)thevalueofL θ (L )+ImαL2
+y a y y a y y function from partons, a projector P G is needed to remove
+forthemodifiedgeometry.TheparametersarethesameasinFig.4.
+thoseunphysicalconfigurationswithsingle-partonsites.Then,
+ahardcorebosonstatecanbeobtainedbyactingtheprojector
+case.SuchrobustnessbeyondedgeCFTdescriptionindicates P G onthepartonwavefunction|(cid:18) a (cid:4)=P G |φ a (cid:4) ↑ |φ a (cid:4) ↓.
+that the quantization of momentum polarization may have a Nowweassumethatthefermionicpartonsareintheground
+deeperoriginfrombulktopology. stateofthefollowingCherninsulator(seeFig.6):
+(cid:6) (cid:6)
+H = t c † c +i (cid:17) c † c . (20)
+C ij iσ jσ ik iσ kσ
+IV. PROJECTEDWAVEFUNCTIONSFOR (cid:3)ij(cid:4),σ (cid:3)(cid:3)ik(cid:4)(cid:4),σ
+FRACTIONALCHERNINSULATORS
+Herethenearest-neighborhoppingintegralst areequaltot
+ij
+In this section we will calculate the topological spin and along thex directionand take thevalue t (−t)inodd(even)
+chiralcentralchargeforaν =1/2latticeLaughlinstate.36–38 columns along the y direction. The next-nearest-neighbor
+These lattice Laughlin states, also known as the fractional hopping integrals (cid:17) are (cid:17) (−(cid:17)) if the hopping direction
+ij
+Cherninsulators,areobtainablefrompartonconstructions,39,40 isalong(against)thearrowinFig.6.Inthisworkwefocuson
+andwedevelopaMonteCarloapproachforcalculatingtheir t =1 and (cid:17)=1/2. For periodic boundary conditions along
+momentum polarization. Based on Eq. (1), our numerical bothdirections,theHamiltonianEq.(20)hastwobandswith
+results for topological spin and chiral central charge are Chern number C =±1. At half filling, the ground state of
+obtained for the ν =1/2 lattice Laughlin state, which agree partons has a completely filled lower band. After projecting
+very well with the theoretical predictions from CFT. This this parton band insulator state onto hardcore bosons, it has
+suggeststhatmomentumpolarizationisaveryusefulquantity been shown41 that the resulting projected wave function is a
+foridentifyingchiraltopologicalorderfromcandidateground- ν =1/2 lattice Laughlin state with twofold degeneracy on a
+statewavefunctionsofinteractingsystems. torus, and its topological sectors are related to the boundary
+The fractional Chern insulators are lattice analogies of conditions of partons: the identity sector (semion sector)
+fractionalquantumHallstates.21–24Whenbosonsorfermions is given by |(cid:18) (cid:4)=|0,0(cid:4)+|π,0(cid:4)=|0,π(cid:4)+|π,π(cid:4) (|(cid:18) (cid:4)=
+1 s
+fractionallyfillanearlyflatbandwithnonzeroChernnumber, |0,0(cid:4)−|π,0(cid:4)=|0,π(cid:4)−|π,π(cid:4)), where |(cid:15) ,(cid:15) (cid:4) is the pro-
+x y
+incompressiblequantumliquidstateswithfractionalquantized jected wave function with periodic ((cid:15) =0) or antiperiod
+x
+Hall conductance can appear as stable ground states of a ((cid:15) =π) parton boundary conditions along x and similarly
+x
+repulsiveinteractionHamiltonian.Inthiswork,wefocusona (cid:15) =0,π alongy.
+y
+particularexampleoffractionalCherninsulator,i.e.,aν =1/2 The parton construction of the ν =1/2 lattice Laughlin
+lattice Laughlin state of hardcore bosons. Let us consider a wave functions on a cylinder has further complication due
+L x ×L y rectangular lattice. To construct a ν =1/2 lattice to its gapless chiral edge modes. To shed some light on the
+Laughlin state, we use the parton construction in Refs. 41 twofold degenerate ground-state projected wave functions,
+and 15 and split the hardcore boson at each site into two imagine that we start on a torus and adiabatically lower all
+fermionic partons, b † =c † c † . The physical Hilbert space hopping amplitudes across the x boundary until they are
+i i↑ i↓
+of hardcore bosons requires either two partons or no parton much smaller than the chiral edge modes’ finite size gap
+at each site, corresponding to the presence or absence of proportionaltoL−1.Assuchaprocessinvolvesnogapclosing
+195412-6
+
+MOMENTUMPOLARIZATION:ANENTANGLEMENT... PHYSICALREVIEWB88,195412(2013)
+or level crossing, the wave function’s topological properties,
+especiallytheeigenvalueofWilsonloopsalongy identifying
+thetopologicalsectors,shouldnotchange.Considerthespecial
+case when the chiral edge modes on the two edges of the
+cylinderhaveoneexactzeroenergystateeach:c andc .In
+Lσ Rσ
+comparisonwiththeopenxboundaryconditioncase,thesmall
+interedgehoppingamplitudeswillnotmodifythechiraledge
+modes,exceptforthecouplingofthetwozeroenergystatesc
+(cid:11) L
+andc intheformofδ( c † c +H.c.).Hereδ >0(δ <
+R σ Lσ Rσ
+0) is a remnant from the periodic (antiperiodic) boundary
+condition along x, respectively. In this way, the degeneracy
+between c andc islifted,andthecorresponding projected
+L R
+wave functions by filling all negative energy parton states
+are |0,(cid:15) (cid:4)=P (c † −c † )(c † −c † )|(cid:18)(cid:16)(cid:4) and |π,(cid:15) (cid:4)=
+y G L↑ R↑ L↓ R↓ y
+P (c † +c † )(c † +c † )|(cid:18)(cid:16)(cid:4), respectively, where |(cid:18)(cid:16)(cid:4)=
+(cid:10)G L↑ R↑ L↓ R↓
+c † (α)c † (α)|0(cid:4) is obtained with all other parton states
+(cid:21)α<0 ↑ ↓
+deeper in the valence bands filled. As previous knowledge
+aboutthetorusgeometrycasewouldimply,thetwotopological
+sectors on a cylinder correspond to the symmetrization and
+antisymmetrizationoftheδ >0andδ <0cases,whichgive
+|(cid:18) (cid:4)=P (c † c † +c † c † )|(cid:18) (cid:16)(cid:4)=P c † c † |(cid:18) (cid:16)(cid:4), (21)
+1 G L↑ L↓ R↑ R↓ G L↑ L↓
+|(cid:18) (cid:4)=P (c † c † +c † c † )|(cid:18) (cid:16)(cid:4)=P c † c † |(cid:18) (cid:16)(cid:4). (22)
+s G R↑ L↓ L↑ R↓ G L↑ R↓
+Inthelaststepofbothequationswehaveusedtheparticlehole
+symmetry of the Hamiltonian Eq. (20). |(cid:18) (cid:4),a =1,s can be
+a
+writtenintheequivalent formof|(cid:18) a (cid:4)=P G |φ a (cid:4) ↑ |φ a (cid:4) ↓,with
+thetwopartonwavefunctions (cid:9) |φ a (cid:4) ↑,↓ definedby FIG.7. (Coloronline)Upper:L θ dataofvariousL2 valuesfor
+|φ (cid:4) =c † c † (α)|0(cid:4), (23) theidentitysectora=1(bluecross y es a )andthesemions y ectora=s
+1 σ Lσ σ
+(reddots)ofafractionalCherninsulator.Theinterceptofthelinear
+c † +ic
+(cid:21)α
+†
+<0
+(cid:9) fittinggivesthevalueof2π(h a −c/24).Fortheidentitysector,the
+|φ (cid:4) = Lσ√ Rσ c † (α)|0(cid:4), (24) dataiswellconsistentwithlinearfitting(bluesolidline)andsuggests
+s σ σ
+2 c=1.078±0.091; lower: the difference in L θ corresponds to
+withσ =↑,↓.
+(cid:21)α<0
+themeasuredvaluesofh
+s
+=(θ
+s
+−θ
+1
+)L
+y
+/2π =0.
+y
+25
+a
+21±0.0063;the
+The identification of topological sectors above is further dottedlineisthetheoreticalvalueh s =1/4forasemion.
+confirmedbyusingaMonteCarloalgorithm16tocalculatethe
+overlap between a series of projected wave functions of the
+by treating |(cid:3)α|(cid:18) (cid:4)|2 as the probability for Monte Carlo
+form|(cid:18) (p,q) (cid:4)=P G |φ (p,q) (cid:4) ↑ |φ (p,q) (cid:4) ↓,with updates and (cid:3)(cid:18) |T a Lα(cid:4)/(cid:3)(cid:18) |α(cid:4) as the Monte Carlo measur-
+(cid:9) a y a
+|φ (cid:4) =(pc † +qc † ) c † (α)|0(cid:4), (25) able.Forthepresentν =1/2Laughlinstatewavefunctions,
+(p,q) σ Lσ Rσ σ these quantities can be expressed in terms of determinant
+(cid:21)α<0
+squaresandupdatedefficientlywiththeinverse-matrixupdate
+with complex coefficients p,q. The overlap o√f the techniques.42 We emphasize that this Monte Carlo approach
+sta√tes wi√th tri√al values (p,q)=(0,1),(1,0),(1/ 2,± is also applicable for other chiral topological states from
+1/ 2),(1/ 2,i/ 2) confirms that the only two linearly fermionic parton constructions,43 whose wave functions take
+inde√pende√nt basis states are (p,q)=(1,0) and (p,q)= theformofdeterminantsand/orPfaffians.
+(1/ 2,i/ 2),whichcorrespondtoEqs.(23)and(24). The results from this Monte Carlo method for a system
+TodevelopaMonteCarlomethodtocomputethemomen- of L x =12 and L y =24 are shown in Fig. 7. According to
+tum polarization, we note that the expectation value of the Eq.(1),theinterceptofthelinearfittingofL y θ a versusL2 y for
+twistoperatorTLfor|(cid:18) (cid:4)canbeexpressedas theidentitysectorcorrespondstothemeasuredcentralcharge
+y a
+(cid:14) (cid:15) (cid:16) of the system c=1.078±0.091, whereas the difference in
+(cid:3)(cid:18) a |T y L|(cid:18) a (cid:4)= (cid:6) α |(cid:3)α|(cid:18) a (cid:4)|2 (cid:18) (cid:3)(cid:18) a (cid:15) a T | y α L (cid:4) α , (26) s t L h p y e i θ n a k 2 n b π o e h w tw : n h e s e t n h = e t o h 0 r e . e 2 t t 5 i w c 2 a o l ± se v 0 c a . t l 0 o u 0 r e s 6 s . c T c o h r = r e e s s 1 e p a o a r n n e d d w s e h to ll t c = h o e n 1 s t / o i 4 s p t o e f n l o o t r g w i t c i h t a h e l
+s
+where |α(cid:4) corresponds to a lattice configuration with L × model, and suggest Eq. (1) is also applicable to the parton
+x
+L /2 hardcore bosons, and |TLα(cid:4) a configuration with the constructedsystems.
+y y
+positions of hardcore bosons at the left half of the cylinder Incomparisonwithprevioustopologicalsectorstudieson
+being translated by one lattice spacing in y. Based on projectedwavefunctionsbasedonentanglemententropy,15,16
+Eq. (26), (cid:3)(cid:18) |TL|(cid:18) (cid:4) can be straightforwardly evaluated thecurrentalgorithmbasedonmomentumpolarizationismore
+a y a
+195412-7
+
+HONG-HAOTU,YIZHANG,ANDXIAO-LIANGQI PHYSICALREVIEWB88,195412(2013)
+efficient. The computation of entanglement entropy in the 2D, which distinguishes a 2D model on the cylinder from a
+Monte Carlo simulation requires a minimum of two replicas moregeneric1DmodelwithZ symmetry.
+N
+ofthesystem,whilemomentumpolarizationsonlyinvolvethe Inthetwoexamplesystemsstudiedinthispaper,theground
+partial translation operator T for a single replica; therefore, stateineachtopologicalsectorisobtainedfromthepresumed
+y
+the Hilbert space for Monte Carlo sampling for the same knowledgeaboutthetopologicalorders.However,itshouldbe
+system size is much smaller, and we are able to accomplish notedthatingeneralourmethoddoesnotrequireknowledge
+calculationswithmuchlargersystemsizeswithlesstimeand on topological sectors. If |G (cid:4),α =1,2,...,n denote the n
+α
+higheraccuracy. orthogonal ground states on the cylinder in an unknown
+basis, |G (cid:4) may be superpositions of different topological
+α
+sectors |G (cid:4). An important observation is that the partial
+V. DISCUSSIONANDCONCLUSION a
+translationTL doesnotchangethetopologicalsector,sothat
+y
+In summary, we have proposed an efficient method for (cid:3)G |TL|G (cid:4)∝δ is diagonal. Physically, the reason is that
+a y b ab
+computingthequasiparticletopologicalspinandchiralcentral topological sector a cannot be measured by local probes but
+chargeforchiraltopologicallyorderedstates.Bydefiningthe can only be measured by creating a pair of quasiparticles,
+partialtranslationoperatorTLwhichtranslatestheleftpartof
+takingoneofthemaroundthecylinderandthenannihilating
+y
+thecylinderbyonelatticeconstant,thecombinationoftopo- them. We can choose the path of the quasiparticle so that it
+logicalspinh a andchiralcentralchargeccanbeextractedfrom isfarfromtheboundariesofthecylinderandthepartitionin
+auniversalterm 2 L π y (h a − 2 c 4 )inthephaseoftheground-state the middle. As long as this is satisfied, such a quasiparticle
+averagevaluesofTLineachtopologicalsector.h − c isthe motion is unaffected by the operation of partial translation
+momentumpolariza y tionofthegroundstateinthe a topo 24 logical TL.Therefore,thetopologicalsectorhastoremainthesame
+y
+sector a. We have derived the formula of central charge and after partial translation. Consequently, in a generic basis one
+topologicalspin[Eq.(1)]fromtheedgeCFTformofthere- just needs to calculate the matrix (cid:22) αβ =(cid:3)G α |T y L|G β (cid:4) and
+duceddensitymatrix,andalsonumericallyverifiedtheformula diagonalizeit.Theeigenvaluesareλ a withtheformofEq.(1).
+intwodistincttopologicalstates:thehoneycomblatticeKitaev Besides the examples given in the current work, the
+model and the ν =1/2 bosonic Laughlin state in fractional momentumpolarizationcanbeappliedtoawiderangeofother
+Cherninsulators.Comparedtopreviousnumericalapproaches topologicalstates.TheMonteCarlomethodofcomputingthe
+whichcomputethebraidmatrixofquasiparticles13,14 andthe momentumpolarizationdiscussedinSec.IVgenerallyapplies
+modular S,T matrices,15–17 the expectation value of TL is tootherprojectedwavefunctionsobtainedbyvariousparton
+y
+easiertomeasureinnumericalcalculations. constructions.Inparticular,thisapproachcanbeusedtodetect
+It is interesting to note that the momentum polarization topological spin and chiral central charge in non-Abelian
+definedonacylindermayberelatedtothecharacterizationof chiral topological states,which willbe helpful inidentifying
+one-dimensional symmetry-protected topological states. We the topological order in more complicated many-body wave
+mayviewthecylinderasaone-dimensional(1D)chainwitha functions. For instance, natural candidates for testing the
+Z N discretesymmetryfortheN =L y translationsalongthe momentum polarization scheme include SU(n) k states16 and
+y direction. In 1D, there is no intrinsic topological state but SO(2n+1) 1 states,48 whose trial wave functions and chiral
+there are symmetry-protected topological states, which have edgeCFTsareknown.Themomentumpolarizationresultsof
+nontrivialedgestatesateachendofthe1Dchainprotectedby thesenon-Abelianstateswillbereportedinfutureworks.
+globalsymmetriesofthesystem.Thetypeoftopologicalstate Our approach may also have interesting applications in
+foragivensymmetrygroupGisclassifiedbytheinequivalent topologicalstatesdescribedbythedensitymatrixrenormaliza-
+projectiverepresentationsofG,orequivalently,bythesecond tiongroup(DMRG).49DMRGappliestoallgapped1Dstates
+cohomology of the group H2(G,U(1)).44–46 When the edge well,whichisequivalenttofindingavariationalgroundstate
+statecarriesanontrivialprojectiverepresentationofthegroup withtheformofmatrixpro(cid:11)ductstates(MPS).50MPSrefersto
+G, there will be a nontrivial series of group operations g i states of the form |(cid:15)(cid:4)= {νi } [T 1 ν1T 2 ν2...T N νN] αβ |{ν i }(cid:4), with
+s o u n ch the th e a d t g g e N s g ta N t − e 1 l . e . a . d g s 1 to = a 1 n b o u n t tr t i h v e ial se p q h u a e s n e ti f a a l ct a o c r ti e o i n θ. o T f h g is i w ν i it l h ab “ e i l n in te g rn t a h l e ”i p n h d y ic s e ic s al α, s β ta . te T s h a e t D ea M ch RG si / t M e, P a S nd ap T p ν i i ro a ac m h at h r a ix s
+phase factor will be canceled by the other edge so that the beenappliedto2Dtopologicalstatesonacylinder,51–54which
+whole system is still invariant in G. Compared with the can be viewed as a 1D gapped state with a large number
+momentumpolarizationweseethattheideaisverysimilar.A of states at each site, or one with a finite but long range
+phaseθ =2π(h− c )isobtainedbytheleftedgeupona2π interaction. Recently, the infinite DMRG or infinite MPS
+24
+rotation of the cylinder, which is canceled by the right edge. descriptionhasbeenstudiedforFQHstates55andFCIstates,17
+However, the group cohomology of Z [and its continuum whichsimplifiesthevariationalstatebyassumingatranslation
+N
+limit U(1)] is trivial.47 Therefore, if only the Z translation invariantansatzandtakingtheinfinitelengthlimit.Besidesthe
+N
+symmetry is concerned, the projective representation labeled MPSstatesobtainednumerically,themodelwavefunctionsof
+by the fractional momentum h− c can be linearized and FQHstatesobtainedfromCFTcorrelationfunctionshavealso
+24
+no nontrivial classification is obtained. More information is been shown to have the infinite MPS form when defined on
+required besides translation symmetry to give a fundamental a cylinder56,57 (with infinite internal dimension). The infinite
+reasonfortheaccuratequantizationofh ,c inlatticemodels MPS is particularly suitable for the study of the momentum
+a
+that is observed in the current work. Physically, the missing polarization we propose, since it provides a description of
+informationisprobablyrelatedtothelocalityofthemodelin the reduced density matrix using the internal auxiliary space
+195412-8
+
+MOMENTUMPOLARIZATION:ANENTANGLEMENT... PHYSICALREVIEWB88,195412(2013)
+(called the Schmidt states). In the long cylinder limit, the
+momentum polarization can be directly computed from the
+matrices Tμ at each site. An interesting open question is
+whetheritispossibletoobtainagenericproofoftheuniversal
+quantizationofthemomentumpolarizationh − c fromthe
+a 24
+infiniteMPSapproach,which,ifitexists,willbemorerigorous
+than the CFT approach taken in the current work. Another
+interestingdirectionistogeneralizetheinfiniteMPSapproach
+ofRef.55tocylinderFQHtoFCIstatesbyusingtheWannier
+staterepresentation.58–60
+WewouldliketonotethatRef.17hasstudiedthemodular
+S,T matrices by a similar approach as Ref. 15, and Ref. 55
+hasindependentlystudiedthetopologicalspininanapproach
+similartoours,butwithacontinuousinsteadofdiscretetwist
+operatorwhichisspeciallydefinedforcylinderFQHstates.
+ACKNOWLEDGMENTS
+Wewouldliketoacknowledgethehelpfuldiscussionswith
+Meng Cheng, J. Ignacio Cirac, Taylor L. Hughes, Anne E. FIG.8. (Color online) (a) Definition of boundary variables w ij
+B.Nielsen,FrankPollmann,GermanSierra,ZhenghanWang onfoursites1,2,3,4.Theboundaryisdrawnasthepurplevertical
+dashedline.(b)Illustrationofthegaugechoicefortheantiperiodic
+andEdwardWitten.ThisworkissupportedinpartsbytheEU
+boundarycondition,withallu =1exceptthosecrossingthebranch
+projectAQUTE(HHT),theStanfordInstituteforTheoretical ij
+cutline(thickblacksolidline).Thesitesonthelatticeareorganized
+Physics (YZ) and the National Science Foundation through
+intochains paralleltothebranchcutline,shownbythebluethick
+thegrantNo.DMR-1151786(XLQ).
+solidlines.Thechainlabelingisgivenontheleft.
+APPENDIX:REDUCEDDENSITYMATRIXAND with the two ± labeling the eigenvalues of w ,w , respec-
+13 24
+MOMENTUMPOLARIZATIONOFKITAEVMODEL tively,and↑,↓labelsthoseofu ,u .Astate|{u }(cid:4)withfixed
+12 34 ij
+valuesofu onalllinkscanbewritteninthenewbasis.For
+Wefirstreviewthestructureofthereduceddensitymatrix ij
+simplicitywecanalwaysmakeagaugechoicesothatu =1
+of the Kitaev model obtained in Ref. 30. Without losing ij
+foralllinkscrossingtheboundary.Forsuch{u },wehave
+generality, in the following we assume L to be even. The ij
+y (cid:6) (cid:15)(cid:17) (cid:18)(cid:16) (cid:15)(cid:17) (cid:18)(cid:16)
+fi
+an
+rs
+d
+t
+r
+s
+ig
+te
+h
+p
+tr
+i
+e
+s
+gi
+t
+o
+o
+n
+s
+.
+e
+I
+p
+n
+a
+t
+r
+h
+a
+e
+te
+en
+th
+la
+e
+rg
+d
+e
+e
+d
+gr
+H
+ee
+il
+s
+be
+o
+r
+f
+ts
+f
+p
+re
+a
+e
+c
+d
+e
+o
+,
+m
+the
+to
+M
+t
+a
+h
+j
+e
+ora
+le
+n
+f
+a
+t |{u
+ij
+}(cid:4)=2 −Ly/4 (cid:15) uL
+ij
+,w
+ij L
+⊗(cid:15) uR
+ij
+,w
+ij R
+. (A3)
+fermionsη
+i
+andmostlinkvariablesu
+ij
+arealreadyseparated wij =±1
+intothetworegionsLandR,andtheonlydegreesoffreedom
+Aphysicalgroundstatehastheform
+thatneedspecialtreatingisthelinkvariablesu onthelinks
+ij
+crossingtheboundary.Bypairinguptheneighborlinksacross |G(cid:4)=P(|G F ({u ij })(cid:4)⊗|{u ij }(cid:4)), (A4)
+theboundary,wecanredefinethelinkvariablesasisshownin (cid:10)
+Fig.8.Inthefourboundarysites1,2,3,4,twolinkvariablesare
+with P =
+i
+Di
+2
++1. We write the η
+i
+fermion ground state
+definedasu =iγzγz,u =iγzγz.Nowwedefinethenew
+|G
+F
+({u
+ij
+})(cid:4)intheSchmidtdecompositionform
+linkvariable 1 s 2 w 13 = 1 iγ 2 1 zγ 3 3 z 4 ,w 42 = 3 i 4 γ 4 zγ 2 z.Itiseasytoseethat |G ({u })(cid:4)= (cid:6) α (cid:15) (cid:15) (cid:15)L (cid:4)(cid:17) uL (cid:18)(cid:5)(cid:16)(cid:15) (cid:15) (cid:15)R (cid:4)(cid:17) uR (cid:18)(cid:5)(cid:16) , (A5)
+w ij ’s commute with each other and they both anticommute F ij N N ij N ij
+with u ’s. Also w w =u u . In the four-dimensional N
+ij 13 42 12 34
+Hilbert space of the four Majorana fermions (before projec- with|(cid:15)L(cid:4)and|(cid:15)R(cid:4)asetoforthogonalbasisofleftandright
+N N
+i
+ti
+n
+on
+w
+),
+h
+c
+ic
+h
+h
+oo
+u
+si
+1
+n
+2
+g
+=
+th
+σ
+e
+z
+e
+⊗
+ige
+1
+n
+,u
+st
+3
+a
+4
+te
+=
+so
+1
+f
+⊗
+u 1
+σ
+2 ,
+z
+u
+,
+3
+w
+4
+1
+w
+3
+e
+=
+ca
+σ
+n
+x
+fi
+⊗
+nd
+σ
+a
+x,
+ba
+a
+s
+n
+i
+d
+s s
+s
+i
+a
+d
+ti
+e
+sf
+η
+y
+f
+in
+er
+g
+m(cid:11)ions,
+|α
+resp
+|2
+ec
+=
+tiv
+1
+e
+.
+ly
+S
+,
+u
+a
+c
+n
+h
+dα
+a N S
+th
+c
+e
+hm
+Sc
+id
+h
+t
+mi
+d
+d
+e
+t
+c
+e
+o
+i
+m
+ge
+p
+n
+o
+v
+s
+a
+i
+l
+t
+u
+io
+e
+n
+s
+w =−σy ⊗σy.Therefore,theeigenstatesofw ,w are N N
+42 13 42 for quadratic fermion problem can be reduced to a simple
+1 single-particleproblem,35thedetailofwhichwillbediscussed
+|+−(cid:4)= √ (|↑↓(cid:4)+|↓↑(cid:4)),
+laterinthisappendix.Thusthegroundstateiswrittenas
+2
+(cid:6) (cid:6) (cid:19)(cid:15) (cid:4)(cid:17) (cid:18)(cid:5)(cid:16)(cid:15)(cid:17) (cid:18)(cid:16) (cid:20)
+|++(cid:4)= √ 1 (|↑↑(cid:4)+|↓↓(cid:4)), |G(cid:4)=2 −Ly/4 α
+N
+P
+L
+(cid:15) (cid:15)
+N
+L uL
+ij
+(cid:15) uL
+ij
+,w
+ij L
+2
+(cid:19)(cid:15)
+wij =±
+(cid:4)(cid:17)
+1 N
+(cid:18)(cid:5)(cid:16)(cid:15)(cid:17) (cid:18)(cid:16) (cid:20)
+|−−(cid:4)= √ 1 (|↑↑(cid:4)−|↓↓(cid:4)), ⊗P
+R
+(cid:15) (cid:15)
+N
+R uR
+ij
+(cid:15) uR
+ij
+,w
+ij R
+, (A6)
+2
+1 in which we have written P =P L P R since the projection is
+|−+(cid:4)=
+1
+√
+2
+(|↑↓(cid:4)−|↓↑(cid:4)), (A1) (cid:10)loc
+i∈
+a
+R
+l a
+D
+n
+i 2
+d
++1
+s
+,
+e
+t
+p
+h
+a
+e
+r
+r
+a
+e
+b
+a
+l
+r
+e
+e
+t
+t
+o
+wo
+tw
+te
+o
+rm
+su
+s
+b
+w
+sy
+h
+s
+i
+t
+c
+e
+h
+m
+p
+s
+r
+.
+(cid:10) es
+If
+er
+w
+ve
+e
+th
+ex
+e
+p
+g
+a
+a
+n
+u
+d
+ge
+P
+fi R e
+=
+ld
+|↑↑(cid:4)= √ (|++(cid:4)+|−−(cid:4)), (A2) configurationsuR,w ,whichare1and D .Thesecond
+ij ij i∈R i
+2 term does a gauge transformation to all sites η →−η but
+i i
+195412-9
+
+HONG-HAOTU,YIZHANG,ANDXIAO-LIANGQI PHYSICALREVIEWB88,195412(2013)
+preservesallthelinkvariables.Therefore,wecanwrite and similar for P . Here (cid:9) denotes gauge equivalence.
+L
+For two states P [|(cid:15)R({uR})(cid:4)|{uR,w }(cid:4) ] with different
+R N ij ij ij R
+(cid:19)(cid:15) (cid:4)(cid:17) (cid:18)(cid:5)(cid:16)(cid:15)(cid:17) (cid:18)(cid:16) (cid:20) boundaryconfigurationsw ij ,aftertheprojectiontheyarestill
+P (cid:15) (cid:15)R uR (cid:15) uR,w orthogonalsinceitisnotpossibletodoagaugetransformation
+R N ij ij ij(cid:10)R
+= (cid:6) 1+ i∈R D i (cid:15) (cid:15) (cid:15)R (cid:4)(cid:17) u (cid:16)R (cid:18)(cid:5)(cid:16)(cid:15) (cid:15) (cid:17) u (cid:16)R,w (cid:16) (cid:18)(cid:16) t n o um w b ij er w o it f ho o u r t th a o f g fe o c n t a in l g st u at ij es on in n E ei q g . hb (A or 7 in ) g is lin th k e s. s A am lso e t f h o e r
+2 N ij ij ij R
+{u(cid:16)R
+ij
+,w
+i
+(cid:16)
+j
+}(cid:9){uR
+ij
+,wij } all configurations. Therefore, the reduced density matrix
+(A7) is
+(cid:6) (cid:6) (cid:19)(cid:15) (cid:4)(cid:17) (cid:18)(cid:5)(cid:16)(cid:15)(cid:17) (cid:18)(cid:16) (cid:20)(cid:19)(cid:14) (cid:4)(cid:17) (cid:18)(cid:5)(cid:15)(cid:14)(cid:17) (cid:18)(cid:15) (cid:20)
+ρ =const |α |2P (cid:15) (cid:15)L uL (cid:15) uL,w (cid:15)L uL (cid:15) uL,w (cid:15) P
+L N L N ij ij ij L N ij ij ij L L
+wij =±1 N
+(cid:10) (cid:10)
+=const (cid:6) (cid:6)(cid:15) (cid:15) α (cid:15) (cid:15)2 1+ i∈L D i (cid:15) (cid:15) (cid:15)L (cid:4)(cid:17) u (cid:16)L (cid:18)(cid:5)(cid:16)(cid:15) (cid:15) (cid:17) u (cid:16)L,w (cid:16) (cid:18)(cid:16) (cid:14) (cid:15)L (cid:4)(cid:17) u (cid:16)(cid:16)L (cid:18)(cid:5)(cid:15) (cid:15) (cid:14)(cid:17) u (cid:16)L,w (cid:16)(cid:16) (cid:18)(cid:15) (cid:15) 1+ i∈L D i .
+N 2 N ij ij ij L N ij ij ij L 2
+{u(cid:16)L
+ij
+,w
+i
+(cid:16)
+j
+},{u(cid:16)(cid:16)L
+ij
+,w
+i
+(cid:16)
+j
+(cid:16)}(cid:9){uL
+ij
+,wij } N
+(A8)
+(cid:10)
+The translation operator TL translates both η and u ,w . The global projection 1+ i∈R Di only cares about the total fermion
+y i ij ij 2
+numberparity,andcommuteswithTL.Thus
+y
+(cid:10)
+λ≡Tr (cid:4) TLρ (cid:5) =const (cid:6) (cid:6) (cid:6) |α |2 (cid:14) (cid:15)L (cid:4)(cid:17) Tu (cid:16)L (cid:18)(cid:5)(cid:15) (cid:15)1+ i∈L D i TLη (cid:15) (cid:15) (cid:15)L (cid:4)(cid:17) u (cid:16)L (cid:18)(cid:5)(cid:16) . (A9)
+y L N N ij 2 y N ij
+wij =±1{u(cid:16)L
+ij
+,w
+i
+(cid:16)
+j
+}(cid:9){uL
+ij
+,wij } N
+HereTLη denotestheactionofTL toηsubspace,andTu(cid:16)L isconfigurationobtainedfromthetranslationofu(cid:16)L byonelattice
+y y ij ij
+constant. For all gauge equivalent configurations {u(cid:16)L}, the matrix element in Eq. (A9) has the same value, since the gauge
+ij
+transformations to u(cid:16) and Tu(cid:16) cancel each other after being acted on by TL. Therefore, we can just take the representative
+y
+configurationu andwrite
+ij
+(cid:10)
+λ≡Tr (cid:4) TLρ (cid:5) =const (cid:6) (cid:6) |α |2 (cid:14) (cid:15)L (cid:4)(cid:17) TuL (cid:18)(cid:5)(cid:15) (cid:15)1+ i∈L D i TLη (cid:15) (cid:15) (cid:15)L (cid:4)(cid:17) uL (cid:18)(cid:5)(cid:16) . (A10)
+y L N N ij 2 y N ij
+wij =±1 N
+NowwedosomemoreanalysistoD .Wecanwrite wehave
+i
+(cid:9) (cid:9) (cid:9) (cid:4) (cid:5)
+D i =F η u ij w ij , (A11) λ=Tr T y LFρ LF (A15)
+i∈L (cid:3)ij(cid:4)∈L ij (cid:6) (cid:15) (cid:4)(cid:17) (cid:18)(cid:5)(cid:16)(cid:14) (cid:4)(cid:17) (cid:18)(cid:5)(cid:15)
+with ρ = |α |2(cid:15) (cid:15)L uL (cid:15)L uL (cid:15) . (A16)
+with F the fermion number parity of η fermions. To write LF N N ij N ij
+η N
+down this formula some suitable orientation convention
+shouldbemadetothelinkssinceu ij =−u ji ,butthede (cid:10) tailof ToseetheeffectofT y LF moreexplicitly,wediscusstheperi-
+thisconventionisnotim(cid:10)portanthere.Theprojector 1+ i∈L Di odica(cid:10)ndantiperiodicsectorsseparately.Fortheperiodicsector
+i c (cid:10)m o (cid:3) n p ij fi o (cid:4) g ∈ se L u d r u a i t t j i h o (cid:10)e ns i c j o o w n f i s w j t . r i a j T i , n h h t e a re lf fo i o ∈ r f L e t , D h i e n i m t = h h e 1 a s , s u w t m h h e o ic f v e h e r r m r 2 e i L q o y u n / i 2 r p e p r s o o j s F e 2 s c i η t b e = l d e t g w r a a i u t n h g s e la c t (cid:3) i h i o j o n (cid:4) i u c in i e j v u = a i r j i 1 a = n a t r , 1 o T u f y o L n r F d a t i l h s l e l t i h c n e y k l o s in . rd d S i e i n n r a , c r w e y e t t h r c i a a s n n g sl s a a i u m t g io p e n l i y s o t p a a e l k r r e e a a t t o d h r y e .
+toF η =1andtheotherhalfprojectedtoF η =−1.Sincethe Themomentumeigenstatesf nk havethewavefunction
+Schmidt state |(cid:15)L({uL})(cid:4) is independent from the boundary (cid:6)
+N ij
+variablew ij ,thesumoverthetwoprojectionssimplygives f nk = φ nk (i x )e −ikyiη i , (A17)
+(cid:6) (cid:14) (cid:4)(cid:17) (cid:18)(cid:5)(cid:15) (cid:15) (cid:4)(cid:17) (cid:18)(cid:5)(cid:16) i
+λ= |α |2 (cid:15)L TuL (cid:15) TLη(cid:15) (cid:15)L uL . (A12)
+N N ij y N ij
+N with k = 2πn,n∈Z, and (i ,i ) the two-dimensional
+Ly x y
+DefiningthegaugetransformationV({uL})by coordinateofi site.Thetranslationoperatoractsas
+ij
+(cid:4)(cid:17) (cid:18) (cid:17) (cid:18)(cid:5)(cid:15) (cid:4)(cid:17) (cid:18)(cid:5)(cid:16) (cid:15) (cid:4)(cid:17) (cid:18)(cid:5)(cid:16)
+V TuL ij , uL ij (cid:15) (cid:15) N L uL ij =(cid:15) (cid:15) N L TuL ij (A13) T y LF −1 η i T y LF =η i+yˆ , T y LF −1 f nk T y LF =eikf nk . (A18)
+andthecovarianttranslationoperator Theantiperiodicsectorisabitmorecomplicated.Wecan
+(cid:4)(cid:17) (cid:18) (cid:17) (cid:18)(cid:5) chooseagaugewithu =−1onalllinksacrossahorizontal
+T y LF =V † TuL ij , uL ij T y Lη, (A14) line,asisshownbythe i b j lacksolidlineinFig.8(b),andu ij =1
+195412-10
+
+MOMENTUMPOLARIZATION:ANENTANGLEMENT... PHYSICALREVIEWB88,195412(2013)
+on all other links. For convenience we label the horizontal write
+(cid:9)
+chains parallel to the branch cut line by n=1,2,...,L y , TLF = exp[ikf † f ]
+as is illustrated in Fig. 8(b) by the blue solid line. We y nk nk
+choose the labeling such that the branch cut line is at the (cid:9)nk
+boundary,betweenn=1andn=L .Inthisgauge,thegauge = [f † f eik+(1−f † f )]. (A24)
+y nk nk nk nk
+transformation V({TuL ij },{uL ij }) needs to translate the branch nk
+cutlinebyonelatticeconstant,whichisdefinedby
+UsingthisequationandtheentanglementHamiltonian(17),it
+Vη V † =−η , ∀i ∈chain1. (A19) isstraightforwardtoobtainEq.(19).
+i i
+AsthelastpartofthisAppendixwebrieflyreviewthefree
+Nowifwedefine fermion reduced density mat (cid:10) rix ρ LF calculated in Ref. 35.
+(cid:6) All multipoint functions (cid:3)G| 2N η |G(cid:4) of the free fermion
+f
+nk
+= φ
+nk
+(i
+x
+)e −ikyiη
+i
+, (A20)
+ground state satisfy the Wick th
+i
+e
+=
+o
+1
+rem
+i
+, so that all correlation
+i functionsaredeterminedbythetwo-pointfunction
+with y i ∈[1,L y ] and k = 2 L π y (n− 1 2 ),n=1,2,...,L y , the C ij =(cid:3)G|η i η j |G(cid:4)−δ ij . (A25)
+function e−ikyi has a jump between y i =1 and y i =L y . Inparticular,C fori,j ∈Linthelefthalfofthecylinder
+Therefore, ij
+determines all multipoint correlation functions in the left
+TLη −1 f TLη half of the cylinder. Therefore, the reduced density matrix
+y nk (cid:12) y (cid:13) must (i) also satisfy Wick theorem and (ii) reproduce the
+=
+(cid:6) (cid:6)Ly
+φ nk (i x )e −ik(yi −1)η i +φ nk (i x )e −ikLyη (ix,1) t
+tw
+he
+o
+q
+-p
+u
+o
+a
+i
+d
+n
+r
+t
+a
+f
+ti
+u
+c
+n
+(
+c
+t
+t
+h
+io
+er
+n
+m
+s.
+a
+T
+l)
+h
+f
+e
+or
+fi
+m
+rst
+(cid:12)
+conditionrequires
+(cid:13)
+ρ
+LF
+tohave
+ix iy =2 (cid:6)
+(cid:12) (cid:13) 1
+(cid:6) (cid:6)Ly ρ
+LF
+=e −HE =exp − h
+ij
+η
+i
+η
+j
+. (A26)
+=eik φ nk (i x )e −ikyiη i −φ nk (i x )e −ikη (ix,1) . 2 i,j∈L
+ix iy =2 IfwediagonalizeH intotheformgiveninEq.(17),
+E
+(A21) (cid:6) (cid:7) (cid:8)
+H = ξ f † f − 1 , (A27)
+ThusweseethatthegaugetransformationV correctlyremoves E nk nk nk 2
+theadditionalminussignandweobtain n,k
+thecorrelationfunctionwillbe
+T y LF
+−1
+f nk T y LF =eikf nk . (A22) Tr(ρ f † f )= 1 (A28)
+DuetoEqs.(A18)and(A22)weseethatTLF intheparticular
+LF nk nk eξnk +1
+y
+gaugechoicecanbewrittenintheformofEq.(18) and corresponding Tr(ρ f f † ), which should agree with
+(cid:12) (cid:13) LF nk nk
+theeigenvaluesofC withthesameeigenvectors.Therefore,
+(cid:6) ij
+TLF =exp i kf † f (A23) inthematrixlevelwehave
+y nk nk
+n,k C =tanhh⇒h= 1[log(I+C)−log(I−C)]. (A29)
+2
+for both periodic and antiperiodic flux sectors. Us- Thisequationdetermineshanditsspectrumξ fromcorrela-
+nk
+†
+ing the fact that f f has eigenvalues 0,1 we can tionfunctionC.
+nk nk
+1K.v.Klitzing,G.Dorda,andM.Pepper,Phys.Rev.Lett.45,494 12N.Read,Phys.Rev.B79,045308(2009).
+(1980). 13V.LahtinenandJ.Pachos,NewJ.Phys.11,093027(2009).
+2D.C.Tsui,H.L.Stormer,andA.C.Gossard,Phys.Rev.Lett.48, 14A.BolukbasiandJ.Vala,NewJ.Phys.14,045007(2012).
+1559(1982). 15Y.Zhang,T.Grover,A.Turner,M.Oshikawa,andA.Vishwanath,
+3M.Z.HasanandC.L.Kane,Rev.Mod.Phys.82,3045(2010). Phys.Rev.B85,235151(2012).
+4X.QiandS.Zhang,Rev.Mod.Phys.83,1057(2011). 16Y.ZhangandA.Vishwanath,Phys.Rev.B87,161113(R)(2013).
+5J.Moore,Nature(London)464,194(2010). 17L.CincioandG.Vidal,Phys.Rev.Lett.110,067208(2013).
+6X.G.Wen,Phys.Rev.B40,7387(1989). 18I.Affleck,Phys.Rev.Lett.56,746(1986).
+7X.G.WenandQ.Niu,Phys.Rev.B41,9377(1990). 19L.Alvarez-GaumeandE.Witten,Nucl.Phys.B234,269(1984).
+8C.Nayak,S.H.Simon,A.Stern,M.Freedman,andS.D.Sarma, 20A.Kitaev,Ann.Phys.(NY)321,2(2006).
+Rev.Mod.Phys.80,1083(2008). 21E.Tang,J.-W.Mei,andX.-G.Wen,Phys.Rev.Lett.106,236802
+9Z. Wang, Topological Quantum Computation (American Mathe- (2011).
+maticsSociety,Providence,RI,2010). 22K.Sun,Z.Gu,H.Katsura,andS.DasSarma,Phys.Rev.Lett.106,
+10X.-G.WenandZ.Wang,Phys.Rev.B78,155109(2008). 236803(2011).
+11B.Bernevig,V.Gurarie,andS.Simon,J.Phys.A:Math.Theor.42, 23D. N. Sheng, Z.-C. Gu, K. Sun, and L. Sheng, Nat. Commun. 2,
+245206(2009). 389(2011).
+195412-11
+
+HONG-HAOTU,YIZHANG,ANDXIAO-LIANGQI PHYSICALREVIEWB88,195412(2013)
+24T.Neupert,L.Santos,C.Chamon,andC.Mudry,Phys.Rev.Lett. 42D.Ceperley,G.V.Chester,andM.H.Kalos,Phys.Rev.B16,3081
+106,236804(2011). (1977).
+25H.LiandF.D.M.Haldane,Phys.Rev.Lett.101,010504(2008). 43X.-G. Wen, F. Wilczek, and A. Zee, Phys. Rev. B 39, 11413
+26R.Thomale,A.Sterdyniak,N.Regnault,andB.A.Bernevig,Phys. (1989).
+Rev.Lett.104,180502(2010). 44L.FidkowskiandA.Kitaev,Phys.Rev.B83,075103(2011).
+27A.Chandran,M.Hermanns,N.Regnault,andB.A.Bernevig,Phys. 45A.M.Turner,F.Pollmann,andE.Berg,Phys.Rev.B83,075102
+Rev.B84,205136(2011). (2011).
+28L.Fidkowski,Phys.Rev.Lett.104,130502(2010). 46X.Chen,Z.-C.Gu,andX.-G.Wen,Phys.Rev.B83,035107(2011).
+29A. M. Turner, Y. Zhang, and A. Vishwanath, Phys. Rev. B 82, 47X. Chen, Z.-C. Gu, Z.-X. Liu, and X.-G. Wen, Phys. Rev. B 87,
+241102(R)(2010). 155114(2013).
+30H.YaoandX.L.Qi,Phys.Rev.Lett.105,080501(2010). 48H.-H.Tu,Phys.Rev.B87,041103(R)(2013).
+31X.L.Qi,H.Katsura,andA.W.W.Ludwig,Phys.Rev.Lett.108, 49S.R.White,Phys.Rev.Lett.69,2863(1992).
+196402(2012). 50S.RommerandS.O¨stlund,Phys.Rev.B55,2164(1997).
+32P.Francesco,P.Mathieu,andD.Se´ne´chal,ConformalFieldTheory 51N.ShibataandD.Yoshioka,Phys.Rev.Lett.86,5755(2001).
+(Springer,NewYork,1996). 52A.E.Feiguin,E.Rezayi,C.Nayak,andS.DasSarma,Phys.Rev.
+33J.Cardy,inEncyclopediaofMathematicalPhysics,editedbyJ.-P. Lett.100,166803(2008).
+Francoise,G.L.Naber,andT.S.Tsun(AcademicPress,Oxford, 53H.-C. Jiang, Z. Wang, and L. Balents, Nature Phys. 8, 902
+2006),pp.333–340. (2012).
+34ForashortandconcisereviewofsomebasicpropertiesaboutCFT 54E.StoudenmireandS.White,Annu.Rev.Condens.MatterPhys.
+usedhere,cf.Ref.33. 3,111(2012).
+35I.Peschel,J.Phys.A36,L205(2003). 55M.Zaletel,R.Mong,andF.Pollmann,Phys.Rev.Lett.110,236801
+36V.KalmeyerandR.B.Laughlin,Phys.Rev.Lett.59,2095(1987). (2013).
+37D.F.Schroeter,E.Kapit,R.Thomale,andM.Greiter,Phys.Rev. 56M.P.ZaletelandR.S.K.Mong,Phys.Rev.B86,245305(2012).
+Lett.99,097202(2007). 57B.Estienne,Z.Papic,N.Regnault,andB.Bernevig,Phys.Rev.B
+38A.E.B.Nielsen,J.I.Cirac,andG.Sierra,Phys.Rev.Lett.108, 87,161112(R)(2013).
+257206(2012). 58X.-L.Qi,Phys.Rev.Lett.107,126803(2011).
+39X.-G.Wen,Phys.Rev.Lett.66,802(1991). 59Y.L.Wu,N.Regnault,andB.A.Bernevig,Phys.Rev.B86,085129
+40X.-G.Wen,Phys.Rev.B60,8827(1999). (2012).
+41Y.Zhang,T.Grover,andA.Vishwanath,Phys.Rev.B84,075128 60C. H. Lee, R. Thomale, and X.-L. Qi, Phys. Rev. B 88, 035101
+(2011). (2013).
+195412-12

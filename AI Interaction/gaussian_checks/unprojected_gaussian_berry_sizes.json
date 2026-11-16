@@ -1,0 +1,232 @@
+{
+  "method": "Exact normalized Gaussian-state overlaps",
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": -2.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "results": [
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 2,
+      "berry_phase_radians": -1.6210587902465317,
+      "berry_phase_over_pi": -0.515999039020607,
+      "minimum_link_magnitude": 0.5495437281120815,
+      "minimum_bdg_gap": 1.092993233640294,
+      "reference_mask": 2865289779,
+      "elapsed_seconds": 0.007610707980347797
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 4,
+      "berry_phase_radians": -1.6515222210315221,
+      "berry_phase_over_pi": -0.525695850206545,
+      "minimum_link_magnitude": 0.8481673604744758,
+      "minimum_bdg_gap": 1.092993233640294,
+      "reference_mask": 2865289779,
+      "elapsed_seconds": 0.013622625003335997
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 8,
+      "berry_phase_radians": -1.658345105809059,
+      "berry_phase_over_pi": -0.5278676418835279,
+      "minimum_link_magnitude": 0.9575735182702602,
+      "minimum_bdg_gap": 1.0893482224808504,
+      "reference_mask": 2865289779,
+      "elapsed_seconds": 0.02635737499804236
+    },
+    {
+      "lx": 5,
+      "ly": 5,
+      "steps_per_leg": 2,
+      "berry_phase_radians": 1.5050561814369432,
+      "berry_phase_over_pi": 0.479074261813404,
+      "minimum_link_magnitude": 0.48551636335513926,
+      "minimum_bdg_gap": 0.9583530245622871,
+      "reference_mask": 739751497398479,
+      "elapsed_seconds": 0.49869879201287404
+    },
+    {
+      "lx": 5,
+      "ly": 5,
+      "steps_per_leg": 4,
+      "berry_phase_radians": -1.674263553444413,
+      "berry_phase_over_pi": -0.53293464113856,
+      "minimum_link_magnitude": 0.8178886446444398,
+      "minimum_bdg_gap": 0.9583530245622871,
+      "reference_mask": 662264706934484,
+      "elapsed_seconds": 0.8699730829976033
+    },
+    {
+      "lx": 5,
+      "ly": 5,
+      "steps_per_leg": 8,
+      "berry_phase_radians": -1.6827098767190354,
+      "berry_phase_over_pi": -0.5356231893387766,
+      "minimum_link_magnitude": 0.9484260952283697,
+      "minimum_bdg_gap": 0.9583530245622871,
+      "reference_mask": 662264706934484,
+      "elapsed_seconds": 1.7286122919758782
+    },
+    {
+      "lx": 6,
+      "ly": 6,
+      "steps_per_leg": 2,
+      "berry_phase_radians": 1.491719647922449,
+      "berry_phase_over_pi": 0.47482911134831907,
+      "minimum_link_magnitude": 0.4233117120639936,
+      "minimum_bdg_gap": 0.999999999999998,
+      "reference_mask": 3308961092323163187296,
+      "elapsed_seconds": 1.0342801249935292
+    },
+    {
+      "lx": 6,
+      "ly": 6,
+      "steps_per_leg": 4,
+      "berry_phase_radians": -1.6948302100635957,
+      "berry_phase_over_pi": -0.5394812112661932,
+      "minimum_link_magnitude": 0.7860112460206816,
+      "minimum_bdg_gap": 0.999999999999998,
+      "reference_mask": 3308961092323163187296,
+      "elapsed_seconds": 2.0908313340041786
+    },
+    {
+      "lx": 6,
+      "ly": 6,
+      "steps_per_leg": 8,
+      "berry_phase_radians": -1.7048998729210347,
+      "berry_phase_over_pi": -0.5426864845042537,
+      "minimum_link_magnitude": 0.9390251690437944,
+      "minimum_bdg_gap": 0.999999999999998,
+      "reference_mask": 3308961092323163187296,
+      "elapsed_seconds": 4.188765083003091
+    },
+    {
+      "lx": 7,
+      "ly": 7,
+      "steps_per_leg": 2,
+      "berry_phase_radians": -1.6632430487131964,
+      "berry_phase_over_pi": -0.5294267055318785,
+      "minimum_link_magnitude": 0.36993572820298465,
+      "minimum_bdg_gap": 0.9764757192238517,
+      "reference_mask": 55408498277071581309997206526,
+      "elapsed_seconds": 2.007189500000095
+    },
+    {
+      "lx": 7,
+      "ly": 7,
+      "steps_per_leg": 4,
+      "berry_phase_radians": -1.7156424702382587,
+      "berry_phase_over_pi": -0.5461059594336176,
+      "minimum_link_magnitude": 0.755463531139558,
+      "minimum_bdg_gap": 0.9764757192238517,
+      "reference_mask": 263262617264633018866760577814,
+      "elapsed_seconds": 4.047310041991295
+    },
+    {
+      "lx": 7,
+      "ly": 7,
+      "steps_per_leg": 8,
+      "berry_phase_radians": -1.7273837596881891,
+      "berry_phase_over_pi": -0.5498433279420759,
+      "minimum_link_magnitude": 0.9292835676333789,
+      "minimum_bdg_gap": 0.9764757192238517,
+      "reference_mask": 263262617264633018866760577814,
+      "elapsed_seconds": 8.05804704100592
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 16,
+      "berry_phase_radians": -1.6600480838753962,
+      "berry_phase_over_pi": -0.5284097166379972,
+      "minimum_link_magnitude": 0.9890996583393821,
+      "minimum_bdg_gap": 1.0893482224808504,
+      "reference_mask": 2865289779,
+      "elapsed_seconds": 0.05538266699295491
+    },
+    {
+      "lx": 4,
+      "ly": 4,
+      "steps_per_leg": 32,
+      "berry_phase_radians": -1.660473857812494,
+      "berry_phase_over_pi": -0.5285452446914548,
+      "minimum_link_magnitude": 0.997260202474509,
+      "minimum_bdg_gap": 1.089003588389541,
+      "reference_mask": 2865289779,
+      "elapsed_seconds": 0.1053307089896407
+    },
+    {
+      "lx": 5,
+      "ly": 5,
+      "steps_per_leg": 16,
+      "berry_phase_radians": -1.6848187282357696,
+      "berry_phase_over_pi": -0.5362944576250468,
+      "minimum_link_magnitude": 0.9866635912053003,
+      "minimum_bdg_gap": 0.9583530245622871,
+      "reference_mask": 662264706934484,
+      "elapsed_seconds": 3.4612853750004433
+    },
+    {
+      "lx": 5,
+      "ly": 5,
+      "steps_per_leg": 32,
+      "berry_phase_radians": -1.6853460150579969,
+      "berry_phase_over_pi": -0.5364622982334162,
+      "minimum_link_magnitude": 0.9966381750454283,
+      "minimum_bdg_gap": 0.9583530245622871,
+      "reference_mask": 662264706934484,
+      "elapsed_seconds": 7.009590667003067
+    },
+    {
+      "lx": 6,
+      "ly": 6,
+      "steps_per_leg": 16,
+      "berry_phase_radians": -1.707415293938539,
+      "berry_phase_over_pi": -0.5434871678820399,
+      "minimum_link_magnitude": 0.9841780008547684,
+      "minimum_bdg_gap": 0.999999999999998,
+      "reference_mask": 3308961092323163187296,
+      "elapsed_seconds": 8.306719625019468
+    },
+    {
+      "lx": 6,
+      "ly": 6,
+      "steps_per_leg": 32,
+      "berry_phase_radians": -1.7080443089461466,
+      "berry_phase_over_pi": -0.5436873895775193,
+      "minimum_link_magnitude": 0.9960071142348468,
+      "minimum_bdg_gap": 0.999999999999998,
+      "reference_mask": 3308961092323163187296,
+      "elapsed_seconds": 16.502511916973162
+    },
+    {
+      "lx": 7,
+      "ly": 7,
+      "steps_per_leg": 16,
+      "berry_phase_radians": -1.7303168439064966,
+      "berry_phase_over_pi": -0.5507769576457728,
+      "minimum_link_magnitude": 0.981603901116699,
+      "minimum_bdg_gap": 0.9764757192238517,
+      "reference_mask": 263262617264633018866760577814,
+      "elapsed_seconds": 15.996761332993628
+    },
+    {
+      "lx": 7,
+      "ly": 7,
+      "steps_per_leg": 32,
+      "berry_phase_radians": -1.7310503041971879,
+      "berry_phase_over_pi": -0.5510104253074231,
+      "minimum_link_magnitude": 0.9953543187999268,
+      "minimum_bdg_gap": 0.9764757192238517,
+      "reference_mask": 263262617264633018866760577814,
+      "elapsed_seconds": 32.12079499999527
+    }
+  ]
+}

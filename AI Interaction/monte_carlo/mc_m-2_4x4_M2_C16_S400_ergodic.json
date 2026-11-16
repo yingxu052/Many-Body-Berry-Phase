@@ -1,0 +1,265 @@
+{
+  "method": "two-sided Metropolis Monte Carlo",
+  "parameters": {
+    "m": -2.0,
+    "t": 1.0,
+    "t1": 1.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5,
+    "lx": 4,
+    "ly": 4,
+    "steps_per_leg": 2,
+    "chains_per_direction": 16,
+    "burn_in_sweeps": 100,
+    "measurement_sweeps": 400,
+    "seed": 20261102,
+    "reference_mask": 2865289779
+  },
+  "berry_phase": -1.6057124857708711,
+  "statistical_error": 0.01972553314318808,
+  "elapsed_seconds": 175.36234241598868,
+  "minimum_overlap_magnitude": 0.6318224846871289,
+  "mean_acceptance_rate": 0.054283203125,
+  "links": [
+    {
+      "link": 0,
+      "twist_1": [
+        0.0,
+        0.0
+      ],
+      "twist_2": [
+        1.5707963267948966,
+        0.0
+      ],
+      "phase": -1.0205624919486023,
+      "phase_error": 0.0014076237554651568,
+      "overlap_magnitude": 0.6318224846871289,
+      "forward_mean": [
+        0.46374749626596157,
+        -0.7559946041974692
+      ],
+      "backward_mean": [
+        0.23478728592757953,
+        0.3840202004423483
+      ],
+      "forward_real_error": 0.0013139310332611759,
+      "forward_imag_error": 0.0010547305920513656,
+      "forward_real_tau": 0.9444723538609696,
+      "forward_imag_tau": 0.8620971972251492,
+      "forward_acceptance": 0.0850859375,
+      "backward_acceptance": 0.0915625,
+      "forward_zero_amplitude_fraction": 0.0,
+      "backward_zero_amplitude_fraction": 0.0
+    },
+    {
+      "link": 1,
+      "twist_1": [
+        1.5707963267948966,
+        0.0
+      ],
+      "twist_2": [
+        3.141592653589793,
+        0.0
+      ],
+      "phase": -0.8075898992691704,
+      "phase_error": 0.014636949150541487,
+      "overlap_magnitude": 0.761727789543503,
+      "forward_mean": [
+        0.39507888448113043,
+        -0.4130148311997971
+      ],
+      "backward_mean": [
+        0.7043113109721328,
+        0.7311290018843921
+      ],
+      "forward_real_error": 0.008259264879636232,
+      "forward_imag_error": 0.008480568778976537,
+      "forward_real_tau": 1.856617681127915,
+      "forward_imag_tau": 1.7598326903825674,
+      "forward_acceptance": 0.090015625,
+      "backward_acceptance": 0.024546875,
+      "forward_zero_amplitude_fraction": 0.0,
+      "backward_zero_amplitude_fraction": 0.0
+    },
+    {
+      "link": 2,
+      "twist_1": [
+        3.141592653589793,
+        0.0
+      ],
+      "twist_2": [
+        3.141592653589793,
+        1.5707963267948966
+      ],
+      "phase": -0.01767609623306569,
+      "phase_error": 0.0018245247461165933,
+      "overlap_magnitude": 0.9632748786605733,
+      "forward_mean": [
+        1.1067788472541968,
+        -0.01956556717238824
+      ],
+      "backward_mean": [
+        0.8381585949996736,
+        0.01214201326199879
+      ],
+      "forward_real_error": 0.006808733599313675,
+      "forward_imag_error": 0.0020163871943867768,
+      "forward_real_tau": 4.596035877782696,
+      "forward_imag_tau": 0.5729552968081206,
+      "forward_acceptance": 0.02440625,
+      "backward_acceptance": 0.0345,
+      "forward_zero_amplitude_fraction": 0.0,
+      "backward_zero_amplitude_fraction": 0.0
+    },
+    {
+      "link": 3,
+      "twist_1": [
+        3.141592653589793,
+        1.5707963267948966
+      ],
+      "twist_2": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "phase": -0.13706939489956987,
+      "phase_error": 0.0021606666018157837,
+      "overlap_magnitude": 0.9786895126086869,
+      "forward_mean": [
+        0.981030056114136,
+        -0.13531771010421223
+      ],
+      "backward_mean": [
+        0.9583653257257495,
+        0.13040697310500038
+      ],
+      "forward_real_error": 0.006991921124515069,
+      "forward_imag_error": 0.0019327482239498974,
+      "forward_real_tau": 3.1055582144460754,
+      "forward_imag_tau": 2.1726526117980485,
+      "forward_acceptance": 0.029875,
+      "backward_acceptance": 0.0203828125,
+      "forward_zero_amplitude_fraction": 0.0,
+      "backward_zero_amplitude_fraction": 0.0
+    },
+    {
+      "link": 4,
+      "twist_1": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "twist_2": [
+        4.71238898038469,
+        3.141592653589793
+      ],
+      "phase": -0.4292126293960741,
+      "phase_error": 0.0028375580906369723,
+      "overlap_magnitude": 0.9295006606804399,
+      "forward_mean": [
+        0.7380070318668882,
+        -0.33776248748081444
+      ],
+      "backward_mean": [
+        0.9661997364530737,
+        0.4467716036923682
+      ],
+      "forward_real_error": 0.0030850531237179703,
+      "forward_imag_error": 0.002102714366121307,
+      "forward_real_tau": 0.9383496727296826,
+      "forward_imag_tau": 0.7200389236609545,
+      "forward_acceptance": 0.015828125,
+      "backward_acceptance": 0.0479921875,
+      "forward_zero_amplitude_fraction": 0.0,
+      "backward_zero_amplitude_fraction": 0.0
+    },
+    {
+      "link": 5,
+      "twist_1": [
+        4.71238898038469,
+        3.141592653589793
+      ],
+      "twist_2": [
+        6.283185307179586,
+        3.141592653589793
+      ],
+      "phase": -0.48356369742330874,
+      "phase_error": 0.0038997168383434143,
+      "overlap_magnitude": 0.9131367375029631,
+      "forward_mean": [
+        1.2163173887038499,
+        -0.6387477013544891
+      ],
+      "backward_mean": [
+        0.5373577969689424,
+        0.2821475001206523
+      ],
+      "forward_real_error": 0.008713189389520207,
+      "forward_imag_error": 0.003960085477520488,
+      "forward_real_tau": 0.8827103159974576,
+      "forward_imag_tau": 0.6097643255857416,
+      "forward_acceptance": 0.04659375,
+      "backward_acceptance": 0.036984375,
+      "forward_zero_amplitude_fraction": 0.0,
+      "backward_zero_amplitude_fraction": 0.0
+    },
+    {
+      "link": 6,
+      "twist_1": [
+        6.283185307179586,
+        3.141592653589793
+      ],
+      "twist_2": [
+        6.283185307179586,
+        4.71238898038469
+      ],
+      "phase": 0.7979783236053751,
+      "phase_error": 0.005842698598763514,
+      "overlap_magnitude": 0.721183216201161,
+      "forward_mean": [
+        0.35637487697662434,
+        0.3654561054500284
+      ],
+      "backward_mean": [
+        0.7083714768631874,
+        -0.7323864248796089
+      ],
+      "forward_real_error": 0.0035068488061935107,
+      "forward_imag_error": 0.0023056416083889067,
+      "forward_real_tau": 0.5868931259071158,
+      "forward_imag_tau": 0.7735318795838378,
+      "forward_acceptance": 0.0396328125,
+      "backward_acceptance": 0.10015625,
+      "forward_zero_amplitude_fraction": 0.0,
+      "backward_zero_amplitude_fraction": 0.0
+    },
+    {
+      "link": 7,
+      "twist_1": [
+        6.283185307179586,
+        4.71238898038469
+      ],
+      "twist_2": [
+        0.0,
+        0.0
+      ],
+      "phase": 0.49198339979354483,
+      "phase_error": 0.010367301854587757,
+      "overlap_magnitude": 0.6761451654117591,
+      "forward_mean": [
+        0.5308770505620235,
+        0.28451746656957033
+      ],
+      "backward_mean": [
+        0.669113504405549,
+        -0.3583444683169443
+      ],
+      "forward_real_error": 0.00948770354889892,
+      "forward_imag_error": 0.004933176442999022,
+      "forward_real_tau": 0.8323471882714549,
+      "forward_imag_tau": 0.7954328283211602,
+      "forward_acceptance": 0.0974765625,
+      "backward_acceptance": 0.0834921875,
+      "forward_zero_amplitude_fraction": 0.0,
+      "backward_zero_amplitude_fraction": 0.0
+    }
+  ]
+}

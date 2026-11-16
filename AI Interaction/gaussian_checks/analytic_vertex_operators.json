@@ -1,0 +1,77 @@
+{
+  "definitions": {
+    "theta_x": "R_x K, R_x:(x,y)->(1-x,y), orbital diag(1,1)",
+    "theta_y": "R_y K, R_y:(x,y)->(x,1-y), orbital diag(i,-i)",
+    "theta_y_last_leg": "T_x R_y K, T_x:(x,y)->(x+1,y)"
+  },
+  "antiunitary_checks": [
+    {
+      "leg": "leg_1_x",
+      "point": [
+        0.37,
+        0.0
+      ],
+      "antiunitary_symmetry_error": 0.0,
+      "theta_squared_minus_identity": 0.0
+    },
+    {
+      "leg": "leg_2_y",
+      "point": [
+        3.141592653589793,
+        0.83
+      ],
+      "antiunitary_symmetry_error": 6.75013836280112e-17,
+      "theta_squared_minus_identity": 0.0
+    },
+    {
+      "leg": "leg_3_x",
+      "point": [
+        5.913185307179586,
+        3.141592653589793
+      ],
+      "antiunitary_symmetry_error": 6.737639164627856e-17,
+      "theta_squared_minus_identity": 0.0
+    },
+    {
+      "leg": "leg_4_y_translated",
+      "point": [
+        6.283185307179586,
+        5.453185307179586
+      ],
+      "antiunitary_symmetry_error": 9.546137220568264e-17,
+      "theta_squared_minus_identity": 1.0
+    }
+  ],
+  "vertex_products": [
+    {
+      "product": "vertex_1_pi_0_theta_y_theta_x_inverse",
+      "unitary_error": 0.0,
+      "particle_block_off_diagonal_max": 1.0,
+      "is_onsite_large_gauge": false,
+      "is_spatial_permutation_with_orbital_phases": true
+    },
+    {
+      "product": "vertex_2_pi_pi_theta_x_theta_y_inverse",
+      "unitary_error": 0.0,
+      "particle_block_off_diagonal_max": 1.0,
+      "is_onsite_large_gauge": false,
+      "is_spatial_permutation_with_orbital_phases": true
+    },
+    {
+      "product": "vertex_3_2pi_pi_theta_y_translated_theta_x_inverse",
+      "unitary_error": 0.0,
+      "particle_block_off_diagonal_max": 1.0,
+      "is_onsite_large_gauge": false,
+      "is_spatial_permutation_with_orbital_phases": true
+    },
+    {
+      "product": "vertex_4_closure_theta_x_theta_y_translated_inverse",
+      "unitary_error": 0.0,
+      "particle_block_off_diagonal_max": 1.0,
+      "is_onsite_large_gauge": false,
+      "is_spatial_permutation_with_orbital_phases": true
+    }
+  ],
+  "cycle_product_minus_identity": 0.0,
+  "conclusion": "The real-gauge vertex products are spatial rotation/reflection/translation unitaries, not onsite large-gauge transformations. Their ordered cycle product is the identity. Their numerical phases alone therefore do not identify the adiabatic twist holonomy with a flux Wilson commutator."
+}

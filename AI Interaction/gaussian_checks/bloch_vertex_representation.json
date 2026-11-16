@@ -1,0 +1,124 @@
+{
+  "parameters": {
+    "t": 1.0,
+    "m": -2.0,
+    "delta_s": 0.5
+  },
+  "lattice": [
+    4,
+    4
+  ],
+  "conventions": {
+    "normal_h_at_TRIM": "h(k)=xi(k)*sigma_z",
+    "xi": "-2*t*cos(kx)-2*t*cos(ky)-m",
+    "U4_creation_action": "V(k)=exp(i*k_y)*diag(i,-i)",
+    "even_sector_ground_energy_at_TRIM": "-abs(delta_s)",
+    "odd_sector_ground_energy_at_TRIM": "-abs(xi)"
+  },
+  "vertices": [
+    {
+      "vertex": "v1",
+      "boundary_x": "antiperiodic",
+      "boundary_y": "periodic",
+      "self_inverse_momentum_count": 0,
+      "sector_eigenvalues": [],
+      "u": 1
+    },
+    {
+      "vertex": "v2",
+      "boundary_x": "antiperiodic",
+      "boundary_y": "antiperiodic",
+      "self_inverse_momentum_count": 0,
+      "sector_eigenvalues": [],
+      "u": 1
+    },
+    {
+      "vertex": "v3",
+      "boundary_x": "periodic",
+      "boundary_y": "antiperiodic",
+      "self_inverse_momentum_count": 0,
+      "sector_eigenvalues": [],
+      "u": 1
+    },
+    {
+      "vertex": "v4",
+      "boundary_x": "periodic",
+      "boundary_y": "periodic",
+      "self_inverse_momentum_count": 4,
+      "sector_eigenvalues": [
+        {
+          "k_over_pi": [
+            0.0,
+            0.0
+          ],
+          "xi": -2.0,
+          "ground_parity": "odd",
+          "lowest_odd_spinor": "c",
+          "translation_phase_exp_i_ky": [
+            1.0,
+            0.0
+          ],
+          "u_sector": [
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "k_over_pi": [
+            0.0,
+            1.0
+          ],
+          "xi": 2.0,
+          "ground_parity": "odd",
+          "lowest_odd_spinor": "d",
+          "translation_phase_exp_i_ky": [
+            -1.0,
+            1.2246467991473532e-16
+          ],
+          "u_sector": [
+            1.2246467991473532e-16,
+            1.0
+          ]
+        },
+        {
+          "k_over_pi": [
+            1.0,
+            0.0
+          ],
+          "xi": 2.0,
+          "ground_parity": "odd",
+          "lowest_odd_spinor": "d",
+          "translation_phase_exp_i_ky": [
+            1.0,
+            0.0
+          ],
+          "u_sector": [
+            0.0,
+            -1.0
+          ]
+        },
+        {
+          "k_over_pi": [
+            1.0,
+            1.0
+          ],
+          "xi": 6.0,
+          "ground_parity": "odd",
+          "lowest_odd_spinor": "d",
+          "translation_phase_exp_i_ky": [
+            -1.0,
+            1.2246467991473532e-16
+          ],
+          "u_sector": [
+            1.2246467991473532e-16,
+            1.0
+          ]
+        }
+      ],
+      "u": -1.0,
+      "odd_sector_count": 4,
+      "product_imaginary_residual": 2.4492935982947064e-16
+    }
+  ],
+  "u_product": -1.0
+}

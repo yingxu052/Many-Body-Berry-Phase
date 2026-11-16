@@ -1,0 +1,378 @@
+{
+  "parameters": {
+    "t": 1.0,
+    "t1": 1.0,
+    "m": -2.0,
+    "delta_p": 1.0,
+    "delta_s": 0.5
+  },
+  "pairing_scale": "s_linear(phi) + i*eta*sin(phi)",
+  "reference_mask": 2865289779,
+  "cubic_fit_delta_for_small_eta_descending_powers": [
+    0.0012634629284913196,
+    -5.416268702304935e-12,
+    -0.08392812586080355,
+    1.7394489709772133e-14
+  ],
+  "sweep_m128": [
+    {
+      "eta": -0.2,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7774000740893618,
+        -0.14334420640112805,
+        -0.9196384768549335,
+        1.2863619374839943
+      ],
+      "berry_phase_radians": -1.5540208198614291,
+      "berry_phase_over_pi": -0.4946601902973326,
+      "deviation_from_minus_pi_over_2": 0.01677550693346741,
+      "minimum_link_magnitude": 0.9998406952680282,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": -0.1,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7797213856394976,
+        -0.1458237622418108,
+        -0.9217440806607501,
+        1.2848844506136536
+      ],
+      "berry_phase_radians": -1.5624047779284047,
+      "berry_phase_over_pi": -0.49732888703540123,
+      "deviation_from_minus_pi_over_2": 0.00839154886649185,
+      "minimum_link_magnitude": 0.9998407591746431,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907945,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": -0.05,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7808820269662555,
+        -0.14706526772676268,
+        -0.9227973766845275,
+        1.2841445929428217
+      ],
+      "berry_phase_radians": -1.566600078434724,
+      "berry_phase_over_pi": -0.49866429266207457,
+      "deviation_from_minus_pi_over_2": 0.0041962483601725165,
+      "minimum_link_magnitude": 0.9998407751417455,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907938,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": -0.02,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7815784091061178,
+        -0.14781043959098328,
+        -0.9234294307482716,
+        1.2837005050601082
+      ],
+      "berry_phase_radians": -1.5691177743852642,
+      "berry_phase_over_pi": -0.4994657001735364,
+      "deviation_from_minus_pi_over_2": 0.0016785524096323279,
+      "minimum_link_magnitude": 0.9998407796118384,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907966,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": -0.01,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.781810536269782,
+        -0.1480588512781192,
+        -0.9236401214254123,
+        1.2835524621734027
+      ],
+      "berry_phase_radians": -1.5699570467999109,
+      "berry_phase_over_pi": -0.49973284888031977,
+      "deviation_from_minus_pi_over_2": 0.0008392799949856755,
+      "minimum_link_magnitude": 0.9998407802504071,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.0,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7820426633925146,
+        -0.14830726691514728,
+        -0.9238508132252141,
+        1.283404416737983
+      ],
+      "berry_phase_radians": -1.570796326794893,
+      "berry_phase_over_pi": -0.4999999999999989,
+      "deviation_from_minus_pi_over_2": 3.552713678800501e-15,
+      "minimum_link_magnitude": 0.9998407804632593,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.01,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.782274790515243,
+        -0.14855568255218587,
+        -0.9240615050249937,
+        1.2832563713025897
+      ],
+      "berry_phase_radians": -1.5716356067898327,
+      "berry_phase_over_pi": -0.5002671511196645,
+      "deviation_from_minus_pi_over_2": -0.0008392799949361596,
+      "minimum_link_magnitude": 0.9998407802504088,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907938,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.02,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.782506917678893,
+        -0.14880409423934984,
+        -0.9242721957021551,
+        1.283108328415898
+      ],
+      "berry_phase_radians": -1.5724748792045,
+      "berry_phase_over_pi": -0.5005342998264544,
+      "deviation_from_minus_pi_over_2": -0.001678552409603462,
+      "minimum_link_magnitude": 0.9998407796118447,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907952,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.05,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7832032998187848,
+        -0.14954926610356756,
+        -0.9249042497658791,
+        1.2826642405331696
+      ],
+      "berry_phase_radians": -1.5749925751550617,
+      "berry_phase_over_pi": -0.5013357073379231,
+      "deviation_from_minus_pi_over_2": -0.004196248360165189,
+      "minimum_link_magnitude": 0.9998407751417393,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.66706141390793,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.1,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7843639411455652,
+        -0.15079077158852133,
+        -0.9259575457896737,
+        1.2819243828623599
+      ],
+      "berry_phase_radians": -1.5791878756614004,
+      "berry_phase_over_pi": -0.5026711129646025,
+      "deviation_from_minus_pi_over_2": -0.00839154886650384,
+      "minimum_link_magnitude": 0.9998407591746359,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.2,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7866852526957144,
+        -0.1532703274291823,
+        -0.9280631495954476,
+        1.280446895992027
+      ],
+      "berry_phase_radians": -1.5875718337283173,
+      "berry_phase_over_pi": -0.5053398097026526,
+      "deviation_from_minus_pi_over_2": -0.01677550693342078,
+      "minimum_link_magnitude": 0.99984069526802,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.66706141390792,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    }
+  ],
+  "mesh_convergence": [
+    {
+      "eta": -0.1,
+      "steps_per_leg": 16,
+      "leg_phases_radians": [
+        -1.7797426381560466,
+        -0.14583214905793077,
+        -0.9217502025158196,
+        1.2848769306416234
+      ],
+      "berry_phase_radians": -1.5624480590881735,
+      "berry_phase_over_pi": -0.49734266385644116,
+      "deviation_from_minus_pi_over_2": 0.008348267706723034,
+      "minimum_link_magnitude": 0.9898730939590131,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907945,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": -0.1,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.7797264366436354,
+        -0.14582576036990816,
+        -0.9217455372827125,
+        1.284882657938054
+      ],
+      "berry_phase_radians": -1.562415076358202,
+      "berry_phase_over_pi": -0.49733216512741796,
+      "deviation_from_minus_pi_over_2": 0.008381250436694465,
+      "minimum_link_magnitude": 0.9974560387263788,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907945,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": -0.1,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.7797223953852612,
+        -0.14582416193114195,
+        -0.9217443719373913,
+        1.2848840919681062
+      ],
+      "berry_phase_radians": -1.5624068372856883,
+      "berry_phase_over_pi": -0.4973295425491838,
+      "deviation_from_minus_pi_over_2": 0.008389489509208259,
+      "minimum_link_magnitude": 0.9993632245840359,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907945,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": -0.1,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7797213856394976,
+        -0.1458237622418108,
+        -0.9217440806607501,
+        1.2848844506136536
+      ],
+      "berry_phase_radians": -1.5624047779284047,
+      "berry_phase_over_pi": -0.49732888703540123,
+      "deviation_from_minus_pi_over_2": 0.00839154886649185,
+      "minimum_link_magnitude": 0.9998407591746431,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907945,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": -0.1,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.7797211332385288,
+        -0.1458236623145393,
+        -0.9217440078453297,
+        1.2848845402836855
+      ],
+      "berry_phase_radians": -1.5624042631147124,
+      "berry_phase_over_pi": -0.49732872316511345,
+      "deviation_from_minus_pi_over_2": 0.008392063680184192,
+      "minimum_link_magnitude": 0.9999601865839683,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907945,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.1,
+      "steps_per_leg": 16,
+      "leg_phases_radians": [
+        -1.7843426886289822,
+        -0.15078238477239386,
+        -0.9259514239346026,
+        1.2819319028343668
+      ],
+      "berry_phase_radians": -1.5791445945016118,
+      "berry_phase_over_pi": -0.5026573361435563,
+      "deviation_from_minus_pi_over_2": -0.008348267706715262,
+      "minimum_link_magnitude": 0.9898730939590106,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.1,
+      "steps_per_leg": 32,
+      "leg_phases_radians": [
+        -1.784358890141409,
+        -0.15078877346041125,
+        -0.9259560891677071,
+        1.281926175537945
+      ],
+      "berry_phase_radians": -1.5791775772315824,
+      "berry_phase_over_pi": -0.5026678348725793,
+      "deviation_from_minus_pi_over_2": -0.008381250436685805,
+      "minimum_link_magnitude": 0.9974560387263735,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.1,
+      "steps_per_leg": 64,
+      "leg_phases_radians": [
+        -1.7843629313997758,
+        -0.15079037189919733,
+        -0.9259572545130107,
+        1.2819247415078734
+      ],
+      "berry_phase_radians": -1.5791858163041104,
+      "berry_phase_over_pi": -0.502670457450818,
+      "deviation_from_minus_pi_over_2": -0.00838948950921381,
+      "minimum_link_magnitude": 0.9993632245840446,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.1,
+      "steps_per_leg": 128,
+      "leg_phases_radians": [
+        -1.7843639411455652,
+        -0.15079077158852133,
+        -0.9259575457896737,
+        1.2819243828623599
+      ],
+      "berry_phase_radians": -1.5791878756614004,
+      "berry_phase_over_pi": -0.5026711129646025,
+      "deviation_from_minus_pi_over_2": -0.00839154886650384,
+      "minimum_link_magnitude": 0.9998407591746359,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    },
+    {
+      "eta": 0.1,
+      "steps_per_leg": 256,
+      "leg_phases_radians": [
+        -1.784364193546439,
+        -0.1507908715158243,
+        -0.9259576186050786,
+        1.2819242931922987
+      ],
+      "berry_phase_radians": -1.5791883904750432,
+      "berry_phase_over_pi": -0.5026712768348746,
+      "deviation_from_minus_pi_over_2": -0.008392063680146666,
+      "minimum_link_magnitude": 0.9999601865839669,
+      "minimum_bdg_gap": 1.1180339887498938,
+      "maximum_reference_condition": 18.667061413907916,
+      "hamiltonian_closure_error": 2.4492935982947064e-16
+    }
+  ]
+}

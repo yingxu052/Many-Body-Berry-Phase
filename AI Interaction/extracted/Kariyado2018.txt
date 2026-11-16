@@ -1,0 +1,373 @@
+PHYSICAL REVIEW LETTERS 120, 247202 (2018)
+Z Berry Phases in Symmetry Protected Topological Phases
+N
+Toshikaze Kariyado,1,* Takahiro Morimoto,2 and Yasuhiro Hatsugai3
+1International Center for Materials Nanoarchitectonics (WPI-MANA), National Institute for Materials Science,
+Tsukuba 305-0044, Japan
+2Department of Physics, University of California, Berkeley, California 94720, USA
+3Division of Physics, University of Tsukuba, Tsukuba 305-8571, Japan
+(Received 2 September 2017; published 15 June 2018)
+We show that the Z N Berry phase (Berry phase quantized into 2π=N) provides a useful tool to
+characterizesymmetryprotectedtopologicalphaseswithcorrelationthatcanbedirectlycomputedthrough
+numericsofarelativelysmallsystemsize.TheZ NBerryphaseisdefinedinaN−1-dimensionalparameter
+space of local gauge twists, which we call the “synthetic Brillouin zone,” and an appropriate choice of
+an integration path consistent with the symmetry of the system ensures exact quantization of the Berry
+phase.WedemonstratetheusefulnessoftheZ N Berryphasebystudyingtwo1Dmodelsofbosons,SU(3)
+andSU(4)Affleck-Kennedy-Lieb-Tasakimodels,wheretopologicalphasetransitionsarecapturedbyZ
+3
+and Z 4 Berry phases, respectively. We find that the exact quantization of the Z N Berry phase at the
+topologicaltransitionsarisesfromagaplessbandstructure(e.g.,Diracconesornodallines)inthesynthetic
+Brillouin zone.
+DOI: 10.1103/PhysRevLett.120.247202
+Inthepastdecades,topologyhascometotheforeofthe indicates that the state is in a SPT phase. A representative
+condensed matter research and it has been serving as a exampleistheHaldanephaseinaspin-1Heisenbergchain
+guidingprincipletoexplorenovelphasesofmatterwithout [14,17,24–26], where the entangled clusters are intersite
+relyingonthesymmetrybreaking[1].Meanwhile,symmetry singlets of emergent spin-1=2 degrees of freedom.
+stillplaysanimportantroleinaninterplaywithtopology.For Inthesearchofadiabaticcontinuationintotheembedded
+example,topologicalphasesofnoninteractingfermionshave entangled clusters, it is useful to study the Berry phase
+beenclassifiedaccordingtothegenericinternalsymmetries, defined through the local gauge twist [as schematically
+i.e.,time-reversal,particle-hole,andchiralsymmetries[1–5], illustrated in Fig. 1(a)] [13,15,22,27,28]. Since the Berry
+andrecently,theclassificationhasbeenfurtherextendedby phase can be quantized by symmetry in some cases, it
+incorporating crystal symmetries [4,6–11]. On the other
+hand,characterizationoftopologicalphasesbecomesamore
+difficultproblemforsystemsofstronglyinteractingparticles
+[12]. There have been active studies on classification and (a) (b)
+characterization of symmetry protected topological (SPT)
+phases that are supported with strong correlation effects
+[1,13–21].However,thecharacterizationofSPTphasesfor
+a given Hamiltonian remains a highly nontrivial problem.
+(c) (d) (e)
+In particular, a concise way to characterize them through
+fairly cheap numerics has been desired.
+In characterizing SPT phases, the notion of adiabatic
+continuation plays an essential role [13–15,22]. By adia-
+baticallycontinuingagivensystemintoasimplereference
+system, the topological character in the original system is
+easily diagnosed by studying the simple reference system.
+FIG.1. (a)Schematicpictureofthebiquadraticmodelandthe
+For example, a system that can be adiabatically decom-
+posed into a set of the elementary units in the system (an local gauge twist. The bonds J i represent the biquadratic
+interactions. (b) Synthetic Brillouin zone and the integration
+atomicinsulatorinthecaseoffreefermions)isidentifiedas
+path C leading to the Berry phase quantization. (c)–(e) The
+a trivial phase. In contrast, the requirement for keeping a
+energyspectra fortheground state andthe first excited state on
+finite gap and the symmetry of the system sometimes theBrillouinzone.Thegap atΓpoint isalways nonzero dueto
+excludesthepossibilityof“atomicinsulators”andleavesa thefinitesizeeffect.Atthephasetransition,thegapclosesatK
+set of finite size entangled clusters [13,16,23], which and K0 points forming Dirac cones.
+0031-9007=18=120(24)=247202(5) 247202-1 © 2018 American Physical Society
+
+PHYSICAL REVIEW LETTERS 120, 247202 (2018)
+provides a conserved quantity in the process of the lookslikea unitarytransformation, it actuallyisnot,since
+adiabatic continuation that encodes the topological nature the operation is selectively acting on the chosen bond.
+ofthesystem.TheBerryphasefortheentangledclusteris Therefore, the eigenvalues and eigenvectors change as
+easily obtained in the simple reference system and gives a jG 0 i→jG ϕ i. Using the set of these wave functions, the
+characterization for the original system, which helps to Berry phase γ is defined as
+have intuitive understanding of SPT phases. Also, the Z
+quantized nature is suitable for numerical analysis since 2π
+it eliminates system size dependence. This is especially
+iγ ¼ dϕhG
+ϕ
+j∂
+ϕ
+G
+ϕ
+i: ð1Þ
+0
+helpful in characterizing correlatedSPT phasesin numeri-
+cal analysis. However, Berry phase analysis of correlated ThechoiceofthegaugetwistAˆ isessential:itshouldmake
+SPTphaseshavebeensofarmostlylimitedtotheHaldane U m ðϕÞ periodic in ϕ and should properly capture the
+phase with Berry phase π [13]. underlying entangled cluster [29].
+In this Letter, wegeneralize the characterization of SPT In the previous studies of spin systems, Aˆ ¼S−Sˆ z has
+phaseswithacorrelationbasedontheBerryphasebyusing been the standard choice [13,15,27], which is suitable for
+fractionallyquantizedBerryphase2π=N (Z N Berryphase) detectingaspin-1=2singlet.Inthiscase,somesymmetries
+and propose that such Z N Berry phase provides a useful constrain the Berry phase γ to quantize into 0 or π, where
+tool to diagnose general topological phases of interacting γ ¼π signals the existence of a spin-1=2 singlet at the
+particles [23]. We demonstrate that the Z N Berry phase is chosenbond.ThisisindeedthecasefortheHaldanephase
+useful in characterizing one-dimensional SPT phases clas- in the spin-1 Heisenberg chain, which is a representative
+sified by general Z N topological number. Specifically, we SPT phase, and its topological nature is captured by the
+extend the Berry phase analysis so that it can detect valencebondsolidpicture,withpairsofspin-1=2obtained
+entangled clusters other than the conventional spin-1=2 from fractionalization of the original spin-1 forming
+singlets. We demonstrate that spin-1 singlets can be intersite spin-1=2 singlets [30]. Then, γ ¼π characterizes
+detected with the appropriate redefinition of the Berry theHaldanephase,whileγ ¼0characterizesthetopologi-
+phase. This can be applied to a bond-alternating spin-1 callytriviallarge-Dphasewherefractionalspin-1=2sform
+chain with biquadratic interaction (hereafter, called the intrasite spin-1=2 singlets. Such quantization of the Berry
+biquadraticmodel),whichsupportsaZ 3SPTphase.Inthis phase(into0orπ)allowsustoobservethesharptransition
+case,thephasetransitioniscapturedbytheZ 3 Berryphase between the Haldane and the large-D phases even for a
+(0or2π=3),insteadoftheconventionaloneπð¼2π=2Þ.We
+chainofarelativelysmallnumberofsites.Thisobservation
+also show that a SU(4) symmetric spin chain supports a can be generalized to the case of the Z N Berry phase.
+topologicalphasewithaSU(4)fullyantisymmetrizedstate Namely, the quantization of the general Z N Berry phase
+beingtheentangledcluster,whichcanbediagnosedbythe
+indicates a sharp phase transition even for a small size
+Z 4 Berry phase. These generalizations of the Berry phase system(withoutextrapolationtothethermodynamiclimit)
+into fractional ones involve the synthetic Brillouin zone
+that can be studied in practical numerical calculations.
+(BZ)[seeFig.1(b)]thatparametrizeslocalgaugetwistsfor
+Next,westudyacasewheretheentangledclusterisnota
+aparticularbond.WhenthereexistN kindsoflocalgauge conventional spin-1=2 singlet. To this end, we consider a
+twists[N ¼3fortheSU(3)chainandN ¼4fortheSU(4)
+spin-1 chain with bond-alternating biquadratic interaction
+chain],suchsyntheticBZisgivenbyaN−1-dimensional
+[31], which is described by the Hamiltonian
+space. (Note that the system itself is one dimensional.)
+X X
+We find that the phase transition is governed by a gapless Hˆ ¼−J
+1
+ðSˆ 2i·Sˆ
+2iþ1
+Þ2−J
+2
+ðSˆ 2iþ1·Sˆ
+2iþ2
+Þ2: ð2Þ
+structure that appears in the effective band structure in
+i i
+the synthetic Brillouin zone, such as the Dirac cones
+shown in Fig. 1(d). Thus, the Z N Berry phase analysis It is known that this model supports the SU(3) Affleck-
+allows us to understand the topological phase transition in Kennedy-Lieb-Tasaki (AKLT) state [32]. In the language
+the many-body system by using an analogy to that in the of the SU(3) AKLT state, the elementary object is a quark
+free-fermion system. (andantiquark)andtheentangledclustercharacterizingthe
+LetusbeginwiththeformulationoftheBerryphase.For SPT phase is a meson (specifically, η meson). In the
+simplicity,wefocusonaPone-dimensionalperiodicsystem language of the spin-1 biquadratic model, the entangled
+with Hamiltonian H ¼
+ij
+H ij. For finite size systems clusterismappedtoaspin-1“singlet”(two-spinstatewith
+(either open or periodic) that are studied by numerical zero total angular momentum). By writing J 1;2 as J 1 ¼
+calculations in practice, the Berry phase is defined in the JþΔ and J 2 ¼J−Δ, the parameter Δ controls how the
+followingway. First, we pickup a termon a certain bond,
+entangled clusters are formed. Therefore, once we fix the
+H nm, out of the terms in the Hamiltonian. Then, it is
+positionofthegauge-twistedbond,thetransitionhastobe
+replacedbyH nm ðϕÞ¼U m ðϕÞH nm U† m ðϕÞ,whereU m ðϕÞ¼ observed by changing Δ. However, the standard choice of
+eiAˆϕ (the local gauge twist) acts on the mth site. While it Aˆ ¼S−Sˆ z is inadequate for detecting the spin-1 singlet.
+247202-2
+
+PHYSICAL REVIEW LETTERS 120, 247202 (2018)
+Instead, we use the twist operator
+Aˆ ¼Aˆ
+3
+≡1−Sˆ2
+z. Since
+Aˆ
+2
+¼1−Sˆ2 yinadditiontoAˆ
+P3,andwedefinethegeneralized
+Sˆ z (Sˆ2 z) is part of the dipole (quadrupole) moment, we call local gauge twist as expði i Aˆ i ϕ i Þ with three parameters
+eiðS−Sˆ z Þϕ (eiAˆ 3 ϕ)dipolar(quadrupolar)twist.Forourmodel, ϕ 1;2;3. Because Aˆ 1 þAˆ 2 þAˆ 3 ¼1ˆ , only two of three
+the twist is reflected in H n;nþ1 ðϕÞ, and if there is a parameters are independent, namely, a twist by eiAˆ 3 ϕ has
+symmetry H n;nþ1 ðϕÞ¼H nþ1;n ð−ϕÞ, the Berry phase thesameeffectasatwistbye−iðAˆ 1 þAˆ 2 Þϕ sinceei1ˆϕ istrivial.
+should quantize into 0 or π [13]. The dipolar twist obeys
+Thismeansthatthegeneralizedlocalgaugetwistisdefined
+this symmetry, while the quadrupolar twist does not. As a
+on the two-dimensional periodic parameter space, which
+result, the latter does not lead to Z 2 quantization, but may we call the synthetic Brillouin zone, with the hexagonal
+quantize into other fractions of 2π [29].
+symmetry as shown in Fig. 1(b). In terms of the synthetic
+ThenumericallyobtainedBerryphaseasafunctionofΔ
+BZ, we can see that the Berry phase defined for a straight
+c is h s a u ra m c m ter a i r z i e z d ed b i y n γ F ¼ ig. 0 2. fo W r e Δ id > en 0 ti a fy nd tw γ o ¼ ph 2 a π s = e 3 s, f w or h Δ ich < ar 0 e . linealongtheϕ 3 axisinthesyntheticBZleadstodeviation
+from the quantization [Fig. 2(a)]. Instead, we now consider
+T γ h ¼ e 2 e π m = b 3 e , dd si e n d ce spi a n n -1 is s o in la g t l e e d t e s x i i n s g ts le o t n w th it e h tw a is Aˆ te 3 d t b w o i n st d i i s f t in he t p h a e th sy C nt ( h K e 1 ti - c Γ- B K Z 2) . i F n ig F u ig re .1 2 (b (b ), ) w s h h i o c w h s is t m he or B e e s r y r m y m ph et a r s i e c
+described by the wav p e ffiffiffi function, jψ ϕ i¼ðjþ1;−1i− obtainedwiththepathC.Inthiscase,theBerryphaseshows
+eiϕj0;0iþj−1;þ1iÞ= 3 (by using a representation for an exact quantization into 0 and 2π=3, leading to the sharp
+the state of two spins, jsz;szi¼jszi⊗jszi with transition. The origin of the quantization is understood by
+1 2 1 2
+t Sˆ o zi j t s h z i e i B ¼ e s rr z i y jsz i p i h ), as a e nd by the 2π se = c 3 o . n N d o t t e e rm tha e t i , ϕj w 0; it 0 h i t c h o e nt d ri i b p u o t l e a s r c p o at n h s s i , de γ r 1 ing wi t t h h e K B 1 e - r Γ ry -K p 2 h , a γ se 2 s w d i e th fin K ed 2- w Γ- i K th 3, th a re n e d d γ i 3 ffe w re i n th t
+twist, the Berry phase is zero regardless of the sign of Δ, K 3-Γ-K 1. By the threefold rotational symmetry in the
+synthetic BZ, we obtain γ ¼γ ¼γ . At the same time,
+whichmeansthatthephasetransitioninFig.2iscaptured 1 2 3
+onlywithournewmethod.Thesystemsizedependencein
+if thethreePpaths arecombined, theyresult in a trivial path,
+Fig. 2(a) suggests that the transition gets sharper as we giving us i γ i ¼0 (mod 2π). The consequence of this
+approachthethermodynamiclimit.However,theimperfect symmetry consideration is that the Berry phase γ i should
+quantizeinto2π=3[23].Thisargumentdoesnotrelyonfull
+quantization degrades the advantage of the Berry phase.
+SU(3) symmetry; we have confirmed the quantization with
+Fortunately, the exact quantization is restored if the
+symmetry of the system is fully appreciated. The key perturbation that breaks SU(3), but preserves Z 3×Z 3
+symmetry (see Supplemental Material [29]).
+symmetry of Eq. (2) is the spin rotational symmetry, in
+particular,thesymmetryundertheinterchangeofx,y,and The introduction of the synthetic BZ reveals another
+z directions in the spin space. [This corresponds to the notable aspect of the transition, i.e., an emergent gapless
+interchange of three flavors of quarks that forms a Z 3 structure in the effective band structure. Generally speak-
+ing,quantizationoftheBerryphaseindicatesajumpinthe
+subgroup of the SU(3) symmetry [32].] Accordingly, our
+valueofγ atthephasetransition,andsuchajumprequires
+formulation of the Berry phase can be symmetrized
+by considering the other twist operators
+Aˆ
+1
+¼1−Sˆ2
+x and
+a singularity in the wave function that is associated with
+gapclosing. In this case, the energy gap above theground
+state should close somewhere on the integration path.
+Conversely, no sharp transition is expected when the gap
+(a)
+remains finite over the entire integration path. The right
+panelofFig.2(a)plotstheenergyspectrumasafunctionof
+ϕfortheeiAˆ
+3
+ϕ twistatΔ¼0,whichshowstheabsenceof
+anygapclosure.Thisaccountsforthesmoothchangeofγ
+(b)
+atΔinFig.2(a).Incontrast,weindeedhaveagapclosing
+pointonthepathCatΔ¼0.Morespecifically,thegapless
+points are found at K and K0 points in the synthetic
+Brillouin zone. [See Figs. 1(c)–1(e) and the right panel
+of Fig. 2(b).] Interestingly, the energy spectrum at Δ¼0
+showsDiracconesinasimilarwaytothebandstructureof
+graphene. This reminds us of the fact that the topological
+FIG.2. (a)TheBerryphasewitheiAˆ 3 ϕ forseveralsystemsizes transitioninfree-fermionsystemsisoftenassociatedwitha
+(Ldenotesthenumberofthespins).(Right)TheenergysPpectra gaplessbandstructure,suchasDiraccones.Inananalogy,
+as functions of ϕ at Δ¼0. (b) The Berry phase with ei i Aˆ i ϕ i thetopologicalphasetransitioninourmodel,althoughitis
+using C in Fig. 1(b) as an integration path. (Right) The energy acorrelatedone-dimensionalmodel,isassociatedwiththe
+spectrumalongthehighsymmetrylinesinthesyntheticBrillouin Dirac cones that appear in the synthetic Brillouin zone.
+zone. L is set to 12. The energies are in the unit of J. Notethatthegapat Γpoint,representingthestatewithout
+247202-3
+
+PHYSICAL REVIEW LETTERS 120, 247202 (2018)
+any twist, is always finite, including the case with Δ¼0. (a) (d)
+In passing, we note that it is known that the ground state
+is doubly degenerate in the thermodynamic limit for (b)
+Δ¼0 [31]. This means that the “band structures” in
+Figs. 1(c)–1(e) collapse in the infinite size limit, and the
+jumpin γ gets sharperwith L→∞ inanycase. However,
+(c) (e)
+as we havestressed earlier,the advantage of the quantized
+Berry phase lies in the usefulness in the finite size
+calculation of a relatively small system size.
+Next, we show the usefulnessof theZ N Berryphaseby
+applying it to another example of 1D SPT phases. We
+(f)
+consider a SU(4) symmetric Hamiltonian [33]
+(g)
+XX15
+H ¼− ½J Λ ð2iÞΛ¯ ð2iþ1Þ
+1 a a
+i a¼1
+þJ
+2
+Λ¯
+a
+ð2iþ1ÞΛ
+a
+ð2iþ2Þ(cid:2): ð3Þ
+Here, the fundamental representations of SU(4) and its FIG. 3. (a) Schematic picture of the SU(4) model. q and q¯
+conjugate representations are assigned on the ð2iÞth sites denote the fundamental representation and the conjugate repre-
+and (2iþ1)th sites, respectively [see Fig. 3(a)]. The sentation,respectively.(b),(c)TheBerryphasesobtainedwith(b)
+explicit form of the Λ a is found in Ref. [34]. For thepathW 1-Γ-W 2 and(c)thestraightintegrationpathalongthe
+convenience, we parametrize J 1;2 as J 1 ¼J 0 þδJ and ϕ 1 axis. (d),(e) The synthetic Brillouin zone and the integration
+J 2 ¼J 0 −δJ. With the appropriate parameter choice, the path. (f) The energy spectrum on the symmetric lines in the
+synthetic BZfor δJ¼0.(Inset) Thelocation of thenodal lines.
+ground state of this Hamiltonian shares the majority of
+(g) The band structure of the single orbital tight-binding model
+propertieswiththeSU(4)AKLTstate[32].Inthiscase,the
+on the diamond lattice.
+entangled cluster is the completely antisymmetrized state
+formed by a pair of the fundamental and its conjugate
+representations [which is analogous to the η meson in the
+Beforeclosing,wecomparethepresentcharacterization
+SU(3) case]. In a similar manner to the case of Δ for the
+ofSPTphaseswiththeotherknowncharacterizationthatis
+biquadratic model, δJ controls how the entangled clusters
+basedonprojective representationsofsymmetryoperation
+are formed, and the phase transition takes place by
+in the matrix product state representation of ground states
+changing δJ. For the detection of the pattern of entangled
+P [37]. The projective representation (and associated factor
+clusters, we adopt UðϕÞ¼expði 4 n¼1 Aˇ n ϕ n Þ as a gauge sets) extracts information of fractional excitations at the
+twist, where ðAˇ n Þ ij ¼δ ij δ in. Independent local gauge edgeandisknowntoprovidecompleteclassificationof1D
+twists are defined on the three-dimensional synthetic BZ SPT phases. The Berry phase method has a similarity in
+with the symmetry of the fcc BZ. that it detects entangled clusters, where the fractional
+The numerically obtained Berry phase is plotted in excitations are interpreted as broken pieces of a cluster
+Figs. 3(b) and 3(c). Again, the exact quantization of the at the edge. Whether the Berry-phase-based theory can be
+Berry phase is achieved for a symmetric integration path ascompleteastheprojectivegroupmethodisaninteresting
+W 1-Γ-W 2 in the synthetic BZ as shown in Figs. 3(d) and future problem. As a first step, we give an alternative
+3(e). With this setup, the phase transition is captured by a expressionfortheZ 3Berryphase,whichbetterclarifiesthe
+jumpfromγ ¼0toγ ¼π=2¼ð2π=4Þ[23,35,36].Similar
+relation to the other theory, in the Supplemental Material
+to the SU(3) case, the exact quantization is realized by [29]. This formula makes a clearer relationship between
+integrationpathsthataresymmetricagainsttheinterchange the quantized Berry phase and the general classification
+ofAˇ
+i
+’sandformingatrivialpathasacombination.Onthe theorybasedongroup cohomology [38].Interestingly,the
+other hand, a straight integration path and its symmetric alternative formula uses only the wave functions at Γ
+counterparts do not form a trivial path, giving imperfect and K 1 [see Fig. 1(d)], which is advantageous also in
+quantization[Fig.3(c)].ThejumpintheZ 4 Berryphaseis numerical evaluation.
+again associated with the gapless point on the integration To summarize, we have demonstrated the usefulness of
+path.Inthiscase,thegapclosesontheX-Wline;i.e.,nodal the Z N Berry phase as a topological invariant for SU(N)
+lines appear in the three-dimensional Brillouin zone for symmetricSPTphases.Thekeyisthemultiparameterlocal
+δJ ¼0 [see Fig. 3(f)]. Interestingly, the energy spectrum gauge twist, revealing that the topological transitions are
+resembles the band structure for the single orbital tight- associatedwithDiracconesornodallinesintheparameter
+binding model on the diamond lattice [see Fig. 3(g)]. space.Itwouldbeaninterestingfutureproblemtoexplore
+247202-4
+
+PHYSICAL REVIEW LETTERS 120, 247202 (2018)
+the relationship between Dirac cones or nodal lines found [16] X. Chen, Z.-C. Gu, and X.-G. Wen, Phys. Rev. B 82,
+here and those in free-fermion systems at the topological 155138 (2010).
+transition, for example, in terms of the criticality. Another [17] F. Pollmann, E. Berg, A.M. Turner, and M. Oshikawa,
+promisingdirectionwouldbeanextensionoftheZ N Berry Phys. Rev. B 85, 075125 (2012).
+[18] Y.-M. Lu and A. Vishwanath, Phys. Rev. B 86, 125119
+phase to topological phases in higher spatial dimensions.
+(2012).
+The major task in doing sowill be finding proper ways of
+[19] Y.-Z. You and C. Xu, Phys. Rev. B 90, 245120 (2014).
+applyingthelocalgaugetwisttoensureexactquantization.
+[20] H. Isobe and L. Fu, Phys. Rev. B 92, 081304 (2015).
+Once they are found, it will provide a tractable way to
+[21] T.Morimoto,A.Furusaki,andC.Mudry,Phys.Rev.B92,
+characterizegeneralSPTphasesbasedontheHamiltonians 125104 (2015).
+explicitly. [22] T. Kariyado and Y. Hatsugai, Phys. Rev. B 90, 085132
+(2014).
+T.K. thanks the Supercomputer Center, the Institute for
+[23] Y. Hatsugai and I. Maruyama, Europhys. Lett. 95, 20003
+SolidStatePhysics,theUniversityofTokyofortheuseof
+(2011).
+the facilities. The work was partially supported by JSPS [24] F. Haldane, Phys. Lett. A 93, 464 (1983).
+KAKENHI Grants No. JP17K14358 (T.K.), [25] F.D.M. Haldane, Phys. Rev. Lett. 50, 1153 (1983).
+No. JP17H06138 (T.K., Y.H.), and No. JP16K13845 [26] K. Hida, Phys. Rev. B 45, 2207 (1992).
+(Y.H.). T.M. was supported by the Gordon and Betty [27] N. Chepiga, F. Michaud, and F. Mila, Phys. Rev. B 88,
+MooreFoundation’sEPiQSInitiativeTheoryCenterGrant. 184418 (2013).
+[28] T. Kariyado and Y. Hatsugai, Phys. Rev. B 91, 214410
+(2015).
+[29] See Supplemental Material at http://link.aps.org/
+*kariyado.toshikaze@nims.go.jp
+supplemental/10.1103/PhysRevLett.120.247202, for gen-
+[1] X.G. Wen, Phys. Rev. B 40, 7387 (1989).
+eral arguments on the local gauge twist, symmetry proper-
+[2] A.P.Schnyder,S.Ryu,A.Furusaki,andA.W.W.Ludwig,
+ties of the quadrupolar twist, effects of the symmetry
+Phys. Rev. B 78, 195125 (2008). breakingfromSU(3)toZ 3×Z 3,andanalternativeformula
+[3] A. Kitaev, AIP Conf. Proc. 1134, 22 (2009).
+for the quantized Berry phase.
+[4] Y. Hatsugai, New J. Phys. 12, 065004 (2010).
+[30] I.Affleck,T.Kennedy,E.H.Lieb,andH.Tasaki,Phys.Rev.
+[5] S.Ryu,A.P.Schnyder,A.Furusaki,andA.W.W.Ludwig, Lett. 59, 799 (1987).
+New J. Phys. 12, 065010 (2010). [31] M.N. Barber and M.T. Batchelor, Phys. Rev. B 40, 4621
+[6] L. Fu, Phys. Rev. Lett. 106, 106802 (2011).
+(1989).
+[7] C.-K. Chiu, H. Yao, and S. Ryu, Phys. Rev. B 88, 075142
+[32] T. Morimoto, H. Ueda, T. Momoi, and A. Furusaki, Phys.
+(2013). Rev. B 90, 235111 (2014).
+[8] T. Morimoto and A. Furusaki, Phys. Rev. B 88, 125129 [33] I. Affleck, Phys. Rev. Lett. 54, 966 (1985).
+(2013).
+[34] M.A.A. Sbaih, M.K. Srour, M.S. Hamada, and H.M.
+[9] K.ShiozakiandM.Sato,Phys.Rev.B90,165114(2014). Fayad, Electron. J. Theor. Phys. 10, 9 (2013).
+[10] H.C.Po,A.Vishwanath,andH.Watanabe,Nat.Commun.
+[35] Y. Motoyama and S. Todo, arXiv:1508.00960.
+8, 50 (2017). [36] We note that the π=2 Berry phase was discussed in
+[11] B.Bradlyn,L.Elcoro,J.Cano,M.G.Vergniory,Z.Wang,
+Refs. [22,28]. In those cases, the allowed values of the
+C.Felser,M.I.Aroyo,andB.A.Bernevig,Nature(London) Berry phase was restricted to (cid:3)π=2; i.e., the Berry phase
+547, 298 (2017). was Z 2 valued, rather than Z 4 valued.
+[12] L.FidkowskiandA.Kitaev,Phys.Rev.B81,134509(2010). [37] F. Pollmann and A.M. Turner, Phys. Rev. B 86, 125441
+[13] Y. Hatsugai, J. Phys. Soc. Jpn. 75, 123601 (2006).
+(2012).
+[14] Y. Hatsugai, J. Phys. Condens. Matter 19, 145209 (2007).
+[38] K. Shiozaki and S. Ryu, J. High Energy Phys. 04 (2017)
+[15] T. Hirano, H. Katsura, and Y. Hatsugai, Phys. Rev. B 78,
+100.
+054431 (2008).
+247202-5

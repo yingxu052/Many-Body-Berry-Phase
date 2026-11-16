@@ -1,0 +1,12 @@
+
+===== CELL 4 OUTPUT =====
+0 0
+
+===== CELL 5 OUTPUT =====
+<Figure size 1200x800 with 1 Axes>
+===== CELL 6 OUTPUT =====
+<Figure size 1200x800 with 1 Axes>
+===== CELL 9 OUTPUT =====
+<Figure size 1200x800 with 1 Axes>
+===== CELL 10 OUTPUT =====
+<Figure size 1200x800 with 1 Axes>

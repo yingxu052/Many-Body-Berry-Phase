@@ -1,0 +1,1501 @@
+PHYSICALREVIEWB85,235151(2012)
+Quasiparticlestatisticsandbraidingfromground-stateentanglement
+YiZhang,1 TarunGrover,1 AriTurner,2MasakiOshikawa,3 andAshvinVishwanath1,*
+1DepartmentofPhysics,UniversityofCalifornia,Berkeley,Berkeley,California94720,USA
+2UniversityofAmsterdam,SciencePark904,P.O.Box94485,1090GLAmsterdam,TheNetherlands
+3InstituteforSolidStatePhysics,UniversityofTokyo,Kashiwa277-8581,Japan
+(Received27March2012;revisedmanuscriptreceived16May2012;published29June2012)
+Topologicallyorderedphasesaregappedstates,definedbythepropertiesofexcitationswhentakenaround
+oneanother.Herewedemonstrateamethodtoextractthestatisticsandbraidingofexcitations,givenjusttheset
+ofground-statewavefunctionsonatorus.Thisisachievedbystudyingthetopologicalentanglemententropy
+(TEE)uponpartitioningthetorusintotwocylinders.Inthissetting,generalconsiderationsdictatethattheTEE
+generallydiffersfromthatintrivialpartitionsanddependsonthechosengroundstate.Centraltoourschemeis
+theidentificationofgroundstateswithminimumentanglemententropy,whichreflectthequasiparticleexcitations
+ofthetopologicalphase.ThetransformationofthesestatesallowsforthedeterminationofthemodularSandU
+matriceswhichencodequasiparticleproperties.WedemonstrateourmethodbyextractingthemodularSmatrix
+ofachiralspinliquidphaseusingaMonteCarloschemetocalculatetheTEEandprovethatthequasiparticles
+obeysemionicstatistics.Thismethodoffersaroutetonearlycompletedeterminationofthetopologicalorderin
+certaincases.
+DOI:10.1103/PhysRevB.85.235151 PACSnumber(s): 03.67.Mn,03.65.Ud,75.10.Kt
+I. INTRODUCTION numericalstudiesdiagnosetheprecisecharacteroftopological
+orderinaparticularstate.
+Topologically ordered states are gapped quantum phases
+The generalized statistics of quasiparticles is formally
+of matter that lie beyond the Landau symmetry breaking
+capturedbythemodularSandUmatrices,inbothAbelianand
+paradigm.1Well-knownexamplesincludefractionalquantum
+non-Abelianstates.3,12,16–18TheelementS ofthemodularS
+Hallstatesandgappedquantumspinliquids.1–10Thesephases ij
+matrixdeterminesthemutualstatisticsoftheithquasiparticle
+arenotcharacterizedbylocalcorrelationsororderparameters
+withrespecttothejthquasiparticlewhiletheelementU ofthe
+but rather by long-range entanglement in their ground-state ii
+(diagonal)Umatrixdeterminestheself-statistics(“topological
+wave functions.11 Recently, there has been renewed interest
+spin”)oftheithquasiparticle.Notethattheseprovideanearly
+in such states, both from a fundamental perspective and
+complete description of a topologically ordered phase; for
+with a view to applications in quantum computing.12 At the
+instance, fusion rules that dictate the outcome of bringing
+fundamental level, topologically ordered phases display a
+together a pair of quasiparticles are determined from the
+number of unique properties. In two dimensions, emergent
+modular S matrix, by the Verlinde formula.19 Previously,
+excitations in these states display nontrivial statistics. In
+Wenproposed3 usingthenon-AbelianBerryphasetoextract
+Abelian topological phases, exchanging identical excitations
+statisticsofquasiparticles.However,theideainRef.3requires
+or taking one excitation around another (braiding) leads to
+one to have access to an infinite set of ground states labeled
+characteristic phase factors, which are neither bosonic nor
+by a continuous parameter, and it is difficult to implement.
+fermionic. A further remarkable generalization of statistics
+Recently,Baisetal.20 alsodiscussedextractingtheS matrix
+occurs in non-Abelian phases where excitations introduce
+in numerical simulations, by explicit braiding of excitations.
+a degeneracy. Braiding excitations then leads to a unitary
+Incontrast,herewejustusethesetofgroundstatesonatorus
+transformation on these degenerate states, which generalizes
+todeterminethebraidingandfusingofgappedexcitations.
+thephasefactorofAbelianstates.
+Recall that the ground-state entanglement entropy of a
+These striking properties of topologically ordered phases
+two-dimensionaltopologicallyorderedphaseinadisk-shaped
+are connected to excitations. An important and interesting
+regionAwithasmoothboundaryoflengthLtakestheform
+question is whether the ground state directly encodes this
+information and, if so, how one may access it. It is well
+S
+A
+=αL−γ,wheretheuniversalconstan√tγ(cid:2)istheTEE.13–15
+Theconstantγ equalslog(D),whereD = d2isthe“total
+knownthattopologicallyorderedphasesfeatureaground-state i
+quantum dimension” associated with the topological phase,
+degeneracythatdependsonthetopologyofthespaceonwhich
+while d is the quantum dimension of the ith quasiparticle
+they are defined. Also, ground states of such states contain i
+type.ForAbelianstatesd =1,soD2issimplythenumberof
+a topological contribution to the quantum entanglement, the i
+quasiparticletypesinthetheory.Thisisalsotheground-state
+topological entanglement entropy (TEE).13–15 In this paper
+degeneracy on a torus. For example, the simplest case of
+we show that, combined, these two ground-state properties
+D2 =2correspondstotheCSLor,equivalently,theν =1/2
+can be used to extract the generalized statistics associated
+bosonic Laughlin state.21 This has, in addition to the trivial
+with excitations in these states. We apply these insights to
+excitation, a semionic quasiparticle. Unfortunately, the total
+a chiral spin liquid (CSL) wave function and numerically
+quantumdimensionDonlyprovidesapartialcharacterization
+extract the semionic statistics associated with excitations.
+oftopologicalordersincetwodistincttopologicalphasescan
+This demonstrates the promise of this approach for helping
+havethesamevalueofD.Forexample,thetopologicalphase
+1098-0121/2012/85(23)/235151(15) 235151-1 ©2012AmericanPhysicalSociety
+
+ZHANG,GROVER,TURNER,OSHIKAWA,ANDVISHWANATH PHYSICALREVIEWB85,235151(2012)
+phasesapartsincetheydonotingeneralhaveprotectededge
+states. Furthermore, it is possible to compute the TEE using
+Monte Carlo techniques on relatively larger systems,33,37 as
+also done in this paper, where the entanglement spectrum is
+notcurrentlyavailable.
+Letusbrieflysummarizethekeyideasinvolvedinthiswork.
+We recall that the number of ground states on a torus corre-
+spondstothenumberofdistinctquasiparticletypes.Intuitively,
+differentgroundstatesaregeneratedbyinsertingappropriate
+fluxes“inside”thecycleofthetorus,whichisonlydetectedby
+loopscirclingthetorus.Wewouldliketoexpressthesequasi-
+particlestatesasalinearcombinationofgroundstates.Acrit-
+icalinsightisthatthiscanbedoneusingtheTEEforaregion
+Athatwrapsaroundtherelevantcycleofthetorus.Withthis
+inhand,onecanreadilyaccessthemodularSandU matrices.
+FIG.1. (Coloronline)Twotypesofentanglementbipartitionson
+Forexample,theSmatrixisobtainedbyrelatingquasiparticle
+the torus: (a) a trivial bipartition with contractible boundaries, for
+whichtheTEEγ =logD,and(b)abipartitionwithnoncontractible statesassociatedwithdifferentcyclesofthetorus.
+We begin by elaborating on the ground-state dependence
+boundaries,wheretheTEEdependsonthegroundstate.
+ofentanglemententropy,focusingonthecaseofapartitionof
+torus into two cylinders (Sec. IIB). We present an argument
+based on a Z gauge theory has D2 =4, which could also based on the strong subadditivity property of quantum infor-
+2
+beachievedwithtwodecoupledcopiesoftheCSL.However, mationandshowthattheTEEperconnectedboundaryisnot
+knowledgeofthemodularSmatrixcouldtellthesestatesapart. identicaltothatforatrivialbipartition,suchasadiskcutout
+It is sometimes stated without qualification that the TEE of the torus. This is illustrated as an “uncertainty” relation,
+is a quantity solely determined by the total quantum dimen- betweenentropiesfortwodifferentcylindricalbipartitionsof
+sion D of the underlying topological theory. However, this thetorus.Weintroducethenotionofminimumentropystates
+holds true only when the boundary of region A consists of (MESs),namely,thegroundstateswithminimalentanglement
+topologicallytrivialclosedloops.IftheboundaryofregionA entropy(ormaximalTEE,sincetheTEEalwaysreducesthe
+is noncontractible, for example, if one divides the torus into entropy)foragivenbipartition.Thesestatescanbeidentified
+a pair of cylinders, generically the entanglement entropy is withthequasiparticlesofthetopologicalphaseandgenerated
+different for different ground states (see Fig. 1). Indeed, as by insertion of the quasiparticles into the cycle enclosed by
+shown in Ref. 22 for a class of topological states, the TEE region A. For a generic lattice wave function with a finite
+depends on the particular linear combination of the ground correlationlength,suchastheCSLwavefunctionswestudy
+stateswhentheboundaryofregionAcontainsnoncontractible later, a nonlocal measurement like the TEE is essential to
+loops.Weexploitthisdependencetoextractinformationabout identifythisbasisofMESs.
+thetopologicalphasebeyondthetotalquantumdimensionD. In Sec. III we detail a procedure that uses the ground-
+Atapracticallevel,recentprogressinnumericaltechniques state dependence of the TEE to extract the key properties
+has led to a number of proposals for topologically ordered of quasiparticle excitations by determining modular S and
+spin-liquid phases on the Kagome,23,24 honeycomb,25 and U matrices. The basic idea is to relate MESs for different
+squarelatticewithdiagonalexchange.26,27Anumberoflattice entanglement bipartitions of the torus. The MESs, which
+statesrelatedtotheLaughlinstateshavealsobeenproposedin reflectquasiparticleexcitations,aredeterminedusingtheTEE.
+recentnumericalstudies.28–32Clearly,smoking-gunnumerical InSec.IVA1wedemonstratetheground-statedependence
+signatures of topological order are increasingly needed. The numerically and calculate the entanglement entropy for the
+procedure outlined here suggests that entanglement entropy CSL21 wavefunctionasdifferentlinearsuperpositionsofthe
+could be used to numerically diagnose details of topological two ground states (Fig. 5) with the variational Monte Carlo
+orderbeyondthetotalquantumdimension,33–37whichisasin- (VMC)method.33,40,41ThisdirectlyyieldsthemodularS ma-
+glenumbersusceptibletonumericalerror.Anelegantdifferent trixoftheCSLstate,whichalsoenablesustodetectthepres-
+approach to a more complete identification of topological enceofasemionicexcitationinCSL.Thephysicaloriginofthe
+order is through the study of the entanglement spectrum.38 ground-statedependenceoftheTEEismadeexplicitbystudy-
+However,wenotethatthisrequirestheexistenceofedgestates ingaZ toriccodemodel11(Sec.IVB).Forpedagogicalpur-
+2
+andmaynotbeapplicablefortopologicalphasesliketheZ poses,inAppendixEwediscusstheextractionofthemodular
+2
+spinliquid.Forconcreteness,considerthefollowingproblem SandUmatricesforthetoriccodemodelusingouralgorithm.
+of identifying a topological phase which is known to have
+quantum dimension D =2. While Z 2 gauge theories have II. GROUND-STATEDEPENDENCEOFTHE
+thisquantumdimension,thereisanothertheory,thedoubled TOPOLOGICALENTANGLEMENTENTROPY
+CSL,39 which also has the same quantum dimension and is
+A. Theconceptof“minimumentropystates”
+alsotimereversalsymmetric.TheSmatrixcantelltheseapart,
+sincethelatterphasecontainssemions,andweshowhowthe Givenanormalizedwavefunction|(cid:5)(cid:3)andapartitionofthe
+Smatrixcan,inprinciple,beextractedfromtheentanglement systemintosubsystemsAandB,onecantraceoutsubsystem
+entropy.Notethattheentanglementspectrumcannottellthese B toobtainthereduceddensitymatrixonsubsystemA:ρ =
+A
+235151-2
+
+QUASIPARTICLESTATISTICSANDBRAIDINGFROM... PHYSICALREVIEWB85,235151(2012)
+Tr |(cid:5)(cid:3)(cid:4)(cid:5)|.TheRenyientropiesaredefinedas is minimum, i.e., heuristically, the entanglement cut has the
+B
+(cid:3) (cid:4) maximum“knowledge”aboutthesestates.Forthisreasonwe
+1
+S = log Trρn , callthemMESs.
+n 1−n A
+where n is an index parameter. Taking the limit n→1, S
+n B. Strongsubadditivityandtopologicalentanglemententropy
+recovers the definition of the usual von Neumann entropy.
+onthetorus:An“uncertainty”principle
+In this paper we often discuss the Renyi entropy with index
+n=2, S =−log(Tr(ρ2)), since it can be calculated most In this section we discuss the TEE for bipartitions of a
+2 A
+easilywiththeVMCmethod33and,atthesametime,captures torusintotwocylinders.Thiscanbedonebyslicingthetorus
+alltheinformationthatweareinterestedin. intwodistinctways,alongtheverticalorhorizontaldirections.
+For a gapped phase in two dimensions with topological Intuitively,onemightexpectthatbothbipartitionswouldhave
+orderandadisk-shapedregionAwithasmoothboundaryof the same TEE of 2γ, given the two disconnected boundaries
+lengthL ,thearealawoftheRenyientropygives ofthecylinders.However,verygeneralconsiderationsbased
+A
+onthestrongsubadditivityofthevonNeumannentropyalone
+S =α L −γ, (1)
+n n A suggestthatthisexpectationcannotbecorrect.Inpractice,itis
+where we have omitted the subleading terms. Although knownthatforawideclassoftopologicalphases,theTEEof
+the coefficient α of the leading “boundary law” term is suchnontrivialbipartitionsindeeddependsonthegroundstate
+n
+nonuniversal,thesubleadingconstantγ,whichisoftendubbed selected.22 Herewedonotaddressground-statedependence;
+the TEE, is universal and a robust property of the phase of ratherwedemonstratethattheTEEcannotbeidenticaltoits
+matterforwhich|(cid:5)(cid:3)isthegroundstate.WhenregionAhasa valuefortrivialbipartitions.Itinvokesstrongsubadditivity,a
+diskgeometry,ithasbeenshownthattheγ valuesfordifferent
+deeppropertyofquantuminformation.43Thiswillallowusto
+degenerategroundstatesareidenticalanditisalsoinsensitive come up with an uncertainty principle, which constrains the
+totheRenyientropyindexn.22,42 Itequalsγ =logD,where amountofinformationwehavewhenwecutthetorusintwo
+Disthetotalquantumdimensionofthemodel,14,15andoffers orthogonaldirections.Itsadvantageisthatitassumesalmost
+apartialcharacterizationoftheunderlyingtopologicalorder. nothingaboutthephase,exceptthatitisgapped.
+However,whensubsystemAtakesanontrivialtopology,or, Considertheground-statewavefunctionofagappedphase
+moreprecisely,whentheboundaryofAisnoncontractible,the in two dimensions and three nonoverlapping subregions, A,
+TEE contains more information,22 as we elaborate further in B, and C. The von Neumann entropies S follow the strong
+thispaper.Forsimplicityofillustration,throughoutwefocus
+subadditivitycondition:43
+onthecasewhenthetwo-dimensionalspaceisatorusT 2 and S +S −S −S (cid:3)0. (3)
+ABC B AB BC
+subsystemAwrapsaroundtheyˆdirectionofthetorusandtakes
+thegeometryofacylinder.Forsuchageometry,the(cid:2)nthRenyi
+entropycorrespondingtothewavefunction|(cid:5)(cid:3)= c |(cid:7) (cid:3) Note that this is only known to hold for von Neumann
+j j j
+isgivenbyS =α L −γ(cid:6),where|(cid:7) (cid:3)isaspecialbasisthat entropies, not Renyi entropies in general. Now consider a
+n n A n j
+wedescribeindetailbelowandγ(cid:6) isgivenby22 torus with subregions A, B, and C as shown in Fig. 2. Let
+n ⎛ ⎞ us decompose the entropy into a part that arises from local
+γ n (cid:6) ({p j })=2γ + n− 1 1 log ⎝ (cid:7) p j nd j 2(1−n)⎠ . (2) c su o b n r tr e i g b i u o t n io w ns ith an t d he a to n p o o n l l o o g ca y l o T f E a E d , i S sk = , th S e loc T al E + E S is top e o x . p F e o ct r ed a
+j
+Hered (cid:2)1isthequantumdimensionofthejthquasiparticle
+j
+and p =|c |2. For Abelian anyons, d =1. Note that d
+j j j j
+sharesthesamesubscriptj asstates|(cid:7) (cid:3)becausestates|(cid:7) (cid:3)
+j j
+can be obtained by inserting a quasiparticle with quantum
+dimension d (the ground-state degeneracy on the torus is
+j
+equaltothenumberofdistinctquasiparticles).Thisequation
+shows that the TEE for this geometry depends on the wave
+functionthrough{p }aswellastheRenyiindexn,unlikethe
+j
+casewithdiskgeometry.
+Whatisthephysicalsignificanceofbasisstates|(cid:7) (cid:3)?We
+j
+claim that these are precisely the eigenstates of the nonlocal
+operatorsdefinedontheentanglementcut,whichdistinguish
+the topologically degenerate ground states. For example,
+in the case of the quantum Hall22 (Sec. IVA2), these states
+aretheeigenstatesoftheWilsonloopoperatorassociatedwith
+the Chern-Simons gauge field around the hole exposed by
+the entanglement cut. Similarly, for a Z 2 gauge theory (Sec. FIG.2. (Color online) A torus, with the top, bottom, left, and
+IVB),thesearethestateswithdefiniteelectricandmagnetic rightsidesidentified.SubregionsA,B,andCaredefinedasshown.
+fieldfluxesperpendiculartotheentanglementcut.ForAbelian RegionsAandC areassumedtobewellseparatedcomparedtothe
+states, which have d j =1 for all j and are the focus of this correlationlength.RegionsABandBCcorrespondtobipartitionsof
+paper, the entanglement entropy associated with states |(cid:7) j (cid:3) thetorusintocylindersinorthogonaldirections.
+235151-3
+
+ZHANG,GROVER,TURNER,OSHIKAWA,ANDVISHWANATH PHYSICALREVIEWB85,235151(2012)
+to be Stopo =−γ. Quite generally one can argue that γ (cid:2)0 operator that implements π/2 rotation, while the US matrix
+utilizing the strong subadditivity condition.14 For subregions correspondsto2π/3rotationofMESs.
+definedonasimplyconnectedsurface,suchasadisk,theTEE
+isproportionaltothenumberofconnectedcomponentsofthe A. AlgorithmforextractingthemodularSmatrixfromthe
+boundary.Ifthiswerealsotrueforthetorus,wewouldexpect
+topoogicalentanglemententropy
+Stopo =Stopo =−2γ (sincetheyhaveaapairofboundaries).
+AB BC Since the MESs carry definite quasiparticle quantum
+We now show that this cannot be a consistent assignment of
+numbers,themodularS matrixmaybeexpressedas3
+TEEonthetorus.
+(cid:10) (cid:11) (cid:12)
+In order to isolate the topological part of the entropy, we S = 1 (cid:7)xˆ(cid:11) (cid:7)yˆ . (6)
+assumethatregionsAandC arewellseparatedcomparedto αβ D α β
+the correlation length of the gapped ground state. Then the
+Here D is the total quantum dimension and xˆ and yˆ are
+localcontributionscancelinthecombinationabove:Slocal +
+ABC two directions on a torus. Equation (6) is just a unitary
+Slocal−Slocal−Slocal →0. This can be argued following
+B AB BC transformation between the particle states along different
+Refs. 14 and 15. For example, consider a local deformation
+directions.Inthecaseofasystemwithsquaregeometry,theS
+nearregionA’sboundaryfarawayfromtheotherregions.This
+matrixactsasaπ/2rotationontheMESbasis|(cid:7)yˆ(cid:3).Ingeneral,
+changewillbeinSlocal,butanearlyidenticalcontributionwill β
+ABC however,xˆ andyˆ donotneedtobegeometricallyorthogonal,
+also appear in Slocal, since it only differs by the addition of
+AB and the system does not need to be rotationally symmetric,
+adistantregion.Thesewillcancelinthecombinationabove.
+as long as the loops defining |(cid:7)xˆ(cid:3) and |(cid:7)yˆ(cid:3) interwind with
+Thus,wecanrewriteEq.(3)as α β
+each other. Therefore, the modular S matrix can be derived
+Stopo +Stopo−Stopo−Stopo (cid:3)0. (4) even without any presumed symmetry of the given wave
+ABC B AB BC
+functions. Note that there is an undetermined phase for each
+ThisinequalityimpliesthattheTEEsexpectedfromthedisk
+arenotlegalforthetorus. |(cid:7)x α ˆ(cid:3) and |(cid:7)y β ˆ(cid:3) and, therefore, a phase freedom between the
+Forregionswheretheboundaryistopologicallytrivialand rows (columns), which may be fixed by the existence of an
+contractible (such as ABC or B), one expects the TEEs to identityparticle.
+beindependentofthesurfaceonwhichtheyaredefined,and Letusstartwiththetwoprimitivevectorsw(cid:7) 1 andw(cid:7) 2 that
+henceStopo =Stopo =−γ.OnlyregionsAB andBC,whose defineatorus(Fig.3)anddeterminethetransformationofthe
+ABC B MESsofw(cid:7) tothoseofw(cid:7)(cid:6),givenby
+boundarieswraparoundthetorus,aresensitivetothetopology 2 2
+ofthespacetheyaredefinedon.TheirTEEssatisfy w(cid:7)(cid:6) =n w(cid:7) +m w(cid:7) , w(cid:7)(cid:6) =n w(cid:7) +m w(cid:7) , (7)
+1 1 1 1 2 2 2 1 2 2
+γ BC +γ AB (cid:3)2γ, (5) withn m −m n =1bydefinitionofthemodulartransfor-
+1 2 1 2
+wherewehavedefinedS A to B po (BC) =−γ AB(BC) .Clearlythisdoes mation.Werestrictn 2 =−1,whichmeansthecrossproduct,
+notallowboththeTEEstobe2γ.Infact,ifoneofthemattains
+its maximal disk value, the other must vanish. Note that the w(cid:7) ×w(cid:7)(cid:6) =−w(cid:7) ×w(cid:7) =w(cid:7) ×w(cid:7) =A. (8)
+TEEreducesthetotalentropy.Thus,whentheentropyofacut 2 2 2 1 1 2
+alongoneofthecyclesofthetorusattainsitsminimumvalue, Aisthe(signed)surfaceareaofthetorus.
+i.e., we have the most knowledge about the state on the cut, Thecorrespondingmodularmatrixcanbeexpandedas
+then along the orthogonal direction, the entropy associated (cid:13) (cid:14) (cid:13) (cid:14)(cid:13) (cid:14)(cid:13) (cid:14)
+n 1−n m 1 −n 1 1 −m
+with a cut must attain its maximal value, implying that our 1 1 2 = 1 2
+knowledgeistheleast.Thereforethiscanbethoughtofasan −1 m 2 1 −1 1
+uncertainty relation, between cuts that wrap around different
+=U −n1SU −m2.
+directionsofthetorus.
+Correspondingly,accordingtoAppendixDthetransforma-
+tion
+III. EXTRACTINGSTATISTICSFROMTHE
+R=U−n1SU−m2.
+TOPOLOGICALENTANGLEMENTENTROPY
+ThemodularSandUmatricesdescribetheactionofcertain
+modular transformations on the degenerate ground states of
+the topological quantum field theory. On the other hand, the
+braiding and statistics of quasiparticles are encoded in the
+S and U matrices. For Abelian phases, the ijth entry of
+the S matrix corresponds to the phase the ith quasiparticle
+acquireswhenitencirclesthejthquasiparticle.TheU matrix
+isdiagonalandtheiithentrycorrespondstothephasetheith
+quasiparticleacquireswhenitisexchangedwithanidentical
+one. Since the MESs are the eigenstates of the nonlocal FIG.3. (Color online) Vectors w(cid:7) and w(cid:7) define a lattice with
+1 2
+operators defined on the entanglement cut, the MESs are the periodic boundary conditions. That is, points differing by integer
+canonical basis for defining S and U. The modular matrices linear combinations of w(cid:7) and w(cid:7) are to be identified as the same
+1 2
+arejustcertainunitarytransformationsoftheMESbasis.As point.Theareaofthelatticeis|w(cid:7) ×w(cid:7) |,where×denotesthecross
+1 2
+argued in Appendix D, the S matrix acts on MESs as an product.
+235151-4
+
+QUASIPARTICLESTATISTICSANDBRAIDINGFROM... PHYSICALREVIEWB85,235151(2012)
+Because the U matrix is diagonal by definition, its left (see Appendix E). More interestingly, when the symmetry
+(right)matrixproductonlyaddsanadditionalphasefactorto operationRisa2π/3rotation,onegetstheUSmatrix.Hence,
+eachrow(column)andcanbeeliminated.Therefore,without if one starts with an arbitrary basis |ξ (cid:3) for the degenerate
+α
+any argument on the symmetry, the generalized algorithm is ground-statemanifoldofatopologicalorder,theproblemofS
+asfollows. andU matricescanbereducedtothetransformationproperty
+(1) Given a set of ground-state wave functions |ξ (cid:3), cal- ofchosenbasisstates|ξ (cid:3)underπ/2and2π/3rotationsand
+α α
+culate the TEE of an entanglement bipartit(cid:2)ion along the w
+2
+theunitarytransformationthattranslates|ξ
+α
+(cid:3)basistotheMESs
+direction, for a linear combination |(cid:5)(cid:3)= c |ξ (cid:3). Search |(cid:7) (cid:3).Toillustratethispoint,weextracttheUS matrixforthe
+α α α
+fortheminimumofTEE2γ −γ(cid:6) inthec parameterspace. Z gauge theory in Appendix E by putting the Z toric code
+α 2 2
+That gives one MES |(cid:7) (cid:3) and the corresponding quantum onatriangularlatticewhichhas2π/3rotationsymmetry.
+β
+dimension2log(d )=2γ −γ(cid:6).Notethattheexistenceofan
+β
+identityparticleensuresatleastoneminimumTEE2γ −γ(cid:6) =
+IV. DEMONSTRATIONOFTHEALGORITHM
+0.
+TOEXTRACTSTATISTICSFROMENTANGLEMENT
+(2) Iterate step 1 but with c in the parameter space
+α
+orthogonal to all previously obtained MESs |(cid:7) β (cid:3). Continue A. Revisitingchiralspinliquid:Semionicstatistics
+this process until we have the expressions for all |(cid:7) β (cid:3). This fromentanglemententropy
+givesaunitarytransformationmatrixU withtheαβthentry
+1 In this section, to illustrate the state dependence of TEE,
+being c , which changes the basis from |ξ (cid:3) to |(cid:7) (cid:3). Note
+αβ α β we study the entanglement properties in a lattice model of
+thatthereisarelativeU(1)phasedegreeoffreedomforeach
+an SU(2) spin-symmetric CSL on a torus. The CSL has
+|(cid:7) (cid:3).
+β the same topological order as the half-filled Landau level
+(3) Repeatstep1andstep2butwiththeentanglementcut ν =1/2 Laughlin state21,44 of bosons (these bosons can be
+along the w(cid:6) direction, which satisfies Eqs. (7) and (8) and
+2 thought of as residing at the location of spin-up moments)
+obtainstheunitarytransformationmatrixU .
+2 and has twofold degenerate ground states on the torus. Even
+(4) The modular S matrix is given by U −1U except for
+2 1 though topological properties of CSL are well established
+an undetermined phase for each MES corresponding to a
+using field-theoretic methods,3 unlike continuum Laughlin
+row or a column. The existence of an identity particle that
+states,CSLcannotbedealtwithanalyticallyandthusprovides
+obtains a trivial phase encircling any quasiparticle helps to
+a nontrivial demonstration of our method. In particular, the
+fix the relative phase between different MESs, requiring the
+low-energytheoryofCSLpredictsasemion,whichisdifficult
+entriesinthefirstrowandcolumntoberealandpositive.This
+toverifyinthelatticewavefunctiondirectly.Weshowthatour
+completelydefinesthemodularS matrix.
+algorithmreadilydemonstratestheexistenceofasemionasan
+The above algorithm is able to extract the modular trans-
+excitationinCSL,whichisthemainobjectiveofthissection.
+formationmatrixS and,hence,braidingandmutualstatistics
+WenotethattopologicalorderinthelatticeversionofCSLcan
+of quasiparticle excitations just using the ground-state wave
+beconfirmedbycalculatingitsTEEnumericallyusingMonte
+functionsasaninput.Further,thereisnolossofgeneralityfor
+Carlo and verifying that it is nonzero and agrees with the
+non-Abelianphases,whichcanbedealtwithbyenforcingthe
+field theoretical predictions.33 The fact that we are working
+orthogonality condition in step 2, which guarantees that one
+with a generic lattice wave function rather than an idealized
+obtains states with quantum dimensions d in an increasing
+α zero-correlation-lengthstateoratopologicalfieldtheorywill
+order.
+introducenewconceptualissues;inparticular,theconnection
+InAppendixEwetakethesquarelatticetoriccodemodelas
+betweenMESsandlatticegroundstatesisdiscussed.
+anexampleonceagain,butwithoutpresuminganysymmetry
+InSec.IVA1wedemonstratetheground-statedependence
+ofthesystem.
+of CSL using a VMC algorithm. In Sec. IVA2, we review
+the basics of CSL so as to illustrate the physical meaning of
+CSL MESs. Finally, Sec. IVA3 illustrates our algorithm to
+B. Extractingothermodularmatricesfromthetopological
+extractthemutualstatisticsofquasiparticlesinCSLusingthe
+entanglemententropy
+entanglementdataobtainedusingtheVMC.
+InAppendixE,wecalculatetheU matrixfortheZ toric
+2
+code model, given the simple action of U on |ξ (cid:3). Though
+ab
+wewereunabletofindageneralalgorithmfortheU matrix, 1. Ground-statedependenceofthetopologicalentanglement
+as we did for the the S matrix in Sec. IIIA, in the presence entropyinachiralspinliquid
+of certain symmetries, U can indeed be extracted given a set Webeginbyreportingtheresultsofanumericalexperiment.
+ofground-statewavefunctions|ξ (cid:3).Thisisachievedbyfirst We extract the TEE of linear combinations of the two
+α
+calculatingtheactionRonthestates|ξ (cid:3)underthissymmetry ground states of the CSL and show that it indeed depends
+α
+operation and then translating it into the action on MESs. systematically on the chosen linear combination, when the
+Specifically, the corresponding modular matrix is given by entanglement cut wraps around the torus. We then predict
+U†RU, where the unitary matrix U is obtained through the thedependencetheoreticallyandfindexcellentagreementas
+firsttwostepsofthealgorithminSec.IIIA. showninFig.5.
+TheaforementionedsymmetrytoextracttheSmatrixisthe Wave functions of an SU(2) spin-symmetric CSL are
+π/2rotation,asshowninSec.IVA3andthefirstexamplein obtained in the slave particle construction. We write
+AppendixD,butitmaybegeneralizedtosymmetriessuchas the spins as bilinear in fermions S (cid:7)= 1 2 f σ †[σ(cid:7)] σσ(cid:6)f σ(cid:6) and
+therotationofotheranglesandeventhereflectionsymmetry assumeachirald-wavestateforthefermions.Operationally,
+235151-5
+
+ZHANG,GROVER,TURNER,OSHIKAWA,ANDVISHWANATH PHYSICALREVIEWB85,235151(2012)
+thespinwavefunctionsareobtainedbyGutzwillerprojection
+of a d x2−y2 +id xy superconductor to one fermion per site.
+Moretechnicaldetailsregardingthiswavefunctionaregiven
+in Appendix B. We consider the system on a torus. Before
+projection, one can write down different fermion states by
+choosing the periodic or antiperiodic boundary conditions
+along the xˆ and yˆ directions. These boundary conditions are
+invisible to the spin degrees of freedom, which are bilinear
+in the fermions and lead to degenerate ground states.4 We
+denotethegroundstatesbythemeanfieldfluxesinthexˆ and
+yˆ directions as |ϕ ,ϕ (cid:3), ϕ =0,π. The twofold degeneracy
+1 2 1,2
+of the CSL implies that only two of the four ground states
+|0,0(cid:3), |π,0(cid:3), |0,π(cid:3), and |π,π(cid:3) are linearly independent. Here FIG.5. (Color online) Filled (black) squares show the numeri-
+we consider linear combinations of |0,π(cid:3) and |π,0(cid:3), which callymeasuredTEE2γ −γ(cid:6)foraCSLgroundstatefromthelinear
+wehavenumericallycheckedtobeindeedorthogonalforthe
+combination|(cid:5)(cid:3)=cosφ|0,π(cid:3)+sinφ|π,0(cid:3)asafunctionofφwith
+systemsizesthatweconsider: VMCsimulationsusingthegeometryinFig.4(b).Thesolidcurve
+isthetheoreticalvaluefromEq.(14).Theperiodicityisπ/2.Open
+|(cid:5)(φ)(cid:3)=cosφ|0,π(cid:3)+sinφ|π,0(cid:3). (9) (red)circlesshowtheTEEforthesamelinearcombinationforatrivial
+WecalculatedtheTEEforstate|(cid:5)(cid:3)usingtheVMCmethod bipartition.Inthelattercase,theTEEisessentiallyindependentofφ
+and,again,agreesratherwellwiththetheoreticalexpectation[dashed
+and Gutzwiller projected wave functions based on Eq. (B1).
+(red)curve].
+An efficient VMC algorithm which allows us to study a
+linearcombinationofGutzwillerprojectedwavefunctionsis
+In the second line we have exploited symmetries of the
+developedanddetailedinAppendixA.Toourknowledge,this
+constructiontoreducetheproblemtocalculationoftheRenyi
+isthefirstnumericalstudytoaccomplishthis.
+entropy S of the three regions A, AC, and ABC for each
+2
+The geometry and partition of the system are shown in
+φ. To measure S numerically, we calculated the expectation
+2
+Fig.4(b). Thetotalsystemsizeis12latticespacingsinboth
+value of a Swap operator; see Ref. 33 for an elaboration of
+directions,withrectanglesAandB being6×4andrectangle themethodused. A Ourresultsfor2γ −γ(cid:6)(φ)correspondingto
+C 12×4.NotethatsubsystemsAC,BC,AB,C,andABC
+differentlinearcombinationsparameterizedbyφareshownin
+all wrap around the yˆ direction so that their TEEs will all
+Fig.5.Thisisoneofthemainresultsofthiswork.
+be equal (and denoted γ(cid:6)). This is the quantity we wish to
+We note that the TEE strongly depends on the particular
+access. For contractible subsystems A and B it remains the
+linearcombinationchosen.Thezeroofthecurveimpliesthat
+sameasthatexpectedforaregionwithasingleboundary,cut theTEEγ(cid:6) =2γ,theintuitivevalueforanentanglementcut
+out of a topologically trivial surface (such as a bigger disk)
+withtwoboundaries.ThecorrespondingstateistheMES.We
+γ. We use the construction due to Kitaev and Preskill15 and
+notethattheMESoccursatanontrivialangle.Understanding
+effectivelyisolatethetopologicalcontributionsinthelimitof
+thisrequiresconnectingthelatticestatesandthefieldtheory,
+a small correlation length, by evaluating the combination of
+whichisdonebelow.Wepredictthisangletobe0.125π and
+entropies S +S +S −S −S −S +S . This
+A B C AB AC BC ABC the overall TEE dependence to be Eq. (14), which is plotted
+combinationisrelatedtotheTEEby
+asthesolidcurveinFig.5,inrathergoodagreementwiththe
+−2γ +γ (cid:6) =S +S +S −S −S −S +S numericaldata.
+A B C AB AC BC ABC
+=2S −2S +S . (10)
+A AC ABC 2. Theoreticalevaluationoftheground-statedependenceofthe
+topologicalentanglemententropyinchiralspinliquid
+wavefunctions
+A calculation of the ground-state dependence of the TEE
+involvestwosteps.First,weaskthefollowingquestion:Given
+astateexpressedasalinearcombinationofMESs,whatisthe
+expected TEE? For the CSL, this question has already been
+answeredinRef.22;theTEEforastate|ψ(cid:3)=a |1(cid:3)+a |2(cid:3)
+1 2
+is
+γ (cid:6)−2γ =log(|a |4+|a |4), (11)
+1 2
+where|1(cid:3),|2(cid:3)areMESsforcuttingthetorusinthedirection
+inquestion.
+FIG.4. (Coloronline)Separationofthesystemintosubsystems
+Second, we need to understand the relation between the
+A,B,andCandenvironment;theperiodicorantiperiodicboundary
+condition is employed in both xˆ and yˆ directions. (a) Subsystem MESandthephysicalstatesthatappearintheGutzwillerwave
+ABC is an isolated square and the measured TEE has no ground- function. In general, it appears that the only way to identify
+statedependence.(b)SubsystemABCtakesanontrivialcylindrical MESs in a generic wave function is by calculating the TEE.
+geometry and wraps around the yˆ direction, and TEE may possess However, when the lattice model has additional symmetry,
+ground-statedependence. which can also be used to identify MESs. Here, we have a
+235151-6
+
+QUASIPARTICLESTATISTICSANDBRAIDINGFROM... PHYSICALREVIEWB85,235151(2012)
+12×12systemdefinedonasquarelatticeandweexploitthe NotethatwehaveusedthesymbolS fortheabovematrix
+π/2rotationsymmetrytoestablishaconnectionbetweenthe becauseitisindeedthemodularSmatrixoftheChern-Simons
+fluxstates|ϕ ,ϕ (cid:3)oftheGutzwilleransatzandtheMESs. topologicalquantumfieldtheorycorrespondingtoaCSL.We
+1 2
+The Gutzwiller projected ground states of the CSL, |0,0(cid:3) recallthatthemodularS matrixtransformstheeigenstatesof
+and|π,π(cid:3),areclearlyinvariantunderaπ/2rotationsymmetry one Wilson loop operator T to those of T . We return to the
+2 1
+up to a phase factor. A simple calculation shows that discussionofderivingtheSmatrixfortheCSLstateusingthe
+the |0,0(cid:3) state acquires phase factor −1, while the |π,π(cid:3) entanglement properties of the ground states in Sec. IVA3.
+state acquires no phase under rotation. Similarly, the states HerewerestrictourselvestothecalculationoftheTEEforthe
+√1 (|0,π(cid:3)±|π,0(cid:3))acquireaphase±1underrotation.Having CSL.
+2
+establishedthetransformationoflatticestatesunderrotation, Since we are interested in the entanglement entropy with
+we now study how the MESs in the field theory respond to respect to a cut with noncontractible boundaries, such as the
+rotations. We will see that π/2 rotation in the basis of the one shown in Fig. 1(b), let us represent all our states in the
+MESsisdescribedbythemodularSmatrix.Theeigenvectors basisoftheeigenstatesofT
+2
+,i.e.,states(0,1)and(1,0).Then
+of the modular S matrix will then be identified with lattice bymatchingeigenstatesoftheSmatrixintheabovebasisand
+statesthatarerotationeigenstates. rotationeigenstatesofthelatticeproblem,weconcludethat
+The CSL has the same topological order as the half-filled (cid:13) (cid:14) (cid:13) (cid:14)
+Landaulevelν =1/2Laughlinstate21,44 ofbosons.Thefield |π,0(cid:3)= sin π ,cos π T , |0,π(cid:3)= cos π ,−sin π T .
+theorydescribingthetopologicalorderofaν =1/kLaughlin 8 8 8 8
+stateisdescribedbythefollowingChern-Simonsaction.Note
+We can now expand the general linear combination state
+that here only the very long wavelength degrees of freedom |(cid:5)(φ)(cid:3)inMESs:
+areretained:
+(cid:15)
+k
+|(cid:5)(cid:3)=cosφ|0,π(cid:3)+sinφ|π,0(cid:3)
+S = a μ ∂ υ a λ (cid:18)μυλ. (cid:2) (cid:19) π (cid:20) (cid:19) π (cid:20)(cid:3)
+4π = cos φ− ,sin φ− . (13)
+8 8
+(cid:16)
+One can define the W
+(cid:16)
+ilson loop operators T
+1
+=eiθ1 =
+ei axdx andT
+2
+=eiθ2 =ei aydy aroundthetwodistinctcycles Then, according to Eq. (2), theoretically one expects the
+followingexpressionfortheTEE:
+ofthetorus.Intermsofθ ,theactionisgivenby
+i
+(cid:15)
+S =i k dtθ θ˙, 2γ −γ (cid:6) =log 4 , (14)
+2π
+1 2 3+sin(4φ)
+whichimpliesthat,attheoperatorlevel,[θ ,θ ]=i2π or which is compared with the numerical data in Fig. 5. The
+1 2 k MESsoccuratthevalueofφ =π/8(modπ/2).
+T T =T T e2πi/k.
+1 2 2 1
+Owing to the above relation, there are k orthogonal ground 3. ModularSmatrixofachiralspinliquidfromthetopological
+states|ψ (cid:3)thatcanbechosentotransformunderT as entanglemententropy
+m i
+T 2 |ψ m (cid:3)=e2πi(m−1)/k|ψ m (cid:3), T 1 |ψ m (cid:3)=|ψ m+1 (cid:3). Let us consider the CSL wave functions studied in
+Sec.IVA1andassumethatwedidnothaveanyinformation
+In the case of a CSL phase, k =2. Let us label the two about the individual quantum dimensions or the modular S
+degenerate ground states as (1,0)T and (0,1)T, which are matrix. The only information that is provided is the twofold
+eigenstatesofT 2 : degenerate ground-state wave functions |π,0(cid:3) and |0,π(cid:3). We
+T (1,0)T =(1,0)T , T (0,1)T =−(0,1)T ,
+constructthelinearcombination|(cid:5)(cid:3)asEq.(13)andcalculate
+2 2
+its TEE for a nontrivial bipartition as Fig. 1(b) on a π/2
+T 1 (1,0)T =(0,1)T , T 1 (0,1)T =(1,0)T . rotationsymmetriclattice.Consequently,wegetthe2γ −γ(cid:6)
+The last two equations are due to the commutation relation dependenceonparameterφinFig.5.
+T 1 T 2 = √ −T 2 T 1 . It follow√s that the eigenstates of T 1 are We note that the minimum of the 2γ(cid:6)−γ attained is
+(1,1)T / 2and(1,−1)T / 2. approximately0.AccordingtoEq.(2),thisimpliesthatatleast
+The significance of the T 1,2 eigenstates is that they are
+oneofthequantumdimen(cid:21)sionsd
+i
+should
+√
+be1.Sincethetotal
+MESs22 for cuts whose boundaries are parallel to the loops quantumdimensionD = d2+d2 = 2,thisimpliesthat
+0 1/2
+used to define T 1,2 . This is because eigenstates of these loop d
+0
+=d
+1/2
+=1. Also, we see that the MES lies at φ ≈0.14π
+operatorshaveafixedvalueoffluxenclosedwithintherelevant
+byfittingFig.5toEq.(2).
+cycleofthetorus,whichminimizestheentanglemententropy ForasystemwithsquaregeometrytheS matrixdescribes
+foraparallelcut. theactionofπ/2rotationontheMESs.Sincethetwostates
+Now consider a π/2 rotation, under which θ 1 →θ 2 and |0,π(cid:3)and|π,0(cid:3)transformintoeachotherunderπ/2rotation,
+θ 2 →−θ 1 soT 1 →T 2 andT 2 →T 1 −1 =T 1 .Thus,thematrix this implies that in the basis {|0,π(cid:3),|π,0(cid:3)}, the modular S
+representing the effect of π/2 rotation for CSL in the T 2 matrix is given by the Pauli matrix σ x . To change the basis
+eigenstatebasisis toMESs,wejustneedaunitarytransformationV thatrotates
+(cid:17) (cid:18)
+√1 √1 the |0,π(cid:3)|π,0(cid:3) basis to the MES basis. The V is determined
+S = 2 2 . (12) by the fact that one needs to rotate the |0,π(cid:3)|π,0(cid:3) basis by
+√1 −√1 anangle≈0.14π toobtaintheMES(thisisthenumerically
+2 2
+235151-7
+
+ZHANG,GROVER,TURNER,OSHIKAWA,ANDVISHWANATH PHYSICALREVIEWB85,235151(2012)
+determinedvalue,theexactvaluebeingπ/8).Therefore,
+(cid:13) (cid:14)
+S =V † 0 1 V,
+1 0
+where
+(cid:13) (cid:14)
+cos(0.14π) −sin(0.14π)eiϕ
+V ≈
+sin(0.14π) cos(0.14π)eiϕ
+from the two MESs—(cos(0.14π),sin(0.14π))T and (−
+sin(0.14π),cos(0.14π))T—andϕisanundecidedphase.This
+yields the following value for the approximate modular S
+matrix:
+(cid:13) (cid:14)
+sin(0.28π) cos(0.28π)eiϕ
+S ≈ .
+cos(0.28π)e−iϕ −sin(0.28π) FIG.6. (Color online) Illustration of a lattice of the toric code
+model;linksspannedbystarandplaquettearehighlightedinredand
+The existence of an identity particle requires positive real
+blue,respectively.
+entriesinthefirstrowandcolumnandimpliesϕ =0,which
+gives
+geometries, first the cylinder and then the torus. The former
+(cid:13) (cid:14)
+0.77 0.63 casehasapairofdegenerategroundstatesandisthesimplest
+S ≈ .
+0.63 −0.77 settingtodemonstratethestatedependenceoftheTEE.
+ComparingthisresultwiththeexactexpressioninEq.(12),
+1. Cylindergeometry
+weobservethateventhoughtheS matrixobtainedusingour
+On a cylinder, the Hamiltonian in Eq. (15) leads to a pair
+methodisapproximate,someofthemoreimportantstatistics
+can be extracted exactly. In particular, the above S matrix ofdegenerategroundstates(theA s partoftheHamiltonianis
+tells us that the quasiparticle corresponding to d =1 does suitably modified at the boundary of the cylinder to include
+0 onlythreelinks).Thetwonormalizedgroundstates,|ξ (cid:3)and
+notacquireanyphasewhenitgoesaroundanyotherparticle 0
+|ξ (cid:3), are given by equal superpositions of electric field loop
+andcorrespondstoanidentityparticleasexpected,whilethe 1
+quasiparticle corresponding to d =1 has semion statistics configurations which have an even and odd winding number
+1/2
+around the cylinder, respectively (see Fig. 7). Consider now
+sinceitacquiresaphaseofπwhenitencirclesanotheridentical
+partitioningthecylinderintotwocylindricalregions,AandB.
+particle.Numericalimprovementscanfurtherreducetheerror
+ThentheSchmidtdecompositionofthesegroundstatescanbe
+in pinpointing the MES, thereby leading to a more accurate
+value of the S matrix. As another application, we study the writtenas
+actionofmodulartransformationontheMESs|(cid:7) α (cid:3)fortheZ 2 |ξ (cid:3)= (cid:24) 1 (cid:7)(cid:3)(cid:11) (cid:11) (cid:20)A (cid:12)(cid:11) (cid:11) (cid:20)B (cid:12) + (cid:11) (cid:11) (cid:20)A (cid:12)(cid:11) (cid:11) (cid:20)B (cid:12)(cid:4) ,
+gaugetheoryinAppendixE. 0
+2N
+{ql },0 {ql },0 {ql },1 {ql },1
+q {ql }
+(cid:7)(cid:3)(cid:11) (cid:12)(cid:11) (cid:12) (cid:11) (cid:12)(cid:11) (cid:12)(cid:4)
+B. Toriccodemodel:Apedagogicalillustrationofthealgorithm |ξ (cid:3)= (cid:24) 1 (cid:11) (cid:20)A (cid:11) (cid:20)B +(cid:11) (cid:20)A (cid:11) (cid:20)B ,
+1
+2N
+{ql },0 {ql },1 {ql },1 {ql },0
+HereweuseKitaev’storiccodemodel11 asapedagogical q {ql }
+example to understand the ground-state dependence of the (17)
+TEEandthenatureoftheMESsforaZ gaugetheory.
+2 wheretheN distinctconfigurationsrepresentedby{q}denote
+ConsiderthetoriccodeHamiltonianofspinsdefinedonthe q l
+linksofasquarelattice,11 theelectricfieldconfigurationsatthecut.Thenumberoffield
+(cid:7) (cid:7)
+H =− A − B , (15)
+s p
+s p
+wheresandprepresentthelin(cid:22)ksspannedbysta(cid:22)randplaquette
+asshowninFig.6,andA = σx,B = σz.Since
+s j∈s j p j∈p j
+all individual terms in the Hamiltonian commute with each
+other, ground states are constructed from the simultaneous
+eigenstates of all A and B . Define the operator Wz(C)
+s p
+associated with a set of closed curves C on the bonds of the
+lattice,asfollows:
+(cid:23)
+Wz(C)= σz. (16) FIG.7. (Color online) Snapshot of the ground state of the
+j
+cylinder.Closed-loopstrings(“Z electricfields”)canwraparound
+j∈C 2
+thecylinder.Groundstatesaredoublydegenerate,correspondingto
+Thenthegroundstat(cid:2)eisanequalsuperpositionofallpossible even-andodd-winding-numbersectors.Thetotalnumberofstrings
+loopconfigurations: C W a z b (C)|vac x (cid:3),where|vac x (cid:3)isastate crossingthecut(cid:21)equalsthewindingnumber,modulo2.Thenumber
+withσ x =−1oneverysite.Theclosedloopsareinterpretedas ofstringscrossingattheboundary(cid:22)iseveninthedegenerateground
+electricfieldlinesoftheZ 2 gaugetheory.Wenowconsidertwo states.
+235151-8
+
+QUASIPARTICLESTATISTICSANDBRAIDINGFROM... PHYSICALREVIEWB85,235151(2012)
+linescrossingthecutisalwayseven,sincethegroundstateis groundstates:
+(cid:7)
+composedofclosedloops.Fortrivialbipartitions,thisexhausts
+all terms in the Schmidt decomposition.14 However, given |ξ ab (cid:3)= W a z b (C)|vac x (cid:3),
+thattheboundaryofthecutisnoncontractible,theadditional C
+index 0,1 appears, which counts the parity of the electric where the subscript a (b) takes on binary values 0,1 and
+field winding around the cylinder, within a partition. These denotes whether the loops C belong to the even- or odd-
+are correlated between the two partitions, for fixed-winding- winding-numbersectorsalongthexˆ (yˆ)direction,and|vac (cid:3)
+x
+numbergroundstates.Thisisthekeydifferencefromatrivial isastatewithσ =−1oneverysite.Thefourgroundstates
+x
+bipartition,leadingtotheground-statedependenceoftheTEE. cannot be mixed by any local operator and hence realize a
+Wenowcalculatetheentanglemententropyassociatedwith Z topological order. Let us consider a ground state as the
+2
+such a cut for an arbitrary linear combination of these two followinglinearcombination:
+ground states, |(cid:20)(cid:3)=c |ξ (cid:3)+c |ξ (cid:3), with unit norm. Using (cid:7)
+0 0 1 1
+Eq.(17)onecaneasilyverifythat |(cid:20)(cid:3)= c a,b |ξ ab (cid:3). (20)
+(cid:7)(cid:25) (cid:11) (cid:12)(cid:11) (cid:12) a,b=0,1
+|(cid:20)(cid:3)= (cid:24) 1 (c +c ) (cid:11) (cid:20)A (cid:11) (cid:20)B
+2N
+0 1 {ql },+ {ql },+
+We are interested in calculating the entanglement entropy
+q {ql }
+(cid:11) (cid:12)(cid:11) (cid:12)(cid:26) forstate|(cid:20)(cid:3),correspondingtothepartitionshowninFig.1(b),
++(c −c ) (cid:11) (cid:20)A (cid:11) (cid:20)B , (18)
+0 1 {ql },− {ql },
+√
+− and the dependence of the TEE on parameters c
+a,b
+. After
+straightforwardalgebra(seedetailsinAppendixC),onefinds
+where |(cid:20)A(B) (cid:3)=(|(cid:20)A(B)(cid:3)±|(cid:20)A(B)(cid:3))/ 2. For a Schmidt
+{ql },± {(cid:2)ql },0√ {ql },1 thefollowingexpressionforsubsystemAwithboundariesof
+decomposition |(cid:20)(cid:3)= λ |(cid:20)A(cid:3)|(cid:20)B(cid:3), the nth Renyi en-
+a a (cid:2)a a lengthL:
+tropy is given by S = 1 log( λn). We arrive at: S =
+1−
+1
+n
+logN
+q
+1−n[p
++
+n +p n
+−
+n], 1 w − h n erep± = a | a c
+0
+±c
+1
+|2/2.Recogn n iz- S n =Llog(2)−γ n (cid:6)
+ingthattheclosed-loopconstraintleadstoN =2L−1,where where
+q
+Listhelengthofthecut,andusingthedefinitionofTEEin (cid:7)4
+1
+Eq.(1),wehave γ (cid:6) =2log (2)− log pn (21)
+n 1−n j
+1 j=1
+γ (cid:6) =log2− log(pn +pn). (19)
+n 1−n + −
+and
+Thus, for the electric field winding eigenstates |ξ (cid:3), where
+p± =1/2,theTEEvanishes.However,fortheireq
+0,
+u
+1
+alsuper- p =
+|c
+00
++c
+01
+|2
+, p =
+|c
+00
+−c
+01
+|2
+,
+1 2
+positions when one of p+ or p− vanishes, the TEE attains 2 2 (22)
+its maximal value log2. These are eigenstates of the Wilson |c +c |2 |c −c |2
+p = 10 11 , p = 10 11 .
+loopoperatorthatencirclesthecylinderandmeasurestheZ 2 3 2 4 2
+magneticflux(visonnum(cid:22)ber)threadingit.Anexampleofsuch
+a flux operator is F = j∈Q σ j z, where Q is a closed curve This is indeed consistent with Eq. (2), given that γ =
+that loops once around the cylinder, such as the boundary (cid:22) logD =log2 and d =1 for an Abelian topological order
+j
+in Fig. 7. Since the TEE reduces the entanglement entropy, with D2 =4 degenerate ground states. Further, Eq. (21)
+the maximum TEE states correspond to MESs. Why are readilyleadstothefollowingfourMESs:
+these MESs eigenstates of flux through the cylinder for this
+1 1
+particular cut? The number of electric field lines crossing |(cid:7) (cid:3)= √ (|ξ (cid:3)+|ξ (cid:3)), |(cid:7) (cid:3)= √ (|ξ (cid:3)−|ξ (cid:3)),
+1 00 01 2 00 01
+the boundary (cid:22) is always even. This constraint carries some 2 2
+information and hence lowers the entropy by bringing in 1 1
+|(cid:7) (cid:3)= √ (|ξ (cid:3)+|ξ (cid:3)), |(cid:7) (cid:3)= √ (|ξ (cid:3)−|ξ (cid:3)).
+the standard TEE of log2. On the other hand, the topology 3 10 11 4 10 11
+2 2
+of the cut boundary (cid:22) allows for a determination of which
+(23)
+magnetic flux sector the cylinder is in. A state that is not an
+eigenstateofmagneticfluxthroughthecylinderleadstoaloss
+of information and hence a positive contribution to the total Whatisthephysicalsignificanceofthesefourstatesbeing
+entanglement entropy (and reduces the TEE). This suggests theMESs?Similarlytothecylindergeometrycase,thesestates
+thattheMESsareeigenstatesofloopoperatorswhichcanbe
+defined parallel to the cut (cid:22). This is further substantiated by TABLE I. Z magnetic flux T , Z electric flux F , and cor-
+2 y 2 y
+the result for the torus case discussed below, where they are responding quasiparticle of the Wilson loop operator for the four
+simultaneouseigenstatesofmagneticfluxenclosedbythecut
+MESs|(cid:7)
+α
+(cid:3)ofthetoriccodewiththesystemgeometryinFig.1(b).
+andelectricfluxpenetratingthecut. DefinitionsofT y andF y aregiveninAppendixC.
+2. Torusgeometry MES T y F y Quasiparticle
+(cid:7) 0 0 1
+Thefourdegenerategroundstatesaredistinguishedbythe 1
+(cid:7) 1 0 m
+even-odd parity of the winding number of electric field lines 2
+(cid:7) 0 1 e
+aroundthetwocyclesofthetorus.TheoperatorWz(C),which 3
+(cid:7) 1 1 em
+4
+generates the set of closed loops C, can be used to write the
+235151-9
+
+ZHANG,GROVER,TURNER,OSHIKAWA,ANDVISHWANATH PHYSICALREVIEWB85,235151(2012)
+extent.WenotethatWenproposedadifferentwaytoextractS
+andU matricesbycalculatingthenon-AbelianBerryphase,3
+which in practice may be difficult to implement, especially
+on a lattice, since it requires calculating the degenerate
+ground states ψ of the system as a function of the modular
+n
+parameter τ =ω /ω and calculating the derivatives such as
+2 1
+(cid:4)ψ (τ)|∂ |ψ (τ)(cid:3).
+n τ m
+Wenotethattheremaybecaseswheretheπ/2and2π/3
+rotationsoftheMESsmaynotbeexactlyidentifiablewiththe
+modular S and US matrices, respectively. This may happen,
+for example, when the particles have an internal angular
+momentum,whichmaycausethewavefunctiontoacquirean
+additionalphaseuponrotation,overandabovethephasedueto
+FIG.8. (Coloronline)ThefourminimumentropystatesoftheZ
+2 theunderlyingtopologicalstructure.IftheMESscorrespond
+topologicalphasecorrespondingtothebipartitionshown,expressed
+to spin-singlet spin-liquid wave functions (such as the CSL
+aslinearcombinationsofthefourmagneticfluxstates.Themagnetic
+studied in this paper) and/or string-net models (such as the
+π fluxisrepresentedbythethick(blueandgreen)lines.
+toric code model) where there is no such internal structure,
+are the simultaneous eigenstates of the Wilson loop operator there should not be such an additional phase. Further, since
+that encircles the torus and measures the Z magnetic and all MESs are locally the same, they should all acquire the
+2
+electricfluxesthreadingit,asshowninTableIandFig.8.We same extra phase due to any local physics, and therefore,
+leavemoredetailedalgebratoAppendixC. the extra phase may be separable from the topological
+Whenγ(cid:6)ismaximized,thecorrespondingS isminimized, phase.
+n n
+providing the maximum possible information about a given For quantum Hall systems, because of the bulk-edge
+state. Since the cut is made along yˆ, it can measure the Z correspondence, the fusion algebra and topological spin
+2
+magneticandelectricfluxesdirectedparalleltoxˆ.Hencethe of the bulk quasiparticles also determine the fusion rules
+MES |(cid:7) (cid:3) with definite magnetic and electric flux sectors and scaling dimensions for the primary fields in the chi-
+α
+maximizes the TEE with γ =2log(2), a contribution of ral Conformal Field Theory (CFT) at the edge. There-
+topo
+log(2)fromeachofthetwoboundaries.Linearsuperposition fore, in the context of quantum Hall systems, the entan-
+of different MESs |(cid:7) (cid:3) scrambles the information obtained glement entropy of the ground-state manifold determines
+α
+frommagneticandelectricsectors;especially,intheextreme robust features of the fields in the corresponding edge
+caseofequalsuperpositionof|(cid:7) (cid:3),allinformationaboutthe CFT.
+α
+global quantum numbers has been lost and we have γ(cid:6) =0. It would also be interesting to consider generalization of
+ThisoffersanotherexamplewhereMESsaretheeigenstatesof the methods developed in our paper to higher dimensions.
+loopoperatorsdefinedonthecylinderfromtheentanglement Discrete gauge theories furnish the best known theories with
+cut. long-range entanglement in D (cid:2)3 dimensions, and akin to
+D =2, they again support degenerate ground states on the
+torus.Itisknownthatthesethesetheoriesagainhavenonzero
+V. CONCLUSION
+TEEthatisproportionaltolog(|G|),thenumberofelements
+In this paper, we have demonstrated that, on general inthegaugegroup.45,46Asimplegeneralizationofthemethod
+grounds, the entanglement entropy of topologically ordered developed in this paper shows that the TEE for bipartition
+phases depends on the ground state when the entanglement thathasnoncontractibleboundarieswillagaindependonthe
+cut is noncontractible. Furthermore, we have shown that this ground state,and one willagain find certainMESs thathave
+dependence can be used to extract braiding and statistics of themaximumknowledgeofthequantumnumbersassociated
+the anyonic quasiparticles in the topological phase. We have with an entanglement cut. Yet as we are not aware of a
+alsodevelopedanefficientVMCalgorithmtoimplementour simple generalization of modular transformations to higher
+algoritm to extract braiding and statistics of quasiparticles. dimensions, the meaning of the matrix that relates MESs for
+We have illustrated the general algorithm by studying two orthogonal entanglement cuts in higher dimensions requires
+well-known topologically ordered phases, the CSL and the furtherinvestigation.
+Z spinliquid,usingtheVMCmethodandtheZ toriccode
+2 2
+model analytically. We have also introduced the concept of
+MESsandexplainedtheirphysicalsignificance.
+ACKNOWLEDGMENTS
+Wenotethatouralgorithmiscompletelydifferentfromthe
+use of entanglement spectra38 to extract universal properties We thank Alexei Kitaev, Michael Levin, Chetan Nayak,
+ofatopologicalphase.Inparticular,ouralgorithmisvalidfor and Shinsei Ryu for helpful discussions. A part of this
+all topologically ordered states, including those that do not research was performed at Kavli Institute for Theoretical
+have any edge states, such as the toric code model. In this Physics, University of California, Santa Barbara, supported
+context,wenotethatifedgestatesdoexist,thenthemodular by the National Science Foundation under Grant No. NSF
+matrices extracted using our algorithm also determine the PHY05-51164. M.O. was supported in part by Grant-in-Aid
+centralchargeoftheedgestatemodulo8.18Giventheground forScientificResearch(KAKENHI)No.20102008.Y.Z.,T.G.,
+states,thisalgorithmdeterminesthetopologicalordertoalarge andA.V.weresupportedbyNSFGrantNo.DMR-0645691.
+235151-10
+
+QUASIPARTICLESTATISTICSANDBRAIDINGFROM... PHYSICALREVIEWB85,235151(2012)
+APPENDIXA:VARIATIONALMONTECARLOMETHOD
+FORALINEARCOMBINATIONOFWAVEFUNCTIONS
+TocalculatetheTEEforwavefunctionsofdifferentlinear
+combinations, it is important to establish a VMC algorithm
+forwavefunctionas|(cid:5)(cid:3)=cosφ|(cid:5) (cid:3)+sinφ|(cid:5) (cid:3),wherewe
+1 2
+assume that |(cid:5) (cid:3) and |(cid:5) (cid:3) are properly normalized. In our
+1 2
+case, |(cid:5) (cid:3) and |(cid:5) (cid:3) are two degenerate ground states, and
+1 2
+(cid:4)α|(cid:5) (cid:3)and(cid:4)α|(cid:5) (cid:3)aresingleSlaterdeterminantsproductsfor
+1 2
+each configuration |α(cid:3), making (cid:4)α|(cid:5)(cid:3) a sum of two Slater
+determinantsproducts.However,itmayalsobegeneralizedto
+thesituationofanywavefunctions.
+In the VMC scenario, the central qu(cid:10)antit(cid:12)y to evaluate in
+each Monte Carlo step is the ratio of α(cid:6)|(cid:5) /(cid:4)α|(cid:5)(cid:3), which
+nowhastheform
+(cid:4)α(cid:6)|(cid:5)(cid:3) cosφ(cid:4)α(cid:6)|(cid:5) (cid:3)+sinφ(cid:4)α(cid:6)|(cid:5) (cid:3) FIG.9. Illustrationofasquarelatticehoppingmodelconnected
+(cid:4)α|(cid:5)(cid:3)
+=
+cosφ(cid:4)α|(cid:5)
+1
+(cid:3)+sinφ(cid:4)α|(cid:5)
+2
+(cid:3)
+. (A1) withad+idsuperconductor.Whilethenearest-neighborhoppingis
+1 2 along the square edges with amplitude t [(−t) for hopping along
+dashed lines], the second-nearest-neighbor hopping is along the
+It is usually much less costly to calculate the ratios
+(cid:4)α(cid:6)|(cid:5) (cid:3)/(cid:4)α|(cid:5) (cid:3)and(cid:4)α(cid:6)|(cid:5) (cid:3)/(cid:4)α|(cid:5) (cid:3)if|α(cid:3)and|α(cid:6)(cid:3)arelocally
+squarediagonal(boldarrows),withamplitude+i(cid:21)(−i(cid:21))whenthe
+1 1 2 2
+different. For our case, when |α(cid:3) and |α(cid:6)(cid:3) differ by only one hoppingdirectionisalong(against)thearrow.Thetwosublatticesin
+theunitcellarelabeledAandB.
+spin(electron)exchange,amuchlesscostlyandmoreaccurate
+algorithm may be implemented for the ratio of determinants
+with only one different row or column. Unfortunately, after t and −t in the xˆ direction from row to row, and i and k
+linear superimposition of different |(cid:5) (cid:3), Eq. (A1) no longer are second nearest neighbors connected by hoppings along
+i
+hassuchaprivilege. thesquarelatticediagonals,withamplitudei(cid:21) ik =i(cid:21)along
+However,onecanre-expressEq.(A1)as thearrowsandi(cid:21) ik =−i(cid:21)againstthearrows(seeFig.9).The
+unitcellcontainstwosublattices,AandB.Thismodelleads
+(cid:4)α(cid:6)|(cid:5)(cid:3) a+bc·tanφ
+= , toagappedstateathalf-fillingandtheresultingvalenceband
+(cid:4)α|(cid:5)(cid:3) 1+c·tanφ
+hasunitChernnumber.Thishoppingmodelisequivalenttoa
+where d+id BCSstatebyanSU(2)gaugetransformation.Wetake
+(cid:21)=0.5ttomaximizetherelativesizeofthegapandminimize
+a =(cid:4)α (cid:6)|(cid:5) (cid:3)/(cid:4)α|(cid:5) (cid:3), b=(cid:4)α (cid:6)|(cid:5) (cid:3)/(cid:4)α|(cid:5) (cid:3)
+1 1 2 2 thefinite-sizeeffect.PleaserefertoRef.33forfurtherdetails
+are again ratios of determinants and can be effectively regardingtheexactformofthewavefunction.
+evaluated,and
+c=(cid:4)α|(cid:5)
+2
+(cid:3)/(cid:4)α|(cid:5)
+1
+(cid:3)
+APPENDIXC:MINIMUMENTROPYSTATESOFTHE
+can be efficiently kept track of with c(cid:6) =a−1bc whenever TORICCODEMODELONADIVIDINGTORUS
+the update |α(cid:3)→|α(cid:6)(cid:3) is accepted in a Monte Carlo step. In In this Appendix we Schmidt decompose the individual
+practice, a numerical check should be included to make sure Toric code ground states |(cid:20)(cid:3) in Eq. (20) for the bipartition
+the error for c does not accumulate too much after a certain of a torus in Fig. 1(b). It is helpful to introduce a virtual
+numberofMonteCarlosteps. cut (cid:21) which wraps around the torus in the xˆ direction and
+This algorithm may be easily generalized to the linear define|(cid:20)A(B)(cid:3)asthenormalizedequalsuperpositionofallthe
+combinationofnwavefunctions,withthecomputationalcost
+{ql },b
+possibleconfigurationsofclosed-loopstringsC insubsystem
+onlyntimesthatforasinglewavefunctions.
+A (B) with the partition boundary condition specified by
+{q =0,1}, l =1,2,...,L(so L is the total length of the
+l
+APPENDIXB:VARIATIONALWAVEFUNCTIONFORA boundary), and the number of crossings of the virtual cut (cid:21)
+CHIRALSPINLIQUID modulo2equalsb=0,1.Thefourgroundstatesmaynowbe
+expandedas
+1. ChiralspinliquidfromGutzwillerprojection
+ThelatticewavefunctionfortheCSLstatesthatweconsider |ξ (cid:3)= (cid:24) 1 (cid:7) (cid:3)(cid:11) (cid:11) (cid:20)A (cid:12)(cid:11) (cid:11) (cid:20)B (cid:12)
+areobtainedusingtheslave-particleformalismbyGutzwiller ab
+2N
+{ql },0 {ql },b
+projectingad+idBCSstate.21,44Specifically,weGutzwiller
+(cid:11)
+q {ql(cid:12) }
+(cid:11)
+∈a
+(cid:12)(cid:4)
+project the ground state of the following Hamiltonian of +(cid:11) (cid:20)A (cid:11) (cid:20)B .
+electronshoppingonasquarelatticeathalf-filling:
+{ql },1 {ql },(b+1)mod2
+H = (cid:7) t c † c +i (cid:7) (cid:21) c † c . (B1) Here{q l }∈ a =0(1)denotesthatonlyaneven(odd)number
+ij i j ik i k of crossings is allowed at the boundary (cid:22) (the number of
+1
+(cid:4)ij(cid:3) (cid:4)(cid:4)ik(cid:3)(cid:3)
+crossings at the other boundary (cid:22) must be same modulo
+2
+Here i and j are nearest neighbors and the hopping 2). N =2L−2 equals the total number of valid boundary
+q
+amplitudet istalongtheyˆdirectionandalternatingbetween conditions{q}∈ aineachparitysector.
+ij l
+235151-11
+
+ZHANG,GROVER,TURNER,OSHIKAWA,ANDVISHWANATH PHYSICALREVIEWB85,235151(2012)
+Wecalculateentanglemententropyusingthereduceddensitymatrix.Here,ρA =tr |(cid:20)(cid:3)(cid:4)(cid:20)|isreadilycalculated:
+B
+(cid:7) (cid:25) (cid:3)(cid:11) (cid:12)(cid:10) (cid:11) (cid:11) (cid:12)(cid:10) (cid:11)(cid:4) (cid:3)(cid:11) (cid:12)(cid:10) (cid:11) (cid:11) (cid:12)(cid:10) (cid:11)(cid:4)(cid:26)
+ρA = 1 (|c |2+|c |2) (cid:11) (cid:20)A (cid:20)A (cid:11)+(cid:11) (cid:20)A (cid:20)A (cid:11) +2Real(c ∗ c ) (cid:11) (cid:20)A (cid:20)A (cid:11)+(cid:11) (cid:20)A (cid:20)A (cid:11)
+2N 00 01 {ql },0 {ql },0 {ql },1 {ql },1 00 01 {ql },0 {ql },1 {ql },1 {ql },0
+q {ql }∈even
+(cid:7) (cid:25)(cid:3) (cid:3)(cid:11) (cid:12)(cid:10) (cid:11) (cid:11) (cid:12)(cid:10) (cid:11)(cid:4) (cid:3) (cid:12)(cid:10) (cid:11) (cid:11) (cid:12)(cid:10) (cid:11)(cid:4)(cid:26)
++ 1 |c |2+|c |2) (cid:11) (cid:20)A (cid:20)A (cid:11)+(cid:11) (cid:20)A (cid:20)A (cid:11) +2Real(c ∗ c ) |(cid:20)A (cid:20)A (cid:11)+(cid:11) (cid:20)A (cid:20)A (cid:11)
+2N 10 11 {ql },0 {ql },0 {ql },1 {ql },1 10 11 {ql },0 {ql },1 {ql },1 {ql },0
+q{ql }∈odd
+(cid:7) (cid:25) (cid:11) (cid:12)(cid:10) (cid:11) (cid:11) (cid:12)(cid:10) (cid:11)(cid:26) (cid:7) (cid:11) (cid:12)(cid:10) (cid:11)
+= 1 |c +c |2(cid:11) (cid:20)A (cid:20)A (cid:11)+|c −c |2(cid:11) (cid:20)A (cid:20)A (cid:11) + 1 [|c +c |2(cid:11) (cid:20)A (cid:20)A (cid:11)
+2N
+00 01 {ql },+ {ql },+ 00 01 {ql },− {ql },−
+2N
+10 11 {ql },+ {ql },+
+q {ql }∈even
+(cid:11) (cid:12)(cid:10) (cid:11)(cid:26)
+q {ql }∈odd
++|c −c |2(cid:11) (cid:20)A (cid:20)A (cid:11) .
+10 11 {ql },− {ql },−
+Here|(cid:20)A (cid:3)= √1 (|(cid:20)A (cid:3)±(cid:20)A (cid:3))andtheorthogonality for the magnetic field along the xˆ direction. Denoting the
+{ql },±
+2
+{ql },0 {ql },1
+insertionoperatorofsuchZ magneticfluxasF andF ,the
+conditionsholds. 2 y x
+loopoperatorsofthemagneticcharge(vison),wehave
+Fromtheaboveexpression,itimmediatelyfollowsthatthe
+RenyientanglemententropyS n isgivenbyEq.(21): T x F y =−F y T x , T y F x =−F x T y .
+(cid:3) (cid:4)
+1
+S = log Trρn They suggest that T x (T y ) is the magnetic flux measuring
+n 1−n
+⎛
+A
+⎛ ⎞⎞ operator in the yˆ(xˆ) direction and F x (F y ) is the electric flux
+(cid:13) (cid:14)
+= 1 log ⎝ 1 n ·N ⎝ (cid:7)4 (2p )n⎠⎠ m the eas e u le ri c n tr g ic op an er d ato th r e in ma th g e net yˆ ic (xˆ) flu d x ire a c r t e ion d . efi N ne o d te m th o a d t ul b o oth 2
+1−n 2N q q j=1 j in correspondence with the Z 2 gauge theory. After simple
+algebra,
+(cid:7)4
+1
+=logN + log pn F |ξ (cid:3)=(−1)a|ξ (cid:3), F |ξ (cid:3)=(−1)b|ξ (cid:3). (C2)
+q 1−n j y ab ab x ab ab
+⎛
+j=1
+⎞ ComparingEqs.(C1)and(C2)withEq.(23),wearriveatthe
+(cid:7)4 conclusionslistedinTableI.
+=Llog2−⎝ 2log2+ 1 log pn⎠ ,
+n−1 j
+j=1 APPENDIXD:MODULARTRANSFORMATIONS
+wherep j aredefinedinEq.(22). TheSandU matricesdescribetheactionofmodulartrans-
+To understand the nature of the corresponding MES in
+formationsonthedegenerategroundstatesofthetopological
+Eq. (23), we first discuss the quasiparticle excitations of
+quantum field theory on a torus. For Abelian phases, the
+the toric code model. Imagine defining the following string ijth entry of the S matrix corresponds to the phase the ith
+operatoronthelinksofthelattice
+quasiparticleacquireswhenitencirclesthejthquasiparticle.
+(cid:23)
+Wz(O)= σz. TheU matrixisdiagonalandtheiithentrycorrespondstothe
+j phasetheithquasiparticleacquireswhenitisexchangedwith
+j∈O
+an identical one. Let us first review the geometric meaning
+NowWz(O)|vac
+x
+(cid:3)isanexcitedstateandstillaneigenstate
+of these transformations. Labeling our system by complex
+of A s and B p , with A s =−1 at the two ends of O. We may coordinates z=x+iy, the torus may be defined by the
+regardthemaselectricchargequasiparticlesthatcostafinite periodicity of ω and ω along the two directions eˆ and eˆ
+1 2 1 2
+energytocreateandthestringconnectingthemasanelectric (which need not be orthogonal), i.e., z≡z+ω ≡z+ω .
+1 2
+field line. To return to the ground state, the electric charges Nowconsideratransformation
+(cid:13) (cid:14) (cid:13) (cid:14) (cid:13) (cid:14)(cid:13) (cid:14)
+needtobeannihilatedbyeachother.Onewaytodothisisto
+ω
+ω(cid:6)
+a b ω
+wrap the open string O parallel to xˆ around the cycle of the 1 → 1 = 1 , (D1)
+torus.O becomesaclosedloopC,yetthischangestheparity ω 2 ω 2 (cid:6) c d ω 2
+of the electric field winding number along xˆ. We define the where a,b,c,d ∈Z. Since our system lives on a lattice,
+electricchargeloopoperatorthatinsertsanadditionalelectric the inverse of the above matrix should again have integer
+field in the xˆ(yˆ) direction by the above procedure as a Z 2 components, hence the determinant ad−bc=1. One can
+electricfluxinsertionoperatorT x (T y ). showthatmatriceswiththesepropertiesformagroup,called
+T |ξ (cid:3)=|ξ (cid:3), T |ξ (cid:3)=|ξ (cid:3), SL(2,Z). Interestingly, all the elements in this group can be
+x 1b 0b x 0b 1b
+(C1) obtained by a successive application of the following two
+T y |ξ a1 (cid:3)=|ξ a0 (cid:3), T y |ξ a0 (cid:3)=|ξ a1 (cid:3). generatorsofSL(2,Z):
+Thereisalsoamagneticfield,whichdeterminesthephase (1) S =(− 0 1 1 0 ).Thistransformationcorrespondstoω 1 →
+of the electric charge as it moves. In particular, when there ω 2 and ω 2 →−ω 1 and therefore, for a square geometry,
+is a magnetic field along the yˆ direction of the torus of 1(0)
+correspondstorotationofthesystemby90o.
+totalflux(mod2),theelectricchargepicksupaminus(plus) (2) U =( 0 1 1 1 ). Under this transformation ω 1 →ω 1 (cid:6) =
+signtravelingaroundtheloopinthexˆ direction,andsimilarly ω +ω andω →ω(cid:6) =ω .Consideralooponthetoruswith
+1 2 2 2 2
+235151-12
+
+QUASIPARTICLESTATISTICSANDBRAIDINGFROM... PHYSICALREVIEWB85,235151(2012)
+winding numbers n and n along the ω and ω directions. (vison) m both have self-statistics of a boson and pick up a
+1 2 1 2
+By definition of the U transformation, the winding numbers phaseofπ whentheyencircleeachother(and,asacorollary,
+inthetransformedbasis, the same phase when they encircle em). By studying S, one
+getstheselfandmutualstatisticsforquasiparticlesencircling
+n ω +n ω =n (ω (cid:6) −ω (cid:6) )+n ω (cid:6)
+1 1 2 2 1 1 2 2 2 eachother.
+=n (cid:6) ω (cid:6) +n (cid:6) ω (cid:6) , InSec.IIIAwefurthershowthatsymmetryisnotrequired
+1 1 2 2
+where n(cid:6) =n and n(cid:6) =n −n are the winding numbers to determine the S matrix. In Eq. (23) we have shown the
+alongthe 1 ω(cid:6) a 1 ndω(cid:6) di 2 rectio 2 ns. 1 MESsforcutsalongthew 2 =yˆ direction:
+1 2
+ThetransformationpropertiesoftheresultingMESsunder eiϕ1 eiϕ2
+modular transformations would yield the desired S and U
+|(cid:7)
+1
+(cid:3)= √ (|ξ
+00
+(cid:3)+|ξ
+01
+(cid:3)), |(cid:7)
+2
+(cid:3)= √ (|ξ
+00
+(cid:3)−|ξ
+01
+(cid:3)),
+2 2
+matrices. Further, for a symmetry transformation of F(S,U)
+M
+on
+E
+(
+S
+ω
+s 1 w
+,ω
+o 2 u
+)
+l
+T
+d
+,
+y
+t
+i
+h
+e
+e
+ld
+c
+t
+o
+h
+r
+e
+re
+m
+sp
+o
+o
+d
+n
+u
+d
+la
+in
+r
+g
+F
+m
+(S
+o
+,
+d
+U
+u
+)
+la
+m
+r
+a
+t
+t
+r
+r
+a
+ix
+n
+.
+sformation on |(cid:7)
+3
+(cid:3)= e √ iϕ
+2
+3 (|ξ
+10
+(cid:3)+|ξ
+11
+(cid:3)), |(cid:7)
+4
+(cid:3)= e √ iϕ
+2
+4 (|ξ
+10
+(cid:3)−|ξ
+11
+(cid:3)),
+Inthemaintext,wehaveobtainedSandU matricesforthe whereϕ areundeterminedphasesforMESs|(cid:7) (cid:3).Theunitary
+i i
+toriccodemodelfromtheactionofthesetransformationson matrixU connectingthew MESsandtheelectricfluxstates,
+the basis states |ξ (cid:3). We now show that one can also obtain 1 ⎛ 2 ⎞
+ab
+the US matrix by studying the action of 2π/3 rotation R eiϕ1 eiϕ2
+o
+m
+n
+od
+th
+e
+e
+l).
+M
+To
+E
+s
+S
+e
+s
+e
+(
+t
+p
+h
+r
+is
+o
+,
+v
+c
+id
+o
+e
+n
+d
+sid
+th
+er
+at
+a
+R
+tri
+2
+a
+π
+n
+/3
+gu
+i
+l
+s
+ar
+th
+la
+e
+tti
+s
+c
+y
+e
+m
+th
+m
+a
+e
+t
+t
+i
+r
+s
+y
+d
+o
+efi
+f 2
+n
+t π h
+e
+/
+d
+e 3 U 1 = √ 1
+2
+⎜ ⎜ ⎝ eiϕ1 −eiϕ2 eiϕ3 eiϕ4 ⎟ ⎟ ⎠. (E1)
+by two lattice vectors (com√plex numbers) ω
+1
+and ω
+2
+, with eiϕ3 −eiϕ4
+ω =(1,0)andω =(1/2, 3/2).Thetransformationofour
+1 2
+interest is the transformation of ω ,ω under R rotation: On the other hand, it is straightforward to verify that for
+ω 1 →ω 1 (cid:6) =−ω 1 +ω 2 andω 2 → 1 ω 2 (cid:6) = 2 −ω 1 .Th 2π e / r 3 efore,one loops along the w 2 (cid:6) =−xˆ +yˆ direction, which satisfies our
+canwritetheR matrix: requirement,Eq.(8),thecorrespondingMESs
+2π/3
+(cid:13) (cid:14)
+R 2π/3 = − − 1 1 1 0 . (D2) |(cid:7) (cid:6) 1 (cid:3)= e √ iϕ 2 1 (cid:6) (|ξ 00 (cid:3)+|ξ 11 (cid:3)), |(cid:7) (cid:6) 2 (cid:3)= e √ iϕ 2 2 (cid:6) (|ξ 00 (cid:3)−|ξ 11 (cid:3)),
+This matrix belongs to the group SL(2,Z) and simple |(cid:7) (cid:6)(cid:3)= e √ iϕ 3 (cid:6) (|ξ (cid:3)+|ξ (cid:3)), |(cid:7) (cid:6)(cid:3)= e √ iϕ 4 (cid:6) (|ξ (cid:3)−|ξ (cid:3));
+algebra shows that R =US. One may also check that 3 2 01 10 4 2 01 10
+2π/3
+R
+2
+3
+π/3
+=1,asonemightexpect.Therefore,knowingtheaction again,ϕ(cid:6)areundeterminedphasesforMESs|(cid:7)(cid:6)(cid:3).Theunitary
+ofR 2π/3 ontheMESswouldleadtotheUS matrix. matrix U i connecting the w(cid:6) MESs and the i electric flux
+2 2
+states
+⎛ ⎞
+APPENDIXE:MODULARMATRICESOFZ 2 GAUGE eiϕ
+1
+(cid:6) eiϕ
+2
+(cid:6)
+THEORYBYTRANSFO S R T M AT IN ES GMINIMUMENTROPY U 2 = √ 1 2 ⎜ ⎜ ⎝ e e i i ϕ ϕ 3 3 (cid:6) (cid:6) − e e iϕ iϕ 4 (cid:6) 4 (cid:6) ⎟ ⎟ ⎠. (E2)
+Let us study the action of modular transformation on the eiϕ
+1
+(cid:6) −eiϕ
+2
+(cid:6)
+MESs|(cid:7) (cid:3)fortheZ gaugetheoryinSec.IVBandcompare
+α 2
+the resulting modular matrices with the known results. First, Combining Eqs. (E1) and (E2), we can write down the
+consider a π/2 rotation symmetric square sample. Under modularS matrixas
+π/2 rotation, |ξ ab (cid:3)→|ξ ba (cid:3). According to Eq. (23), the S =U −1U
+transformationsfortheMESs|(cid:7) α (cid:3)forcutsalongyˆ are 2⎛ 1 ⎞
+| | (cid:7) (cid:7) 1 2 (cid:3) (cid:3) → → 1 2 1 2 ( ( | | (cid:7) (cid:7) 1 1 (cid:3) (cid:3) + + | | (cid:7) (cid:7) 2 2 (cid:3) (cid:3) + − | | (cid:7) (cid:7) 3 3 (cid:3) (cid:3) + − | | (cid:7) (cid:7) 4 4 (cid:3) (cid:3) ) ) , , = 2 1 ⎜ ⎜ ⎝ e e e i i i ( ( ( ϕ ϕ ϕ 1 1 1 − − − ϕ ϕ ϕ 1 2 3 (cid:6) (cid:6) (cid:6) ) ) ) − e e e i i ( ( i ϕ ϕ (ϕ 2 2 − − 2 − ϕ ϕ ϕ 1 2 (cid:6) (cid:6) ) ) 3 (cid:6)) − e e e i i ( ( i ϕ ϕ (ϕ 3 3 − − 3 − ϕ ϕ ϕ 1 3 (cid:6) (cid:6) ) ) 2 (cid:6)) − e e e i i ( ( i ϕ ϕ (ϕ 4 4 − − 4 − ϕ ϕ ϕ 2 3 (cid:6) (cid:6) ) ) 1 (cid:6)) ⎟ ⎟ ⎠.
+|(cid:7) (cid:3)→ 1(|(cid:7) (cid:3)−|(cid:7) (cid:3)+|(cid:7) (cid:3)−|(cid:7) (cid:3)), ei(ϕ1 −ϕ 4 (cid:6)) −ei(ϕ2 −ϕ 4 (cid:6)) −ei(ϕ3 −ϕ 4 (cid:6)) −ei(ϕ4 −ϕ 4 (cid:6))
+3 2 1 2 3 4
+|(cid:7) (cid:3)→ 1(|(cid:7) (cid:3)−|(cid:7) (cid:3)−|(cid:7) (cid:3)+|(cid:7) (cid:3)). Toensuretheexistenceofanidentityparticleinaccordwith
+4 2 1 2 3 4 thefirstrowandcolumn,weimposetheconditions
+Hence,themodularS matrixisgivenby
+⎛ ⎞ ϕ 1 (cid:6) =ϕ 2 (cid:6) =ϕ 3 (cid:6) =ϕ 4 (cid:6) =ϕ 1 =ϕ 2 =ϕ 3 =ϕ 4 +π.
+1 1 1 1
+1⎜1 1 −1 −1⎟ ThisleadstothefollowingmodularS matrix:
+S = ⎝ ⎠. ⎛ ⎞
+2 1 −1 1 −1 1 1 1 1
+1 −1 −1 1 1⎜1 1 −1 −1⎟
+S = ⎝ ⎠,
+2 1 −1 1 −1
+This is exactly what one expects from the topological quan-
+1 −1 −1 1
+tumfieldtheorycorrespondingtothezero-correlation-length
+deconfined-confinedZ gaugetheory.Therearefourflavorsof whichisindeedthecorrectresultfortheZ toriccode.
+2 2
+quasiparticlesinthespectrum—1,m,e,andem—aswehave Now consider the transformation corresponding to the
+reportedinTableI.Theelectricchargeeandmagneticcharge U matrix as described in Appendix D, where n(cid:6) =n and
+1 1
+235151-13
+
+ZHANG,GROVER,TURNER,OSHIKAWA,ANDVISHWANATH PHYSICALREVIEWB85,235151(2012)
+n(cid:6) =n −n are the winding numbers along the ω(cid:6) and ω(cid:6) Weagaindenotethefourdegenerategroundstatesonatorus
+2 2 1 1 2
+directions.UsingthisexpressionandEq.(23),thetransforma- as |ξ (cid:3), with a,b=0,1 denoting the parity of the electric
+ab
+tionforMESsfromw cuttow(cid:6) cut, field along the noncontractible cycles. The relation between
+2 2
+MESs |(cid:7) (cid:3) and states |ξ (cid:3) remains unchanged [Eq. (23)].
+|(cid:7) (cid:3)→|(cid:7) (cid:3), |(cid:7) (cid:3)→|(cid:7) (cid:3), α ab
+1 1 2 2 The calculation for the transformation under 2π/3 proceeds
+|(cid:7)
+3
+(cid:3)→|(cid:7)
+3
+(cid:3), |(cid:7)
+4
+(cid:3)→−|(cid:7)
+4
+(cid:3).
+analogouslytothatforπ/2rotationandonefinds
+ThisleadstothefollowingmodularU matrix: R |ξ (cid:3)=|ξ (cid:3), R |ξ (cid:3)=|ξ (cid:3),
+2π/3 00 00 2π/3 01 10
+⎛ ⎞
+1 0 0 0 R 2π/3 |ξ 10 (cid:3)=|ξ 11 (cid:3), R 2π/3 |ξ 11 (cid:3)=|ξ 01 (cid:3).
+U = ⎜ ⎝ 0
+0
+1
+0
+0
+1
+0
+0
+⎟ ⎠.
+stat
+T
+e
+r
+s
+a
+|
+n
+(cid:7)
+sla
+(cid:3)
+t
+,
+in
+o
+g
+ne
+th
+fi
+e
+nd
+a
+s
+ction of R
+2π/3
+on states |ξ
+α
+(cid:3) to that on
+0 0 0 −1 α ⎛ ⎞
+1 1 1 1
+Again, this is what is expected from the Z 2 gauge theory. 1⎜ 1 1 −1 −1⎟
+Thesignof−1onthelastentryofthediagonalcorresponds US =
+2
+⎝
+1 −1 1 −1
+⎠.
+to the fermionic self-statistics of the em, while the positive −1 1 1 −1
+signs correspond to the bosonic self-statistics of 1, e, and m
+particles. CombiningtheexpressionandtheS matrix,oneobtains
+To see a more generic example of deriving the U matrix ⎛ ⎞
+1 0 0 0
+from rotation symmetry, we first define the toric code on a ⎜0 1 0 0⎟
+triangularlattice,withsystemdimensionssuchthatthe2π/3 U =⎝ ⎠
+0 0 1 0
+rotationisasymmetryofthesystem.TheHamiltonianisthe 0 0 0 −1
+sameasEq.(15),withthestar(cid:6)(cid:6)s(cid:6)(cid:6)denotingsixlinksemanating
+fromavertex,whiletheplaquette(cid:6)(cid:6)p(cid:6)(cid:6)nowinvolvesthreelinks. asexpected.
+*Correspondingauthor:ashvinv@socrates.berkeley.edu 22S.Dong,E.Fradkin,R.G.Leigh,andS.Nowling,J.HighEnergy
+1X.-G.Wen,QuantumFieldTheoryofMany-BodySystems:From Phys.05(2008)016.
+TheOriginofSoundtoanOriginofLightandElectrons(Oxford 23S.Yan,D.A.Huse,andS.R.White,Science332,1173(2011).
+GraduateTexts,OxfordUniversityPress,NewYork,2004). 24H.-C. Jiang, Z. Y. Weng, and D. N. Sheng, Phys. Rev. Lett. 101,
+2P.W.Anderson,Science237,1196(1987). 117203(2008).
+3X.-G.Wen,Int.J.Mod.Phys.B4,239(1990). 25Z.Y.Meng,T.C.Lang,S.Wessel,F.F.Assaad,andA.Muramatsu,
+4N.ReadandB.Chakraborty,Phys.Rev.B40,7133(1989). Nature464,847(2010).
+5X.-G.Wen,Phys.Rev.B44,2664(1991). 26H.-C.Jiang,H.Yao,andL.Balents,arXiv:1112.2241.
+6N. Read and S. Sachdev, Phys. Rev. Lett. 66, 1773 (1991); S. 27L.Wang,Z.-C.Gu,F.Verstraete,andX.-G.Wen,arXiv:1112.3331.
+Sachdev,Phys.Rev.B45,12377(1992). 28D.N.Sheng,Z.C.Gu,K.Sun,andL.Sheng,NatureCommun.2,
+7T.SenthilandM.P.A.Fisher,Phys.Rev.B62,7850(2000). 389(2011).
+8R. Moessner and S. L. Sondhi, Phys. Rev. Lett. 86, 1881 29E.Tang,J.W.Mei,andX.G.Wen,Phys.Rev.Lett.106,236802
+(2001). (2011).
+9P.A.Lee,Rep.Prog.Phys.71,012501(2008). 30T.Neupert,L.Santos,C.Chamon,andC.Mudry,Phys.Rev.Lett.
+10L.Balents,Nature464,199(2010). 106,236804(2011).
+11A.Kitaev,Ann.Phys.303,2(2003). 31Y.-F.Wang,H.Yao,Z.-C.Gu,C.-D.Gong,andD.N.Sheng,Phys.
+12See,e.g.,C.Nayak,S.H.Simon,A.Stern,M.Freedman,andS.D. Rev.Lett.108,126805(2012).
+Sarma,Rev.Mod.Phys.80,1083(2008). 32N.RegnaultandB.A.Bernevig,Phys.Rev.X1,021014(2011).
+13A. Hamma, R. Ionicioiu, and P. Zanardi, Phys. Lett. A 337, 22 33Y. Zhang, T. Grover, and A. Vishwanath, Phys. Rev. Lett. 107,
+(2005);Phys.Rev.A71,022315(2005). 067202(2011);Phys.Rev.B84,075128(2011).
+14M.LevinandX.-G.Wen,Phys.Rev.Lett.96,110405(2006). 34S.FurukawaandG.Misguich,Phys.Rev.B75,214407(2007).
+15A.KitaevandJ.Preskill,Phys.Rev.Lett.96,110404(2006). 35M. Haque, O. Zozulya, and K. Schoutens, Phys. Rev. Lett. 98,
+16E. Keski-Vakkuri and X.-G. Wen, Int. J. Mod. Phys. B 7, 4227 060401(2007);O.S.Zozulya,M.Haque,K.Schoutens,andE.H.
+(1993). Rezayi,Phys.Rev.B76,125310(2007).
+17P. Di Francesco, P. Mathieu, and D. Senechal, Conformal Field 36H.YaoandX.-L.Qi,Phys.Rev.Lett.105,080501(2010).
+Theory(Springer,NewYork,1997). 37S.V.Isakov,M.B.Hastings,andR.G.Melko,NaturePhys.7,772
+18A.Kitaev,Ann.Phys.321,2(2006). (2011).
+19E.P.Verlinde,Nucl.Phys.B300,360(1988). 38H.LiandF.D.M.Haldane,Phys.Rev.Lett.101,010504(2008).
+20F.A.BaisandJ.C.Romers,arXiv:1108.0683v1. 39M.A.LevinandX.-G.Wen,Phys.Rev.B71,045110(2005).
+21V.KalmeyerandR.B.Laughlin,Phys.Rev.Lett.59,2095(1987); 40C.Gros,Ann.Phys.189,53(1989).
+Phys.Rev.B39,11879(1989);X.G.Wen,FrankWilczek,andA. 41M.B.Hastings,I.Gonzalez,A.B.Kallin,andR.G.Melko,Phys.
+Zee,ibid.39,11413(1989). Rev.Lett.104,157201(2010).
+235151-14
+
+QUASIPARTICLESTATISTICSANDBRAIDINGFROM... PHYSICALREVIEWB85,235151(2012)
+42S. T. Flammia, A. Hamma, T. L. Hughes, and X. G. Wen, Phys. 44D.F.Schroeter,E.Kapit,R.Thomale,andM.Greiter,Phys.Rev.
+Rev.Lett.103,261601(2009). Lett.99,097202(2007).
+43M. A. Nielsen and I. L. Chuang, Quantum Computation and 45C.CastelnovoandC.Chamon,Phys.Rev.B78,155120(2008).
+Quantum Information (Cambridge University Press, Cambridge, 46Y.Zhang,T.Grover,andA.Vishwanath,Phys.Rev.B84,075128
+2000). (2011).
+235151-15

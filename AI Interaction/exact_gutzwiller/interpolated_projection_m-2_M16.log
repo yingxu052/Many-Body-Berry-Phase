@@ -1,0 +1,77 @@
+Computing 64 base links; minimum BdG gap=1.0893482225; maximum reference condition=1.867e+01
+Completed base link 000->001
+Completed base link 001->002
+Completed base link 002->003
+Completed base link 003->004
+Completed base link 004->005
+Completed base link 005->006
+Completed base link 006->007
+Completed base link 007->008
+Completed base link 008->009
+Completed base link 009->010
+Completed base link 010->011
+Completed base link 011->012
+Completed base link 012->013
+Completed base link 013->014
+Completed base link 014->015
+Completed base link 015->016
+Completed base link 016->017
+Completed base link 017->018
+Completed base link 018->019
+Completed base link 019->020
+Completed base link 020->021
+Completed base link 021->022
+Completed base link 022->023
+Completed base link 023->024
+Completed base link 024->025
+Completed base link 025->026
+Completed base link 026->027
+Completed base link 027->028
+Completed base link 028->029
+Completed base link 029->030
+Completed base link 030->031
+Completed base link 031->032
+Completed base link 032->033
+Completed base link 033->034
+Completed base link 034->035
+Completed base link 035->036
+Completed base link 036->037
+Completed base link 037->038
+Completed base link 038->039
+Completed base link 039->040
+Completed base link 040->041
+Completed base link 041->042
+Completed base link 042->043
+Completed base link 043->044
+Completed base link 044->045
+Completed base link 045->046
+Completed base link 046->047
+Completed base link 047->048
+Completed base link 048->049
+Completed base link 049->050
+Completed base link 050->051
+Completed base link 051->052
+Completed base link 052->053
+Completed base link 053->054
+Completed base link 054->055
+Completed base link 055->056
+Completed base link 056->057
+Completed base link 057->058
+Completed base link 058->059
+Completed base link 059->060
+Completed base link 060->061
+Completed base link 061->062
+Completed base link 062->063
+Completed base link 063->000
+lambda=0.00: theta=-1.660048083875 rad = -0.528409716638 pi; min|O|=0.9890996583
+lambda=0.10: theta=-1.660010966775 rad = -0.528397901898 pi; min|O|=0.9891044924
+lambda=0.20: theta=-1.659959154803 rad = -0.528381409635 pi; min|O|=0.9891112422
+lambda=0.30: theta=-1.659883746811 rad = -0.528357406526 pi; min|O|=0.9891210695
+lambda=0.40: theta=-1.659767942145 rad = -0.528320544756 pi; min|O|=0.9891361699
+lambda=0.50: theta=-1.659576892547 rad = -0.528259731780 pi; min|O|=0.9891611043
+lambda=0.60: theta=-1.659228439206 rad = -0.528148815637 pi; min|O|=0.9892066541
+lambda=0.70: theta=-1.658489678403 rad = -0.527913660770 pi; min|O|=0.9893035341
+lambda=0.80: theta=-1.656479260029 rad = -0.527273724726 pi; min|O|=0.9895693187
+lambda=0.90: theta=-1.647676563702 rad = -0.524471739460 pi; min|O|=0.9905351906
+lambda=1.00: theta=-1.601035331441 rad = -0.509625374127 pi; min|O|=0.9936930169
+Result file: /Users/xuzheying/Library/CloudStorage/OneDrive-HKUST/Work Documents/AI Projects/Many body Berry phase/exact_gutzwiller/interpolated_projection_m-2_M16.json

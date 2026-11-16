@@ -1,0 +1,39 @@
+{
+  "meshes": [
+    {
+      "steps_per_leg": 2,
+      "number_of_links": 8,
+      "berry_phase_radians": -1.6251114282304837,
+      "berry_phase_over_pi": -0.5172890337560228,
+      "change_from_previous_mesh_radians": null,
+      "minimum_link_magnitude": 0.5687306577637194
+    },
+    {
+      "steps_per_leg": 4,
+      "number_of_links": 16,
+      "berry_phase_radians": -2.125778937129229,
+      "berry_phase_over_pi": -0.6766564515295044,
+      "change_from_previous_mesh_radians": -0.5006675088987451,
+      "minimum_link_magnitude": 0.7529075808086672
+    },
+    {
+      "steps_per_leg": 8,
+      "number_of_links": 32,
+      "berry_phase_radians": -2.2791649040763238,
+      "berry_phase_over_pi": -0.7254807212106248,
+      "change_from_previous_mesh_radians": -0.15338596694709494,
+      "minimum_link_magnitude": 0.9089006542094715
+    },
+    {
+      "steps_per_leg": 16,
+      "number_of_links": 64,
+      "berry_phase_radians": -2.3203313078097207,
+      "berry_phase_over_pi": -0.7385843944975984,
+      "change_from_previous_mesh_radians": -0.04116640373339697,
+      "minimum_link_magnitude": 0.975125926339911
+    }
+  ],
+  "second_order_richardson_estimate_radians": -2.33405344238752,
+  "second_order_richardson_estimate_over_pi": -0.7429522855932563,
+  "note": "The Richardson value is an extrapolation, not an independent exact-enumeration result."
+}
